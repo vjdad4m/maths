@@ -8,9 +8,9 @@ Mathematical results, proofs, and reproducible verification.
 
 - [Graffiti.pc Conjecture 161: Lean formalization](graffiti-161/README.md). A star-extension proof of the proper-clique bound, with no novelty claim.
 
-- [Graffiti.pc Conjectures 258 and 259: proofs](graffiti-258-259/README.md). Full written proofs, Lean-checked arithmetic and parity lemmas, and an exhaustive check through nine vertices.
+- [Graffiti.pc Conjectures 258 and 259: proofs](graffiti-258-259/README.md). Complete Lean formalizations for [#258](graffiti-258-259/Formal258.lean) and [#259](graffiti-258-259/Formal259.lean).
 
-- [Graffiti.pc Conjecture 261: proof](graffiti-261/README.md). A proof via Karpov’s spanning-tree theorem, with Lean-checked arithmetic and an exhaustive check through nine vertices.
+- [Graffiti.pc Conjecture 261: proof](graffiti-261/README.md). Written proof and [complete Lean formalization](graffiti-261/Formal261.lean).
 
 ## 20-conjecture batch
 

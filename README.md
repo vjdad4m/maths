@@ -16,6 +16,8 @@ Mathematical results, proofs, and reproducible verification.
 
 The 20 results below (16 proofs and four counterexamples) each have a complete Lean formalization. Each written result and each Lean source were added in separate commits. The exact claims and finite witnesses compile on Lean 4.19.0 with no `sorry`, `native_decide`, or custom axioms. This is an AI-assisted result set, not a claim of priority.
 
+**Prior-work correction (November 25, 2026):** A [public worklog posted in July 2026](https://gist.github.com/siddhantdubey/22f22a7a23db5174ee59e32eaa8724aa) contains earlier proofs of Graffiti.pc #426, #446, #448a, #449, and #450, and an earlier, different counterexample to #444. The Lean files here remain independently developed verification; these six are not counted as new resolutions.
+
 | Source | Conjecture | Outcome | Main argument or witness | Written commit | Full Lean source |
 |---|---:|---|---|---|---|
 | Graffiti.pc | [76](graffiti-76/README.md) | False | A 225-vertex triangle-free graph has largest induced tree 108, below 225/2. | [`e162661`](https://github.com/vjdad4m/maths/commit/e162661debcf6ebbb3a4db48766b8c08d7298e78) | [Lean](graffiti-76/Verify76Exact.lean) |
@@ -76,3 +78,14 @@ done
 ```
 
 The output of each file includes an axiom audit of its concluding theorem.
+
+## Follow-up Lean results
+
+The same Lean 4.19.0 and Mathlib v4.19.0 setup applies. Each link is a standalone Lean file with an audit of the concluding theorem. These are AI-assisted results and not claims of priority.
+
+- [Graffiti.pc #241: proved](graffiti-241/Proof241.lean) ([commit `ce4cfce`](https://github.com/vjdad4m/maths/commit/ce4cfce152669a3339a5eed9906e96fa1dbe769f)).
+- [Graffiti.pc #268: proved](graffiti-268/Proof268.lean) ([commit `e152175`](https://github.com/vjdad4m/maths/commit/e1521756a2201c926a9b59775d43717c9deed526)).
+- [Graffiti³ #15(a): disproved](graffiti3-15a/Proof15a.lean) ([commit `3966138`](https://github.com/vjdad4m/maths/commit/3966138221c98ab54db0056f86cbbd92cb87ca84)).
+- [Graffiti³ #21: disproved](graffiti3-21/Proof21.lean) ([commit `15b7535`](https://github.com/vjdad4m/maths/commit/15b7535140b2a993dd0450139af20848de52b75c)).
+- [Graffiti³ #22: disproved](graffiti3-22/Proof22.lean) ([commit `edbb5f8`](https://github.com/vjdad4m/maths/commit/edbb5f8923c8739114a5d2cc655a2a975946fd1b)).
+- [Graffiti³ #25: proved](graffiti3-25/Proof25.lean) ([commit `fa57af6`](https://github.com/vjdad4m/maths/commit/fa57af6997c364a9d8c818ec07a349daa9e342c3)).

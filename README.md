@@ -37,6 +37,7 @@
 | Graffiti.pc #379 | Proved | [Lean](graffiti-379/Exact379.lean) |
 | Graffiti.pc #380 | Proved where defined; undefined on some trees | [Lean](graffiti-380/Proof380.lean) |
 | Graffiti.pc #381 | Proved | [Lean](graffiti-381/Formal381.lean) · [Write-up](graffiti-381/README.md) |
+| Graffiti.pc #394 | Disproved | [Lean](graffiti-394/Counterexample394.lean) |
 | Graffiti.pc #412d | Proved | [Lean](graffiti-412d/Proof412d.lean) |
 | Graffiti.pc #416 | Proved | [Lean](graffiti-416/Formal416.lean) · [Write-up](graffiti-416/README.md) |
 | Graffiti.pc #426 | Proved | [Lean](graffiti-426/Formal426.lean) · [Write-up](graffiti-426/README.md) · [Prior: Siddhant Dubey](https://gist.github.com/siddhantdubey/22f22a7a23db5174ee59e32eaa8724aa) |

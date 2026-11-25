@@ -18,6 +18,8 @@ The 20 results below (16 proofs and four counterexamples) each have a complete L
 
 **Prior-work correction (November 25, 2026):** A [public worklog posted in July 2026](https://gist.github.com/siddhantdubey/22f22a7a23db5174ee59e32eaa8724aa) contains earlier proofs of Graffiti.pc #426, #446, #448a, #449, and #450, and an earlier, different counterexample to #444. The Lean files here remain independently developed verification; these six are not counted as new resolutions.
 
+**Overlapping same-day work (November 25, 2026):** [Derek Blair’s independent release](https://github.com/derekblair/math-proofs/blob/98bc251740a3194ff742206feadc1e90fe4d1c6c/research/lean-verified-2026-11-25/README.md) reports a counterexample to #255 and proofs of #268 and #271, with Lean artifacts. These overlap with results in this repository. No claim of priority is made for these three.
+
 | Source | Conjecture | Outcome | Main argument or witness | Written commit | Full Lean source |
 |---|---:|---|---|---|---|
 | Graffiti.pc | [76](graffiti-76/README.md) | False | A 225-vertex triangle-free graph has largest induced tree 108, below 225/2. | [`e162661`](https://github.com/vjdad4m/maths/commit/e162661debcf6ebbb3a4db48766b8c08d7298e78) | [Lean](graffiti-76/Verify76Exact.lean) |

@@ -27,6 +27,7 @@
 | Graffiti.pc #310 | Proved | [Lean](graffiti-310/Formal310.lean) · [Write-up](graffiti-310/README.md) |
 | Graffiti.pc #361 | Proved | [Lean](graffiti-361/Verify361.lean) · [Write-up](graffiti-361/README.md) |
 | Graffiti.pc #362 | Proved | [Lean](graffiti-362/Formal362.lean) · [Write-up](graffiti-362/README.md) |
+| Graffiti.pc #365 | Proved | [Lean](graffiti-365/Proof365.lean) |
 | Graffiti.pc #376 | Proved | [Lean](graffiti-376/Proof376.lean) |
 | Graffiti.pc #377 | Proved | [Lean](graffiti-377/Proof377.lean) |
 | Graffiti.pc #379 | Proved | [Lean](graffiti-379/Exact379.lean) |

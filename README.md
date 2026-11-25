@@ -6,6 +6,7 @@
 | Graffiti.pc #61 | Unresolved here |  |
 | Graffiti.pc #76 | Disproved | [Lean](graffiti-76/Verify76Exact.lean) · [Write-up](graffiti-76/README.md) |
 | Graffiti.pc #108 | Disproved | [Lean](graffiti-108/Counterexample108.lean) · [Write-up](graffiti-108/README.md) |
+| Graffiti.pc #111 | Proved | [Lean](graffiti-111/Proof111.lean) |
 | Graffiti.pc #133 | Unresolved here |  |
 | Graffiti.pc #138 | Disproved | [Lean](graffiti-138/Verify138.lean) |
 | Graffiti.pc #157 | Proved | [Lean](graffiti-157/Formal157.lean) · [Write-up](graffiti-157/README.md) |

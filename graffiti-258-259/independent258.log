@@ -1,0 +1,9 @@
+n=2 connected=1
+n=3 connected=2
+n=4 connected=6
+n=5 connected=21
+n=6 connected=112
+n=7 connected=853
+n=8 connected=11117
+n=9 connected=261080
+checked=273192 tight=39692 min_margin=0 counterexamples=0

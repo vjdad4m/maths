@@ -1,0 +1,3 @@
+'Graffiti258.alternating_forest_bound' depends on axioms: [propext, Quot.sound]
+'Graffiti258.arithmetic_258' depends on axioms: [propext, Quot.sound]
+'Graffiti258.arithmetic_259' depends on axioms: [propext, Quot.sound]

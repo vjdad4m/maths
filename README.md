@@ -83,9 +83,10 @@ The output of each file includes an axiom audit of its concluding theorem.
 
 The same Lean 4.19.0 and Mathlib v4.19.0 setup applies. Each link is a standalone Lean file with an audit of the concluding theorem. These are AI-assisted results and not claims of priority.
 
-- [Graffiti.pc #241: proved](graffiti-241/Proof241.lean) ([commit `ce4cfce`](https://github.com/vjdad4m/maths/commit/ce4cfce152669a3339a5eed9906e96fa1dbe769f)).
+- [Graffiti.pc #241: independently formalized](graffiti-241/Proof241.lean) ([commit `ce4cfce`](https://github.com/vjdad4m/maths/commit/ce4cfce152669a3339a5eed9906e96fa1dbe769f)). The statement also follows from [Gebendorfer’s earlier, stronger component bound](https://www.researchgate.net/publication/410896645_Closed-Neighborhood_Components_Open_Packings_and_Total_Domination_in_Trees).
 - [Graffiti.pc #268: proved](graffiti-268/Proof268.lean) ([commit `e152175`](https://github.com/vjdad4m/maths/commit/e1521756a2201c926a9b59775d43717c9deed526)).
 - [Graffiti³ #15(a): disproved](graffiti3-15a/Proof15a.lean) ([commit `3966138`](https://github.com/vjdad4m/maths/commit/3966138221c98ab54db0056f86cbbd92cb87ca84)).
 - [Graffiti³ #21: disproved](graffiti3-21/Proof21.lean) ([commit `15b7535`](https://github.com/vjdad4m/maths/commit/15b7535140b2a993dd0450139af20848de52b75c)).
 - [Graffiti³ #22: disproved](graffiti3-22/Proof22.lean) ([commit `edbb5f8`](https://github.com/vjdad4m/maths/commit/edbb5f8923c8739114a5d2cc655a2a975946fd1b)).
 - [Graffiti³ #25: proved](graffiti3-25/Proof25.lean) ([commit `fa57af6`](https://github.com/vjdad4m/maths/commit/fa57af6997c364a9d8c818ec07a349daa9e342c3)).
+- [Graffiti.pc #138: disproved](graffiti-138/Verify138.lean) ([commit `e8a005e`](https://github.com/vjdad4m/maths/commit/e8a005e86d75e895caf7249e1fba3683fbb3c293)). A 19-vertex double broom has induced-path order 17 where the conjecture requires 18.

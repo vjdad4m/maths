@@ -17,6 +17,7 @@
 | Graffiti.pc #232 | Proved | [Lean](graffiti-232/Formal232.lean) · [Write-up](graffiti-232/README.md) |
 | Graffiti.pc #235 | Proved | [Lean](graffiti-235/Exact235.lean) · [Write-up](graffiti-235/README.md) |
 | Graffiti.pc #241 | Proved | [Lean](graffiti-241/Proof241.lean) · [Prior stronger bound: Gebendorfer](https://www.researchgate.net/publication/410896645_Closed-Neighborhood_Components_Open_Packings_and_Total_Domination_in_Trees) |
+| Graffiti.pc #247 | Disproved | [Lean](graffiti-247/Proof247.lean) |
 | Graffiti.pc #255 | Disproved | [Lean](graffiti-255/Counterexample255.lean) · [Write-up](graffiti-255/README.md) · [Parallel: Derek Blair](https://github.com/derekblair/math-proofs/blob/98bc251740a3194ff742206feadc1e90fe4d1c6c/research/lean-verified-2026-11-25/README.md) |
 | Graffiti.pc #258 | Proved | [Lean](graffiti-258-259/Formal258.lean) · [Write-up](graffiti-258-259/README.md) |
 | Graffiti.pc #259 | Proved | [Lean](graffiti-258-259/Formal259.lean) · [Write-up](graffiti-258-259/README.md) |

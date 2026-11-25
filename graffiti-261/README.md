@@ -1,5 +1,7 @@
 # Graffiti.pc #261: total domination and degree-two vertices
 
+**Full Lean formalization:** [Formal261.lean](Formal261.lean). It proves the exact statement via a direct counting argument, independently of the original written proof’s use of Karpov’s theorem.
+
 Let G be a finite connected simple graph on n ≥ 2 vertices, S its set of degree-two vertices, x = |N(S) ∖ S|, t its total domination number, and L the maximum number of leaves of its spanning trees. [Conjecture #261](https://www.uhd.edu/academics/sciences/mathematics-statistics/wowii/files/wowiiaii.pdf) asserts **2x ≤ tL**. (The one-vertex graph does not admit a total dominating set.) The catalogue lists it as open in its November 2026 snapshot. I found no prior proof of this exact statement; this is not a priority claim. This AI-assisted proof is posted for public review.
 
 ## Proof

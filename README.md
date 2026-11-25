@@ -1,101 +1,47 @@
-# maths
+# maths: Problem index
 
-Mathematical results, proofs, and reproducible verification.
-
-## Results
-
-- [Graffiti.pc Conjecture 108: counterexample](graffiti-108/README.md). The 35-vertex Kneser graph KG(7,3) makes the proposed inequality read **15 ≤ 13**. Includes a short proof, Lean verification, and an independent Python checker.
-
-- [Graffiti.pc Conjecture 161: Lean formalization](graffiti-161/README.md). A star-extension proof of the proper-clique bound, with no novelty claim.
-
-- [Graffiti.pc Conjectures 258 and 259: proofs](graffiti-258-259/README.md). Complete Lean formalizations for [#258](graffiti-258-259/Formal258.lean) and [#259](graffiti-258-259/Formal259.lean).
-
-- [Graffiti.pc Conjecture 261: proof](graffiti-261/README.md). Written proof and [complete Lean formalization](graffiti-261/Formal261.lean).
-
-## 20-conjecture batch
-
-The 20 results below (16 proofs and four counterexamples) each have a complete Lean formalization. Each written result and each Lean source were added in separate commits. The exact claims and finite witnesses compile on Lean 4.19.0 with no `sorry`, `native_decide`, or custom axioms. This is an AI-assisted result set, not a claim of priority.
-
-**Prior-work correction (November 25, 2026):** A [public worklog posted in July 2026](https://gist.github.com/siddhantdubey/22f22a7a23db5174ee59e32eaa8724aa) contains earlier proofs of Graffiti.pc #426, #446, #448a, #449, and #450, and an earlier, different counterexample to #444. The Lean files here remain independently developed verification; these six are not counted as new resolutions.
-
-**Overlapping same-day work (November 25, 2026):** [Derek Blair’s independent release](https://github.com/derekblair/math-proofs/blob/98bc251740a3194ff742206feadc1e90fe4d1c6c/research/lean-verified-2026-11-25/README.md) reports a counterexample to #255 and proofs of #268 and #271, with Lean artifacts. These overlap with results in this repository. No claim of priority is made for these three.
-
-| Source | Conjecture | Outcome | Main argument or witness | Written commit | Full Lean source |
-|---|---:|---|---|---|---|
-| Graffiti.pc | [76](graffiti-76/README.md) | False | A 225-vertex triangle-free graph has largest induced tree 108, below 225/2. | [`e162661`](https://github.com/vjdad4m/maths/commit/e162661debcf6ebbb3a4db48766b8c08d7298e78) | [Lean](graffiti-76/Verify76Exact.lean) |
-| Graffiti.pc | [157](graffiti-157/README.md) | True | A breadth-first tree makes the outer distance layer into leaves. | [`05dc3e4`](https://github.com/vjdad4m/maths/commit/05dc3e4f961274a466a08dc6823a0bc0bb117f12) | [Lean](graffiti-157/Formal157.lean) |
-| Graffiti.pc | [232](graffiti-232/README.md) | True | A three-point projection onto a diameter path of the connected dominating tree. | [`f031114`](https://github.com/vjdad4m/maths/commit/f031114f59e1650e9413ae2161b7c9d0dacb5008) | [Lean](graffiti-232/Formal232.lean) |
-| Graffiti.pc | [235](graffiti-235/README.md) | True | Triad-distance charging and a bipartite dominating-edge argument. | [`e8a92b5`](https://github.com/vjdad4m/maths/commit/e8a92b59c50ecaf168bde058fa51d54d58515b19) | [Lean](graffiti-235/Exact235.lean) |
-| Graffiti.pc | [255](graffiti-255/README.md) | False | A checkerboard-colored 8×8 rook graph plus a three-vertex path gives 126 < 134. | [`bdb0db4`](https://github.com/vjdad4m/maths/commit/bdb0db4992cd3c894ad0b31ddeac8fb960b75164) | [Lean](graffiti-255/Counterexample255.lean) |
-| Graffiti.pc | [260](graffiti-260/README.md) | True | Count both the periphery and its boundary when the max leaf count is three. | [`65e8ec0`](https://github.com/vjdad4m/maths/commit/65e8ec039ebb9b0ff9352e2ecbbd5ee02b138c6f) | [Lean](graffiti-260/Formal260.lean) |
-| Graffiti.pc | [271](graffiti-271/README.md) | True | Diameter bound; a dominating edge separately handles total domination two. | [`de2dd79`](https://github.com/vjdad4m/maths/commit/de2dd7919f4d870b1d33e08ab45deb8ed66d74e3) | [Lean](graffiti-271/Proof271.lean) |
-| Graffiti.pc | [310](graffiti-310/README.md) | True | Charge depths in a breadth-first tree. | [`7e3ed45`](https://github.com/vjdad4m/maths/commit/7e3ed45f86414b8eb3aa5f69fd7a2f223ec01cc5) | [Lean](graffiti-310/Formal310.lean) |
-| Graffiti.pc | [361](graffiti-361/README.md) | True | All supports are forced; two centers preclude the tight single-extra case. | [`58ad4db`](https://github.com/vjdad4m/maths/commit/58ad4db78e23f6079387eda1651d2183df22caa3) | [Lean](graffiti-361/Verify361.lean) |
-| Graffiti.pc | [362](graffiti-362/README.md) | True | Reserve one support per component; remaining vertices distance-two dominate. | [`e186f9f`](https://github.com/vjdad4m/maths/commit/e186f9fb43472012b6fccf6abff5e5488845d91f) | [Lean](graffiti-362/Formal362.lean) |
-| Graffiti.pc | [381](graffiti-381/README.md) | True | Distribute isolates of the support neighborhood among isolated supports. | [`d5ac6a3`](https://github.com/vjdad4m/maths/commit/d5ac6a3192a7798afed2864b1d59000379371d74) | [Lean](graffiti-381/Formal381.lean) |
-| Graffiti.pc | [416](graffiti-416/README.md) | True | In diameter two, a pendant's neighbor is universal. | [`1907180`](https://github.com/vjdad4m/maths/commit/19071800a990bf219cbc44c1da08609e49eee3ce) | [Lean](graffiti-416/Formal416.lean) |
-| Graffiti.pc | [426](graffiti-426/README.md) | True | Seed a maximal independent set to avoid isolates of the induced neighborhood. | [`2ae46ef`](https://github.com/vjdad4m/maths/commit/2ae46ef7517da2d541d75ec4edf0f4bcf014a27c) | [Lean](graffiti-426/Formal426.lean) |
-| Graffiti.pc | [444](graffiti-444/README.md) | False | 34 vertices induce a matching plus isolates, exceeding the bound of 33. | [`5daf5b6`](https://github.com/vjdad4m/maths/commit/5daf5b661ecf9e35d615e5aa597a571d4f8f9679) | [Lean](graffiti-444/Exact444.lean) |
-| Graffiti.pc | [446](graffiti-446/README.md) | True | Charge selected supports to excluded private leaves or count them directly. | [`604135a`](https://github.com/vjdad4m/maths/commit/604135acc3712735b2adadcc117ca6c9ee87726b) | [Lean](graffiti-446/Verify446.lean) |
-| Graffiti.pc | [448a](graffiti-448a/README.md) | True | Count low-degree runs in a path cover. | [`1f240d6`](https://github.com/vjdad4m/maths/commit/1f240d6adf8efcd091b3223f1902e0d2334938eb) | [Lean](graffiti-448a/Formal448a.lean) |
-| Graffiti.pc | [449](graffiti-449/README.md) | True | Count edges leaving the high-degree part of a 2-independent set. Uses the catalogue's ceiling. | [`745449c`](https://github.com/vjdad4m/maths/commit/745449c494734871acc5f9a45def1bf6b6e41ba8) | [Lean](graffiti-449/Formal449.lean) |
-| Graffiti.pc | [450](graffiti-450/README.md) | True | Charge selected supports to private neighbors or discarded low-degree vertices. | [`670a91d`](https://github.com/vjdad4m/maths/commit/670a91ddf81d9fcffa13e2f50d28c3d7b9d645ee) | [Lean](graffiti-450/Formal450.lean) |
-| Davila Graffiti³ | [14](graffiti3-14/README.md) | True, sharp | Prime-factor bounds reduce Euler's totient inequality to 45 exact cases. | [`9badedf`](https://github.com/vjdad4m/maths/commit/9badedfb7ca95d96da318c50c21c51e25d68fc73) | [Lean](graffiti3-14/Totient14.lean) |
-| Davila Graffiti³ | [27](graffiti3-27/README.md) | False | An order-64 dihedral group gives 19 classes against a claimed lower bound of 89/4. | [`c049141`](https://github.com/vjdad4m/maths/commit/c04914102da94a87e19b357fa0f187dd3a04d0fc) | [Lean](graffiti3-27/Dihedral27.lean) |
-
-### Reproduce the Lean checks
-
-Run from this repository’s root with [Elan](https://github.com/leanprover/elan) installed. The files that use Mathlib require its `v4.19.0` release; the others use only Lean’s bundled libraries. The single invocation below covers all 20.
-
-```sh
-set -eu
-repo=$(pwd)
-tmp=$(mktemp -d)
-git clone --depth 1 --branch v4.19.0 https://github.com/leanprover-community/mathlib4.git "$tmp/mathlib4"
-cd "$tmp/mathlib4"
-lake exe cache get
-for file in \
-  graffiti-76/Verify76Exact.lean \
-  graffiti-157/Formal157.lean \
-  graffiti-232/Formal232.lean \
-  graffiti-235/Exact235.lean \
-  graffiti-255/Counterexample255.lean \
-  graffiti-260/Formal260.lean \
-  graffiti-271/Proof271.lean \
-  graffiti-310/Formal310.lean \
-  graffiti-361/Verify361.lean \
-  graffiti-362/Formal362.lean \
-  graffiti-381/Formal381.lean \
-  graffiti-416/Formal416.lean \
-  graffiti-426/Formal426.lean \
-  graffiti-444/Exact444.lean \
-  graffiti-446/Verify446.lean \
-  graffiti-448a/Formal448a.lean \
-  graffiti-449/Formal449.lean \
-  graffiti-450/Formal450.lean \
-  graffiti3-14/Totient14.lean \
-  graffiti3-27/Dihedral27.lean; do
-  lake env lean "$repo/$file"
-done
-```
-
-The output of each file includes an axiom audit of its concluding theorem.
-
-## Follow-up Lean results
-
-The same Lean 4.19.0 and Mathlib v4.19.0 setup applies. Each link is a standalone Lean file with an audit of the concluding theorem. These are AI-assisted results and not claims of priority.
-
-- [Graffiti.pc #241: independently formalized](graffiti-241/Proof241.lean) ([commit `ce4cfce`](https://github.com/vjdad4m/maths/commit/ce4cfce152669a3339a5eed9906e96fa1dbe769f)). The statement also follows from [Gebendorfer’s earlier, stronger component bound](https://www.researchgate.net/publication/410896645_Closed-Neighborhood_Components_Open_Packings_and_Total_Domination_in_Trees).
-- [Graffiti.pc #268: proved](graffiti-268/Proof268.lean) ([commit `e152175`](https://github.com/vjdad4m/maths/commit/e1521756a2201c926a9b59775d43717c9deed526)).
-- [Graffiti³ #15(a): disproved](graffiti3-15a/Proof15a.lean) ([commit `3966138`](https://github.com/vjdad4m/maths/commit/3966138221c98ab54db0056f86cbbd92cb87ca84)).
-- [Graffiti³ #21: disproved](graffiti3-21/Proof21.lean) ([commit `15b7535`](https://github.com/vjdad4m/maths/commit/15b7535140b2a993dd0450139af20848de52b75c)).
-- [Graffiti³ #22: disproved](graffiti3-22/Proof22.lean) ([commit `edbb5f8`](https://github.com/vjdad4m/maths/commit/edbb5f8923c8739114a5d2cc655a2a975946fd1b)).
-- [Graffiti³ #25: proved](graffiti3-25/Proof25.lean) ([commit `fa57af6`](https://github.com/vjdad4m/maths/commit/fa57af6997c364a9d8c818ec07a349daa9e342c3)).
-- [Graffiti.pc #138: disproved](graffiti-138/Verify138.lean) ([commit `e8a005e`](https://github.com/vjdad4m/maths/commit/e8a005e86d75e895caf7249e1fba3683fbb3c293)). A 19-vertex double broom has induced-path order 17 where the conjecture requires 18.
-- [Graffiti.pc #290: proved](graffiti-290/Proof290.lean) ([commit `fe95b4e`](https://github.com/vjdad4m/maths/commit/fe95b4e22b1b786539df6333dfbe28af96c3a432)). Bounds total domination by the maximum degree times the first Havel–Hakimi zero stage; the Lean file also checks that the stage exists and is minimal.
-- [Graffiti.pc #379: proved](graffiti-379/Exact379.lean) ([commit `a72ba25`](https://github.com/vjdad4m/maths/commit/a72ba2555fbf36b2cb495206f74190174aa75a6a)). Relates total domination to max-degree components and distinct degrees in trees. Also stated as [Conjecture 1 in the 2009 paper](https://math1um.github.io/Research/r05.pdf).
-- [AutoGraphForge catalogue line 66: disproved](autographforge-66/PowerBurning.lean) ([commit `ca38c60`](https://github.com/vjdad4m/maths/commit/ca38c60b0702afb3e034f87442d53364b8224f72)). A 16-vertex tree has power domination number at least 5 and burning number at most 3, too small for the [proposed upper bound](https://github.com/JanPastorek/AutoGraphForge/blob/4d1a8afc99447cacd2328cca20e47b6493e8dbc5/results/survivors_by_touch_normalised.txt#L66).
-- [Graffiti.pc #377: proved](graffiti-377/Proof377.lean) ([commit `10d53fd`](https://github.com/vjdad4m/maths/commit/10d53fdc1d265f491d0d497dd5104680cf97c502)). Total domination bounds the isolated maximum-degree count plus the upper median degree in a tree.
-
-- [Graffiti.pc #376: proved](graffiti-376/Proof376.lean) ([commit `3c2414c`](https://github.com/vjdad4m/maths/commit/3c2414ce1f3e93bf0040a9a343f06b49fb7af4f0)). Bounds total domination by the isolated maximum-degree count plus the number of minimum-transmission vertices in a tree.
-- [Graffiti.pc #177: proved](graffiti-177/Proof177.lean) ([commit `b36e9ef`](https://github.com/vjdad4m/maths/commit/b36e9ef43ed80bd57b160d858e56a20648f20511)). Proves the full second-smallest-degree bound, beyond the [earlier +1 bound](https://www.combinatorics.org/ojs/index.php/eljc/article/download/v15i1r33/pdf). The catalogue marks #177 open, pending review; no priority claim is made.
+| Problem | Resolution status | References |
+|---|---|---|
+| Graffiti.pc #40 | Unresolved here |  |
+| Graffiti.pc #61 | Unresolved here |  |
+| Graffiti.pc #76 | Disproved | [Lean](graffiti-76/Verify76Exact.lean) · [Write-up](graffiti-76/README.md) |
+| Graffiti.pc #108 | Disproved | [Lean](graffiti-108/Counterexample108.lean) · [Write-up](graffiti-108/README.md) |
+| Graffiti.pc #133 | Unresolved here |  |
+| Graffiti.pc #138 | Disproved | [Lean](graffiti-138/Verify138.lean) |
+| Graffiti.pc #157 | Proved | [Lean](graffiti-157/Formal157.lean) · [Write-up](graffiti-157/README.md) |
+| Graffiti.pc #161 | Proved | [Lean](graffiti-161/Proof161.lean) · [Write-up](graffiti-161/README.md) |
+| Graffiti.pc #177 | Proved | [Lean](graffiti-177/Proof177.lean) |
+| Graffiti.pc #189 | Unresolved here |  |
+| Graffiti.pc #199 | Unresolved here |  |
+| Graffiti.pc #232 | Proved | [Lean](graffiti-232/Formal232.lean) · [Write-up](graffiti-232/README.md) |
+| Graffiti.pc #235 | Proved | [Lean](graffiti-235/Exact235.lean) · [Write-up](graffiti-235/README.md) |
+| Graffiti.pc #241 | Proved | [Lean](graffiti-241/Proof241.lean) · [Prior stronger bound: Gebendorfer](https://www.researchgate.net/publication/410896645_Closed-Neighborhood_Components_Open_Packings_and_Total_Domination_in_Trees) |
+| Graffiti.pc #255 | Disproved | [Lean](graffiti-255/Counterexample255.lean) · [Write-up](graffiti-255/README.md) · [Parallel: Derek Blair](https://github.com/derekblair/math-proofs/blob/98bc251740a3194ff742206feadc1e90fe4d1c6c/research/lean-verified-2026-11-25/README.md) |
+| Graffiti.pc #258 | Proved | [Lean](graffiti-258-259/Formal258.lean) · [Write-up](graffiti-258-259/README.md) |
+| Graffiti.pc #259 | Proved | [Lean](graffiti-258-259/Formal259.lean) · [Write-up](graffiti-258-259/README.md) |
+| Graffiti.pc #260 | Proved | [Lean](graffiti-260/Formal260.lean) · [Write-up](graffiti-260/README.md) |
+| Graffiti.pc #261 | Proved | [Lean](graffiti-261/Formal261.lean) · [Write-up](graffiti-261/README.md) |
+| Graffiti.pc #268 | Proved | [Lean](graffiti-268/Proof268.lean) · [Parallel: Derek Blair](https://github.com/derekblair/math-proofs/blob/98bc251740a3194ff742206feadc1e90fe4d1c6c/research/lean-verified-2026-11-25/README.md) |
+| Graffiti.pc #271 | Proved | [Lean](graffiti-271/Proof271.lean) · [Write-up](graffiti-271/README.md) · [Parallel: Derek Blair](https://github.com/derekblair/math-proofs/blob/98bc251740a3194ff742206feadc1e90fe4d1c6c/research/lean-verified-2026-11-25/README.md) |
+| Graffiti.pc #290 | Proved | [Lean](graffiti-290/Proof290.lean) |
+| Graffiti.pc #310 | Proved | [Lean](graffiti-310/Formal310.lean) · [Write-up](graffiti-310/README.md) |
+| Graffiti.pc #361 | Proved | [Lean](graffiti-361/Verify361.lean) · [Write-up](graffiti-361/README.md) |
+| Graffiti.pc #362 | Proved | [Lean](graffiti-362/Formal362.lean) · [Write-up](graffiti-362/README.md) |
+| Graffiti.pc #376 | Proved | [Lean](graffiti-376/Proof376.lean) |
+| Graffiti.pc #377 | Proved | [Lean](graffiti-377/Proof377.lean) |
+| Graffiti.pc #379 | Proved | [Lean](graffiti-379/Exact379.lean) |
+| Graffiti.pc #381 | Proved | [Lean](graffiti-381/Formal381.lean) · [Write-up](graffiti-381/README.md) |
+| Graffiti.pc #416 | Proved | [Lean](graffiti-416/Formal416.lean) · [Write-up](graffiti-416/README.md) |
+| Graffiti.pc #426 | Proved | [Lean](graffiti-426/Formal426.lean) · [Write-up](graffiti-426/README.md) · [Prior: Siddhant Dubey](https://gist.github.com/siddhantdubey/22f22a7a23db5174ee59e32eaa8724aa) |
+| Graffiti.pc #444 | Disproved | [Lean](graffiti-444/Exact444.lean) · [Write-up](graffiti-444/README.md) · [Prior: Siddhant Dubey](https://gist.github.com/siddhantdubey/22f22a7a23db5174ee59e32eaa8724aa) |
+| Graffiti.pc #446 | Proved | [Lean](graffiti-446/Verify446.lean) · [Write-up](graffiti-446/README.md) · [Prior: Siddhant Dubey](https://gist.github.com/siddhantdubey/22f22a7a23db5174ee59e32eaa8724aa) |
+| Graffiti.pc #448a | Proved | [Lean](graffiti-448a/Formal448a.lean) · [Write-up](graffiti-448a/README.md) · [Prior: Siddhant Dubey](https://gist.github.com/siddhantdubey/22f22a7a23db5174ee59e32eaa8724aa) |
+| Graffiti.pc #449 | Proved | [Lean](graffiti-449/Formal449.lean) · [Write-up](graffiti-449/README.md) · [Prior: Siddhant Dubey](https://gist.github.com/siddhantdubey/22f22a7a23db5174ee59e32eaa8724aa) |
+| Graffiti.pc #450 | Proved | [Lean](graffiti-450/Formal450.lean) · [Write-up](graffiti-450/README.md) · [Prior: Siddhant Dubey](https://gist.github.com/siddhantdubey/22f22a7a23db5174ee59e32eaa8724aa) |
+| Graffiti³ #14 | Proved | [Lean](graffiti3-14/Totient14.lean) · [Write-up](graffiti3-14/README.md) |
+| Graffiti³ #15(a) | Disproved | [Lean](graffiti3-15a/Proof15a.lean) |
+| Graffiti³ #21 | Disproved | [Lean](graffiti3-21/Proof21.lean) |
+| Graffiti³ #22 | Disproved | [Lean](graffiti3-22/Proof22.lean) |
+| Graffiti³ #25 | Proved | [Lean](graffiti3-25/Proof25.lean) |
+| Graffiti³ #27 | Disproved | [Lean](graffiti3-27/Dihedral27.lean) · [Write-up](graffiti3-27/README.md) |
+| AutoGraphForge line 66 | Disproved | [Lean](autographforge-66/PowerBurning.lean) |

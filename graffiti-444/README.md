@@ -15,7 +15,7 @@ Also add isolated-from-each-other outside vertices with core neighborhoods 123, 
 
 For an outside vertex with q core neighbors and partner sharing r of them, its incident K4 count is choose(q,3)+choose(r,2); for an unpaired vertex the second term is zero. These give seven different counts: 0,1,2,4,5,7,10. For a core vertex, its count is 1 (the core clique) plus, for each outside vertex joined to it, the number of pairs among that outside vertex's other core neighbors, plus, for each matched outside pair joined to it, the number of their other common core neighbors. This gives counts 47,44,39,31, respectively, on the core vertices. Thus d=11, and the asserted upper bound is 38−5=33, below 34.
 
-The Python checker counts actual cliques and checks the witness. Lean 4.19.0 compiles the same concrete graph and verifies the witness and counts with `native_decide` (compiled evaluation, not pure kernel reduction). The written clique count is independent. I found no earlier resolution in the sources searched, which is not a priority claim.
+The Python checker counts actual cliques and checks the witness. Lean 4.19.0 compiles the same concrete graph and verifies the witness and counts with `native_decide` (compiled evaluation, not pure kernel reduction). The written clique count is independent. An [earlier July 2026 public worklog](https://gist.github.com/siddhantdubey/22f22a7a23db5174ee59e32eaa8724aa) refutes the same conjecture with a different, 13-vertex witness. The 38-vertex example and Lean certificate here are independent verification, not a new resolution.
 
 ## Reproduction
 

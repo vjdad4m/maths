@@ -13,6 +13,7 @@
 | Graffiti.pc #177 | Proved | [Lean](graffiti-177/Proof177.lean) |
 | Graffiti.pc #189 | Unresolved here |  |
 | Graffiti.pc #199 | Unresolved here |  |
+| Graffiti.pc #208 | Proved | [Lean](graffiti-208/Proof208.lean) |
 | Graffiti.pc #232 | Proved | [Lean](graffiti-232/Formal232.lean) · [Write-up](graffiti-232/README.md) |
 | Graffiti.pc #235 | Proved | [Lean](graffiti-235/Exact235.lean) · [Write-up](graffiti-235/README.md) |
 | Graffiti.pc #241 | Proved | [Lean](graffiti-241/Proof241.lean) · [Prior stronger bound: Gebendorfer](https://www.researchgate.net/publication/410896645_Closed-Neighborhood_Components_Open_Packings_and_Total_Domination_in_Trees) |

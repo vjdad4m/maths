@@ -37,6 +37,7 @@
 | Graffiti.pc #381 | Proved | [Lean](graffiti-381/Formal381.lean) · [Write-up](graffiti-381/README.md) |
 | Graffiti.pc #416 | Proved | [Lean](graffiti-416/Formal416.lean) · [Write-up](graffiti-416/README.md) |
 | Graffiti.pc #426 | Proved | [Lean](graffiti-426/Formal426.lean) · [Write-up](graffiti-426/README.md) · [Prior: Siddhant Dubey](https://gist.github.com/siddhantdubey/22f22a7a23db5174ee59e32eaa8724aa) |
+| Graffiti.pc #433 | Disproved | [Lean](graffiti-433/Proof433.lean) |
 | Graffiti.pc #444 | Disproved | [Lean](graffiti-444/Exact444.lean) · [Write-up](graffiti-444/README.md) · [Prior: Siddhant Dubey](https://gist.github.com/siddhantdubey/22f22a7a23db5174ee59e32eaa8724aa) |
 | Graffiti.pc #446 | Proved | [Lean](graffiti-446/Verify446.lean) · [Write-up](graffiti-446/README.md) · [Prior: Siddhant Dubey](https://gist.github.com/siddhantdubey/22f22a7a23db5174ee59e32eaa8724aa) |
 | Graffiti.pc #448a | Proved | [Lean](graffiti-448a/Formal448a.lean) · [Write-up](graffiti-448a/README.md) · [Prior: Siddhant Dubey](https://gist.github.com/siddhantdubey/22f22a7a23db5174ee59e32eaa8724aa) |

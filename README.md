@@ -27,6 +27,7 @@
 | Graffiti.pc #271 | Proved | [Lean](graffiti-271/Proof271.lean) · [Write-up](graffiti-271/README.md) · [Parallel: Derek Blair](https://github.com/derekblair/math-proofs/blob/98bc251740a3194ff742206feadc1e90fe4d1c6c/research/lean-verified-2026-11-25/README.md) |
 | Graffiti.pc #290 | Proved | [Lean](graffiti-290/Proof290.lean) |
 | Graffiti.pc #310 | Proved | [Lean](graffiti-310/Formal310.lean) · [Write-up](graffiti-310/README.md) |
+| Graffiti.pc #351 | Disproved | [Lean](graffiti-351/Counterexample351.lean) |
 | Graffiti.pc #356 | Proved | [Lean](graffiti-356/Proof356.lean) |
 | Graffiti.pc #361 | Proved | [Lean](graffiti-361/Verify361.lean) · [Write-up](graffiti-361/README.md) |
 | Graffiti.pc #362 | Proved | [Lean](graffiti-362/Formal362.lean) · [Write-up](graffiti-362/README.md) |

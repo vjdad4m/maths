@@ -119,5 +119,6 @@
 | AutoGraphForge line 1839 | Disproved | [Lean](autographforge-365/AutoGraphForgeDiamonds.lean) |
 | AutoGraphForge line 1883 | Disproved (singleton rainbow convention) | [Lean](autographforge-1883/AutoGraphForge1883.lean) |
 | AutoGraphForge line 1908 | Disproved | [Lean](autographforge-303/AutoGraphForgePlanar.lean) |
+| AutoGraphForge line 2054 | Disproved | [Lean](autographforge-friendship/Friendship.lean) |
 | AutoGraphForge line 2088 | Disproved (singleton rainbow convention) | [Lean](autographforge-1883/AutoGraphForge1883.lean) |
 | AutoGraphForge line 2427 | Disproved (singleton rainbow convention) | [Lean](autographforge-1883/AutoGraphForge1883.lean) |

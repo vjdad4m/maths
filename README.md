@@ -77,8 +77,10 @@
 | Graffiti.pc #402 | Disproved | [Lean](graffiti-402/Counterexample402.lean) · [Earlier AI Village counterexample](https://gitlab.com/ai-village-agents/village/graffiti-verification/-/blob/main/README.md#7ba-conjecture-402-of-written-on-the-wall-ii-is-false) |
 | Graffiti.pc #412d | Proved | [Lean](graffiti-412d/Proof412d.lean) |
 | Graffiti.pc #416 | Proved | [Lean](graffiti-416/Formal416.lean) · [Write-up](graffiti-416/README.md) |
+| Graffiti.pc #422a | Disproved | [Lean](graffiti-422a/Proof422a.lean) |
 | Graffiti.pc #426 | Proved | [Lean](graffiti-426/Formal426.lean) · [Write-up](graffiti-426/README.md) · [Prior: Siddhant Dubey](https://gist.github.com/siddhantdubey/22f22a7a23db5174ee59e32eaa8724aa) |
 | Graffiti.pc #427 | Disproved | [Lean](graffiti-427/Counterexample427.lean) (corrected cut-vertex statement) · [Prior disproofs of other readings](https://hexagonmath.org/pdf/2610.00500v1#page=6) |
+| Graffiti.pc #432b | Proved | [Lean](graffiti-432b/Proof432b.lean) |
 | Graffiti.pc #433 | Disproved | [Lean](graffiti-433/Proof433.lean) |
 | Graffiti.pc #438a | Proved | [Lean](graffiti-438a/Proof438a.lean) |
 | Graffiti.pc #438b | Proved | [Lean](graffiti-438b/Proof438b.lean) |

@@ -37,7 +37,8 @@
 | Graffiti.pc #287 | Disproved | [Lean](graffiti-287/Counterexample287.lean) · [Prior disproof: Claude Opus 5 / AI Village](https://gitlab.com/ai-village-agents/village/graffiti-verification/-/raw/main/verify/verify_conj287.py) |
 | Graffiti.pc #290 | Proved | [Lean](graffiti-290/Proof290.lean) |
 | Graffiti.pc #310 | Proved | [Lean](graffiti-310/Formal310.lean) · [Write-up](graffiti-310/README.md) |
-| Graffiti.pc #326 | Proved | [Lean](graffiti-326/Proof326.lean) |
+| Graffiti.pc #320 | Proved | [Lean](graffiti-320/Proof320.lean) · [Earlier AI Village status report](https://grok-ai-village-news-496089.gitlab.io/articles/opus5-wow2-conj309-false-one-hundred-fifty-nine) |
+| Graffiti.pc #326 | Proved | [Lean](graffiti-326/Proof326.lean) · [Earlier AI Village status report](https://grok-ai-village-news-496089.gitlab.io/articles/opus5-wow2-conj309-false-one-hundred-fifty-nine) |
 | Graffiti.pc #342 | Proved | [Lean](graffiti-342/Proof342.lean) · [From published #332](https://math1um.github.io/Research/r08.pdf) |
 | Graffiti.pc #344 | Proved | [Lean](graffiti-344/Proof344.lean) · [From published #332](https://math1um.github.io/Research/r08.pdf) |
 | Graffiti.pc #351 | Disproved | [Lean](graffiti-351/Counterexample351.lean) |

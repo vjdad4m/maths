@@ -129,6 +129,7 @@
 | AutoGraphForge line 2452 | Disproved | [Lean](autographforge-multipartite/Multipartite.lean) |
 | AutoGraphForge line 2453 | Disproved | [Lean](autographforge-multipartite/Multipartite.lean) |
 | AutoGraphForge line 2474 | Disproved | [Lean](autographforge-multipartite/Multipartite.lean) |
+| AutoGraphForge line 2482 | Disproved | [Lean](autographforge-multipartite/Multipartite.lean) |
 | AutoGraphForge line 2537 | Disproved | [Lean](autographforge-friendship/Friendship.lean) |
 | AutoGraphForge line 2590 | Disproved | [Lean](autographforge-friendship/Friendship.lean) |
 | AutoGraphForge line 2595 | Disproved (singleton rainbow convention) | [Lean](autographforge-friendship/Friendship.lean) |

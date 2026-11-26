@@ -107,3 +107,4 @@
 | AutoGraphForge line 377 | Proved | [Lean](autographforge-377/AutoGraphForge377.lean) |
 | AutoGraphForge line 378 | Proved | [Lean](autographforge-378/AutoGraphForge378.lean) |
 | AutoGraphForge line 379 | Proved | [Lean](autographforge-379/AutoGraphForge379.lean) |
+| AutoGraphForge line 1839 | Disproved | [Lean](autographforge-365/AutoGraphForgeDiamonds.lean) |

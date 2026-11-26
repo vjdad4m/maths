@@ -34,6 +34,7 @@
 | Graffiti.pc #271 | Proved | [Lean](graffiti-271/Proof271.lean) · [Write-up](graffiti-271/README.md) · [Parallel: Derek Blair](https://github.com/derekblair/math-proofs/blob/98bc251740a3194ff742206feadc1e90fe4d1c6c/research/lean-verified-2026-11-25/README.md) |
 | Graffiti.pc #290 | Proved | [Lean](graffiti-290/Proof290.lean) |
 | Graffiti.pc #310 | Proved | [Lean](graffiti-310/Formal310.lean) · [Write-up](graffiti-310/README.md) |
+| Graffiti.pc #326 | Proved | [Lean](graffiti-326/Proof326.lean) |
 | Graffiti.pc #342 | Proved | [Lean](graffiti-342/Proof342.lean) · [From published #332](https://math1um.github.io/Research/r08.pdf) |
 | Graffiti.pc #344 | Proved | [Lean](graffiti-344/Proof344.lean) · [From published #332](https://math1um.github.io/Research/r08.pdf) |
 | Graffiti.pc #351 | Disproved | [Lean](graffiti-351/Counterexample351.lean) |

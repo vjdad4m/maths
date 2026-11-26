@@ -103,6 +103,7 @@
 | AutoGraphForge line 355 | Proved | [Lean](autographforge-355/AutoGraphForge355.lean) |
 | AutoGraphForge line 359 | Proved | [Lean](autographforge-359/AutoGraphForge359.lean) |
 | AutoGraphForge line 365 | Disproved | [Lean](autographforge-365/AutoGraphForgeDiamonds.lean) |
+| AutoGraphForge line 376 | Disproved | [Lean](autographforge-365/AutoGraphForgeDiamonds.lean) |
 | AutoGraphForge line 377 | Proved | [Lean](autographforge-377/AutoGraphForge377.lean) |
 | AutoGraphForge line 378 | Proved | [Lean](autographforge-378/AutoGraphForge378.lean) |
 | AutoGraphForge line 379 | Proved | [Lean](autographforge-379/AutoGraphForge379.lean) |

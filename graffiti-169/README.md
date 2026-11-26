@@ -16,6 +16,8 @@ checks the degree-one convention at order one.
 
 ## Proof
 
+An [earlier written proof, dated November 24, 2026](https://github.com/f8bsd9yqgp-maker/Solved-conjectures-/blob/03b6cd13bac0975fb554633e47a30c64cbf6a1bf/proofs/graffiti-pc-169/README.md), uses the same parity degree-sum argument with a breadth-first spanning tree. This repository gives an independent Lean formalization. No discovery priority is claimed.
+
 Fix a root (r), and keep the edges whose endpoints have different
 distance parities from (r). This gives a connected spanning subgraph:
 every nonroot vertex can follow a shortest path to a neighbor one

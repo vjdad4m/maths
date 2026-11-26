@@ -8,6 +8,7 @@
 | Graffiti.pc #108 | Disproved | [Lean](graffiti-108/Counterexample108.lean) · [Write-up](graffiti-108/README.md) |
 | Graffiti.pc #111 | Proved | [Lean](graffiti-111/Proof111.lean) |
 | Graffiti.pc #133 | Unresolved here |  |
+| Graffiti.pc #137 | Proved (order ≥ 2); disproved (singleton) | [Lean](graffiti-137/Proof137.lean) |
 | Graffiti.pc #138 | Disproved | [Lean](graffiti-138/Verify138.lean) |
 | Graffiti.pc #154 | Disproved | [Lean](graffiti-154/Counterexample154.lean) |
 | Graffiti.pc #157 | Proved | [Lean](graffiti-157/Formal157.lean) · [Write-up](graffiti-157/README.md) |
@@ -71,6 +72,7 @@
 | Graffiti.pc #380 | Proved where defined; undefined on some trees | [Lean](graffiti-380/Proof380.lean) |
 | Graffiti.pc #381 | Proved | [Lean](graffiti-381/Formal381.lean) · [Write-up](graffiti-381/README.md) |
 | Graffiti.pc #394 | Disproved | [Lean](graffiti-394/Counterexample394.lean) |
+| Graffiti.pc #397c | Proved | [Lean](graffiti-397c/Proof397c.lean) |
 | Graffiti.pc #398 | Disproved | [Lean](graffiti-398/Counterexample398.lean) · [Dubey’s earlier counterexample](https://gist.github.com/siddhantdubey/22f22a7a23db5174ee59e32eaa8724aa#wowii-398) |
 | Graffiti.pc #402 | Disproved | [Lean](graffiti-402/Counterexample402.lean) · [Earlier AI Village counterexample](https://gitlab.com/ai-village-agents/village/graffiti-verification/-/blob/main/README.md#7ba-conjecture-402-of-written-on-the-wall-ii-is-false) |
 | Graffiti.pc #412d | Proved | [Lean](graffiti-412d/Proof412d.lean) |

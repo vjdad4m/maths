@@ -8,7 +8,7 @@
 | Graffiti.pc #108 | Disproved | [Lean](graffiti-108/Counterexample108.lean) · [Write-up](graffiti-108/README.md) |
 | Graffiti.pc #111 | Proved | [Lean](graffiti-111/Proof111.lean) |
 | Graffiti.pc #133 | Unresolved here |  |
-| Graffiti.pc #137 | Proved (order ≥ 2); disproved (singleton) | [Lean](graffiti-137/Proof137.lean) |
+| Graffiti.pc #137 | Proved (order ≥ 2); disproved (singleton) | [Lean](graffiti-137/Proof137.lean) · [Earlier nontrivial-case argument](https://gitlab.com/ai-village-agents/village/graffiti-verification/-/blob/main/README.md#finding-3--conjecture-137-is-a-theorem-in-four-lines) |
 | Graffiti.pc #138 | Disproved | [Lean](graffiti-138/Verify138.lean) |
 | Graffiti.pc #154 | Disproved | [Lean](graffiti-154/Counterexample154.lean) |
 | Graffiti.pc #157 | Proved | [Lean](graffiti-157/Formal157.lean) · [Write-up](graffiti-157/README.md) |
@@ -72,12 +72,12 @@
 | Graffiti.pc #380 | Proved where defined; undefined on some trees | [Lean](graffiti-380/Proof380.lean) |
 | Graffiti.pc #381 | Proved | [Lean](graffiti-381/Formal381.lean) · [Write-up](graffiti-381/README.md) |
 | Graffiti.pc #394 | Disproved | [Lean](graffiti-394/Counterexample394.lean) |
-| Graffiti.pc #397c | Proved | [Lean](graffiti-397c/Proof397c.lean) |
+| Graffiti.pc #397c | Proved | [Lean](graffiti-397c/Proof397c.lean) · [Gebendorfer’s earlier proof](https://doi.org/10.13140/RG.2.2.34978.18880) |
 | Graffiti.pc #398 | Disproved | [Lean](graffiti-398/Counterexample398.lean) · [Dubey’s earlier counterexample](https://gist.github.com/siddhantdubey/22f22a7a23db5174ee59e32eaa8724aa#wowii-398) |
 | Graffiti.pc #402 | Disproved | [Lean](graffiti-402/Counterexample402.lean) · [Earlier AI Village counterexample](https://gitlab.com/ai-village-agents/village/graffiti-verification/-/blob/main/README.md#7ba-conjecture-402-of-written-on-the-wall-ii-is-false) |
 | Graffiti.pc #412d | Proved | [Lean](graffiti-412d/Proof412d.lean) |
 | Graffiti.pc #416 | Proved | [Lean](graffiti-416/Formal416.lean) · [Write-up](graffiti-416/README.md) |
-| Graffiti.pc #422a | Disproved | [Lean](graffiti-422a/Proof422a.lean) |
+| Graffiti.pc #422a | Disproved | [Lean](graffiti-422a/Proof422a.lean) · [AI Village’s earlier counterexample](https://gitlab.com/ai-village-agents/village/graffiti-verification/-/blob/main/verify/verify_conj422a.py) |
 | Graffiti.pc #426 | Proved | [Lean](graffiti-426/Formal426.lean) · [Write-up](graffiti-426/README.md) · [Prior: Siddhant Dubey](https://gist.github.com/siddhantdubey/22f22a7a23db5174ee59e32eaa8724aa) |
 | Graffiti.pc #427 | Disproved | [Lean](graffiti-427/Counterexample427.lean) (corrected cut-vertex statement) · [Prior disproofs of other readings](https://hexagonmath.org/pdf/2610.00500v1#page=6) |
 | Graffiti.pc #432b | Proved | [Lean](graffiti-432b/Proof432b.lean) |

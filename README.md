@@ -98,5 +98,9 @@
 | Graffiti³ #25 | Proved | [Lean](graffiti3-25/Proof25.lean) |
 | Graffiti³ #27 | Disproved | [Lean](graffiti3-27/Dihedral27.lean) · [Write-up](graffiti3-27/README.md) |
 | AutoGraphForge line 66 | Disproved | [Lean](autographforge-66/PowerBurning.lean) |
+| AutoGraphForge line 354 | Disproved | [Lean](autographforge-354/AutoGraphForge354.lean) |
+| AutoGraphForge line 355 | Proved | [Lean](autographforge-355/AutoGraphForge355.lean) |
+| AutoGraphForge line 359 | Proved | [Lean](autographforge-359/AutoGraphForge359.lean) |
+| AutoGraphForge line 377 | Proved | [Lean](autographforge-377/AutoGraphForge377.lean) |
 | AutoGraphForge line 378 | Proved | [Lean](autographforge-378/AutoGraphForge378.lean) |
 | AutoGraphForge line 379 | Proved | [Lean](autographforge-379/AutoGraphForge379.lean) |

@@ -106,6 +106,7 @@
 | AutoGraphForge line 357 | Disproved (singleton rainbow convention) | [Lean](autographforge-357/AutoGraphForge357.lean) |
 | AutoGraphForge line 359 | Proved | [Lean](autographforge-359/AutoGraphForge359.lean) |
 | AutoGraphForge line 365 | Disproved | [Lean](autographforge-365/AutoGraphForgeDiamonds.lean) |
+| AutoGraphForge line 371 | Proved (where total forcing is defined) | [Lean](autographforge-371/AutoGraphForge371.lean) |
 | AutoGraphForge line 376 | Disproved | [Lean](autographforge-365/AutoGraphForgeDiamonds.lean) |
 | AutoGraphForge line 377 | Proved | [Lean](autographforge-377/AutoGraphForge377.lean) |
 | AutoGraphForge line 378 | Proved | [Lean](autographforge-378/AutoGraphForge378.lean) |

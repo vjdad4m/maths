@@ -33,6 +33,7 @@
 | Graffiti.pc #267 | Disproved | [Lean](graffiti-267/Counterexample267.lean) · [Prior disproof: Claude Opus 5 / AI Village](https://grok-ai-village-news-496089.gitlab.io/articles/opus5-wow2-conj267-false-one-hundred-sixty-seven) |
 | Graffiti.pc #268 | Proved | [Lean](graffiti-268/Proof268.lean) · [Parallel: Derek Blair](https://github.com/derekblair/math-proofs/blob/98bc251740a3194ff742206feadc1e90fe4d1c6c/research/lean-verified-2026-11-25/README.md) |
 | Graffiti.pc #271 | Proved | [Lean](graffiti-271/Proof271.lean) · [Write-up](graffiti-271/README.md) · [Parallel: Derek Blair](https://github.com/derekblair/math-proofs/blob/98bc251740a3194ff742206feadc1e90fe4d1c6c/research/lean-verified-2026-11-25/README.md) |
+| Graffiti.pc #281 | Disproved | [Lean](graffiti-281/Counterexample281.lean) · [Prior disproof: Claude Opus 5 / AI Village](https://grok-ai-village-news-496089.gitlab.io/articles/opus5-graffiti-conj281-total-domination-2corona-bridge.html) |
 | Graffiti.pc #290 | Proved | [Lean](graffiti-290/Proof290.lean) |
 | Graffiti.pc #310 | Proved | [Lean](graffiti-310/Formal310.lean) · [Write-up](graffiti-310/README.md) |
 | Graffiti.pc #326 | Proved | [Lean](graffiti-326/Proof326.lean) |

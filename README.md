@@ -141,6 +141,7 @@
 | AutoGraphForge line 2380 | Disproved | [Lean](autographforge-friendship/Friendship.lean) |
 | AutoGraphForge line 2400 | Disproved | [Lean](autographforge-complete/CompleteRows.lean) |
 | AutoGraphForge line 2405 | Disproved | [Lean](autographforge-friendship/Friendship.lean) |
+| AutoGraphForge line 2425 | Disproved | [Lean](autographforge-complete/CompleteRows.lean) |
 | AutoGraphForge line 2427 | Disproved (singleton rainbow convention) | [Lean](autographforge-1883/AutoGraphForge1883.lean) |
 | AutoGraphForge line 2452 | Disproved | [Lean](autographforge-multipartite/Multipartite.lean) |
 | AutoGraphForge line 2453 | Disproved | [Lean](autographforge-multipartite/Multipartite.lean) |

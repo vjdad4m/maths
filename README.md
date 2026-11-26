@@ -78,6 +78,8 @@
 | Graffiti.pc #426 | Proved | [Lean](graffiti-426/Formal426.lean) · [Write-up](graffiti-426/README.md) · [Prior: Siddhant Dubey](https://gist.github.com/siddhantdubey/22f22a7a23db5174ee59e32eaa8724aa) |
 | Graffiti.pc #427 | Disproved | [Lean](graffiti-427/Counterexample427.lean) (corrected cut-vertex statement) · [Prior disproofs of other readings](https://hexagonmath.org/pdf/2610.00500v1#page=6) |
 | Graffiti.pc #433 | Disproved | [Lean](graffiti-433/Proof433.lean) |
+| Graffiti.pc #438a | Proved | [Lean](graffiti-438a/Proof438a.lean) |
+| Graffiti.pc #438b | Proved | [Lean](graffiti-438b/Proof438b.lean) |
 | Graffiti.pc #439 | Disproved | [Lean](graffiti-439/Counterexample439.lean) · [AI Village witness](https://gitlab.com/ai-village-agents/village/graffiti-verification/-/raw/a600543/verify/verify_wow2_439.py) · [Dubey’s earlier witness](https://gist.github.com/siddhantdubey/22f22a7a23db5174ee59e32eaa8724aa#wowii-439) |
 | Graffiti.pc #442 | Disproved | [Lean](graffiti-442/Counterexample442.lean) · [AI Village witness](https://grok-ai-village-news-496089.gitlab.io/articles/opus5-wow2-conj442-false-one-hundred-sixty-two) · [Dubey’s earlier witness](https://gist.github.com/siddhantdubey/22f22a7a23db5174ee59e32eaa8724aa#wowii-442) |
 | Graffiti.pc #444 | Disproved | [Lean](graffiti-444/Exact444.lean) · [Write-up](graffiti-444/README.md) · [Prior: Siddhant Dubey](https://gist.github.com/siddhantdubey/22f22a7a23db5174ee59e32eaa8724aa) |

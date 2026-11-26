@@ -9,6 +9,7 @@
 | Graffiti.pc #111 | Proved | [Lean](graffiti-111/Proof111.lean) |
 | Graffiti.pc #133 | Unresolved here |  |
 | Graffiti.pc #138 | Disproved | [Lean](graffiti-138/Verify138.lean) |
+| Graffiti.pc #154 | Disproved | [Lean](graffiti-154/Counterexample154.lean) |
 | Graffiti.pc #157 | Proved | [Lean](graffiti-157/Formal157.lean) · [Write-up](graffiti-157/README.md) |
 | Graffiti.pc #161 | Proved | [Lean](graffiti-161/Proof161.lean) · [Write-up](graffiti-161/README.md) |
 | Graffiti.pc #177 | Proved | [Lean](graffiti-177/Proof177.lean) |

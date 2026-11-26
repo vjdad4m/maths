@@ -61,6 +61,7 @@
 | Graffiti.pc #365 | Proved | [Lean](graffiti-365/Proof365.lean) |
 | Graffiti.pc #367 | Proved (unique mode); disproved (ties allowed) | [Lean](graffiti-367/Proof367.lean) |
 | Graffiti.pc #369 | Disproved | [Lean](graffiti-369/Counterexample369.lean) |
+| Graffiti.pc #372 | Proved | [Lean](graffiti-372/Proof372.lean) (defined domain: path cover ≥ 2) · [Gebendorfer’s earlier proof](https://www.researchgate.net/publication/417064608_Total_domination_and_vertex_covers_of_trees_covered_by_two_paths_A_resolution_of_Written_on_the_Wall_II_Conjecture_372_on_its_defined_domain) |
 | Graffiti.pc #376 | Proved | [Lean](graffiti-376/Proof376.lean) |
 | Graffiti.pc #377 | Proved | [Lean](graffiti-377/Proof377.lean) |
 | Graffiti.pc #379 | Proved | [Lean](graffiti-379/Exact379.lean) |

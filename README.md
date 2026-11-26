@@ -103,6 +103,7 @@
 | AutoGraphForge line 353 | Disproved | [Lean](autographforge-353/AutoGraphForge353.lean) |
 | AutoGraphForge line 354 | Disproved | [Lean](autographforge-354/AutoGraphForge354.lean) |
 | AutoGraphForge line 355 | Proved | [Lean](autographforge-355/AutoGraphForge355.lean) |
+| AutoGraphForge line 357 | Disproved (singleton rainbow convention) | [Lean](autographforge-357/AutoGraphForge357.lean) |
 | AutoGraphForge line 359 | Proved | [Lean](autographforge-359/AutoGraphForge359.lean) |
 | AutoGraphForge line 365 | Disproved | [Lean](autographforge-365/AutoGraphForgeDiamonds.lean) |
 | AutoGraphForge line 376 | Disproved | [Lean](autographforge-365/AutoGraphForgeDiamonds.lean) |

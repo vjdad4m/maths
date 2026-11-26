@@ -130,3 +130,4 @@
 | AutoGraphForge line 2590 | Disproved | [Lean](autographforge-friendship/Friendship.lean) |
 | AutoGraphForge line 2595 | Disproved (singleton rainbow convention) | [Lean](autographforge-friendship/Friendship.lean) |
 | AutoGraphForge line 2600 | Disproved | [Lean](autographforge-friendship/Friendship.lean) |
+| AutoGraphForge line 2602 | Disproved (singleton rainbow convention) | [Lean](autographforge-friendship/Friendship.lean) |

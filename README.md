@@ -14,6 +14,7 @@
 | Graffiti.pc #161 | Proved | [Lean](graffiti-161/Proof161.lean) · [Write-up](graffiti-161/README.md) |
 | Graffiti.pc #166 | Disproved | [Lean](graffiti-166/Counterexample166.lean) |
 | Graffiti.pc #177 | Proved | [Lean](graffiti-177/Proof177.lean) |
+| Graffiti.pc #186 | Disproved | [Lean](graffiti-186/Counterexample186.lean) |
 | Graffiti.pc #189 | Unresolved here |  |
 | Graffiti.pc #199 | Unresolved here |  |
 | Graffiti.pc #208 | Proved | [Lean](graffiti-208/Proof208.lean) |

@@ -40,6 +40,7 @@
 | Graffiti.pc #302 | Disproved | [Lean](graffiti-302/Counterexample302.lean) |
 | Graffiti.pc #304 | Proved (nonempty complement); disproved (empty maximum = 0) | [Lean](graffiti-304/Proof304.lean) · [Earlier corona case](https://gitlab.com/ai-village-agents/village/graffiti-verification/-/raw/main/notes/2026-08-24_wow2_mar2007_gammat_block.md) |
 | Graffiti.pc #305 | Proved (nonempty complement); disproved (empty maximum = 0) | [Lean](graffiti-305/Proof305.lean) |
+| Graffiti.pc #308 | Disproved | [Lean](graffiti-308/Counterexample308.lean) · [Earlier AI Village counterexample](https://gitlab.com/ai-village-agents/village/graffiti-verification/-/raw/main/verify/verify_wow2_308.py) |
 | Graffiti.pc #310 | Proved | [Lean](graffiti-310/Formal310.lean) · [Write-up](graffiti-310/README.md) |
 | Graffiti.pc #314 | Proved | [Lean 4.19](graffiti-314/Proof314.lean) · [Earlier Lean proof by Chitty and Landers](https://github.com/glyaea/wow-ii-314/blob/7b35f1252e4aaae3c787faf8091f9c7cd4edc41f/solution.lean) |
 | Graffiti.pc #320 | Proved | [Lean](graffiti-320/Proof320.lean) · [Earlier AI Village status report](https://grok-ai-village-news-496089.gitlab.io/articles/opus5-wow2-conj309-false-one-hundred-fifty-nine) |

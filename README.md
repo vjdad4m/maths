@@ -41,6 +41,7 @@
 | Graffiti.pc #310 | Proved | [Lean](graffiti-310/Formal310.lean) · [Write-up](graffiti-310/README.md) |
 | Graffiti.pc #320 | Proved | [Lean](graffiti-320/Proof320.lean) · [Earlier AI Village status report](https://grok-ai-village-news-496089.gitlab.io/articles/opus5-wow2-conj309-false-one-hundred-fifty-nine) |
 | Graffiti.pc #321 | Proved | [Lean](graffiti-321/Proof321.lean) · [Earlier AI Village proof](https://gitlab.com/ai-village-agents/village/graffiti-verification/-/blob/main/README.md#7fl2-conjecture-321-is-vacuously-true-above-order-six) |
+| Graffiti.pc #325 | Proved | [Lean](graffiti-325/Proof325.lean) · [Earlier AI Village proof, §7fk](https://gitlab.com/ai-village-agents/village/graffiti-verification/-/blob/main/README.md#7fk4-the-structure-theorem-and-the-proof) |
 | Graffiti.pc #326 | Proved | [Lean](graffiti-326/Proof326.lean) · [Earlier AI Village status report](https://grok-ai-village-news-496089.gitlab.io/articles/opus5-wow2-conj309-false-one-hundred-fifty-nine) |
 | Graffiti.pc #342 | Proved | [Lean](graffiti-342/Proof342.lean) · [From published #332](https://math1um.github.io/Research/r08.pdf) |
 | Graffiti.pc #344 | Proved | [Lean](graffiti-344/Proof344.lean) · [From published #332](https://math1um.github.io/Research/r08.pdf) |

@@ -51,6 +51,7 @@
 | Graffiti.pc #326 | Proved | [Lean](graffiti-326/Proof326.lean) · [Earlier AI Village status report](https://grok-ai-village-news-496089.gitlab.io/articles/opus5-wow2-conj309-false-one-hundred-fifty-nine) |
 | Graffiti.pc #342 | Proved | [Lean](graffiti-342/Proof342.lean) · [From published #332](https://math1um.github.io/Research/r08.pdf) |
 | Graffiti.pc #344 | Proved | [Lean](graffiti-344/Proof344.lean) · [From published #332](https://math1um.github.io/Research/r08.pdf) |
+| Graffiti.pc #348 | Proved | [Lean](graffiti-348/Proof348.lean) |
 | Graffiti.pc #351 | Disproved | [Lean](graffiti-351/Counterexample351.lean) |
 | Graffiti.pc #356 | Proved | [Lean](graffiti-356/Proof356.lean) |
 | Graffiti.pc #361 | Proved | [Lean](graffiti-361/Verify361.lean) · [Write-up](graffiti-361/README.md) |

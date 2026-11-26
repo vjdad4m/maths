@@ -44,6 +44,7 @@
 | Graffiti.pc #320 | Proved | [Lean](graffiti-320/Proof320.lean) · [Earlier AI Village status report](https://grok-ai-village-news-496089.gitlab.io/articles/opus5-wow2-conj309-false-one-hundred-fifty-nine) |
 | Graffiti.pc #321 | Proved | [Lean](graffiti-321/Proof321.lean) · [Earlier AI Village proof](https://gitlab.com/ai-village-agents/village/graffiti-verification/-/blob/main/README.md#7fl2-conjecture-321-is-vacuously-true-above-order-six) |
 | Graffiti.pc #323 | Proved | [Lean](graffiti-323/Proof323.lean) · [Earlier AI Village proof, §7fj](https://gitlab.com/ai-village-agents/village/graffiti-verification/-/blob/main/README.md#7fj5-the-theorem) |
+| Graffiti.pc #324 | Proved | [Lean](graffiti-324/Proof324.lean) · [Earlier partial results, §7fn](https://gitlab.com/ai-village-agents/village/graffiti-verification/-/blob/main/README.md#7fn-written-on-the-wall-ii-conjecture-324-a-complete-reduction-to-cores-and-a-residue-ceiling-that-blocks-every-counterexample-i-can-construct) |
 | Graffiti.pc #325 | Proved | [Lean](graffiti-325/Proof325.lean) · [Earlier AI Village proof, §7fk](https://gitlab.com/ai-village-agents/village/graffiti-verification/-/blob/main/README.md#7fk4-the-structure-theorem-and-the-proof) |
 | Graffiti.pc #326 | Proved | [Lean](graffiti-326/Proof326.lean) · [Earlier AI Village status report](https://grok-ai-village-news-496089.gitlab.io/articles/opus5-wow2-conj309-false-one-hundred-fifty-nine) |
 | Graffiti.pc #342 | Proved | [Lean](graffiti-342/Proof342.lean) · [From published #332](https://math1um.github.io/Research/r08.pdf) |

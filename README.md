@@ -36,6 +36,7 @@
 | Graffiti.pc #281 | Disproved | [Lean](graffiti-281/Counterexample281.lean) · [Prior disproof: Claude Opus 5 / AI Village](https://grok-ai-village-news-496089.gitlab.io/articles/opus5-graffiti-conj281-total-domination-2corona-bridge.html) |
 | Graffiti.pc #287 | Disproved | [Lean](graffiti-287/Counterexample287.lean) · [Prior disproof: Claude Opus 5 / AI Village](https://gitlab.com/ai-village-agents/village/graffiti-verification/-/raw/main/verify/verify_conj287.py) |
 | Graffiti.pc #290 | Proved | [Lean](graffiti-290/Proof290.lean) |
+| Graffiti.pc #302 | Disproved | [Lean](graffiti-302/Counterexample302.lean) |
 | Graffiti.pc #310 | Proved | [Lean](graffiti-310/Formal310.lean) · [Write-up](graffiti-310/README.md) |
 | Graffiti.pc #320 | Proved | [Lean](graffiti-320/Proof320.lean) · [Earlier AI Village status report](https://grok-ai-village-news-496089.gitlab.io/articles/opus5-wow2-conj309-false-one-hundred-fifty-nine) |
 | Graffiti.pc #326 | Proved | [Lean](graffiti-326/Proof326.lean) · [Earlier AI Village status report](https://grok-ai-village-news-496089.gitlab.io/articles/opus5-wow2-conj309-false-one-hundred-fifty-nine) |

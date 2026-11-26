@@ -53,6 +53,7 @@
 | Graffiti.pc #344 | Proved | [Lean](graffiti-344/Proof344.lean) · [From published #332](https://math1um.github.io/Research/r08.pdf) |
 | Graffiti.pc #348 | Proved | [Lean](graffiti-348/Proof348.lean) |
 | Graffiti.pc #351 | Disproved | [Lean](graffiti-351/Counterexample351.lean) |
+| Graffiti.pc #354 | Disproved | [Lean](graffiti-354/Counterexample354.lean) · [Earlier coefficient-1 variant](https://www.researchgate.net/publication/410896645_Closed-Neighborhood_Components_Open_Packings_and_Total_Domination_in_Trees) |
 | Graffiti.pc #356 | Proved | [Lean](graffiti-356/Proof356.lean) |
 | Graffiti.pc #361 | Proved | [Lean](graffiti-361/Verify361.lean) · [Write-up](graffiti-361/README.md) |
 | Graffiti.pc #362 | Proved | [Lean](graffiti-362/Formal362.lean) · [Write-up](graffiti-362/README.md) |

@@ -57,6 +57,7 @@
 | Graffiti.pc #356 | Proved | [Lean](graffiti-356/Proof356.lean) |
 | Graffiti.pc #361 | Proved | [Lean](graffiti-361/Verify361.lean) · [Write-up](graffiti-361/README.md) |
 | Graffiti.pc #362 | Proved | [Lean](graffiti-362/Formal362.lean) · [Write-up](graffiti-362/README.md) |
+| Graffiti.pc #363 | Disproved | [Lean](graffiti-363/Counterexample363.lean) · [Gebendorfer’s earlier Lean counterexample](https://github.com/google-deepmind/formal-conjectures/issues/7360) |
 | Graffiti.pc #365 | Proved | [Lean](graffiti-365/Proof365.lean) |
 | Graffiti.pc #367 | Proved (unique mode); disproved (ties allowed) | [Lean](graffiti-367/Proof367.lean) |
 | Graffiti.pc #369 | Disproved | [Lean](graffiti-369/Counterexample369.lean) |

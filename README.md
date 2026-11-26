@@ -112,5 +112,6 @@
 | AutoGraphForge line 377 | Proved | [Lean](autographforge-377/AutoGraphForge377.lean) |
 | AutoGraphForge line 378 | Proved | [Lean](autographforge-378/AutoGraphForge378.lean) |
 | AutoGraphForge line 379 | Proved | [Lean](autographforge-379/AutoGraphForge379.lean) |
+| AutoGraphForge line 808 | Proved (where total forcing is defined) | [Lean](autographforge-371/AutoGraphForge371.lean) |
 | AutoGraphForge line 1839 | Disproved | [Lean](autographforge-365/AutoGraphForgeDiamonds.lean) |
 | AutoGraphForge line 1908 | Disproved | [Lean](autographforge-303/AutoGraphForgePlanar.lean) |

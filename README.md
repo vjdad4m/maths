@@ -154,5 +154,6 @@
 | AutoGraphForge line 2579 | Disproved | [Lean](autographforge-complete/CompleteRows.lean) |
 | AutoGraphForge line 2590 | Disproved | [Lean](autographforge-friendship/Friendship.lean) |
 | AutoGraphForge line 2595 | Disproved (singleton rainbow convention) | [Lean](autographforge-friendship/Friendship.lean) |
+| AutoGraphForge line 2596 | Disproved | [Lean](autographforge-complete/CompleteRows.lean) |
 | AutoGraphForge line 2600 | Disproved | [Lean](autographforge-friendship/Friendship.lean) |
 | AutoGraphForge line 2602 | Disproved (singleton rainbow convention) | [Lean](autographforge-friendship/Friendship.lean) |

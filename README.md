@@ -126,6 +126,7 @@
 | AutoGraphForge line 1974 | Disproved | [Lean](autographforge-complete/CompleteRows.lean) |
 | AutoGraphForge line 2054 | Disproved | [Lean](autographforge-friendship/Friendship.lean) |
 | AutoGraphForge line 2088 | Disproved (singleton rainbow convention) | [Lean](autographforge-1883/AutoGraphForge1883.lean) |
+| AutoGraphForge line 2175 | Disproved | [Lean](autographforge-star/StarCone.lean) |
 | AutoGraphForge line 2222 | Disproved | [Lean](autographforge-balanced-forcing/BalancedForcing.lean) |
 | AutoGraphForge line 2240 | Disproved | [Lean](autographforge-balanced-forcing/BalancedForcing.lean) |
 | AutoGraphForge line 2255 | Disproved | [Lean](autographforge-balanced-forcing/BalancedForcing.lean) |

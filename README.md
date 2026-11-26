@@ -98,3 +98,4 @@
 | Graffiti³ #25 | Proved | [Lean](graffiti3-25/Proof25.lean) |
 | Graffiti³ #27 | Disproved | [Lean](graffiti3-27/Dihedral27.lean) · [Write-up](graffiti3-27/README.md) |
 | AutoGraphForge line 66 | Disproved | [Lean](autographforge-66/PowerBurning.lean) |
+| AutoGraphForge line 378 | Proved | [Lean](autographforge-378/AutoGraphForge378.lean) |

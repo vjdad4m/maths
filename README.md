@@ -21,6 +21,7 @@
 | Graffiti.pc #232 | Proved | [Lean](graffiti-232/Formal232.lean) · [Write-up](graffiti-232/README.md) |
 | Graffiti.pc #235 | Proved | [Lean](graffiti-235/Exact235.lean) · [Write-up](graffiti-235/README.md) |
 | Graffiti.pc #241 | Proved | [Lean](graffiti-241/Proof241.lean) · [Prior stronger bound: Gebendorfer](https://www.researchgate.net/publication/410896645_Closed-Neighborhood_Components_Open_Packings_and_Total_Domination_in_Trees) |
+| Graffiti.pc #242 | Proved | [Lean](graffiti-242/Proof242.lean) |
 | Graffiti.pc #247 | Disproved | [Lean](graffiti-247/Proof247.lean) |
 | Graffiti.pc #252 | Disproved | [Lean](graffiti-252/Counterexample252.lean) · [Prior: Jonas Gebendorfer](https://www.researchgate.net/publication/414086193_A_30-vertex_C_4_-free_counterexample_to_WOWII_Conjecture_252) |
 | Graffiti.pc #253 | Disproved | [Lean](graffiti-253/Counterexample253.lean) · [Prior: Jonas Gebendorfer](https://www.researchgate.net/publication/415561278_A_girth-five_counterexample_to_Written_on_the_Wall_II_Conjecture_253) |

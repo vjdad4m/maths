@@ -72,6 +72,7 @@
 | Graffiti.pc #412d | Proved | [Lean](graffiti-412d/Proof412d.lean) |
 | Graffiti.pc #416 | Proved | [Lean](graffiti-416/Formal416.lean) · [Write-up](graffiti-416/README.md) |
 | Graffiti.pc #426 | Proved | [Lean](graffiti-426/Formal426.lean) · [Write-up](graffiti-426/README.md) · [Prior: Siddhant Dubey](https://gist.github.com/siddhantdubey/22f22a7a23db5174ee59e32eaa8724aa) |
+| Graffiti.pc #427 | Disproved | [Lean, corrected cut-vertex statement](graffiti-427/Counterexample427.lean) · [Prior disproofs of other readings](https://hexagonmath.org/pdf/2610.00500v1#page=6) |
 | Graffiti.pc #433 | Disproved | [Lean](graffiti-433/Proof433.lean) |
 | Graffiti.pc #444 | Disproved | [Lean](graffiti-444/Exact444.lean) · [Write-up](graffiti-444/README.md) · [Prior: Siddhant Dubey](https://gist.github.com/siddhantdubey/22f22a7a23db5174ee59e32eaa8724aa) |
 | Graffiti.pc #446 | Proved | [Lean](graffiti-446/Verify446.lean) · [Write-up](graffiti-446/README.md) · [Prior: Siddhant Dubey](https://gist.github.com/siddhantdubey/22f22a7a23db5174ee59e32eaa8724aa) |

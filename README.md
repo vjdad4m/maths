@@ -114,5 +114,6 @@
 | AutoGraphForge line 378 | Proved | [Lean](autographforge-378/AutoGraphForge378.lean) |
 | AutoGraphForge line 379 | Proved | [Lean](autographforge-379/AutoGraphForge379.lean) |
 | AutoGraphForge line 808 | Proved (where total forcing is defined) | [Lean](autographforge-371/AutoGraphForge371.lean) |
+| AutoGraphForge line 1221 | Proved (formalization of a known consequence) | [Lean](autographforge-373/AutoGraphForge373.lean) · [Prior formulas](https://doi.org/10.1090/surv/270) |
 | AutoGraphForge line 1839 | Disproved | [Lean](autographforge-365/AutoGraphForgeDiamonds.lean) |
 | AutoGraphForge line 1908 | Disproved | [Lean](autographforge-303/AutoGraphForgePlanar.lean) |

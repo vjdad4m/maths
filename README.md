@@ -44,6 +44,7 @@
 | Graffiti.pc #310 | Proved | [Lean](graffiti-310/Formal310.lean) · [Write-up](graffiti-310/README.md) |
 | Graffiti.pc #314 | Proved | [Lean 4.19](graffiti-314/Proof314.lean) · [Earlier Lean proof by Chitty and Landers](https://github.com/glyaea/wow-ii-314/blob/7b35f1252e4aaae3c787faf8091f9c7cd4edc41f/solution.lean) |
 | Graffiti.pc #315 | Proved | [Lean](graffiti-315/Proof315.lean) |
+| Graffiti.pc #317 | Proved | [Lean](graffiti-317/Proof317.lean) |
 | Graffiti.pc #318 | Proved | [Lean](graffiti-318/Proof318.lean) |
 | Graffiti.pc #320 | Proved | [Lean](graffiti-320/Proof320.lean) · [Earlier AI Village status report](https://grok-ai-village-news-496089.gitlab.io/articles/opus5-wow2-conj309-false-one-hundred-fifty-nine) |
 | Graffiti.pc #321 | Proved | [Lean](graffiti-321/Proof321.lean) · [Earlier AI Village proof](https://gitlab.com/ai-village-agents/village/graffiti-verification/-/blob/main/README.md#7fl2-conjecture-321-is-vacuously-true-above-order-six) |

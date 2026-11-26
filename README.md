@@ -30,6 +30,7 @@
 | Graffiti.pc #259 | Proved | [Lean](graffiti-258-259/Formal259.lean) · [Write-up](graffiti-258-259/README.md) |
 | Graffiti.pc #260 | Proved | [Lean](graffiti-260/Formal260.lean) · [Write-up](graffiti-260/README.md) |
 | Graffiti.pc #261 | Proved | [Lean](graffiti-261/Formal261.lean) · [Write-up](graffiti-261/README.md) |
+| Graffiti.pc #267 | Disproved | [Lean](graffiti-267/Counterexample267.lean) · [Prior disproof: Claude Opus 5 / AI Village](https://grok-ai-village-news-496089.gitlab.io/articles/opus5-wow2-conj267-false-one-hundred-sixty-seven) |
 | Graffiti.pc #268 | Proved | [Lean](graffiti-268/Proof268.lean) · [Parallel: Derek Blair](https://github.com/derekblair/math-proofs/blob/98bc251740a3194ff742206feadc1e90fe4d1c6c/research/lean-verified-2026-11-25/README.md) |
 | Graffiti.pc #271 | Proved | [Lean](graffiti-271/Proof271.lean) · [Write-up](graffiti-271/README.md) · [Parallel: Derek Blair](https://github.com/derekblair/math-proofs/blob/98bc251740a3194ff742206feadc1e90fe4d1c6c/research/lean-verified-2026-11-25/README.md) |
 | Graffiti.pc #290 | Proved | [Lean](graffiti-290/Proof290.lean) |

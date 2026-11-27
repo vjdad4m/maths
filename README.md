@@ -171,6 +171,7 @@
 | AutoGraphForge line 2482 | Disproved | [Lean](autographforge-multipartite/Multipartite.lean) |
 | AutoGraphForge line 2494 | Disproved | [Lean](autographforge-star/StarCone.lean) |
 | AutoGraphForge line 2512 | Disproved | [Lean](autographforge-star/StarCone.lean) |
+| AutoGraphForge line 2517 | Disproved; also follows from line 33 | [Lean](autographforge-shared-hub/SharedHub.lean) · [Replay](autographforge-shared-hub/README.md) |
 | AutoGraphForge line 2526 | Disproved | [Lean](autographforge-complete/CompleteRows.lean) |
 | AutoGraphForge line 2537 | Disproved | [Lean](autographforge-friendship/Friendship.lean) |
 | AutoGraphForge line 2572 | Disproved | [Lean](autographforge-complete/CompleteRows.lean) |

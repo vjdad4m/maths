@@ -330,7 +330,7 @@ private theorem local_of_hex_no_P6 (h4 : FourCycleFree G) (h5 : NoSimpleFive133 
         (fun j he' => he ⟨j,he'.symm⟩) ⟨i,hadj.symm⟩)).elim
   exact (Finset.card_le_card hsub).trans ((Finset.card_insert_le _ _).trans (by simp))
 
-private theorem six_path_of_min_and_high (h4 : FourCycleFree G) (h5 : NoSimpleFive133 G)
+theorem six_path_of_min_and_high (h4 : FourCycleFree G) (h5 : NoSimpleFive133 G)
     (mind : ∀ v, 2 ≤ localIndependence G v) (v : V) (high : 3 ≤ localIndependence G v) :
     ∃ f : Fin 6 → V, InducedPath G f := by
   classical

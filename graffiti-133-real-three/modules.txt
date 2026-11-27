@@ -1,0 +1,5 @@
+MoreBands133
+StrictDensity133
+PentagonEar133
+PentagonSparse133
+UnroundedBand133

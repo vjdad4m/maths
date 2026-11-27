@@ -111,6 +111,7 @@
 | AutoGraphForge line 143 | Proved (consequence of cograph decomposition) | [Lean](autographforge-cograph/CographRadius.lean) · [Conventions and replay](autographforge-cograph/README.md) |
 | AutoGraphForge line 187 | Disproved | [Lean](autographforge-book-tail/BookTail.lean) · [Replay](autographforge-book-tail/README.md) |
 | AutoGraphForge line 221 | Disproved | [Lean](autographforge-book-tail/BookTail.lean) · [Replay](autographforge-book-tail/README.md) |
+| AutoGraphForge line 242 | Proved in Lean; three-rainbow number equals order | [Proof](autographforge-242/) |
 | AutoGraphForge line 303 | Disproved | [Lean](autographforge-303/AutoGraphForgePlanar.lean) |
 | AutoGraphForge line 304 | Disproved | [Lean](autographforge-304/AutoGraphForge304.lean) |
 | AutoGraphForge line 353 | Disproved | [Lean](autographforge-353/AutoGraphForge353.lean) |

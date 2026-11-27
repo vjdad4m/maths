@@ -211,6 +211,7 @@
 | AutoGraphForge line 2578 | Disproved | [Lean](autographforge-complete/CompleteRows.lean) |
 | AutoGraphForge line 2579 | Disproved | [Lean](autographforge-complete/CompleteRows.lean) |
 | AutoGraphForge line 2581 | Disproved in Lean by C43; upstream implicit witness also exists | [Proof](autographforge-2581/) |
+| AutoGraphForge line 2583 | Disproved in Lean by C43; upstream implicit witness also exists | [Proof](autographforge-2583/) |
 | AutoGraphForge line 2590 | Disproved | [Lean](autographforge-friendship/Friendship.lean) |
 | AutoGraphForge line 2595 | Disproved (singleton rainbow convention) | [Lean](autographforge-friendship/Friendship.lean) |
 | AutoGraphForge line 2596 | Disproved by Forsad; independent Lean certificate | [Original counterexample](https://github.com/JanPastorek/AutoGraphForge/issues/1) · [Lean](autographforge-complete/CompleteRows.lean) |

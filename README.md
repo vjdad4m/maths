@@ -152,6 +152,7 @@
 | AutoGraphForge line 2319 | Disproved | [Lean](autographforge-balanced-forcing/BalancedForcing.lean) |
 | AutoGraphForge line 2320 | Disproved | [Lean](autographforge-balanced-forcing/BalancedForcing.lean) |
 | AutoGraphForge line 2321 | Disproved | [Lean](autographforge-balanced-forcing/BalancedForcing.lean) |
+| AutoGraphForge line 2334 | Disproved | [Lean](autographforge-2334/BranchedTree.lean) · [Replay](autographforge-2334/README.md) |
 | AutoGraphForge line 2348 | Disproved | [Lean](autographforge-complete/CompleteRows.lean) |
 | AutoGraphForge line 2354 | Disproved | [Lean](autographforge-balanced-forcing/BalancedForcing.lean) |
 | AutoGraphForge line 2355 | Disproved | [Lean](autographforge-complete/CompleteRows.lean) |

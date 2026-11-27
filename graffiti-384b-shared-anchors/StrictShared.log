@@ -1,0 +1,25 @@
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release) 
+Mathlib c44e0c8ee63ca166450922a373c7409c5d26b00b
+Replay directory /workspace/scratch/7efa613b1c05/graff384b-shared29-astra/.shared-replay.hi77nwy6
+Verified all 190 prior source hashes, the frozen low-mate replay, and 190 prior object hashes.
+Checking SharedCut
+'Graffiti384b.Shared29.paired' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking SharedFive
+'Graffiti384b.Shared29.five_free' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking SharedTrial
+'Graffiti384b.Shared29.two_trials' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking AnchorScores
+'Graffiti384b.Shared29.ear_multiplicity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Shared29.anchor_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Shared29.rank_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking SharedBudget
+'Graffiti384b.Shared29.uncorrected_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Shared29.pool_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking SharedAnchorClose
+'Graffiti384b.Shared29.shared_anchor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Shared29.shared_at_27' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Shared29.residual_distinct' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking SharedCapTest
+'Graffiti384b.Shared29.CapTest.two_ear_allowance' depends on axioms: [propext, Classical.choice, Quot.sound]
+Verified seven new modules and twelve named standard-axiom reports.
+Verified the shared-anchor branch, the pairwise-disjoint residual, and both regression tests.

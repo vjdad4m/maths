@@ -144,6 +144,7 @@
 | AutoGraphForge line 1130 | Disproved in Lean by C160; upstream implicit witness also exists | [Proof](autographforge-1130/) |
 | AutoGraphForge line 1221 | Proved (formalization of a known consequence) | [Lean](autographforge-373/AutoGraphForge373.lean) · [Prior formulas](https://doi.org/10.1090/surv/270) |
 | AutoGraphForge line 1539 | Disproved | [Lean](autographforge-balanced-forcing/BalancedForcing.lean) |
+| AutoGraphForge line 1606 | Disproved in Lean by C43; upstream implicit witness also exists | [Proof](autographforge-1606/) |
 | AutoGraphForge line 1707 | Disproved in Lean; unbounded gap on connected claw-free graphs | [Proof](autographforge-1707/) |
 | AutoGraphForge line 1839 | Disproved | [Lean](autographforge-365/AutoGraphForgeDiamonds.lean) |
 | AutoGraphForge line 1883 | Disproved (singleton rainbow convention) | [Lean](autographforge-1883/AutoGraphForge1883.lean) |

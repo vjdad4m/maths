@@ -1,0 +1,125 @@
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+IsolatedVertex31.lean: OK
+ThirtyTransversal31.lean: OK
+ThirtyBoth31.lean: OK
+ThirtyPairSample31.lean: OK
+ThirtyPairSaving31.lean: OK
+ThirtyFinish31.lean: OK
+graff384b-leaf-independent-sources.zip: OK
+shared-anchor-source.zip: OK
+Thirty core replay /workspace/scratch/7efa613b1c05/graff384b-isolate31/.thirty.vindCSXn
+graff384b-leaf-independent/CHECKED-OBJECTS.sha256: OK
+graff384b-leaf-independent/LeafDeletion.lean: OK
+graff384b-leaf-independent/LeafFinish.lean: OK
+graff384b-leaf-independent/LeafSample.lean: OK
+graff384b-leaf-independent/NEW-SOURCES.sha256: OK
+graff384b-leaf-independent/README.md: OK
+graff384b-leaf-independent/SOURCES.sha256: OK
+graff384b-leaf-independent/Strict273.log: OK
+graff384b-leaf-independent/audit.py: OK
+graff384b-leaf-independent/replay.sh: OK
+graff384b-clean-independent/graff384b-clean-independent-sources.zip: OK
+ThirdEar.lean: OK
+SharedRanks.lean: OK
+EarTriangle.lean: OK
+ThreePins.lean: OK
+NoLeafAttachment.lean: OK
+README.md: OK
+replay.sh: OK
+audit.py: OK
+NEW-SOURCES.sha256: OK
+full-objects.sha256: OK
+clean-objects.sha256: OK
+StrictShared.log: OK
+adjacent-full-source.zip: OK
+graff384b-clean-independent-sources.zip: OK
+Complete leaf-path replay verified: 273 graph modules and 649 axiom reports.
+Fresh extension verified: 5 modules and 6 standard-axiom reports.
+Fresh extension verified: 3 modules and 6 standard-axiom reports.
+Fresh extension verified: 5 modules and 6 standard-axiom reports.
+AnchorScores.olean: OK
+CleanFinish.olean: OK
+CleanRanks.olean: OK
+CubicExtra.olean: OK
+CubicMass.olean: OK
+CubicRanks.olean: OK
+DenseTwelve.olean: OK
+FinishIndependent.olean: OK
+IndependentFrontier.olean: OK
+IndependentThirteen.olean: OK
+JointEarRank.olean: OK
+JointEarSample.olean: OK
+JointEarWitness.olean: OK
+LeafDeletion.olean: OK
+LeafFinish.olean: OK
+LeafSample.olean: OK
+PoolTwelve.olean: OK
+PortClique29.olean: OK
+PortFrame29.olean: OK
+PortRepair29.olean: OK
+RankRepair29.olean: OK
+ReservedRanks.olean: OK
+SimplicialRanks.olean: OK
+SimplicialTrial.olean: OK
+TwelveWitness.olean: OK
+UnreservedTwelve.olean: OK
+Weighted29.olean: OK
+AdjacentBound.olean: OK
+AdjacentFrame.olean: OK
+AdjacentFront.olean: OK
+AllContacts.olean: OK
+AnchorScores.olean: OK
+AttachmentReserve.olean: OK
+CleanFinish.olean: OK
+CleanRanks.olean: OK
+CliquePool.olean: OK
+CompleteAdjacent.olean: OK
+CubicExtra.olean: OK
+CubicMass.olean: OK
+CubicRanks.olean: OK
+DenseTwelve.olean: OK
+EarTriangle.olean: OK
+FinishIndependent.olean: OK
+IndependentFrontier.olean: OK
+IndependentThirteen.olean: OK
+JointEarRank.olean: OK
+JointEarSample.olean: OK
+JointEarWitness.olean: OK
+LowOmissions.olean: OK
+NoLeafAttachment.olean: OK
+PendantBound.olean: OK
+PendantSample.olean: OK
+PoolTwelve.olean: OK
+PortClique29.olean: OK
+PortFrame29.olean: OK
+PortRepair29.olean: OK
+RankRepair29.olean: OK
+ReservedRanks.olean: OK
+SharedRanks.olean: OK
+SimplicialRanks.olean: OK
+SimplicialTrial.olean: OK
+ThirdEar.olean: OK
+ThreeEars.olean: OK
+ThreePins.olean: OK
+ThreeReservedRanks.olean: OK
+TwelveWitness.olean: OK
+UnreservedTwelve.olean: OK
+Weighted29.olean: OK
+'Graffiti384b.Isolate31.palette' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Isolate31.nonleaf_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Isolate31.domination' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Isolate31.bound_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Isolate31.order33' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Isolate31.order32' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Isolate31.exact32' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.ThirtyCore.cubic_hits' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.ThirtyCore.failure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.ThirtyCore.thin_supported' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.ThirtyCore.both_required' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.ThirtyCore.sample' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.ThirtyCore.shared_saving' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.ThirtyCore.pair_profile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.ThirtyCore.original_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.ThirtyCore.induced31' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fresh extension verified: 6 modules and 16 standard-axiom reports.
+Verified isolate adapter and 30-nonleaf core reduction.

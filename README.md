@@ -129,9 +129,11 @@
 | AutoGraphForge line 377 | Proved | [Lean](autographforge-377/AutoGraphForge377.lean) |
 | AutoGraphForge line 378 | Proved | [Lean](autographforge-378/AutoGraphForge378.lean) |
 | AutoGraphForge line 379 | Proved | [Lean](autographforge-379/AutoGraphForge379.lean) |
+| AutoGraphForge line 383 | Disproved upstream; unbounded gap proved in Lean | [Planar chordal family](autographforge-book-forts/README.md) |
 | AutoGraphForge line 464 | Disproved in Lean; unbounded gap even for bipartite planar graphs | [Proof](autographforge-464/) |
 | AutoGraphForge line 501 | Disproved | [Lean](autographforge-eulerian-chain/Chain.lean) · [Replay](autographforge-eulerian-chain/README.md) |
 | AutoGraphForge line 534 | Proved in Lean; exact inequality and equality conditions for joins | [autographforge-534/](autographforge-534/) |
+| AutoGraphForge line 567 | Disproved upstream; unbounded gap proved in Lean | [Planar chordal family](autographforge-book-forts/README.md) |
 | AutoGraphForge line 574 | Disproved in Lean; sharp replacement and unbounded Eulerian gap | [Proof](autographforge-574/) |
 | AutoGraphForge line 579 | Proved in Lean without the bipartite restriction | [Proof](autographforge-579/) |
 | AutoGraphForge line 583 | Proved in Lean; sharp Slater bound for edge domination | [Proof](autographforge-583/) |

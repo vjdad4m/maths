@@ -1,0 +1,7 @@
+383 69107966 proposed; normalized touches 252 record touches 495
+567 b2d82b19 proposed; normalized touches 164 record touches 495
+Pastorek tree from b56729d4 and 88925c95: 10 disjoint leaf-fort neighborhoods, 10 supports power-dominate, sub-total 8
+released [383, 567] no _gSG?S@?A?_@???A_?G???OC??G?????S??@?????A?_??@???????A_???G???A???????@?G????G????G order 32 sub-total 8 in_refutation_file True
+4776 distinct released encodings; row comparison [((383, 'no'), 1), ((383, 'yes'), 2272), ((567, 'no'), 1), ((567, 'yes'), 1595)]
+compute_battery 2 (10, True, True, True, True, 2, 3)
+compute_battery 3 (14, True, True, True, True, 2, 4)

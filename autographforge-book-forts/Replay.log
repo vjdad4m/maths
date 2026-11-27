@@ -1,0 +1,7 @@
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+'Book567.hit_twins' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Book567.subTotal_two_of_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Book567.power_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Book567.family567' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Book567.Drawing.bookDrawing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Book567.Drawing.family383' depends on axioms: [propext, Classical.choice, Quot.sound]

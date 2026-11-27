@@ -1,0 +1,26 @@
+Diversity-29 replay /workspace/scratch/7efa613b1c05/graff384b-diversity29/.diversity29.cbkc0lli
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+Mathlib c44e0c8ee63ca166450922a373c7409c5d26b00b
+Verified diversity-30 source archive and delivery manifest; matched 155 compiled-object hashes
+'Graffiti384b.Quota29.independent_twos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Quota29.exposed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Quota29.Sample.extraObstruction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Quota29.Dense.dense_vertex' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Quota29.Finish.many_nonleaves' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Quota29.Local.exact_of_local_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Quota29.Local.exact_of_five_free' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.OddQuota.rooted_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.OddQuota.failure_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.OddQuota.core_of_failure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.OddQuota.even_shore' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.OddQuota.exact_of_odd_shore' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.IsolateBasic.palette' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.IsolateBasic.domination' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Quota29.disjoint_anchors' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Quota29.exact_of_no_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Quota29.residual' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Quota29.boundary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Quota29.induced' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Quota29.minimum' depends on axioms: [propext, Classical.choice, Quot.sound]
+Verified 9 fresh modules and 20 standard-axiom reports.
+Verified the 29-type nonleaf threshold, same-palette reduction and odd-core criteria.

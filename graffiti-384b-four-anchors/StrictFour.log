@@ -1,0 +1,36 @@
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release) 
+Mathlib c44e0c8ee63ca166450922a373c7409c5d26b00b
+Replay directory /workspace/scratch/7efa613b1c05/graff384b-fourpins29-astra/.four-replay.9vb7m1dt
+Verified all 196 prior source hashes, the frozen shared-anchor replay, and 196 prior object hashes.
+Checking FourTrial
+'Graffiti384b.Four29.active_fiber' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Four29.two_trials' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking DenseFour
+'Graffiti384b.Four29.repair_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Four29.dense_pool' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking FourProfile
+'Graffiti384b.Four29.data_of_failure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Four29.dense_disjoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking TruthWords
+'Graffiti384b.Four29.Words.column_at' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Four29.Words.binary_at' depends on axioms: [propext, Quot.sound]
+Checking LocalSignals
+'Graffiti384b.Four29.LocalTest.pattern_data' depends on axioms: [propext]
+Checking SignalSemantics
+'Graffiti384b.Four29.LocalTest.represents' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Four29.LocalTest.counts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Four29.LocalTest.support_lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking LocalTable
+'Graffiti384b.Four29.LocalTest.table' depends on axioms: [propext]
+Checking ProtectedNine
+'Graffiti384b.Four29.LocalTest.nine_induced' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Four29.LocalTest.nine_labels' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking FourFront
+'Graffiti384b.Four29.sparse_disjoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Four29.residual' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking FourRankGap
+'Graffiti384b.Four29.eight_contact_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Four29.four_missing_rows' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Four29.low_anchor_scores' depends on axioms: [propext, Classical.choice, Quot.sound]
+Verified ten new modules and twenty named standard-axiom reports.
+Verified the dense and sparse four-anchor bounds, the induced nine-label cut, the missing-rank test, and its numerical limitation.

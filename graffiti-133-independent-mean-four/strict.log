@@ -1,0 +1,84 @@
+Normal-import strict replay; flags: -j1 -DElab.async=false -DwarningAsError=true
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+Checking P5CliqueMultiPortBudget133
+'Graffiti133P5CliqueArms.outside_independence_le_core_neighbors_union_assigned_ports' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti133P5CliqueArms.outside_independence_le_chosen_visible_add_extra' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti133P5CliqueArms.extra_port_incidence_le_choose_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti133P5CliqueArms.core_and_exterior_independence_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti133P5CliqueArms.multi_attachment_visible_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti133P5CliqueArms.three_port_palette_multi_attachment_ambient_mean_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti133P5CliqueArms.multi_attachment_weighted_slack_P7free_ambient_mean_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti133P5CliqueArms.local_two_port_palette_multi_attachment_ambient_mean_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS P5CliqueMultiPortBudget133
+Checking P5CliqueFourPortCommonRelayBudget133
+'Graffiti133P5CliqueArms.common_relay_forces_singleton_attachment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti133P5CliqueArms.high_clients_at_one_relay_port_at_most_six' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti133P5CliqueArms.common_relay_ambient_mean_four_of_core_slack' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS P5CliqueFourPortCommonRelayBudget133
+Checking P5CliqueFourRelayArmFans133
+'Graffiti133P5CliqueArms.high_client_relay_has_fan' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti133P5CliqueArms.high_relay_fan_port_eq_first_arm_vertex' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS P5CliqueFourRelayArmFans133
+Checking P5CliqueFourNearThreeArmFans133
+'Graffiti133P5CliqueArms.high_client_singleton_four_port_has_fan' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti133P5CliqueArms.high_near_three_port_on_first_two_arm_vertices' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS P5CliqueFourNearThreeArmFans133
+Checking P5CliqueHighPureFan133
+'Graffiti133P5CliqueArms.high_single_site_has_clean_four_port_fan' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS P5CliqueHighPureFan133
+Checking P5CliqueSmallCoreLocal133
+'Graffiti133P5CliqueArms.smallTwoHop_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti133P5CliqueArms.smallTwoHop_trianglefree_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti133P5CliqueArms.small_local_perfect_matching_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS P5CliqueSmallCoreLocal133
+Checking P5CliqueSmallCoreSignedSlack133
+'_private.P5CliqueSmallCoreSignedSlack133.0.Graffiti133P5CliqueArms.small_core_four_base' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'_private.P5CliqueSmallCoreSignedSlack133.0.Graffiti133P5CliqueArms.small_core_min_three_case' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti133P5CliqueArms.small_core_ten_signed_slack' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS P5CliqueSmallCoreSignedSlack133
+Checking P5CliqueIndependentFanBudget133
+'Graffiti133P5CliqueArms.independent_four_port_high_mixed_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti133P5CliqueArms.independent_four_port_high_mixed_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti133P5CliqueArms.independent_four_port_ambient_of_joint_slack' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti133P5CliqueArms.independent_four_port_at_most_one_extra_ambient_mean_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti133P5CliqueArms.independent_four_port_large_core_ambient_mean_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS P5CliqueIndependentFanBudget133
+Sequential replay exit status: 0

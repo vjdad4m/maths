@@ -1,0 +1,107 @@
+'Graffiti189LongestPath.CrossSaturation.hamilton_connected_of_ore' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.Split.Five.cut_distance_le_three_at_five' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FarThreeShores.impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.component_card_le_two_at_cut_distance_ge_three' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.cut_distance_le_three_at_actual_five_cut' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== DegreeFiveSmallSides189 ===
+'Graffiti189LongestPath.CrossSaturation.Split.Five.traceable_of_small_sides' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.Split.Five.traceable_of_sides_at_most_seven' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== DegreeFiveSmallActual189 ===
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.traceable_at_actual_small_distance_three_cut' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== DegreeFiveFourPort189 ===
+'Graffiti189LongestPath.CrossSaturation.Split.Five.foreign_a_ports_le_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.Split.Five.bridge_four_forces_universal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.Split.Five.bound_bridge_side_of_opposite_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.Split.Five.bound_no_bridge_side_of_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.Split.Five.eight_no_bridge_forces_low_singleton' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== DegreeFiveBridgeSize189 ===
+'Graffiti189LongestPath.CrossSaturation.Split.Five.tight_a_second_shells_at_degree_five' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.Split.Five.opposite_inner_bound_from_bridge' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.Split.Five.opposite_bridge_shore_le_nine_exact_cut_degree' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== DegreeFiveUnbalancedShape189 ===
+'Graffiti189LongestPath.CrossSaturation.Split.Five.no_mixed_three_three' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.Split.Five.mixed_two_two_le_six' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== DegreeFiveBalancedBridge189 ===
+'Graffiti189LongestPath.CrossSaturation.Split.Five.traceable_of_balanced_five_port_bridge' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== DegreeFiveBalancedUniform189 ===
+'Graffiti189LongestPath.CrossSaturation.Split.Five.traceable_of_balanced_cut_degree_five' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.Split.Five.traceable_of_balanced_five_port_bridge_unconditional_high_side' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== DegreeFiveRouteBasic189 ===
+'Graffiti189LongestPath.CrossSaturation.RouteOn.join' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.route_join_cliques' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.two_high_points' depends on axioms: [propext, Classical.choice, Quot.sound]
+=== DegreeFiveRouteTemplates189 ===
+'Graffiti189LongestPath.CrossSaturation.six_port_two_inner_route' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.six_port_three_inner_route' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== DegreeFiveSixTerminal189 ===
+'Graffiti189LongestPath.CrossSaturation.Split.Five.six_port_shore_has_terminal_route' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== DegreeFiveUnbalancedClose189 ===
+'Graffiti189LongestPath.CrossSaturation.Split.Five.traceable_of_four_six_cut_degree_five' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.Split.Five.traceable_of_exact_five_cut_degrees_without_four_porters' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== DegreeFiveSingletonFour189 ===
+'Graffiti189LongestPath.CrossSaturation.Split.Five.singleton_opposite_four_forces_bridge' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.Split.Five.singleton_mixed_shore_size' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== DegreeFiveExactDistThree189 ===
+'Graffiti189LongestPath.CrossSaturation.Split.Five.traceable_of_exact_five_distance_three_cut' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== DegreeFiveExactDistThreeActual189 ===
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.traceable_at_actual_exact_five_distance_three_cut' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

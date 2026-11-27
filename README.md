@@ -149,6 +149,7 @@
 | AutoGraphForge line 1915 | Disproved; unbounded gap on triangle chains | [Lean](autographforge-1915/TriangleChain.lean) · [Replay](autographforge-1915/README.md) |
 | AutoGraphForge line 1956 | Disproved | [Lean](autographforge-balanced-forcing/BalancedForcing.lean) |
 | AutoGraphForge line 1974 | Disproved | [Lean](autographforge-complete/CompleteRows.lean) |
+| AutoGraphForge line 2039 | Disproved in Lean by a connected 10-vertex graph | [Counterexample](autographforge-2039/README.md) |
 | AutoGraphForge line 2054 | Disproved | [Lean](autographforge-friendship/Friendship.lean) |
 | AutoGraphForge line 2055 | Proved in Lean; sharp on the 10-vertex path (known burning bound corollary) | [Proof](autographforge-2055/README.md) |
 | AutoGraphForge line 2088 | Disproved (singleton rainbow convention) | [Lean](autographforge-1883/AutoGraphForge1883.lean) |

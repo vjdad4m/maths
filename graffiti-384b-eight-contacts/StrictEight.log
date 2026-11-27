@@ -1,0 +1,100 @@
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+EightDegree.lean: OK
+FlexibleTip.lean: OK
+ClosedRegion.lean: OK
+EightBoundary.lean: OK
+FinishEight.lean: OK
+sparse-pairs-source.zip: OK
+Eight-contact build [temporary replay directory]
+SparseMass.lean: OK
+SparseRanks.lean: OK
+SparseGeometry.lean: OK
+SparseSwap.lean: OK
+SparseCubic.lean: OK
+AlternatingGuard.lean: OK
+PrivateContacts.lean: OK
+SparseFrontier.lean: OK
+SparseEight.lean: OK
+AnchorGap.lean: OK
+README.md: OK
+CHECKED-OBJECTS.sha256: OK
+NEW-SOURCES.sha256: OK
+replay.sh: OK
+audit.py: OK
+StrictSparsePairs.log: OK
+anchor-pairs-source.zip: OK
+Fresh extension verified: 10 modules and 18 standard-axiom reports.
+Fresh extension verified: 10 modules and 18 standard-axiom reports.
+AdjacentBound.olean: OK
+AdjacentFrame.olean: OK
+AdjacentFront.olean: OK
+AllContacts.olean: OK
+AlternatingGuard.olean: OK
+AnchorCuts.olean: OK
+AnchorGap.olean: OK
+AnchorScores.olean: OK
+AttachmentReserve.olean: OK
+CleanFinish.olean: OK
+CleanRanks.olean: OK
+CliquePool.olean: OK
+CompleteAdjacent.olean: OK
+CubicExtra.olean: OK
+CubicMass.olean: OK
+CubicPair.olean: OK
+CubicRanks.olean: OK
+CubicSaving.olean: OK
+DenseTwelve.olean: OK
+EarTriangle.olean: OK
+FinishIndependent.olean: OK
+FourFrontier.olean: OK
+FourPrices.olean: OK
+FourSample.olean: OK
+IndependentFrontier.olean: OK
+IndependentThirteen.olean: OK
+JointEarRank.olean: OK
+JointEarSample.olean: OK
+JointEarWitness.olean: OK
+LowOmissions.olean: OK
+NoLeafAttachment.olean: OK
+OuterScore.olean: OK
+OuterSeparation.olean: OK
+PendantBound.olean: OK
+PendantSample.olean: OK
+Pool26.olean: OK
+PoolTwelve.olean: OK
+PortClique29.olean: OK
+PortFrame29.olean: OK
+PortRepair29.olean: OK
+PrivateContacts.olean: OK
+RankRepair29.olean: OK
+ReservedRanks.olean: OK
+RootMass.olean: OK
+RootRank.olean: OK
+SeparatedAnchors.olean: OK
+SharedRanks.olean: OK
+SimplicialRanks.olean: OK
+SimplicialTrial.olean: OK
+SparseCubic.olean: OK
+SparseEight.olean: OK
+SparseFrontier.olean: OK
+SparseGeometry.olean: OK
+SparseMass.olean: OK
+SparseRanks.olean: OK
+SparseSwap.olean: OK
+ThirdEar.olean: OK
+ThreeEars.olean: OK
+ThreePins.olean: OK
+ThreeReservedRanks.olean: OK
+TwelveWitness.olean: OK
+TwoEarFront.olean: OK
+UnreservedTwelve.olean: OK
+Weighted29.olean: OK
+'Graffiti384b.SparsePairs.score_two_degree_le_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.EightPins.flexible_region' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.EightPins.internal_frame' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.EightPins.attach_region' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.EightPins.local_triangles' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.EightPins.boundary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.EightPins.at_most_eight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.EightPins.eight_contacts_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fresh extension verified: 5 modules and 8 standard-axiom reports.

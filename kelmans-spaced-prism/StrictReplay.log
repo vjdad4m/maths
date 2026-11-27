@@ -1,0 +1,54 @@
+'KelmansCactus.AtomicBridge.Prism.core_cubic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.Prism.core_small' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteSubdivisionCore.Marks.cut_mono' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteSubdivisionCore.Marks.cut_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteSubdivisionCore.Marks.cyclic_four_iff_fat' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteSpacedPrismHandle.cubic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteSpacedPrismHandle.small_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteSpacedPrismLayout.row_adj' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteSpacedPrismLayout.core_cyclic_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteSpacedPrismOld.source_factor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteSpacedPrismOld.prior_packing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteSpacedPrismOld.vacancies' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteSpacedPrismPotential.unit_height' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteSpacedPrismPotential.no_short_route' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteSpacedPrismWidth.expanded_wide' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.PrismSpacedFinal.full_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteSpacedPrismObstruction.host_three_connected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteSpacedPrismObstruction.exact_board' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteSpacedPrismObstruction.exact_remote' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteSpacedPrismObstruction.wide' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteSpacedPrismObstruction.dense_legal_board' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteSpacedPrismObstruction.no_uniform_arbitrary_rank_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

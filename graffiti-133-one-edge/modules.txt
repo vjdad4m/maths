@@ -1,0 +1,3 @@
+P5CliqueSingleEdgeTripleFan133
+P5CliqueSingleEdgeCrossDiscount133
+P5CliqueSingleEdgeMultiClosure133

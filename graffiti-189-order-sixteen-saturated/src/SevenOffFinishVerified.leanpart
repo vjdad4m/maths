@@ -1,0 +1,293 @@
+
+open GraffitiSmallCoreFive in
+set_option maxHeartbeats 3500000 in
+private theorem five_core_linear_order
+    (K : Finset V) (kc : K.card=5)
+    (degree : ∀ u v : V,u≠v → 4≤G.degree u ∨ 4≤G.degree v)
+    (prof : ∀ z∈K,1≤(G.neighborFinset z∩K).card ∧
+      (4≤G.degree z → 2≤(G.neighborFinset z∩K).card)) :
+    ∃ l : List V, l.Nodup ∧ (∀ v,v∈l↔v∈K) ∧ l.Chain' G.Adj ∧ l.length=5 := by
+  classical
+  let eK : Fin 5 ≃ (↑K : Set V) := (Fintype.equivFinOfCardEq (Fintype.card_coe K |>.trans kc)).symm
+  let φ (i : Fin 5) : V := (eK i).val
+  have φin (i : Fin 5) : φ i∈K := (eK i).property
+  have injective : Function.Injective φ := by
+    intro i j h
+    exact eK.injective (Subtype.ext h)
+  have onto {v : V} (hv : v∈K) : ∃ k : Fin 5,φ k=v :=
+    ⟨eK.symm ⟨v,hv⟩,congrArg Subtype.val (eK.apply_symm_apply ⟨v,hv⟩)⟩
+  let m : Bits := fun k =>
+    if k.val=0 then decide (G.Adj (φ 0) (φ 1))
+    else if k.val=1 then decide (G.Adj (φ 0) (φ 2))
+    else if k.val=2 then decide (G.Adj (φ 1) (φ 2))
+    else if k.val=3 then decide (G.Adj (φ 0) (φ 3))
+    else if k.val=4 then decide (G.Adj (φ 1) (φ 3))
+    else if k.val=5 then decide (G.Adj (φ 2) (φ 3))
+    else if k.val=6 then decide (G.Adj (φ 0) (φ 4))
+    else if k.val=7 then decide (G.Adj (φ 1) (φ 4))
+    else if k.val=8 then decide (G.Adj (φ 2) (φ 4))
+    else decide (G.Adj (φ 3) (φ 4))
+  have adj_eq (i j : Fin 5) : edge m i j=true ↔ G.Adj (φ i) (φ j) := by
+    fin_cases i <;> fin_cases j
+    · change false=true ↔ G.Adj (φ 0) (φ 0)
+      simp
+    · change decide (G.Adj (φ 0) (φ 1))=true ↔ G.Adj (φ 0) (φ 1)
+      simp only [decide_eq_true_eq]
+    · change decide (G.Adj (φ 0) (φ 2))=true ↔ G.Adj (φ 0) (φ 2)
+      simp only [decide_eq_true_eq]
+    · change decide (G.Adj (φ 0) (φ 3))=true ↔ G.Adj (φ 0) (φ 3)
+      simp only [decide_eq_true_eq]
+    · change decide (G.Adj (φ 0) (φ 4))=true ↔ G.Adj (φ 0) (φ 4)
+      simp only [decide_eq_true_eq]
+    · change decide (G.Adj (φ 0) (φ 1))=true ↔ G.Adj (φ 1) (φ 0)
+      rw [decide_eq_true_eq]
+      exact G.adj_comm _ _
+    · change false=true ↔ G.Adj (φ 1) (φ 1)
+      simp
+    · change decide (G.Adj (φ 1) (φ 2))=true ↔ G.Adj (φ 1) (φ 2)
+      simp only [decide_eq_true_eq]
+    · change decide (G.Adj (φ 1) (φ 3))=true ↔ G.Adj (φ 1) (φ 3)
+      simp only [decide_eq_true_eq]
+    · change decide (G.Adj (φ 1) (φ 4))=true ↔ G.Adj (φ 1) (φ 4)
+      simp only [decide_eq_true_eq]
+    · change decide (G.Adj (φ 0) (φ 2))=true ↔ G.Adj (φ 2) (φ 0)
+      rw [decide_eq_true_eq]
+      exact G.adj_comm _ _
+    · change decide (G.Adj (φ 1) (φ 2))=true ↔ G.Adj (φ 2) (φ 1)
+      rw [decide_eq_true_eq]
+      exact G.adj_comm _ _
+    · change false=true ↔ G.Adj (φ 2) (φ 2)
+      simp
+    · change decide (G.Adj (φ 2) (φ 3))=true ↔ G.Adj (φ 2) (φ 3)
+      simp only [decide_eq_true_eq]
+    · change decide (G.Adj (φ 2) (φ 4))=true ↔ G.Adj (φ 2) (φ 4)
+      simp only [decide_eq_true_eq]
+    · change decide (G.Adj (φ 0) (φ 3))=true ↔ G.Adj (φ 3) (φ 0)
+      rw [decide_eq_true_eq]
+      exact G.adj_comm _ _
+    · change decide (G.Adj (φ 1) (φ 3))=true ↔ G.Adj (φ 3) (φ 1)
+      rw [decide_eq_true_eq]
+      exact G.adj_comm _ _
+    · change decide (G.Adj (φ 2) (φ 3))=true ↔ G.Adj (φ 3) (φ 2)
+      rw [decide_eq_true_eq]
+      exact G.adj_comm _ _
+    · change false=true ↔ G.Adj (φ 3) (φ 3)
+      simp
+    · change decide (G.Adj (φ 3) (φ 4))=true ↔ G.Adj (φ 3) (φ 4)
+      simp only [decide_eq_true_eq]
+    · change decide (G.Adj (φ 0) (φ 4))=true ↔ G.Adj (φ 4) (φ 0)
+      rw [decide_eq_true_eq]
+      exact G.adj_comm _ _
+    · change decide (G.Adj (φ 1) (φ 4))=true ↔ G.Adj (φ 4) (φ 1)
+      rw [decide_eq_true_eq]
+      exact G.adj_comm _ _
+    · change decide (G.Adj (φ 2) (φ 4))=true ↔ G.Adj (φ 4) (φ 2)
+      rw [decide_eq_true_eq]
+      exact G.adj_comm _ _
+    · change decide (G.Adj (φ 3) (φ 4))=true ↔ G.Adj (φ 4) (φ 3)
+      rw [decide_eq_true_eq]
+      exact G.adj_comm _ _
+    · change false=true ↔ G.Adj (φ 4) (φ 4)
+      simp
+  have eq_deg (i : Fin 5) : deg m i=(G.neighborFinset (φ i)∩K).card := by
+    let B := univ.filter (fun j=>edge m i j=true)
+    have h : B.image φ=(G.neighborFinset (φ i)∩K) := by
+      ext u
+      constructor
+      · intro h
+        obtain ⟨j,hj,rfl⟩ := mem_image.mp h
+        exact mem_inter.mpr ⟨(mem_neighborFinset G _ _).mpr ((adj_eq i j).mp (mem_filter.mp hj).2),φin _⟩
+      · intro h
+        obtain ⟨hu,uk⟩ := mem_inter.mp h
+        obtain ⟨j,rfl⟩ := onto uk
+        exact mem_image.mpr ⟨j,mem_filter.mpr ⟨mem_univ _,(adj_eq i j).mpr ((mem_neighborFinset G _ _).mp hu)⟩,rfl⟩
+    have eq := congrArg Finset.card h
+    rwa [card_image_of_injective _ injective] at eq
+  have one (i : Fin 5) : 1≤deg m i := by
+    rw [eq_deg]
+    exact (prof _ (φin _)).1
+  have two (i j : Fin 5) (ne : i≠j) : 2≤deg m i ∨ 2≤deg m j := by
+    cases degree (φ i) (φ j) (fun e => ne (injective e)) with
+    | inl l => exact .inl (by rw [eq_deg]; exact (prof _ (φin _)).2 l)
+    | inr r => exact .inr (by rw [eq_deg]; exact (prof _ (φin _)).2 r)
+  obtain ⟨l,hl,lc⟩ := tiny m one two
+  obtain ⟨nd,members,len⟩ := paths_valid l hl
+  have n : (l.map φ).Nodup := nd.map injective
+  have mem (v : V) : v∈l.map φ↔v∈K := by
+    constructor
+    · intro h
+      obtain ⟨i,_,rfl⟩ := List.mem_map.mp h
+      exact φin i
+    · intro h
+      obtain ⟨i,rfl⟩ := onto h
+      exact List.mem_map.mpr ⟨i,members i,rfl⟩
+  have chain : List.Chain' G.Adj (l.map φ) :=
+    List.chain'_map_of_chain' φ (fun i j h => (adj_eq i j).mp h) lc
+  exact ⟨l.map φ,n,mem,chain,by simpa using len⟩
+
+private theorem named_five_of_length {α : Type*} (l : List α) (hl : l.length=5) :
+    ∃ a b c d e : α,l=[a,b,c,d,e] := by
+  rcases l with _|⟨a,la⟩
+  · simp at hl
+  rcases la with _|⟨b,lb⟩
+  · simp at hl
+  rcases lb with _|⟨c,lc⟩
+  · simp at hl
+  rcases lc with _|⟨d,ld⟩
+  · simp at hl
+  rcases ld with _|⟨e,le⟩
+  · simp at hl
+  have n : le.length=0 := by
+    simp only [List.length_cons] at hl
+    omega
+  rw [List.length_eq_zero_iff.mp n]
+  exact ⟨a,b,c,d,e,rfl⟩
+
+private theorem five_core_named_order
+    (K : Finset V) (kc : K.card=5)
+    (degree : ∀ u v : V,u≠v → 4≤G.degree u ∨ 4≤G.degree v)
+    (prof : ∀ z∈K,1≤(G.neighborFinset z∩K).card ∧
+      (4≤G.degree z → 2≤(G.neighborFinset z∩K).card)) :
+    ∃ a b c d e : V,
+      a≠b ∧ a≠c ∧ a≠d ∧ a≠e ∧
+      b≠c ∧ b≠d ∧ b≠e ∧ c≠d ∧ c≠e ∧ d≠e ∧
+      K={a,b,c,d,e} ∧ G.Adj a b ∧ G.Adj b c ∧ G.Adj c d ∧ G.Adj d e := by
+  classical
+  obtain ⟨l,nd,mem,chain,len⟩ := five_core_linear_order K kc degree prof
+  obtain ⟨a,b,c,d,e,eq⟩ := named_five_of_length l len
+  subst l
+  refine ⟨a,b,c,d,e,?_⟩
+  have nn : a≠b ∧ a≠c ∧ a≠d ∧ a≠e ∧
+      b≠c ∧ b≠d ∧ b≠e ∧ c≠d ∧ c≠e ∧ d≠e := by
+    simpa [List.nodup_cons,and_assoc] using nd
+  have k : K={a,b,c,d,e} := by
+    ext z
+    simpa only [List.mem_cons,List.not_mem_nil,or_false,mem_insert,mem_singleton] using (mem z).symm
+  have adj : G.Adj a b ∧ G.Adj b c ∧ G.Adj c d ∧ G.Adj d e := by
+    simpa [List.chain'_cons] using chain
+  exact ⟨nn.1,nn.2.1,nn.2.2.1,nn.2.2.2.1,nn.2.2.2.2.1,nn.2.2.2.2.2.1,
+    nn.2.2.2.2.2.2.1,nn.2.2.2.2.2.2.2.1,nn.2.2.2.2.2.2.2.2.1,nn.2.2.2.2.2.2.2.2.2,
+    k,adj⟩
+
+set_option linter.unreachableTactic false in
+theorem traceable_if_seven_off_saturated_four
+    (hc : G.Connected) (even : ∀ v,(EvenFrom G v).card≤5)
+    (conn : ∀ S : Finset V,S.card<2 → (G.induce ((↑S : Set V)ᶜ)).Connected)
+    (degree : ∀ u v : V,u≠v → 4≤G.degree u ∨ 4≤G.degree v)
+    {a b : V} {p : G.Walk a b} (hp : EdgeOptimal p) (ah : 4≤G.degree a) (bh : 4≤G.degree b)
+    (len : p.length=8) (off : ((univ : Finset V)\p.support.toFinset).card=7) :
+    ∃ a b : V,∃ q : G.Walk a b,q.IsPath ∧ ∀ z,z∈q.support := by
+  classical
+  obtain ⟨x,y,xo,yo,xy,pi,pj,chord,all⟩ := saturated_inactive_core hc even conn degree hp ah bh len
+    (by omega) (by omega)
+  have prof := saturated_core_degree_profile hc even hp.1 len xo yo xy pi pj all (by omega)
+  let O := (univ : Finset V)\p.support.toFinset
+  let K := (O.erase x).erase y
+  have out {z : V} : z∈O ↔ z∉p.support := by simp [O]
+  have xO := out.mpr xo
+  have yO := out.mpr yo
+  have yE : y∈O.erase x := mem_erase.mpr ⟨xy.symm,yO⟩
+  have k4 : K.card=5 := by change ((O.erase x).erase y).card=5; rw [card_erase_of_mem yE,
+    card_erase_of_mem xO,show O.card=7 from off]
+  obtain ⟨u,v,w,t,s,uv,uw,ut,us,vw,vt,vs,wt,ws,ts,ke,uvg,vwg,wtg,tsg⟩ := five_core_named_order K k4 degree prof
+  have unpack {z : V} (zm : z∈K) : z∉p.support ∧ z≠x ∧ z≠y := by
+    obtain ⟨zy,ho⟩ := mem_erase.mp zm
+    obtain ⟨zx,h⟩ := mem_erase.mp ho
+    exact ⟨out.mp h,zx,zy⟩
+  obtain ⟨uo,ux,uy⟩ := unpack (show u∈K by simp [ke])
+  obtain ⟨vo,vx,vy⟩ := unpack (show v∈K by simp [ke])
+  obtain ⟨wo,wx,wy⟩ := unpack (show w∈K by simp [ke])
+  obtain ⟨toff,tx,ty⟩ := unpack (show t∈K by simp [ke])
+  obtain ⟨so,sx,sy⟩ := unpack (show s∈K by simp [ke])
+  have oe : O={x,y,u,v,w,t,s} := by
+    ext z
+    by_cases zx : z=x
+    · subst z; simp [xO]
+    by_cases zy : z=y
+    · subst z; simp [yO]
+    have e : z∈K ↔ z∈O := by simp [K,zx,zy]
+    rw [ke] at e
+    simpa only [mem_insert,mem_singleton,zx,zy,false_or] using e.symm
+  let L : List (Fin 16) := [8,7,15,14,13,12,11,10,9,1,0,6,5,4,3,2]
+  let φ (k : Fin 16) : V := if k.val=9 then x else if k.val=10 then u else
+    if k.val=11 then v else if k.val=12 then w else if k.val=13 then t else
+    if k.val=14 then s else if k.val=15 then y else p.getVert k.val
+  letI : Nonempty V := ⟨a⟩
+  have value {k : Fin 16} (h : k.val≤8) : φ k=p.getVert k.val := by
+    simp [φ,show k.val≠9 by omega,show k.val≠10 by omega,show k.val≠11 by omega,
+      show k.val≠12 by omega,show k.val≠13 by omega,show k.val≠14 by omega,show k.val≠15 by omega]
+  have classify (k : Fin 16) : k.val≤8 ∨ k=9 ∨ k=10 ∨ k=11 ∨ k=12 ∨ k=13 ∨ k=14 ∨ k=15 := by
+    by_cases h9 : k.val=9
+    · exact .inr (.inl (Fin.ext h9))
+    by_cases h10 : k.val=10
+    · exact .inr (.inr (.inl (Fin.ext h10)))
+    by_cases h11 : k.val=11
+    · exact .inr (.inr (.inr (.inl (Fin.ext h11))))
+    by_cases h12 : k.val=12
+    · exact .inr (.inr (.inr (.inr (.inl (Fin.ext h12)))))
+    by_cases h13 : k.val=13
+    · exact .inr (.inr (.inr (.inr (.inr (.inl (Fin.ext h13))))))
+    by_cases h14 : k.val=14
+    · exact .inr (.inr (.inr (.inr (.inr (.inr (.inl (Fin.ext h14)))))))
+    by_cases h15 : k.val=15
+    · exact .inr (.inr (.inr (.inr (.inr (.inr (.inr (Fin.ext h15)))))))
+    exact .inl (by omega)
+  have val9 : φ 9=x := rfl
+  have val10 : φ 10=u := rfl
+  have val11 : φ 11=v := rfl
+  have val12 : φ 12=w := rfl
+  have val13 : φ 13=t := rfl
+  have val14 : φ 14=s := rfl
+  have val15 : φ 15=y := rfl
+  have conflict {z : V} {k : ℕ} (zo : z∉p.support) (e : p.getVert k=z) : False :=
+    zo (e ▸ p.getVert_mem_support k)
+  have lab_inj : Function.Injective φ := by
+    intro k l eq
+    rcases classify k with kh|kh|kh|kh|kh|kh|kh|kh <;>
+      rcases classify l with lh|lh|lh|lh|lh|lh|lh|lh
+    · exact Fin.ext (hp.1.1.getVert_injOn (show k.val≤p.length by omega)
+        (show l.val≤p.length by omega) ((value kh).symm.trans (eq.trans (value lh))))
+    all_goals try subst k
+    all_goals try subst l
+    all_goals try rfl
+    all_goals try rw [value kh] at eq
+    all_goals try rw [value lh] at eq
+    all_goals simp only [val9,val10,val11,val12,val13,val14,val15] at eq
+    all_goals exfalso
+    all_goals first | contradiction | exact xy eq.symm | exact us eq.symm | exact vs eq.symm | exact ws eq.symm | exact ts eq.symm | exact sx eq.symm | exact sy eq.symm | exact uv eq.symm | exact uw eq.symm | exact ut eq.symm | exact vw eq.symm | exact vt eq.symm | exact wt eq.symm | exact ux eq.symm | exact uy eq.symm | exact vx eq.symm | exact vy eq.symm | exact wx eq.symm | exact wy eq.symm | exact tx eq.symm | exact ty eq.symm | exact conflict xo eq | exact conflict xo eq.symm | exact conflict yo eq | exact conflict yo eq.symm | exact conflict uo eq | exact conflict uo eq.symm | exact conflict vo eq | exact conflict vo eq.symm | exact conflict wo eq | exact conflict wo eq.symm | exact conflict toff eq | exact conflict toff eq.symm | exact conflict so eq | exact conflict so eq.symm
+  have lab_sur : Function.Surjective φ := by
+    intro z
+    by_cases on : z∈p.support
+    · obtain ⟨k,e,kl⟩ := mem_support_iff_exists_getVert.mp on
+      exact ⟨⟨k,by omega⟩,(value (show k≤8 by omega)).trans e⟩
+    · have zz := out.mpr on
+      simp only [oe,mem_insert,mem_singleton] at zz
+      rcases zz with e|e|e|e|e|e|e <;> subst z
+      · exact ⟨9,rfl⟩
+      · exact ⟨15,rfl⟩
+      · exact ⟨10,rfl⟩
+      · exact ⟨11,rfl⟩
+      · exact ⟨12,rfl⟩
+      · exact ⟨13,rfl⟩
+      · exact ⟨14,rfl⟩
+  apply hamilton_of_labeled_chain φ lab_inj lab_sur L (by decide) (by intro k; fin_cases k <;> decide)
+  have line (k : ℕ) (h : k<8) :
+      G.Adj (p.getVert (k+1)) (p.getVert k) := (p.adj_getVert_succ (by omega)).symm
+  have pin7 : G.Adj (p.getVert 7) y := (pin_data (show 7∈Pins p y by simp [pj])).2.symm
+  have pin1 : G.Adj x (p.getVert 1) := (pin_data (show 1∈Pins p x by simp [pi])).2
+  have l0 : G.Adj (p.getVert 1) a := by simpa using line 0 (by decide)
+  have l2 := line 2 (by decide)
+  have l3 := line 3 (by decide)
+  have l4 := line 4 (by decide)
+  have l5 := line 5 (by decide)
+  have l7 := line 7 (by decide)
+  have ytg := (all s so sx sy).2.2
+  have uxg := (all u uo ux uy).2.1.symm
+  have cl : List.Chain' G.Adj
+    [p.getVert 8,p.getVert 7,y,s,t,w,v,u,x,p.getVert 1,p.getVert 0,p.getVert 6,
+      p.getVert 5,p.getVert 4,p.getVert 3,p.getVert 2] := by
+    simp [List.chain'_cons,l7,pin7,ytg,tsg.symm,wtg.symm,vwg.symm,uvg.symm,uxg,pin1,l0,chord,l5,l4,l3,l2]
+  simp only [L,List.chain'_cons,List.chain'_singleton] at *
+  exact cl
+
+#print axioms traceable_if_seven_off_saturated_four

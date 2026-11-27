@@ -18,7 +18,5 @@ for module in PairedOn189 PairedOff189 PairedOnClose189 NoPairs189; do
   run graffiti-189-order-eleven "$module"
 done
 run graffiti-189-order-twelve TinyFourOrder12189
-while IFS= read -r module; do
-  run graffiti-189-order-thirteen "$module"
-done < "$here/../graffiti-189-order-thirteen/modules.txt"
+run graffiti-189-order-twelve SmallOrderFour189
 run graffiti-189-saturated-flank-components OmittedSaturation189

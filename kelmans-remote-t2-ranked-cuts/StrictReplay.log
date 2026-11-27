@@ -1,0 +1,154 @@
+=== public theorem bodies / minimal import overlay: FourRingCutAux ===
+'KelmansCactus.FourRingCutAux.singleton_colour_boundary' depends on axioms: [propext, Classical.choice, Quot.sound]
+=== public theorem bodies / minimal import overlay: Handle189 ===
+'KelmansCactus.AtomicBridge.HandleExtension.Edges.deleted_iso' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.HandleExtension.Edges.cubic' depends on axioms: [propext, Classical.choice, Quot.sound]
+=== public theorem bodies / minimal import overlay: HandleCuts ===
+'KelmansCactus.AtomicBridge.HandleExtension.Edges.boundary_mono' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.HandleExtension.Edges.preserves_small_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== RemoteAvoid3RootTransfer ===
+'KelmansCactus.AtomicBridge.RemoteAvoid3RootTransfer.strip_root_handle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteAvoid3RootTransfer.use_smaller_avoid3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== RemoteAvoid3PortProfiles ===
+'KelmansCactus.AtomicBridge.RemoteAvoid3PortProfiles.single_ready_of_cap_avoid3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteAvoid3PortProfiles.pair_ready_of_cap_root_avoid' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== RemoteAvoid3MixedBridge ===
+'KelmansCactus.AtomicBridge.RemoteAvoid3MixedBridge.mixed_from_original_shores' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteAvoid3MixedBridge.tiny_from_original_shore' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteAvoid3MixedBridge.single_from_original_shore' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteAvoid3MixedBridge.pair_from_original_shore' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteAvoid3MixedBridge.glue_mixed_profiles' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== RemoteAvoid3HandleAdapter ===
+'KelmansCactus.AtomicBridge.RemoteAvoid3HandleAdapter.smaller_root_omit_of_avoid3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== RemoteFourCutAttachment ===
+'KelmansCactus.AtomicBridge.RemoteFourCutAttachment.true_shore_attachment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== RemoteFourCutTransport ===
+'KelmansCactus.AtomicBridge.RemoteFourCutTransport.transfer_small' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteFourCutTransport.transfer_degree' depends on axioms: [propext, Quot.sound]
+=== RemoteAvoid3BalancedFactor ===
+'KelmansCactus.AtomicBridge.RemoteAvoid3BalancedFactor.balanced_mixed_remote_factor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteAvoid3BalancedFactor.mixed_factor_of_two_four_cuts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== RemoteT2TinyShoreChain ===
+'KelmansCactus.AtomicBridge.RemoteT2TinyShoreChain.tiny_width_two_chain' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== RemoteAvoid3TinyBridge ===
+'KelmansCactus.AtomicBridge.RemoteAvoid3TinyBridge.tiny_remote_factor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteAvoid3TinyBridge.tiny_remote_factor_of_count' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== RemoteAvoid3SixTester ===
+'KelmansCactus.AtomicBridge.RemoteAvoid3SixTester.tester_cubic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteAvoid3SixTester.tester_small' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteAvoid3SixTester.tester_old_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteAvoid3SixTester.tester_contact_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteAvoid3SixTester.no_old_pole_contact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== RemoteAvoid3OneWire ===
+'KelmansCactus.AtomicBridge.RemoteAvoid3OneWire.outside_factors_of_one_wire' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== RemoteAvoid3ZeroFromTester ===
+'KelmansCactus.AtomicBridge.RemoteAvoid3ZeroFromTester.zero_factor_of_smaller_avoid3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteAvoid3ZeroFromTester.zero_factor_from_attachment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== RemoteAvoid3ZeroBridge ===
+'KelmansCactus.AtomicBridge.RemoteAvoid3ZeroBridge.balanced_zero_remote_factor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteAvoid3ZeroBridge.zero_factor_of_two_four_cuts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== RemoteAvoid3BridgeAll ===
+'KelmansCactus.AtomicBridge.RemoteAvoid3BridgeAll.balanced_bridge_factor_of_smaller_avoid3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== RemoteAvoid3RankTransfer ===
+'KelmansCactus.AtomicBridge.RemoteAvoid3RankTransfer.smaller_avoid3_of_remote' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== RemoteRankOrdinaryT2 ===
+'KelmansCactus.AtomicBridge.RemoteRankOrdinaryT2.cubic_has_remote_edge' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteRankOrdinaryT2.smaller_t2_of_remote' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== RemoteAvoid3RankedBridge ===
+'KelmansCactus.AtomicBridge.RemoteAvoid3RankedBridge.ranked_factor_of_two_four_cuts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteAvoid3RankedBridge.ranked_factor_of_balanced_cut' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== RemoteAvoid3LargeBridge ===
+'KelmansCactus.AtomicBridge.RemoteAvoid3LargeBridge.large_balanced_bridge_from_smaller_remote' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteAvoid3LargeBridge.minimal_remote_bridge_shore_small' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== RemoteAvoid3TinyRankBoundary ===
+'KelmansCactus.AtomicBridge.RemoteAvoid3TinyRankBoundary.no_three_vertex_balanced_shore' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteAvoid3TinyRankBoundary.minimal_remote_bridge_is_two_or_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== RemoteTinyEarCore ===
+'KelmansCactus.AtomicBridge.RemoteTinyEarCore.lift_live_ear' depends on axioms: [propext, Classical.choice, Quot.sound]
+=== RemoteTinyEarRanked ===
+'KelmansCactus.AtomicBridge.RemoteTinyEarRanked.factor_of_live_ear_tester' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteTinyEarRanked.tiny_remote_of_live_ear_tester' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

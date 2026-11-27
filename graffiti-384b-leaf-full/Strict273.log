@@ -1,0 +1,48 @@
+Leaf path build /workspace/scratch/7efa613b1c05/graff384b-leaf-independent/.leafpath.lFUPTuib
+graff384b-clean-independent/CHECKED-OBJECTS.sha256: OK
+graff384b-clean-independent/CleanFinish.lean: OK
+graff384b-clean-independent/CleanRanks.lean: OK
+graff384b-clean-independent/NEW-SOURCES.sha256: OK
+graff384b-clean-independent/README.md: OK
+graff384b-clean-independent/SOURCES.sha256: OK
+graff384b-clean-independent/Strict270.log: OK
+graff384b-clean-independent/audit.py: OK
+graff384b-clean-independent/replay.sh: OK
+graff384b-independent12/graff384b-independent12-sources.zip: OK
+Complete independent attachment replay verified: 270 graph modules and 643 axiom reports.
+Fresh extension verified: 2 modules and 4 standard-axiom reports.
+AnchorScores.olean: OK
+CleanFinish.olean: OK
+CleanRanks.olean: OK
+CubicExtra.olean: OK
+CubicMass.olean: OK
+CubicRanks.olean: OK
+DenseTwelve.olean: OK
+FinishIndependent.olean: OK
+IndependentFrontier.olean: OK
+IndependentThirteen.olean: OK
+JointEarRank.olean: OK
+JointEarSample.olean: OK
+JointEarWitness.olean: OK
+PoolTwelve.olean: OK
+PortClique29.olean: OK
+PortFrame29.olean: OK
+PortRepair29.olean: OK
+RankRepair29.olean: OK
+ReservedRanks.olean: OK
+SimplicialRanks.olean: OK
+SimplicialTrial.olean: OK
+TwelveWitness.olean: OK
+UnreservedTwelve.olean: OK
+Weighted29.olean: OK
+LeafDeletion.lean: OK
+LeafSample.lean: OK
+LeafFinish.lean: OK
+'Graffiti384b.LeafPath.deletion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.LeafPath.mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.LeafPath.ranked' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.LeafPath.safe_ear' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.LeafPath.exact_leaf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.LeafPath.remaining' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fresh extension verified: 3 modules and 6 standard-axiom reports.
+Complete leaf-path replay verified: 273 graph modules and 649 axiom reports.

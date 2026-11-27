@@ -1,0 +1,10 @@
+Mathlib commit c44e0c8ee63ca166450922a373c7409c5d26b00b
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+Recompiled 49 pinned foundation modules.
+'Minimal180.HigherRank.apex_score' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.HigherRank.apex_gain_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.HigherRank.leaf_attachment_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.HigherRank.star_or_deletion' depends on axioms: [propext, Classical.choice, Quot.sound]
+Kernel replay accepted 10 declarations including Minimal180.HigherRank.apex_gain_iff.
+10 new declarations passed kernel replay. All 4 printed axiom reports use exactly propext, Classical.choice and Quot.sound.

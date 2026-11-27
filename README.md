@@ -18,6 +18,7 @@
 | Graffiti.pc #169 | Proved (order ≥ 2); singleton depends on leaf convention | [Lean](graffiti-169/Proof169.lean) · [Write-up](graffiti-169/README.md) · [Earlier written proof](https://github.com/f8bsd9yqgp-maker/Solved-conjectures-/blob/03b6cd13bac0975fb554633e47a30c64cbf6a1bf/proofs/graffiti-pc-169/README.md) |
 | Graffiti.pc #177 | Proved | [Lean](graffiti-177/Proof177.lean) · [Shorter Lean proof](graffiti-177/Short177.lean) · [Tree equality](graffiti-177/TreeEquality.lean) |
 | Graffiti.pc #179 | Proved (minimum- and maximum-degree versions) | [Lean](graffiti-179/Strong179.lean) · [Write-up](graffiti-179/README.md) |
+| Graffiti.pc #180 | Open in general; bipartite, low-eccentricity and small-transversal cases proved | [Lean and replay](graffiti-180-partial/README.md) |
 | Graffiti.pc #182 | Proved | [Lean](graffiti-182/Proof182.lean) · [Write-up](graffiti-182/README.md) |
 | Graffiti.pc #183 | Proved | [Lean](graffiti-183/src/Proof183.lean) · [Written proof](graffiti-183/PROOF.md) |
 | Graffiti.pc #184 | Disproved (22-vertex counterexample) | [Lean](graffiti-184/Counterexample184.lean) · [Write-up](graffiti-184/README.md) |

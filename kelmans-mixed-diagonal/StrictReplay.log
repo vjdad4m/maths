@@ -1,0 +1,158 @@
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+src/RemoteDiagonalEarPhases.lean: OK
+src/RemoteFourMixedCycle.lean: OK
+src/RemoteFourUnionWeave.lean: OK
+models/RemoteMixedDissociation.lean: OK
+fixtures/DiagonalPairUnion.lean: OK
+dependencies.tsv: OK
+fixture-dependencies.tsv: OK
+modules.txt: OK
+
+=== SquareCapGeometry ===
+'KelmansCactus.AtomicBridge.SquareCap.split_budget_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.SquareCap.no_two_bad_coordinate_splits' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.SquareCap.attach_boundary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.SquareCap.outside_law_of_attachment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.SquareCap.bad_cap_forces_two_split' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.SquareCap.exists_good_coordinate_cap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.SquareCap.attach_degree_outside' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.SquareCap.attach_degree_inside' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.SquareCap.cap_cubic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.SquareCap.min_three_of_small_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.SquareCap.cubic_good_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.SquareCap.three_connected_of_small_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.SquareCap.zone_cut_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.SquareCap.crossing_two_lower_tight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.SquareCap.no_crossing_two_rigid_zones' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== SquareCapFactor ===
+'KelmansCactus.AtomicBridge.SquareCap.square_root_tile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.SquareCap.square_f2_explicit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.SquareCap.exterior_factors_of_t2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.SquareCap.square_root_deletion_avoids_all_wires' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RemoteVacancyRails ===
+'KelmansCactus.AtomicBridge.RemoteVacancyRails.Rail.rotate' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+=== RemoteGapRunPacking ===
+'KelmansCactus.AtomicBridge.RemoteGapRunPacking.runCover_factor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteGapRunPacking.joined_at_factor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RemoteSquareConvergence ===
+'KelmansCactus.AtomicBridge.RemoteSquareConvergence.bypass_of_cycles' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteSquareConvergence.square_convergence' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RemoteRankUnion ===
+'KelmansCactus.AtomicBridge.RemoteRankUnion.rebuilt_preconnected_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteRankUnion.rebuilt_disconnected_iff_forced_cut' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteRankUnion.force_cut_has_distinct_same_color' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RemoteSixSwitch ===
+'KelmansCactus.AtomicBridge.RemoteSixSwitch.all_bypasses_preserve_reach' does not depend on any axioms
+'KelmansCactus.AtomicBridge.RemoteSixSwitch.two_component_cover' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteSixSwitch.merges_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteSixSwitch.merge_preserves_reach' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RemoteSixMixed ===
+'KelmansCactus.AtomicBridge.RemoteSixMixed.mixed_runs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteSixMixed.mixed_factor_at_outer_port' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RemoteSubdivisionCore ===
+'KelmansCactus.AtomicBridge.RemoteSubdivisionCore.Marks.cut_mono' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteSubdivisionCore.Marks.cut_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteSubdivisionCore.Marks.cyclic_four_iff_fat' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RemoteCycleChainCore ===
+
+=== RemoteCycleChainCover ===
+'KelmansCactus.AtomicBridge.RemoteCycleChain.factor_of_opened_cycle_chains' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteCycleChain.factor_of_routes' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteCycleChain.flatten_chain' depends on axioms: [propext, Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteCycleChain.flatten_nodup' depends on axioms: [propext, Quot.sound]
+
+=== RemoteBudgetComponent ===
+'KelmansCactus.AtomicBridge.RemoteBudgetComponent.budget_one_exchange' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteBudgetComponent.exposed_iff_neighbor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RemoteFourMixedCycle ===
+'KelmansCactus.AtomicBridge.RemoteFourMixedCycle.diagonal_cycles' depends on axioms: [propext, Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteFourMixedCycle.open_at' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteFourMixedCycle.absorb_ear' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteFourMixedCycle.diagonal_release_one_ear' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RemoteDiagonalEarPhases ===
+'KelmansCactus.AtomicBridge.RemoteDiagonalEarPhases.factor_two_ear_arcs' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteDiagonalEarPhases.factor_one_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RemoteFourUnionWeave ===
+'KelmansCactus.AtomicBridge.RemoteFourUnionWeave.expanded_diagonal_factor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteFourUnionWeave.active_strip_edge' does not depend on any axioms
+'KelmansCactus.AtomicBridge.RemoteFourUnionWeave.expanded_diagonal_cycles' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RemoteMixedDissociation ===
+'KelmansCactus.AtomicBridge.RemoteMixedDissociation.no_factor_if_sparse_large' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.DiagonalResidueLock.no_factor' depends on axioms: [propext, Classical.choice, Quot.sound]

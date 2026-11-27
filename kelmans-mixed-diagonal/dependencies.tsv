@@ -1,0 +1,13 @@
+# Git blob SHA and path relative to the maths repository, in build order.
+e80304da85af63ff0e3439e0e88e9ff7f8ffca4e	kelmans-switch-unions/src/SquareCapGeometry.lean
+e1df35614c12d87a46f1f77c2c2f2ffbd53f00fb	kelmans-switch-unions/src/SquareCapFactor.lean
+3decd38dfeca9273000e51c43c2dccd0f5711fd2	kelmans-switch-unions/src/RemoteVacancyRails.lean
+f5cb536bc775e620473ed00e00e292753df533c0	kelmans-switch-unions/src/RemoteGapRunPacking.lean
+7d43699f707c4393384422cb72f4839e0a10558a	kelmans-switch-unions/src/RemoteSquareConvergence.lean
+0f61c3e11371b50f1481236fec6a35e1249a8c99	kelmans-switch-unions/src/RemoteRankUnion.lean
+a6aa37c5f23afed10b5e80a82d99a6a5730875b4	kelmans-switch-unions/src/RemoteSixSwitch.lean
+e6bd723ba03663a97d418dfd2c4350b78b648ffa	kelmans-switch-unions/src/RemoteSixMixed.lean
+bcdad39e43c9e39947d9285edace7da99acbd2e8	kelmans-spaced-prism/src/RemoteSubdivisionCore.lean
+99f22d9a161e68ce840ee719b5ba3bac34495b80	kelmans-prism-ladder/src/RemoteCycleChainCore.lean
+b43305f628a183450ecf986f70342738397d7a19	kelmans-prism-ladder/src/RemoteCycleChainCover.lean
+0e89126e28eafdc787df685f16a2c5446b8864db	kelmans-budget-component/src/RemoteBudgetComponent.lean

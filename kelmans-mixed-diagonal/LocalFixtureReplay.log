@@ -1,0 +1,20 @@
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+src/RemoteDiagonalEarPhases.lean: OK
+src/RemoteFourMixedCycle.lean: OK
+src/RemoteFourUnionWeave.lean: OK
+models/RemoteMixedDissociation.lean: OK
+fixtures/DiagonalPairUnion.lean: OK
+dependencies.tsv: OK
+fixture-dependencies.tsv: OK
+modules.txt: OK
+
+=== DiagonalPairUnion ===
+'KelmansCactus.AtomicBridge.DiagonalPairUnion.pairwise_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.DiagonalPairUnion.rank0_no_factor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.DiagonalPairUnion.rank1_no_factor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.DiagonalPairUnion.pair_connected' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.DiagonalPairUnion.pair_factor' depends on axioms: [propext, Classical.choice, Quot.sound]

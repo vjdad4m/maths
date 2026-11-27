@@ -118,6 +118,7 @@
 | AutoGraphForge line 355 | Proved | [Lean](autographforge-355/AutoGraphForge355.lean) |
 | AutoGraphForge line 357 | Disproved (singleton rainbow convention) | [Lean](autographforge-357/AutoGraphForge357.lean) |
 | AutoGraphForge line 359 | Proved | [Lean](autographforge-359/AutoGraphForge359.lean) |
+| AutoGraphForge line 362 | Disproved in Lean by a 17-vertex bipartite graph | [Counterexample](autographforge-362/README.md) |
 | AutoGraphForge line 365 | Disproved | [Lean](autographforge-365/AutoGraphForgeDiamonds.lean) |
 | AutoGraphForge line 370 | Proved where outer-connected domination is defined | [Lean](autographforge-370/OuterForest.lean) · [Replay](autographforge-370/README.md) |
 | AutoGraphForge line 371 | Proved (where total forcing is defined) | [Lean](autographforge-371/AutoGraphForge371.lean) |

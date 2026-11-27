@@ -1,0 +1,9 @@
+1132 579ec124 proposed; source-record touches 875
+5385 9f880402 proposed; source-record touches 0
+4776 released graph6 encodings {'nontrivial_trees': 179, 'row_1132_domain': 76, 'also_in_refutation_files': 13, 'checked_both_optimizers_order_le_8': 30}
+compute_battery P5 (5, 4, True, True, 3, 3)
+compute_battery K1,3 (4, 3, True, True, 3, 3)
+compute_battery rank0 (4, 3, True, True, 2, 2)
+compute_battery rank1 (5, 5, False, True, 3, 2)
+compute_battery rank2 (6, 7, False, False, 4, 2)
+compute_battery rank3 (7, 9, False, False, 5, 2)

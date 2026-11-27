@@ -1,0 +1,13 @@
+SpokePrune180 Minimal180.CutGain.gain_preserves_pruned
+CutGain180 Minimal180.CutGain.cut_gain_iff_wings
+MarkedPort180 Minimal180.CutGain.double_mark_gain
+CutGeometry180 Minimal180.CutGain.horizontal_double_gain
+BranchLayer180 Minimal180.CutGain.cut_layer_tree
+DefectOneGain180 Minimal180.CutGain.TightCut.defect_one_gain_iff
+CutSupport180 Minimal180.CutGain.TightCut.defect_one_support
+Weighted177Gain180 Minimal180.CutGain.TightCut.independent_obstruction
+CutEntry180 Minimal180.CutGain.TightCut.defect_one_entry
+CutChain180 Minimal180.CutGain.TightCut.defect_one_chain
+CutEscape180 Minimal180.CutGain.TightCut.deeper_chord
+CutExit180 Minimal180.CutGain.TightCut.tight_exit
+CutOutermost180 Minimal180.CutGain.TightCut.outermost_gain

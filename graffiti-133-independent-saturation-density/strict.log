@@ -1,0 +1,45 @@
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+Checking P5CliqueFourPortPacking133
+'Graffiti133FourPortPacking.pair_charge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti133FourPortPacking.inner_pairs_at_most_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti133FourPortPacking.crossings_le_nonports_add_pairs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti133FourPortPacking.inner_crossings_at_most_order_add_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti133FourPortPacking.high_excess_profiles' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti133FourPortPacking.high_five_profile_counts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti133FourPortPacking.charge_with_triples' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti133FourPortPacking.high_five_with_inner_pair_is_five_two_masks' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS P5CliqueFourPortPacking133
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+Checking P5CliqueHighExcessPorts133
+'Graffiti133FourPortPacking.high_excess_two_foreign_ports' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti133FourPortPacking.high_excess_every_anchor_without_triple_neighbor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS P5CliqueHighExcessPorts133
+Checking P5CliqueIncomingLong133
+'Graffiti133P5CliqueArms.IncomingLongStem.incoming_nearest_stem_length_four_or_five_forces_p9' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS P5CliqueIncomingLong133
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+Checking P5CliqueTwoIncomingNearest133
+'Graffiti133P5CliqueArms.TwoIncomingNearest.two_nearest_three_edge_incoming_stems_or_induced_p9' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS P5CliqueTwoIncomingNearest133
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+Checking P5CliqueIndependentPureSaturation133
+'Graffiti133P5CliqueArms.nearest_stem_reindex' depends on axioms: [propext, Quot.sound]
+'Graffiti133P5CliqueArms.four_port_pure_highs_at_most_four_when_pairs_occupied' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS P5CliqueIndependentPureSaturation133
+Checking P5CliqueIndependentSaturationDensity133
+'Graffiti133P5CliqueArms.independent_four_ports_mean_four_of_size_or_large_contact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS P5CliqueIndependentSaturationDensity133

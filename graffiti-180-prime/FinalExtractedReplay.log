@@ -1,0 +1,95 @@
+Mathlib commit c44e0c8ee63ca166450922a373c7409c5d26b00b
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+Recompiled 115 pinned foundation modules.
+'Minimal180.Substitution.Bags.coreDown' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Substitution.Bags.costLower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Substitution.Bags.costExact' depends on axioms: [propext, Classical.choice, Quot.sound]
+Kernel replay accepted 13 declarations including Minimal180.Substitution.Bags.costExact.
+'Minimal180.Substitution.repair_color' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Substitution.pin_low_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Substitution.cover_degree_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Substitution.Bags.lowDegreeRooted' depends on axioms: [propext, Classical.choice, Quot.sound]
+Kernel replay accepted 8 declarations including Minimal180.Substitution.Bags.lowDegreeRooted.
+'Minimal180.Substitution.Bags.retainedDist' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Substitution.Bags.retainedLoss' depends on axioms: [propext, Classical.choice, Quot.sound]
+Kernel replay accepted 7 declarations including Minimal180.Substitution.Bags.retainedLoss.
+'Minimal180.Substitution.Bags.colorDown' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Substitution.pulled_size' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Substitution.forced_indep' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Substitution.forced_max' depends on axioms: [propext, Classical.choice, Quot.sound]
+Kernel replay accepted 12 declarations including Minimal180.Substitution.forced_max.
+'Minimal180.Substitution.forced_parity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Substitution.forced_eligible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Substitution.forced_witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+Kernel replay accepted 12 declarations including Minimal180.Substitution.forced_witness.
+'Minimal180.Substitution.module_bags' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Substitution.quotient_order' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Substitution.quotient_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Substitution.low_module_descent' depends on axioms: [propext, Classical.choice, Quot.sound]
+Kernel replay accepted 17 declarations including Minimal180.Substitution.low_module_descent.
+'Minimal180.Substitution.no_port_of_failure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Substitution.minimal_boundary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Substitution.minimal_noCut' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Substitution.minimal_subcubic_prime' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Substitution.prime_subcubic_reduction' depends on axioms: [propext, Classical.choice, Quot.sound]
+Kernel replay accepted 11 declarations including Minimal180.Substitution.prime_subcubic_reduction.
+'Minimal180.Substitution.realize_pinned_failure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Substitution.universal_pins' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Substitution.universal_iff_pinned_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+Kernel replay accepted 6 declarations including Minimal180.Substitution.universal_iff_pinned_blocks.
+'Minimal180.Substitution.keep_sections' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Substitution.Bags.prune' depends on axioms: [propext, Classical.choice, Quot.sound]
+Kernel replay accepted 14 declarations including Minimal180.Substitution.Bags.prune.
+'Minimal180.Substitution.dominating_pins' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Substitution.pin_nohub' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Substitution.FalseTwins.paint' depends on axioms: [propext, Quot.sound]
+'Minimal180.Substitution.pulled_mark' depends on axioms: [propext, Classical.choice, Quot.sound]
+Kernel replay accepted 14 declarations including Minimal180.Substitution.pulled_mark.
+'Minimal180.Substitution.TrueChart.parityImage' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Substitution.TrueChart.marks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Substitution.TrueChart.full' depends on axioms: [propext, Classical.choice, Quot.sound]
+Kernel replay accepted 27 declarations including Minimal180.Substitution.TrueChart.full.
+'Minimal180.Substitution.TrueChart.colorUp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Substitution.TrueChart.colorCap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Substitution.TrueChart.odd_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+Kernel replay accepted 14 declarations including Minimal180.Substitution.TrueChart.odd_iff.
+'Minimal180.Substitution.pinned_of_low_marks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Substitution.odd_of_low_marks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Substitution.Bags.lowRankFamily' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Substitution.Bags.lowRankTwo' depends on axioms: [propext, Classical.choice, Quot.sound]
+Kernel replay accepted 5 declarations including Minimal180.Substitution.Bags.lowRankTwo.
+'Minimal180.Substitution.Bags.minimal_marks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Substitution.minimal_shape' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Substitution.minimal_nonclique' depends on axioms: [propext, Classical.choice, Quot.sound]
+Kernel replay accepted 10 declarations including Minimal180.Substitution.minimal_nonclique.
+'Minimal180.Substitution.erase_pull_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Substitution.Bags.pinDelete' depends on axioms: [propext, Classical.choice, Quot.sound]
+Kernel replay accepted 7 declarations including Minimal180.Substitution.Bags.pinDelete.
+'Minimal180.Substitution.pin_minimal_module' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Substitution.small_pinned' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Substitution.universal_iff_root_pairs' depends on axioms: [propext, Classical.choice, Quot.sound]
+Kernel replay accepted 13 declarations including Minimal180.Substitution.universal_iff_root_pairs.
+'Minimal180.Substitution.Bags.modulePull' depends on axioms: [propext, Quot.sound]
+'Minimal180.Substitution.Bags.prime_after_root_fold' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Substitution.prime_or_root_twin' depends on axioms: [propext, Classical.choice, Quot.sound]
+Kernel replay accepted 4 declarations including Minimal180.Substitution.prime_or_root_twin.
+'Minimal180.Substitution.pinned_down' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Substitution.min_pair_odd' depends on axioms: [propext, Classical.choice, Quot.sound]
+Kernel replay accepted 4 declarations including Minimal180.Substitution.min_pair_odd.
+'Minimal180.Substitution.TrueChart.image_pull' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Substitution.twinChart' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Substitution.pairChart' depends on axioms: [propext, Classical.choice, Quot.sound]
+Kernel replay accepted 5 declarations including Minimal180.Substitution.pairChart.
+'Minimal180.Substitution.universal_prime_tests' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Substitution.minimal_prime_test' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Substitution.universal_iff_prime_tests' depends on axioms: [propext, Classical.choice, Quot.sound]
+Kernel replay accepted 9 declarations including Minimal180.Substitution.universal_iff_prime_tests.
+'Minimal180.Substitution.realize_odd_failure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Substitution.bipartite_prime_tests' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Substitution.subcubic_prime_tests' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Substitution.universal_iff_nonbipartite_prime_tests' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Kernel replay accepted 11 declarations including Minimal180.Substitution.universal_iff_nonbipartite_prime_tests.
+223 new declarations passed kernel replay. All 67 printed axiom reports use only propext, Classical.choice and Quot.sound.

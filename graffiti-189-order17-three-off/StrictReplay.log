@@ -1,0 +1,72 @@
+OffThree17LongerBase189.lean: OK
+OffThree17LongerRow2_5189.lean: OK
+OffThree17LongerRow2_6189.lean: OK
+OffThree17LongerRow2_7189.lean: OK
+OffThree17LongerRow2_8189.lean: OK
+OffThree17LongerRow2_9189.lean: OK
+OffThree17LongerRow2_10189.lean: OK
+OffThree17LongerRow2_11189.lean: OK
+OffThree17LongerRow3_6189.lean: OK
+OffThree17LongerRow3_7189.lean: OK
+OffThree17LongerRow3_8189.lean: OK
+OffThree17LongerRow3_9189.lean: OK
+OffThree17LongerRow3_10189.lean: OK
+OffThree17LongerRow4_7189.lean: OK
+OffThree17LongerRow4_8189.lean: OK
+OffThree17LongerRow4_9189.lean: OK
+OffThree17LongerRow5_8189.lean: OK
+OffThree17LongerTable189.lean: OK
+'OffThree17Longer.row_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OffThree17Longer.row_2_5' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OffThree17Longer.row_2_6' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OffThree17Longer.row_2_7' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OffThree17Longer.row_2_8' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OffThree17Longer.row_2_9' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OffThree17Longer.row_2_10' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OffThree17Longer.row_2_11' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OffThree17Longer.row_3_6' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OffThree17Longer.row_3_7' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OffThree17Longer.row_3_8' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OffThree17Longer.row_3_9' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OffThree17Longer.row_3_10' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OffThree17Longer.row_4_7' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OffThree17Longer.row_4_8' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OffThree17Longer.row_4_9' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OffThree17Longer.row_5_8' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OffThree17Longer.all_rows' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.TwoCut.common_neighbor_block_degree_budget' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.TwoCut.common_neighbor_block_six_internal_degree' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.TwoCut.order_seventeen_shape_from_short_reductions' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.TwoCut.no_longest_eight_with_saturated_splice' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.TwoCut.no_longest_eight_from_saturated_port_rules' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.TwoCut.no_length_eight_with_omission_at_degree_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.TwoCut.order_seventeen_four_remaining_branches' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'_private.OffThree17Graph189.0.Graffiti189LongestPath.TwoCut.length_thirteen_three_off_oriented' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.TwoCut.no_length_thirteen_with_three_off_at_degree_four_table' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.TwoCut.no_length_thirteen_with_three_off_at_degree_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.TwoCut.order_seventeen_three_remaining_branches' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.TwoCut.degree_four_order17_counterexample_three_branches' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,12 +1,13 @@
 # Conjecture sources
 
-The [problem index](README.md) records results in this repository. The links below identify the original statements and their numbering. The three numbering systems are separate.
+The [problem index](README.md) records results in this repository. The links below identify the original statements and their numbering. The numbering systems are separate.
 
 | Collection | Where to find the problems | How to interpret the index |
 | --- | --- | --- |
 | AutoGraphForge | [Pinned normalized survivor list](https://github.com/JanPastorek/AutoGraphForge/blob/4d1a8afc99447cacd2328cca20e47b6493e8dbc5/results/survivors_by_touch_normalised.txt) | “AutoGraphForge line N” means physical line N in this exact file, not a conjecture number in another collection. |
 | Graffiti³ | [Randy Davila’s Graffiti³ paper, Research Square v1](https://assets-eu.researchsquare.com/files/rs-8493329/v1_covered_f3b2ebd5-1eff-4ba6-aa7a-671608894aaf.pdf) | “Graffiti³ #N” means the numbered conjecture in this paper, including lettered parts where applicable. |
 | Graffiti.pc | [Ermelinda DeLaViña’s Written on the Wall II catalogue](https://www.uhd.edu/academics/sciences/mathematics-statistics/wowii/index.html) | “Graffiti.pc #N” means the catalogue’s conjecture number, including any lettered variant. This is not the original Written on the Wall catalogue. |
+| Cazenave spectral | [Section 7 of the November 2026 preprint](https://arxiv.org/html/2611.03879v1#S7) | Use the paper's conjecture number and lettered part, plus corpus ID when given. |
 
 ## AutoGraphForge
 
@@ -22,5 +23,10 @@ The [problem index](README.md) records results in this repository. The links bel
 
 - The live catalogue serves separate [statements and statuses](https://www.uhd.edu/academics/sciences/mathematics-statistics/wowii/files/conjectures.json), [definitions](https://www.uhd.edu/academics/sciences/mathematics-statistics/wowii/files/definitions.json), and [curator comments](https://www.uhd.edu/academics/sciences/mathematics-statistics/wowii/files/comments.json). There is also a [printable snapshot](https://www.uhd.edu/academics/sciences/mathematics-statistics/wowii/files/wowiiaii.pdf).
 - The [Written on the Wall II section of Formal Conjectures](https://github.com/google-deepmind/formal-conjectures/tree/main/FormalConjectures/WrittenOnTheWallII) is a useful secondary index of Lean statements. Check those against the catalogue's exact wording and definitions.
+
+## Cazenave spectral graph conjectures
+
+- [Tristan Cazenave, *Lemmas and Conjectures in Spectral Graph Theory*, arXiv:2611.03879v1](https://arxiv.org/html/2611.03879v1#S7), is the pinned source for the paper's numbered conjectures and subparts. Its [proof and corpus archive](https://www.lamsade.dauphine.fr/~cazenave/papers/preuves_spectrales.zip) is indexed by separate corpus IDs. Write both the paper locator and corpus ID when available; do not treat an unrefuted numerical candidate as verified open.
+- Status checks on 2026-11-27: the paper's Conjecture 3 follows from [Arizmendi and Arizmendi's energy bound](https://arxiv.org/abs/2009.08041), since adjacency energy is at most rank times spectral radius. [A Lean proof of Conjecture 4](https://www.trureturing.org/research/op-cazenave2611c4/) is publicly recorded. [Kramer's proof of 6(ii)](https://hexagonmath.org/pdf/2611.00232v1) covers the exact paper statement; [6(iii) has a posted proposed proof](https://hexagonmath.org/2611.01102v1), not independently checked here. Do not claim these as new open targets without addressing the cited work.
 
 A release's “proposed,” “survivor,” or “open” label is not evidence of novelty. Check dated prior work and exact definitions before claiming a new resolution.

@@ -106,6 +106,7 @@
 | Graffiti³ #22 | Disproved | [Lean](graffiti3-22/Proof22.lean) |
 | Graffiti³ #25 | Proved | [Lean](graffiti3-25/Proof25.lean) |
 | Graffiti³ #27 | Disproved | [Lean](graffiti3-27/Dihedral27.lean) · [Write-up](graffiti3-27/README.md) |
+| AutoGraphForge line 33 | Disproved; gap unbounded | [Lean and replay](autographforge-33/README.md) |
 | AutoGraphForge line 66 | Disproved | [Lean](autographforge-66/PowerBurning.lean) |
 | AutoGraphForge line 303 | Disproved | [Lean](autographforge-303/AutoGraphForgePlanar.lean) |
 | AutoGraphForge line 304 | Disproved | [Lean](autographforge-304/AutoGraphForge304.lean) |

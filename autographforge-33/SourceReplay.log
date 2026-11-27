@@ -1,0 +1,6 @@
+AutoGraphForge 4d1a8afc99447cacd2328cca20e47b6493e8dbc5, normalized 33, raw 22 and equivalent raw 23
+((nontrivial) ∧ (connected)) ⇒ burning_number ≤ (slater + 1) IDs fe71fb58, de34b0ca
+Release status proposed. Generation touches 2860
+GraphCalc ce66ac7390d945885e33f372e29c896fa32e9bc4, NetworkX 3.5, K8 with an 8-vertex tail
+Slater = 2, burning = 4, violating 4 ≤ 3
+Validated four-round GraphCalc schedule [10, 13, 7, 0]

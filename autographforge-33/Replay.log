@@ -1,0 +1,7 @@
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+'Lollipop.height_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Lollipop.slater_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Lollipop.witness_burning' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Lollipop.lollipop_height' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Lollipop.separation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Lollipop.row33_false' depends on axioms: [propext, Classical.choice, Quot.sound]

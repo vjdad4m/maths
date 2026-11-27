@@ -143,6 +143,7 @@
 | AutoGraphForge line 1128 | Proved on GraphCalc's numerical triameter domain | [Lean](autographforge-cograph/CographRadius.lean) · [Conventions and replay](autographforge-cograph/README.md) |
 | AutoGraphForge line 1221 | Proved (formalization of a known consequence) | [Lean](autographforge-373/AutoGraphForge373.lean) · [Prior formulas](https://doi.org/10.1090/surv/270) |
 | AutoGraphForge line 1539 | Disproved | [Lean](autographforge-balanced-forcing/BalancedForcing.lean) |
+| AutoGraphForge line 1707 | Disproved in Lean; unbounded gap on connected claw-free graphs | [Proof](autographforge-1707/) |
 | AutoGraphForge line 1839 | Disproved | [Lean](autographforge-365/AutoGraphForgeDiamonds.lean) |
 | AutoGraphForge line 1883 | Disproved (singleton rainbow convention) | [Lean](autographforge-1883/AutoGraphForge1883.lean) |
 | AutoGraphForge line 1889 | Disproved | [Lean](autographforge-shared-hub/SharedHub.lean) · [Replay](autographforge-shared-hub/README.md) |

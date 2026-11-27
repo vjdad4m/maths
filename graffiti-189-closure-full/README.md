@@ -1,5 +1,7 @@
 # Graffiti.pc #189: all eligible unique-common distance-two cuts
 
+**Later scope correction:** Lean [rules out the exact unique-common degree-five cut configuration](../graffiti-189-unique-exclusion/README.md). The earlier conditional path implication remains valid, but its hypotheses do not occur in this branch.
+
 Lean proves that the degree-five Graffiti.pc #189 hypotheses force a Hamiltonian path when two vertices at distance two have exactly one common neighbor, their deletion leaves exactly two components, and at most one other vertex is adjacent to neither endpoint. This last condition is the degree-sum test from [Easwar and Johari](https://arxiv.org/html/2609.11719v1#S3). The proof constructs the path directly in the original graph. It covers the possible low-degree vertex on either side of the cut and does not assume the general edge-addition lemma.
 
 - [Exact traceability theorem](DegreeFiveUniquePortClosureFull189.lean) and [low vertex in the common-neighbor component](DegreeFiveUniquePortLowCommon189.lean).

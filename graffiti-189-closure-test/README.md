@@ -1,5 +1,7 @@
 # Graffiti.pc #189: scope of a candidate edge-addition rule
 
+**Later scope correction:** Lean [rules out the exact unique-common degree-five cut configuration](../graffiti-189-unique-exclusion/README.md). The earlier conditional path implication remains valid, but its hypotheses do not occur in this branch.
+
 For nonadjacent cut vertices with exactly one common neighbor, the degree-sum condition in [Easwar and Johari, Lemma 3.3(2)](https://arxiv.org/html/2609.11719v1#S3) is equivalent to there being at most one other vertex adjacent to neither endpoint. This criterion is measured in the original graph.
 
 Under the Graffiti.pc #189 degree-five hypotheses, if the cut vertices are at distance two and removing them leaves exactly two components, that edge-addition test can pass only at order at most 15. In particular this version of the test cannot cover larger graphs. The criterion alone does not give traceability for every graph that passes the test, and the external edge-addition rule is not formalized here. The full conjecture remains open.

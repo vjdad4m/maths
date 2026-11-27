@@ -1,0 +1,4 @@
+Physical row 105, CEGIS 516f48da, proposed. Normalized touches 888, raw touches 1399.
+All 4776 distinct released encodings inspected. Certified a center per component [('disconnected', 559), ('in prior refutations', 62), ('qualifying', 912), ('with isolates', 370)]
+Empty graph outside catalogue domain: GraphCalc power_domination_number returns None.
+Battery on P4, C4, claw plus two isolates, cone over P4 [(4, True, False, 2, 1), (4, False, True, 2, 1), (6, True, True, 3, 3), (5, True, False, 1, 1)]

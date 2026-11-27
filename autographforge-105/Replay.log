@@ -1,0 +1,8 @@
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+'Hereditary105.universal_of_join' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Hereditary105.exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Hereditary105.row105' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Hereditary105.four_optima' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Hereditary105.four_vertex_test' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Hereditary105.characterization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Hereditary105.on_induced' depends on axioms: [propext, Classical.choice, Quot.sound]

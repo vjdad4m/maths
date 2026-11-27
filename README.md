@@ -108,6 +108,7 @@
 | Graffiti³ #27 | Disproved | [Lean](graffiti3-27/Dihedral27.lean) · [Write-up](graffiti3-27/README.md) |
 | AutoGraphForge line 33 | Disproved; gap unbounded | [Lean and replay](autographforge-33/README.md) |
 | AutoGraphForge line 66 | Disproved | [Lean](autographforge-66/PowerBurning.lean) |
+| AutoGraphForge line 105 | Proved in Lean | [Component equality and four-vertex hereditary test](autographforge-105/README.md) |
 | AutoGraphForge line 143 | Proved (consequence of cograph decomposition) | [Lean](autographforge-cograph/CographRadius.lean) · [Conventions and replay](autographforge-cograph/README.md) |
 | AutoGraphForge line 187 | Disproved | [Lean](autographforge-book-tail/BookTail.lean) · [Replay](autographforge-book-tail/README.md) |
 | AutoGraphForge line 188 | Proved in Lean | [Power domination versus two-forcing on cographs](autographforge-188/README.md) |

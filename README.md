@@ -2,6 +2,7 @@
 
 | Problem | Resolution status | References |
 |---|---|---|
+| Kelmans P₃-factor conjecture | Open; bounded and sublinear defect equivalences proved | [Lean](kelmans-defect/src/NearPerfectEquivalence.lean) · [Write-up](kelmans-defect/README.md) |
 | Graffiti.pc #40 | Unresolved here |  |
 | Graffiti.pc #61 | Unresolved here |  |
 | Graffiti.pc #76 | Disproved | [Lean](graffiti-76/Verify76Exact.lean) · [Write-up](graffiti-76/README.md) |

@@ -142,6 +142,7 @@
 | AutoGraphForge line 877 | Disproved | [Lean](autographforge-book-tail/BookTail.lean) · [Replay](autographforge-book-tail/README.md) |
 | AutoGraphForge line 895 | Disproved | [Lean](autographforge-895/LineBouquet.lean) · [Replay](autographforge-895/README.md) |
 | AutoGraphForge line 942 | Disproved | [Lean](autographforge-balanced-forcing/BalancedForcing.lean) |
+| AutoGraphForge line 1078 | Proved in Lean; sharp at every positive regular degree | [Proof](autographforge-1078/) |
 | AutoGraphForge line 1080 | Disproved (singleton rainbow convention) | [Lean](autographforge-1080/AutoGraphForge1080.lean) |
 | AutoGraphForge line 1121 | Proved in Lean by a sharp Hall matching bound | [Proof](autographforge-1121/) |
 | AutoGraphForge line 1128 | Proved on GraphCalc's numerical triameter domain | [Lean](autographforge-cograph/CographRadius.lean) · [Conventions and replay](autographforge-cograph/README.md) |

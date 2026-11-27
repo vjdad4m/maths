@@ -154,6 +154,7 @@
 | AutoGraphForge line 1130 | Disproved in Lean by C160; upstream implicit witness also exists | [Proof](autographforge-1130/) |
 | AutoGraphForge line 1160 | Disproved in Lean by a 22-vertex cubic graph; exact perfect-matching criterion | [Proof](autographforge-1160/) |
 | AutoGraphForge line 1221 | Proved (formalization of a known consequence) | [Lean](autographforge-373/AutoGraphForge373.lean) · [Prior formulas](https://doi.org/10.1090/surv/270) |
+| AutoGraphForge line 1531 | Proved in Lean (connected equality exactly three paths) | [Proof](autographforge-1531/README.md) |
 | AutoGraphForge line 1539 | Disproved | [Lean](autographforge-balanced-forcing/BalancedForcing.lean) |
 | AutoGraphForge line 1606 | Disproved in Lean by C43; upstream implicit witness also exists | [Proof](autographforge-1606/) |
 | AutoGraphForge line 1656 | Disproved in Lean by C43; upstream implicit witness also exists | [Proof](autographforge-1656/) |

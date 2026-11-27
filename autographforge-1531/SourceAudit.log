@@ -1,0 +1,9 @@
+Connected equality: P 3 backup line 501 refutation corpus False
+Connected equality: P 3 backup line 72 refutation corpus False
+Connected equality: P 4 backup line 1286 refutation corpus False
+Connected equality: P 4 backup line 5 refutation corpus False
+Connected equality: P 7 backup line 302 refutation corpus False
+Row 1531; ID e88c1f88; 39 normalized touches; proposed, null proof.
+4776 distinct codes; counts: {'antecedent': 414, 'undefined': 209, 'numeric': 205, 'numeric_from_refutations': 35, 'connected_numeric': 91, 'connected_equality': 5}
+Two isolates, GraphCalc: NetworkXException Graph has a node with no edge incident on it, so no edge cover exists.
+Pinned battery (cover, edge domination): P3 (2,1), P4 (2,1), P7 (4,2), C4 (2,2); two isolates NaN.

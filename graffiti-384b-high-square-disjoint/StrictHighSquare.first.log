@@ -1,0 +1,36 @@
+High-square-28 replay /workspace/scratch/7efa613b1c05/graff384b-highsquare28/.highsquare28.xjz1flxv
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+Mathlib c44e0c8ee63ca166450922a373c7409c5d26b00b
+Matched the frozen quartic-28 archive, 288 source hashes and 288 predecessor objects.
+'Graffiti384b.HighSquare28.paired_rows' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.HighSquare28.single_rows' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.HighSquare28.end_rows' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.HighSquare28.totals' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.HighSquare28.bill_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.HighSquare28.local_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.HighSquare28.paired_saving' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.HighSquare28.cubic_endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.HighSquare28.endpoint_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.HighSquare28.single_charge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.HighSquare28.one_external_cubic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.HighSquare28.no_cubic_tip' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.HighSquare28.endpoint_at_least_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.HighSquare28.forced_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.PortFibers28.two_fibers' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Port28.Board.pool_score' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Port28.Board.pool_size' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Port28.table' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Port28.four_fibers' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Port28.ranks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Port28.Board.trial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Port28.Board.extra_fiber' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Port28.Board.saving' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.HighSquare28.common_saving' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.HighSquare28.disjoint_frontier' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.HighSquare28.opposite_pins_saving' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.HighSquare28.contact_restriction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.HighSquare28.matched_saving' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.HighSquare28.matching_restriction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.HighSquare28.full_cubic_matching' depends on axioms: [propext, Classical.choice, Quot.sound]
+Matched all 15 fresh object hashes.
+Verified 15 fresh modules and 30 standard-axiom reports.

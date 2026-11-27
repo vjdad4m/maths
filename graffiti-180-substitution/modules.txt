@@ -1,0 +1,16 @@
+CorePayment180 Minimal180.Substitution.rank_small_complete
+BagMetric180 Minimal180.Substitution.Bags.connected
+BagLeaves180 Minimal180.Substitution.Bags.liftLeaves
+BagColor180 Minimal180.Substitution.Bags.reserve
+BagSections180 Minimal180.Substitution.Bags.eligible_pull
+BagTransfer180 Minimal180.Substitution.Bags.localLift
+DominatingEdge180 Minimal180.Substitution.dom_odd
+DomRoot180 Minimal180.Substitution.dom_edge_rooted
+Substitution180 Minimal180.Substitution.Bags.bipartiteRooted
+DeletionClass180 Minimal180.Substitution.bipartite_substitution_passes
+FoldTwin180 Minimal180.Substitution.twin_passes
+BranchChoice180 Minimal180.Substitution.complete_requires_both
+OneClique180 Minimal180.Substitution.Bags.oneCliqueDeficit
+Inflate180 Minimal180.Substitution.grow_certified
+BagBlocks180 Minimal180.Substitution.grow_blocks
+CreditedPort180 Minimal180.Substitution.odd_root_core_iff

@@ -1,0 +1,362 @@
+Seven-vertex build <workspace>/graff384b-seven31/.seven31.osoco6yl
+graff384b-diversity31/Diversity31Frontier.lean: OK
+graff384b-diversity31/Frontier31Finish.lean: OK
+graff384b-diversity31/FrontierCore31.lean: OK
+graff384b-diversity31/FrontierDegrees31.lean: OK
+graff384b-diversity31/FrontierPivot31.lean: OK
+graff384b-diversity31/FrontierProfile31.lean: OK
+graff384b-diversity31/FrontierRoots31.lean: OK
+graff384b-diversity31/FrontierSample31.lean: OK
+graff384b-diversity31/FrontierTable31.lean: OK
+graff384b-diversity31/NEW-SOURCES.sha256: OK
+graff384b-diversity31/README.md: OK
+graff384b-diversity31/SOURCES.sha256: OK
+graff384b-diversity31/Strict226.log: OK
+graff384b-diversity31/audit.py: OK
+graff384b-diversity31/replay.sh: OK
+graff384b-diversity31/unit.sh: OK
+graff384b-forced-cubics/graff384b-diversity33-sources.zip: OK
+Diversity-31 build <workspace>/graff384b-seven31/.seven31.osoco6yl/graff384b-diversity31/.frontier31.fxcfy6DU
+graff384b-cubic-root/graff384b-order33-cubic-root-sources.zip: OK
+graff384b-forced-cubics/BothCubics33.lean: OK
+graff384b-forced-cubics/CliqueCubicCover33.lean: OK
+graff384b-forced-cubics/CubicOverlap33.lean: OK
+graff384b-forced-cubics/DiamondFree33.lean: OK
+graff384b-forced-cubics/Diversity33Finish.lean: OK
+graff384b-forced-cubics/FullObstruction33.lean: OK
+graff384b-forced-cubics/FullScorePair33.lean: OK
+graff384b-forced-cubics/NEW-SOURCES.sha256: OK
+graff384b-forced-cubics/README.md: OK
+graff384b-forced-cubics/SOURCES.sha256: OK
+graff384b-forced-cubics/SharedSample33.lean: OK
+graff384b-forced-cubics/SharedSaving33.lean: OK
+graff384b-forced-cubics/SharedTransversal33.lean: OK
+graff384b-forced-cubics/Strict217.log: OK
+graff384b-forced-cubics/SupportedEar33.lean: OK
+graff384b-forced-cubics/ThreeBudget33.lean: OK
+graff384b-forced-cubics/ThreeFibers33.lean: OK
+graff384b-forced-cubics/ThreeFinish33.lean: OK
+graff384b-forced-cubics/ThreeGeometry33.lean: OK
+graff384b-forced-cubics/audit.py: OK
+graff384b-forced-cubics/replay.sh: OK
+graff384b-forced-cubics/unit.sh: OK
+Three-choice build <workspace>/graff384b-seven31/.seven31.osoco6yl/graff384b-diversity31/.frontier31.fxcfy6DU/graff384b-forced-cubics/.forced33.bXkpVxfn
+graff384b-cubic-root/CubicRootFinish33.lean: OK
+graff384b-cubic-root/NEW-SOURCES.sha256: OK
+graff384b-cubic-root/PrivateCut33.lean: OK
+graff384b-cubic-root/PrivateFrame33.lean: OK
+graff384b-cubic-root/PrivatePairs33.lean: OK
+graff384b-cubic-root/PrivatePalette33.lean: OK
+graff384b-cubic-root/PrivatePivot33.lean: OK
+graff384b-cubic-root/PrivateShores33.lean: OK
+graff384b-cubic-root/README.md: OK
+graff384b-cubic-root/SOURCES.sha256: OK
+graff384b-cubic-root/Strict202.log: OK
+graff384b-cubic-root/ZeroNeighbor33.lean: OK
+graff384b-cubic-root/audit.py: OK
+graff384b-cubic-root/replay.sh: OK
+graff384b-cubic-root/unit.sh: OK
+graff384b-ear-palette/graff384b-order33-degree-four-sources.zip: OK
+Root-cut build <workspace>/graff384b-seven31/.seven31.osoco6yl/graff384b-diversity31/.frontier31.fxcfy6DU/graff384b-forced-cubics/.forced33.bXkpVxfn/graff384b-cubic-root/.cubic33.FngE3dWe
+graff384b-ear-palette/NEW-SOURCES.sha256: OK
+graff384b-ear-palette/PaletteContact33.lean: OK
+graff384b-ear-palette/PaletteFibers33.lean: OK
+graff384b-ear-palette/PaletteFinish33.lean: OK
+graff384b-ear-palette/PaletteSample33.lean: OK
+graff384b-ear-palette/README.md: OK
+graff384b-ear-palette/SOURCES.sha256: OK
+graff384b-ear-palette/Strict194.log: OK
+graff384b-ear-palette/audit.py: OK
+graff384b-ear-palette/replay.sh: OK
+graff384b-ear-palette/unit.sh: OK
+graff384b-high-ears/graff384b-order33-high-ears-sources.zip: OK
+Palette build <workspace>/graff384b-seven31/.seven31.osoco6yl/graff384b-diversity31/.frontier31.fxcfy6DU/graff384b-forced-cubics/.forced33.bXkpVxfn/graff384b-cubic-root/.cubic33.FngE3dWe/graff384b-ear-palette/.palette33.SvCzeQaQ
+graff384b-high-ears/HighEarBypass33.lean: OK
+graff384b-high-ears/HighEarDegree33.lean: OK
+graff384b-high-ears/HighEarDetour33.lean: OK
+graff384b-high-ears/HighEarFinish33.lean: OK
+graff384b-high-ears/HighEarLayout33.lean: OK
+graff384b-high-ears/HighEarOdd33.lean: OK
+graff384b-high-ears/HighEarParity33.lean: OK
+graff384b-high-ears/HighEarPins33.lean: OK
+graff384b-high-ears/HighEarRootCap33.lean: OK
+graff384b-high-ears/HighEarShared33.lean: OK
+graff384b-high-ears/HighEarSwitch33.lean: OK
+graff384b-high-ears/NEW-SOURCES.sha256: OK
+graff384b-high-ears/README.md: OK
+graff384b-high-ears/SOURCES.sha256: OK
+graff384b-high-ears/Strict190.log: OK
+graff384b-high-ears/audit.py: OK
+graff384b-high-ears/replay.sh: OK
+graff384b-high-ears/unit.sh: OK
+graff384b-residual-shores/graff384b-order33-cubic-ear-closure-sources.zip: OK
+High-ear build <workspace>/graff384b-seven31/.seven31.osoco6yl/graff384b-diversity31/.frontier31.fxcfy6DU/graff384b-forced-cubics/.forced33.bXkpVxfn/graff384b-cubic-root/.cubic33.FngE3dWe/graff384b-ear-palette/.palette33.SvCzeQaQ/graff384b-high-ears/.high33.INpSHCxG
+graff384b-ear-anchor/graff384b-order33-cubic-anchor-sources.zip: OK
+graff384b-residual-shores/CubicClosure33.lean: OK
+graff384b-residual-shores/CubicCoreStrict33.lean: OK
+graff384b-residual-shores/CubicDiamondCut33.lean: OK
+graff384b-residual-shores/CubicSquareProfile33.lean: OK
+graff384b-residual-shores/NEW-SOURCES.sha256: OK
+graff384b-residual-shores/README.md: OK
+graff384b-residual-shores/ResidualArms33.lean: OK
+graff384b-residual-shores/ResidualContacts33.lean: OK
+graff384b-residual-shores/ResidualLongest33.lean: OK
+graff384b-residual-shores/SOURCES.sha256: OK
+graff384b-residual-shores/Strict179.log: OK
+graff384b-residual-shores/audit.py: OK
+graff384b-residual-shores/check-unit.sh: OK
+graff384b-residual-shores/replay.sh: OK
+graff384b-residual-shores/unit.sh: OK
+Replay workspace <workspace>/graff384b-seven31/.seven31.osoco6yl/graff384b-diversity31/.frontier31.fxcfy6DU/graff384b-forced-cubics/.forced33.bXkpVxfn/graff384b-cubic-root/.cubic33.FngE3dWe/graff384b-ear-palette/.palette33.SvCzeQaQ/graff384b-high-ears/.high33.INpSHCxG/graff384b-residual-shores/.shores33.v1zmIdHF
+graff384b-ear-anchor/AnchorCut33.lean: OK
+graff384b-ear-anchor/AnchorDeletion33.lean: OK
+graff384b-ear-anchor/AnchorEdge33.lean: OK
+graff384b-ear-anchor/CubicAnchor33.lean: OK
+graff384b-ear-anchor/FinishAnchor33.lean: OK
+graff384b-ear-anchor/NEW-SOURCES.sha256: OK
+graff384b-ear-anchor/ParityAnchor33.lean: OK
+graff384b-ear-anchor/README.md: OK
+graff384b-ear-anchor/SOURCES.sha256: OK
+graff384b-ear-anchor/Strict172.log: OK
+graff384b-ear-anchor/audit.py: OK
+graff384b-ear-anchor/build.sh: OK
+graff384b-ear-anchor/replay.sh: OK
+graff384b-ear-exchange/graff384b-order33-ear-exchange-sources.zip: OK
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+Mathlib c44e0c8ee63ca166450922a373c7409c5d26b00b
+New source build <workspace>/graff384b-seven31/.seven31.osoco6yl/graff384b-diversity31/.frontier31.fxcfy6DU/graff384b-forced-cubics/.forced33.bXkpVxfn/graff384b-cubic-root/.cubic33.FngE3dWe/graff384b-ear-palette/.palette33.SvCzeQaQ/graff384b-high-ears/.high33.INpSHCxG/graff384b-residual-shores/.shores33.v1zmIdHF/graff384b-ear-anchor/.anchor33.MhoDX8nn
+Using saved strictly built dependencies
+Attachment replay passed with 6 new modules and 18 new axiom reports.
+Pinned baseline verified: 166 source hashes, 166 compiled objects, 397 standard-axiom reports.
+AnchorCut33.lean: OK
+AnchorDeletion33.lean: OK
+AnchorEdge33.lean: OK
+CubicAnchor33.lean: OK
+FinishAnchor33.lean: OK
+ParityAnchor33.lean: OK
+'Graffiti384b.EarAnchor.exchange_iff_guarded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.EarAnchor.automatic_guard' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.EarAnchor.gamma_induced_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.EarAnchor.exchange_iff_ordinary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.EarAnchor.guarded_cut' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.EarAnchor.single_low' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.EarAnchor.diamond' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.EarAnchor.cubic_failure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.AnchorParity.even_of_two_contacts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.AnchorParity.odd_routes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.EarAnchorFinish.core_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.EarAnchorFinish.core_exchange' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.EarAnchorFinish.full_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.EarAnchorFinish.failure_routes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.EarAnchorEdge.thin_cycle' depends on axioms: [propext, Classical.choice, Quot.sound]
+Strict extension replay passed: 6 fresh modules, 15 standard-axiom reports.
+Verified 172 graph modules and 412 axiom reports across the baseline and extension.
+Verified 172 graph modules and 412 axiom reports across the baseline and extension.
+CubicClosure33.lean: OK
+CubicCoreStrict33.lean: OK
+CubicDiamondCut33.lean: OK
+CubicSquareProfile33.lean: OK
+ResidualArms33.lean: OK
+ResidualContacts33.lean: OK
+ResidualLongest33.lean: OK
+'Graffiti384b.CubicShore.clique_contains' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.CubicShore.blocker' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.CubicShore.forced_clique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.CubicShore.square_below_half' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.CubicShore.square_scores' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.CubicShore.below_half' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.CubicShore.endpoints' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.CubicShore.full_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.CubicShore.third_score' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.CubicShore.square_profile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.ResidualShore.combine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.ResidualShore.fork_arm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.ResidualShore.shore_arm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.ResidualShore.contacts_connected' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fresh extension verified: 7 modules and 14 standard-axiom reports.
+Complete release verified: 179 graph modules and 426 standard-axiom reports.
+Complete release verified: 179 graph modules and 426 standard-axiom reports.
+HighEarBypass33.lean: OK
+HighEarDegree33.lean: OK
+HighEarDetour33.lean: OK
+HighEarFinish33.lean: OK
+HighEarLayout33.lean: OK
+HighEarOdd33.lean: OK
+HighEarParity33.lean: OK
+HighEarPins33.lean: OK
+HighEarRootCap33.lean: OK
+HighEarShared33.lean: OK
+HighEarSwitch33.lean: OK
+'Graffiti384b.HighEar.first_pins' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.HighEar.second_pins' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.HighEar.triple' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.HighEar.shared_requires_both' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.HighEar.cubic_attachment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.HighEar.exact_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.HighEar.four_endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.HighEar.degree_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.HighEar.switch_cut' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.HighEar.pivot_route' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.HighEar.thin_route' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.HighEar.short_contacts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.HighEar.cycle_pins' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.HighEar.merge_pins' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.HighEar.pivot_odd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.HighEar.bare_neighbor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.HighEar.four_layout' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.HighEar.triangle_detour' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.HighEar.thin_four_below_half' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.HighEar.endpoint_profile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.HighEar.full_thin_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.HighEar.scarce_score_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.HighEar.cubic_root_profile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.HighEar.full_five_five' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fresh extension verified: 11 modules and 24 standard-axiom reports.
+Complete high-ear replay verified: 190 graph modules and 450 standard-axiom reports.
+Complete high-ear replay verified: 190 graph modules and 450 standard-axiom reports.
+PaletteContact33.lean: OK
+PaletteFibers33.lean: OK
+PaletteFinish33.lean: OK
+PaletteSample33.lean: OK
+'Graffiti384b.EarPalette.single_contact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.EarPalette.hit_clique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.EarPalette.away_turan' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.EarPalette.pair_turan' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.EarPalette.credited_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.EarPalette.rank_fiber' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.EarPalette.sum_cost' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.EarPalette.sparse_sample' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.EarPalette.sampled_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.EarPalette.shared_low' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.EarPalette.shared_scores_six' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.EarPalette.core_le_fifteen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.EarPalette.extremal_endpoints' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.EarPalette.full_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.EarPalette.full_shared' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fresh extension verified: 4 modules and 15 standard-axiom reports.
+Complete palette replay verified: 194 graph modules and 465 standard-axiom reports.
+Complete palette replay verified: 194 graph modules and 465 standard-axiom reports.
+PrivateCut33.lean: OK
+PrivateShores33.lean: OK
+PrivatePivot33.lean: OK
+PrivatePairs33.lean: OK
+PrivatePalette33.lean: OK
+PrivateFrame33.lean: OK
+CubicRootFinish33.lean: OK
+ZeroNeighbor33.lean: OK
+'Graffiti384b.RootCut.patch_switch' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.RootCut.no_contact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.RootCut.shores' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.RootCut.region_cut' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.RootCut.cannot_survive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.RootCut.exterior_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.RootCut.edge_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.RootCut.off_clique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.RootCut.contact_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.RootCut.palette' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.RootCut.contact_frame' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.RootCut.cubic_root' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.RootCut.attachment_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.RootCut.zero_neighbor_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fresh extension verified: 8 modules and 14 standard-axiom reports.
+Complete cubic-root replay verified: 202 graph modules and 479 standard-axiom reports.
+Complete cubic-root replay verified: 202 graph modules and 479 standard-axiom reports.
+SupportedEar33.lean: OK
+BothCubics33.lean: OK
+FullScorePair33.lean: OK
+CliqueCubicCover33.lean: OK
+SharedTransversal33.lean: OK
+SharedSample33.lean: OK
+SharedSaving33.lean: OK
+CubicOverlap33.lean: OK
+FullObstruction33.lean: OK
+DiamondFree33.lean: OK
+ThreeFibers33.lean: OK
+ThreeBudget33.lean: OK
+ThreeGeometry33.lean: OK
+ThreeFinish33.lean: OK
+Diversity33Finish.lean: OK
+'Graffiti384b.ForcedCubics.supported_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.ForcedCubics.supported_endpoints' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.ForcedCubics.both_required' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.ForcedCubics.full_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.ForcedCubics.low_score_neighbor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.ForcedCubics.missing_score' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.ForcedCubics.safe_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.ForcedCubics.shared_transversal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.ForcedCubics.sample' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.ForcedCubics.shared_saving' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.ForcedCubics.clique_remainder' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.ForcedCubics.core_saving' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.ForcedCubics.full_obstruction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.ForcedCubics.motif_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.ForcedCubics.diamond_free_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.ThreeChoice.three_fibers' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.ThreeChoice.arithmetic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.ThreeChoice.mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.ThreeChoice.scores' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.ThreeChoice.core_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Diversity33.order33' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Diversity33.exact33' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Diversity33.at_least_32' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Diversity33.remaining' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fresh extension verified: 15 modules and 24 standard-axiom reports.
+Complete diversity-33 replay verified: 217 graph modules and 503 standard-axiom reports.
+Complete diversity-33 replay verified: 217 graph modules and 503 standard-axiom reports.
+FrontierSample31.lean: OK
+FrontierProfile31.lean: OK
+FrontierCore31.lean: OK
+FrontierPivot31.lean: OK
+Frontier31Finish.lean: OK
+FrontierTable31.lean: OK
+FrontierDegrees31.lean: OK
+FrontierRoots31.lean: OK
+Diversity31Frontier.lean: OK
+'Graffiti384b.Frontier31.sampled' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Frontier31.enough' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Frontier31.dense_center' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Frontier31.profile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Frontier31.positive_types' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Frontier31.induced' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Frontier31.positive_core' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Frontier31.core' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Frontier31.pivot_frame' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Frontier31.frame_hits' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Frontier31.ear_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Frontier31.clique_center' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Frontier31.near_five' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Frontier31.exact_of_no_near_five' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Frontier31.five_free_core' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Frontier31.DegreeRows.rows' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Frontier31.avoiding' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Frontier31.rooted_tight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Frontier31.ear_uncredited' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Frontier31.original_ear' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Frontier31.one_center' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Frontier31.two_centers' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Frontier31.alternatives' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Frontier31.exact_of_single_center_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fresh extension verified: 9 modules and 24 standard-axiom reports.
+Complete diversity-31 replay verified: 226 graph modules and 527 standard-axiom reports.
+Complete diversity-31 replay verified: 226 graph modules and 527 standard-axiom reports.
+SevenFibers.lean: OK
+SevenBudget.lean: OK
+SevenModel.lean: OK
+SevenTrial.lean: OK
+SevenContact.lean: OK
+SevenEmbedding.lean: OK
+SevenFinish.lean: OK
+'Graffiti384b.Seven.two_fibers' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Seven.arithmetic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Seven.mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Seven.finite_geometry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Seven.Pattern.boundary_score' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Seven.Pattern.pattern_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Seven.split_pivot' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Seven.contact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Seven.extract_pattern' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Seven.adjacent_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Seven.core_neighbors' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Seven.exact_of_adjacent' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fresh extension verified: 7 modules and 12 standard-axiom reports.
+Complete seven-vertex replay verified: 233 graph modules.

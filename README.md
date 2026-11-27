@@ -135,6 +135,7 @@
 | AutoGraphForge line 579 | Proved in Lean without the bipartite restriction | [Proof](autographforge-579/) |
 | AutoGraphForge line 583 | Proved in Lean; sharp Slater bound for edge domination | [Proof](autographforge-583/) |
 | AutoGraphForge line 621 | Proved in Lean; extends to quasi-line graphs | [Proof](autographforge-621/README.md) |
+| AutoGraphForge line 659 | Disproved in Lean; unbounded gap on bipartite planar graphs | [Proof](autographforge-659/) |
 | AutoGraphForge line 720 | Proved in Lean; sharp on K₂ | [Proof](autographforge-720/README.md) |
 | AutoGraphForge line 747 | Disproved | [Lean](autographforge-shared-hub/SharedHub.lean) · [Replay](autographforge-shared-hub/README.md) |
 | AutoGraphForge line 764 | Disproved | [Lean](autographforge-eulerian-chain/Chain.lean) · [Replay](autographforge-eulerian-chain/README.md) |

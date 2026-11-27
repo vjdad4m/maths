@@ -1,0 +1,6 @@
+'Graffiti199Depleted.Catalogue.NoRootedFour.private_component_half' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti199Depleted.Catalogue.card_independent_other_shore_le_two_of_complete_port' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

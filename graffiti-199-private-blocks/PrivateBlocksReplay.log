@@ -1,0 +1,23 @@
+'Graffiti199Depleted.Catalogue.card_private_contacts_le_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti199Depleted.Catalogue.private_sets_le_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti199Depleted.Catalogue.private_components_le_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti199Depleted.Catalogue.no_rooted_four_across_cut' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti199Depleted.Catalogue.NoRootedFour.contact_common_on_component' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti199Depleted.Catalogue.NoRootedFour.clique_of_contact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti199Depleted.Catalogue.NoRootedFour.cross_contacts_complete' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti199Depleted.Catalogue.rootedBlockContacts_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti199Depleted.Catalogue.NoRootedFour.blockContacts_disjoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti199Depleted.Catalogue.NoRootedFour.all_noncontact_blocks_cliques' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti199Depleted.Catalogue.NoRootedFour.card_independent_contacts_le_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

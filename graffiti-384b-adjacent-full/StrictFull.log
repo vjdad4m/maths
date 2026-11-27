@@ -1,0 +1,35 @@
+Full adjacent build /workspace/scratch/7efa613b1c05/graff384b-adjacent-full-astra/.full.SswSG6Ep
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+adjacent12-source.zip: OK
+ThreeReservedRanks.lean: OK
+CompleteAdjacent.lean: OK
+CliquePool.lean: OK
+ThreeEars.lean: OK
+AllContacts.lean: OK
+README.md: OK
+replay.sh: OK
+audit.py: OK
+CHECKED-OBJECTS.sha256: OK
+NEW-SOURCES.sha256: OK
+StrictLower.log: OK
+adjacent15-source.zip: OK
+Lower contact extension verified: 3 modules, 5 standard-axiom reports.
+Lower contact extension verified: 3 modules, 5 standard-axiom reports.
+AdjacentBound.olean: OK
+AdjacentFrame.olean: OK
+AdjacentFront.olean: OK
+AllContacts.olean: OK
+AttachmentReserve.olean: OK
+CliquePool.olean: OK
+LowOmissions.olean: OK
+PendantBound.olean: OK
+PendantSample.olean: OK
+PortClique29.olean: OK
+PortFrame29.olean: OK
+PortRepair29.olean: OK
+RankRepair29.olean: OK
+ThreeEars.olean: OK
+Weighted29.olean: OK
+'Graffiti384b.AdjacentFull.exact_pool' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.AdjacentFull.exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+Full adjacent-pair branch verified: 2 modules, 2 standard-axiom reports.

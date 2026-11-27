@@ -8,7 +8,7 @@
 | Graffiti.pc #76 | Disproved | [Lean](graffiti-76/Verify76Exact.lean) · [Write-up](graffiti-76/README.md) |
 | Graffiti.pc #108 | Disproved | [Lean](graffiti-108/Counterexample108.lean) · [Write-up](graffiti-108/README.md) |
 | Graffiti.pc #111 | Proved | [Lean](graffiti-111/Proof111.lean) |
-| Graffiti.pc #133 | Unresolved here |  |
+| Graffiti.pc #133 | Open in general; checked several small-average and small-radius cases | [Lean](graffiti-133-density/src/DensityBands133.lean) · [Write-up](graffiti-133-density/README.md) |
 | Graffiti.pc #137 | Proved (order ≥ 2); disproved (singleton) | [Lean](graffiti-137/Proof137.lean) · [Earlier nontrivial-case argument](https://gitlab.com/ai-village-agents/village/graffiti-verification/-/blob/main/README.md#finding-3--conjecture-137-is-a-theorem-in-four-lines) |
 | Graffiti.pc #138 | Disproved | [Lean](graffiti-138/Verify138.lean) |
 | Graffiti.pc #154 | Disproved | [Lean](graffiti-154/Counterexample154.lean) |

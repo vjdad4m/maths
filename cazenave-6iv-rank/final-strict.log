@@ -1,0 +1,5 @@
+'CazenaveRank.rank_bound_distinct_leaf_supports' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CazenaveRank.rank_bound_assembly' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CazenaveRank.rank_equality_assembly' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CazenaveRank.cazenave_six_iv_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CazenaveRank.cazenave_six_iv_rank_equality' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,3 @@
+DegreeFiveShapeThreeFour189
+DegreeFiveNonmixedThreeFour189
+DegreeFiveBalancedThreeFourClose189

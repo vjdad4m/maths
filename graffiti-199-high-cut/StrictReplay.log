@@ -1,0 +1,378 @@
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+Mathlib revision c44e0c8ee63ca166450922a373c7409c5d26b00b
+Checking Hamiltonian.lean
+<workspace>/publish199-config/graffiti-199-small-cut-configurations/src/DepletedPaths.lean: OK
+Checking DepletedPaths.lean
+'Graffiti199K2.NearPacking.Depleted.covered' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti199K2.NearPacking.Depleted.paths_valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti199K2.NearPacking.Depleted.choices' depends on axioms: [propext, Classical.choice, Quot.sound]
+<workspace>/publish199-config/graffiti-199-small-cut-configurations/src/GraphSpliceCore.lean: OK
+Checking GraphSpliceCore.lean
+'Graffiti199Depleted.crossingAfterSmallDeletion' depends on axioms: [propext, Classical.choice, Quot.sound]
+<workspace>/publish199-config/graffiti-199-small-cut-configurations/src/PairTerminal.lean: OK
+Checking PairTerminal.lean
+'Graffiti199Depleted.terminal_path_from_high' depends on axioms: [propext, Quot.sound]
+<workspace>/publish199-config/graffiti-199-small-cut-configurations/src/NormalizedDepleted.lean: OK
+Checking NormalizedDepleted.lean
+'Graffiti199Depleted.NormalizedDepleted.inner_path' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti199Depleted.NormalizedDepleted.finish_with_contact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti199Depleted.NormalizedDepleted.traceable_of_small_blocked' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+<workspace>/publish199-config/graffiti-199-small-cut-configurations/src/DepletedGraphLift.lean: OK
+Checking DepletedGraphLift.lean
+'Graffiti199Depleted.NormalizedDepleted.traceable_of_sparse_loose' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti199Depleted.traceable_of_normalized_depleted' depends on axioms: [propext, Classical.choice, Quot.sound]
+<workspace>/publish199-config/graffiti-199-small-cut-configurations/src/CutAndOrder.lean: OK
+Checking CutAndOrder.lean
+'Graffiti199Depleted.edgeReach_of_singleton_cuts' depends on axioms: [propext, Quot.sound]
+'Graffiti199Depleted.NormalizedDepleted.order' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti199Depleted.normalized_depleted_order_and_path' depends on axioms: [propext, Classical.choice, Quot.sound]
+<workspace>/publish199-config/graffiti-199-small-cut-configurations/src/DepletedFootprint.lean: OK
+Checking DepletedFootprint.lean
+'Graffiti199Depleted.DepletedFootprint.normalize' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti199Depleted.depleted_footprint_order_and_path' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti199Depleted.depleted_footprint_of_singleton_cuts' depends on axioms: [propext, Classical.choice, Quot.sound]
+<workspace>/publish199-config/graffiti-199-small-cut-configurations/src/FootprintApplication.lean: OK
+Checking FootprintApplication.lean
+'Graffiti199Depleted.degree_of_small_deletion_preconnected' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti199Depleted.depleted_footprint_with_canonical_cut_data' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+<workspace>/publish199-config/graffiti-199-small-cut-configurations/src/SplitTipsLocal.lean: OK
+Checking SplitTipsLocal.lean
+'Graffiti199Depleted.split_tips_path_ending_at_high' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti199Depleted.singleton_between_types' depends on axioms: [propext, Quot.sound]
+'Graffiti199Depleted.singleton_start_at_high' depends on axioms: [propext, Classical.choice, Quot.sound]
+<workspace>/publish199-config/graffiti-199-small-cut-configurations/src/SplitTipsSplice.lean: OK
+Checking SplitTipsSplice.lean
+'Graffiti199Depleted.traceable_three_singletons_split_tips' depends on axioms: [propext, Classical.choice, Quot.sound]
+<workspace>/publish199-config/graffiti-199-small-cut-configurations/src/SameHalfAccess.lean: OK
+Checking SameHalfAccess.lean
+'Graffiti199Depleted.same_half_available_ends' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti199Depleted.PrivateSingleton.loose_has_unblocked_contact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti199Depleted.PrivateSingleton.triangle_has_unblocked_contact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+<workspace>/publish199-overlap/graffiti-199-overlap-adapters/src/SameHalfSplice.lean: OK
+Checking SameHalfSplice.lean
+'Graffiti199Depleted.traceable_three_singletons_same_half_tips' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+<workspace>/publish199-overlap/graffiti-199-overlap-adapters/src/MainGraphBridges.lean: OK
+Checking MainGraphBridges.lean
+'Graffiti199Depleted.reachable_of_preconnected_induce' depends on axioms: [propext, Quot.sound]
+'Graffiti199Depleted.edgeReach_of_induced_singleton_cuts' depends on axioms: [propext, Quot.sound]
+'Graffiti199Depleted.pathOn_univ_iff_hamiltonian_walk' depends on axioms: [propext, Quot.sound]
+'Graffiti199Depleted.noIndependentSix_iff_no_independent_embedding' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti199Depleted.degree_three_iff_three_neighbors' depends on axioms: [propext, Quot.sound]
+<workspace>/publish199-overlap/graffiti-199-overlap-adapters/src/NeighborhoodAdapter.lean: OK
+Checking NeighborhoodAdapter.lean
+'Graffiti199Depleted.privateSingleton_of_neighborhood' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti199Depleted.mergedSameHalf_of_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti199Depleted.MergedSameHalf.order' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti199Depleted.hamiltonian_same_half_of_induced_cuts' depends on axioms: [propext, Classical.choice, Quot.sound]
+<workspace>/publish199-overlap/graffiti-199-overlap-adapters/src/DepletedBlockAdapter.lean: OK
+Checking DepletedBlockAdapter.lean
+'Graffiti199Depleted.depleted_footprint_of_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti199Depleted.hamiltonian_depleted_of_induced_cuts' depends on axioms: [propext, Classical.choice, Quot.sound]
+<workspace>/publish199-overlap/graffiti-199-overlap-adapters/src/TerminalLossAdapter.lean: OK
+Checking TerminalLossAdapter.lean
+'Graffiti199Depleted.terminal_pair_of_at_most_one_loss' depends on axioms: [propext, Classical.choice, Quot.sound]
+<workspace>/publish199-four-block/graffiti-199-four-block-integration/src/RemainingCut.lean: OK
+Checking RemainingCut.lean
+'Graffiti199Depleted.edgeReach_iff_crossing_between_surviving_edges' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+<workspace>/publish199-four-block/graffiti-199-four-block-integration/src/FourBlockIntegration.lean: OK
+Checking FourBlockIntegration.lean
+'Graffiti199Depleted.FourBlockPacking.lost_map_eq_forbidden' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti199Depleted.FourBlockPacking.order_add_overlaps' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti199Depleted.FourBlockPacking.depleted_footprint_of_order' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti199Depleted.FourBlockPacking.hamiltonian_of_four_losses' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti199Depleted.FourBlockPacking.hamiltonian_of_four_losses_at_sixteen' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+<workspace>/publish199-four-block/graffiti-199-four-block-integration/src/OneSharedData.lean: OK
+Checking OneSharedData.lean
+<workspace>/publish199-four-block/graffiti-199-four-block-integration/src/OneSharedCertificate.lean: OK
+Checking OneSharedCertificate.lean
+'Graffiti199Depleted.OneShared.core_path_ending_at_high' depends on axioms: [propext, Classical.choice, Quot.sound]
+<workspace>/publish199-four-block/graffiti-199-four-block-integration/src/OneSharedIntegration.lean: OK
+Checking OneSharedIntegration.lean
+'Graffiti199Depleted.FourBlockPacking.path_to_high_with_one_overlap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti199Depleted.FourBlockPacking.hamiltonian_with_one_overlap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti199Depleted.FourBlockPacking.hamiltonian_of_four_losses_of_order' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti199Depleted.FourBlockPacking.excludes_four_forbidden_highs' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+<workspace>/publish199-four-block/graffiti-199-four-block-integration/src/CatalogueInterface.lean: OK
+Checking CatalogueInterface.lean
+'Graffiti199Depleted.Catalogue.traceable_iff_hamiltonian_walk' depends on axioms: [propext, Quot.sound]
+'Graffiti199Depleted.Catalogue.connectivityAtLeast_vertexConnectivity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti199Depleted.Catalogue.excludes_four_forbidden_highs_at_connectivity_three' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+<workspace>/publish199-tree-budget/graffiti-199-four-loss-tree-budget/src/TreeBudget.lean: OK
+Checking TreeBudget.lean
+'Graffiti199Depleted.Catalogue.six_le_treeNumber_of_ordering' depends on axioms: [propext, Classical.choice, Quot.sound]
+<workspace>/publish199-cubic-contract/graffiti-199-cubic-contraction/RootedTreeRank.lean: OK
+Checking RootedTreeRank.lean
+'Graffiti199Depleted.Catalogue.rooted_tree_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
+<workspace>/publish199-cubic-contract/graffiti-199-cubic-contraction/ContractEdge.lean: OK
+Checking ContractEdge.lean
+<workspace>/publish199-cubic-contract/graffiti-199-cubic-contraction/ContractConnectivity.lean: OK
+Checking ContractConnectivity.lean
+'Graffiti199Depleted.ContractedEdge.connectivityAtLeast_three' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+<workspace>/publish199-cubic-contract/graffiti-199-cubic-contraction/ContractTree.lean: OK
+Checking ContractTree.lean
+'Graffiti199Depleted.ContractedEdge.treeNumber_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+<workspace>/publish199-cubic-contract/graffiti-199-cubic-contraction/ContractPath.lean: OK
+Checking ContractPath.lean
+'Graffiti199Depleted.ContractedEdge.lift_path' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti199Depleted.ContractedEdge.reduced_path_same_side' depends on axioms: [propext, Classical.choice, Quot.sound]
+<workspace>/publish199-cubic-cut/graffiti-199-cubic-matching/CubicEdgeCuts.lean: OK
+Checking CubicEdgeCuts.lean
+'Graffiti199Depleted.adjacent_cubic_no_common_neighbor' depends on axioms: [propext, Classical.choice, Quot.sound]
+<workspace>/publish199-cubic-contract/graffiti-199-cubic-contraction/MinimumContraction.lean: OK
+Checking MinimumContraction.lean
+'Graffiti199Depleted.Catalogue.smallerAtThree_of_catalogue_minimum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti199Depleted.ContractedEdge.minimum_cubic_contraction_same_side' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+<workspace>/publish199-crossing/graffiti-199-crossing-cut/CutTorso.lean: OK
+Checking CutTorso.lean
+'Graffiti199Depleted.Catalogue.cutTorso_connectivity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti199Depleted.Catalogue.contact_of_shore' depends on axioms: [propext, Classical.choice, Quot.sound]
+<workspace>/publish199-crossing/graffiti-199-crossing-cut/ChordlessConnector.lean: OK
+Checking ChordlessConnector.lean
+'Graffiti199Depleted.Catalogue.exists_chordless_connector' depends on axioms: [propext, Classical.choice, Quot.sound]
+<workspace>/publish199-crossing/graffiti-199-crossing-cut/SubdividedTree.lean: OK
+Checking SubdividedTree.lean
+'Graffiti199Depleted.Catalogue.card_le_treeNumber_of_subdivided_edge' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+<workspace>/publish199-crossing/graffiti-199-crossing-cut/CutTorsoBudget.lean: OK
+Checking CutTorsoBudget.lean
+'Graffiti199Depleted.Catalogue.cutTorso_treeNumber_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+<workspace>/publish199-crossing/graffiti-199-crossing-cut/CubicCutShore.lean: OK
+Checking CubicCutShore.lean
+'Graffiti199Depleted.Catalogue.clique_of_unique_contact_and_two_step' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+<workspace>/publish199-crossing/graffiti-199-crossing-cut/CubicPortProfiles.lean: OK
+Checking CubicPortProfiles.lean
+'Graffiti199Depleted.Catalogue.clique_shore_of_cubic_port' depends on axioms: [propext, Classical.choice, Quot.sound]
+<workspace>/publish199-crossing/graffiti-199-crossing-cut/TwoCliqueShores.lean: OK
+Checking TwoCliqueShores.lean
+'Graffiti199Depleted.Catalogue.traceable_of_two_clique_shores' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+<workspace>/publish199-crossing/graffiti-199-crossing-cut/TorsoMinimality.lean: OK
+Checking TorsoMinimality.lean
+'Graffiti199Depleted.Catalogue.traceable_cutTorso_of_smaller' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti199Depleted.Catalogue.traceable_both_cutTorsos_of_smaller' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+<workspace>/publish199-crossing/graffiti-199-crossing-cut/VertexSmoothing.lean: OK
+Checking VertexSmoothing.lean
+'Graffiti199Depleted.Catalogue.traceable_after_smoothing_of_smaller' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+<workspace>/publish199-crossing/graffiti-199-crossing-cut/FilledPath.lean: OK
+Checking FilledPath.lean
+'Graffiti199Depleted.Catalogue.filled_chain_cases' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti199Depleted.Catalogue.cubic_smoothing_remainder' depends on axioms: [propext, Classical.choice, Quot.sound]
+<workspace>/publish199-crossing/graffiti-199-crossing-cut/TwoVertexShore.lean: OK
+Checking TwoVertexShore.lean
+'Graffiti199Depleted.Catalogue.traceable_of_two_vertex_shore_of_independent_cubics' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+<workspace>/publish199-crossing/graffiti-199-crossing-cut/CrossingCutReduction.lean: OK
+Checking CrossingCutReduction.lean
+'Graffiti199Depleted.Catalogue.large_crossing_failure_of_independent_cubics' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+<workspace>/publish199-crossing/graffiti-199-crossing-cut/CubicPortThreeShores.lean: OK
+Checking CubicPortThreeShores.lean
+'Graffiti199Depleted.Catalogue.cubic_port_three_shores_impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+<workspace>/publish199-crossing/graffiti-199-crossing-cut/CrossingCubicProfile.lean: OK
+Checking CrossingCubicProfile.lean
+'Graffiti199Depleted.Catalogue.LargeCrossingFailure.cubic_port_profile' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+<workspace>/publish199-mixed-cubic/graffiti-199-mixed-cubic-cut/PrescribedPaths.lean: OK
+Checking PrescribedPaths.lean
+'Graffiti199Depleted.Catalogue.traverses_of_universal_extension' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+<workspace>/publish199-mixed-cubic/graffiti-199-mixed-cubic-cut/RootQuartet.lean: OK
+Checking RootQuartet.lean
+'Graffiti199Depleted.Catalogue.six_le_treeNumber_of_rooted_four_and_tail' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti199Depleted.Catalogue.four_ordering' depends on axioms: [propext, Classical.choice, Quot.sound]
+<workspace>/publish199-mixed-cubic/graffiti-199-mixed-cubic-cut/MixedPortShape.lean: OK
+Checking MixedPortShape.lean
+'Graffiti199Depleted.Catalogue.CubicMixedCut.dominates_inner' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti199Depleted.Catalogue.CubicMixedCut.both_contacts_of_nonadjacent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti199Depleted.Catalogue.CubicMixedCut.no_edge_between_exclusive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+<workspace>/publish199-mixed-cubic/graffiti-199-mixed-cubic-cut/MixedSplice.lean: OK
+Checking MixedSplice.lean
+<workspace>/publish199-mixed-cubic/graffiti-199-mixed-cubic-cut/BridgeRoutes.lean: OK
+Checking BridgeRoutes.lean
+<workspace>/publish199-mixed-cubic/graffiti-199-mixed-cubic-cut/AdjacentShore.lean: OK
+Checking AdjacentShore.lean
+'Graffiti199Depleted.Catalogue.CubicMixedCut.bridge_only' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti199Depleted.Catalogue.CubicMixedCut.hub_universal' depends on axioms: [propext, Classical.choice, Quot.sound]
+<workspace>/publish199-mixed-cubic/graffiti-199-mixed-cubic-cut/UniversalBridgeRoute.lean: OK
+Checking UniversalBridgeRoute.lean
+'Graffiti199Depleted.Catalogue.CubicMixedCut.route_with_hub' depends on axioms: [propext, Classical.choice, Quot.sound]
+<workspace>/publish199-mixed-cubic/graffiti-199-mixed-cubic-cut/AdjacentContacts.lean: OK
+Checking AdjacentContacts.lean
+<workspace>/publish199-mixed-cubic/graffiti-199-mixed-cubic-cut/NonadjacentPorts.lean: OK
+Checking NonadjacentPorts.lean
+'Graffiti199Depleted.Catalogue.CubicMixedCut.traceable_of_nonadjacent_ports' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+<workspace>/publish199-mixed-cubic/graffiti-199-mixed-cubic-cut/AdjacentComplete.lean: OK
+Checking AdjacentComplete.lean
+'Graffiti199Depleted.Catalogue.CubicMixedCut.traceable_of_adjacent_ports' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti199Depleted.Catalogue.CubicMixedCut.traceable_of_mixed_cut' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+<workspace>/publish199-mixed-cubic/graffiti-199-mixed-cubic-cut/MixedCutReduction.lean: OK
+Checking MixedCutReduction.lean
+'Graffiti199Depleted.Catalogue.edge_reach_of_cut_with_cubic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti199Depleted.Catalogue.CubicMixedCut.traceable_of_independent_cubics' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti199Depleted.Catalogue.LargeCrossingFailure.cut_has_no_cubics' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti199Depleted.Catalogue.high_cut_of_crossing_failure_of_independent_cubics' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+<workspace>/graff199-k3-high-cut-codex/CubicDeletion.lean: OK
+Checking CubicDeletion.lean
+'Graffiti199Depleted.Catalogue.deletion_preconnected_with_cubic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti199Depleted.Catalogue.connectivity_after_cubic_delete' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti199Depleted.Catalogue.traceable_after_cubic_delete' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti199Depleted.Catalogue.all_ports_contact_components_after_cubic_delete' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+<workspace>/graff199-k3-high-cut-codex/CubicShorePacking.lean: OK
+Checking CubicShorePacking.lean
+'Graffiti199Depleted.Catalogue.card_lt_of_path_flanks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti199Depleted.Catalogue.pathOn_of_traceable_delete' depends on axioms: [propext, Quot.sound]
+'Graffiti199Depleted.Catalogue.path_flanks_of_nontraceable' depends on axioms: [propext, Classical.choice, Quot.sound]
+<workspace>/graff199-k3-high-cut-codex/HighCutProfile.lean: OK
+Checking HighCutProfile.lean
+'Graffiti199Depleted.Catalogue.cubic_shore_has_internal_flank' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti199Depleted.Catalogue.nonneighbor_on_cubic_shore' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti199Depleted.Catalogue.high_cut_and_clique_shores_of_crossing_failure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+<workspace>/graff199-k3-high-cut-codex/ShoreHall.lean: OK
+Checking ShoreHall.lean
+'Graffiti199Depleted.Catalogue.shore_hall' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti199Depleted.Catalogue.shore_distinct_attachments' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti199Depleted.Catalogue.LargeCrossingFailure.distinct_attachments' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+<workspace>/graff199-k3-high-cut-codex/ShoreRouting.lean: OK
+Checking ShoreRouting.lean
+'Graffiti199Depleted.Catalogue.clique_shore_route' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti199Depleted.Catalogue.traceable_of_compatible_shore_routes' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti199Depleted.Catalogue.traceable_of_routable_and_clique_shores' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti199Depleted.Catalogue.three_vertex_path_shore_route' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti199Depleted.Catalogue.traceable_of_three_vertex_path_and_clique_shores' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+<workspace>/graff199-k3-high-cut-codex/TwoShortShores.lean: OK
+Checking TwoShortShores.lean
+'Graffiti199Depleted.Catalogue.traceable_of_two_three_vertex_path_shores' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+<workspace>/graff199-k3-high-cut-codex/CrossingOrder.lean: OK
+Checking CrossingOrder.lean
+'Graffiti199Depleted.Catalogue.LargeCrossingFailure.traceable_of_order_le_nine' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti199Depleted.Catalogue.order_ge_ten_of_crossing_failure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+<workspace>/graff199-k3-high-cut-codex/RoutingWitness.lean: OK
+Checking RoutingWitness.lean
+'Graffiti199Depleted.Catalogue.HighCutRoutingWitness.exact_connectivity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti199Depleted.Catalogue.HighCutRoutingWitness.no_crossing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti199Depleted.Catalogue.HighCutRoutingWitness.budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti199Depleted.Catalogue.HighCutRoutingWitness.port_high' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti199Depleted.Catalogue.HighCutRoutingWitness.independent_cubics' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti199Depleted.Catalogue.HighCutRoutingWitness.left_hall' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti199Depleted.Catalogue.HighCutRoutingWitness.no_route_from_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti199Depleted.Catalogue.HighCutRoutingWitness.left_routes' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti199Depleted.Catalogue.HighCutRoutingWitness.right_routes' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti199Depleted.Catalogue.HighCutRoutingWitness.no_rooted_ore_step' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti199Depleted.Catalogue.HighCutRoutingWitness.traceable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Strict high-cut source replay passed.

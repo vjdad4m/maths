@@ -131,6 +131,7 @@
 | AutoGraphForge line 379 | Proved | [Lean](autographforge-379/AutoGraphForge379.lean) |
 | AutoGraphForge line 464 | Disproved in Lean; unbounded gap even for bipartite planar graphs | [Proof](autographforge-464/) |
 | AutoGraphForge line 501 | Disproved | [Lean](autographforge-eulerian-chain/Chain.lean) · [Replay](autographforge-eulerian-chain/README.md) |
+| AutoGraphForge line 574 | Disproved in Lean; sharp replacement and unbounded Eulerian gap | [Proof](autographforge-574/) |
 | AutoGraphForge line 579 | Proved in Lean without the bipartite restriction | [Proof](autographforge-579/) |
 | AutoGraphForge line 621 | Proved in Lean; extends to quasi-line graphs | [Proof](autographforge-621/README.md) |
 | AutoGraphForge line 720 | Proved in Lean; sharp on K₂ | [Proof](autographforge-720/README.md) |

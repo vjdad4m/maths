@@ -1,0 +1,21 @@
+Full-28 replay /workspace/scratch/7efa613b1c05/graff384b-fivefinish28/.fivefinish28.4h4cb_1f
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+Mathlib c44e0c8ee63ca166450922a373c7409c5d26b00b
+Matched the frozen sparse-28 archive, 309 source hashes and 309 predecessor objects.
+'Graffiti384b.Port28.Board.covered_score' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Port28.Board.cover_saving' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.FiveBoard28.Board.pool_score' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.FiveBoard28.Board.side_score' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.FiveBoard28.table' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.FiveBoard28.rotation_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.FiveBoard28.exterior_cost' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.FiveBoard28.boundary_cost' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.FiveBoard28.center_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.FiveBoard28.lower_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.FiveBoard28.Board.coverage_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.FiveBoard28.Board.saving' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.TwentyEight.original_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.TwentyEight.numerical_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.TwentyEight.remaining_counts' depends on axioms: [propext, Classical.choice, Quot.sound]
+Matched all 9 fresh object hashes.
+Verified 9 fresh modules and 15 standard-axiom reports.

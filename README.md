@@ -24,7 +24,7 @@
 | Graffiti.pc #185 | Disproved (22-vertex counterexample) | [Lean](graffiti-185/Counterexample185.lean) · [Write-up](graffiti-185/README.md) |
 | Graffiti.pc #186 | Literal statement disproved; external-neighborhood variant proved | [Lean counterexample](graffiti-186/Counterexample186.lean) · [Lean proof](graffiti-186/External186.lean) · [Write-up](graffiti-186/README.md) |
 | Graffiti.pc #189 | Open in general; proved for connectivity ≥ d − 1 (d ≥ 3) and for all triangle-free 2-connected graphs | [Near-connectivity](graffiti-189-near/README.md) · [Triangle-free](graffiti-189-triangle-free/README.md) · [Degree-three proof](graffiti-189/README.md) · [Degree-four radius ≥ 4](graffiti-189-degree-four/README.md) · [Degree-four two-cut reduction](graffiti-189-two-cut/README.md) |
-| Graffiti.pc #199 | Unresolved here |  |
+| Graffiti.pc #199 | Open in general; proved at vertex connectivity 1 and 2 | [Lean and replay](graffiti-199-low-connectivity/README.md) |
 | Graffiti.pc #208 | Proved | [Lean](graffiti-208/Proof208.lean) |
 | Graffiti.pc #232 | Proved | [Lean](graffiti-232/Formal232.lean) · [Write-up](graffiti-232/README.md) |
 | Graffiti.pc #235 | Proved | [Lean](graffiti-235/Exact235.lean) · [Write-up](graffiti-235/README.md) |

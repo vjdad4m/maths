@@ -1,0 +1,43 @@
+'KelmansCactus.AtomicBridge.RemoteT2Scope.either_remote_iff_not_opposite_square' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteT2Scope.directed_remote_iff_nonsquare' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteT2PairCounts.extended_boundary' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteT2PairCounts.outside_cut_balance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteT2PairStructure.no_cut_below_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteT2PairStructure.cut_after_omission_nonempty' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteT2PairStructure.remote_at_most_one_leaf' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteT2AvoidThree.factor_image_injOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteT2AvoidThree.transfer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteT2AvoidThree.use_remote_promise' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteT2SideCompletionCuts.same_side_completion_cut' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteT2CompletionObstruction14.cyclic_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteT2CompletionObstruction14.three_connected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteT2CompletionObstruction14.exact_residual' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteT2CompletionObstruction14.no_cyclic_four_completion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

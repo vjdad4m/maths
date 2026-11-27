@@ -1,0 +1,71 @@
+Checking NestedCoreWeightedLocalCredit133
+'Graffiti133NestedWeightedCore.improved_multi_local_credit' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking NestedCorePrivateActiveKernel133
+'Graffiti133NestedActive.checked_active_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking NestedCorePrivateNearSlack133
+'Graffiti133NestedLongGates.radius_four_canonical_private_core_near_slack_mean_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti133NestedLongGates.radius_four_minimum_two_control_core_near_slack_mean_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking NestedCorePrivateWeightedFitHelpers133
+Checking NestedCorePrivateAdjacentSatSpec133
+Checking NestedCorePrivateAdjacentRows13133
+'Graffiti133NestedWeightedCore.satSuccess_1_3' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking NestedCorePrivateAdjacentRows04133
+'Graffiti133NestedWeightedCore.satSuccess_0_4' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking NestedCorePrivateAdjacentRows11133
+'Graffiti133NestedWeightedCore.satSuccess_1_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking NestedCorePrivateAdjacentRows01133
+'Graffiti133NestedWeightedCore.satSuccess_0_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking NestedCorePrivateAdjacentRows05133
+'Graffiti133NestedWeightedCore.satSuccess_0_5' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking NestedCorePrivateAdjacentRows16133
+'Graffiti133NestedWeightedCore.satSuccess_1_6' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking NestedCorePrivateAdjacentSatFit133
+'Graffiti133NestedWeightedCore.adjacent_sat_partial_inj' depends on axioms: [propext, Quot.sound]
+'Graffiti133NestedWeightedCore.adjacent_sat_fit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti133NestedWeightedCore.adjacent_sat_alias_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking NestedCorePrivateAdjacentRows06133
+'Graffiti133NestedWeightedCore.satSuccess_0_6' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking NestedCoreWeightedCreditCount133
+'Graffiti133NestedWeightedCore.profile_credit_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking NestedCorePrivateAdjacentRows14133
+'Graffiti133NestedWeightedCore.satSuccess_1_4' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking NestedCorePrivateAdjacentRows02133
+'Graffiti133NestedWeightedCore.satSuccess_0_2' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking NestedCorePrivateFarControlCharge133
+'Graffiti133NestedWeightedCore.private_far_control_no_clean_singleton' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking NestedCorePrivateAdjacentSatRealLift133
+'Graffiti133NestedWeightedCore.private_adjacent_multi_not_saturated' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking NestedCorePrivateAdjacentRows15133
+'Graffiti133NestedWeightedCore.satSuccess_1_5' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking NestedCoreWeightedGlobalSlack133
+'Graffiti133NestedWeightedCore.refined_near_base_slack' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking NestedCorePrivateWeightedGeometry133
+'Graffiti133NestedWeightedCore.radius_three_from_core_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti133NestedWeightedCore.saturated_adjacent_cycle_dist_le_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking NestedCorePrivateAdjacentChargeCap133
+'Graffiti133NestedWeightedCore.adj_sat_geometry_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking NestedCorePrivateFarChargeCap133
+'Graffiti133NestedWeightedCore.canonical_priority_far_clean_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking NestedCorePrivateTwoCoreNoCapCanonical133
+'Graffiti133NestedLongGates.radius_four_canonical_private_two_core_no_contact_cap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking NestedCorePrivateMinimumTwoCoreNoCap133
+'Graffiti133NestedLongGates.radius_four_minimum_two_control_core_no_contact_cap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti133NestedLongGates.radius_four_minimum_two_control_core_mean_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

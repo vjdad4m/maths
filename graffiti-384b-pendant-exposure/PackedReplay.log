@@ -1,0 +1,20 @@
+Pendant-rank replay <workspace>/graff384b-pendant-ranks/packed-check/graff384b-pendant-ranks/.pendant-rank.5mwqatah
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+Mathlib c44e0c8ee63ca166450922a373c7409c5d26b00b
+Verified pendant-donor source archive and delivery manifest; matched 181 compiled-object hashes
+'Graffiti384b.PendantRank.clean' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.PendantRank.trial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.PendantRank.rank_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.PendantRank.internal_events' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.PendantRank.edge_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.PendantRank.exact_from_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.PendantRank.frame' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.PendantRank.high27' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.PendantRank.low_mate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.PendantRank.weighted_frame' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.PendantRank.small_contacts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.PendantRank.three_ear_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.PendantRank.three_low_mate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.PendantRank.thirty_quartic' depends on axioms: [propext, Classical.choice, Quot.sound]
+Verified 6 fresh modules and 14 standard-axiom reports.
+Verified the rank discount, second-edge incidence, and 27-high low-mate bounds, including weighted exposure and the third-ear quota.

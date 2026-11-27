@@ -2,7 +2,7 @@
 
 | Problem | Resolution status | References |
 |---|---|---|
-| Kelmans P₃-factor conjecture | Open; bounded and sublinear defect equivalences proved (also within cyclic-4 at fixed girth) | [General](kelmans-defect/README.md) · [Cyclic-4/Fixed girth](kelmans-defect-cyclic/README.md) |
+| Kelmans P₃-factor conjecture | Open; bounded and sublinear defect equivalences proved (also within cyclic-4 at fixed girth) | [General](kelmans-defect/README.md) · [Cyclic-4/Fixed girth](kelmans-defect-cyclic/README.md) · [Adjacent-pair deletion](kelmans-affine-t2/README.md) |
 | Graffiti.pc #40 | Unresolved here |  |
 | Graffiti.pc #61 | Unresolved here |  |
 | Graffiti.pc #76 | Disproved | [Lean](graffiti-76/Verify76Exact.lean) · [Write-up](graffiti-76/README.md) |

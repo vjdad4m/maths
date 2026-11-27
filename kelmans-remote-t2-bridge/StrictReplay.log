@@ -1,0 +1,62 @@
+Checking RemoteT2CompletionClassify
+'KelmansCactus.AtomicBridge.RemoteT2CompletionClassify.cyclic_five_outside_cut_three' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteT2CompletionClassify.same_side_low_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteT2CompletionClassify.same_side_low_ext_width_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking RemoteT2NontrivialBridge
+'KelmansCactus.AtomicBridge.RemoteT2NontrivialBridge.leaf_and_balanced_cut_small_shore' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteT2NontrivialBridge.xor_width_at_most_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteT2NontrivialBridge.unique_balanced_cut' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking RemoteT2ForcedChain
+'KelmansCactus.AtomicBridge.RemoteT2ForcedChain.factor_iff_strip_leaf_chain' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking RemoteT2LeafBridgeFactor
+'KelmansCactus.AtomicBridge.RemoteT2LeafBridgeFactor.factor_iff_strip_square_arm' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking RemoteT2CompletionTransfer
+'KelmansCactus.AtomicBridge.RemoteT2CompletionTransfer.completion_boundary_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteT2CompletionTransfer.cyclic_five_completion_smallTrivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteT2CompletionTransfer.cyclic_four_completion_cubic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteT2CompletionTransfer.cyclic_five_remote_automatic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteT2CompletionTransfer.cyclic_five_remote_of_smaller_avoid_three' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteT2CompletionTransfer.restoration_identity' depends on axioms: [propext, Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteT2CompletionTransfer.completion_factor_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking RemoteT2ZeroShore
+'KelmansCactus.AtomicBridge.RemoteT2ZeroShore.zero_zero_bridge_factors' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteT2ZeroShore.zero_shore_factors' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteT2ZeroShore.factor_two_shores' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking RemoteT2FourCutMatching
+'KelmansCactus.AtomicBridge.RemoteT2FourCutMatching.no_repeated_endpoint_of_four_cut' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

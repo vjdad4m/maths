@@ -1,0 +1,209 @@
+
+/-- A vertex with exactly two neighbors and four distance-two vertices
+already forces this order bound under the positive-even budget four. -/
+theorem order_le_thirteen_of_two_neighbors_and_four_at_distance_two
+    (hc : G.Connected) (even : ∀ z,(EvenFrom G z).card≤5)
+    {x a b : V} (ab : a≠b)
+    (nx : ∀ z,G.Adj x z ↔ z=a ∨ z=b)
+    (sat : (DistanceTwo G x).card=4) :
+    Fintype.card V≤13 := by
+  classical
+  have xa : G.Adj x a := (nx a).mpr (.inl rfl)
+  have xb : G.Adj x b := (nx b).mpr (.inr rfl)
+  let P := DistanceTwo G x
+  let C : Finset V := {x,a,b}
+  let Q := (univ : Finset V)\(C∪P)
+  have qP {v : V} (h : v∈Q) : v∉P := fun p => (mem_sdiff.mp h).2 (mem_union.mpr (.inr p))
+  have qC {v : V} (h : v∈Q) : v∉C := fun p => (mem_sdiff.mp h).2 (mem_union.mpr (.inl p))
+  have not_x {v : V} (h : v∈Q) : x≠v := fun e => qC h (by simp [C,e])
+  have not_a {v : V} (h : v∈Q) : a≠v := fun e => qC h (by simp [C,e])
+  have not_b {v : V} (h : v∈Q) : b≠v := fun e => qC h (by simp [C,e])
+  have nox {v : V} (h : v∈Q) : ¬G.Adj x v := by
+    intro n
+    rcases (nx v).mp n with rfl|rfl
+    · exact not_a h rfl
+    · exact not_b h rfl
+  have noa {v : V} (h : v∈Q) : ¬G.Adj a v := fun n =>
+    qP h (mem_distanceTwo.mpr (dist_two hc (not_x h) (nox h) xa n))
+  have nob {v : V} (h : v∈Q) : ¬G.Adj b v := fun n =>
+    qP h (mem_distanceTwo.mpr (dist_two hc (not_x h) (nox h) xb n))
+  have ecc (v : V) : G.dist x v≤3 := by
+    by_contra hi
+    have c := distanceTwo_add_two_le_even_of_far hc (show 4≤G.dist x v by omega)
+    have ce := even x
+    omega
+  have one_of_ports (v : V) (h : v∈P) : G.Adj a v ∨ G.Adj b v := by
+    obtain ⟨p,hp⟩ := hc.exists_walk_length_eq_dist x v
+    have d : G.dist x v=2 := mem_distanceTwo.mp h
+    rw [d] at hp
+    cases p with
+    | nil => simp at hp
+    | @cons y z w xy q =>
+      have l : q.length=1 := by simp only [length_cons] at hp; omega
+      cases q with
+      | nil => simp at l
+      | @cons z w v' zw r =>
+        have len0 : r.length=0 := by simp only [length_cons] at l; omega
+        have eq : w=v := r.eq_of_length_eq_zero len0
+        subst w
+        rcases (nx z).mp xy with rfl|rfl
+        · exact .inl zw
+        · exact .inr zw
+  have connector (v : V) (vQ : v∈Q) :
+      ∃ w∈P, G.Adj w v ∧ (G.Adj a w ∨ G.Adj b w) := by
+    have lo := hc.one_lt_dist_of_ne_of_not_adj (not_x vQ) (nox vQ)
+    have neq : G.dist x v≠2 := fun e => qP vQ (mem_distanceTwo.mpr e)
+    have d : G.dist x v=3 := by have hi := ecc v; omega
+    obtain ⟨p,hp⟩ := hc.exists_walk_length_eq_dist x v
+    rw [d] at hp
+    cases p with
+    | nil => simp at hp
+    | @cons x y v xy q =>
+      have q2 : q.length=2 := by simp only [length_cons] at hp; omega
+      cases q with
+      | nil => simp at q2
+      | @cons y z v yz r =>
+        have r1 : r.length=1 := by simp only [length_cons] at q2; omega
+        cases r with
+        | nil => simp at r1
+        | @cons z t v zt s =>
+          have s0 : s.length=0 := by simp only [length_cons] at r1; omega
+          have eq : t=v := s.eq_of_length_eq_zero s0
+          subst t
+          have nxz : x≠z := fun e => nox vQ (e.symm ▸ zt)
+          have az : ¬G.Adj x z := fun e =>
+            qP vQ (mem_distanceTwo.mpr (dist_two hc (not_x vQ) (nox vQ) e zt))
+          exact ⟨z,mem_distanceTwo.mpr (dist_two hc nxz az xy yz),zt,
+            ((nx y).mp xy).elim (fun e => .inl (e ▸ yz)) (fun e => .inr (e ▸ yz))⟩
+  have ra {v : V} (vq : v∈Q) {w : V} (aw : G.Adj a w) (wv : G.Adj w v) :
+      v∈DistanceTwo G a := mem_distanceTwo.mpr (dist_two hc (not_a vq) (noa vq) aw wv)
+  have rb {v : V} (vq : v∈Q) {w : V} (bw : G.Adj b w) (wv : G.Adj w v) :
+      v∈DistanceTwo G b := mem_distanceTwo.mpr (dist_two hc (not_b vq) (nob vq) bw wv)
+  have cover : Q⊆DistanceTwo G a∪DistanceTwo G b := by
+    intro v vq
+    obtain ⟨w,_,wv,e⟩ := connector v vq
+    exact mem_union.mpr (e.imp (fun e => ra vq e wv) (fun e => rb vq e wv))
+  have ca := distanceTwo_le_of_even 4 a (even a)
+  have cb := distanceTwo_le_of_even 4 b (even b)
+  have discard {u v : V} (ua : u∈DistanceTwo G a) (vb : v∈DistanceTwo G b)
+      (un : u∉Q) (vn : v∉Q) : Q.card≤6 := by
+    have sub : Q⊆(DistanceTwo G a).erase u∪(DistanceTwo G b).erase v := by
+      intro z zq
+      have zu : z≠u := fun e => un (e ▸ zq)
+      have zv : z≠v := fun e => vn (e ▸ zq)
+      exact mem_union.mpr ((mem_union.mp (cover zq)).imp
+        (fun a => mem_erase.mpr ⟨zu,a⟩) (fun b => mem_erase.mpr ⟨zv,b⟩))
+    have sz := card_le_card sub
+    have le := card_union_le ((DistanceTwo G a).erase u) ((DistanceTwo G b).erase v)
+    rw [card_erase_of_mem ua,card_erase_of_mem vb] at le
+    omega
+  have q6 : Q.card≤6 := by
+    by_cases adj : G.Adj a b
+    · by_cases aAll : ∀ z∈P,G.Adj a z
+      · have sub : Q⊆DistanceTwo G a := by
+          intro v vq
+          obtain ⟨w,wp,wv,_⟩ := connector v vq
+          exact ra vq (aAll w wp) wv
+        exact (card_le_card sub).trans (ca.trans (by decide))
+      by_cases bAll : ∀ z∈P,G.Adj b z
+      · have sub : Q⊆DistanceTwo G b := by
+          intro v vq
+          obtain ⟨w,wp,wv,_⟩ := connector v vq
+          exact rb vq (bAll w wp) wv
+        exact (card_le_card sub).trans (cb.trans (by decide))
+      push_neg at aAll bAll
+      obtain ⟨u,up,au⟩ := aAll
+      obtain ⟨v,vp,bv⟩ := bAll
+      have bu := (one_of_ports u up).resolve_left au
+      have av := (one_of_ports v vp).resolve_right bv
+      have du : u∈DistanceTwo G a := mem_distanceTwo.mpr
+        (dist_two hc (fun e => by
+          have d := mem_distanceTwo.mp (show u∈DistanceTwo G x from up)
+          rw [←e,SimpleGraph.dist_eq_one_iff_adj.mpr xa] at d
+          contradiction) au adj bu)
+      have dv : v∈DistanceTwo G b := mem_distanceTwo.mpr
+        (dist_two hc (fun e => by
+          have d := mem_distanceTwo.mp (show v∈DistanceTwo G x from vp)
+          rw [←e,SimpleGraph.dist_eq_one_iff_adj.mpr xb] at d
+          contradiction) bv adj.symm av)
+      exact discard du dv (fun m => qP m up) (fun m => qP m vp)
+    · have du : b∈DistanceTwo G a := mem_distanceTwo.mpr (dist_two hc ab adj xa.symm xb)
+      have dv : a∈DistanceTwo G b := mem_distanceTwo.mpr
+        (dist_two hc ab.symm (fun e => adj e.symm) xb.symm xa)
+      exact discard du dv (fun h => not_b h rfl) (fun h => not_a h rfl)
+  have c3 : C.card≤3 := by
+    change (insert x (insert a ({b}:Finset V))).card≤3
+    have r := card_insert_le x (insert a ({b}:Finset V))
+    have t := card_insert_le a ({b}:Finset V)
+    simp at t
+    omega
+  have cp := card_union_le C P
+  have cc := card_sdiff_add_card_eq_card (subset_univ (C∪P))
+  rw [card_univ] at cc
+  change Q.card+(C∪P).card=Fintype.card V at cc
+  change P.card=4 at sat
+  omega
+
+#print axioms order_le_thirteen_of_two_neighbors_and_four_at_distance_two
+
+
+/-- Removing the sole vertex outside an edge-optimal longest path gives
+a two-neighbor saturated vertex and thus order at most thirteen. -/
+theorem order_le_thirteen_of_unique_omission_at_degree_four
+    (hc : G.Connected) (even : ∀ z,(EvenFrom G z).card≤5)
+    (conn : ∀ S : Finset V,S.card<2 → (G.induce ((↑S : Set V)ᶜ)).Connected)
+    (deg : ∀ u v : V,u≠v → 4≤G.degree u ∨ 4≤G.degree v)
+    {a b x : V} {p : G.Walk a b} (hp : EdgeOptimal p) (ah : 4≤G.degree a) (bh : 4≤G.degree b)
+    (xo : x∉p.support) (only : ∀ z,z∉p.support→z=x) :
+    Fintype.card V≤13 := by
+  classical
+  obtain ⟨T,xT,Tne,Toff,Tclosed,Tjoined⟩ := exists_omitted_component xo
+  let H : OmittedComponent p := ⟨T,Tne,Toff,Tclosed,Tjoined⟩
+  have xH : x∈H.vertices := xT
+  have cap := fun x => distanceTwo_le_of_even 4 x (even x)
+  have f := (at_most_two_pins_one_slack hc 2 (by decide) cap conn deg hp xo).1
+  obtain ⟨u,um,v,vm,uv⟩ := one_lt_card.mp (show 1<(componentPins H).card by
+    have bd := componentPins_card hp.1 H 2 conn
+    omega)
+  obtain ⟨up,r,rH,ru⟩ := mem_filter.mp um
+  obtain ⟨vp,s,sH,sv⟩ := mem_filter.mp vm
+  have rx := only r (H.off _ rH)
+  have sx := only s (H.off _ sH)
+  subst r
+  subst s
+  obtain ⟨i,hi,iu⟩ := pin_of_neighbor_mem hp.1 xo (List.mem_toFinset.mp up) ru
+  obtain ⟨j,hj,jv⟩ := pin_of_neighbor_mem hp.1 xo (List.mem_toFinset.mp vp) sv
+  have ne : i≠j := fun e => uv (iu.symm.trans ((congrArg p.getVert e).trans jv))
+  obtain ⟨i,j,hi,hj,ij⟩ : ∃ i j,i∈Pins p x ∧ j∈Pins p x ∧ i<j := by
+    exact (lt_or_gt_of_ne ne).elim (fun e => ⟨i,j,hi,hj,e⟩) (fun e => ⟨j,i,hj,hi,e⟩)
+  have gap := pins_gap_at_four hc even conn deg hp ah bh xo hi hj ij
+  have ip := pin_pos hp.1 xo hi
+  have il := (pin_data hi).1
+  have jl := (pin_data hj).1
+  have sub : ({i,j}:Finset ℕ)⊆Pins p x := by
+    intro k km
+    rcases mem_insert.mp km with rfl|kk
+    · exact hi
+    · exact (mem_singleton.mp kk).symm ▸ hj
+  have pins : Pins p x = ({i,j}:Finset ℕ) :=
+    (eq_of_subset_of_card_le sub (by simpa [card_insert_of_not_mem,ij.ne] using f)).symm
+  have hN (z : V) : G.Adj x z ↔ z=p.getVert i ∨ z=p.getVert j := by
+    constructor
+    · intro e
+      have zon : z∈p.support := Classical.byContradiction (fun h => e.ne (only z h).symm)
+      obtain ⟨k,km,rfl⟩ := pin_of_neighbor_mem hp.1 xo zon e
+      rw [pins,mem_insert,mem_singleton] at km
+      exact km.imp (congrArg p.getVert) (congrArg p.getVert)
+    · rintro (rfl|rfl)
+      · exact (pin_data hi).2
+      · exact (pin_data hj).2
+  obtain ⟨dD,dF⟩ := two_flanks_full hp.1 hc xo f (cap x) hi hj gap
+  have d4 : (DistanceTwo G x).card=4 := by
+    rw [dD,cardinal_flankVertices hp.1,dF]
+    have n1 : i-1∉({i+1,j-1,j+1}:Finset ℕ) := by simp only [mem_insert,mem_singleton]; omega
+    have n2 : i+1∉({j-1,j+1}:Finset ℕ) := by simp only [mem_insert,mem_singleton]; omega
+    have n3 : j-1∉({j+1}:Finset ℕ) := by simp only [mem_singleton]; omega
+    rw [card_insert_of_not_mem n1,card_insert_of_not_mem n2,card_insert_of_not_mem n3,card_singleton]
+  have n : p.getVert i≠p.getVert j := fun e => ij.ne (hp.1.1.getVert_injOn il.le jl.le e)
+  exact order_le_thirteen_of_two_neighbors_and_four_at_distance_two hc even n hN d4
+#print axioms order_le_thirteen_of_unique_omission_at_degree_four

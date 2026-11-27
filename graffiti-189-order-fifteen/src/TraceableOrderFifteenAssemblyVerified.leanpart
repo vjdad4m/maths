@@ -1,0 +1,116 @@
+
+theorem order_fifteen_shape_with_table (table : ∀ (i j : ℕ), 1≤i → i+3≤j → j≤9 → OffFour15.row i j=true)
+    (hc : G.Connected)
+    (even : ∀ v,(EvenFrom G v).card≤5)
+    (conn : ∀ S : Finset V,S.card<2 → (G.induce ((↑S : Set V)ᶜ)).Connected)
+    (degree : ∀ u v : V,u≠v → 4≤G.degree u ∨ 4≤G.degree v)
+    (order : Fintype.card V≤15)
+    (fail : ¬∃ a b : V, ∃ p : G.Walk a b, p.IsPath ∧ ∀ v,v∈p.support) :
+    ∃ a b x : V, ∃ p : G.Walk a b, EdgeOptimal p ∧ 4≤G.degree a ∧ 4≤G.degree b ∧
+      p.length=13 ∧ x∉p.support ∧ (∀ z,z∉p.support → z=x) := by
+  classical
+  have ord : Fintype.card V=15 := by
+    by_contra h
+    exact fail (traceable_of_order_le_fourteen hc even conn degree (by omega))
+  obtain ⟨a,b,p,hp,ah,bh⟩ := exists_edge_optimal_with_high_ends hc 2 4 (by decide) conn degree fail
+  obtain ⟨u,uo⟩ : ∃ u,u∉p.support := not_forall.mp (fun h => fail ⟨a,b,p,hp.1.1,h⟩)
+  obtain ⟨S,ux,Sne,Soff,Sclosed,Sjoined⟩ := exists_omitted_component uo
+  let H : OmittedComponent p := ⟨S,Sne,Soff,Sclosed,Sjoined⟩
+  have se := componentPins_card hp.1 H 2 conn
+  obtain ⟨y,yp⟩ := card_pos.mp (show 0<(componentPins H).card by omega)
+  obtain ⟨yp,x,xH,xy⟩ := mem_filter.mp yp
+  have xo := H.off x xH
+  have yp' := List.mem_toFinset.mp yp
+  have lower := mark_length hp.1 xo yp' xy ∅ (empty_subset _) (by simp)
+  let O := (univ : Finset V)\p.support.toFinset
+  have cardO : O.card+(p.length+1)=Fintype.card V := by
+    have h := card_sdiff_add_card_eq_card (subset_univ p.support.toFinset)
+    rwa [List.toFinset_card_of_nodup hp.1.1.support_nodup,length_support,card_univ] at h
+  have cap := fun x => distanceTwo_le_of_even 4 x (even x)
+  have few {a b : V} {q : G.Walk a b} (hq : EdgeOptimal q) {x : V} (xo : x∉q.support) :
+      (Pins q x).card≤2 :=
+    (at_most_two_pins_one_slack hc 2 (by decide) cap conn degree hq xo).1
+  simp only [card_empty,Nat.add_zero] at lower
+  have not_three : O.card≠3 := by
+    intro t
+    exact fail (traceable_if_three_off_order_fifteen hc even conn degree hp ah bh (by omega) t)
+  have not_four : O.card≠4 := by
+    intro t
+    exact fail (traceable_if_four_off_order_fifteen_with_table table hc even conn degree hp ah bh (by omega) t)
+  have not_five : O.card≠5 := by
+    intro t
+    exact no_five_off_length_nine hc even conn degree hp ah bh (by omega) t
+  have not_six : O.card≠6 := by
+    intro t
+    exact fail (traceable_if_six_off_saturated_four hc even conn degree hp ah bh (by omega) t)
+  have low {z : V} (zo : z∉p.support) : ¬4≤G.degree z := by
+    have f := few hp zo
+    have bd := degree_off_bound hp.1 zo
+    change G.degree z≤(Pins p z).card+O.card-1 at bd
+    omega
+  have only {z : V} (zo : z∉p.support) : z=x :=
+    Classical.byContradiction (fun e => (degree z x e).elim (low zo) (low xo))
+  have Oeq : O={x} := by
+    ext z
+    simp only [O,mem_sdiff,mem_univ,true_and,List.mem_toFinset,mem_singleton]
+    exact ⟨only,fun e => e.symm ▸ xo⟩
+  rw [Oeq,card_singleton] at cardO
+  exact ⟨a,b,x,p,hp,ah,bh,by omega,xo,fun _ => only⟩
+#print axioms order_fifteen_shape_with_table
+
+
+theorem traceable_of_order_le_fifteen
+    (hc : G.Connected)
+    (even : ∀ v,(EvenFrom G v).card≤5)
+    (conn : ∀ S : Finset V,S.card<2 → (G.induce ((↑S : Set V)ᶜ)).Connected)
+    (degree : ∀ u v : V,u≠v → 4≤G.degree u ∨ 4≤G.degree v)
+    (order : Fintype.card V≤15) :
+    ∃ a b : V, ∃ p : G.Walk a b,p.IsPath ∧ ∀ v,v∈p.support := by
+  classical
+  by_contra fail
+  have ord : Fintype.card V=15 := by
+    by_contra h
+    exact fail (traceable_of_order_le_fourteen hc even conn degree (by omega))
+  obtain ⟨a,b,p,hp,ah,bh⟩ := exists_edge_optimal_with_high_ends hc 2 4 (by decide) conn degree fail
+  obtain ⟨u,uo⟩ : ∃ u,u∉p.support := not_forall.mp (fun h => fail ⟨a,b,p,hp.1.1,h⟩)
+  obtain ⟨S,ux,Sne,Soff,Sclosed,Sjoined⟩ := exists_omitted_component uo
+  let H : OmittedComponent p := ⟨S,Sne,Soff,Sclosed,Sjoined⟩
+  have se := componentPins_card hp.1 H 2 conn
+  obtain ⟨y,yp⟩ := card_pos.mp (show 0<(componentPins H).card by omega)
+  obtain ⟨yp,x,xH,xy⟩ := mem_filter.mp yp
+  have xo := H.off x xH
+  have yp' := List.mem_toFinset.mp yp
+  have lower := mark_length hp.1 xo yp' xy ∅ (empty_subset _) (by simp)
+  let O := (univ : Finset V)\p.support.toFinset
+  have cardO : O.card+(p.length+1)=Fintype.card V := by
+    have h := card_sdiff_add_card_eq_card (subset_univ p.support.toFinset)
+    rwa [List.toFinset_card_of_nodup hp.1.1.support_nodup,length_support,card_univ] at h
+  have cap := fun x => distanceTwo_le_of_even 4 x (even x)
+  have few {a b : V} {q : G.Walk a b} (hq : EdgeOptimal q) {x : V} (xo : x∉q.support) :
+      (Pins q x).card≤2 :=
+    (at_most_two_pins_one_slack hc 2 (by decide) cap conn degree hq xo).1
+  simp only [card_empty,Nat.add_zero] at lower
+  have not_three : O.card≠3 := by
+    intro t
+    exact fail (traceable_if_three_off_order_fifteen hc even conn degree hp ah bh (by omega) t)
+  have not_four : O.card≠4 := by
+    intro t
+    exact fail (traceable_if_four_off_order_fifteen hc even conn degree hp ah bh (by omega) t)
+  have not_five : O.card≠5 := by
+    intro t
+    exact no_five_off_length_nine hc even conn degree hp ah bh (by omega) t
+  have not_six : O.card≠6 := by
+    intro t
+    exact fail (traceable_if_six_off_saturated_four hc even conn degree hp ah bh (by omega) t)
+  have low {z : V} (zo : z∉p.support) : ¬4≤G.degree z := by
+    have f := few hp zo
+    have bd := degree_off_bound hp.1 zo
+    change G.degree z≤(Pins p z).card+O.card-1 at bd
+    omega
+  have only {z : V} (zo : z∉p.support) : z=x :=
+    Classical.byContradiction (fun e => (degree z x e).elim (low zo) (low xo))
+  have upper := order_le_thirteen_of_unique_omission_at_degree_four hc even conn degree hp ah bh xo
+    (fun _ => only)
+  exact fail (traceable_of_order_le_thirteen hc even conn degree upper)
+
+#print axioms traceable_of_order_le_fifteen

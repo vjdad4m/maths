@@ -1,0 +1,302 @@
+
+private theorem two_porters_of_two_connectivity
+    (conn : ∀ S : Finset V,S.card<2 → (G.induce ((↑S : Set V)ᶜ)).Connected)
+    {a b : V} {p : G.Walk a b} (hp : IsLongest p)
+    (lower : 2≤((univ : Finset V)\p.support.toFinset).card) :
+    2≤(((univ : Finset V)\p.support.toFinset).filter fun z => (Pins p z).Nonempty).card := by
+  classical
+  let O := (univ : Finset V)\p.support.toFinset
+  let U := O.filter (fun z => (Pins p z).Nonempty)
+  change 2≤U.card
+  by_contra! small
+  have out {z : V} : z∈O ↔ z∉p.support := by simp [O]
+  have ex : ∃ z∈O,z∉U := by
+    by_contra! no
+    have m := card_le_card (show O⊆U from no)
+    have l : 2≤O.card := lower
+    omega
+  obtain ⟨z,zo,zu⟩ := ex
+  have ao : a∉U := fun h => (out.mp (mem_filter.mp h).1) p.start_mem_support
+  let W : Set V := ((↑U : Set V)ᶜ)
+  let w0 : W := ⟨a,ao⟩
+  let w1 : W := ⟨z,zu⟩
+  obtain ⟨q⟩ := (conn U small) w0 w1
+  have stay {u v : W} (r : (G.induce W).Walk u v) :
+      u.val∈p.support → v.val∈p.support := by
+    induction r with
+    | nil => exact id
+    | @cons u v w adj r ih =>
+      intro up
+      apply ih
+      by_contra vp
+      have vu : G.Adj v.val u.val := G.symm adj
+      obtain ⟨k,km,_⟩ := pin_of_neighbor_mem hp vp up vu
+      exact v.property (mem_filter.mpr ⟨out.mpr vp,⟨k,km⟩⟩)
+  exact (out.mp zo) (stay q p.start_mem_support)
+
+private theorem five_high_omissions_connected
+    {a b x : V} {p : G.Walk a b} (hp : IsLongest p)
+    (xo : x∉p.support)
+    (off : ((univ : Finset V)\p.support.toFinset).card=5)
+    (few : ∀ x∉p.support,(Pins p x).card≤2)
+    (high : ∀ x∉p.support,4≤G.degree x) :
+    ∃ H : OmittedComponent p,∀ x∉p.support,x∈H.vertices := by
+  classical
+  let O := (univ : Finset V)\p.support.toFinset
+  have oc : O.card=5 := off
+  have out {z : V} : z∈O ↔ z∉p.support := by simp [O]
+  obtain ⟨T,xT,Tne,Toff,Tclosed,Tjoined⟩ := exists_omitted_component xo
+  let H : OmittedComponent p := ⟨T,Tne,Toff,Tclosed,Tjoined⟩
+  have HT : H.vertices⊆O := fun _ h => out.mpr (H.off _ h)
+  have Nsub : omittedNeighbors p x ⊆ H.vertices.erase x := by
+    intro y hy
+    obtain ⟨n,yo⟩ := mem_filter.mp hy
+    have xy := (mem_neighborFinset G _ _).mp n
+    have yH : y∈H.vertices := Classical.byContradiction (fun yH => yo (H.closed x xT y yH xy))
+    exact mem_erase.mpr ⟨xy.ne.symm,yH⟩
+  have cc := card_le_card Nsub
+  rw [card_erase_of_mem (show x∈H.vertices from xT)] at cc
+  have xc := omittedDegree_eq hp xo
+  have xs := few x xo
+  have xh := high x xo
+  have h3 : 3≤H.vertices.card := by omega
+  let R := O\H.vertices
+  have r2 : R.card≤2 := by
+    have rr := card_sdiff_add_card_eq_card HT
+    change R.card+H.vertices.card=O.card at rr
+    omega
+  refine ⟨H,?_⟩
+  intro y yo
+  by_contra yH
+  have ym : y∈R := mem_sdiff.mpr ⟨out.mpr yo,yH⟩
+  have sub : omittedNeighbors p y⊆R.erase y := by
+    intro z hz
+    obtain ⟨n,zo⟩ := mem_filter.mp hz
+    have yz := (mem_neighborFinset G _ _).mp n
+    have zH : z∉H.vertices := fun h => yo (H.closed z h y yH yz.symm)
+    exact mem_erase.mpr ⟨yz.ne.symm,mem_sdiff.mpr ⟨out.mpr zo,zH⟩⟩
+  have n := card_le_card sub
+  rw [card_erase_of_mem ym] at n
+  have de := omittedDegree_eq hp yo
+  have f := few y yo
+  have h := high y yo
+  omega
+
+
+private theorem length_nine_five_off_two_pin_oriented
+    (hc : G.Connected) (even : ∀ v,(EvenFrom G v).card≤5)
+    (conn : ∀ S : Finset V,S.card<2 → (G.induce ((↑S : Set V)ᶜ)).Connected)
+    (degree : ∀ u v : V,u≠v → 4≤G.degree u ∨ 4≤G.degree v)
+    {a b x : V} {p : G.Walk a b} (hp : EdgeOptimal p) (ah : 4≤G.degree a) (bh : 4≤G.degree b)
+    (len : p.length=9) (off : ((univ : Finset V)\p.support.toFinset).card=5)
+    (xo : x∉p.support) {i j : ℕ} (hi : i∈Pins p x) (hj : j∈Pins p x) (ij : i<j)
+    (low : ¬4≤G.degree (p.getVert (j-1))) :
+    False := by
+  classical
+  have gap := pins_gap_at_four hc even conn degree hp ah bh xo hi hj ij
+  have ip := pin_pos hp.1 xo hi
+  have jl := (pin_data hj).1
+  have il := (pin_data hi).1
+  have cap := fun x => distanceTwo_le_of_even 4 x (even x)
+  have few {z : V} (zo : z∉p.support) : (Pins p z).card≤2 :=
+    (at_most_two_pins_one_slack hc 2 (by decide) cap conn degree hp zo).1
+  have onlow : p.getVert (j-1)∈p.support := p.getVert_mem_support _
+  have high {z : V} (zo : z∉p.support) : 4≤G.degree z :=
+    (degree z _ (fun e => zo (e ▸ onlow))).resolve_right low
+  have disx := two_pin_hole_dichotomy hc even conn degree hp ah bh xo hi hj gap
+  have hole (zr : i<p.length) (m : i∉LeftMarks p∪RightMarks p) {k : ℕ}
+      (kr : k<p.length) (ne : k≠i) : k∈LeftMarks p∪RightMarks p := by
+    by_contra no
+    exact ne (at_most_one_hole hp.1 xo (p.getVert_mem_support i) (pin_data hi).2 ah bh
+      (by omega) kr zr no m)
+  have inoth : i∉LeftMarks p∪RightMarks p := by
+    rcases disx.2.2 with h|h
+    · by_cases inside : i∈LeftMarks p∪RightMarks p
+      · have iHi : 4≤G.degree (p.getVert (i+1)) := by
+          apply (degree _ (p.getVert (j-1)) _).resolve_right low
+          intro e
+          have q := hp.1.1.getVert_injOn (show i+1≤p.length by omega) (show j-1≤p.length by omega) e
+          omega
+        exact (disx.2.1 iHi inside).elim
+      · exact inside
+    · exact h
+  have eqhole {k} (kr : k<p.length) (hm : k∉LeftMarks p∪RightMarks p) : k=i :=
+    at_most_one_hole hp.1 xo (p.getVert_mem_support i) (pin_data hi).2 ah bh (by omega)
+      kr il hm inoth
+  have union_jm := hole il inoth (show j-1<p.length by omega) (by omega)
+  have union_j := hole il inoth jl (by omega)
+  have first : G.Adj a (p.getVert j) := by
+    have marked := (mem_union.mp union_jm).resolve_right
+      (fun m => end_not_adj_pin_predecessor hp.1 xo hj (mem_filter.mp m).2)
+    have e := (mem_filter.mp marked).2
+    rwa [show j-1+1=j by omega] at e
+  have second : G.Adj b (p.getVert j) := by
+    have marked := (mem_union.mp union_j).resolve_left
+      (fun m => start_not_adj_pin_successor hp.1 xo hj (mem_filter.mp m).2)
+    exact (mem_filter.mp marked).2
+  obtain ⟨left,right⟩ := pin_two_contacts_end hp.1 hc xo (few xo) (cap x) hi hj gap
+  have ie : i=1 := left j hj first
+  have je : j=8 := by have h := right j hj second; omega
+  have ff (z : V) (zo : z∉p.support) : (Pins p z).card≤2 := few zo
+  obtain ⟨H,whole⟩ := five_high_omissions_connected hp.1 xo off ff (fun _ => high)
+  have x1 : 1∈Pins p x := ie ▸ hi
+  have x8 : 8∈Pins p x := je ▸ hj
+  have xp : Pins p x=({1,8}:Finset ℕ) := (eq_of_subset_of_card_le
+    (show ({1,8}:Finset ℕ)⊆Pins p x from fun k hk =>
+      (mem_insert.mp hk).elim (fun e => e.symm ▸ x1) (fun e => (mem_singleton.mp e).symm ▸ x8))
+    (by simpa using few xo)).symm
+  obtain ⟨xd,xf⟩ := two_flanks_full hp.1 hc xo (few xo) (cap x) hi hj gap
+  have vf : FlankIndices p x=({0,2,7,9}:Finset ℕ) := by simpa [ie,je] using xf
+  have universal {z : V} (zo : z∉p.support) (ne : x≠z) : G.Adj x z := by
+    rcases omitted_distance_two_or_all_adj hc H (whole x xo) (whole z zo) ne with ez|⟨w,wo,wm⟩
+    · exact ez
+    · rw [xd] at wm
+      obtain ⟨j,jm,eq⟩ := mem_image.mp wm
+      exact (wo (eq ▸ p.getVert_mem_support j)).elim
+  have all_pins {z : V} (zo : z∉p.support) {k : ℕ} (ki : k∈Pins p z) :
+      k=1 ∨ k=8 := by
+    by_cases zx : z=x
+    · subst z
+      simpa [xp] using ki
+    by_cases now : k=1 ∨ k=8
+    · exact now
+    exfalso
+    have adj := universal zo (Ne.symm zx)
+    have kl := (pin_data ki).1
+    have ban : ¬G.Adj x (p.getVert k) := by
+      intro h
+      have hh : k∈Pins p x := mem_filter.mpr ⟨mem_range.mpr kl,h⟩
+      exact now (by simpa [xp] using hh)
+    have d2 : p.getVert k∈DistanceTwo G x := mem_distanceTwo.mpr (dist_two hc
+      (fun e => xo (e.symm ▸ p.getVert_mem_support k)) ban adj (pin_data ki).2)
+    rw [xd] at d2
+    obtain ⟨n,nh,eq⟩ := mem_image.mp d2
+    rw [vf,mem_insert,mem_insert,mem_insert,mem_singleton] at nh
+    have nl : n≤p.length := by rcases nh with q|q|q|q <;> omega
+    have kn := hp.1.1.getVert_injOn nl kl.le eq
+    have gi : 1+3≤k ∨ k+3≤1 := by
+      rcases lt_or_gt_of_ne (fun h=>now (.inl h)) with z|z
+      · exact .inr (component_pins_spaced_four hc even conn degree hp ah bh H (whole _ zo) (whole _ xo) ki x1 z)
+      · exact .inl (component_pins_spaced_four hc even conn degree hp ah bh H (whole _ xo) (whole _ zo) x1 ki z)
+    have gj : 8+3≤k ∨ k+3≤8 := by
+      rcases lt_or_gt_of_ne (fun h=>now (.inr h)) with z|z
+      · exact .inr (component_pins_spaced_four hc even conn degree hp ah bh H (whole _ zo) (whole _ xo) ki x8 z)
+      · exact .inl (component_pins_spaced_four hc even conn degree hp ah bh H (whole _ xo) (whole _ zo) x8 ki z)
+    omega
+  let O := (univ : Finset V)\p.support.toFinset
+  let U := O.filter (fun z=>(Pins p z).Nonempty)
+  have ua : 2≤U.card := two_porters_of_two_connectivity conn hp.1 (by omega)
+  have ap1 : G.Adj a (p.getVert 1) := by simpa using p.adj_getVert_succ (i:=0) (by omega)
+  have ap8 : G.Adj a (p.getVert 8) := je ▸ first
+  have bp8 : G.Adj b (p.getVert 8) := je ▸ second
+  have t9 : p.getVert 9=b := by simpa only [len] using p.getVert_length
+  have ab : ¬G.Adj a b := by
+    intro e
+    have e' : G.Adj a (p.getVert (8+1)) := t9.symm ▸ e
+    exact not_adj_both_end_marks hp.1 xo (p.getVert_mem_support 1) (pin_data x1).2 (by omega) e' bp8
+  have abne : a≠b := fun e => by
+    have h := hp.1.1.getVert_injOn (show 0≤p.length by omega) (show 9≤p.length by omega)
+      (p.getVert_zero.trans (e.trans t9.symm))
+    omega
+  have v2 : p.getVert 2∈DistanceTwo G a := by
+    apply mem_distanceTwo.mpr
+    exact dist_two hc (fun e => by
+      have z := hp.1.1.getVert_injOn (Nat.zero_le _) (show 2≤p.length by omega) (p.getVert_zero.trans e)
+      omega) (start_not_adj_pin_successor hp.1 xo x1) ap1 (p.adj_getVert_succ (i:=1) (by omega))
+  have b2 : b∈DistanceTwo G a := mem_distanceTwo.mpr (dist_two hc abne ab ap8 bp8.symm)
+  have sub : U⊆DistanceTwo G a := by
+    intro z zu
+    obtain ⟨zu,⟨k,hk⟩⟩ := mem_filter.mp zu
+    have zo : z∉p.support := fun e => (mem_sdiff.mp zu).2 (List.mem_toFinset.mpr e)
+    have chord : G.Adj a (p.getVert k) := (all_pins zo hk).elim (fun e => e.symm ▸ ap1)
+      (fun e => e.symm ▸ ap8)
+    exact mem_distanceTwo.mpr (dist_two hc (fun e => zo (e ▸ p.start_mem_support))
+      (fun e => (no_endpoints hp.1 zo).1 e.symm) chord (pin_data hk).2.symm)
+  have inU {z : V} (hz : z∈p.support) : z∉U := fun e =>
+    (mem_sdiff.mp (mem_filter.mp e).1).2 (List.mem_toFinset.mpr hz)
+  have n2b : p.getVert 2≠b := fun e => by
+    have h := hp.1.1.getVert_injOn (show 2≤p.length by omega) (show 9≤p.length by omega)
+      (e.trans t9.symm)
+    omega
+  have n2 : p.getVert 2∉insert b U := by simp [n2b,inU (p.getVert_mem_support 2)]
+  let T := insert (p.getVert 2) (insert b U)
+  have dSub : T⊆DistanceTwo G a := insert_subset v2 (insert_subset b2 sub)
+  have ct : T.card=U.card+2 := by
+    change (insert (p.getVert 2) (insert b U)).card=U.card+2
+    rw [card_insert_of_not_mem n2,card_insert_of_not_mem (inU p.end_mem_support)]
+  have ee : DistanceTwo G a=T := (eq_of_subset_of_card_le dSub (by have h := cap a; omega)).symm
+  have step {k : ℕ} (k3 : 3≤k) (k7 : k≤7) (up : G.Adj a (p.getVert (k+1))) :
+      G.Adj a (p.getVert k) := by
+    by_cases no : G.Adj a (p.getVert k)
+    · exact no
+    exfalso
+    have dk : p.getVert k∈DistanceTwo G a := mem_distanceTwo.mpr (dist_two hc (fun h=>by
+      have z := hp.1.1.getVert_injOn (Nat.zero_le _) (show k≤p.length by omega) (p.getVert_zero.trans h)
+      omega) no up (p.adj_getVert_succ (by omega)).symm)
+    rw [ee] at dk
+    have n2 : p.getVert k≠p.getVert 2 := fun e => by
+      have h := hp.1.1.getVert_injOn (show k≤p.length by omega) (show 2≤p.length by omega) e
+      omega
+    have nb : p.getVert k≠b := fun e => by
+      have q := hp.1.1.getVert_injOn (show k≤p.length by omega) (show 9≤p.length by omega) (e.trans t9.symm)
+      omega
+    simp [T,n2,nb,inU (p.getVert_mem_support k)] at dk
+  have a7 := step (k:=7) (by decide) (by decide) ap8
+  have a6 := step (k:=6) (by decide) (by decide) a7
+  have a5 := step (k:=5) (by decide) (by decide) a6
+  have a4 := step (k:=4) (by decide) (by decide) a5
+  have a3 := step (k:=3) (by decide) (by decide) a4
+  have submarks : ({0,2,3,4,5,6,7}:Finset ℕ)⊆LeftMarks p := by
+    intro n hn
+    simp only [mem_insert,mem_singleton] at hn
+    rcases hn with h|h|h|h|h|h|h <;> subst n <;> apply mem_filter.mpr <;>
+      constructor <;> first | exact mem_range.mpr (by omega) | assumption
+  have lm := card_le_card submarks
+  rw [show ({0,2,3,4,5,6,7}:Finset ℕ).card=7 by decide,card_leftMarks hp.1] at lm
+  have mk := mark_length hp.1 xo (p.getVert_mem_support 1) (pin_data x1).2 ∅ (empty_subset _) (by simp)
+  simp only [card_empty,Nat.add_zero] at mk
+  omega
+
+
+theorem no_five_off_length_nine
+    (hc : G.Connected) (even : ∀ v,(EvenFrom G v).card≤5)
+    (conn : ∀ S : Finset V,S.card<2 → (G.induce ((↑S : Set V)ᶜ)).Connected)
+    (degree : ∀ u v : V,u≠v → 4≤G.degree u ∨ 4≤G.degree v)
+    {a b : V} {p : G.Walk a b} (hp : EdgeOptimal p) (ah : 4≤G.degree a) (bh : 4≤G.degree b)
+    (len : p.length=9) (off : ((univ : Finset V)\p.support.toFinset).card=5) :
+    False := by
+  classical
+  by_cases few : ∀ x∉p.support,(Pins p x).card≤1
+  · exact length_nine_five_off_single_pin hc even conn degree hp ah bh len off few
+  push_neg at few
+  obtain ⟨x,xo,gt⟩ := few
+  obtain ⟨i,hi,j,hj,ij⟩ := one_lt_card.mp gt
+  obtain ⟨i,j,hi,hj,ij⟩ : ∃ i j,i∈Pins p x ∧ j∈Pins p x ∧ i<j := by
+    rcases lt_or_gt_of_ne ij with e|e
+    · exact ⟨i,j,hi,hj,e⟩
+    · exact ⟨j,i,hj,hi,e⟩
+  by_cases lo : 4≤G.degree (p.getVert (j-1))
+  · have gap := pins_gap_at_four hc even conn degree hp ah bh xo hi hj ij
+    have il := (pin_data hi).1
+    have jl := (pin_data hj).1
+    obtain ⟨fh,sh,_⟩ := two_pin_hole_dichotomy hc even conn degree hp ah bh xo hi hj gap
+    have rlo : ¬4≤G.degree (p.getVert (i+1)) := by
+      intro uh
+      have eq := at_most_one_hole hp.1 xo (p.getVert_mem_support i) (pin_data hi).2 ah bh (by omega)
+        (show j-1<p.length by omega) il (fh lo) (sh uh)
+      omega
+    have ep : EdgeOptimal p.reverse := same_support_optimal hp (reverse_long hp.1) (by intro z; simp)
+    have rev_eq : p.reverse.support.toFinset=p.support.toFinset := by
+      ext z
+      simp
+    have one := reverse_pin hp.1 xo hj
+    have two := reverse_pin hp.1 xo hi
+    have rlh : ¬4≤G.degree (p.reverse.getVert (p.length-i-1)) := by
+      rw [getVert_reverse,show p.length-(p.length-i-1)=i+1 by omega]
+      exact rlo
+    exact length_nine_five_off_two_pin_oriented hc even conn degree ep bh ah (by simpa using len)
+      (by rwa [rev_eq]) (by simpa using xo) one two (by omega) rlh
+  · exact length_nine_five_off_two_pin_oriented hc even conn degree hp ah bh len off xo hi hj ij lo
+
+
+#print axioms no_five_off_length_nine

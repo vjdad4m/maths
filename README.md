@@ -137,6 +137,7 @@
 | AutoGraphForge line 1539 | Disproved | [Lean](autographforge-balanced-forcing/BalancedForcing.lean) |
 | AutoGraphForge line 1839 | Disproved | [Lean](autographforge-365/AutoGraphForgeDiamonds.lean) |
 | AutoGraphForge line 1883 | Disproved (singleton rainbow convention) | [Lean](autographforge-1883/AutoGraphForge1883.lean) |
+| AutoGraphForge line 1889 | Disproved | [Lean](autographforge-shared-hub/SharedHub.lean) · [Replay](autographforge-shared-hub/README.md) |
 | AutoGraphForge line 1904 | Disproved | [Lean](autographforge-balanced-forcing/BalancedForcing.lean) |
 | AutoGraphForge line 1908 | Disproved | [Lean](autographforge-303/AutoGraphForgePlanar.lean) |
 | AutoGraphForge line 1956 | Disproved | [Lean](autographforge-balanced-forcing/BalancedForcing.lean) |

@@ -1,0 +1,83 @@
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+Pool26.lean: OK
+OuterScore.lean: OK
+SeparatedAnchors.lean: OK
+FourSample.lean: OK
+FourPrices.lean: OK
+FourFrontier.lean: OK
+AnchorCuts.lean: OK
+two-ear-source.zip: OK
+Anchor-pair build /workspace/scratch/7efa613b1c05/graff384b-anchorpairs-astra/.anchorpairs.kOz0Fxdp
+CubicPair.lean: OK
+CubicSaving.lean: OK
+RootMass.lean: OK
+RootRank.lean: OK
+TwoEarFront.lean: OK
+OuterSeparation.lean: OK
+README.md: OK
+audit.py: OK
+replay.sh: OK
+CHECKED-OBJECTS.sha256: OK
+NEW-SOURCES.sha256: OK
+StrictTwoEars.log: OK
+shared-anchor-source.zip: OK
+Fresh extension verified: 6 modules and 9 standard-axiom reports.
+Fresh extension verified: 6 modules and 9 standard-axiom reports.
+AdjacentBound.olean: OK
+AdjacentFrame.olean: OK
+AdjacentFront.olean: OK
+AllContacts.olean: OK
+AnchorScores.olean: OK
+AttachmentReserve.olean: OK
+CleanFinish.olean: OK
+CleanRanks.olean: OK
+CliquePool.olean: OK
+CompleteAdjacent.olean: OK
+CubicExtra.olean: OK
+CubicMass.olean: OK
+CubicPair.olean: OK
+CubicRanks.olean: OK
+CubicSaving.olean: OK
+DenseTwelve.olean: OK
+EarTriangle.olean: OK
+FinishIndependent.olean: OK
+IndependentFrontier.olean: OK
+IndependentThirteen.olean: OK
+JointEarRank.olean: OK
+JointEarSample.olean: OK
+JointEarWitness.olean: OK
+LowOmissions.olean: OK
+NoLeafAttachment.olean: OK
+OuterSeparation.olean: OK
+PendantBound.olean: OK
+PendantSample.olean: OK
+PoolTwelve.olean: OK
+PortClique29.olean: OK
+PortFrame29.olean: OK
+PortRepair29.olean: OK
+RankRepair29.olean: OK
+ReservedRanks.olean: OK
+RootMass.olean: OK
+RootRank.olean: OK
+SharedRanks.olean: OK
+SimplicialRanks.olean: OK
+SimplicialTrial.olean: OK
+ThirdEar.olean: OK
+ThreeEars.olean: OK
+ThreePins.olean: OK
+ThreeReservedRanks.olean: OK
+TwelveWitness.olean: OK
+TwoEarFront.olean: OK
+UnreservedTwelve.olean: OK
+Weighted29.olean: OK
+'Graffiti384b.AnchorPairs.exact_pool' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.AnchorPairs.score_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.AnchorPairs.three_anchors' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.AnchorPairs.disjoint_anchors' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.AnchorPairs.extra_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.AnchorPairs.cubic25' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.AnchorPairs.incidence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.AnchorPairs.four_anchor_frontier' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.AnchorPairs.uncovered_anchor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.AnchorPairs.missing_cross' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fresh extension verified: 7 modules and 10 standard-axiom reports.

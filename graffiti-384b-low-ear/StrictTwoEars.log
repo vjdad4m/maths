@@ -1,0 +1,76 @@
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+CubicPair.lean: OK
+CubicSaving.lean: OK
+RootMass.lean: OK
+RootRank.lean: OK
+TwoEarFront.lean: OK
+OuterSeparation.lean: OK
+shared-anchor-source.zip: OK
+Two-ear build /workspace/scratch/7efa613b1c05/graff384b-twoears-astra/.twoears.76W4KT6E
+ThirdEar.lean: OK
+SharedRanks.lean: OK
+EarTriangle.lean: OK
+ThreePins.lean: OK
+NoLeafAttachment.lean: OK
+README.md: OK
+replay.sh: OK
+audit.py: OK
+NEW-SOURCES.sha256: OK
+full-objects.sha256: OK
+clean-objects.sha256: OK
+StrictShared.log: OK
+adjacent-full-source.zip: OK
+graff384b-clean-independent-sources.zip: OK
+Fresh extension verified: 5 modules and 6 standard-axiom reports.
+Fresh extension verified: 5 modules and 6 standard-axiom reports.
+AdjacentBound.olean: OK
+AdjacentFrame.olean: OK
+AdjacentFront.olean: OK
+AllContacts.olean: OK
+AnchorScores.olean: OK
+AttachmentReserve.olean: OK
+CleanFinish.olean: OK
+CleanRanks.olean: OK
+CliquePool.olean: OK
+CompleteAdjacent.olean: OK
+CubicExtra.olean: OK
+CubicMass.olean: OK
+CubicRanks.olean: OK
+DenseTwelve.olean: OK
+EarTriangle.olean: OK
+FinishIndependent.olean: OK
+IndependentFrontier.olean: OK
+IndependentThirteen.olean: OK
+JointEarRank.olean: OK
+JointEarSample.olean: OK
+JointEarWitness.olean: OK
+LowOmissions.olean: OK
+NoLeafAttachment.olean: OK
+PendantBound.olean: OK
+PendantSample.olean: OK
+PoolTwelve.olean: OK
+PortClique29.olean: OK
+PortFrame29.olean: OK
+PortRepair29.olean: OK
+RankRepair29.olean: OK
+ReservedRanks.olean: OK
+SharedRanks.olean: OK
+SimplicialRanks.olean: OK
+SimplicialTrial.olean: OK
+ThirdEar.olean: OK
+ThreeEars.olean: OK
+ThreePins.olean: OK
+ThreeReservedRanks.olean: OK
+TwelveWitness.olean: OK
+UnreservedTwelve.olean: OK
+Weighted29.olean: OK
+'Graffiti384b.TwoEars.protecting_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.TwoEars.extra_trial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.TwoEars.extra_fiber' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.TwoEars.extra_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.TwoEars.pinned' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.TwoEars.profile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.TwoEars.high_anchors' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.TwoEars.exact_of_low_neighbor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.TwoEars.outer_separation' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fresh extension verified: 6 modules and 9 standard-axiom reports.

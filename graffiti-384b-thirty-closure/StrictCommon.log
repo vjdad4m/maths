@@ -1,0 +1,88 @@
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+CommonGeometry31.lean: OK
+CommonBudget31.lean: OK
+CommonRepair31.lean: OK
+CommonSaving31.lean: OK
+CommonFinish31.lean: OK
+graff384b-isolate31-sources.zip: OK
+Common-neighbor replay /workspace/scratch/7efa613b1c05/graff384b-onecommon31/.common.FpxIBoSA
+IsolatedVertex31.lean: OK
+NEW-SOURCES.sha256: OK
+PREDECESSORS.sha256: OK
+README.md: OK
+StrictThirty.log: OK
+ThirtyBoth31.lean: OK
+ThirtyFinish31.lean: OK
+ThirtyPairSample31.lean: OK
+ThirtyPairSaving31.lean: OK
+ThirtyTransversal31.lean: OK
+audit.py: OK
+graff384b-leaf-independent-sources.zip: OK
+leaf-objects.sha256: OK
+replay.sh: OK
+shared-anchor-source.zip: OK
+shared-objects.sha256: OK
+Verified isolate adapter and 30-nonleaf core reduction.
+Fresh extension verified: 6 modules and 16 standard-axiom reports.
+AdjacentBound.olean: OK
+AdjacentFrame.olean: OK
+AdjacentFront.olean: OK
+AllContacts.olean: OK
+AnchorScores.olean: OK
+AttachmentReserve.olean: OK
+CleanFinish.olean: OK
+CleanRanks.olean: OK
+CliquePool.olean: OK
+CompleteAdjacent.olean: OK
+CubicExtra.olean: OK
+CubicMass.olean: OK
+CubicRanks.olean: OK
+DenseTwelve.olean: OK
+EarTriangle.olean: OK
+FinishIndependent.olean: OK
+IndependentFrontier.olean: OK
+IndependentThirteen.olean: OK
+IsolatedVertex31.olean: OK
+JointEarRank.olean: OK
+JointEarSample.olean: OK
+JointEarWitness.olean: OK
+LeafDeletion.olean: OK
+LeafFinish.olean: OK
+LeafSample.olean: OK
+LowOmissions.olean: OK
+NoLeafAttachment.olean: OK
+PendantBound.olean: OK
+PendantSample.olean: OK
+PoolTwelve.olean: OK
+PortClique29.olean: OK
+PortFrame29.olean: OK
+PortRepair29.olean: OK
+RankRepair29.olean: OK
+ReservedRanks.olean: OK
+SharedRanks.olean: OK
+SimplicialRanks.olean: OK
+SimplicialTrial.olean: OK
+ThirdEar.olean: OK
+ThirtyBoth31.olean: OK
+ThirtyFinish31.olean: OK
+ThirtyPairSample31.olean: OK
+ThirtyPairSaving31.olean: OK
+ThirtyTransversal31.olean: OK
+ThreeEars.olean: OK
+ThreePins.olean: OK
+ThreeReservedRanks.olean: OK
+TwelveWitness.olean: OK
+UnreservedTwelve.olean: OK
+Weighted29.olean: OK
+'Graffiti384b.OneCommon.Board.pool_score' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.OneCommon.Board.pool_size' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.OneCommon.table' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.OneCommon.four_fibers' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.OneCommon.ranks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.OneCommon.Board.trial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.OneCommon.Board.extra_fiber' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.OneCommon.Board.saving' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.OneCommon.residual' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.OneCommon.exact_of_common' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fresh extension verified: 5 modules and 10 standard-axiom reports.
+Verified common-neighbor closure for thirty nonleaves.

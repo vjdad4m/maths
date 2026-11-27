@@ -1,0 +1,37 @@
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+Checking P5CliqueIndependentTwoFan133
+'Graffiti133P5CliqueArms.TwoFan.normalize' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS P5CliqueIndependentTwoFan133
+Checking P5CliqueNearestPortStem133
+'Graffiti133P5CliqueArms.each_has_nearest_clean_port_stem' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS P5CliqueNearestPortStem133
+Checking P5CliqueNearestStemKernel133
+'Graffiti133P5CliqueArms.IndependentFanFinite.nearest_stem_report_of_no_p9' depends on axioms: [propext, Quot.sound]
+PASS P5CliqueNearestStemKernel133
+Checking P5CliqueNearestStemLift133
+'Graffiti133P5CliqueArms.TwoFan.nearest_stem_mask_survives' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS P5CliqueNearestStemLift133
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+Checking P5CliqueForeignNearest133
+'Graffiti133P5CliqueArms.ForeignStem.foreign_nearest_stem_without_relay_forces_p9' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS P5CliqueForeignNearest133
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+Checking P5CliqueIndependentTripleAnchor133
+'Graffiti133P5CliqueArms.four_ports_exists_anchor_without_triple_neighbor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS P5CliqueIndependentTripleAnchor133
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+Checking P5CliqueIndependentPureAnchor133
+'Graffiti133P5CliqueArms.pure_high_family' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti133P5CliqueArms.four_port_pure_highs_at_most_six_of_good_anchor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS P5CliqueIndependentPureAnchor133
+Checking P5CliqueIndependentExcessThree133
+'Graffiti133P5CliqueArms.independent_four_ports_excess_at_most_three_ambient_mean_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS P5CliqueIndependentExcessThree133

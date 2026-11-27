@@ -1,0 +1,182 @@
+
+private theorem length_ten_left_has_three_path_d2
+    (hc : G.Connected)
+    {a b x : V} {p : G.Walk a b} (hp : IsLongest p)
+    (ah : 4≤G.degree a) (bh : 4≤G.degree b) (len : p.length=10)
+    (xo : x∉p.support) (h1 : 1∈Pins p x) (h9 : 9∈Pins p x) :
+    3≤((DistanceTwo G a).filter (· ∈ p.support)).card := by
+  classical
+  let D := (DistanceTwo G a).filter (· ∈ p.support)
+  change 3≤D.card
+  by_contra! small
+  have vr {i j : ℕ} (ir : i≤p.length) (jr : j≤p.length) (ne : i≠j) :
+      p.getVert i≠p.getVert j := fun e => ne (hp.1.getVert_injOn ir jr e)
+  have na : ¬G.Adj a b := by
+    intro e
+    have ar : 9<p.length := by omega
+    have ten : p.getVert 10=b := by simpa only [len] using p.getVert_length
+    have ea : G.Adj a (p.getVert (9+1)) := by simpa only [ten] using e
+    have eb : G.Adj b (p.getVert 9) := by simpa only [ten] using (p.adj_getVert_succ ar).symm
+    exact not_adj_both_end_marks hp xo (p.getVert_mem_support 1) (pin_data h1).2 ar ea eb
+  have aA : ¬G.Adj a (p.getVert 0) := by simp
+  have first : G.Adj a (p.getVert 1) := by simpa using p.adj_getVert_succ (i:=0) (by omega)
+  have nTwo : ¬G.Adj a (p.getVert 2) := start_not_adj_pin_successor hp xo h1
+  have nEight : ¬G.Adj b (p.getVert 8) := end_not_adj_pin_predecessor hp xo h9
+  have mkD {i : ℕ} (ip : 0<i) (ir : i≤p.length)
+      (no : ¬G.Adj a (p.getVert i)) {j : ℕ} (adj : G.Adj a (p.getVert j))
+      (edge : G.Adj (p.getVert j) (p.getVert i)) : p.getVert i∈D :=
+    mem_filter.mpr ⟨mem_distanceTwo.mpr (dist_two hc (fun e => vr (i:=0) (Nat.zero_le _) ir
+      (by omega) (p.getVert_zero.trans e)) no adj edge),p.getVert_mem_support i⟩
+  have d2 : p.getVert 2∈D := mkD (by omega) (by omega) nTwo first
+    (p.adj_getVert_succ (i:=1) (by omega))
+  let A := (range 11).filter (fun i => G.Adj a (p.getVert i))
+  have memA {i : ℕ} : i∈A ↔ i<11 ∧ G.Adj a (p.getVert i) := by simp [A]
+  have sa : A.Nonempty := ⟨1,memA.mpr ⟨by omega,first⟩⟩
+  let t := A.max' sa
+  have tm : t∈A := max'_mem A sa
+  have tb : t≤9 := by
+    have b := memA.mp tm
+    by_contra! big
+    have eq : t=10 := by omega
+    have q := b.2
+    rw [eq,←len,p.getVert_length] at q
+    exact na q
+  have tmax {i : ℕ} (h : i∈A) : i≤t := le_max' A i h
+  have injectA : (A.image p.getVert).card=A.card := by
+    apply card_image_iff.mpr
+    intro u hu v hv e
+    have ur : u<11 := (memA.mp hu).1
+    have vv : v<11 := (memA.mp hv).1
+    exact hp.1.getVert_injOn (show u≤p.length by omega) (show v≤p.length by omega) e
+  have allAdj : G.neighborFinset a ⊆ A.image p.getVert := by
+    intro z zm
+    have az := (mem_neighborFinset G a z).mp zm
+    have zp : z∈p.support := Classical.byContradiction (fun e => (no_endpoints hp e).1 az.symm)
+    obtain ⟨k,ke,kp⟩ := mem_support_iff_exists_getVert.mp zp
+    exact mem_image.mpr ⟨k,memA.mpr ⟨by omega,ke.symm ▸ az⟩,ke⟩
+  have amin : 4≤A.card := by
+    have q := card_le_card allAdj
+    rw [injectA,card_neighborFinset_eq_degree] at q
+    omega
+  have tge : 5≤t := by
+    by_contra! low
+    have aa : A⊆({1,3,4}:Finset ℕ) := by
+      intro v vm
+      have vl : v≤t := tmax vm
+      have vlt : v<5 := lt_of_le_of_lt vl low
+      have va := (memA.mp vm).2
+      by_cases n0 : v=0
+      · exact False.elim (aA (n0 ▸ va))
+      by_cases n2 : v=2
+      · exact False.elim (nTwo (n2 ▸ va))
+      have vc : v=1 ∨ v=3 ∨ v=4 := by omega
+      simpa using vc
+    have c := card_le_card aa
+    have c3 : ( {1,3,4}:Finset ℕ).card=3 := by decide
+    omega
+  have dt : p.getVert (t+1)∈D := by
+    have no : ¬G.Adj a (p.getVert (t+1)) := fun h => by
+      have := tmax (memA.mpr ⟨by omega,h⟩)
+      omega
+    exact mkD (by omega) (by omega) no (memA.mp tm).2 (p.adj_getVert_succ (i:=t) (by omega))
+  have deq : D=({p.getVert 2,p.getVert (t+1)}:Finset V) := by
+    symm
+    apply eq_of_subset_of_card_le
+    · intro z hz
+      exact (mem_insert.mp hz).elim (fun e => e.symm ▸ d2) (fun e => (mem_singleton.mp e).symm ▸ dt)
+    · rw [card_insert_of_not_mem (by
+          simpa using vr (i:=2) (j:=t+1) (by omega) (by omega) (by omega)),card_singleton]
+      omega
+  have back (k : ℕ) (r : 3≤k) (kt : k≤t) : G.Adj a (p.getVert k) := by
+    let P := fun n : ℕ => 3≤t-n → G.Adj a (p.getVert (t-n))
+    have yes : ∀ n,P n := by
+      intro n
+      induction n with
+      | zero => intro _; simpa using (memA.mp tm).2
+      | succ n ih =>
+          intro ge
+          have r' : 3≤t-n := by
+            change 3≤t-(n+1) at ge
+            omega
+          have old := ih r'
+          by_cases yes : G.Adj a (p.getVert (t-(n+1)))
+          · exact yes
+          exfalso
+          have e : t-n = t-(n+1)+1 := by
+            change 3≤t-(n+1) at ge
+            omega
+          have zz : p.getVert (t-(n+1))∈D :=
+            mkD (by change 3≤t-(n+1) at ge; omega) (by omega) yes old
+              (by rw [e]; exact (p.adj_getVert_succ (i:=t-(n+1)) (by omega)).symm)
+          rw [deq] at zz
+          rcases mem_insert.mp zz with o|o
+          · exact vr (i:=t-(n+1)) (j:=2) (by omega) (by omega)
+              (by change 3≤t-(n+1) at ge; omega) o
+          · exact vr (i:=t-(n+1)) (j:=t+1) (by omega) (by omega)
+              (by omega) (mem_singleton.mp o)
+    have k' : t-(t-k)=k := by omega
+    have eq := yes (t-k)
+    simp only [P,k'] at eq
+    exact eq r
+  have ee : t≠9 := by
+    intro eq
+    have dis : Disjoint (LeftMarks p∪RightMarks p) (∅:Finset ℕ) := by simp
+    have bd := mark_length hp xo (p.getVert_mem_support 1) (pin_data h1).2 ∅ (empty_subset _) dis
+    have ss : ({1,3,4,5,6,7,8,9}:Finset ℕ)⊆A := by
+      intro v vm
+      have q : v=1 ∨ (3≤v ∧ v≤9) := by
+        simp only [mem_insert,mem_singleton] at vm
+        omega
+      rcases q with rfl|h
+      · exact memA.mpr ⟨by omega,first⟩
+      · exact memA.mpr ⟨by omega,back v h.1 (by omega)⟩
+    have size := card_le_card ss
+    norm_num at size
+    -- The indexed left neighborhood is injective and contained in the actual neighborhood.
+    have sub : A.image p.getVert⊆G.neighborFinset a := by
+      intro v vm
+      obtain ⟨i,im,rfl⟩ := mem_image.mp vm
+      exact (mem_neighborFinset G a _).mpr (memA.mp im).2
+    have ag := card_le_card sub
+    rw [injectA,card_neighborFinset_eq_degree] at ag
+    simp at bd
+    omega
+  have nbD : b∉D := by
+    intro h
+    rw [deq] at h
+    rcases mem_insert.mp h with hh|hh
+    · exact vr (i:=p.length) (j:=2) le_rfl (by omega) (by omega) (p.getVert_length.trans hh)
+    · exact vr (i:=p.length) (j:=t+1) le_rfl (by omega) (by omega)
+        (p.getVert_length.trans (mem_singleton.mp hh))
+  have avoid {k : ℕ} (ak : G.Adj a (p.getVert k)) : ¬G.Adj b (p.getVert k) := by
+    intro bk
+    have ab : a≠b := fun e => vr (i:=0) (j:=p.length) (Nat.zero_le _) le_rfl (by omega)
+      (p.getVert_zero.trans (e.trans p.getVert_length.symm))
+    exact nbD (mem_filter.mpr ⟨mem_distanceTwo.mpr (dist_two hc ab na ak bk.symm),p.end_mem_support⟩)
+  have ldis : Disjoint (LeftMarks p) (RightMarks p) := disjoint_left.mpr (by
+    intro j jl jr
+    exact not_adj_both_end_marks hp xo (p.getVert_mem_support 1) (pin_data h1).2
+      (mem_range.mp (mem_filter.mp jl).1) (mem_filter.mp jl).2 (mem_filter.mp jr).2)
+  have rs : RightMarks p⊆({6,7,9}:Finset ℕ) := by
+    intro k km
+    have kl := mem_range.mp (mem_filter.mp km).1
+    have bk := (mem_filter.mp km).2
+    by_cases range : k=6 ∨ k=7 ∨ k=9
+    · simpa using range
+    have lmem {j : ℕ} (jr : j<p.length) (adj : G.Adj a (p.getVert (j+1))) : j∉RightMarks p :=
+      fun e => (disjoint_left.mp ldis) (mem_filter.mpr ⟨mem_range.mpr jr,adj⟩) e
+    have choose : k=0 ∨ k=1 ∨ k=2 ∨ k=3 ∨ k=4 ∨ k=5 ∨ k=8 := by omega
+    exfalso
+    rcases choose with rfl|rfl|rfl|rfl|rfl|rfl|rfl
+    · exact lmem (by omega) first km
+    · exact avoid first bk
+    · exact lmem (by omega) (back 3 (by omega) (by omega)) km
+    · exact avoid (back 3 (by omega) (by omega)) bk
+    · exact avoid (back 4 (by omega) (by omega)) bk
+    · exact avoid (back 5 (by omega) (by omega)) bk
+    · exact nEight bk
+  have counts := card_le_card rs
+  rw [card_rightMarks hp] at counts
+  norm_num at counts
+  omega
+#print axioms length_ten_left_has_three_path_d2

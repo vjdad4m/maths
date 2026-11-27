@@ -1,0 +1,107 @@
+
+private theorem model15_off_four_compatible
+    {a b : V} {p : G.Walk a b} (hp : IsLongest p) (len : p.length=10)
+    {i j c d : ℕ} (il : 1≤i) (ij : i+3≤j) (jl : j≤9)
+    (φ : Fin 15→V)
+    (on : ∀ k : Fin 15,k.val≤10 → φ k=p.getVert k.val)
+    (out : ∀ k : Fin 15,11≤k.val → φ k∉p.support)
+    (inj : Function.Injective φ)
+    (least : ∀ k : Fin 15,11≤k.val → k.val<11+c → i∈Pins p (φ k))
+    (later : ∀ k : Fin 15,11+c≤k.val → k.val<11+c+d → j∈Pins p (φ k))
+    (clique : ∀ z∉p.support,∀ w∉p.support,z≠w → G.Adj z w)
+    (m : OffFour15.Marks)
+    (L : ∀ k : Fin 10,m k=1 ↔ G.Adj a (p.getVert (k.val+1)))
+    (R : ∀ k : Fin 10,m k=2 ↔ G.Adj b (p.getVert k.val)) :
+    (∀ u v,OffFour15.edge i j c d m u v=true → G.Adj (φ u) (φ v)) ∧
+    (∀ u,G.Adj (φ (0:Fin 15)) (φ u) → OffFour15.edge i j c d m 0 u=true) ∧
+    (∀ u,G.Adj (φ (10:Fin 15)) (φ u) → OffFour15.edge i j c d m 10 u=true) := by
+  have a0 : φ 0=a := by rw [on 0 (by decide)]; exact p.getVert_zero
+  have b10 : φ 10=b := by rw [on 10 (by decide)]; simpa [len] using p.getVert_length
+  have direction (u v : Fin 15) (h : OffFour15.dir i j c d m u v=true) : G.Adj (φ u) (φ v) := by
+    simp only [OffFour15.dir,Bool.or_eq_true,decide_eq_true_eq] at h
+    rcases h with (((((ha|hb)|hc)|hd)|he)|hf)
+    · rw [on u (by omega),on v ha.2,ha.1]
+      exact p.adj_getVert_succ (by omega)
+    · exact clique _ (out u hb.1) _ (out v (by omega)) (fun e => by
+        have C := congrArg Fin.val (inj e)
+        omega)
+    · rw [on u (by omega),hc.1]
+      exact (pin_data (least v hc.2.1 hc.2.2)).2.symm
+    · rw [on u (by omega),hd.1]
+      exact (pin_data (later v hd.2.1 hd.2.2)).2.symm
+    · by_cases q : u.val=0 ∧ 1≤v.val ∧ v.val≤10
+      · simp only [dif_pos q,decide_eq_true_eq] at he
+        rw [on u (by omega),on v q.2.2,q.1,p.getVert_zero]
+        have h := (L ⟨v.val-1,by omega⟩).mp he
+        change G.Adj a (p.getVert (v.val-1+1)) at h
+        rwa [show v.val-1+1=v.val by omega] at h
+      · simp only [dif_neg q] at he
+        contradiction
+    · by_cases q : v.val=10 ∧ u.val<10
+      · simp only [dif_pos q,decide_eq_true_eq] at hf
+        rw [on u (by omega),on v (by omega),q.1,←len,p.getVert_length]
+        exact ((R ⟨u.val,q.2⟩).mp hf).symm
+      · simp only [dif_neg q] at hf
+        contradiction
+  refine ⟨?_,?_,?_⟩
+  · intro u v h
+    simp only [OffFour15.edge,Bool.or_eq_true] at h
+    exact h.elim (direction _ _) (fun e => G.symm (direction _ _ e))
+  · intro u uA
+    have onP : u.val≤10 := by
+      by_contra no
+      exact (no_endpoints hp (out u (by omega))).1 ((a0 ▸ uA).symm)
+    have up : 1≤u.val := by
+      by_contra no
+      have u0 : u=0 := Fin.ext (show u.val=0 by omega)
+      exact G.loopless _ (u0 ▸ uA)
+    have q : (0:Fin 15).val=0 ∧ 1≤u.val ∧ u.val≤10 := ⟨rfl,up,onP⟩
+    have ia : G.Adj a (p.getVert ((u.val-1)+1)) := by
+      rw [show u.val-1+1=u.val by omega,←on u onP,←a0]
+      exact uA
+    have h : m ⟨u.val-1,by omega⟩=1 := (L _).mpr ia
+    simp only [OffFour15.edge,Bool.or_eq_true]
+    left
+    simp [OffFour15.dir,q,h]
+  · intro u uB
+    have onP : u.val≤10 := by
+      by_contra no
+      exact (no_endpoints hp (out u (by omega))).2 ((b10 ▸ uB).symm)
+    have up : u.val<10 := by
+      by_contra no
+      have u10 : u=10 := Fin.ext (show u.val=(10:Fin 15).val by change u.val=10; omega)
+      exact G.loopless _ (u10 ▸ uB)
+    have q : (10:Fin 15).val=10 ∧ u.val<10 := ⟨rfl,up⟩
+    have ib : G.Adj b (p.getVert u.val) := by
+      rw [←on u onP,←b10]
+      exact uB
+    have h : m ⟨u.val,up⟩=2 := (R _).mpr ib
+    simp only [OffFour15.edge,Bool.or_eq_true]
+    right
+    simp [OffFour15.dir,q,h]
+#print axioms model15_off_four_compatible
+
+private theorem n15_model_d2_upper (hc : G.Connected)
+    (φ : Fin 15 → V) (inj : Function.Injective φ)
+    (E : Fin 15 → Fin 15 → Bool) (z : Fin 15)
+    (forw : ∀ u v,E u v=true → G.Adj (φ u) (φ v))
+    (rev : ∀ u,G.Adj (φ z) (φ u) → E z u=true)
+    (cap : (DistanceTwo G (φ z)).card≤4) :
+    (univ.filter fun y => y≠z ∧ !E z y = true ∧
+      ∃ u : Fin 15,E z u=true ∧ E u y=true).card≤4 := by
+  classical
+  let Q := univ.filter fun y => y≠z ∧ !E z y = true ∧
+      ∃ u : Fin 15,E z u=true ∧ E u y=true
+  have sub : Q.image φ ⊆ DistanceTwo G (φ z) := by
+    intro y hy
+    obtain ⟨v,vq,rfl⟩ := mem_image.mp hy
+    obtain ⟨vne,no,w,zw,wv⟩ := (mem_filter.mp vq).2
+    have ne : φ z≠φ v := fun e => vne (inj e).symm
+    have no' : ¬G.Adj (φ z) (φ v) := fun e => by
+      have r := rev v e
+      simp [r] at no
+    exact mem_distanceTwo.mpr (dist_two hc ne no' (forw z w zw) (forw w v wv))
+  have c := card_le_card sub
+  rw [card_image_of_injective _ inj] at c
+  exact c.trans cap
+

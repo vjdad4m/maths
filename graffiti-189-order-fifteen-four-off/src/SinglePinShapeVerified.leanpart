@@ -1,0 +1,149 @@
+
+private theorem length_ten_four_off_single_pin_shape
+    (hc : G.Connected) (even : ∀ v,(EvenFrom G v).card≤5)
+    (conn : ∀ S : Finset V,S.card<2 → (G.induce ((↑S : Set V)ᶜ)).Connected)
+    (degree : ∀ u v : V,u≠v → 4≤G.degree u ∨ 4≤G.degree v)
+    {a b : V} {p : G.Walk a b} (hp : EdgeOptimal p)
+    (ah : 4≤G.degree a) (bh : 4≤G.degree b) (len : p.length=10)
+    (off : ((univ : Finset V)\p.support.toFinset).card=4)
+    (few : ∀ x∉p.support,(Pins p x).card≤1) :
+    ∃ (x y : V) (i j : ℕ), x∉p.support ∧ y∉p.support ∧ i∈Pins p x ∧ j∈Pins p y ∧ i+3≤j ∧
+      (∀ z∉p.support, Pins p z⊆({i,j}:Finset ℕ)) ∧
+      (∀ z∉p.support,∀ w∉p.support,z≠w → G.Adj z w) ∧
+      (¬G.Adj a (p.getVert i) ∨ ¬G.Adj a (p.getVert j)) ∧
+      (¬G.Adj b (p.getVert i) ∨ ¬G.Adj b (p.getVert j)) ∧
+      G.degree a = 4 ∧ G.degree b = 4 := by
+  classical
+  have cap := fun z => distanceTwo_le_of_even 4 z (even z)
+  obtain ⟨H,_,_,high_many⟩ := off_four_component_carries_all_high degree hp.1 off
+    (fun z zo => (few z zo).trans (by decide))
+  let Hact := H.vertices.filter (fun z => 4≤G.degree z)
+  have a3 : 3≤Hact.card := high_many
+  have aout (z : V) (zA : z∈Hact) : z∉p.support := H.off _ (mem_filter.mp zA).1
+  have active (z : V) (zA : z∈Hact) : (Pins p z).Nonempty := by
+    have d := degree_off_bound hp.1 (aout z zA)
+    rw [off] at d
+    exact card_pos.mp (by have hg := (mem_filter.mp zA).2; omega)
+  have clique (z : V) (zo : z∉p.support) (w : V) (wo : w∉p.support) (ne : z≠w) :
+      G.Adj z w := by
+    rcases degree z w ne with d|d
+    · apply off_neighbors_complete_of_tight hp.1 zo wo ne.symm
+      rw [off]
+      have f := few z zo
+      omega
+    · apply G.symm
+      apply off_neighbors_complete_of_tight hp.1 wo zo ne
+      rw [off]
+      have f := few w wo
+      omega
+  have whole (z : V) (zo : z∉p.support) : z∈H.vertices := by
+    by_contra no
+    obtain ⟨w,wH⟩ := H.nonempty
+    have ne : w≠z := fun h => no (h ▸ wH)
+    exact zo (H.closed _ wH _ no (clique w (H.off _ wH) z zo ne))
+  obtain ⟨u,up,v,vp,uv⟩ := one_lt_card.mp (show 1<(componentPins H).card by
+    have c := componentPins_card hp.1 H 2 conn
+    omega)
+  obtain ⟨up,x,xH,xu⟩ := mem_filter.mp up
+  obtain ⟨vp,y,yH,yv⟩ := mem_filter.mp vp
+  have xo := H.off _ xH
+  have yo := H.off _ yH
+  obtain ⟨i,hi,iu⟩ := pin_of_neighbor_mem hp.1 xo (List.mem_toFinset.mp up) xu
+  obtain ⟨j,hj,jv⟩ := pin_of_neighbor_mem hp.1 yo (List.mem_toFinset.mp vp) yv
+  have ine : i≠j := fun e => uv (iu.symm.trans (e ▸ jv))
+  obtain ⟨x,y,i,j,xo,yo,hi,hj,ij⟩ : ∃ (x y : V) (i j : ℕ), x∉p.support ∧
+      y∉p.support ∧ i∈Pins p x ∧ j∈Pins p y ∧ i<j := by
+    rcases lt_or_gt_of_ne ine with h|h
+    · exact ⟨x,y,i,j,xo,yo,hi,hj,h⟩
+    · exact ⟨y,x,j,i,yo,xo,hj,hi,h⟩
+  have gap {u v : V} (uo : u∉p.support) (vo : v∉p.support)
+      {k l : ℕ} (hk : k∈Pins p u) (hl : l∈Pins p v) (ne : k≠l) : k+3≤l ∨ l+3≤k := by
+    rcases lt_or_gt_of_ne ne with h|h
+    · exact .inl (component_pins_spaced_four hc even conn degree hp ah bh H (whole u uo) (whole v vo) hk hl h)
+    · exact .inr (component_pins_spaced_four hc even conn degree hp ah bh H (whole v vo) (whole u uo) hl hk h)
+  have port_distinct {u v : V} (uo : u∉p.support) {k l : ℕ}
+      (hk : k∈Pins p u) (hl : l∈Pins p v) (ne : k≠l) : u≠v := by
+    intro h
+    subst v
+    have ha := one_lt_card.mpr ⟨k,hk,l,hl,ne⟩
+    exact (Nat.not_lt_of_ge (few u uo)) ha
+  have il := (pin_data hi).1
+  have jl := (pin_data hj).1
+  have ip := pin_pos hp.1 xo hi
+  have jp := pin_pos hp.1 yo hj
+  have ijg : i+3≤j := (gap xo yo hi hj ij.ne).resolve_right (by omega)
+  have holes_one {u v w : V} (uo : u∉p.support) (vo : v∉p.support) (wo : w∉p.support)
+      {k l m : ℕ} (hk : k∈Pins p u) (hl : l∈Pins p v) (hm : m∈Pins p w)
+      (kl : k≠l) (km : k≠m) (lm : l≠m) :
+      ∃ t : ℕ,(t=k-1 ∨ t=k) ∧ t∉LeftMarks p∪RightMarks p := by
+    have ends : ¬G.Adj a (p.getVert k) ∨ ¬G.Adj b (p.getVert k) := by
+      by_contra! both
+      exact single_pin_never_both_endpoints_with_two_foreign_ports hc hp.1 uo vo wo
+        (clique u uo v vo (port_distinct uo hk hl kl))
+        (clique u uo w wo (port_distinct uo hk hm km)) (cap u) (few u uo)
+        hk hl hm (gap uo vo hk hl kl) (gap uo wo hk hm km) lm both.1 both.2
+    exact ends.elim
+      (fun h => ⟨k-1,.inl rfl,(mark_holes_of_pin_and_missing_endpoint hp.1 uo hk).1 h⟩)
+      (fun h => ⟨k,.inr rfl,(mark_holes_of_pin_and_missing_endpoint hp.1 uo hk).2 h⟩)
+  have all (z : V) (zo : z∉p.support) : Pins p z⊆({i,j}:Finset ℕ) := by
+    intro k hk
+    by_contra no
+    have bans : k≠i ∧ k≠j := by simpa using no
+    obtain ⟨s,sr,sh⟩ := holes_one xo yo zo hi hj hk ij.ne bans.1.symm bans.2.symm
+    obtain ⟨t,tr,th⟩ := holes_one yo xo zo hj hi hk ij.ne.symm bans.2.symm bans.1.symm
+    obtain ⟨u,ur,uh⟩ := holes_one zo xo yo hk hi hj bans.1 bans.2 ij.ne
+    have kl := (pin_data hk).1
+    have kp := pin_pos hp.1 zo hk
+    have sl : s<p.length := by rcases sr with rfl|rfl <;> omega
+    have tl : t<p.length := by rcases tr with rfl|rfl <;> omega
+    have ul : u<p.length := by rcases ur with rfl|rfl <;> omega
+    have dis := mark_length_ten_at_most_two_holes hp.1 xo (p.getVert_mem_support i) (pin_data hi).2
+      ah bh len.le sl tl ul sh th uh
+    have ig := gap xo zo hi hk bans.1.symm
+    have jg := gap yo zo hj hk bans.2.symm
+    omega
+  have le : ¬G.Adj a (p.getVert i) ∨ ¬G.Adj a (p.getVert j) := by
+    by_contra! h
+    have c := left_minimum_d2_with_two_ports hc even hp.1 xo yo hi hj ij.ne h.1 h.2 Hact aout (by
+      intro z zA
+      obtain ⟨k,km⟩ := active z zA
+      have ks := all z (aout z zA) km
+      rcases mem_insert.mp ks with rfl|ks
+      · exact ⟨_,km,h.1⟩
+      · obtain rfl := mem_singleton.mp ks
+        exact ⟨_,km,h.2⟩)
+    omega
+  have re : ¬G.Adj b (p.getVert i) ∨ ¬G.Adj b (p.getVert j) := by
+    by_contra! h
+    have c := right_minimum_d2_with_two_ports hc even hp.1 xo yo hi hj ij.ne h.1 h.2 Hact aout (by
+      intro z zA
+      obtain ⟨k,km⟩ := active z zA
+      have ks := all z (aout z zA) km
+      rcases mem_insert.mp ks with rfl|ks
+      · exact ⟨_,km,h.1⟩
+      · obtain rfl := mem_singleton.mp ks
+        exact ⟨_,km,h.2⟩)
+    omega
+  obtain ⟨s,sr,sh⟩ : ∃ s : ℕ,(s=i-1 ∨ s=j-1) ∧ s∉LeftMarks p∪RightMarks p := le.elim
+    (fun h => ⟨i-1,.inl rfl,(mark_holes_of_pin_and_missing_endpoint hp.1 xo hi).1 h⟩)
+    (fun h => ⟨j-1,.inr rfl,(mark_holes_of_pin_and_missing_endpoint hp.1 yo hj).1 h⟩)
+  obtain ⟨t,tr,th⟩ : ∃ t : ℕ,(t=i ∨ t=j) ∧ t∉LeftMarks p∪RightMarks p := re.elim
+    (fun h => ⟨i,.inl rfl,(mark_holes_of_pin_and_missing_endpoint hp.1 xo hi).2 h⟩)
+    (fun h => ⟨j,.inr rfl,(mark_holes_of_pin_and_missing_endpoint hp.1 yo hj).2 h⟩)
+  have st : s≠t := by omega
+  have sl : s<p.length := by omega
+  have tl : t<p.length := by omega
+  let S : Finset ℕ := {s,t}
+  have sr : S⊆range p.length := by
+    intro k km
+    have ks : k=s ∨ k=t := by simpa [S] using km
+    exact mem_range.mpr (ks.elim (fun e => e.symm ▸ sl) (fun e => e.symm ▸ tl))
+  have dis : Disjoint (LeftMarks p∪RightMarks p) S := by
+    apply disjoint_left.mpr
+    intro k km kn
+    have ks : k=s ∨ k=t := by simpa [S] using kn
+    exact ks.elim (fun e => sh (e ▸ km)) (fun e => th (e ▸ km))
+  have bd := mark_length hp.1 xo (p.getVert_mem_support i) (pin_data hi).2 S sr dis
+  have two : S.card=2 := by simp [S,st]
+  exact ⟨x,y,i,j,xo,yo,hi,hj,ijg,all,clique,le,re,by omega,by omega⟩
+#print axioms length_ten_four_off_single_pin_shape

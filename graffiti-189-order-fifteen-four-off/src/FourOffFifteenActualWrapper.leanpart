@@ -1,0 +1,11 @@
+
+theorem traceable_if_four_off_order_fifteen
+    (hc : G.Connected) (even : ∀ v,(EvenFrom G v).card≤5)
+    (conn : ∀ S : Finset V,S.card<2 → (G.induce ((↑S : Set V)ᶜ)).Connected)
+    (degree : ∀ u v : V,u≠v → 4≤G.degree u ∨ 4≤G.degree v)
+    {a b : V} {p : G.Walk a b} (hp : EdgeOptimal p)
+    (ah : 4≤G.degree a) (bh : 4≤G.degree b) (len : p.length=10)
+    (off : ((univ : Finset V)\p.support.toFinset).card=4) :
+    ∃ a b : V, ∃ p : G.Walk a b,p.IsPath ∧ ∀ v,v∈p.support :=
+  traceable_if_four_off_order_fifteen_with_table OffFour15.all_rows hc even conn degree hp ah bh len off
+#print axioms traceable_if_four_off_order_fifteen

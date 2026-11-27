@@ -1,0 +1,108 @@
+
+private theorem two_pin_universal_in_omitted_component
+    (hc : G.Connected)
+    {a b x : V} {p : G.Walk a b} (H : OmittedComponent p) (hx : x∈H.vertices)
+    (path_only : ∀ z∈DistanceTwo G x,z∈p.support) :
+    ∀ y∈H.vertices,y≠x → G.Adj x y := by
+  intro y hy ne
+  obtain ⟨q,_,stay⟩ := H.joined x hx y hy
+  have propagate {u v : V} (r : G.Walk u v) (inside : ∀ z∈r.support,z∈H.vertices) :
+      (u=x ∨ G.Adj x u) → v=x ∨ G.Adj x v := by
+    induction r with
+    | nil => exact id
+    | @cons u v w uv r ih =>
+      intro before
+      have stay' (z : V) (hz : z∈r.support) : z∈H.vertices := inside _ (by simp [hz])
+      apply ih stay'
+      rcases before with rfl|xu
+      · exact .inr uv
+      by_contra! n
+      have d : v∈DistanceTwo G x := mem_distanceTwo.mpr (dist_two hc n.1.symm n.2 xu uv)
+      exact H.off _ (stay' _ r.start_mem_support) (path_only _ d)
+  exact (propagate q stay (.inl rfl)).resolve_left ne
+
+private theorem omitted_degree_component_bound
+    {a b x : V} {p : G.Walk a b} (hp : IsLongest p)
+    (H : OmittedComponent p) (hx : x∈H.vertices) :
+    G.degree x ≤ (Pins p x).card+H.vertices.card-1 := by
+  classical
+  have nx : G.neighborFinset x ⊆ PinVertices p x ∪ H.vertices.erase x := by
+    intro z zn
+    have xz := (mem_neighborFinset G x z).mp zn
+    by_cases zp : z∈p.support
+    · obtain ⟨i,hi,e⟩ := pin_of_neighbor_mem hp (H.off _ hx) zp xz
+      exact mem_union.mpr (.inl (mem_image.mpr ⟨i,hi,e⟩))
+    · have zT : z∈H.vertices := Classical.byContradiction (fun n => zp (H.closed x hx z n xz))
+      exact mem_union.mpr (.inr (mem_erase.mpr ⟨xz.ne.symm,zT⟩))
+  have n := card_le_card nx
+  have bound := card_union_le (PinVertices p x) (H.vertices.erase x)
+  rw [card_erase_of_mem hx,card_pinVertices hp] at bound
+  rw [card_neighborFinset_eq_degree] at n
+  have hpos := card_pos.mpr H.nonempty
+  omega
+
+private theorem off_four_component_carries_all_high
+    (degree : ∀ u v : V,u≠v → 4≤G.degree u ∨ 4≤G.degree v)
+    {a b : V} {p : G.Walk a b} (hp : IsLongest p)
+    (off : ((univ : Finset V)\p.support.toFinset).card=4)
+    (few : ∀ x∉p.support,(Pins p x).card≤2) :
+    ∃ H : OmittedComponent p, 3≤H.vertices.card ∧
+      (∀ z∉p.support,4≤G.degree z → z∈H.vertices) ∧
+      3≤(H.vertices.filter (fun z => 4≤G.degree z)).card := by
+  classical
+  let O := (univ : Finset V)\p.support.toFinset
+  have out {z : V} : z∈O ↔ z∉p.support := by simp [O]
+  have oc : O.card=4 := off
+  obtain ⟨x,hx,y,hy,xy⟩ := one_lt_card.mp (show 1<O.card by omega)
+  obtain ⟨z,zo,zh⟩ : ∃ z,z∈O ∧ 4≤G.degree z := (degree x y xy).elim
+    (fun h => ⟨x,hx,h⟩) (fun h => ⟨y,hy,h⟩)
+  obtain ⟨T,zT,Tne,Toff,Tclosed,Tjoined⟩ := exists_omitted_component (out.mp zo)
+  let H : OmittedComponent p := ⟨T,Tne,Toff,Tclosed,Tjoined⟩
+  have large : 3≤H.vertices.card := by
+    have d := omitted_degree_component_bound hp H zT
+    have f := few z (out.mp zo)
+    omega
+  have sub : H.vertices⊆O := fun _ h => out.mpr (H.off _ h)
+  have subc := card_sdiff_add_card_eq_card sub
+  have all (w : V) (wo : w∉p.support) (wh : 4≤G.degree w) : w∈H.vertices := by
+    by_contra no
+    obtain ⟨U,wU,Une,Uoff,Uclosed,Ujoined⟩ := exists_omitted_component wo
+    let J : OmittedComponent p := ⟨U,Une,Uoff,Uclosed,Ujoined⟩
+    have large' : 3≤J.vertices.card := by
+      have d := omitted_degree_component_bound hp J wU
+      have f := few w wo
+      omega
+    have disj : J.vertices⊆O\H.vertices := by
+      intro v vm
+      refine mem_sdiff.mpr ⟨out.mpr (J.off _ vm),?_⟩
+      intro vh
+      obtain ⟨r,_,stay⟩ := J.joined v vm w wU
+      have walk {i j : V} (q : G.Walk i j) (inJ : ∀ z∈q.support,z∈J.vertices) :
+          i∈H.vertices → j∈H.vertices := by
+        induction q with
+        | nil => exact id
+        | @cons i j k adj q ih =>
+          intro iH
+          have incl (v : V) (hv : v∈q.support) := inJ v (by simp [hv])
+          apply ih incl
+          by_contra jH
+          exact J.off _ (incl _ q.start_mem_support) (H.closed i iH j jH adj)
+      exact no (walk r stay vh)
+    have cd := card_le_card disj
+    omega
+  refine ⟨H,large,all,?_⟩
+  let A := O.filter (fun v => 4≤G.degree v)
+  let B := O.filter (fun v => ¬4≤G.degree v)
+  have bsmall : B.card≤1 := by
+    by_contra! nob
+    have gb : 1<B.card := by omega
+    obtain ⟨u,hu,v,hv,ne⟩ := one_lt_card.mp gb
+    exact (degree u v ne).elim (mem_filter.mp hu).2 (mem_filter.mp hv).2
+  have cu : A.card+B.card=O.card := filter_card_add_filter_neg_card_eq_card (s:=O) (fun v => 4≤G.degree v)
+  have ad : A⊆H.vertices.filter (fun z => 4≤G.degree z) := by
+    intro v h
+    have hv := mem_filter.mp h
+    exact mem_filter.mpr ⟨all v (out.mp hv.1) hv.2,hv.2⟩
+  have cd := card_le_card ad
+  omega
+#print axioms off_four_component_carries_all_high

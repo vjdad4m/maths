@@ -1,0 +1,41 @@
+
+theorem traceable_if_four_off_order_fifteen_with_table
+    (table : ∀ (i j : ℕ), 1≤i → i+3≤j → j≤9 → OffFour15.row i j=true)
+    (hc : G.Connected) (even : ∀ v,(EvenFrom G v).card≤5)
+    (conn : ∀ S : Finset V,S.card<2 → (G.induce ((↑S : Set V)ᶜ)).Connected)
+    (degree : ∀ u v : V,u≠v → 4≤G.degree u ∨ 4≤G.degree v)
+    {a b : V} {p : G.Walk a b} (hp : EdgeOptimal p)
+    (ah : 4≤G.degree a) (bh : 4≤G.degree b) (len : p.length=10)
+    (off : ((univ : Finset V)\p.support.toFinset).card=4) :
+    ∃ a b : V, ∃ p : G.Walk a b,p.IsPath ∧ ∀ v,v∈p.support := by
+  classical
+  by_cases few : ∀ z∉p.support,(Pins p z).card≤1
+  swap
+  · push_neg at few
+    obtain ⟨x,xo,xf⟩ := few
+    exact False.elim (no_length_ten_four_off_if_two_pin hc even conn degree hp ah bh len off xo xf)
+  obtain ⟨x,y,i,j,xo,yo,hi,hj,ij,ports,clique,la,lb,hda,hdb⟩ :=
+    length_ten_four_off_single_pin_shape hc even conn degree hp ah bh len off few
+  have ir := pin_pos hp.1 xo hi
+  have jr : j≤9 := by have t := (pin_data hj).1; omega
+  obtain ⟨m,s,t,F,L0,R9,zeros,nonzeros,countL,countR,allowed,L,R⟩ :=
+    model15_off_four_marks hp.1 len xo yo hi hj ij la lb hda hdb
+  obtain ⟨c,d,φ,cd,inj,on,out,left,right⟩ :=
+    model15_off_four_label_omitted hp.1 len off degree xo yo hi hj ij few ports
+  obtain ⟨Fw,rev0,rev10⟩ := model15_off_four_compatible hp.1 len ir ij jr φ on out inj left right clique m L R
+  have d2left : (OffFour15.d2Set i j c d m 0).card≤4 :=
+    n15_model_d2_upper hc φ inj _ 0 Fw rev0 (distanceTwo_le_of_even 4 _ (even _))
+  have d2right : (OffFour15.d2Set i j c d m 10).card≤4 :=
+    n15_model_d2_upper hc φ inj _ 10 Fw rev10 (distanceTwo_le_of_even 4 _ (even _))
+  obtain ⟨l,ln,all,edges⟩ := OffFour15.check_row (table i j ir ij jr) cd F L0 R9 zeros nonzeros countL countR
+    allowed d2left d2right
+  have cardV := off_four_order_fifteen hp.1 len off
+  have onto : Function.Surjective φ := by
+    by_contra n
+    have smaller := Fintype.card_lt_of_injective_not_surjective φ inj n
+    rw [Fintype.card_fin,cardV] at smaller
+    exact (Nat.lt_irrefl 15) smaller
+  letI : Nonempty V := ⟨a⟩
+  exact hamilton_of_labeled_chain φ inj onto l ln all (List.Chain'.imp (fun u v h => Fw u v h) edges)
+
+#print axioms traceable_if_four_off_order_fifteen_with_table

@@ -1,0 +1,108 @@
+
+private theorem left_minimum_d2_with_two_ports
+    (hc : G.Connected) (even : ∀ v,(EvenFrom G v).card≤5)
+    {a b x y : V} {p : G.Walk a b} (hp : IsLongest p)
+    (xo : x∉p.support) (yo : y∉p.support)
+    {i j : ℕ} (hi : i∈Pins p x) (hj : j∈Pins p y) (ij : i≠j)
+    (ai : G.Adj a (p.getVert i)) (aj : G.Adj a (p.getVert j))
+    (S : Finset V) (out : ∀ z∈S,z∉p.support)
+    (touch : ∀ z∈S, ∃ k∈Pins p z,G.Adj a (p.getVert k)) :
+    S.card≤2 := by
+  classical
+  have offd (z : V) (zs : z∈S) : z∈DistanceTwo G a := by
+    have zo := out z zs
+    obtain ⟨k,hk,ak⟩ := touch z zs
+    exact mem_distanceTwo.mpr (dist_two hc (fun e => zo (e ▸ p.start_mem_support))
+      (fun h => (no_endpoints hp zo).1 h.symm) ak (pin_data hk).2.symm)
+  have successor {z : V} (zo : z∉p.support) {k : ℕ}
+      (hk : k∈Pins p z) (ak : G.Adj a (p.getVert k)) :
+      p.getVert (k+1)∈DistanceTwo G a := by
+    have kk := (pin_data hk).1
+    apply mem_distanceTwo.mpr
+    exact dist_two hc (fun e => by
+      have Q := hp.1.getVert_injOn (Nat.zero_le _) (show k+1≤p.length by omega) (p.getVert_zero.trans e)
+      omega) (start_not_adj_pin_successor hp zo hk) ak (p.adj_getVert_succ kk)
+  have sub : insert (p.getVert (i+1)) (insert (p.getVert (j+1)) S) ⊆ DistanceTwo G a := by
+    intro z hz
+    rcases mem_insert.mp hz with hh|hh
+    · exact hh.symm ▸ successor xo hi ai
+    rcases mem_insert.mp hh with hh|hh
+    · exact hh.symm ▸ successor yo hj aj
+    · exact offd z hh
+  have not_S {k : ℕ} : p.getVert k∉S := fun h => out _ h (p.getVert_mem_support _)
+  have extra : p.getVert (i+1)∉insert (p.getVert (j+1)) S := by
+    intro h
+    rcases mem_insert.mp h with h|h
+    · have il := (pin_data hi).1
+      have jl := (pin_data hj).1
+      have ee := hp.1.getVert_injOn (show i+1≤p.length by omega) (show j+1≤p.length by omega) h
+      omega
+    · exact not_S h
+  have cd := card_le_card sub
+  rw [card_insert_of_not_mem extra,card_insert_of_not_mem (not_S (k:=j+1))] at cd
+  have cap := distanceTwo_le_of_even 4 a (even a)
+  omega
+
+private theorem two_pin_flanks_path_only
+    (hc : G.Connected) (even : ∀ v,(EvenFrom G v).card≤5)
+    (conn : ∀ S : Finset V,S.card<2 → (G.induce ((↑S : Set V)ᶜ)).Connected)
+    (degree : ∀ u v : V,u≠v → 4≤G.degree u ∨ 4≤G.degree v)
+    {a b x : V} {p : G.Walk a b} (hp : EdgeOptimal p)
+    (ah : 4≤G.degree a) (bh : 4≤G.degree b) (xo : x∉p.support)
+    {i j : ℕ} (hi : i∈Pins p x) (hj : j∈Pins p x) (ij : i<j) :
+    (∀ z∈DistanceTwo G x,z∈p.support) ∧
+      ∀ y∉p.support,G.Adj x y → Pins p y ⊆ ({i,j}:Finset ℕ) := by
+  classical
+  have cap := fun x => distanceTwo_le_of_even 4 x (even x)
+  have f := (at_most_two_pins_one_slack hc 2 (by decide) cap conn degree hp xo).1
+  have gap := pins_gap_at_four hc even conn degree hp ah bh xo hi hj ij
+  obtain ⟨eq,_⟩ := two_flanks_full hp.1 hc xo f (cap x) hi hj gap
+  have on : ∀ z∈DistanceTwo G x,z∈p.support := by
+    intro z zd
+    rw [eq] at zd
+    obtain ⟨k,_,rfl⟩ := mem_image.mp zd
+    exact p.getVert_mem_support _
+  have sub : ({i,j}:Finset ℕ)⊆Pins p x := by
+    intro k km
+    rcases mem_insert.mp km with rfl|ks
+    · exact hi
+    · simpa only [mem_singleton.mp ks] using hj
+  have peq : Pins p x={i,j} :=
+    (eq_of_subset_of_card_le sub (by simpa [card_insert_of_not_mem,ij.ne] using f)).symm
+  refine ⟨on,?_⟩
+  intro y yo xy k ky
+  by_contra no
+  have notpin : ¬G.Adj x (p.getVert k) := by
+    intro e
+    have pin : k∈Pins p x := by
+      exact mem_filter.mpr ⟨mem_range.mpr (pin_data ky).1,e⟩
+    exact no (peq ▸ pin)
+  have d : p.getVert k∈DistanceTwo G x := mem_distanceTwo.mpr
+    (dist_two hc (fun e => xo (e ▸ p.getVert_mem_support k)) notpin xy (pin_data ky).2)
+  obtain ⟨_,idx⟩ := two_flanks_full hp.1 hc xo f (cap x) hi hj gap
+  rw [eq] at d
+  obtain ⟨l,lm,le⟩ := mem_image.mp d
+  rw [idx] at lm
+  have lc : l=i-1 ∨ l=i+1 ∨ l=j-1 ∨ l=j+1 := by simpa using lm
+  have ib := (pin_data hi).1
+  have jb := (pin_data hj).1
+  have lb : l≤p.length := by rcases lc with h|h|h|h <;> omega
+  have kl := hp.1.1.getVert_injOn lb (pin_data ky).1.le le
+  subst l
+  obtain ⟨T,xT,Tne,Toff,Tclosed,Tjoined⟩ := exists_omitted_component xo
+  let H : OmittedComponent p := ⟨T,Tne,Toff,Tclosed,Tjoined⟩
+  have xH : x ∈ H.vertices := xT
+  exact False.elim (by
+    have yH : y∈H.vertices := Classical.byContradiction (fun e => yo (H.closed x xH y e xy))
+    have gap' {k t : ℕ} (hk : k∈Pins p x) (ht : t∈Pins p y) (kt : k<t) :=
+      component_pins_spaced_four hc even conn degree hp ah bh H xH yH hk ht kt
+    have gap'' {k t : ℕ} (hk : k∈Pins p y) (ht : t∈Pins p x) (kt : k<t) :=
+      component_pins_spaced_four hc even conn degree hp ah bh H yH xH hk ht kt
+    have ip := pin_pos hp.1 xo hi
+    have jp := pin_pos hp.1 xo hj
+    rcases lc with h|h|h|h
+    · have := gap'' ky hi (by omega); omega
+    · have := gap' hi ky (by omega); omega
+    · have := gap'' ky hj (by omega); omega
+    · have := gap' hj ky (by omega); omega)
+#print axioms two_pin_flanks_path_only

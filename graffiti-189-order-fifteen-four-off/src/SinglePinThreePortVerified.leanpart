@@ -1,0 +1,74 @@
+
+private theorem single_pin_never_both_endpoints_with_two_foreign_ports
+    (hc : G.Connected)
+    {a b x y z : V} {p : G.Walk a b} (hp : IsLongest p)
+    (xo : x∉p.support) (yo : y∉p.support) (zo : z∉p.support) (xy : G.Adj x y) (xz : G.Adj x z)
+    (cap : (DistanceTwo G x).card≤4)
+    (few : (Pins p x).card≤1)
+    {i j k : ℕ} (hi : i∈Pins p x) (hj : j∈Pins p y) (hk : k∈Pins p z)
+    (ij : i+3≤j ∨ j+3≤i) (ik : i+3≤k ∨ k+3≤i) (jk : j≠k)
+    (lah : G.Adj a (p.getVert i)) (lbh : G.Adj b (p.getVert i)) : False := by
+  classical
+  have ip := pin_pos hp xo hi
+  have il := (pin_data hi).1
+  have jl := (pin_data hj).1
+  have kl := (pin_data hk).1
+  have y0 := pin_pos hp yo hj
+  have z0 := pin_pos hp zo hk
+  let S : Finset ℕ := {i-1,i+1,j,k}
+  have rangeS {l : ℕ} (lm : l∈S) : l≤p.length := by
+    have e : l=i-1 ∨ l=i+1 ∨ l=j ∨ l=k := by simpa [S] using lm
+    rcases e with rfl|rfl|rfl|rfl <;> omega
+  have gS : S.card=4 := by
+    have n1 : i-1∉({i+1,j,k}:Finset ℕ) := by
+      simp only [mem_insert,mem_singleton]
+      omega
+    have n2 : i+1∉({j,k}:Finset ℕ) := by
+      simp only [mem_insert,mem_singleton]
+      omega
+    have n3 : j∉({k}:Finset ℕ) := by simpa using jk
+    rw [show S={i-1,i+1,j,k} from rfl,card_insert_of_not_mem n1,
+      card_insert_of_not_mem n2,card_insert_of_not_mem n3,card_singleton]
+  have cardV : (S.image p.getVert).card=4 := by
+    rw [card_image_iff.mpr (fun _ u _ v e => hp.1.getVert_injOn (rangeS u) (rangeS v) e),gS]
+  have fminus : p.getVert (i-1)∈DistanceTwo G x :=
+    (mem_sdiff.mp (flanks_outside_boundary hc hp xo (show p.getVert (i-1)∈FlankVertices p x from
+      mem_image.mpr ⟨i-1,mem_union.mpr (.inl (mem_image.mpr ⟨i,hi,rfl⟩)),rfl⟩))).1
+  have fplus : p.getVert (i+1)∈DistanceTwo G x :=
+    (mem_sdiff.mp (flanks_outside_boundary hc hp xo (show p.getVert (i+1)∈FlankVertices p x from
+      mem_image.mpr ⟨i+1,mem_union.mpr (.inr (mem_image.mpr ⟨i,hi,rfl⟩)),rfl⟩))).1
+  have foreign {w : V} {l : ℕ} (lx : i≠l) (lw : l∈Pins p w) (xw : G.Adj x w) :
+      p.getVert l∈DistanceTwo G x := by
+    have not : ¬G.Adj x (p.getVert l) := by
+      intro a
+      have inx : l∈Pins p x := mem_filter.mpr ⟨mem_range.mpr (pin_data lw).1,a⟩
+      have cnt := one_lt_card.mpr ⟨i,hi,l,inx,lx⟩
+      omega
+    exact mem_distanceTwo.mpr (dist_two hc (fun e => xo (e ▸ p.getVert_mem_support l))
+      not xw (pin_data lw).2)
+  have sub : S.image p.getVert⊆DistanceTwo G x := by
+    intro v vm
+    obtain ⟨l,lm,rfl⟩ := mem_image.mp vm
+    have le : l=i-1 ∨ l=i+1 ∨ l=j ∨ l=k := by simpa [S] using lm
+    rcases le with rfl|rfl|rfl|rfl
+    · exact fminus
+    · exact fplus
+    · exact foreign (by omega) hj xy
+    · exact foreign (by omega) hk xz
+  have eq : S.image p.getVert=DistanceTwo G x := eq_of_subset_of_card_le sub (by omega)
+  have da : a∈DistanceTwo G x := mem_distanceTwo.mpr (dist_two hc
+    (fun e => xo (e.symm ▸ p.start_mem_support)) (no_endpoints hp xo).1
+    (pin_data hi).2 lah.symm)
+  have db : b∈DistanceTwo G x := mem_distanceTwo.mpr (dist_two hc
+    (fun e => xo (e.symm ▸ p.end_mem_support)) (no_endpoints hp xo).2
+    (pin_data hi).2 lbh.symm)
+  rw [←eq] at da db
+  obtain ⟨l,lm,la⟩ := mem_image.mp da
+  have le : l=0 := hp.1.getVert_injOn (rangeS lm) (Nat.zero_le _) (la.trans p.getVert_zero.symm)
+  have ls : l=i-1 ∨ l=i+1 ∨ l=j ∨ l=k := by simpa [S] using lm
+  obtain ⟨r,rm,rb⟩ := mem_image.mp db
+  have re : r=p.length := hp.1.getVert_injOn (rangeS rm) (show p.length≤p.length from le_rfl) (rb.trans p.getVert_length.symm)
+  have rs : r=i-1 ∨ r=i+1 ∨ r=j ∨ r=k := by simpa [S] using rm
+  have gap : i+3≤j ∨ j+3≤i := ij
+  omega
+#print axioms single_pin_never_both_endpoints_with_two_foreign_ports

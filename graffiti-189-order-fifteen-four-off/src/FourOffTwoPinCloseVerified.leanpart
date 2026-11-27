@@ -1,0 +1,73 @@
+
+theorem no_length_ten_four_off_if_two_pin
+    (hc : G.Connected) (even : ∀ v,(EvenFrom G v).card≤5)
+    (conn : ∀ S : Finset V,S.card<2 → (G.induce ((↑S : Set V)ᶜ)).Connected)
+    (degree : ∀ u v : V,u≠v → 4≤G.degree u ∨ 4≤G.degree v)
+    {a b x : V} {p : G.Walk a b} (hp : EdgeOptimal p)
+    (ah : 4≤G.degree a) (bh : 4≤G.degree b) (len : p.length=10)
+    (off : ((univ : Finset V)\p.support.toFinset).card=4)
+    (xo : x∉p.support) (x2 : 2≤(Pins p x).card) : False := by
+  classical
+  obtain ⟨⟨y,yo,h1,h9⟩,ports⟩ :=
+    length_ten_all_ports_boundary_if_two_pin hc even conn degree hp ah bh len off xo x2
+  have cap := fun x => distanceTwo_le_of_even 4 x (even x)
+  have l3 := length_ten_left_has_three_path_d2 hc hp.1 ah bh len yo h1 h9
+  have r3 : 3≤((DistanceTwo G b).filter (· ∈ p.support)).card := by
+    have yr : y∉p.reverse.support := by simpa using yo
+    have hr1 : 1∈Pins p.reverse y := by simpa [len] using reverse_pin hp.1 yo h9
+    have hr9 : 9∈Pins p.reverse y := by simpa [len] using reverse_pin hp.1 yo h1
+    have h := length_ten_left_has_three_path_d2 hc (reverse_long hp.1) bh ah (by simpa using len) yr hr1 hr9
+    simpa only [support_reverse,List.mem_reverse] using h
+  let O := (univ : Finset V)\p.support.toFinset
+  have out {z : V} : z∈O ↔ z∉p.support := by simp [O]
+  let A := O.filter (fun z => 1∈Pins p z)
+  let B := O.filter (fun z => 9∈Pins p z)
+  have first : G.Adj a (p.getVert 1) := by
+    simpa using p.adj_getVert_succ (i:=0) (by omega)
+  have last : G.Adj b (p.getVert 9) := by
+    have ll := (p.adj_getVert_succ (i:=9) (by omega)).symm
+    rw [show 9+1=p.length by omega,p.getVert_length] at ll
+    exact ll
+  have aSide : A ⊆ (DistanceTwo G a).filter (· ∉ p.support) := by
+    intro z zm
+    obtain ⟨zO,zp⟩ := mem_filter.mp zm
+    have zo := out.mp zO
+    exact mem_filter.mpr ⟨mem_distanceTwo.mpr (dist_two hc (fun e => zo (e ▸ p.start_mem_support))
+      (fun e => (no_endpoints hp.1 zo).1 e.symm) first (pin_data zp).2.symm),zo⟩
+  have bSide : B ⊆ (DistanceTwo G b).filter (· ∉ p.support) := by
+    intro z zm
+    obtain ⟨zO,zp⟩ := mem_filter.mp zm
+    have zo := out.mp zO
+    exact mem_filter.mpr ⟨mem_distanceTwo.mpr (dist_two hc (fun e => zo (e ▸ p.end_mem_support))
+      (fun e => (no_endpoints hp.1 zo).2 e.symm) last (pin_data zp).2.symm),zo⟩
+  have la := card_le_card aSide
+  have rb := card_le_card bSide
+  have suma := filter_card_add_filter_neg_card_eq_card (s:=DistanceTwo G a) (· ∈ p.support)
+  have sumb := filter_card_add_filter_neg_card_eq_card (s:=DistanceTwo G b) (· ∈ p.support)
+  have alow : A.card≤1 := by have m := cap a; omega
+  have blow : B.card≤1 := by have m := cap b; omega
+  have only : O\(A∪B) ⊆ O.filter (fun z => ¬4≤G.degree z) := by
+    intro z m
+    obtain ⟨zO,none⟩ := mem_sdiff.mp m
+    have zo := out.mp zO
+    refine mem_filter.mpr ⟨zO,?_⟩
+    intro zh
+    have d := degree_off_bound hp.1 zo
+    rw [off] at d
+    obtain ⟨j,hj⟩ := card_pos.mp (show 0<(Pins p z).card by omega)
+    have m := ports z zo hj
+    rcases mem_insert.mp m with rfl|h
+    · exact none (mem_union.mpr (.inl (mem_filter.mpr ⟨zO,hj⟩)))
+    · obtain rfl := mem_singleton.mp h
+      exact none (mem_union.mpr (.inr (mem_filter.mpr ⟨zO,hj⟩)))
+  have one : (O.filter (fun z => ¬4≤G.degree z)).card≤1 := by
+    by_contra h
+    obtain ⟨u,um,v,vm,uv⟩ := one_lt_card.mp (Nat.lt_of_not_ge h)
+    exact (degree u v uv).elim (mem_filter.mp um).2 (mem_filter.mp vm).2
+  have os : A∪B⊆O := union_subset (filter_subset _ _) (filter_subset _ _)
+  have sd := card_sdiff_add_card_eq_card os
+  have small := card_le_card only
+  have union := card_union_le A B
+  have oc : O.card=4 := off
+  omega
+#print axioms no_length_ten_four_off_if_two_pin

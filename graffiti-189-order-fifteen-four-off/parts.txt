@@ -1,0 +1,12 @@
+FourOffTwoPinLocalVerified.leanpart
+FourOffTwoPinComponentsVerified.leanpart
+FourOffTwoPinEndpointVerified.leanpart
+FourOffTwoPinNormalizationVerified.leanpart
+FourOffTwoPinCloseVerified.leanpart
+SinglePinThreePortVerified.leanpart
+SinglePinShapeVerified.leanpart
+SinglePinMarksVerified.leanpart
+SinglePinLabelsVerified.leanpart
+SinglePinCompatibleVerified.leanpart
+SinglePinCloseWithTableVerified.leanpart
+FourOffFifteenActualWrapper.leanpart

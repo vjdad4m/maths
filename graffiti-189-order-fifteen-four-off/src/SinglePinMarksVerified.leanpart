@@ -1,0 +1,126 @@
+
+private theorem model15_off_four_marks
+    {a b x y : V} {p : G.Walk a b} (hp : IsLongest p) (len : p.length=10)
+    (xo : x∉p.support) (yo : y∉p.support) {i j : ℕ}
+    (hi : i∈Pins p x) (hj : j∈Pins p y) (ij : i+3≤j)
+    (lah : ¬G.Adj a (p.getVert i) ∨ ¬G.Adj a (p.getVert j))
+    (lbh : ¬G.Adj b (p.getVert i) ∨ ¬G.Adj b (p.getVert j))
+    (ah : G.degree a=4) (bh : G.degree b=4) :
+    ∃ (m : OffFour15.Marks) (s t : ℕ),
+      OffFour15.fit i j s t=true ∧ m 0=1 ∧ m 9=2 ∧
+      (∀ k : Fin 10, OffFour15.Hole k.val s t → m k=0) ∧
+      (∀ k : Fin 10, ¬OffFour15.Hole k.val s t → m k≠0) ∧
+      OffFour15.markCount m 1=4 ∧ OffFour15.markCount m 2=4 ∧
+      OffFour15.PinsAllowed i j m=true ∧
+      (∀ k : Fin 10, m k=1 ↔ G.Adj a (p.getVert (k.val+1))) ∧
+      (∀ k : Fin 10, m k=2 ↔ G.Adj b (p.getVert k.val)) := by
+  classical
+  have px := (pin_data hi).2
+  have e : ∀ k<p.length, ¬(G.Adj a (p.getVert (k+1)) ∧ G.Adj b (p.getVert k)) := by
+    intro k kr h
+    exact not_adj_both_end_marks hp xo (p.getVert_mem_support i) px kr h.1 h.2
+  let m : OffFour15.Marks := fun k => if G.Adj a (p.getVert (k.val+1)) then 1
+    else if G.Adj b (p.getVert k.val) then 2 else 0
+  have l (k : Fin 10) : m k=1 ↔ G.Adj a (p.getVert (k.val+1)) := by
+    have kb := k.isLt
+    by_cases h : G.Adj a (p.getVert (k.val+1))
+    · simp [m,h]
+    · by_cases r : G.Adj b (p.getVert k.val) <;> simp [m,h,r]
+  have r (k : Fin 10) : m k=2 ↔ G.Adj b (p.getVert k.val) := by
+    have kb := k.isLt
+    by_cases h : G.Adj a (p.getVert (k.val+1))
+    · have no : ¬G.Adj b (p.getVert k.val) := fun n => e _ (by omega) ⟨h,n⟩
+      simp [m,h,no]
+    · by_cases s : G.Adj b (p.getVert k.val) <;> simp [m,h,s]
+  have zero (k : Fin 10) : m k=0 ↔ k.val∉LeftMarks p∪RightMarks p := by
+    have kr : k.val<p.length := by have ee := k.isLt; omega
+    have km : k.val∈range p.length := mem_range.mpr kr
+    by_cases al : G.Adj a (p.getVert (k.val+1)) <;>
+      by_cases br : G.Adj b (p.getVert k.val) <;> simp [m,al,br,LeftMarks,RightMarks,km]
+  have m0 : m 0=1 := (l 0).mpr (by simpa using p.adj_getVert_succ (i:=0) (by omega))
+  have m9 : m 9=2 := (r 9).mpr (by
+    have rr := (p.adj_getVert_succ (i:=9) (by omega)).symm
+    rw [show 9+1=p.length by omega,p.getVert_length] at rr
+    exact rr)
+  have il := (pin_data hi).1
+  have jl := (pin_data hj).1
+  have ip := pin_pos hp xo hi
+  have jp := pin_pos hp yo hj
+  obtain ⟨s,sr,sh⟩ : ∃ s : ℕ,(s=i-1 ∨ s=j-1) ∧ s∉LeftMarks p∪RightMarks p := lah.elim
+    (fun h => ⟨i-1,.inl rfl,(mark_holes_of_pin_and_missing_endpoint hp xo hi).1 h⟩)
+    (fun h => ⟨j-1,.inr rfl,(mark_holes_of_pin_and_missing_endpoint hp yo hj).1 h⟩)
+  obtain ⟨t,tr,th⟩ : ∃ t : ℕ,(t=i ∨ t=j) ∧ t∉LeftMarks p∪RightMarks p := lbh.elim
+    (fun h => ⟨i,.inl rfl,(mark_holes_of_pin_and_missing_endpoint hp xo hi).2 h⟩)
+    (fun h => ⟨j,.inr rfl,(mark_holes_of_pin_and_missing_endpoint hp yo hj).2 h⟩)
+  have st : s≠t := by omega
+  have sl : s<10 := by omega
+  have tl : t<10 := by omega
+  have s0 : s≠0 := fun eq => by
+    have z := (zero ⟨s,sl⟩).mpr sh
+    have e : (⟨s,sl⟩:Fin 10)=0 := Fin.ext eq
+    rw [e,m0] at z
+    exact (by decide : (1:Fin 3)≠0) z
+  have t9 : t≠9 := fun eq => by
+    have z := (zero ⟨t,tl⟩).mpr th
+    have e : (⟨t,tl⟩:Fin 10)=9 := Fin.ext eq
+    rw [e,m9] at z
+    exact (by decide : (2:Fin 3)≠0) z
+  refine ⟨m,s,t,(show OffFour15.fit i j s t=true by
+    exact decide_eq_true ⟨by omega,by omega,by omega,by omega,sr,tr⟩),m0,m9,?_,?_,?_,?_,?_,l,r⟩
+  · intro k h
+    rcases h with e|e
+    · exact (zero k).mpr (e.symm ▸ sh)
+    · exact (zero k).mpr (e.symm ▸ th)
+  · intro k h hk
+    have e := (zero k).mp hk
+    have kl := k.isLt
+    have D := mark_length_ten_at_most_two_holes hp xo (p.getVert_mem_support i) px
+      (by omega) (by omega) len.le (show s<p.length by omega) (show t<p.length by omega)
+      (show k.val<p.length by omega) sh th e
+    rcases D with d|d|d
+    · exact st d
+    · exact h (.inl d.symm)
+    · exact h (.inr d.symm)
+  · unfold OffFour15.markCount
+    let N := univ.filter (fun k : Fin 10 => m k=1)
+    have eq : N.image Fin.val=LeftMarks p := by
+      ext n
+      constructor
+      · rintro H
+        obtain ⟨k,km,rfl⟩ := mem_image.mp H
+        exact mem_filter.mpr ⟨mem_range.mpr (by have g := k.isLt; omega), (l k).mp (mem_filter.mp km).2⟩
+      · intro nm
+        have nb := mem_range.mp (mem_filter.mp nm).1
+        exact mem_image.mpr ⟨⟨n,by omega⟩,mem_filter.mpr ⟨mem_univ _,(l ⟨n,by omega⟩).mpr (mem_filter.mp nm).2⟩,rfl⟩
+    have ce : (N.image Fin.val).card=N.card := card_image_iff.mpr (fun _ _ _ _ e => Fin.ext e)
+    change N.card=4
+    rw [←ce,eq,card_leftMarks hp,ah]
+  · unfold OffFour15.markCount
+    let N := univ.filter (fun k : Fin 10 => m k=2)
+    have eq : N.image Fin.val=RightMarks p := by
+      ext n
+      constructor
+      · rintro H
+        obtain ⟨k,km,rfl⟩ := mem_image.mp H
+        exact mem_filter.mpr ⟨mem_range.mpr (by have g := k.isLt; omega),(r k).mp (mem_filter.mp km).2⟩
+      · intro nm
+        have nb := mem_range.mp (mem_filter.mp nm).1
+        exact mem_image.mpr ⟨⟨n,by omega⟩,mem_filter.mpr ⟨mem_univ _,(r ⟨n,by omega⟩).mpr (mem_filter.mp nm).2⟩,rfl⟩
+    have ce : (N.image Fin.val).card=N.card := card_image_iff.mpr (fun _ _ _ _ e => Fin.ext e)
+    change N.card=4
+    rw [←ce,eq,card_rightMarks hp,bh]
+  · apply List.all_eq_true.mpr
+    intro k _
+    apply decide_eq_true
+    constructor
+    · intro hm lk
+      have la := (l k).mp lk
+      exact hm.elim
+        (fun h => start_not_adj_pin_successor hp xo hi (by rwa [h] at la))
+        (fun h => start_not_adj_pin_successor hp yo hj (by rwa [h] at la))
+    · intro hm rk
+      have ra := (r k).mp rk
+      exact hm.elim
+        (fun h => end_not_adj_pin_predecessor hp xo hi (by rwa [show i-1=k.val by omega]))
+        (fun h => end_not_adj_pin_predecessor hp yo hj (by rwa [show j-1=k.val by omega]))
+#print axioms model15_off_four_marks

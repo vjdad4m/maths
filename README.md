@@ -204,6 +204,7 @@
 | AutoGraphForge line 2517 | Disproved; also follows from line 33 | [Lean](autographforge-shared-hub/SharedHub.lean) · [Replay](autographforge-shared-hub/README.md) |
 | AutoGraphForge line 2526 | Disproved | [Lean](autographforge-complete/CompleteRows.lean) |
 | AutoGraphForge line 2537 | Disproved | [Lean](autographforge-friendship/Friendship.lean) |
+| AutoGraphForge line 2553 | Disproved in Lean by C43; upstream implicit witness also exists | [Proof](autographforge-2553/) |
 | AutoGraphForge line 2572 | Disproved | [Lean](autographforge-complete/CompleteRows.lean) |
 | AutoGraphForge line 2577 | Disproved | [Lean](autographforge-star/StarCone.lean) |
 | AutoGraphForge line 2578 | Disproved | [Lean](autographforge-complete/CompleteRows.lean) |

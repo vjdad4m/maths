@@ -1,0 +1,9 @@
+CompactExtensionBase
+CompactSingleRows
+CompactPairRows
+CompactStepRows
+CompactGraphLifts
+CompactExtensionLift
+CompactClosure
+MinimumCompactExclusion
+OmissionGap

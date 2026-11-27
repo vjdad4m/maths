@@ -181,6 +181,7 @@
 | AutoGraphForge line 2376 | Disproved | [Lean](autographforge-balanced-forcing/BalancedForcing.lean) |
 | AutoGraphForge line 2380 | Disproved | [Lean](autographforge-friendship/Friendship.lean) |
 | AutoGraphForge line 2394 | Disproved in Lean by C43; upstream implicit witness also exists | [Proof](autographforge-2394/) |
+| AutoGraphForge line 2395 | Disproved in Lean by C43; upstream implicit witness also exists | [Proof](autographforge-2395/) |
 | AutoGraphForge line 2400 | Disproved | [Lean](autographforge-complete/CompleteRows.lean) |
 | AutoGraphForge line 2405 | Disproved | [Lean](autographforge-friendship/Friendship.lean) |
 | AutoGraphForge line 2417 | Disproved | [Lean](autographforge-star/StarCone.lean) |

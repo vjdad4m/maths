@@ -1,0 +1,12 @@
+Pendant-closure replay /workspace/scratch/7efa613b1c05/graff384b-pendant-close/.pendant-close.m4crg9ba
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+Mathlib c44e0c8ee63ca166450922a373c7409c5d26b00b
+Verified pendant-rank source archive and delivery manifest; matched 187 compiled-object hashes
+'Graffiti384b.PendantClose.paired' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.PendantClose.five_free' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.PendantClose.exact_frame' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.PendantClose.at_most_one_high' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.PendantClose.low_mate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.PendantClose.residual_anchors' depends on axioms: [propext, Classical.choice, Quot.sound]
+Verified 4 fresh modules and 6 standard-axiom reports.
+Verified the 26-vertex pool theorem, the full 27-high pendant and low-mate branch, and the residual independent-ear anchor bounds.

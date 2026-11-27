@@ -1,0 +1,82 @@
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+Mathlib revision c44e0c8ee63ca166450922a373c7409c5d26b00b
+Using 103 source-hash-checked project dependencies.
+Checking RoutedFragments.lean
+Checking FragmentFlankRules.lean
+Checking FragmentFlankLift.lean
+'Graffiti199Depleted.WiderOmission.traceable_of_fragment_flanks' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking OriginFrame.lean
+Checking TrianglePlacement.lean
+Checking TriCompact.lean
+Checking TriCompactCheck0.lean
+Checking TriCompactCheck1.lean
+Checking TriCompactCheck2.lean
+Checking TriCompactRows.lean
+Checking FragmentChecks.lean
+Checking TriangleCompactFlank0_31.lean
+Checking SparseTriangleCut.lean
+'Graffiti199Depleted.WiderOmission.contradiction_of_triangle_cut' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking TriangleCompactFlank1_20.lean
+Checking TriangleCompactFlank1_11.lean
+Checking TriangleCompactFlank1_27.lean
+Checking TriangleCompactFlank1_15.lean
+Checking TriangleCompactFlank1_31.lean
+Checking TriangleCompactFlank2_31.lean
+Checking TriangleCompactLabeled.lean
+'Graffiti199Depleted.WiderOmission.traceable_triangle_compact_labeled' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking TriShort.lean
+Checking TriShortCheck0.lean
+Checking TriShortCheck1.lean
+Checking TriShortCheck2.lean
+Checking TriShortRows.lean
+Checking TriangleShortFlank0_93.lean
+Checking TriangleShortFlank0_509.lean
+Checking TriangleShortFlank1_472.lean
+Checking TriangleShortFlank1_510.lean
+Checking TriangleShortFlank2_752.lean
+Checking TriangleShortLabeled.lean
+'Graffiti199Depleted.WiderOmission.traceable_triangle_short_labeled' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking RootRoutes.lean
+Checking TriSeparated.lean
+Checking TriSeparatedCheck0.lean
+Checking TriSeparatedCheck1.lean
+Checking TriSeparatedCheck2.lean
+Checking TriSeparatedRows.lean
+'Graffiti199Depleted.WiderOmission.classifyTriSeparated' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking TriangleSeparatedFlank0_53579.lean
+Checking TriangleSeparatedFlank0_66049.lean
+Checking TriangleSeparatedFlank1_67585.lean
+Checking TriangleSeparatedFlank1_39100.lean
+Checking TriangleSeparatedFlank2_91088.lean
+Checking TriangleSeparatedFlank2_67585.lean
+Checking TriangleSeparatedLabeled.lean
+'Graffiti199Depleted.WiderOmission.traceable_triangle_separated_labeled' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking TrianglePathForms.lean
+'Graffiti199Depleted.WiderOmission.traceable_triangle_compact_fragments' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti199Depleted.WiderOmission.traceable_triangle_short_fragments' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti199Depleted.WiderOmission.traceable_triangle_separated_fragments' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking TriangleOmission.lean
+'Graffiti199Depleted.WiderOmission.traceable_of_triangle_omission' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti199Depleted.ContractedEdge.traceable_of_minimum_cubic_edge' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti199Depleted.cubic_vertices_independent_of_minimum' depends on axioms: [propext, Classical.choice, Quot.sound]
+Strict cubic-edge triangle replay passed.

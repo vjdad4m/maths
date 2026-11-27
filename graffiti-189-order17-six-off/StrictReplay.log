@@ -1,0 +1,44 @@
+SixCoreMarkedPath189.lean: OK
+OffSix17CoreLift189.lean: OK
+OffSix17Close189.lean: OK
+'Graffiti189SixCore.six_core_marked_path' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189SixCore.five_core_marked_path' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.TwoCut.no_longest_with_long_omitted_path_between_sites' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.TwoCut.no_longest_with_omitted_path_at_left_boundary' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.TwoCut.no_longest_with_shared_left_boundary_pair' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.TwoCut.single_pins_in_nontrivial_length_ten_component' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.TwoCut.no_length_ten_with_three_vertex_omitted_component' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.TwoCut.disconnected_six_omissions_at_length_ten' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.TwoCut.no_boundary_pin_in_nontrivial_length_ten_component' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.TwoCut.no_foreign_pin_at_omitted_leaf_neighbor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.TwoCut.no_length_ten_with_large_omitted_component_of_core_paths' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.TwoCut.no_length_ten_with_six_omissions_of_core_paths' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.TwoCut.no_length_ten_with_six_omissions_at_degree_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.TwoCut.order_seventeen_two_remaining_branches' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.TwoCut.degree_four_order17_counterexample_two_branches' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

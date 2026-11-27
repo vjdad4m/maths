@@ -1,0 +1,7 @@
+QuotaPivot
+QuotaClique
+QuotaCap
+SingleTip
+TriangleStars
+PreserveEar
+Remaining29

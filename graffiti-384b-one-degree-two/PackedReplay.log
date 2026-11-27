@@ -1,0 +1,26 @@
+Quota-ear replay <workspace>/graff384b-oddquota-astra/pack-check/graff384b-oddquota-astra/.quota-ear.z4l1yb17
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+Mathlib c44e0c8ee63ca166450922a373c7409c5d26b00b
+Verified diversity-29 source archive and delivery manifest; matched 164 compiled-object hashes
+'Graffiti384b.PivotQuota.paired' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.PivotQuota.adjacent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.PivotQuota.seven_free' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.PivotQuota.local_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.PivotQuota.exact_high28' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.QuotaEar.one_exception' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.QuotaEar.scores' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.QuotaEar.triangle_away' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.QuotaEar.transfers' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.QuotaEar.star_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.QuotaEar.degree_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.QuotaEar.high_of_score' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.QuotaEar.one_low_high' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.QuotaEar.low_scores' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.QuotaEar.equal_quota' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.QuotaEar.at_most_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.QuotaEar.even_at_most_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Remaining29.exact_above_minimum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Remaining29.residual' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Remaining29.sparse_stars' depends on axioms: [propext, Classical.choice, Quot.sound]
+Verified 7 fresh modules and 20 standard-axiom reports.
+Verified the single-ear criterion and the 29-type bound at 28 high vertices above the minimum quota.

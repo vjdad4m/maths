@@ -1,0 +1,6 @@
+FourCut189
+ThreeSide189
+NontrivialSides189
+ThreeCutLift189
+SingletonSide189
+TwoCutFinal189

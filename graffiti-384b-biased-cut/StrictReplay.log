@@ -1,0 +1,8 @@
+Strict stdin replay 79601 (Lean v4.19.0), exit code 0.
+'Graffiti384b.BiasedCut.exists_optimal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.BiasedCut.two_dominates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.BiasedCut.dissociated' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.BiasedCut.exact_support_matching' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.BiasedCut.swap_supported' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.BiasedCut.fragile_fiber_clique' depends on axioms: [propext, Classical.choice, Quot.sound]
+

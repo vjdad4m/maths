@@ -1,0 +1,8 @@
+CoreColor33
+PositiveCore33
+LeafReduction33
+CoreExtremal33
+CliquePivot33
+SupportComponent33
+SpanningEar33
+FrontierEar33

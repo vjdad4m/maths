@@ -1,0 +1,79 @@
+
+private theorem mark_length_ten_at_most_two_holes
+    {a b x y : V} {p : G.Walk a b} (hp : IsLongest p)
+    (xo : x∉p.support) (yp : y∈p.support) (xy : G.Adj x y)
+    (ah : 4≤G.degree a) (bh : 4≤G.degree b) (len : p.length≤10)
+    {i j k : ℕ} (ir : i<p.length) (jr : j<p.length) (kr : k<p.length)
+    (ih : i∉LeftMarks p∪RightMarks p) (jh : j∉LeftMarks p∪RightMarks p)
+    (kh : k∉LeftMarks p∪RightMarks p) :
+    i=j ∨ i=k ∨ j=k := by
+  classical
+  by_contra! ne
+  let S : Finset ℕ := {i,j,k}
+  have cs : S.card=3 := by
+    simp [S, ne.1, ne.2.1, ne.2.2, card_insert_of_not_mem]
+  have sub : S⊆range p.length := by
+    intro z zm
+    have hz : z=i ∨ z=j ∨ z=k := by simpa [S] using zm
+    rcases hz with rfl|rfl|rfl <;> exact mem_range.mpr (by assumption)
+  have dis : Disjoint (LeftMarks p∪RightMarks p) S := by
+    apply disjoint_left.mpr
+    intro z za zs
+    have h : z=i ∨ z=j ∨ z=k := by simpa [S] using zs
+    rcases h with rfl|rfl|rfl
+    · exact ih za
+    · exact jh za
+    · exact kh za
+  have bd := mark_length hp xo yp xy S sub dis
+  omega
+
+private theorem mark_holes_of_pin_and_missing_endpoint
+    {a b x : V} {p : G.Walk a b} (hp : IsLongest p)
+    (xo : x∉p.support) {i : ℕ} (hi : i∈Pins p x) :
+    (¬G.Adj a (p.getVert i) → i-1∉LeftMarks p∪RightMarks p) ∧
+    (¬G.Adj b (p.getVert i) → i∉LeftMarks p∪RightMarks p) := by
+  have ip := pin_pos hp xo hi
+  constructor
+  · intro no h
+    rcases mem_union.mp h with lm|rm
+    · apply no
+      have h := (mem_filter.mp lm).2
+      rwa [show i-1+1=i by omega] at h
+    · exact end_not_adj_pin_predecessor hp xo hi (mem_filter.mp rm).2
+  · intro no h
+    exact (mem_union.mp h).elim
+      (fun h => start_not_adj_pin_successor hp xo hi (mem_filter.mp h).2)
+      (fun h => no (mem_filter.mp h).2)
+
+private theorem length_ten_two_pin_shape
+    (hc : G.Connected) (even : ∀ v,(EvenFrom G v).card≤5)
+    (conn : ∀ S : Finset V,S.card<2 → (G.induce ((↑S : Set V)ᶜ)).Connected)
+    (degree : ∀ u v : V,u≠v → 4≤G.degree u ∨ 4≤G.degree v)
+    {a b x : V} {p : G.Walk a b} (hp : EdgeOptimal p)
+    (ah : 4≤G.degree a) (bh : 4≤G.degree b) (len : p.length=10)
+    (xo : x∉p.support) {i j : ℕ} (hi : i∈Pins p x) (hj : j∈Pins p x) (ij : i<j) :
+    (i=1 ∨ j=9) ∧
+    (i≠1 → i-1∉LeftMarks p∪RightMarks p ∧ j-1∉LeftMarks p∪RightMarks p) ∧
+    (j≠9 → i∉LeftMarks p∪RightMarks p ∧ j∉LeftMarks p∪RightMarks p) := by
+  have cap := fun x => distanceTwo_le_of_even 4 x (even x)
+  have f := (at_most_two_pins_one_slack hc 2 (by decide) cap conn degree hp xo).1
+  have gap := pins_gap_at_four hc even conn degree hp ah bh xo hi hj ij
+  have il := (pin_data hi).1
+  have jl := (pin_data hj).1
+  have ip := pin_pos hp.1 xo hi
+  have en := pin_two_contacts_end hp.1 hc xo f (cap x) hi hj gap
+  have left (no : i≠1) : i-1∉LeftMarks p∪RightMarks p ∧ j-1∉LeftMarks p∪RightMarks p :=
+    ⟨(mark_holes_of_pin_and_missing_endpoint hp.1 xo hi).1 (fun h => no (en.1 i hi h)),
+     (mark_holes_of_pin_and_missing_endpoint hp.1 xo hj).1 (fun h => no (en.1 j hj h))⟩
+  have right (no : j≠9) : i∉LeftMarks p∪RightMarks p ∧ j∉LeftMarks p∪RightMarks p :=
+    ⟨(mark_holes_of_pin_and_missing_endpoint hp.1 xo hi).2
+       (fun h => no (by have e := en.2 i hi h; omega)),
+     (mark_holes_of_pin_and_missing_endpoint hp.1 xo hj).2
+       (fun h => no (by have e := en.2 j hj h; omega))⟩
+  refine ⟨?_,left,right⟩
+  by_contra! no
+  have o := mark_length_ten_at_most_two_holes hp.1 xo (p.getVert_mem_support i) (pin_data hi).2
+    ah bh len.le (show i-1<p.length by omega) il jl (left no.1).1 (right no.2).1 (right no.2).2
+  omega
+
+#print axioms length_ten_two_pin_shape

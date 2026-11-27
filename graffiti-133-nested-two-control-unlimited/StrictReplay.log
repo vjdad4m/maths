@@ -1,0 +1,62 @@
+Checking NestedCorePrivateGenericKernel133
+'Graffiti133PrivateGeneric.checked_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking NestedCorePrivateExpandedSpec133
+Checking NestedCorePrivateSingleRows133
+'Graffiti133ExpandedPrivate.single_case_all_rows' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking NestedCorePrivateDualRows133
+'Graffiti133ExpandedPrivate.dual_single_all_rows' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti133ExpandedPrivate.dual_adjacent_all_rows' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking NestedCorePrivateExpandedResult133
+'Graffiti133ExpandedPrivate.no_single_case_model' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti133ExpandedPrivate.no_dual_single_case_model' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti133ExpandedPrivate.no_dual_adjacent_case_model' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking NestedCorePrivateExpandedFit133
+'Graffiti133ExpandedPrivate.singleCase_fits' depends on axioms: [propext, Quot.sound]
+'Graffiti133ExpandedPrivate.dualSingleCase_fits' depends on axioms: [propext, Quot.sound]
+'Graffiti133ExpandedPrivate.dualAdjacentCase_fits' depends on axioms: [propext, Quot.sound]
+'Graffiti133NestedLongGates.center_or_two_core_archetypes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti133NestedLongGates.radius_four_two_control_core_archetypes' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking NestedCorePrivateExpandedRealLift133
+'Graffiti133ExpandedPrivate.nonprivate_near_crossing_forbidden_for_single_control' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti133ExpandedPrivate.single_site_crossing_forbidden_for_dual_control' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti133ExpandedPrivate.adjacent_site_crossing_forbidden_for_dual_control' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking NestedCorePrivateFullTriangle133
+'Graffiti133ExpandedPrivate.very_short_crossing_has_common_control' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking NestedCorePrivatePaidTrim133
+'Graffiti133NestedCore.three_retained_gates_with_paid_crossings_mean_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti133NestedCore.paid_crossing_trim_dominates_local_sum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking NestedCoreLongGateRadius133
+'Graffiti133NestedLongGates.match_long_gate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti133NestedLongGates.radius_three_of_four_long_gates' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking NestedCorePrivateUnlimitedCross133
+'Graffiti133NestedLongGates.radius_four_canonical_private_core_unlimited_crossings_mean_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking NestedCorePrivateWitnesses133
+'Graffiti133PrivateCross.cycle_two_control_core_connected_after_delete' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti133PrivateCross.minimum_core_has_canonical_private_witnesses' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking NestedCorePrivateOrbit133
+'Graffiti133NestedLongGates.orient_contact_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti133NestedLongGates.orient_to_canonical_archetype' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking NestedCoreMinimumTwoCoreUnlimited133
+'Graffiti133NestedLongGates.radius_four_minimum_two_control_core_unlimited_crossings_mean_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

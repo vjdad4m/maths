@@ -1,0 +1,67 @@
+Mathlib commit c44e0c8ee63ca166450922a373c7409c5d26b00b
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+Recompiled 137 pinned foundation modules.
+'Minimal180.Transversals.root_reserve' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Transversals.odd_reserve' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Transversals.odd_isolate' depends on axioms: [propext, Classical.choice, Quot.sound]
+Kernel replay accepted 9 declarations including Minimal180.Transversals.odd_isolate.
+'Minimal180.Transversals.near_tone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Transversals.neighbor_repair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Transversals.apex_vertical' depends on axioms: [propext, Classical.choice, Quot.sound]
+Kernel replay accepted 14 declarations including Minimal180.Transversals.apex_vertical.
+'Minimal180.Transversals.apex_star' depends on axioms: [propext, Classical.choice, Quot.sound]
+Kernel replay accepted 19 declarations including Minimal180.Transversals.apex_star.
+'Minimal180.Transversals.child_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Transversals.forest_width' depends on axioms: [propext, Classical.choice, Quot.sound]
+Kernel replay accepted 7 declarations including Minimal180.Transversals.forest_width.
+'Minimal180.Transversals.trimmed_weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Transversals.layer_payment' depends on axioms: [propext, Classical.choice, Quot.sound]
+Kernel replay accepted 9 declarations including Minimal180.Transversals.layer_payment.
+'Minimal180.Transversals.double_root' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Transversals.double_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+Kernel replay accepted 8 declarations including Minimal180.Transversals.double_degree.
+'Minimal180.Transversals.cheap_side' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Transversals.transversal_repair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Transversals.one_repair' depends on axioms: [propext, Classical.choice, Quot.sound]
+Kernel replay accepted 7 declarations including Minimal180.Transversals.one_repair.
+'Minimal180.Transversals.protected_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Transversals.protected_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Transversals.rank_allowance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Transversals.protected_tests' depends on axioms: [propext, Classical.choice, Quot.sound]
+Kernel replay accepted 16 declarations including Minimal180.Transversals.protected_tests.
+'Minimal180.Transversals.apex_of_rank_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Transversals.protected_rank_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Transversals.prime_tests_rank_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Transversals.universal_iff_prime_deficit_two_or_more' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Kernel replay accepted 17 declarations including Minimal180.Transversals.universal_iff_prime_deficit_two_or_more.
+'Minimal180.Transversals.failed_cost' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Transversals.solo_neighbors' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Transversals.pair_obstruction' depends on axioms: [propext, Classical.choice, Quot.sound]
+Kernel replay accepted 13 declarations including Minimal180.Transversals.pair_obstruction.
+'Minimal180.Transversals.protected_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Transversals.prime_tests_edge_transversal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Transversals.prime_tests_good_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Transversals.universal_iff_remaining_tests' depends on axioms: [propext, Classical.choice, Quot.sound]
+Kernel replay accepted 9 declarations including Minimal180.Transversals.universal_iff_remaining_tests.
+'Minimal180.Transversals.mark_price' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Transversals.over_color' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Transversals.protected_lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+Kernel replay accepted 11 declarations including Minimal180.Transversals.protected_lift.
+'Minimal180.Transversals.enlarge_isolated' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Transversals.credit_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+Kernel replay accepted 5 declarations including Minimal180.Transversals.credit_iff.
+'Minimal180.Transversals.witness_core' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Transversals.dom_marked_odd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Transversals.dominating_protection' depends on axioms: [propext, Classical.choice, Quot.sound]
+Kernel replay accepted 11 declarations including Minimal180.Transversals.dominating_protection.
+'Minimal180.Transversals.substitution_protection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Transversals.protected_ordinary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Transversals.substitution_class' depends on axioms: [propext, Classical.choice, Quot.sound]
+Kernel replay accepted 4 declarations including Minimal180.Transversals.substitution_class.
+'Minimal180.Transversals.two_stars' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.Transversals.two_star_reserve' depends on axioms: [propext, Classical.choice, Quot.sound]
+Kernel replay accepted 6 declarations including Minimal180.Transversals.two_star_reserve.
+165 new declarations passed kernel replay. All 44 printed axiom reports use only propext, Classical.choice and Quot.sound.

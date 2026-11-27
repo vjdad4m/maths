@@ -1,0 +1,14 @@
+n 10 inputs 4000 connected_nonbipartite_prime 2791 qualifying_roots 24332 first_tests 3521370 second_tests 461814 second_needing_credit 0 second_without_global_maximum 27203
+transversal_histogram 1:20 2:2771
+n 11 inputs 4000 connected_nonbipartite_prime 2925 qualifying_roots 28351 first_tests 6381650 second_tests 836142 second_needing_credit 0 second_without_global_maximum 51465
+transversal_histogram 1:17 2:2908
+n 12 inputs 3000 connected_nonbipartite_prime 2434 qualifying_roots 27637 first_tests 9167580 second_tests 1165102 second_needing_credit 0 second_without_global_maximum 77632
+transversal_histogram 1:12 2:2422
+n 13 inputs 1500 connected_nonbipartite_prime 1221 qualifying_roots 15615 first_tests 8073518 second_tests 1020894 second_needing_credit 0 second_without_global_maximum 64853
+transversal_histogram 1:9 2:1212
+n 14 inputs 600 connected_nonbipartite_prime 510 qualifying_roots 7122 first_tests 5604760 second_tests 698592 second_needing_credit 0 second_without_global_maximum 48767
+transversal_histogram 1:2 2:508
+n 15 inputs 250 connected_nonbipartite_prime 217 qualifying_roots 3251 first_tests 4050364 second_tests 510997 second_needing_credit 0 second_without_global_maximum 38050
+transversal_histogram 2:217
+n 16 inputs 100 connected_nonbipartite_prime 76 qualifying_roots 1216 first_tests 2355232 second_tests 297125 second_needing_credit 0 second_without_global_maximum 21793
+transversal_histogram 1:1 2:75

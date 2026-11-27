@@ -79,6 +79,7 @@
 | Graffiti.pc #379 | Proved | [Lean](graffiti-379/Exact379.lean) |
 | Graffiti.pc #380 | Proved where defined; undefined on some trees | [Lean](graffiti-380/Proof380.lean) |
 | Graffiti.pc #381 | Proved | [Lean](graffiti-381/Formal381.lean) · [Write-up](graffiti-381/README.md) |
+| Graffiti.pc #384b | Open in general; at most one above bound; exact with up to four triangle counts | [Lean and replay](graffiti-384b-partial/README.md) |
 | Graffiti.pc #394 | Disproved | [Lean](graffiti-394/Counterexample394.lean) |
 | Graffiti.pc #397c | Proved | [Lean](graffiti-397c/Proof397c.lean) · [Gebendorfer’s earlier proof](https://doi.org/10.13140/RG.2.2.34978.18880) |
 | Graffiti.pc #398 | Disproved | [Lean](graffiti-398/Counterexample398.lean) · [Dubey’s earlier counterexample](https://gist.github.com/siddhantdubey/22f22a7a23db5174ee59e32eaa8724aa#wowii-398) |

@@ -1,0 +1,7 @@
+# Graffiti.pc #189: distance-two cuts with an exclusive shore
+
+Under the degree-five Graffiti.pc #189 hypotheses, suppose deletion of two vertices at distance two leaves exactly two components, and one of them has no vertex adjacent to both cut vertices. Then the original graph has a spanning path. No explicit common-neighbor count is assumed on the other shore.
+
+The intrinsic theorem is `traceable_of_actual_five_distance_two_with_exclusive_shore`. The shortest two-step walk supplies a common neighbor, and earlier uniqueness exclusion shows it is not alone. The opposite component has at most five contacts to the cut by the even-distance cap. The proof dispatches the two-porter, lonely-color, 2+2, and 2+3 cases, with either orientation. It also verifies the separate exact 2+2 theorem. The case of common neighbors on both shores and general #189 remain open.
+
+Use Lean 4.19.0 and pinned Mathlib v4.19.0. First build the existing [degree-five cut geometry](../graffiti-189-degree-five-cuts/), [unique-common exclusion](../graffiti-189-unique-exclusion/), [small exact cuts](../graffiti-189-distance-two-twenty/), and [2+3 dispatch](../graffiti-189-exclusive-two-three/) packages and their prerequisites. Compile the source files in `modules.txt` order with `-j1 -s 65536 -DElab.async=false -DwarningAsError=true`, retaining the prerequisite objects on the Lean search path. The exact theorem and two internal wrappers passed a strict integration check with only propext, Classical.choice, and Quot.sound.

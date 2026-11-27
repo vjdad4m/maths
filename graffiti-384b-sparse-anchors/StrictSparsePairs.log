@@ -1,0 +1,102 @@
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+SparseMass.lean: OK
+SparseRanks.lean: OK
+SparseGeometry.lean: OK
+SparseSwap.lean: OK
+SparseCubic.lean: OK
+AlternatingGuard.lean: OK
+PrivateContacts.lean: OK
+SparseFrontier.lean: OK
+SparseEight.lean: OK
+AnchorGap.lean: OK
+anchor-pairs-source.zip: OK
+Sparse pair build /workspace/scratch/7efa613b1c05/graff384b-sparsepairs-astra/.sparsepairs.KpiDs1x1
+Pool26.lean: OK
+OuterScore.lean: OK
+SeparatedAnchors.lean: OK
+FourSample.lean: OK
+FourPrices.lean: OK
+FourFrontier.lean: OK
+AnchorCuts.lean: OK
+README.md: OK
+CHECKED-OBJECTS.sha256: OK
+NEW-SOURCES.sha256: OK
+replay.sh: OK
+audit.py: OK
+StrictAnchorPairs.log: OK
+two-ear-source.zip: OK
+Fresh extension verified: 7 modules and 10 standard-axiom reports.
+Fresh extension verified: 7 modules and 10 standard-axiom reports.
+AdjacentBound.olean: OK
+AdjacentFrame.olean: OK
+AdjacentFront.olean: OK
+AllContacts.olean: OK
+AnchorCuts.olean: OK
+AnchorScores.olean: OK
+AttachmentReserve.olean: OK
+CleanFinish.olean: OK
+CleanRanks.olean: OK
+CliquePool.olean: OK
+CompleteAdjacent.olean: OK
+CubicExtra.olean: OK
+CubicMass.olean: OK
+CubicPair.olean: OK
+CubicRanks.olean: OK
+CubicSaving.olean: OK
+DenseTwelve.olean: OK
+EarTriangle.olean: OK
+FinishIndependent.olean: OK
+FourFrontier.olean: OK
+FourPrices.olean: OK
+FourSample.olean: OK
+IndependentFrontier.olean: OK
+IndependentThirteen.olean: OK
+JointEarRank.olean: OK
+JointEarSample.olean: OK
+JointEarWitness.olean: OK
+LowOmissions.olean: OK
+NoLeafAttachment.olean: OK
+OuterScore.olean: OK
+OuterSeparation.olean: OK
+PendantBound.olean: OK
+PendantSample.olean: OK
+Pool26.olean: OK
+PoolTwelve.olean: OK
+PortClique29.olean: OK
+PortFrame29.olean: OK
+PortRepair29.olean: OK
+RankRepair29.olean: OK
+ReservedRanks.olean: OK
+RootMass.olean: OK
+RootRank.olean: OK
+SeparatedAnchors.olean: OK
+SharedRanks.olean: OK
+SimplicialRanks.olean: OK
+SimplicialTrial.olean: OK
+ThirdEar.olean: OK
+ThreeEars.olean: OK
+ThreePins.olean: OK
+ThreeReservedRanks.olean: OK
+TwelveWitness.olean: OK
+TwoEarFront.olean: OK
+UnreservedTwelve.olean: OK
+Weighted29.olean: OK
+'Graffiti384b.SparsePairs.extra_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.SparsePairs.cubic29' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.SparsePairs.credit_le_augmented' depends on axioms: [propext]
+'Graffiti384b.SparsePairs.degree_discount' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.SparsePairs.rank_account' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.SparsePairs.base_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.SparsePairs.anchor_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.SparsePairs.link_with_triangle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.SparsePairs.link_local' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.SparsePairs.link_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.SparsePairs.swap_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.SparsePairs.two_score_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.SparsePairs.forbidden_edge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.SparsePairs.ten_contacts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.SparsePairs.sparse_frontier' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.SparsePairs.eight_triangles' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.SparsePairs.anchor_score_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.SparsePairs.at_most_seven' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fresh extension verified: 10 modules and 18 standard-axiom reports.

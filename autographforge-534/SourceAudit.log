@@ -1,0 +1,6 @@
+534 38975fcb proposed; 182 normalized touches, 2062 record touches; 4776 released graph6 encodings
+{'connected_nontrivial_cographs': 691, 'row_domain': 229, 'row_domain_in_refutation_graphs': 14, 'both_optimizers_order_at_most_10': 445}
+compute_battery P3 (3, True, True, False, 3, 1)
+compute_battery K3 (3, True, True, True, 1, 1)
+compute_battery C4 (4, True, True, True, 2, 2)
+compute_battery K4,4 (8, True, True, True, 2, 4)

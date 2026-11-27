@@ -1,0 +1,6 @@
+FarPentagon133
+FarPair133
+DominatingPentagon133
+P7OrHole133
+HexFrameGeneral133
+HexFlattened133

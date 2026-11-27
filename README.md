@@ -8,7 +8,7 @@
 | Graffiti.pc #76 | Disproved | [Lean](graffiti-76/Verify76Exact.lean) · [Write-up](graffiti-76/README.md) |
 | Graffiti.pc #108 | Disproved | [Lean](graffiti-108/Counterexample108.lean) · [Write-up](graffiti-108/README.md) |
 | Graffiti.pc #111 | Proved | [Lean](graffiti-111/Proof111.lean) |
-| Graffiti.pc #133 | Open in general; real mean ≤ 3 and floor mean ≤ 3 proved | [Real ≤ 3](graffiti-133-real-three/README.md) · [Floor ≤ 3](graffiti-133-floor-three/README.md) · [Density and radius cases](graffiti-133-density/README.md) · [Five-cycle-free bands](graffiti-133-five-free/README.md) · [Seven-cycle branch](graffiti-133-seven-cycle/README.md) |
+| Graffiti.pc #133 | Open in general; real mean ≤ 3 and floor mean ≤ 3 proved | [Real ≤ 3](graffiti-133-real-three/README.md) · [Floor ≤ 3](graffiti-133-floor-three/README.md) · [Density and radius cases](graffiti-133-density/README.md) · [Five-cycle-free bands](graffiti-133-five-free/README.md) · [Seven-cycle branch](graffiti-133-seven-cycle/README.md) · [Induced P₇ and new radius bands](graffiti-133-induced-seven/README.md) |
 | Graffiti.pc #137 | Proved (order ≥ 2); disproved (singleton) | [Lean](graffiti-137/Proof137.lean) · [Earlier nontrivial-case argument](https://gitlab.com/ai-village-agents/village/graffiti-verification/-/blob/main/README.md#finding-3--conjecture-137-is-a-theorem-in-four-lines) |
 | Graffiti.pc #138 | Disproved | [Lean](graffiti-138/Verify138.lean) |
 | Graffiti.pc #154 | Disproved | [Lean](graffiti-154/Counterexample154.lean) |

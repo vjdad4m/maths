@@ -1,0 +1,51 @@
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+Checking P5CliqueFiveDoubleProfiles133
+'Graffiti133FourPortPacking.excess_five_all_double_normalize' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS P5CliqueFiveDoubleProfiles133
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+Checking P5CliqueMixedPairKernel133
+'Graffiti133P5CliqueArms.MixedPairCertificate.actual_model_forbidden' depends on axioms: [propext, Quot.sound]
+PASS P5CliqueMixedPairKernel133
+Checking P5CliqueFiveMixedOmit0
+'Graffiti133P5CliqueArms.MixedPairCertificate.five_pair_omit_0_forbidden' depends on axioms: [propext, Quot.sound]
+PASS P5CliqueFiveMixedOmit0
+Checking P5CliqueFiveMixedOmit1
+'Graffiti133P5CliqueArms.MixedPairCertificate.five_pair_omit_1_forbidden' depends on axioms: [propext, Quot.sound]
+PASS P5CliqueFiveMixedOmit1
+Checking P5CliqueFiveMixedOmit2
+'Graffiti133P5CliqueArms.MixedPairCertificate.five_pair_omit_2_forbidden' depends on axioms: [propext, Quot.sound]
+PASS P5CliqueFiveMixedOmit2
+Checking P5CliqueFiveMixedOmit3
+'Graffiti133P5CliqueArms.MixedPairCertificate.five_pair_omit_3_forbidden' depends on axioms: [propext, Quot.sound]
+PASS P5CliqueFiveMixedOmit3
+Checking P5CliqueFiveMixedOmit4
+'Graffiti133P5CliqueArms.MixedPairCertificate.five_pair_omit_4_forbidden' depends on axioms: [propext, Quot.sound]
+PASS P5CliqueFiveMixedOmit4
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+Checking P5CliqueMixedFivePairFrame133
+'Graffiti133P5CliqueArms.FivePairFrame.fixed_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti133P5CliqueArms.FivePairFrame.value_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS P5CliqueMixedFivePairFrame133
+Checking P5CliqueMixedPairOptional133
+'Graffiti133P5CliqueArms.MixedPairCertificate.optional_edges_fill' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS P5CliqueMixedPairOptional133
+Checking P5CliqueMixedFivePairActual133
+'Graffiti133P5CliqueArms.FivePairFrame.five_pair_host_forbidden' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti133P5CliqueArms.FivePairFrame.five_pair_four_high_forbidden' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS P5CliqueMixedFivePairActual133
+Checking P5CliqueFiveDoubleHighCap133
+'Graffiti133P5CliqueArms.five_double_pair_high_count_at_most_three' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS P5CliqueFiveDoubleHighCap133
+Checking P5CliqueIndependentExcessFive133
+'Graffiti133P5CliqueArms.independent_four_ports_excess_exactly_five_ambient_mean_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS P5CliqueIndependentExcessFive133

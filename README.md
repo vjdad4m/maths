@@ -205,6 +205,7 @@
 | AutoGraphForge line 2526 | Disproved | [Lean](autographforge-complete/CompleteRows.lean) |
 | AutoGraphForge line 2537 | Disproved | [Lean](autographforge-friendship/Friendship.lean) |
 | AutoGraphForge line 2553 | Disproved in Lean by C43; upstream implicit witness also exists | [Proof](autographforge-2553/) |
+| AutoGraphForge line 2562 | Disproved in Lean by C43; upstream implicit witness also exists | [Proof](autographforge-2562/) |
 | AutoGraphForge line 2572 | Disproved | [Lean](autographforge-complete/CompleteRows.lean) |
 | AutoGraphForge line 2577 | Disproved | [Lean](autographforge-star/StarCone.lean) |
 | AutoGraphForge line 2578 | Disproved | [Lean](autographforge-complete/CompleteRows.lean) |

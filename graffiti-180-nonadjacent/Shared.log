@@ -1,0 +1,5 @@
+order 5 inputs 21 old_residual 0 cover 0 shared_cover 0 rooted_candidates 0 eligible_roots 0 candidate_root_parities 0 root_layer_graphs 0 root_layer_parities 0
+order 6 inputs 112 old_residual 0 cover 0 shared_cover 0 rooted_candidates 0 eligible_roots 0 candidate_root_parities 0 root_layer_graphs 0 root_layer_parities 0
+order 7 inputs 853 old_residual 5 cover 0 shared_cover 0 rooted_candidates 0 eligible_roots 8 candidate_root_parities 0 root_layer_graphs 0 root_layer_parities 0
+order 8 inputs 11117 old_residual 281 cover 205 shared_cover 205 rooted_candidates 205 eligible_roots 1627 candidate_root_parities 1563 root_layer_graphs 203 root_layer_parities 1004
+order 9 inputs 261080 old_residual 6744 cover 5543 shared_cover 5543 rooted_candidates 5543 eligible_roots 52915 candidate_root_parities 51652 root_layer_graphs 5524 root_layer_parities 31068

@@ -1,0 +1,6 @@
+Graph GCpdUg, prime, root 2, no incident dominating edge.
+Spanning trees checked: 276
+Eligible optimum, allowance, bipartite order: 3 2 6
+Minimum transversals: [(0, 1), (0, 5), (4, 7), (6, 7)]
+Allowed deletions for the marking: [(4, 7), (6, 7)]
+Previous colors of 1 and 2 are opposite; after every successful repair they coincide.

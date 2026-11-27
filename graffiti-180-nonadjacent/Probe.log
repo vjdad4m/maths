@@ -1,0 +1,10 @@
+order 5 inputs 21 residual_graphs 0 roots 0 tight_solo_pairs 0 no_neighbor_repair 0 cannot_omit_other 0 two_protected_beyond_degree_bounds 0
+order 6 inputs 112 residual_graphs 0 roots 0 tight_solo_pairs 0 no_neighbor_repair 0 cannot_omit_other 0 two_protected_beyond_degree_bounds 0
+order 7 inputs 853 residual_graphs 5 roots 8 tight_solo_pairs 0 no_neighbor_repair 0 cannot_omit_other 0 two_protected_beyond_degree_bounds 0
+order 8 No neighbor repair GCpdUg r,p,A,a,b=2,0,7,0,5
+Cannot omit second endpoint GCpdUg r,p,A,a,b=2,0,7,0,5
+inputs 11117 residual_graphs 281 roots 1627 tight_solo_pairs 7 no_neighbor_repair 5 cannot_omit_other 5 two_protected_beyond_degree_bounds 0
+order 9 No neighbor repair H?bBEVs r,p,A,a,b=2,0,172,7,8
+Cannot omit second endpoint H?bBEVs r,p,A,a,b=2,0,172,7,8
+Two protected, cheap estimates insufficient H?`eeZa r,p,A,a,b,B=2,0,196,6,7,2
+inputs 261080 residual_graphs 6744 roots 52915 tight_solo_pairs 85 no_neighbor_repair 51 cannot_omit_other 51 two_protected_beyond_degree_bounds 4

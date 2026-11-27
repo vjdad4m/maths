@@ -1,0 +1,81 @@
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+Mathlib c44e0c8ee63ca166450922a373c7409c5d26b00b
+Frozen source archive bcac3e6cf9da4515708bee20ad756cf6ca76c690187aebfb4525bdccc24203f1
+153 frozen dependency objects matched their SHA-256 hashes.
+'Minimal180.PairRepair.repair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.PairRepair.budget_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.PairRepair.conflict_failure' depends on axioms: [propext, Classical.choice, Quot.sound]
+Kernel replay accepted 7 declarations including Minimal180.PairRepair.conflict_failure.
+'Minimal180.PairRepair.joined_constant' depends on axioms: [propext, Quot.sound]
+'Minimal180.PairRepair.extension_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+Kernel replay accepted 10 declarations including Minimal180.PairRepair.extension_iff.
+'Minimal180.PairRepair.solo_rigidity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.PairRepair.double_rigidity' depends on axioms: [propext, Classical.choice, Quot.sound]
+Kernel replay accepted 7 declarations including Minimal180.PairRepair.double_rigidity.
+'Minimal180.PairRepair.toggle_proper' depends on axioms: [propext, Quot.sound]
+'Minimal180.PairRepair.component_balance' depends on axioms: [propext, Classical.choice, Quot.sound]
+Kernel replay accepted 7 declarations including Minimal180.PairRepair.component_balance.
+'Minimal180.PairRepair.separator_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.PairRepair.one_compatible' depends on axioms: [propext, Quot.sound]
+'Minimal180.PairRepair.solo_paths' depends on axioms: [propext, Classical.choice, Quot.sound]
+Kernel replay accepted 15 declarations including Minimal180.PairRepair.solo_paths.
+'Minimal180.PairRepair.failed_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.PairRepair.center_forced' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.PairRepair.two_forced_centers' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.PairRepair.cover_substitutions' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.PairRepair.universal_iff_cover_remainder' depends on axioms: [propext, Classical.choice, Quot.sound]
+Kernel replay accepted 13 declarations including Minimal180.PairRepair.universal_iff_cover_remainder.
+'Minimal180.PairRepair.cheap_color' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.PairRepair.small_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.PairRepair.low_endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+Kernel replay accepted 7 declarations including Minimal180.PairRepair.low_endpoint.
+'Minimal180.PairRepair.degree_exclusion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.PairRepair.cubic_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.PairRepair.odd_degrees' depends on axioms: [propext, Classical.choice, Quot.sound]
+Kernel replay accepted 8 declarations including Minimal180.PairRepair.odd_degrees.
+'Minimal180.PairRepair.shared_failure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.PairRepair.parity_excludes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.PairRepair.tests_of_parity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.PairRepair.universal_iff_shared_remainder' depends on axioms: [propext, Classical.choice, Quot.sound]
+Kernel replay accepted 9 declarations including Minimal180.PairRepair.universal_iff_shared_remainder.
+'Minimal180.PairRepair.marked_width' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.PairRepair.saturated_layer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.PairRepair.solo_layer' depends on axioms: [propext, Classical.choice, Quot.sound]
+Kernel replay accepted 11 declarations including Minimal180.PairRepair.solo_layer.
+'Minimal180.PairRepair.marked_root_reserve' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.PairRepair.solo_root' depends on axioms: [propext, Classical.choice, Quot.sound]
+Kernel replay accepted 11 declarations including Minimal180.PairRepair.solo_root.
+'Minimal180.PairRepair.independent_tree_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.PairRepair.star_and_edge' depends on axioms: [propext, Classical.choice, Quot.sound]
+Kernel replay accepted 12 declarations including Minimal180.PairRepair.star_and_edge.
+'Minimal180.PairRepair.confined_edges' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.PairRepair.neighborhood_repair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.PairRepair.root_solo_protected' depends on axioms: [propext, Classical.choice, Quot.sound]
+Kernel replay accepted 11 declarations including Minimal180.PairRepair.root_solo_protected.
+'Minimal180.PairRepair.opposite_layer_protected' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.PairRepair.equal_layer_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.PairRepair.root_partner' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.PairRepair.adjacent_root_partners' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.PairRepair.mixed_parity_partners' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.PairRepair.root_cover_failure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.PairRepair.universal_iff_root_partners' depends on axioms: [propext, Classical.choice, Quot.sound]
+Kernel replay accepted 10 declarations including Minimal180.PairRepair.universal_iff_root_partners.
+'Minimal180.PairRepair.Eight.data' depends on axioms: [propext, Classical.choice, Quot.sound]
+Kernel replay accepted 16 declarations including Minimal180.PairRepair.Eight.data.
+'Minimal180.PairRepair.Eight.prime' depends on axioms: [propext, Classical.choice, Quot.sound]
+Kernel replay accepted 1 declarations including Minimal180.PairRepair.Eight.prime.
+'Minimal180.PairRepair.Eight.exact_pairs' depends on axioms: [propext, Classical.choice, Quot.sound]
+Kernel replay accepted 12 declarations including Minimal180.PairRepair.Eight.exact_pairs.
+'Minimal180.PairRepair.Eight.leaves' depends on axioms: [propext, Classical.choice, Quot.sound]
+Kernel replay accepted 3 declarations including Minimal180.PairRepair.Eight.leaves.
+'Minimal180.PairRepair.Eight.budget_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.PairRepair.Eight.pinned_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.PairRepair.Eight.unprotected_retained' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.PairRepair.Eight.obstruction' depends on axioms: [propext, Classical.choice, Quot.sound]
+Kernel replay accepted 6 declarations including Minimal180.PairRepair.Eight.obstruction.
+'Minimal180.PairRepair.Eight.cover_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.PairRepair.Eight.old_criterion_fails' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.PairRepair.Eight.recoloring_required' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Minimal180.PairRepair.Eight.all_tests' depends on axioms: [propext, Classical.choice, Quot.sound]
+Kernel replay accepted 7 declarations including Minimal180.PairRepair.Eight.all_tests.
+20 modules, 183 declarations, 56 axiom reports. Every report uses only the standard axioms.

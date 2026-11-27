@@ -1,0 +1,107 @@
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+TenGap.lean: OK
+JoiningTips.lean: OK
+ForkTip.lean: OK
+ExteriorCut.lean: OK
+OppositeFan.lean: OK
+UniformCuts.lean: OK
+nine-contact-source.zip: OK
+Uniform-cut build <workspace>/graff384b-tenpins-astra/.uniform31.iI3kJ5A6
+NineRanks.lean: OK
+NineTriangle.lean: OK
+NineBoundary.lean: OK
+FinishNine.lean: OK
+README.md: OK
+CHECKED-OBJECTS.sha256: OK
+NEW-SOURCES.sha256: OK
+replay.sh: OK
+audit.py: OK
+StrictNine.log: OK
+eight-contact-source.zip: OK
+Fresh extension verified: 4 modules and 7 standard-axiom reports.
+Fresh extension verified: 4 modules and 7 standard-axiom reports.
+AdjacentBound.olean: OK
+AdjacentFrame.olean: OK
+AdjacentFront.olean: OK
+AllContacts.olean: OK
+AlternatingGuard.olean: OK
+AnchorCuts.olean: OK
+AnchorGap.olean: OK
+AnchorScores.olean: OK
+AttachmentReserve.olean: OK
+CleanFinish.olean: OK
+CleanRanks.olean: OK
+CliquePool.olean: OK
+ClosedRegion.olean: OK
+CompleteAdjacent.olean: OK
+CubicExtra.olean: OK
+CubicMass.olean: OK
+CubicPair.olean: OK
+CubicRanks.olean: OK
+CubicSaving.olean: OK
+DenseTwelve.olean: OK
+EarTriangle.olean: OK
+EightBoundary.olean: OK
+EightDegree.olean: OK
+FinishEight.olean: OK
+FinishIndependent.olean: OK
+FinishNine.olean: OK
+FlexibleTip.olean: OK
+FourFrontier.olean: OK
+FourPrices.olean: OK
+FourSample.olean: OK
+IndependentFrontier.olean: OK
+IndependentThirteen.olean: OK
+JointEarRank.olean: OK
+JointEarSample.olean: OK
+JointEarWitness.olean: OK
+LowOmissions.olean: OK
+NineBoundary.olean: OK
+NineRanks.olean: OK
+NineTriangle.olean: OK
+NoLeafAttachment.olean: OK
+OuterScore.olean: OK
+OuterSeparation.olean: OK
+PendantBound.olean: OK
+PendantSample.olean: OK
+Pool26.olean: OK
+PoolTwelve.olean: OK
+PortClique29.olean: OK
+PortFrame29.olean: OK
+PortRepair29.olean: OK
+PrivateContacts.olean: OK
+RankRepair29.olean: OK
+ReservedRanks.olean: OK
+RootMass.olean: OK
+RootRank.olean: OK
+SeparatedAnchors.olean: OK
+SharedRanks.olean: OK
+SimplicialRanks.olean: OK
+SimplicialTrial.olean: OK
+SparseCubic.olean: OK
+SparseEight.olean: OK
+SparseFrontier.olean: OK
+SparseGeometry.olean: OK
+SparseMass.olean: OK
+SparseRanks.olean: OK
+SparseSwap.olean: OK
+ThirdEar.olean: OK
+ThreeEars.olean: OK
+ThreePins.olean: OK
+ThreeReservedRanks.olean: OK
+TwelveWitness.olean: OK
+TwoEarFront.olean: OK
+UnreservedTwelve.olean: OK
+Weighted29.olean: OK
+'Graffiti384b.TenPins.anchor_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.TenPins.secondary_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.TenPins.internal_tip' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.TenPins.join_tips' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.TenPins.local_link' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.TenPins.fork_tip' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.TenPins.exterior_cut' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.TenPins.missing_pin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.TenPins.high_triangle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.TenPins.thirty_one_nonleaves' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.TenPins.omit_sixteen' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fresh extension verified: 6 modules and 11 standard-axiom reports.

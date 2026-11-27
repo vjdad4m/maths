@@ -1,0 +1,54 @@
+=== DegreeFiveSurplus189 ===
+'Graffiti189LongestPath.CrossSaturation.Split.Five.right_cover_of_mixed_opposite_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.Split.Five.shore_sum_le_of_mixed_opposite_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.Split.Five.no_bridge_four_shore_needs_two_inner' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.Split.Five.no_eight_seven_at_distance_three_cut' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.no_eight_seven_at_actual_five_distance_three_cut' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== DegreeFiveEightSix189 ===
+'Graffiti189LongestPath.CrossSaturation.Split.Five.no_bridge_b_shore_card_cost' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.Split.Five.no_eight_six_at_distance_three_cut' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.no_eight_six_at_actual_five_distance_three_cut' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== DegreeFiveDistanceTwoComponents189 ===
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.two_ports_of_nonsingleton' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.foreign_ports_le_five_at_common' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.component_card_le_three_at_five_distance_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== DegreeFiveDistanceTwoSingleton189 ===
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.order_le_sixteen_of_degree_two_root' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.order_le_sixteen_of_three_shores_one_singleton' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== DegreeFiveDistanceTwoSingletonClose189 ===
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.traceable_of_three_shores_one_singleton' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== DegreeFiveDistanceTwoThreeClose189 ===
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.singleton_of_three_at_five_distance_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.traceable_of_three_shores_at_five_distance_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

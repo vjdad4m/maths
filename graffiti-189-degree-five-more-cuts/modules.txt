@@ -1,0 +1,6 @@
+DegreeFiveSurplus189
+DegreeFiveEightSix189
+DegreeFiveDistanceTwoComponents189
+DegreeFiveDistanceTwoSingleton189
+DegreeFiveDistanceTwoSingletonClose189
+DegreeFiveDistanceTwoThreeClose189

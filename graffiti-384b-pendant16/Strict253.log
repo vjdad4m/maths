@@ -1,0 +1,28 @@
+Pendant build /workspace/scratch/7efa613b1c05/graff384b-pendant16-astra/.pendant.g43fofPk
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+graff384b-weighted29-sources.zip: OK
+PendantSample.lean: OK
+PendantBound.lean: OK
+graff384b-weighted29/CHECKED-OBJECTS.sha256: OK
+graff384b-weighted29/NEW-SOURCES.sha256: OK
+graff384b-weighted29/README.md: OK
+graff384b-weighted29/RankRepair29.lean: OK
+graff384b-weighted29/SOURCES.sha256: OK
+graff384b-weighted29/Strict251.log: OK
+graff384b-weighted29/Weighted29.lean: OK
+graff384b-weighted29/audit.py: OK
+graff384b-weighted29/replay.sh: OK
+graff384b-ports29/graff384b-ports29-sources.zip: OK
+Complete weighted repair replay verified: 251 graph modules and 606 axiom reports.
+Fresh extension verified: 2 modules and 12 standard-axiom reports.
+PortFrame29.olean: OK
+PortClique29.olean: OK
+PortRepair29.olean: OK
+Weighted29.olean: OK
+RankRepair29.olean: OK
+'Graffiti384b.Pendant16.trial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Pendant16.ranked' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Pendant16.pool_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Pendant16.pendant_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Pendant16.adjacent_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+Pendant-triangle extension verified: 2 modules, 5 standard-axiom reports.

@@ -1,0 +1,8 @@
+791 5550b3d6: proposed; source-record touches 630; no Lean statement or proof.
+2732 81cb4a70: proposed; source-record touches 584; no Lean statement or proof.
+3754 27dd6555: proposed; source-record touches 0; no Lean statement or proof.
+5177 8fc5440b: proposed; source-record touches 0; no Lean statement or proof.
+4776 released graph6 encodings; cubic numeric checks: {'eligible': 118, 'from_refutations': 31, 'labeling_and_count': 110, 'both_optimizers': 3, 'labeling_and_exact_matching': 5}
+Violations in released encodings: []
+Public compute_battery witness row: {'order': np.int64(20), 'nontrivial': np.True_, 'connected': np.True_, 'cubic': np.True_, 'three_rainbow_domination_number': np.int64(13), 'min_maximal_matching_number': np.int64(6)}
+Witness graph6: S????B?gJ?K@E?D?`O?Q@@_?D?K_??E?C

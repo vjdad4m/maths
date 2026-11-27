@@ -1,0 +1,6 @@
+# Degree-five distance-two shore bounds and eight-vertex routing
+
+Scope: (1) A root on one component two steps from each cut vertex leaves at most three slots for opposite nonporters in the union of the local distance-two shells. If there is also a common porter in the root component and exactly five opposite ports, the opposite component has at most eight vertices. (2) Any all-high eight-vertex component with exclusive contact counts 2 and 3 admits a Hamilton path inside that component between the two different contact colors. The latter uses auxiliary only-nonport Ore completion and a tiny fixed certificate with 20 explicit paths; the metric is never evaluated in the completed graph. These ingredients do not claim all balanced (3,3) instances or the conjecture are settled.
+
+
+Build the seven source files in `modules.txt` order on Lean 4.19.0 with pinned Mathlib v4.19.0. Set `LEAN_PATH` to include the objects from the [degree-five cuts package](../graffiti-189-degree-five-cuts/) and [terminal Ore closure](../graffiti-189-closure-full/TerminalOreClosure189.lean). Use `-j1 -s 65536 -DElab.async=false -DwarningAsError=true` and compile each object into a shared object directory on the path. The source hashes and recorded audit are included.

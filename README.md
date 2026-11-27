@@ -149,6 +149,7 @@
 | AutoGraphForge line 1078 | Proved in Lean; sharp at every positive regular degree | [Proof](autographforge-1078/) |
 | AutoGraphForge line 1080 | Disproved (singleton rainbow convention) | [Lean](autographforge-1080/AutoGraphForge1080.lean) |
 | AutoGraphForge line 1121 | Proved in Lean by a sharp Hall matching bound | [Proof](autographforge-1121/) |
+| AutoGraphForge line 1125 | Proved in Lean (hereditary claw/bull characterization) | [Proof](autographforge-1125/README.md) |
 | AutoGraphForge line 1128 | Proved on GraphCalc's numerical triameter domain | [Lean](autographforge-cograph/CographRadius.lean) · [Conventions and replay](autographforge-cograph/README.md) |
 | AutoGraphForge line 1130 | Disproved in Lean by C160; upstream implicit witness also exists | [Proof](autographforge-1130/) |
 | AutoGraphForge line 1160 | Disproved in Lean by a 22-vertex cubic graph; exact perfect-matching criterion | [Proof](autographforge-1160/) |

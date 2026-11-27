@@ -1,0 +1,21 @@
+Pendant-donor replay <workspace>/graff384b-donors-astra/packed-check/graff384b-donors-astra/.pendant-donor.xjkgmohc
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+Mathlib c44e0c8ee63ca166450922a373c7409c5d26b00b
+Verified quota-ear source archive and delivery manifest; matched 171 compiled-object hashes
+'Graffiti384b.pair_repair_saves' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.batch_repair_saves' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Donor.loss_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Donor.total_loss' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Donor.batch_at_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Donor.pair_at_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Donor.zero_fixed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Donor.one_fixed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Donor.incidence_at_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Donor.four_classes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Donor.small_samples' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Donor.sample26' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Donor.pendant_sample' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Donor.low_neighbors' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Donor.pendant_at_floor_five' depends on axioms: [propext, Classical.choice, Quot.sound]
+Verified 10 fresh modules and 15 standard-axiom reports.
+Verified exact oriented-pair incidence counts, critical-budget sample existence, and three pendant-triangle regimes at diversity 29.

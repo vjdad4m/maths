@@ -1,0 +1,14 @@
+FullMaskCover
+Rows25
+Rows34
+TwinReduction
+InducedBudget
+UniformProfiles
+TwinTransfer25
+Conclusion25
+Placement25
+Conclusion34
+Placement34
+GapSevenBound
+TwinMinimum
+ChartMinimum

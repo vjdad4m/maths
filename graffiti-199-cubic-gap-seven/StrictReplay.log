@@ -1,0 +1,59 @@
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+Mathlib revision c44e0c8ee63ca166450922a373c7409c5d26b00b
+Using 71 source-hash-checked project dependencies.
+Checking FullMaskCover.lean
+Checking Rows25.lean
+'Graffiti199Depleted.WiderOmission.classification25' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti199Depleted.WiderOmission.family25_consistent' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking Rows34.lean
+'Graffiti199Depleted.WiderOmission.classification34' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti199Depleted.WiderOmission.family34_consistent' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking TwinReduction.lean
+'Graffiti199Depleted.AdjacentTwins.traceable_of_delete' depends on axioms: [propext, Quot.sound]
+'Graffiti199Depleted.PathOn.delete_before_twin' depends on axioms: [propext, Quot.sound]
+Checking InducedBudget.lean
+'Graffiti199Depleted.Catalogue.treeNumber_induce_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking UniformProfiles.lean
+'Graffiti199Depleted.WiderOmission.twins_of_uniform_flank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti199Depleted.WiderOmission.twins_from_23_chart' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti199Depleted.WiderOmission.twins_from_24_chart' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking TwinTransfer25.lean
+'Graffiti199Depleted.WiderOmission.twins_of_first25' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti199Depleted.WiderOmission.twins_of_second25' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti199Depleted.WiderOmission.traceable_of_twins25' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking Conclusion25.lean
+'Graffiti199Depleted.WiderOmission.traceable_of_layout25' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking Placement25.lean
+'Graffiti199Depleted.WiderOmission.traceable_of_gaps_two_five' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti199Depleted.WiderOmission.traceable_of_gaps_five_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking Conclusion34.lean
+'Graffiti199Depleted.WiderOmission.traceable_of_layout34' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking Placement34.lean
+'Graffiti199Depleted.WiderOmission.traceable_of_gaps_three_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti199Depleted.WiderOmission.traceable_of_gaps_four_three' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking GapSevenBound.lean
+'Graffiti199Depleted.WiderOmission.sum_intervening_at_least_six' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti199Depleted.ContractedEdge.minimum_cubic_edge_total_gap_eight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking TwinMinimum.lean
+'Graffiti199Depleted.AdjacentTwins.connectivity_delete' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti199Depleted.AdjacentTwins.traceable_of_minimum' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking ChartMinimum.lean
+'Graffiti199Depleted.WiderOmission.traceable_of_minimum_23_chart' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti199Depleted.WiderOmission.traceable_of_minimum_24_chart' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Strict total-gap-seven replay passed.

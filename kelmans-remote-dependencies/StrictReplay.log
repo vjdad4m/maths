@@ -1,0 +1,106 @@
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+'KelmansCactus.AtomicBridge.TwinObstruction.no_two_deleted_fixed_swap_mono' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.TwinObstruction.no_triangle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.TwinObstruction.partner_has_exclusive_exterior_neighbor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.TwinObstruction.no_center_fixed_swap_mono' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.TwinObstruction.cut_le_exposed_vertices' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.TwinObstruction.no_three_common_neighbors' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.TwinObstruction.no_equal_neighborhoods' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.SquareCap.split_budget_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.SquareCap.no_two_bad_coordinate_splits' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.SquareCap.attach_boundary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.SquareCap.outside_law_of_attachment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.SquareCap.bad_cap_forces_two_split' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.SquareCap.exists_good_coordinate_cap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.SquareCap.attach_degree_outside' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.SquareCap.attach_degree_inside' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.SquareCap.cap_cubic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.SquareCap.min_three_of_small_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.SquareCap.cubic_good_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.SquareCap.three_connected_of_small_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.SquareCap.zone_cut_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.SquareCap.crossing_two_lower_tight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.SquareCap.no_crossing_two_rigid_zones' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.SquareCap.square_root_tile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.SquareCap.square_f2_explicit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.SquareCap.exterior_factors_of_t2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.SquareCap.square_root_deletion_avoids_all_wires' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteVacancyReach.search_complete' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteVacancyReach.cleanup_lower_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteMonotoneRank.reduce_iff_ranked' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteMonotoneRank.target_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteMonotoneCompletion.monotone_completion_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteMonotoneCompletion.shorten_route' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteMonotoneCompletion.least_route_length' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteMonotoneCompletion.one_cleanup_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteMonotoneCompletion.route_card' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteMonotoneDependencies.exact_residual' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteMonotoneDependencies.monotone_iff_stuck_card' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteMonotoneShape.blocker_unique' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteMonotoneShape.matched_predecessor_unique' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteMonotoneShape.monotone_cleanup_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteVacancySeparation.separation_forces_changes' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteVacancySeparation.one_cleanup_separation_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteVacancySeparationMetric.distance_requires_slides' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

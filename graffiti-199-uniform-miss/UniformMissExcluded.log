@@ -1,0 +1,8 @@
+'Graffiti199Depleted.Catalogue.Incomplete.SingletonCut.no_nonsingleton_uniform_miss' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti199Depleted.Catalogue.Incomplete.catalogue_minimum_miss_hub_exclusion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti199Depleted.Catalogue.Incomplete.NoncliqueExample.fixture_missed_edge_and_nonedge' depends on axioms: [propext,
+ Quot.sound]

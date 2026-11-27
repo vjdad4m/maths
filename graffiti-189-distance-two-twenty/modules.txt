@@ -1,0 +1,7 @@
+DegreeFiveTwoCutEvenCover189
+DegreeFiveSharedPortCount189
+DegreeFiveExclusiveGateway189
+DegreeFiveDistanceTwoTwenty189
+DegreeFiveLonelyPortGeometry189
+DegreeFiveTwoExclusivePath189
+DegreeFiveSmallExclusiveFull189

@@ -1,0 +1,7 @@
+# Graffiti.pc #189: order twenty and the small exclusive component
+
+Consider the degree-five #189 hypotheses and a cut of two vertices at distance two whose deletion leaves exactly two components. Lean proves that the ambient graph has at most 20 vertices. If just one component contains a common neighbor of the cut vertices, the bound sharpens to 19 when the other component has at least four vertices adjacent to the cut, or 16 when it has at most three. [Exact main order bound](DegreeFiveDistanceTwoTwenty189.lean)
+
+The at-most-three exclusive-contact case is settled, not just bounded. The cases with fewer than two contacts are excluded by connectivity, and exactly three contacts are impossible. With exactly two, the common-neighbor component is a four-clique, and the other is a six-clique with the edge between the two exclusive contacts missing. Lean constructs a Hamiltonian path in the actual graph. [Exact branch closure](DegreeFiveSmallExclusiveFull189.lean) · [Structure and path](DegreeFiveTwoExclusivePath189.lean)
+
+The four-/five-contact exclusive branches and the branch where both components have common neighbors are not covered by the path theorem. The full conjecture remains open. The new modules passed strict Lean 4.19.0 replay using only standard axioms. Build the [degree-five cuts](../graffiti-189-degree-five-cuts/), [additional cuts](../graffiti-189-degree-five-more-cuts/), [closure geometry](../graffiti-189-closure-full/), and [unique-common exclusion](../graffiti-189-unique-exclusion/) dependencies first. Then follow `modules.txt`.

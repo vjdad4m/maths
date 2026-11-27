@@ -16,6 +16,7 @@
 | Graffiti.pc #166 | Disproved | [Lean](graffiti-166/Counterexample166.lean) |
 | Graffiti.pc #169 | Proved (order ≥ 2); singleton depends on leaf convention | [Lean](graffiti-169/Proof169.lean) · [Write-up](graffiti-169/README.md) · [Earlier written proof](https://github.com/f8bsd9yqgp-maker/Solved-conjectures-/blob/03b6cd13bac0975fb554633e47a30c64cbf6a1bf/proofs/graffiti-pc-169/README.md) |
 | Graffiti.pc #177 | Proved | [Lean](graffiti-177/Proof177.lean) · [Shorter Lean proof](graffiti-177/Short177.lean) · [Tree equality](graffiti-177/TreeEquality.lean) |
+| Graffiti.pc #179 | Proved (displayed minimum-degree version); maximum-degree version unresolved here | [Lean](graffiti-179/Proof179.lean) · [Write-up](graffiti-179/README.md) |
 | Graffiti.pc #186 | Disproved | [Lean](graffiti-186/Counterexample186.lean) |
 | Graffiti.pc #189 | Unresolved here |  |
 | Graffiti.pc #199 | Unresolved here |  |

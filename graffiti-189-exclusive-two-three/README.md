@@ -1,0 +1,7 @@
+# Graffiti.pc #189: exclusive 2+3 versus any common-shore profile
+
+This theorem concerns an actual 2-vertex cut at distance two with two shores. One shore has at least two common neighbors of the cut vertices. In the other shore every contact touches only one cut vertex, with two contacts to the first and three to the second. Under the degree-five and even-distance conditions, the desired result is a spanning path in the original graph. The proof reduces the common shore contact counts to 3 or 4 for each color, then dispatches the four oriented cases. It does not cover cuts with common ports on both shores, other exclusive distributions, or the general conjecture.
+
+The Lean theorem is `traceable_of_exclusive_two_three_opposite_common`. The proof closes both the reverse alignment and the common shore with four contacts in each color, then combines all four profiles. It relies on the previously checked [(3,3)](../graffiti-189-balanced-three-three/) and [(3,4)](../graffiti-189-balanced-three-four/) results.
+
+Use Lean 4.19.0 and pinned Mathlib v4.19.0. First build the prerequisites listed in those two packages, including the earlier degree-five cut sources, with the resulting objects on the search path. Compile the source files in `modules.txt` order with `-j1 -s 65536 -DElab.async=false -DwarningAsError=true`. The strict integration replay passed for the complete dispatcher, contact range, reverse alignment, and four-four route, with only propext, Classical.choice, and Quot.sound.

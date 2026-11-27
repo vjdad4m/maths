@@ -1,0 +1,144 @@
+
+private theorem saturated_inactive_core
+    (hc : G.Connected) (even : ∀ v,(EvenFrom G v).card≤5)
+    (conn : ∀ S : Finset V,S.card<2 → (G.induce ((↑S : Set V)ᶜ)).Connected)
+    (degree : ∀ u v : V,u≠v → 4≤G.degree u ∨ 4≤G.degree v)
+    {a b : V} {p : G.Walk a b} (hp : EdgeOptimal p) (ah : 4≤G.degree a) (bh : 4≤G.degree b)
+    (len : p.length=8) (lower : 2≤((univ : Finset V)\p.support.toFinset).card)
+    (upper : ((univ : Finset V)\p.support.toFinset).card≤7) :
+    ∃ x y : V, x∉p.support ∧ y∉p.support ∧ x≠y ∧ Pins p x={1} ∧ Pins p y={7} ∧
+      G.Adj a (p.getVert 6) ∧
+      (∀ z∉p.support,z≠x → z≠y → Pins p z=∅ ∧ G.Adj x z ∧ G.Adj y z) := by
+  classical
+  obtain ⟨few,ends⟩ := length_eight_pins hc even conn degree hp ah bh len
+  obtain ⟨H,whole⟩ := saturated_component_order_at_most_seven conn degree hp.1 len lower upper few
+  obtain ⟨x,y,xo,yo,xy,pi,pj,chord,none⟩ :=
+    saturated_ports_if_connected hc even conn degree hp ah bh len H whole
+  have large : 3≤Fintype.card V := by
+    have n := card_le_card (subset_univ p.support.toFinset)
+    rw [List.toFinset_card_of_nodup hp.1.1.support_nodup,length_support,card_univ] at n
+    omega
+  have a1 : 1∈Pins p x := by simp [pi]
+  have a7 : 7∈Pins p y := by simp [pj]
+  obtain ⟨abound,acond⟩ := saturated_omittedD2_left hc even hp.1 len xo pi a7 ends
+  have ep : EdgeOptimal p.reverse := same_support_optimal hp (reverse_long hp.1) (by intro z; simp)
+  have lr : p.reverse.length=8 := by simpa using len
+  have xr : x∉p.reverse.support := by simpa using xo
+  have yr : y∉p.reverse.support := by simpa using yo
+  have r1 : 1∈Pins p.reverse y := by
+    have h := reverse_pin hp.1 yo a7
+    rwa [show p.length-7=1 by omega] at h
+  have r7 : 7∈Pins p.reverse x := by
+    have h := reverse_pin hp.1 xo a1
+    rwa [show p.length-1=7 by omega] at h
+  obtain ⟨fewR,endsR⟩ := length_eight_pins hc even conn degree ep bh ah lr
+  have rp : Pins p.reverse y={1} := (eq_of_subset_of_card_le (singleton_subset_iff.mpr r1)
+    (by simpa using fewR y yr)).symm
+  obtain ⟨b0,b1⟩ := saturated_omittedD2_left hc even ep.1 lr yr rp r7 endsR
+  have bound : (omittedD2 p y).card≤1 := by simpa [omittedD2,support_reverse] using b0
+  have cond (adj : G.Adj y x) : (omittedD2 p y).card=0 := by
+    simpa [omittedD2,support_reverse] using b1 adj
+  have allx := saturated_active_sees_inactive hc conn degree large hp.1 H whole xo yo xy
+    few none upper abound bound acond
+  have ally := saturated_active_sees_inactive hc conn degree large hp.1 H whole yo xo xy.symm
+    few (fun z zo zy zx => none z zo zx zy) upper bound abound cond
+  exact ⟨x,y,xo,yo,xy,pi,pj,chord,fun z zo zx zy => ⟨none z zo zx zy,allx z zo zx zy,ally z zo zy zx⟩⟩
+
+private theorem saturated_core_degree_profile
+    (hc : G.Connected) (even : ∀ v,(EvenFrom G v).card≤5)
+    {a b x y : V} {p : G.Walk a b} (hp : IsLongest p) (len : p.length=8)
+    (xo : x∉p.support) (yo : y∉p.support) (xy : x≠y)
+    (pinx : Pins p x={1}) (piny : Pins p y={7})
+    (all : ∀ z∉p.support,z≠x → z≠y → Pins p z=∅ ∧ G.Adj x z ∧ G.Adj y z)
+    (off : 6≤((univ : Finset V)\p.support.toFinset).card) :
+    let K := (((univ : Finset V)\p.support.toFinset).erase x).erase y
+    ∀ z∈K, 1≤(G.neighborFinset z ∩ K).card ∧
+      (4≤G.degree z → 2≤(G.neighborFinset z ∩ K).card) := by
+  classical
+  dsimp only
+  let O := (univ : Finset V)\p.support.toFinset
+  let K := (O.erase x).erase y
+  have out {z : V} : z∈O ↔ z∉p.support := by simp [O]
+  have xO := out.mpr xo
+  have yO := out.mpr yo
+  have yE : y∈O.erase x := mem_erase.mpr ⟨xy.symm,yO⟩
+  have kp : 4≤K.card := by
+    change 4≤((O.erase x).erase y).card
+    rw [card_erase_of_mem yE,card_erase_of_mem xO]
+    have h : 6≤O.card := off
+    omega
+  have unpack {z : V} (zm : z∈K) : z∉p.support ∧ z≠x ∧ z≠y := by
+    obtain ⟨zy,ho⟩ := mem_erase.mp zm
+    obtain ⟨zx,h⟩ := mem_erase.mp ho
+    exact ⟨out.mp h,zx,zy⟩
+  intro z hm
+  have zm : z∈K := hm
+  obtain ⟨zo,zx,zy⟩ := unpack zm
+  obtain ⟨pins,xz,yz⟩ := all z zo zx zy
+  have zx' := xz.symm
+  have zy' := yz.symm
+  let R := G.neighborFinset z ∩ K
+  have eq : omittedNeighbors p z=insert x (insert y R) := by
+    ext w
+    constructor
+    · intro wm
+      by_cases wx : w=x
+      · exact mem_insert.mpr (.inl wx)
+      by_cases wy : w=y
+      · exact mem_insert.mpr (.inr (mem_insert.mpr (.inl wy)))
+      have wK : w∈K := mem_erase.mpr ⟨wy,mem_erase.mpr ⟨wx,out.mpr (mem_filter.mp wm).2⟩⟩
+      exact mem_insert.mpr (.inr (mem_insert.mpr (.inr (mem_inter.mpr ⟨(mem_filter.mp wm).1,wK⟩))))
+    · intro wm
+      rcases mem_insert.mp wm with r|rr
+      · subst w
+        exact mem_filter.mpr ⟨(mem_neighborFinset G z x).mpr zx',xo⟩
+      rcases mem_insert.mp rr with r|rr
+      · subst w
+        exact mem_filter.mpr ⟨(mem_neighborFinset G z y).mpr zy',yo⟩
+      exact mem_filter.mpr ⟨(mem_inter.mp rr).1,(unpack (mem_inter.mp rr).2).1⟩
+  have nx : x∉insert y R := by
+    intro h
+    rcases mem_insert.mp h with he|he
+    · exact xy he
+    · exact (unpack (mem_inter.mp he).2).2.1 rfl
+  have ny : y∉R := fun h => (unpack (mem_inter.mp h).2).2.2 rfl
+  have dz := omittedDegree_eq hp zo
+  rw [pins,card_empty,Nat.zero_add,eq,card_insert_of_not_mem nx,card_insert_of_not_mem ny] at dz
+  change 1≤R.card ∧ (4≤G.degree z → 2≤R.card)
+  refine ⟨?_,by omega⟩
+  by_contra! no
+  have rzero : R=∅ := card_eq_zero.mp (by omega)
+  have px : G.Adj x (p.getVert 1) := (pin_data (show 1∈Pins p x by simp [pinx])).2
+  have py : G.Adj y (p.getVert 7) := (pin_data (show 7∈Pins p y by simp [piny])).2
+  have nP {i : ℕ} (il : i<p.length) : ¬G.Adj z (p.getVert i) := by
+    intro e
+    have zz : i∈Pins p z := mem_filter.mpr ⟨mem_range.mpr il,e⟩
+    rw [pins] at zz
+    exact not_mem_empty _ zz
+  have d21 : p.getVert 1∈DistanceTwo G z := mem_distanceTwo.mpr (dist_two hc
+    (fun e => zo (e.symm ▸ p.getVert_mem_support _)) (nP (by omega)) zx' px)
+  have d27 : p.getVert 7∈DistanceTwo G z := mem_distanceTwo.mpr (dist_two hc
+    (fun e => zo (e.symm ▸ p.getVert_mem_support _)) (nP (by omega)) zy' py)
+  have sub : K.erase z⊆DistanceTwo G z := by
+    intro w wm
+    obtain ⟨wz,wK⟩ := mem_erase.mp wm
+    obtain ⟨wo,wx,wy⟩ := unpack wK
+    have xw := (all w wo wx wy).2.1
+    have ban : ¬G.Adj z w := by
+      intro e
+      have en : w∈R := mem_inter.mpr ⟨(mem_neighborFinset G z w).mpr e,wK⟩
+      rw [rzero] at en
+      exact not_mem_empty _ en
+    exact mem_distanceTwo.mpr (dist_two hc wz.symm ban zx' xw)
+  have p7K : p.getVert 7∉K.erase z := fun h =>
+    (unpack (mem_erase.mp h).2).1 (p.getVert_mem_support 7)
+  have p1K : p.getVert 1∉insert (p.getVert 7) (K.erase z) := by
+    intro h
+    rcases mem_insert.mp h with g|g
+    · have hd := hp.1.getVert_injOn (show 1≤p.length by omega) (show 7≤p.length by omega) g
+      omega
+    · exact (unpack (mem_erase.mp g).2).1 (p.getVert_mem_support 1)
+  have c := card_le_card (insert_subset d21 (insert_subset d27 sub))
+  rw [card_insert_of_not_mem p1K,card_insert_of_not_mem p7K,card_erase_of_mem zm] at c
+  have cap := distanceTwo_le_of_even 4 z (even z)
+  omega

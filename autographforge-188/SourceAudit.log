@@ -1,0 +1,4 @@
+Physical row 188, ec83a5d2, proposed. Normalized touches 548, CEGIS touches 1714.
+4776 distinct released encodings, exhaustive row-domain check [('disconnected', 643), ('eligible', 1334), ('in refutation files', 96), ('needs two in a component', 162), ('with isolates', 421)]
+Public battery (order, nontrivial, connected, cograph, power, two-forcing) [(6, True, True, True, 2, 2), (8, True, False, True, 4, 4), (5, True, True, False, 1, 1)]
+K3,3 three-forcing number 1

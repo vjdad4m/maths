@@ -1,0 +1,7 @@
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+'CographForcing188.active_in_component' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CographForcing188.small_shore' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CographForcing188.convert_components' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CographForcing188.comparison' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CographForcing188.row188' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CographForcing188.Sharp.sharp' depends on axioms: [propext, Classical.choice, Quot.sound]

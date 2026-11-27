@@ -1,0 +1,70 @@
+Lean 4.19.0 (commit 6caaee842e94); warnings as errors; fixture modules rebuilt individually.
+
+=== DiagonalMixed54Core ===
+'KelmansCactus.AtomicBridge.DiagonalMixed54.core_cube' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS
+
+=== DiagonalMixed54Ranks ===
+'KelmansCactus.AtomicBridge.DiagonalMixed54.mate_involutive' depends on axioms: [propext, Quot.sound]
+PASS
+
+=== DiagonalMixed54RanksGeometry ===
+'KelmansCactus.AtomicBridge.DiagonalMixed54.mate_adjacent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.DiagonalMixed54.no_charges' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.DiagonalMixed54.genuine_release' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.DiagonalMixed54.exchange_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS
+
+=== DiagonalMixed54Union ===
+'KelmansCactus.AtomicBridge.DiagonalMixed54.adjacency_respects_seal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.DiagonalMixed54.sealed_orders' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.DiagonalMixed54.pair_union_no_factor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.DiagonalMixed54.rank_no_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.DiagonalMixed54.locked_phases' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.DiagonalMixed54.two_bad_residues' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS
+
+=== DiagonalMixed54Ambient ===
+'KelmansCactus.AtomicBridge.DiagonalMixed54.ambient_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS
+
+=== RemoteNumericHandle ===
+'KelmansCactus.AtomicBridge.RemoteNumericHandle.step' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS
+
+=== RemoteNumericHandleChecks ===
+'KelmansCactus.AtomicBridge.RemoteNumericHandleChecks.select' depends on axioms: [propext]
+'KelmansCactus.AtomicBridge.RemoteNumericHandleChecks.relabel' depends on axioms: [propext, Quot.sound]
+PASS
+
+=== DiagonalMixed54HandleChain1 ===
+PASS
+
+=== DiagonalMixed54HandleChain2 ===
+PASS
+
+=== DiagonalMixed54HandleChain3 ===
+PASS
+
+=== DiagonalMixed54HandleChain4 ===
+PASS
+
+=== DiagonalMixed54Domain ===
+'KelmansCactus.AtomicBridge.DiagonalMixed54.host_three_connected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.DiagonalMixed54.exact_board' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.DiagonalMixed54.wide' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS
+
+=== DiagonalMixed54ThirdRank ===
+'KelmansCactus.AtomicBridge.DiagonalMixed54.other_involutive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.DiagonalMixed54.other_no_charge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.DiagonalMixed54.other_rank_factors' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS

@@ -1,0 +1,61 @@
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+src/RemotePortCapacity.lean: OK
+fixtures/DiagonalMixed54Ambient.lean: OK
+fixtures/DiagonalMixed54Core.lean: OK
+fixtures/DiagonalMixed54Domain.lean: OK
+fixtures/DiagonalMixed54HandleChain1.lean: OK
+fixtures/DiagonalMixed54HandleChain2.lean: OK
+fixtures/DiagonalMixed54HandleChain3.lean: OK
+fixtures/DiagonalMixed54HandleChain4.lean: OK
+fixtures/DiagonalMixed54Ranks.lean: OK
+fixtures/DiagonalMixed54RanksGeometry.lean: OK
+fixtures/DiagonalMixed54ThirdRank.lean: OK
+fixtures/DiagonalMixed54Union.lean: OK
+fixtures/RemoteNumericHandle.lean: OK
+fixtures/RemoteNumericHandleChecks.lean: OK
+
+=== SquareCapGeometry ===
+'KelmansCactus.AtomicBridge.SquareCap.split_budget_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.SquareCap.no_two_bad_coordinate_splits' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.SquareCap.attach_boundary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.SquareCap.outside_law_of_attachment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.SquareCap.bad_cap_forces_two_split' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.SquareCap.exists_good_coordinate_cap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.SquareCap.attach_degree_outside' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.SquareCap.attach_degree_inside' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.SquareCap.cap_cubic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.SquareCap.min_three_of_small_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.SquareCap.cubic_good_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.SquareCap.three_connected_of_small_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.SquareCap.zone_cut_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.SquareCap.crossing_two_lower_tight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.SquareCap.no_crossing_two_rigid_zones' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== SquareCapFactor ===
+'KelmansCactus.AtomicBridge.SquareCap.square_root_tile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.SquareCap.square_f2_explicit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.SquareCap.exterior_factors_of_t2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.SquareCap.square_root_deletion_avoids_all_wires' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RemotePortCapacity ===
+'KelmansCactus.AtomicBridge.RemotePortCapacity.residue_capacity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

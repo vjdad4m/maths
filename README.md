@@ -150,6 +150,7 @@
 | AutoGraphForge line 1839 | Disproved | [Lean](autographforge-365/AutoGraphForgeDiamonds.lean) |
 | AutoGraphForge line 1883 | Disproved (singleton rainbow convention) | [Lean](autographforge-1883/AutoGraphForge1883.lean) |
 | AutoGraphForge line 1889 | Disproved | [Lean](autographforge-shared-hub/SharedHub.lean) · [Replay](autographforge-shared-hub/README.md) |
+| AutoGraphForge line 1891 | Disproved in Lean by C43; upstream implicit witness also exists | [Proof](autographforge-1891/) |
 | AutoGraphForge line 1904 | Disproved | [Lean](autographforge-balanced-forcing/BalancedForcing.lean) |
 | AutoGraphForge line 1908 | Disproved | [Lean](autographforge-303/AutoGraphForgePlanar.lean) |
 | AutoGraphForge line 1915 | Disproved; unbounded gap on triangle chains | [Lean](autographforge-1915/TriangleChain.lean) · [Replay](autographforge-1915/README.md) |

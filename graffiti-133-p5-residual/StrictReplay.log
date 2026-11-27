@@ -1,0 +1,45 @@
+=== P5NestedDomRadius133 ===
+'Graffiti133P5Radius.radius_at_most_four_of_nested_p5_free' depends on axioms: [propext, Classical.choice, Quot.sound]
+=== P5NestedC7Radius133 ===
+'Graffiti133P5Radius.radius_at_most_four_of_p7_free_core_dominating_C7' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti133P5Radius.radius_five_has_dominating_C9' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti133P5Radius.radius_at_least_five_no_p9_mean_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+=== P9FreeC4FreeRadius133 ===
+'Graffiti133P5Radius.dominating_nine_radius_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti133P5Radius.no_induced_P9_C4free_radius_at_most_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== P5CoreShape133 ===
+'Graffiti133P5CoreShape.dominating_C5_spans_of_P5free' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti133P5CoreShape.p5free_C4free_clique_or_spanning_C5' depends on axioms: [propext, Classical.choice, Quot.sound]
+=== P5CoreCliqueFibers133 ===
+'Graffiti133P5CoreShape.p5free_C4free_core_shape' depends on axioms: [propext, Classical.choice, Quot.sound]
+=== P5CoreCliqueBound133 ===
+'Graffiti133P5CoreShape.clique_at_most_three_of_ordinary_C4_free' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== P5NestedHighMeanInnerShape133 ===
+'Graffiti133P5CoreShape.radius_four_residual_inner_shape' depends on axioms: [propext, Classical.choice, Quot.sound]
+=== P5CorePrivateLayers133 ===
+'Graffiti133P5CoreShape.connected_dominating_C5_erase_outside' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti133P5CoreShape.C5_two_layers_private' depends on axioms: [propext, Classical.choice, Quot.sound]
+=== P5PrivateAtlasRaw133 ===
+'Graffiti133P5PrivateAtlas.private_mask_necessary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti133P5PrivateAtlas.outer_row_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+=== P5PrivateAtlasMap133 ===
+'Graffiti133P5PrivateAtlas.ten_layer_fit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti133P5PrivateAtlas.fifteen_layer_fit' depends on axioms: [propext, Classical.choice, Quot.sound]
+=== P5PrivateAtlasGraph133 ===
+'Graffiti133P5PrivateAtlas.private_layers_config' depends on axioms: [propext, Classical.choice, Quot.sound]
+=== P5PrivateAtlasFinal133 ===
+'Graffiti133P5PrivateAtlas.nested_spanning_C5_private_atlas' depends on axioms: [propext, Classical.choice, Quot.sound]
+=== P5PrivateAtlasMatching133 ===
+'Graffiti133P5PrivateAtlas.petersen_outer_matching' depends on axioms: [propext, Classical.choice, Quot.sound]
+=== P5PrivateAtlasStrongFinal133 ===
+'Graffiti133P5PrivateAtlas.nested_spanning_C5_private_matching' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

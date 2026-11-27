@@ -1,0 +1,11 @@
+PatchRank180 Minimal180.OddBlock.patch_rank
+OddPatch180 Minimal180.OddBlock.sparse_block_odd_patch
+Seam180 Minimal180.OddBlock.locked_seam
+OddWing180 Minimal180.OddBlock.odd_block_alternative
+WingRank180 Minimal180.OddBlock.seam_rank_iff
+OddDeficit180 Minimal180.OddBlock.one_defect_pendant
+SeamBudget180 Minimal180.OddBlock.seam_tight_iff
+TightWing180 Minimal180.OddBlock.tight_wings
+WingCertificate180 Minimal180.OddBlock.pendant_excludes_first
+SeamFirst180 Minimal180.OddBlock.seam_first_iff
+OddCase12 Minimal180.OddBlock.case12_lower_block

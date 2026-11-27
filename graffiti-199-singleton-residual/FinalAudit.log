@@ -1,0 +1,14 @@
+traceable_of_three_or_more_components ['propext', 'Classical.choice', 'Quot.sound']
+SingletonCut.traceable_of_small_root ['propext', 'Classical.choice', 'Quot.sound']
+all_ports_have_rooted_four ['propext', 'Classical.choice', 'Quot.sound']
+SingletonCut.quartet_contacts ['propext', 'Classical.choice', 'Quot.sound']
+SingletonCut.port_miss_dichotomy ['propext', 'Classical.choice', 'Quot.sound']
+catalogue_minimum_singleton_profile ['propext', 'Classical.choice', 'Quot.sound']
+SingletonCut.exchange_unique_miss ['propext', 'Classical.choice', 'Quot.sound']
+SingletonCut.unique_miss_degree_and_contacts ['propext', 'Classical.choice', 'Quot.sound']
+SingletonCut.traceable_of_two_almost_complete ['propext', 'Classical.choice', 'Quot.sound']
+SingletonCut.port_pair_profile ['propext', 'Classical.choice', 'Quot.sound']
+catalogue_minimum_port_deficiency ['propext', 'Classical.choice', 'Quot.sound']
+SingletonCut.single_miss_core ['propext', 'Classical.choice', 'Quot.sound']
+132 sources matched compilation order and SHA-256 digests
+Strict clean-source replay, source-token audit, and final transitive axiom audit passed.

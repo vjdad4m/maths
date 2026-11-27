@@ -1,0 +1,23 @@
+Core-28 replay <workspace>/graff384b-core28/.core28.y5gamwk3
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+Mathlib c44e0c8ee63ca166450922a373c7409c5d26b00b
+Matched both frozen archives, 257 source hashes and 257 predecessor objects.
+'Graffiti384b.Core28.shore_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Core28.clique_scores' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Core28.budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Core28.small_score' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Core28.no_two_budgets' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Core28.no_proper_shore' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Core28.density_profile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Core28.connected_edges' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Core28.profile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Core28.original' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Core28.exact_of_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Core28.clique_contacts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.CorePair28.sample' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.CorePair28.shared_saving' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Core28.at_most_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Core28.original_clique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Core28.common_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Core28.exact_of_shared_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+Verified 9 fresh modules and 18 standard-axiom reports.

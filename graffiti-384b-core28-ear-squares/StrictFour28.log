@@ -1,0 +1,32 @@
+Four-28 replay <workspace>/graff384b-four28/.four28.gaao8wcd
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+Mathlib c44e0c8ee63ca166450922a373c7409c5d26b00b
+Matched the frozen core-28 archive, 266 source hashes and 266 predecessor objects.
+'Graffiti384b.Four28.pool_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Four28.charge_rows' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Four28.totals' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Four28.remote_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Four28.book_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Four28.remote_book' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Four28.fan_of_book' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Four28.forced_fan' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Four28.tips_unjoined' depends on axioms: [propext, Quot.sound]
+'Graffiti384b.Four28.wheel_blocker' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Four28.ear_fan' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Four28.two_blockers' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Four28.square_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Four28.square_sample' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Four28.trial_repair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Four28.pair_frequency' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Four28.repaired_sample' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Four28.square_saving_routes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Four28.cubic_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Four28.two_layout' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Four28.low_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Four28.quartic_link' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Four28.exact_low_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Four28.quartic_frontier' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Four28.exact_lone_quartic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Four28.original_fan' depends on axioms: [propext, Classical.choice, Quot.sound]
+Matched all 14 fresh object hashes.
+Verified 14 fresh modules and 26 standard-axiom reports.

@@ -23,3 +23,7 @@ Use Lean 4.19.0 with the Mathlib 4.19.0 build cache:
     lake env bash /path/to/maths/kelmans-affine-t2/replay.sh
 
 This builds the companion proofs and then the six added modules in a temporary directory with warnings treated as errors.
+
+## Fixed girth variant
+
+The implication also holds within any fixed girth threshold. [AffineGirth.lean](src/AffineGirth.lean) verifies that each cycle of the host gives a cycle in the cap of no greater length. A cycle that stays within one cell already belongs to the cap. For a crossing cycle, close an internal port-to-port segment through one or both restored root vertices; the host uses enough external edges to pay for that closure. Thus the host inherits the girth bound, and the same packing extraction applies. The exact statement is [`cyclic4_factor_at_girth_implies_t2`](src/CyclicT2Girth.lean), with the cycle formulation of the girth threshold checked in [the companion girth bridge](../kelmans-defect-cyclic/src/FourRingGirthGeometry.lean).

@@ -1,0 +1,30 @@
+# Graffiti.pc #199 — cubic insertion and order ten
+
+The main result is `Graffiti199Depleted.Catalogue.LargeCrossingFailure.traceable_of_order_le_ten` in `OrderTen.lean`. It assumes three-connectivity, largest induced tree order at most five, and a three-vertex cut with two different components of order at least three. It concludes that the graph has a Hamiltonian path whenever its order is at most ten. The result does not require minimum order or assumptions about the degrees of the cut vertices. The downstream `order_ge_eleven_of_crossing_failure` uses the published independent-cubic minimum-order reduction to rule out a crossing-failure counterexample of order at most ten in that branch.
+
+## Cubic insertion and routing
+
+- `PathRepair.lean` proves the replacement of the segment `s,y,z` in a Hamiltonian path of the deletion by `s,z,y,r` when `sz` exists and the old suffix can follow `r`. For a three-vertex path component `r,y,z` with cubic `r`, the flank lemma supplies `s,y,z` up to reversal. The three-cut and the degree condition force the replacement or force `r` and `z` to have precisely the same neighborhood, namely `y` and the two cut vertices other than `s`.
+- `TwinShoreRouting.lean` handles such a path component against every terminal pair actually supported by the opposite component. When the available pair consists of the two common neighbors, the resulting path visits the small component in two separate pieces. There is no assumption of universal terminal routing.
+- `ShoreIntervals.lean` proves that a blocked opposite component must occur in at least two intervals on every path spanning the cubic deletion. One internal interval gives a supported pair. One end interval leaves three neighbors of the omitted vertex on the path segment outside the opposite component, with only two eligible distinct successors.
+- `OppositeClaw.lean` gives a separate splice for a twin-ended path component opposite an induced claw. The two shared ports each miss at least one claw leaf, since seeing all three leaves and both path endpoints would give an induced six-vertex star. The missed leaves differ, because each leaf has at least two port contacts. The explicit splice uses the claw in two pieces.
+- `CompletePort.lean` proves that independent cubic vertices force at least one port complete to the cubic-ended three-vertex path component in the blocked case. This uses the fact that the middle vertex has degree at least four. `ResidualProfile.lean` packages these deductions for a minimum-order counterexample and the exact two-component cut. This case is outside the optional all-ports-miss-on-both-sides hypothesis.
+
+## Assembly at order ten
+
+There are two possibilities after deleting the three cut vertices. Two components of orders three and four may cover the remaining graph, or two order-three components may leave one singleton.
+
+1. `FourShoreModel.lean` checks the 64 labeled four-vertex adjacency masks. A connected mask is a claw, supports every internal spanning-path endpoint pair, supports one pair with internal degrees at most one and two, or supports a pair of internal degrees at most two that also reaches every other vertex through at least one spanning-path endpoint pair. The finite check uses kernel `decide`. `FourShoreRouting.lean` lifts the result to actual components. Hall is used when every internal endpoint pair is available. In the next class, the degree bounds ensure distinct port contacts. In the last class, no route would force every contact to lie at a single port, contrary to three-connectivity. Thus every connected four-vertex side is a claw or supports at least one terminal pair.
+2. `ThreePathWithRoute.lean` uses a supported pair on the opposite side of a three-vertex path. If no standard splice works, the two endpoints are forced to see the same pair, and the remaining port sees their middle. This enables the previous split-visit splice. `ClawViaCommonPort.lean` handles the opposite claw for both a clique and a three-vertex path. Two claw leaves share a port, since each sees at least two of the three ports. A route through the other two ports can be followed by a splice through two claw pieces. In the path case, failure of that route forces a shared pair at the two endpoints, so the separate twin-ended path and claw splice applies. `OrderTenTwoShores.lean` assembles the three-plus-four branch.
+3. `OrderTenSingleton.lean` joins two compatible terminal routes, starting at the singleton. A clique always provides the complementary pair by Hall. If both sides are three-vertex paths and neither contributes a compatible pair, four independent path endpoints all see the same two ports. The singleton is independent of those four vertices and adjacent to both ports. One of the ports is then the center of an induced six-vertex star.
+4. `OrderTen.lean` derives the two shapes directly from the actual cut component sizes and the order bound. It derives all three neighbors of the singleton from three-connectivity.
+
+The crossing-failure branch from order eleven onward and the full conjecture remain unresolved here.
+
+## Replay
+
+Run `bash graffiti-199-order-ten/replay.sh` from the repository root. It rebuilds the 13 package modules and all 62 previously published prerequisites, checking source hashes and treating warnings as errors. Set `GRAFF199_MATHLIB` to a built Mathlib checkout at revision `c44e0c8ee63ca166450922a373c7409c5d26b00b` and, if needed, `GRAFF199_LEAN_BIN` to the Lean 4.19.0 bin directory. An alternate repository checkout can be passed as the first argument. `PublishedSources.tsv` and `SourceManifest.tsv` record compile order, direct imports, and source hashes.
+
+`#print axioms` reports only `propext`, `Classical.choice`, and `Quot.sound` on the two order-ten theorems. The original strict source replay transcript is `StrictReplay.log`.
+
+[Published cubic-cut reduction](https://github.com/vjdad4m/maths/blob/main/graffiti-199-mixed-cubic-cut/MixedCutReduction.lean) · [Published crossing package](https://github.com/vjdad4m/maths/tree/main/graffiti-199-crossing-cut)

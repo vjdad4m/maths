@@ -1,0 +1,9 @@
+# Graffiti.pc #189: all 4+4 and 4+5 shared-attachment cuts
+
+Under the degree-five conjecture's parity and degree conditions, and connectivity after any single deletion, consider a distance-two cut into two components, each containing a common neighbor of the two cut vertices. If the components have 4+4 or 4+5 vertices attaching to the cut, the graph has a Hamiltonian path. Every positive shared count is allowed. The proof is structural and uses no graph enumeration. [Whole-graph theorem](src/DegreeFiveBothFourOrFiveUnsat189.lean)
+
+Together with the [5+5 theorem](../graffiti-189-both-five-shores/), this covers every both-common profile with at least four attachments per side, since the opposite common neighbor gives a bound of five. Cuts with a side of at most three attachments, articulation cases, and the general conjecture are not asserted here.
+
+The argument constructs paths inside the two components with compatible cut contacts. With few common neighbors the four-attachment component can use degree-sum closure within its own residual graph, or the five-attachment component supplies the two-terminal path. Closure always yields a path in the original graph before the paths are combined.
+
+Build the [4+5 three-shared](../graffiti-189-four-five-three-shared/), [4+5 order-fifteen](../graffiti-189-four-five-order-fifteen/), [5+5](../graffiti-189-both-five-shores/), and [terminal closure](../graffiti-189-closure-full/) packages with their documented dependencies. Check `sha256sum -c sources.sha256` and compile the ten modules in `modules.txt` order with Lean 4.19.0, pinned Mathlib commit `c44e0c8ee63ca166450922a373c7409c5d26b00b`, asynchronous elaboration disabled, and warnings as errors. Combined replay exited successfully; printed declarations depend only on propext, Classical.choice and Quot.sound.

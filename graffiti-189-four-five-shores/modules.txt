@@ -1,0 +1,10 @@
+ResidualConnectivity189
+DegreeFiveUniversalNonisolated189
+DegreeFiveFourOneTerminal189
+DegreeFiveNearAllPortTerminal189
+ResidualOreParam189
+DegreeFiveFourTwoTerminal189
+DegreeFiveBothFourFiveAll189
+DegreeFiveFourFourTerminal189
+DegreeFiveBothFourFourAll189
+DegreeFiveBothFourOrFiveUnsat189

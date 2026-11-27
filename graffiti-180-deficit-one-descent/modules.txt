@@ -1,0 +1,15 @@
+Spine180 Minimal180.DescentOne.failed_spine
+SpineTree180 Minimal180.DescentOne.spine_tree
+Unmarked180 Minimal180.DescentOne.unmarked_independent
+SpineBridge180 Minimal180.DescentOne.spine_bridge
+SpineLayers180 Minimal180.DescentOne.separated_layers
+SpineColor180 Minimal180.DescentOne.spine_color
+DeficitOneCut180 Minimal180.DescentOne.deficit_one_cut_gain
+TwoRigidity180 Minimal180.DescentOne.FailedTwo.rigid
+BalancedSpine180 Minimal180.DescentOne.FailedTwo.balanced_spine
+BalancedBridge180 Minimal180.DescentOne.FailedTwo.bridge
+RankTwoRoot180 Minimal180.DescentOne.rank_two_root
+RootPorts180 Minimal180.DescentOne.transition_gain
+MarkedFork180 Minimal180.DescentOne.marked_fork
+NoTightCut180 Minimal180.DescentOne.no_tight_cut_one
+BlockFamily180 Minimal180.DescentOne.conjecture180_on_family

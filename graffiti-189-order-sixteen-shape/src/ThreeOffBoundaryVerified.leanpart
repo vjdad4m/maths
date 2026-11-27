@@ -1,0 +1,542 @@
+private theorem endpoint_block_from_two_path_distances_at_pin_one
+    (hc : G.Connected)
+    {a b x : V} {p : G.Walk a b} (hp : IsLongest p)
+    (ah : 4≤G.degree a) (bh : 4≤G.degree b) (len : 6≤p.length)
+    (xo : x∉p.support) (h1 : 1∈Pins p x)
+    (small : ((DistanceTwo G a).filter (· ∈ p.support)).card≤2) :
+    ∃ t : ℕ, 5≤t ∧ t+1<p.length ∧
+      (∀ k : ℕ,3≤k → k≤t → G.Adj a (p.getVert k)) ∧
+      (∀ k : ℕ,k≤p.length → G.Adj a (p.getVert k) → k=1 ∨ (3≤k ∧ k≤t)) ∧
+      ¬G.Adj a b ∧ b∉DistanceTwo G a := by
+  classical
+  let D := (DistanceTwo G a).filter (· ∈ p.support)
+  change D.card≤2 at small
+  have vr {i j : ℕ} (ir : i≤p.length) (jr : j≤p.length) (ne : i≠j) :
+      p.getVert i≠p.getVert j := fun e => ne (hp.1.getVert_injOn ir jr e)
+  have na : ¬G.Adj a b := by
+    intro e
+    let k := p.length-1
+    have kl : k<p.length := by omega
+    have eq : k+1=p.length := by omega
+    have ea : G.Adj a (p.getVert (k+1)) := by rw [eq,p.getVert_length]; exact e
+    have eb := (p.adj_getVert_succ kl).symm
+    rw [eq,p.getVert_length] at eb
+    exact not_adj_both_end_marks hp xo (p.getVert_mem_support 1) (pin_data h1).2 kl ea eb
+  have aA : ¬G.Adj a (p.getVert 0) := by simp
+  have first : G.Adj a (p.getVert 1) := by simpa using p.adj_getVert_succ (i:=0) (by omega)
+  have nTwo : ¬G.Adj a (p.getVert 2) := start_not_adj_pin_successor hp xo h1
+  have mkD {i : ℕ} (ip : 0<i) (ir : i≤p.length)
+      (no : ¬G.Adj a (p.getVert i)) {j : ℕ} (adj : G.Adj a (p.getVert j))
+      (edge : G.Adj (p.getVert j) (p.getVert i)) : p.getVert i∈D :=
+    mem_filter.mpr ⟨mem_distanceTwo.mpr (dist_two hc (fun e => vr (i:=0) (Nat.zero_le _) ir
+      (by omega) (p.getVert_zero.trans e)) no adj edge),p.getVert_mem_support i⟩
+  have d2 : p.getVert 2∈D := mkD (by omega) (by omega) nTwo first
+    (p.adj_getVert_succ (i:=1) (by omega))
+  let A := (range (p.length+1)).filter (fun i => G.Adj a (p.getVert i))
+  have memA {i : ℕ} : i∈A ↔ i<p.length+1 ∧ G.Adj a (p.getVert i) := by simp [A]
+  have sa : A.Nonempty := ⟨1,memA.mpr ⟨by omega,first⟩⟩
+  let t := A.max' sa
+  have tm : t∈A := max'_mem A sa
+  have tb : t+1≤p.length := by
+    have b := memA.mp tm
+    by_contra! big
+    have eq : t=p.length := by omega
+    have q := b.2
+    rw [eq,p.getVert_length] at q
+    exact na q
+  have tmax {i : ℕ} (h : i∈A) : i≤t := le_max' A i h
+  have injectA : (A.image p.getVert).card=A.card := by
+    apply card_image_iff.mpr
+    intro u hu v hv e
+    have ur : u<p.length+1 := (memA.mp hu).1
+    have vv : v<p.length+1 := (memA.mp hv).1
+    exact hp.1.getVert_injOn (show u≤p.length by omega) (show v≤p.length by omega) e
+  have allAdj : G.neighborFinset a ⊆ A.image p.getVert := by
+    intro z zm
+    have az := (mem_neighborFinset G a z).mp zm
+    have zp : z∈p.support := Classical.byContradiction (fun e => (no_endpoints hp e).1 az.symm)
+    obtain ⟨k,ke,kp⟩ := mem_support_iff_exists_getVert.mp zp
+    exact mem_image.mpr ⟨k,memA.mpr ⟨by omega,ke.symm ▸ az⟩,ke⟩
+  have amin : 4≤A.card := by
+    have q := card_le_card allAdj
+    rw [injectA,card_neighborFinset_eq_degree] at q
+    omega
+  have tge : 5≤t := by
+    by_contra! low
+    have aa : A⊆({1,3,4}:Finset ℕ) := by
+      intro v vm
+      have vl : v≤t := tmax vm
+      have vlt : v<5 := lt_of_le_of_lt vl low
+      have va := (memA.mp vm).2
+      by_cases n0 : v=0
+      · exact False.elim (aA (n0 ▸ va))
+      by_cases n2 : v=2
+      · exact False.elim (nTwo (n2 ▸ va))
+      have vc : v=1 ∨ v=3 ∨ v=4 := by omega
+      simpa using vc
+    have c := card_le_card aa
+    have c3 : ( {1,3,4}:Finset ℕ).card=3 := by decide
+    omega
+  have dt : p.getVert (t+1)∈D := by
+    have no : ¬G.Adj a (p.getVert (t+1)) := fun h => by
+      have := tmax (memA.mpr ⟨by omega,h⟩)
+      omega
+    exact mkD (by omega) (by omega) no (memA.mp tm).2 (p.adj_getVert_succ (i:=t) (by omega))
+  have deq : D=({p.getVert 2,p.getVert (t+1)}:Finset V) := by
+    symm
+    apply eq_of_subset_of_card_le
+    · intro z hz
+      exact (mem_insert.mp hz).elim (fun e => e.symm ▸ d2) (fun e => (mem_singleton.mp e).symm ▸ dt)
+    · rw [card_insert_of_not_mem (by
+          simpa using vr (i:=2) (j:=t+1) (by omega) (by omega) (by omega)),card_singleton]
+      omega
+  have back (k : ℕ) (r : 3≤k) (kt : k≤t) : G.Adj a (p.getVert k) := by
+    let P := fun n : ℕ => 3≤t-n → G.Adj a (p.getVert (t-n))
+    have yes : ∀ n,P n := by
+      intro n
+      induction n with
+      | zero => intro _; simpa using (memA.mp tm).2
+      | succ n ih =>
+          intro ge
+          have r' : 3≤t-n := by
+            change 3≤t-(n+1) at ge
+            omega
+          have old := ih r'
+          by_cases yes : G.Adj a (p.getVert (t-(n+1)))
+          · exact yes
+          exfalso
+          have e : t-n = t-(n+1)+1 := by
+            change 3≤t-(n+1) at ge
+            omega
+          have zz : p.getVert (t-(n+1))∈D :=
+            mkD (by change 3≤t-(n+1) at ge; omega) (by omega) yes old
+              (by rw [e]; exact (p.adj_getVert_succ (i:=t-(n+1)) (by omega)).symm)
+          rw [deq] at zz
+          rcases mem_insert.mp zz with o|o
+          · exact vr (i:=t-(n+1)) (j:=2) (by omega) (by omega)
+              (by change 3≤t-(n+1) at ge; omega) o
+          · exact vr (i:=t-(n+1)) (j:=t+1) (by omega) (by omega)
+              (by omega) (mem_singleton.mp o)
+    have k' : t-(t-k)=k := by omega
+    have eq := yes (t-k)
+    simp only [P,k'] at eq
+    exact eq r
+  have ee : t+1≠p.length := by
+    intro eq
+    have dis : Disjoint (LeftMarks p∪RightMarks p) (∅:Finset ℕ) := by simp
+    have bd := mark_length hp xo (p.getVert_mem_support 1) (pin_data h1).2 ∅ (empty_subset _) dis
+    let T := insert 1 (Icc 3 t)
+    have ss : T⊆A := by
+      intro v vm
+      rcases mem_insert.mp vm with rfl|vm
+      · exact memA.mpr ⟨by omega,first⟩
+      · obtain ⟨vl,vu⟩ := mem_Icc.mp vm
+        exact memA.mpr ⟨by omega,back v vl vu⟩
+    have sz : T.card=t-1 := by
+      have mn : 1∉Icc 3 t := fun h => by have p := (mem_Icc.mp h).1; omega
+      change (insert 1 (Icc 3 t)).card=t-1
+      rw [card_insert_of_not_mem mn,Nat.card_Icc]
+      omega
+    have size := card_le_card ss
+    have sub : A.image p.getVert⊆G.neighborFinset a := by
+      intro v vm
+      obtain ⟨i,im,rfl⟩ := mem_image.mp vm
+      exact (mem_neighborFinset G a _).mpr (memA.mp im).2
+    have ag := card_le_card sub
+    rw [injectA,card_neighborFinset_eq_degree] at ag
+    simp at bd
+    omega
+  have nbD : b∉D := by
+    intro h
+    rw [deq] at h
+    rcases mem_insert.mp h with hh|hh
+    · exact vr (i:=p.length) (j:=2) le_rfl (by omega) (by omega) (p.getVert_length.trans hh)
+    · exact vr (i:=p.length) (j:=t+1) le_rfl (by omega) (by omega)
+        (p.getVert_length.trans (mem_singleton.mp hh))
+
+  refine ⟨t,tge,by omega,back,?_,na,?_⟩
+  · intro k kr h
+    have kA : k∈A := memA.mpr ⟨by omega,h⟩
+    have kl : k≤t := tmax kA
+    have n0 : k≠0 := fun e => aA (e ▸ h)
+    have n2 : k≠2 := fun e => nTwo (e ▸ h)
+    omega
+  · intro d
+    exact nbD (mem_filter.mpr ⟨d,p.end_mem_support⟩)
+#print axioms endpoint_block_from_two_path_distances_at_pin_one
+
+
+private theorem length_twelve_three_off_boundary_splice_chords
+    (hc : G.Connected) (even : ∀ v,(EvenFrom G v).card≤5)
+    (conn : ∀ S : Finset V,S.card<2 → (G.induce ((↑S : Set V)ᶜ)).Connected)
+    (degree : ∀ u v : V,u≠v → 4≤G.degree u ∨ 4≤G.degree v)
+    {a b x y : V} {p : G.Walk a b} (hp : EdgeOptimal p)
+    (ah : 4≤G.degree a) (bh : 4≤G.degree b) (len : p.length=12)
+    (xo : x∉p.support) (yo : y∉p.support) (xy : x≠y)
+    (h1 : 1∈Pins p x) (y1 : 1∈Pins p y) {j : ℕ} (hj : j∈Pins p x) (gg : 4≤j) :
+    (j≤10 ∧ G.Adj a (p.getVert (j-1))) ∨
+      (j=7 ∧ G.Adj a (p.getVert 4) ∧ G.Adj a (p.getVert 5)) ∨
+      (8≤j ∧ j≤10 ∧ G.Adj a (p.getVert 5) ∧
+        G.Adj b (p.getVert 6) ∧ G.Adj b (p.getVert (j+1))) ∨
+      (j=11 ∧ ∃ k : ℕ, 6≤k ∧ k≤8 ∧ G.Adj b (p.getVert k) ∧ G.Adj b (p.getVert (k+1))) := by
+  classical
+  let D := DistanceTwo G a
+  let P := D.filter (· ∈ p.support)
+  let Q := D.filter (· ∉ p.support)
+  have px1 := (pin_data h1).2
+  have first : G.Adj a (p.getVert 1) := by simpa using p.adj_getVert_succ (i:=0) (by omega)
+  have dist {z : V} (zo : z∉p.support) (hp1 : 1∈Pins p z) : z∈Q :=
+    mem_filter.mpr ⟨mem_distanceTwo.mpr (dist_two hc (fun e => zo (e ▸ p.start_mem_support))
+      (fun e => (no_endpoints hp.1 zo).1 e.symm) first (pin_data hp1).2.symm),zo⟩
+  have left2 : 2≤Q.card := one_lt_card.mpr ⟨x,dist xo h1,y,dist yo y1,xy⟩
+  have eq := filter_card_add_filter_neg_card_eq_card (s:=D) (· ∈ p.support)
+  have cap : D.card≤4 := distanceTwo_le_of_even 4 a (even a)
+  have small : P.card≤2 := by
+    change P.card+Q.card=D.card at eq
+    omega
+  obtain ⟨t,tge,tle,back,all,na,nb⟩ := endpoint_block_from_two_path_distances_at_pin_one hc hp.1 ah bh (by omega) xo h1 small
+  have rm {k : ℕ} (ak : G.Adj a (p.getVert k)) : k∉RightMarks p := by
+    intro kr
+    have ab : a≠b := fun e => by
+      have ee := hp.1.1.getVert_injOn (show 0≤p.length by omega) (show p.length≤p.length from le_rfl)
+        (p.getVert_zero.trans (e.trans p.getVert_length.symm))
+      omega
+    exact nb (mem_distanceTwo.mpr (dist_two hc ab na ak ((mem_filter.mp kr).2).symm))
+  have rmPred {k : ℕ} (kr : k<p.length) (ak : G.Adj a (p.getVert (k+1))) : k∉RightMarks p := by
+    intro bk
+    exact not_adj_both_end_marks hp.1 xo (p.getVert_mem_support 1) px1 kr ak (mem_filter.mp bk).2
+
+  let S : Finset ℕ := {6,7,8,9,10,11}
+  have Sc : S.card=6 := by decide
+  have sub : RightMarks p ⊆ S := by
+    intro k km
+    have kr := mem_range.mp (mem_filter.mp km).1
+    have beg : 6≤k := by
+      by_contra! no
+      have c : k=0 ∨ k=1 ∨ k=2 ∨ (3≤k ∧ k≤5) := by omega
+      rcases c with rfl|rfl|rfl|c
+      · exact rmPred (by omega) first km
+      · exact rm first km
+      · exact rmPred (by omega) (back 3 (by omega) (by omega)) km
+      · exact rm (back k c.1 (c.2.trans tge)) km
+    have kk : k=6 ∨ k=7 ∨ k=8 ∨ k=9 ∨ k=10 ∨ k=11 := by omega
+    simpa [S] using kk
+  have jlt := (pin_data hj).1
+  by_cases jlast : j=11
+  · apply Or.inr ∘ Or.inr ∘ Or.inr
+    refine ⟨jlast,?_⟩
+    have no10 : 10∉RightMarks p := fun n =>
+      end_not_adj_pin_predecessor hp.1 xo hj (by
+        rw [jlast]
+        exact (mem_filter.mp n).2)
+    have sub' : RightMarks p⊆S.erase 10 := fun k km => mem_erase.mpr ⟨fun e => no10 (e ▸ km),sub km⟩
+    have H : ∃ k : ℕ,6≤k ∧ k≤8 ∧ k∈RightMarks p ∧ k+1∈RightMarks p := by
+      by_contra! no
+      have h6 := no 6 (by decide) (by decide)
+      have h8 := no 8 (by decide) (by decide)
+      have miss67 : ∃ u : ℕ,(u=6 ∨ u=7) ∧ u∉RightMarks p := by
+        by_cases k : 6∈RightMarks p
+        · exact ⟨7,.inr rfl,h6 k⟩
+        · exact ⟨6,.inl rfl,k⟩
+      have miss89 : ∃ u : ℕ,(u=8 ∨ u=9) ∧ u∉RightMarks p := by
+        by_cases k : 8∈RightMarks p
+        · exact ⟨9,.inr rfl,h8 k⟩
+        · exact ⟨8,.inl rfl,k⟩
+      obtain ⟨u,uu,bu⟩ := miss67
+      obtain ⟨v,vv,bv⟩ := miss89
+      let T : Finset ℕ := {u,v}
+      have Tsub : T⊆S.erase 10 := by
+        intro z zm
+        have h : z=u ∨ z=v := by simpa [T] using zm
+        rcases h with rfl|rfl
+        · rcases uu with rfl|rfl <;> decide
+        · rcases vv with rfl|rfl <;> decide
+      have cs : (S.erase 10).card=5 := by decide
+      have ct : T.card=2 := by simp [T,show u≠v by omega]
+      have fs : RightMarks p⊆(S.erase 10)\T := by
+        intro k km
+        refine mem_sdiff.mpr ⟨sub' km,?_⟩
+        intro kk
+        have uv : k=u ∨ k=v := by simpa [T] using kk
+        exact uv.elim (fun e => bu (e ▸ km)) (fun e => bv (e ▸ km))
+      have mc := card_sdiff_add_card_eq_card Tsub
+      have ms := card_le_card fs
+      rw [card_rightMarks hp.1] at ms
+      omega
+    obtain ⟨k,k6,k8,kr,ks⟩ := H
+    exact ⟨k,k6,k8,(mem_filter.mp kr).2,(mem_filter.mp ks).2⟩
+  have j10 : j≤10 := by omega
+  by_cases close : j-1≤t
+  · exact .inl ⟨j10,back _ (by omega) close⟩
+  have far : t<j-1 := Nat.lt_of_not_ge close
+  have ja : ¬G.Adj a (p.getVert j) := by
+    intro e
+    have fin := all j jlt.le e
+    omega
+  have hn : j-1∉LeftMarks p∪RightMarks p := (mark_holes_of_pin_and_missing_endpoint hp.1 xo hj).1 ja
+  have limit := (at_most_two_pins_one_slack hc 2 (by decide)
+    (fun z => distanceTwo_le_of_even 4 z (even z)) conn degree hp xo).1
+  obtain ⟨_,rhs⟩ := pin_two_contacts_end hp.1 hc xo limit (distanceTwo_le_of_even 4 x (even x)) h1 hj (by omega)
+  have rbj : ¬G.Adj b (p.getVert j) := fun e => jlast (by have b := rhs j hj e; omega)
+  have noJ := (mark_holes_of_pin_and_missing_endpoint hp.1 xo hj).2 rbj
+  have j7 : 7≤j := by omega
+  let T : Finset ℕ := {j-1,j}
+  have Tsub : T⊆S := by
+    intro k km
+    have h : k=j-1 ∨ k=j := by simpa [T] using km
+    have e : k=6 ∨ k=7 ∨ k=8 ∨ k=9 ∨ k=10 ∨ k=11 := by omega
+    simpa [S] using e
+  have Tcard : T.card=2 := by simp [T,show j-1≠j by omega]
+  have rs : RightMarks p⊆S\T := by
+    intro k km
+    refine mem_sdiff.mpr ⟨sub km,?_⟩
+    intro h
+    have q : k=j-1 ∨ k=j := by simpa [T] using h
+    rcases q with rfl|rfl
+    · exact hn (mem_union.mpr (.inr km))
+    · exact noJ (mem_union.mpr (.inr km))
+  have sized := card_sdiff_add_card_eq_card Tsub
+  have req : RightMarks p=S\T := eq_of_subset_of_card_le rs (by
+    rw [card_rightMarks hp.1]
+    omega)
+  by_cases jexact : j=7
+  · exact .inr (.inl ⟨jexact,back 4 (by decide) (by omega),back 5 (by decide) tge⟩)
+  · apply Or.inr ∘ Or.inr ∘ Or.inl
+    have rsix : 6∈RightMarks p := by
+      rw [req]
+      exact mem_sdiff.mpr ⟨by decide,by
+        simp only [T,mem_insert,mem_singleton]
+        omega⟩
+    have rnext : j+1∈RightMarks p := by
+      rw [req]
+      refine mem_sdiff.mpr ⟨?_,?_⟩
+      · have jg : j+1=6 ∨ j+1=7 ∨ j+1=8 ∨ j+1=9 ∨ j+1=10 ∨ j+1=11 := by omega
+        simpa [S] using jg
+      · simp only [T,mem_insert,mem_singleton]
+        omega
+    exact ⟨by omega,j10,back 5 (by decide) tge,(mem_filter.mp rsix).2,(mem_filter.mp rnext).2⟩
+
+#print axioms length_twelve_three_off_boundary_splice_chords
+
+
+namespace OffThree16Boundary
+abbrev Vertex := Fin 16
+
+inductive Mode
+  | near
+  | seven
+  | far
+  | tail (k : ℕ)
+
+def Allowed (j : ℕ) : Mode→Prop
+  | .near => 4≤j ∧ j≤10
+  | .seven => j=7
+  | .far => 8≤j ∧ j≤10
+  | .tail k => j=11 ∧ 6≤k ∧ k≤8
+
+def chord (j : ℕ) (a b : ℕ) : Mode→Prop
+  | .near => a=0 ∧ b=j-1
+  | .seven => a=0 ∧ (b=4 ∨ b=5)
+  | .far => (a=0 ∧ b=5) ∨ ((a=6 ∨ a=j+1) ∧ b=12)
+  | .tail k => (a=k ∨ a=k+1) ∧ b=12
+
+instance (j a b : ℕ) (t : Mode) : Decidable (chord j a b t) := by
+  cases t <;> unfold chord <;> infer_instance
+
+def dir (j : ℕ) (t : Mode) (u v : Vertex) : Bool :=
+  let a := u.val
+  let b := v.val
+  decide (b=a+1 ∧ b≤12) ||
+  decide (13≤a ∧ a<b) ||
+  decide ((a=1 ∨ a=j) ∧ (b=13 ∨ b=14)) ||
+  decide (chord j a b t)
+
+def edge (j : ℕ) (t : Mode) (u v : Vertex) : Bool := dir j t u v || dir j t v u
+
+def schedule (j : ℕ) : Mode→List Vertex
+  | .near => [0] ++ (((List.range (j-1)).reverse).map (fun v => Fin.ofNat' 16 (v+1))) ++
+    [13,15,14] ++ ((List.range (13-j)).map (fun v => Fin.ofNat' 16 (j+v)))
+  | .seven => [6,5,0,4,3,2,1,13,15,14,7,8,9,10,11,12]
+  | .far => [0,5,4,3,2,1,13,15,14] ++
+    (((List.range (j-5)).reverse).map (fun v => Fin.ofNat' 16 (v+6))) ++ [12] ++
+    ((List.range (11-j)).map (fun v => Fin.ofNat' 16 (j+1+v)))
+  | .tail k => ((List.range (k+1)).map (Fin.ofNat' 16)) ++ [12] ++
+    ((List.range (11-k)).map (fun v => Fin.ofNat' 16 (k+1+v))) ++ [13,14,15]
+
+theorem checked (j : ℕ) (t : Mode) (H : Allowed j t) :
+    (schedule j t).Nodup ∧ (∀ u : Vertex,u∈schedule j t) ∧
+    (schedule j t).Chain' (fun u v => edge j t u v=true) := by
+  cases t with
+  | near =>
+    change 4≤j ∧ j≤10 at H
+    have c : j=4 ∨ j=5 ∨ j=6 ∨ j=7 ∨ j=8 ∨ j=9 ∨ j=10 := by omega
+    rcases c with rfl|rfl|rfl|rfl|rfl|rfl|rfl <;> decide +kernel
+  | seven =>
+    change j=7 at H
+    subst j
+    decide +kernel
+  | far =>
+    change 8≤j ∧ j≤10 at H
+    have c : j=8 ∨ j=9 ∨ j=10 := by omega
+    rcases c with rfl|rfl|rfl <;> decide +kernel
+  | tail k =>
+    change j=11 ∧ 6≤k ∧ k≤8 at H
+    obtain ⟨rfl,h,k'⟩ := H
+    have c : k=6 ∨ k=7 ∨ k=8 := by omega
+    rcases c with rfl|rfl|rfl <;> decide +kernel
+#print axioms checked
+end OffThree16Boundary
+
+
+private theorem length_twelve_three_off_boundary_labeled_path
+    {a b x y z : V} {p : G.Walk a b} (hp : IsLongest p) (len : p.length=12)
+    (os : ((univ : Finset V)\p.support.toFinset)={x,y,z})
+    (xy : x≠y) (xz : x≠z) (yz : y≠z)
+    (clique : ∀ z∉p.support,∀ w∉p.support,z≠w → G.Adj z w)
+    {j : ℕ} (mode : OffThree16Boundary.Mode) (allowed : OffThree16Boundary.Allowed j mode)
+    (px1 : G.Adj x (p.getVert 1)) (pxj : G.Adj x (p.getVert j))
+    (py1 : G.Adj y (p.getVert 1)) (pyj : G.Adj y (p.getVert j))
+    (ch : ∀ u v : ℕ, u≤12 → v≤12 → OffThree16Boundary.chord j u v mode →
+      G.Adj (p.getVert u) (p.getVert v)) :
+    ∃ a b : V, ∃ p : G.Walk a b,p.IsPath ∧ ∀ v,v∈p.support := by
+  classical
+  let O := (univ : Finset V)\p.support.toFinset
+  have os' : O={x,y,z} := os
+  have out {u : V} : u∈O ↔ u∉p.support := by simp [O]
+  have xo : x∉p.support := out.mp (by simp [os'])
+  have yo : y∉p.support := out.mp (by simp [os'])
+  have zo : z∉p.support := out.mp (by simp [os'])
+  let φ (k : Fin 16) : V := if k.val=13 then x else if k.val=14 then y else
+    if k.val=15 then z else p.getVert k.val
+  have value {k : Fin 16} (h : k.val≤12) : φ k=p.getVert k.val := by
+    simp [φ,show k.val≠13 by omega,show k.val≠14 by omega,show k.val≠15 by omega]
+  have classify (k : Fin 16) : k.val≤12 ∨ k=13 ∨ k=14 ∨ k=15 := by
+    by_cases h11 : k.val=13
+    · exact .inr (.inl (Fin.ext h11))
+    by_cases h12 : k.val=14
+    · exact .inr (.inr (.inl (Fin.ext h12)))
+    by_cases h13 : k.val=15
+    · exact .inr (.inr (.inr (Fin.ext h13)))
+    exact .inl (by omega)
+  have val13 : φ 13=x := rfl
+  have val14 : φ 14=y := rfl
+  have val15 : φ 15=z := rfl
+  have conflict {r : V} {k : ℕ} (ro : r∉p.support) (e : p.getVert k=r) : False :=
+    ro (e ▸ p.getVert_mem_support k)
+  have lab_inj : Function.Injective φ := by
+    intro k l eq
+    rcases classify k with kh|kh|kh|kh <;> rcases classify l with lh|lh|lh|lh
+    · exact Fin.ext (hp.1.getVert_injOn (show k.val≤p.length by omega)
+        (show l.val≤p.length by omega) ((value kh).symm.trans (eq.trans (value lh))))
+    all_goals try subst k
+    all_goals try subst l
+    all_goals try rfl
+    all_goals try rw [value kh] at eq
+    all_goals try rw [value lh] at eq
+    all_goals simp only [val13,val14,val15] at eq
+    all_goals exfalso
+    all_goals first | contradiction | exact xy eq.symm | exact xz eq.symm | exact yz eq.symm | exact conflict xo eq | exact conflict xo eq.symm | exact conflict yo eq | exact conflict yo eq.symm | exact conflict zo eq | exact conflict zo eq.symm
+
+  have phi_sur : Function.Surjective φ := by
+    intro w
+    by_cases h : w∈p.support
+    · obtain ⟨k,kw,kl⟩ := mem_support_iff_exists_getVert.mp h
+      exact ⟨⟨k,by omega⟩,(value (show k≤12 by omega)).trans kw⟩
+    · have q := out.mpr h
+      rw [os',mem_insert,mem_insert,mem_singleton] at q
+      rcases q with rfl|rfl|rfl
+      · exact ⟨13,val13⟩
+      · exact ⟨14,val14⟩
+      · exact ⟨15,val15⟩
+  have jhi : j≤11 := by cases mode <;> simp only [OffThree16Boundary.Allowed] at allowed <;> omega
+  have compat (u v : Fin 16) (h : OffThree16Boundary.dir j mode u v=true) : G.Adj (φ u) (φ v) := by
+    have ul := u.isLt
+    have vl := v.isLt
+    simp only [OffThree16Boundary.dir,Bool.or_eq_true,decide_eq_true_eq] at h
+    rcases h with (((l|c)|q)|q)
+    · rw [value (show u.val≤12 by omega),value l.2,l.1]
+      exact p.adj_getVert_succ (by omega)
+    · apply clique
+      · rcases classify u with he|he|he|he
+        · omega
+        · exact he.symm ▸ xo
+        · exact he.symm ▸ yo
+        · exact he.symm ▸ zo
+      · rcases classify v with he|he|he|he
+        · omega
+        · exact he.symm ▸ xo
+        · exact he.symm ▸ yo
+        · exact he.symm ▸ zo
+      · intro same
+        have vv := congrArg Fin.val (lab_inj same)
+        omega
+    · have upr : u.val≤12 := by rcases q.1 with hh|hh <;> omega
+      rcases q.2 with v12|v13
+      · have e : v=13 := Fin.ext v12
+        rw [value upr,e,val13]
+        exact (q.1.elim (fun h => h.symm ▸ px1) (fun h => h.symm ▸ pxj)).symm
+      · have e : v=14 := Fin.ext v13
+        rw [value upr,e,val14]
+        exact (q.1.elim (fun h => h.symm ▸ py1) (fun h => h.symm ▸ pyj)).symm
+    · have rr : u.val≤12 ∧ v.val≤12 := by
+        cases mode <;> simp only [OffThree16Boundary.Allowed,OffThree16Boundary.chord] at q allowed <;> omega
+      rw [value rr.1,value rr.2]
+      exact ch _ _ rr.1 rr.2 q
+  obtain ⟨nod,cover,chain⟩ := OffThree16Boundary.checked j mode allowed
+  letI : Nonempty V := ⟨a⟩
+  apply hamilton_of_labeled_chain φ lab_inj phi_sur _ nod cover
+  apply List.Chain'.imp (fun u v e => ?_) chain
+  simp only [OffThree16Boundary.edge,Bool.or_eq_true] at e
+  exact e.elim (compat u v) (fun e => (compat v u e).symm)
+#print axioms length_twelve_three_off_boundary_labeled_path
+
+
+theorem traceable_if_order_sixteen_three_off_has_left_boundary_pin
+    (hc : G.Connected) (even : ∀ v,(EvenFrom G v).card≤5)
+    (conn : ∀ S : Finset V,S.card<2 → (G.induce ((↑S : Set V)ᶜ)).Connected)
+    (degree : ∀ u v : V,u≠v → 4≤G.degree u ∨ 4≤G.degree v)
+    {a b x : V} {p : G.Walk a b} (hp : EdgeOptimal p) (ah : 4≤G.degree a) (bh : 4≤G.degree b)
+    (len : p.length=12) (off : ((univ : Finset V)\p.support.toFinset).card=3)
+    (xo : x∉p.support) {j : ℕ} (jlo : 4≤j)
+    (x1 : 1∈Pins p x) (xj : j∈Pins p x)
+    (commonHigh : ∀ y∉p.support,4≤G.degree y → Pins p y={1,j})
+    (clique : ∀ y∉p.support,∀ z∉p.support,y≠z → G.Adj y z) :
+    ∃ a b : V, ∃ p : G.Walk a b,p.IsPath ∧ ∀ v,v∈p.support := by
+  obtain ⟨y,z,yo,zo,xy,xz,yz,yd,os⟩ := three_off_labeled_clique degree xo off
+  have y1 : 1∈Pins p y := by rw [commonHigh y yo yd]; simp
+  have yj : j∈Pins p y := by rw [commonHigh y yo yd]; simp
+  have endv : p.getVert 12=b := by simpa only [len] using p.getVert_length
+  have run (mode : OffThree16Boundary.Mode) (hm : OffThree16Boundary.Allowed j mode)
+      (ex : ∀ u v : ℕ,u≤12 → v≤12 → OffThree16Boundary.chord j u v mode →
+        G.Adj (p.getVert u) (p.getVert v)) :=
+    length_twelve_three_off_boundary_labeled_path hp.1 len os xy xz yz clique mode hm
+      (pin_data x1).2 (pin_data xj).2 (pin_data y1).2 (pin_data yj).2 ex
+  have ch := length_twelve_three_off_boundary_splice_chords hc even conn degree hp ah bh len
+    xo yo xy x1 y1 xj jlo
+  rcases ch with ⟨jhi,left⟩|⟨j7,a4,a5⟩|⟨j8,j10,a5,b6,bj⟩|⟨j11,k,k6,k8,bk,bk1⟩
+  · apply run .near ⟨jlo,jhi⟩
+    intro u v _ _ q
+    obtain ⟨rfl,rfl⟩ := q
+    simpa only [getVert_zero] using left
+  · apply run .seven j7
+    intro u v _ _ q
+    obtain ⟨rfl,h⟩ := q
+    rcases h with rfl|rfl
+    · simpa only [getVert_zero] using a4
+    · simpa only [getVert_zero] using a5
+  · apply run .far ⟨j8,j10⟩
+    intro u v _ _ q
+    change (u=0 ∧ v=5) ∨ ((u=6 ∨ u=j+1) ∧ v=12) at q
+    rcases q with ⟨rfl,rfl⟩|⟨h,rfl⟩
+    · simpa only [getVert_zero] using a5
+    rcases h with rfl|rfl
+    · simpa only [endv] using b6.symm
+    · simpa only [endv] using bj.symm
+  · apply run (.tail k) ⟨j11,k6,k8⟩
+    intro u v _ _ q
+    obtain ⟨h,rfl⟩ := q
+    rcases h with rfl|rfl
+    · simpa only [endv] using bk.symm
+    · simpa only [endv] using bk1.symm
+
+#print axioms traceable_if_order_sixteen_three_off_has_left_boundary_pin

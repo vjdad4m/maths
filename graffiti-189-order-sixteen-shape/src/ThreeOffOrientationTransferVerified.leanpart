@@ -1,0 +1,59 @@
+
+theorem traceable_if_three_off_order_sixteen_with_table
+    (table : ∀ (i j : ℕ), 1<i → i+3≤j → i≤12-j → j≤10 → OffThree16Interior.row i j=true)
+    (hc : G.Connected) (even : ∀ v,(EvenFrom G v).card≤5)
+    (conn : ∀ S : Finset V,S.card<2 → (G.induce ((↑S : Set V)ᶜ)).Connected)
+    (degree : ∀ u v : V,u≠v → 4≤G.degree u ∨ 4≤G.degree v)
+    {a b : V} {p : G.Walk a b} (hp : EdgeOptimal p) (ah : 4≤G.degree a) (bh : 4≤G.degree b)
+    (len : p.length=12) (off : ((univ : Finset V)\p.support.toFinset).card=3) :
+    ∃ a b : V, ∃ p : G.Walk a b,p.IsPath ∧ ∀ v,v∈p.support := by
+  classical
+  obtain ⟨x,i,j,xo,xh,xi,xj,gap,C,_,H⟩ := three_off_same_ports hc even conn degree hp ah bh off
+  have i1 := pin_pos hp.1 xo xi
+  have j12 := (pin_data xj).1
+  have close {a' b' : V} {q : G.Walk a' b'} (h : EdgeOptimal q)
+      (l : 4≤G.degree a') (r : 4≤G.degree b') (n : q.length=12)
+      (o : ((univ : Finset V)\q.support.toFinset).card=3)
+      (xo : x∉q.support) {i j : ℕ} (il : 1≤i) (gg : i+3≤j) (fl : i≤12-j)
+      (jx : j∈Pins q x) (ix : i∈Pins q x)
+      (H : ∀ y∉q.support,4≤G.degree y → Pins q y={i,j})
+      (C : ∀ y∉q.support,∀ z∉q.support,y≠z → G.Adj y z) :
+      ∃ a b : V, ∃ p : G.Walk a b,p.IsPath ∧ ∀ v,v∈p.support := by
+    by_cases e : i=1
+    · subst i
+      exact traceable_if_order_sixteen_three_off_has_left_boundary_pin hc even conn degree h l r n o xo
+        (by omega) ix jx H C
+    have up := (pin_data jx).1
+    exact length_twelve_three_off_interior_with_table table hc even conn degree h l r n o xo
+      (by omega) gg fl (by omega) ix jx H (fun y yo z zo hyz => (C y yo z zo hyz).symm)
+  by_cases orient : i≤12-j
+  · exact close hp ah bh len off xo i1 gap orient xj xi H C
+  have ep : EdgeOptimal p.reverse := same_support_optimal hp (reverse_long hp.1) (by intro z; simp)
+  have off' : ((univ : Finset V)\p.reverse.support.toFinset).card=3 := by
+    simpa [support_reverse] using off
+  have xp1 : 12-j∈Pins p.reverse x := by simpa [len] using reverse_pin hp.1 xo xj
+  have xp2 : 12-i∈Pins p.reverse x := by simpa [len] using reverse_pin hp.1 xo xi
+  have H' (y : V) (yo : y∉p.reverse.support) (yh : 4≤G.degree y) :
+      Pins p.reverse y=({12-j,12-i}:Finset ℕ) := by
+    have yp : y∉p.support := by simpa using yo
+    have ypi : i∈Pins p y := by rw [H y yp yh]; simp
+    have ypj : j∈Pins p y := by rw [H y yp yh]; simp
+    have a : 12-j∈Pins p.reverse y := by simpa [len] using reverse_pin hp.1 yp ypj
+    have b : 12-i∈Pins p.reverse y := by simpa [len] using reverse_pin hp.1 yp ypi
+    have s : ({12-j,12-i}:Finset ℕ)⊆Pins p.reverse y := by
+      intro z az
+      rcases mem_insert.mp az with he|he
+      · exact he.symm ▸ a
+      · exact (mem_singleton.mp he).symm ▸ b
+    have few := (at_most_two_pins_one_slack hc 2 (by decide)
+      (fun z => distanceTwo_le_of_even 4 z (even z)) conn degree ep yo).1
+    have card2 : ({12-j,12-i}:Finset ℕ).card=2 := by
+      have ne : 12-j∉({12-i}:Finset ℕ) := by
+        simp only [mem_singleton]
+        omega
+      rw [card_insert_of_not_mem ne,card_singleton]
+    exact (eq_of_subset_of_card_le s (by rwa [card2])).symm
+  exact close ep bh ah (by simpa using len) off' (by simpa using xo) (by omega) (by omega) (by omega)
+    xp2 xp1 H' (by simpa only [support_reverse,List.mem_reverse] using C)
+
+#print axioms traceable_if_three_off_order_sixteen_with_table

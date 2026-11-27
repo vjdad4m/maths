@@ -1,0 +1,53 @@
+
+theorem order_sixteen_remaining_shape
+    (hc : G.Connected) (even : ∀ v,(EvenFrom G v).card≤5)
+    (conn : ∀ S : Finset V,S.card<2 → (G.induce ((↑S : Set V)ᶜ)).Connected)
+    (degree : ∀ u v : V,u≠v → 4≤G.degree u ∨ 4≤G.degree v)
+    (closed15 : Fintype.card V≤15 → ∃ a b : V, ∃ p : G.Walk a b,p.IsPath ∧ ∀ z,z∈p.support)
+    (order : Fintype.card V≤16)
+    (fail : ¬∃ a b : V, ∃ p : G.Walk a b,p.IsPath ∧ ∀ z,z∈p.support) :
+    Fintype.card V=16 ∧
+    ∃ a b : V, ∃ p : G.Walk a b, EdgeOptimal p ∧ 4≤G.degree a ∧ 4≤G.degree b ∧
+      10≤p.length ∧ p.length≤12 ∧
+      3≤((univ : Finset V)\p.support.toFinset).card ∧
+      ((univ : Finset V)\p.support.toFinset).card≤5 := by
+  classical
+  have ord : Fintype.card V=16 := by
+    by_contra h
+    exact fail (closed15 (by omega))
+  obtain ⟨a,b,p,hp,ah,bh⟩ := exists_edge_optimal_with_high_ends hc 2 4 (by decide) conn degree fail
+  obtain ⟨x,xo⟩ : ∃ u,u∉p.support := not_forall.mp (fun h => fail ⟨a,b,p,hp.1.1,h⟩)
+  obtain ⟨S,sx,Sne,Soff,Sclosed,Sjoined⟩ := exists_omitted_component xo
+  let H : OmittedComponent p := ⟨S,Sne,Soff,Sclosed,Sjoined⟩
+  have se := componentPins_card hp.1 H 2 conn
+  obtain ⟨y,yp⟩ := card_pos.mp (show 0<(componentPins H).card by omega)
+  obtain ⟨yp,u,uH,uy⟩ := mem_filter.mp yp
+  have low := mark_length hp.1 (H.off _ uH) (List.mem_toFinset.mp yp) uy ∅ (empty_subset _) (by simp)
+  simp only [card_empty,Nat.add_zero] at low
+  let O := (univ : Finset V)\p.support.toFinset
+  have cardO : O.card+(p.length+1)=Fintype.card V := by
+    have h := card_sdiff_add_card_eq_card (subset_univ p.support.toFinset)
+    rwa [List.toFinset_card_of_nodup hp.1.1.support_nodup,length_support,card_univ] at h
+  have l3 : 3≤O.card := by
+    by_contra n
+    have small : O.card<3 := Nat.lt_of_not_ge n
+    have vertexLow {z : V} (zo : z∉p.support) : ¬4≤G.degree z := by
+      have few := (at_most_two_pins_one_slack hc 2 (by decide)
+        (fun v => distanceTwo_le_of_even 4 v (even v)) conn degree hp zo).1
+      have d := degree_off_bound hp.1 zo
+      change G.degree z≤(Pins p z).card+O.card-1 at d
+      omega
+    have only (z : V) (zo : z∉p.support) : z=x :=
+      Classical.byContradiction (fun e => (degree z x e).elim (vertexLow zo) (vertexLow xo))
+    have bound := order_le_thirteen_of_unique_omission_at_degree_four hc even conn degree hp ah bh xo only
+    omega
+  have ban7 : O.card≠7 := by
+    intro o7
+    exact fail (traceable_if_seven_off_saturated_four hc even conn degree hp ah bh (by omega) o7)
+  have ban6 : O.card≠6 := by
+    intro o6
+    exact no_length_nine_with_two_to_seven_omissions hc even conn degree hp ah bh (by omega)
+      (show 2≤O.card by omega) (show O.card≤7 by omega)
+  exact ⟨ord,a,b,p,hp,ah,bh,by omega,by omega,l3,(show O.card≤5 by omega)⟩
+
+#print axioms order_sixteen_remaining_shape

@@ -1,0 +1,239 @@
+
+private theorem model16_d2_upper (hc : G.Connected)
+    (φ : Fin 16 → V) (inj : Function.Injective φ)
+    (E : Fin 16 → Fin 16 → Bool) (z : Fin 16)
+    (forw : ∀ u v,E u v=true → G.Adj (φ u) (φ v))
+    (rev : ∀ u,G.Adj (φ z) (φ u) → E z u=true)
+    (cap : (DistanceTwo G (φ z)).card≤4) :
+    (univ.filter fun y => y≠z ∧ !E z y = true ∧
+      ∃ u : Fin 16,E z u=true ∧ E u y=true).card≤4 := by
+  classical
+  let Q := univ.filter fun y => y≠z ∧ !E z y = true ∧
+      ∃ u : Fin 16,E z u=true ∧ E u y=true
+  have sub : Q.image φ ⊆ DistanceTwo G (φ z) := by
+    intro y hy
+    obtain ⟨v,vq,rfl⟩ := mem_image.mp hy
+    obtain ⟨vne,no,w,zw,wv⟩ := (mem_filter.mp vq).2
+    have ne : φ z≠φ v := fun e => vne (inj e).symm
+    have no' : ¬G.Adj (φ z) (φ v) := fun e => by
+      have r := rev v e
+      simp [r] at no
+    exact mem_distanceTwo.mpr (dist_two hc ne no' (forw z w zw) (forw w v wv))
+  have c := card_le_card sub
+  rw [card_image_of_injective _ inj] at c
+  exact c.trans cap
+
+
+open OffThree16Interior in
+private theorem length_twelve_three_off_interior_with_table
+    (table : ∀ (i j : ℕ), 1<i → i+3≤j → i≤12-j → j≤10 → row i j=true)
+    (hc : G.Connected) (even : ∀ v,(EvenFrom G v).card≤5)
+    (conn : ∀ S : Finset V,S.card<2 → (G.induce ((↑S : Set V)ᶜ)).Connected)
+    (degree : ∀ u v : V,u≠v → 4≤G.degree u ∨ 4≤G.degree v)
+    {a b x : V} {p : G.Walk a b} (hp : EdgeOptimal p) (ah : 4≤G.degree a) (bh : 4≤G.degree b)
+    (len : p.length=12) (off : ((univ : Finset V)\p.support.toFinset).card=3)
+    (xo : x∉p.support) {i j : ℕ} (lo : 1<i) (gap : i+3≤j) (orient : i≤12-j) (up : j≤10)
+    (xi : i∈Pins p x) (xj : j∈Pins p x)
+    (commonHigh : ∀ y∉p.support,4≤G.degree y → Pins p y={i,j})
+    (clique : ∀ y∉p.support,∀ z∉p.support,y≠z → G.Adj z y) :
+    ∃ a b : V, ∃ p : G.Walk a b,p.IsPath ∧ ∀ v,v∈p.support := by
+  classical
+  obtain ⟨y,z,yo,zo,xy,xz,yz,yd,os⟩ := three_off_labeled_clique degree xo off
+  have yi : i∈Pins p y := by rw [commonHigh y yo yd]; simp
+  have yj : j∈Pins p y := by rw [commonHigh y yo yd]; simp
+  obtain ⟨m,m0,m11,holes,med,ml,mr,L,R⟩ := length_twelve_three_off_interior_marks
+    hc even conn degree hp ah bh len xo xi xj gap lo up
+  let O := (univ : Finset V)\p.support.toFinset
+  have os' : O={x,y,z} := os
+  have out {u : V} : u∈O ↔ u∉p.support := by simp [O]
+  let φ (k : Fin 16) : V := if k.val=13 then x else if k.val=14 then y else
+    if k.val=15 then z else p.getVert k.val
+  have value {k : Fin 16} (h : k.val≤12) : φ k=p.getVert k.val := by
+    simp [φ,show k.val≠13 by omega,show k.val≠14 by omega,show k.val≠15 by omega]
+  have classify (k : Fin 16) : k.val≤12 ∨ k=13 ∨ k=14 ∨ k=15 := by
+    by_cases h11 : k.val=13
+    · exact .inr (.inl (Fin.ext h11))
+    by_cases h12 : k.val=14
+    · exact .inr (.inr (.inl (Fin.ext h12)))
+    by_cases h13 : k.val=15
+    · exact .inr (.inr (.inr (Fin.ext h13)))
+    exact .inl (by omega)
+  have val13 : φ 13=x := rfl
+  have val14 : φ 14=y := rfl
+  have val15 : φ 15=z := rfl
+  have conflict {r : V} {k : ℕ} (ro : r∉p.support) (e : p.getVert k=r) : False :=
+    ro (e ▸ p.getVert_mem_support k)
+  have lab_inj : Function.Injective φ := by
+    intro k l eq
+    rcases classify k with kh|kh|kh|kh <;> rcases classify l with lh|lh|lh|lh
+    · exact Fin.ext (hp.1.1.getVert_injOn (show k.val≤p.length by omega)
+        (show l.val≤p.length by omega) ((value kh).symm.trans (eq.trans (value lh))))
+    all_goals try subst k
+    all_goals try subst l
+    all_goals try rfl
+    all_goals try rw [value kh] at eq
+    all_goals try rw [value lh] at eq
+    all_goals simp only [val13,val14,val15] at eq
+    all_goals exfalso
+    all_goals first | contradiction | exact xy eq.symm | exact xz eq.symm | exact yz eq.symm | exact conflict xo eq | exact conflict xo eq.symm | exact conflict yo eq | exact conflict yo eq.symm | exact conflict zo eq | exact conflict zo eq.symm
+
+  have phi_sur : Function.Surjective φ := by
+    intro w
+    by_cases h : w∈p.support
+    · obtain ⟨k,kw,kl⟩ := mem_support_iff_exists_getVert.mp h
+      exact ⟨⟨k,by omega⟩,(value (show k≤12 by omega)).trans kw⟩
+    · have q := out.mpr h
+      rw [os',mem_insert,mem_insert,mem_singleton] at q
+      rcases q with rfl|rfl|rfl
+      · exact ⟨13,val13⟩
+      · exact ⟨14,val14⟩
+      · exact ⟨15,val15⟩
+
+  have a0 : φ 0=a := by rw [value (show (0:Fin 16).val≤12 by decide)]; exact p.getVert_zero
+  have b12 : φ 12=b := by rw [value (show (12:Fin 16).val≤12 by decide)]; simpa only [len] using p.getVert_length
+  have pld {k : Fin 16} (kh : 13≤k.val) : φ k∉p.support := by
+    rcases classify k with n|rfl|rfl|rfl
+    · omega
+    · exact xo
+    · exact yo
+    · exact zo
+  have direction (u v : Fin 16) (h : dir i j m u v=true) : G.Adj (φ u) (φ v) := by
+    simp only [dir,Bool.or_eq_true,decide_eq_true_eq] at h
+    rcases h with ((((ha|hb)|hc)|he)|hf)
+    · rw [value (show u.val≤12 by omega),value ha.2,ha.1]
+      exact p.adj_getVert_succ (by omega)
+    · exact clique _ (pld (by omega : 13≤v.val)) _ (pld hb.1)
+        (fun e => by have q := congrArg Fin.val (lab_inj e); omega)
+    · have ur : u.val≤12 := by rcases hc.1 with e|e <;> omega
+      rcases hc.2 with vx|vy
+      · have eq : v=13 := Fin.ext vx
+        rw [value ur,eq,val13]
+        exact (hc.1.elim (fun e => e.symm ▸ (pin_data xi).2)
+          (fun e => e.symm ▸ (pin_data xj).2)).symm
+      · have eq : v=14 := Fin.ext vy
+        rw [value ur,eq,val14]
+        exact (hc.1.elim (fun e => e.symm ▸ (pin_data yi).2)
+          (fun e => e.symm ▸ (pin_data yj).2)).symm
+    · by_cases q : u.val=0 ∧ 1≤v.val ∧ v.val≤12
+      · simp only [dif_pos q,decide_eq_true_eq] at he
+        rw [value (show u.val≤12 by omega),value q.2.2,q.1,p.getVert_zero]
+        have h := (L ⟨v.val-1,by omega⟩).mp he
+        change G.Adj a (p.getVert (v.val-1+1)) at h
+        rwa [show v.val-1+1=v.val by omega] at h
+      · simp only [dif_neg q] at he
+        contradiction
+    · by_cases q : v.val=12 ∧ u.val<12
+      · simp only [dif_pos q,decide_eq_true_eq] at hf
+        rw [value (show u.val≤12 by omega),value (show v.val≤12 by omega),q.1,←len,p.getVert_length]
+        exact ((R ⟨u.val,q.2⟩).mp hf).symm
+      · simp only [dif_neg q] at hf
+        contradiction
+  have edgeOK (u v : Fin 16) (h : edge i j m u v=true) : G.Adj (φ u) (φ v) := by
+    simp only [edge,Bool.or_eq_true] at h
+    exact h.elim (direction _ _) (fun e => (direction _ _ e).symm)
+  have leftE (u : Fin 16) (uA : G.Adj (φ 0) (φ u)) : edge i j m 0 u=true := by
+    have onP : u.val≤12 := by
+      by_contra no
+      exact (no_endpoints hp.1 (pld (show 13≤u.val by omega))).1 ((a0 ▸ uA).symm)
+    have up : 1≤u.val := by
+      by_contra no
+      have u0 : u=0 := Fin.ext (show u.val=0 by omega)
+      exact G.loopless _ (u0 ▸ uA)
+    have q : (0:Fin 16).val=0 ∧ 1≤u.val ∧ u.val≤12 := ⟨rfl,up,onP⟩
+    have ia : G.Adj a (p.getVert ((u.val-1)+1)) := by
+      rw [show u.val-1+1=u.val by omega,←value onP,←a0]
+      exact uA
+    have h : m ⟨u.val-1,by omega⟩=1 := (L _).mpr ia
+    simp only [edge,Bool.or_eq_true]
+    left
+    simp [dir,q,h]
+  have rightE (u : Fin 16) (uB : G.Adj (φ 12) (φ u)) : edge i j m 12 u=true := by
+    have onP : u.val≤12 := by
+      by_contra no
+      exact (no_endpoints hp.1 (pld (show 13≤u.val by omega))).2 ((b12 ▸ uB).symm)
+    have up : u.val<12 := by
+      by_contra no
+      have u12 : u=12 := Fin.ext (show u.val=(12:Fin 16).val by change u.val=12; omega)
+      exact G.loopless _ (u12 ▸ uB)
+    have q : (12:Fin 16).val=12 ∧ u.val<12 := ⟨rfl,up⟩
+    have ib : G.Adj b (p.getVert u.val) := by
+      rw [←value onP,←b12]
+      exact uB
+    have h : m ⟨u.val,up⟩=2 := (R _).mpr ib
+    simp only [edge,Bool.or_eq_true]
+    right
+    simp [dir,q,h]
+  have cap := fun u => distanceTwo_le_of_even 4 u (even u)
+  have E0 : (d2Set i j m 0).card≤4 := model16_d2_upper hc φ lab_inj _ 0 edgeOK leftE (cap _)
+  have E12 : (d2Set i j m 12).card≤4 := model16_d2_upper hc φ lab_inj _ 12 edgeOK rightE (cap _)
+  rcases check_row (table i j lo gap orient up) m0 m11 holes med ml mr E0 E12 with path|exc
+  · obtain ⟨l,nd,all,chain⟩ := path
+    letI : Nonempty V := ⟨a⟩
+    exact hamilton_of_labeled_chain φ lab_inj phi_sur l nd all (chain.imp (fun u v h => edgeOK u v h))
+  obtain ⟨rfl,rfl,rfl⟩ := exc
+
+
+  have exA (u : Fin 16) : edge 4 8 eMarks 0 u=true ↔ u∈({1,2,3,6}:Finset (Fin 16)) := by
+    fin_cases u <;> decide +kernel
+  have exB (u : Fin 16) : edge 4 8 eMarks 12 u=true ↔ u∈({6,9,10,11}:Finset (Fin 16)) := by
+    fin_cases u <;> decide +kernel
+  have hA (u : Fin 16) : G.Adj (φ 0) (φ u) ↔ u∈({1,2,3,6}:Finset (Fin 16)) :=
+    (show G.Adj (φ 0) (φ u) ↔ edge 4 8 eMarks 0 u=true from ⟨leftE u,edgeOK 0 u⟩).trans (exA u)
+  have hB (u : Fin 16) : G.Adj (φ 12) (φ u) ↔ u∈({6,9,10,11}:Finset (Fin 16)) :=
+    (show G.Adj (φ 12) (φ u) ↔ edge 4 8 eMarks 12 u=true from ⟨rightE u,edgeOK 12 u⟩).trans (exB u)
+  have four : φ 4=p.getVert 4 := value (by decide : (4:Fin 16).val≤12)
+  have eight : φ 8=p.getVert 8 := value (by decide : (8:Fin 16).val≤12)
+  have x4 : G.Adj x (p.getVert 4) := (pin_data xi).2
+  have x8 : G.Adj x (p.getVert 8) := (pin_data xj).2
+  have ff := (at_most_two_pins_one_slack hc 2 (by decide) cap conn degree hp xo).1
+  have ps : ({4,8}:Finset ℕ)⊆Pins p x := by
+    intro k kh
+    have hh : k=4 ∨ k=8 := by simpa using kh
+    rcases hh with rfl|rfl <;> assumption
+  have peq : Pins p x=({4,8}:Finset ℕ) := (eq_of_subset_of_card_le ps (by simpa using ff)).symm
+  obtain ⟨df,dfi⟩ := two_flanks_full hp.1 hc xo ff (cap x) xi xj (by decide)
+  have near (u : Fin 16) (ub : u.val≤12)
+      (e : G.Adj (φ 4) (φ u) ∨ G.Adj (φ 8) (φ u)) :
+      u∈({3,4,5,7,8,9}:Finset (Fin 16)) := by
+    by_cases one : u=4 ∨ u=8
+    · rcases one with rfl|rfl <;> decide
+    have absent : ¬G.Adj x (p.getVert u.val) := by
+      intro h
+      have k : u.val∈Pins p x := by
+        have lt : u.val<p.length := by
+          by_contra! no
+          have eq : u.val=p.length := by omega
+          rw [eq,p.getVert_length] at h
+          exact (no_endpoints hp.1 xo).2 h
+        exact mem_filter.mpr ⟨mem_range.mpr lt,h⟩
+      rw [peq,mem_insert,mem_singleton] at k
+      exact one (k.imp (fun e => Fin.ext e) (fun e => Fin.ext e))
+    rw [four,eight,value ub] at e
+    have ne : x≠p.getVert u.val := fun d => xo (d.symm ▸ p.getVert_mem_support _)
+    have d : p.getVert u.val∈DistanceTwo G x := mem_distanceTwo.mpr
+      (e.elim (fun h => dist_two hc ne absent x4 h) (fun h => dist_two hc ne absent x8 h))
+    rw [df] at d
+    obtain ⟨n,nf,nv⟩ := mem_image.mp d
+    rw [dfi] at nf
+    have ni : n=3 ∨ n=5 ∨ n=7 ∨ n=9 := by simpa using nf
+    have nb : n≤p.length := by rcases ni with rfl|rfl|rfl|rfl <;> omega
+    have nu := hp.1.1.getVert_injOn nb (show u.val≤p.length by omega) nv
+    have choices : u=3 ∨ u=5 ∨ u=7 ∨ u=9 := by
+      rcases ni with h|h|h|h
+      · exact .inl (Fin.ext (nu.symm.trans h))
+      · exact .inr (.inl (Fin.ext (nu.symm.trans h)))
+      · exact .inr (.inr (.inl (Fin.ext (nu.symm.trans h))))
+      · exact .inr (.inr (.inr (Fin.ext (nu.symm.trans h))))
+    rcases choices with rfl|rfl|rfl|rfl <;> decide
+  have path16 (k : ℕ) (kr : k<12) :
+      G.Adj (φ (Fin.ofNat' 16 k)) (φ (Fin.ofNat' 16 (k+1))) := by
+    have kv : (Fin.ofNat' 16 k).val=k := Nat.mod_eq_of_lt (by omega)
+    have kv' : (Fin.ofNat' 16 (k+1)).val=k+1 := Nat.mod_eq_of_lt (by omega)
+    rw [value (by rw [kv]; omega),value (by rw [kv']; omega),kv,kv']
+    exact p.adj_getVert_succ (by omega)
+  have p4 : G.Adj (φ 4) (φ 13) := by rw [four,val13]; exact x4.symm
+  have p8 : G.Adj (φ 8) (φ 13) := by rw [eight,val13]; exact x8.symm
+  exact False.elim (order_sixteen_three_off_exception_impossible hc even degree φ lab_inj phi_sur
+    path16 hA hB near p4 p8)
+
+#print axioms length_twelve_three_off_interior_with_table

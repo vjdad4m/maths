@@ -1,0 +1,115 @@
+
+open OffThree16Interior in
+private theorem length_twelve_three_off_interior_marks
+    (hc : G.Connected) (even : ∀ v,(EvenFrom G v).card≤5)
+    (conn : ∀ S : Finset V,S.card<2 → (G.induce ((↑S : Set V)ᶜ)).Connected)
+    (degree : ∀ u v : V,u≠v → 4≤G.degree u ∨ 4≤G.degree v)
+    {a b x : V} {p : G.Walk a b} (hp : EdgeOptimal p)
+    (ah : 4≤G.degree a) (bh : 4≤G.degree b) (len : p.length=12)
+    (xo : x∉p.support) {i j : ℕ}
+    (hi : i∈Pins p x) (hj : j∈Pins p x) (gap : i+3≤j) (lo : 1<i) (up : j≤10) :
+    ∃ m : Marks, m 0=1 ∧ m 11=2 ∧
+      (∀ k : Fin 12,Hole i j k.val → m k=0) ∧
+      (∀ k : Fin 12,¬Hole i j k.val → m k≠0) ∧
+      markCount m 1=4 ∧ markCount m 2=4 ∧
+      (∀ k : Fin 12,m k=1 ↔ G.Adj a (p.getVert (k.val+1))) ∧
+      (∀ k : Fin 12,m k=2 ↔ G.Adj b (p.getVert k.val)) := by
+  classical
+  have dcap := fun x => distanceTwo_le_of_even 4 x (even x)
+  have f := (at_most_two_pins_one_slack hc 2 (by decide) dcap conn degree hp xo).1
+  obtain ⟨ll,rr⟩ := pin_two_contacts_end hp.1 hc xo f (dcap x) hi hj gap
+  have missI := mark_holes_of_pin_and_missing_endpoint hp.1 xo hi
+  have missJ := mark_holes_of_pin_and_missing_endpoint hp.1 xo hj
+  have hi0 := missI.1 (fun h => (by omega : i≠1) (ll i hi h))
+  have hj0 := missJ.1 (fun h => (by omega : i≠1) (ll j hj h))
+  have hi1 := missI.2 (fun h => (by omega : j+1≠p.length) (rr i hi h))
+  have hj1 := missJ.2 (fun h => (by omega : j+1≠p.length) (rr j hj h))
+  let T : Finset ℕ := {i-1,i,j-1,j}
+  have tc : T.card=4 := by
+    have ne1 : i-1∉({i,j-1,j}:Finset ℕ) := by simp only [mem_insert,mem_singleton]; omega
+    have ne2 : i∉({j-1,j}:Finset ℕ) := by simp only [mem_insert,mem_singleton]; omega
+    have ne3 : j-1∉({j}:Finset ℕ) := by simp only [mem_singleton]; omega
+    rw [show T={i-1,i,j-1,j} from rfl,card_insert_of_not_mem ne1,card_insert_of_not_mem ne2,
+      card_insert_of_not_mem ne3,card_singleton]
+  have mt {k : ℕ} : k∈T ↔ Hole i j k := by simp [T,Hole]
+  have ts : T⊆range p.length := by
+    intro k km
+    have v := mt.mp km
+    simp only [Hole] at v
+    rcases v with rfl|rfl|rfl|rfl <;> exact mem_range.mpr (by omega)
+  have tv {k : ℕ} (ki : k∈T) : k∉LeftMarks p∪RightMarks p := by
+    have e := mt.mp ki
+    simp only [Hole] at e
+    rcases e with rfl|rfl|rfl|rfl <;> assumption
+  have td : Disjoint (LeftMarks p∪RightMarks p) T :=
+    disjoint_left.mpr (fun _ h m => tv m h)
+  have degreeSum := mark_length hp.1 xo (p.getVert_mem_support i) (pin_data hi).2 T ts td
+  have exactL : G.degree a=4 := by omega
+  have exactR : G.degree b=4 := by omega
+  have all {k : ℕ} (kr : k<p.length) (no : k∉T) : k∈LeftMarks p∪RightMarks p := by
+    by_contra z
+    have dep : Disjoint (LeftMarks p∪RightMarks p) (insert k T) :=
+      disjoint_left.mpr (fun w h m => (mem_insert.mp m).elim
+        (fun e => z (e ▸ h)) (fun e => tv e h))
+    have sub : insert k T⊆range p.length := insert_subset (mem_range.mpr kr) ts
+    have bd := mark_length hp.1 xo (p.getVert_mem_support i) (pin_data hi).2 _ sub dep
+    rw [card_insert_of_not_mem no] at bd
+    omega
+  have e : ∀ k<p.length, ¬(G.Adj a (p.getVert (k+1)) ∧ G.Adj b (p.getVert k)) := by
+    intro k kr h
+    exact not_adj_both_end_marks hp.1 xo (p.getVert_mem_support i) (pin_data hi).2 kr h.1 h.2
+  let m : Marks := fun k => if G.Adj a (p.getVert (k.val+1)) then 1
+    else if G.Adj b (p.getVert k.val) then 2 else 0
+  have l (k : Fin 12) : m k=1 ↔ G.Adj a (p.getVert (k.val+1)) := by
+    by_cases h : G.Adj a (p.getVert (k.val+1))
+    · simp [m,h]
+    · by_cases r : G.Adj b (p.getVert k.val) <;> simp [m,h,r]
+  have r (k : Fin 12) : m k=2 ↔ G.Adj b (p.getVert k.val) := by
+    have kb := k.isLt
+    by_cases h : G.Adj a (p.getVert (k.val+1))
+    · have no : ¬G.Adj b (p.getVert k.val) := fun n => e _ (by omega) ⟨h,n⟩
+      simp [m,h,no]
+    · by_cases s : G.Adj b (p.getVert k.val) <;> simp [m,h,s]
+  have zero (k : Fin 12) : m k=0 ↔ k.val∉LeftMarks p∪RightMarks p := by
+    have kr : k.val<p.length := by have ee := k.isLt; omega
+    have km : k.val∈range p.length := mem_range.mpr kr
+    by_cases al : G.Adj a (p.getVert (k.val+1)) <;>
+      by_cases br : G.Adj b (p.getVert k.val) <;> simp [m,al,br,LeftMarks,RightMarks,km]
+  have m0 : m 0=1 := (l 0).mpr (by simpa using p.adj_getVert_succ (i:=0) (by omega))
+  have m11 : m 11=2 := (r 11).mpr (by
+    have rr := (p.adj_getVert_succ (i:=11) (by omega)).symm
+    rw [show 11+1=p.length by omega,p.getVert_length] at rr
+    exact rr)
+  refine ⟨m,m0,m11,fun k h => (zero k).mpr (tv (mt.mpr h)),?_,?_,?_,l,r⟩
+  · intro k h km
+    exact (zero k).mp km (all (by have zz := k.isLt; omega) (fun e => h (mt.mp e)))
+  · unfold markCount
+    let N := univ.filter (fun k : Fin 12 => m k=1)
+    have eq : N.image Fin.val=LeftMarks p := by
+      ext n
+      constructor
+      · rintro H
+        obtain ⟨k,km,rfl⟩ := mem_image.mp H
+        exact mem_filter.mpr ⟨mem_range.mpr (by have g := k.isLt; omega), (l k).mp (mem_filter.mp km).2⟩
+      · intro nm
+        have nb := mem_range.mp (mem_filter.mp nm).1
+        exact mem_image.mpr ⟨⟨n,by omega⟩,mem_filter.mpr ⟨mem_univ _,(l ⟨n,by omega⟩).mpr (mem_filter.mp nm).2⟩,rfl⟩
+    have ce : (N.image Fin.val).card=N.card := card_image_iff.mpr (fun _ _ _ _ e => Fin.ext e)
+    change N.card=4
+    rw [←ce,eq,card_leftMarks hp.1,exactL]
+  · unfold markCount
+    let N := univ.filter (fun k : Fin 12 => m k=2)
+    have eq : N.image Fin.val=RightMarks p := by
+      ext n
+      constructor
+      · rintro H
+        obtain ⟨k,km,rfl⟩ := mem_image.mp H
+        exact mem_filter.mpr ⟨mem_range.mpr (by have g := k.isLt; omega),(r k).mp (mem_filter.mp km).2⟩
+      · intro nm
+        have nb := mem_range.mp (mem_filter.mp nm).1
+        exact mem_image.mpr ⟨⟨n,by omega⟩,mem_filter.mpr ⟨mem_univ _,(r ⟨n,by omega⟩).mpr (mem_filter.mp nm).2⟩,rfl⟩
+    have ce : (N.image Fin.val).card=N.card := card_image_iff.mpr (fun _ _ _ _ e => Fin.ext e)
+    change N.card=4
+    rw [←ce,eq,card_rightMarks hp.1,exactR]
+
+#print axioms length_twelve_three_off_interior_marks

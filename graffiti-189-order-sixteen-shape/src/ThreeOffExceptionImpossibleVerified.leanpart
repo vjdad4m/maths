@@ -1,0 +1,168 @@
+
+/-- Metric exclusion of the one endpoint-mark exception of the order-sixteen
+three-omission model. It works for arbitrary unknown edges away from the endpoints. -/
+theorem order_sixteen_three_off_exception_impossible
+    (hc : G.Connected) (even : ∀ z,(EvenFrom G z).card≤5)
+    (degree : ∀ u v : V,u≠v → 4≤G.degree u ∨ 4≤G.degree v)
+    (f : Fin 16→V) (inj : Function.Injective f) (onto : Function.Surjective f)
+    (path : ∀ i : ℕ, i<12 → G.Adj (f (Fin.ofNat' 16 i)) (f (Fin.ofNat' 16 (i+1))))
+    (hA : ∀ z : Fin 16, G.Adj (f 0) (f z) ↔ z∈({1,2,3,6}:Finset (Fin 16)))
+    (hB : ∀ z : Fin 16, G.Adj (f 12) (f z) ↔ z∈({6,9,10,11}:Finset (Fin 16)))
+    (conf : ∀ z : Fin 16,z.val≤12 →
+      (G.Adj (f 4) (f z) ∨ G.Adj (f 8) (f z)) →
+        z∈({3,4,5,7,8,9}:Finset (Fin 16)))
+    (p4 : G.Adj (f 4) (f 13)) (p8 : G.Adj (f 8) (f 13)) : False := by
+  classical
+  let D := fun k : Fin 16 => DistanceTwo G (f k)
+  have cap (c : Fin 16) : (D c).card≤4 := distanceTwo_le_of_even 4 _ (even _)
+  have dst (c t w : Fin 16) (ct : c≠t) (nt : ¬G.Adj (f c) (f t))
+      (cw : G.Adj (f c) (f w)) (wt : G.Adj (f w) (f t)) : f t∈D c :=
+    mem_distanceTwo.mpr (dist_two hc (fun e => ct (inj e)) nt cw wt)
+  have exactD (c : Fin 16) (T : Finset (Fin 16)) (ct : T.card=4)
+      (sub : ∀ t∈T,f t∈D c) : D c=T.image f := by
+    symm
+    apply eq_of_subset_of_card_le
+    · intro t h
+      obtain ⟨u,hu,rfl⟩ := mem_image.mp h
+      exact sub u hu
+    · rw [card_image_of_injective _ inj,ct]
+      exact cap c
+  have nA {k : Fin 16} (no : k∉({1,2,3,6}:Finset (Fin 16))) : ¬G.Adj (f 0) (f k) :=
+    fun h => no ((hA _).mp h)
+  have nB {k : Fin 16} (no : k∉({6,9,10,11}:Finset (Fin 16))) : ¬G.Adj (f 12) (f k) :=
+    fun h => no ((hB _).mp h)
+  have ban {k : Fin 16} (kb : k.val≤12) (kn : k∉({3,4,5,7,8,9}:Finset (Fin 16))) :
+      ¬G.Adj (f 4) (f k) ∧ ¬G.Adj (f 8) (f k) :=
+    ⟨fun h => kn (conf _ kb (.inl h)),fun h => kn (conf _ kb (.inr h))⟩
+  have da4 := dst 0 4 3 (by decide) (nA (by decide)) ((hA 3).mpr (by decide)) (path 3 (by decide))
+  have da5 := dst 0 5 6 (by decide) (nA (by decide)) ((hA 6).mpr (by decide)) (path 5 (by decide)).symm
+  have da7 := dst 0 7 6 (by decide) (nA (by decide)) ((hA 6).mpr (by decide)) (path 6 (by decide))
+  have dab := dst 0 12 6 (by decide) (nA (by decide)) ((hA 6).mpr (by decide)) ((hB 6).mpr (by decide)).symm
+  have dba := dst 12 0 6 (by decide) (nB (by decide)) ((hB 6).mpr (by decide)) ((hA 6).mpr (by decide)).symm
+  have db5 := dst 12 5 6 (by decide) (nB (by decide)) ((hB 6).mpr (by decide)) (path 5 (by decide)).symm
+  have db7 := dst 12 7 6 (by decide) (nB (by decide)) ((hB 6).mpr (by decide)) (path 6 (by decide))
+  have db8 := dst 12 8 9 (by decide) (nB (by decide)) ((hB 9).mpr (by decide)) (path 8 (by decide)).symm
+  have eqA := exactD 0 {4,5,7,12} (by decide) (by
+    intro k km
+    simp only [mem_insert,mem_singleton] at km
+    rcases km with rfl|rfl|rfl|rfl <;> assumption)
+  have eqB := exactD 12 {0,5,7,8} (by decide) (by
+    intro k km
+    simp only [mem_insert,mem_singleton] at km
+    rcases km with rfl|rfl|rfl|rfl <;> assumption)
+  have fit {c : Fin 16} {S : Finset (Fin 16)} {k : Fin 16} (eq : D c=S.image f) (d : f k∈D c) :
+      k∈S := by
+    rw [eq] at d
+    obtain ⟨q,qS,e⟩ := mem_image.mp d
+    exact (inj e) ▸ qS
+  have di0 := dst 4 0 3 (by decide) (fun h => nA (by decide) h.symm)
+    (path 3 (by decide)).symm ((hA 3).mpr (by decide)).symm
+  have di2 := dst 4 2 3 (by decide) (ban (by decide) (by decide)).1
+    (path 3 (by decide)).symm (path 2 (by decide)).symm
+  have di6 := dst 4 6 5 (by decide) (ban (by decide) (by decide)).1
+    (path 4 (by decide)) (path 5 (by decide))
+  have dj12 := dst 8 12 9 (by decide) (fun h => nB (by decide) h.symm)
+    (path 8 (by decide)) ((hB 9).mpr (by decide)).symm
+  have dj10 := dst 8 10 9 (by decide) (ban (by decide) (by decide)).2
+    (path 8 (by decide)) (path 9 (by decide))
+  have dj6 := dst 8 6 7 (by decide) (ban (by decide) (by decide)).2
+    (path 7 (by decide)).symm (path 6 (by decide)).symm
+  have extraI : ∃ q : Fin 16,(q=8 ∨ q=7 ∨ q=9 ∨ q=10) ∧ f q∈D 4 := by
+    by_cases h : G.Adj (f 4) (f 8)
+    · by_cases h7 : G.Adj (f 4) (f 7)
+      · by_cases h9 : G.Adj (f 4) (f 9)
+        · exact ⟨10,.inr (.inr (.inr rfl)),dst 4 10 9 (by decide) (ban (by decide) (by decide)).1 h9
+            (path 9 (by decide))⟩
+        · exact ⟨9,.inr (.inr (.inl rfl)),dst 4 9 8 (by decide) h9 h (path 8 (by decide))⟩
+      · exact ⟨7,.inr (.inl rfl),dst 4 7 8 (by decide) h7 h (path 7 (by decide)).symm⟩
+    · exact ⟨8,.inl rfl,dst 4 8 13 (by decide) h p4 p8.symm⟩
+  have extraJ : ∃ q : Fin 16,(q=4 ∨ q=3 ∨ q=5 ∨ q=2) ∧ f q∈D 8 := by
+    by_cases h : G.Adj (f 8) (f 4)
+    · by_cases h3 : G.Adj (f 8) (f 3)
+      · by_cases h5 : G.Adj (f 8) (f 5)
+        · exact ⟨2,.inr (.inr (.inr rfl)),dst 8 2 3 (by decide) (ban (by decide) (by decide)).2 h3
+            (path 2 (by decide)).symm⟩
+        · exact ⟨5,.inr (.inr (.inl rfl)),dst 8 5 4 (by decide) h5 h (path 4 (by decide))⟩
+      · exact ⟨3,.inr (.inl rfl),dst 8 3 4 (by decide) h3 h (path 3 (by decide)).symm⟩
+    · exact ⟨4,.inl rfl,dst 8 4 13 (by decide) h p8 p4.symm⟩
+  have noI {v : Fin 16} (q : v=1 ∨ v=11) : f v∉D 4 := by
+    obtain ⟨w,wcase,wd⟩ := extraI
+    let S : Finset (Fin 16) := {0,2,6,w}
+    have sc : S.card=4 := by rcases wcase with rfl|rfl|rfl|rfl <;> decide
+    have eq := exactD 4 S sc (by
+      intro t tm
+      simp only [S,mem_insert,mem_singleton] at tm
+      rcases tm with rfl|rfl|rfl|rfl <;> assumption)
+    intro no
+    have h := fit eq no
+    have bn : v∉S := by rcases q with rfl|rfl <;> rcases wcase with rfl|rfl|rfl|rfl <;> decide
+    exact bn h
+  have noJ {v : Fin 16} (q : v=1 ∨ v=11) : f v∉D 8 := by
+    obtain ⟨w,wcase,wd⟩ := extraJ
+    let S : Finset (Fin 16) := {12,10,6,w}
+    have sc : S.card=4 := by rcases wcase with rfl|rfl|rfl|rfl <;> decide
+    have eq := exactD 8 S sc (by
+      intro t tm
+      simp only [S,mem_insert,mem_singleton] at tm
+      rcases tm with rfl|rfl|rfl|rfl <;> assumption)
+    intro no
+    have h := fit eq no
+    have bn : v∉S := by rcases q with rfl|rfl <;> rcases wcase with rfl|rfl|rfl|rfl <;> decide
+    exact bn h
+  have N1 : G.neighborFinset (f 1)⊆({f 0,f 2}:Finset V) := by
+    intro v hv
+    obtain ⟨k,rfl⟩ := onto v
+    have e := (mem_neighborFinset G _ _).mp hv
+    by_cases k0 : k=0
+    · subst k; exact mem_insert_self _ _
+    have h : k∈({1,2,3,6}:Finset (Fin 16)) ∨ k∈({4,5,7,12}:Finset (Fin 16)) := by
+      by_cases a : G.Adj (f 0) (f k)
+      · exact .inl ((hA _).mp a)
+      · exact .inr (fit eqA (dst 0 k 1 (fun e => k0 e.symm) a ((hA 1).mpr (by decide)) e))
+    simp only [mem_insert,mem_singleton] at h
+    rcases h with (rfl|rfl|rfl|rfl)|(rfl|rfl|rfl|rfl)
+    · exact (G.loopless _ e).elim
+    · exact mem_insert_of_mem (mem_singleton_self _)
+    · exact (noI (.inl rfl) (dst 4 1 3 (by decide) (ban (by decide) (by decide)).1
+        (path 3 (by decide)).symm e.symm)).elim
+    · have t := fit eqB (dst 12 1 6 (by decide) (nB (by decide)) ((hB 6).mpr (by decide)) e.symm)
+      exact (by decide : (1:Fin 16)∉({0,5,7,8}:Finset (Fin 16))) t |>.elim
+    · exact (((ban (by decide) (by decide)).1) e.symm).elim
+    · exact (noI (.inl rfl) (dst 4 1 5 (by decide) (ban (by decide) (by decide)).1
+        (path 4 (by decide)) e.symm)).elim
+    · exact (noJ (.inl rfl) (dst 8 1 7 (by decide) (ban (by decide) (by decide)).2
+        (path 7 (by decide)).symm e.symm)).elim
+    · exact (nB (by decide) e.symm).elim
+  have N11 : G.neighborFinset (f 11)⊆({f 12,f 10}:Finset V) := by
+    intro v hv
+    obtain ⟨k,rfl⟩ := onto v
+    have e := (mem_neighborFinset G _ _).mp hv
+    by_cases k12 : k=12
+    · subst k; exact mem_insert_self _ _
+    have h : k∈({6,9,10,11}:Finset (Fin 16)) ∨ k∈({0,5,7,8}:Finset (Fin 16)) := by
+      by_cases a : G.Adj (f 12) (f k)
+      · exact .inl ((hB _).mp a)
+      · exact .inr (fit eqB (dst 12 k 11 (fun e => k12 e.symm) a ((hB 11).mpr (by decide)) e))
+    simp only [mem_insert,mem_singleton] at h
+    rcases h with (rfl|rfl|rfl|rfl)|(rfl|rfl|rfl|rfl)
+    · have t := fit eqA (dst 0 11 6 (by decide) (nA (by decide)) ((hA 6).mpr (by decide)) e.symm)
+      exact (by decide : (11:Fin 16)∉({4,5,7,12}:Finset (Fin 16))) t |>.elim
+    · exact (noJ (.inr rfl) (dst 8 11 9 (by decide) (ban (by decide) (by decide)).2
+        (path 8 (by decide)) e.symm)).elim
+    · exact mem_insert_of_mem (mem_singleton_self _)
+    · exact (G.loopless _ e).elim
+    · exact (nA (by decide) e.symm).elim
+    · exact (noI (.inr rfl) (dst 4 11 5 (by decide) (ban (by decide) (by decide)).1
+        (path 4 (by decide)) e.symm)).elim
+    · exact (noJ (.inr rfl) (dst 8 11 7 (by decide) (ban (by decide) (by decide)).2
+        (path 7 (by decide)).symm e.symm)).elim
+    · exact (((ban (by decide) (by decide)).2) e.symm).elim
+  have l1 := card_le_card N1
+  have l11 := card_le_card N11
+  rw [card_neighborFinset_eq_degree] at l1 l11
+  have c1 := card_insert_le (f 0) ({f 2}:Finset V)
+  have c11 := card_insert_le (f 12) ({f 10}:Finset V)
+  simp at c1 c11
+  have d := degree (f 1) (f 11) (fun e => (by decide : (1:Fin 16)≠11) (inj e))
+  omega
+#print axioms order_sixteen_three_off_exception_impossible

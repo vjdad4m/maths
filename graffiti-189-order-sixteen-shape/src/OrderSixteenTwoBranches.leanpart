@@ -1,0 +1,29 @@
+
+/-- The remaining two longest-path lengths for a counterexample through order 16. -/
+theorem order_sixteen_two_remaining_branches
+    (hc : G.Connected) (even : ∀ v,(EvenFrom G v).card≤5)
+    (conn : ∀ S : Finset V,S.card<2 → (G.induce ((↑S : Set V)ᶜ)).Connected)
+    (degree : ∀ u v : V,u≠v → 4≤G.degree u ∨ 4≤G.degree v)
+    (order : Fintype.card V≤16)
+    (fail : ¬∃ a b : V, ∃ p : G.Walk a b,p.IsPath ∧ ∀ z,z∈p.support) :
+    Fintype.card V=16 ∧
+    ∃ a b : V, ∃ p : G.Walk a b, EdgeOptimal p ∧ 4≤G.degree a ∧ 4≤G.degree b ∧
+      ((p.length=10 ∧ ((univ : Finset V)\p.support.toFinset).card=5) ∨
+       (p.length=11 ∧ ((univ : Finset V)\p.support.toFinset).card=4)) := by
+  classical
+  obtain ⟨ord,a,b,p,hp,ah,bh,lower,upper,offLower,offUpper⟩ :=
+    order_sixteen_remaining_shape hc even conn degree
+      (traceable_of_order_le_fifteen hc even conn degree) order fail
+  let O := (univ : Finset V)\p.support.toFinset
+  have cardO : O.card+(p.length+1)=Fintype.card V := by
+    have h := card_sdiff_add_card_eq_card (subset_univ p.support.toFinset)
+    rwa [List.toFinset_card_of_nodup hp.1.1.support_nodup,length_support,card_univ] at h
+  have bounded : p.length≤11 := by
+    by_contra! h
+    exact fail (traceable_if_three_off_order_sixteen hc even conn degree hp ah bh
+      (by omega) (show O.card=3 by omega))
+  refine ⟨ord,a,b,p,hp,ah,bh,?_⟩
+  change (p.length=10 ∧ O.card=5) ∨ (p.length=11 ∧ O.card=4)
+  omega
+
+#print axioms order_sixteen_two_remaining_branches

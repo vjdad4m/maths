@@ -191,6 +191,7 @@
 | AutoGraphForge line 2417 | Disproved | [Lean](autographforge-star/StarCone.lean) |
 | AutoGraphForge line 2425 | Disproved | [Lean](autographforge-complete/CompleteRows.lean) |
 | AutoGraphForge line 2427 | Disproved (singleton rainbow convention) | [Lean](autographforge-1883/AutoGraphForge1883.lean) |
+| AutoGraphForge line 2437 | Disproved in Lean by C43; upstream implicit witness also exists | [Proof](autographforge-2437/) |
 | AutoGraphForge line 2452 | Disproved | [Lean](autographforge-multipartite/Multipartite.lean) |
 | AutoGraphForge line 2453 | Disproved | [Lean](autographforge-multipartite/Multipartite.lean) |
 | AutoGraphForge line 2473 | Disproved in Lean by the same connected graph as line 2039 | [Counterexample](autographforge-2473/README.md) |

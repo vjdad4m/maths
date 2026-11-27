@@ -165,6 +165,7 @@
 | AutoGraphForge line 1908 | Disproved | [Lean](autographforge-303/AutoGraphForgePlanar.lean) |
 | AutoGraphForge line 1915 | Disproved; unbounded gap on triangle chains | [Lean](autographforge-1915/TriangleChain.lean) · [Replay](autographforge-1915/README.md) |
 | AutoGraphForge line 1956 | Disproved | [Lean](autographforge-balanced-forcing/BalancedForcing.lean) |
+| AutoGraphForge line 1957 | Disproved in Lean (14 vertices; sharp degree-dependent bound) | [Proof](autographforge-1957/README.md) |
 | AutoGraphForge line 1974 | Disproved | [Lean](autographforge-complete/CompleteRows.lean) |
 | AutoGraphForge line 2039 | Disproved in Lean by a connected 10-vertex graph | [Counterexample](autographforge-2039/README.md) |
 | AutoGraphForge line 2054 | Disproved | [Lean](autographforge-friendship/Friendship.lean) |

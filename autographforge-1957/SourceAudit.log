@@ -1,0 +1,11 @@
+Row 1957, b25512ac, proposed, null Lean proof; 17 normalized touches.
+4776 distinct codes; 567 eligible; 97 eligible from refutation JSON.
+Released violating cycle orders: [21, 23, 24, 27, 29, 30, 31, 32, 33, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53]
+Released encodings isomorphic to a violating twin family member: []
+C21: clique cover 11, line domination 7; backup line 4268, code TqG?GGA?O@?A?A??_?_?@??O??G??_O?CO?C
+C24: clique cover 12, line domination 8; backup line 4302, code WqG?GGA?O@?A?A?@??G?C??C??_??G??O??@???_O??a??C
+Degree 2: order 6, clique cover 3, line domination 2
+Degree 3: order 10, clique cover 5, line domination 3
+Degree 4: order 14, clique cover 7, line domination 4
+14-vertex graph6: Ms\rc?@?OA@F@M?m?
+Degree 5: order 18, clique cover 9, line domination 5

@@ -1,0 +1,31 @@
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+src/RemoteBudgetComponent.lean: OK
+dependencies.tsv: OK
+modules.txt: OK
+
+=== RemoteSquareConvergence ===
+'KelmansCactus.AtomicBridge.RemoteSquareConvergence.bypass_of_cycles' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteSquareConvergence.square_convergence' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RemoteRankUnion ===
+'KelmansCactus.AtomicBridge.RemoteRankUnion.rebuilt_preconnected_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteRankUnion.rebuilt_disconnected_iff_forced_cut' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteRankUnion.force_cut_has_distinct_same_color' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RemoteBudgetComponent ===
+'KelmansCactus.AtomicBridge.RemoteBudgetComponent.budget_one_exchange' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteBudgetComponent.exposed_iff_neighbor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

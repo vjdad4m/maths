@@ -1,0 +1,5 @@
+# Git blob SHA and path relative to the maths repository, in build order.
+e80304da85af63ff0e3439e0e88e9ff7f8ffca4e	kelmans-switch-unions/src/SquareCapGeometry.lean
+e1df35614c12d87a46f1f77c2c2f2ffbd53f00fb	kelmans-switch-unions/src/SquareCapFactor.lean
+3decd38dfeca9273000e51c43c2dccd0f5711fd2	kelmans-switch-unions/src/RemoteVacancyRails.lean
+f5cb536bc775e620473ed00e00e292753df533c0	kelmans-switch-unions/src/RemoteGapRunPacking.lean

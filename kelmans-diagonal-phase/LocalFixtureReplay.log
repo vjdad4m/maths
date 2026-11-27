@@ -1,0 +1,48 @@
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+=== RemoteMixedDissociation ===
+'KelmansCactus.AtomicBridge.RemoteMixedDissociation.no_factor_if_sparse_large' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.DiagonalResidueLock.no_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+=== DiagonalPhaseHost ===
+'KelmansCactus.AtomicBridge.DiagonalPhaseFixture.host_three_connected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.DiagonalPhaseFixture.exact_board' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.DiagonalPhaseFixture.wide' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+src/RemotePhaseChordRepair.lean: OK
+fixtures/DiagonalPhaseBare.lean: OK
+fixtures/DiagonalPhaseFixture.lean: OK
+fixtures/DiagonalPhaseHost.lean: OK
+fixtures/DiagonalPhaseRanks.lean: OK
+dependencies.tsv: OK
+fixture-dependencies.tsv: OK
+modules.txt: OK
+
+=== DiagonalPhaseRanks ===
+'KelmansCactus.AtomicBridge.DiagonalPhaseFixture.no_charges' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.DiagonalPhaseFixture.release_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.DiagonalPhaseFixture.rank_fails' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+=== DiagonalPhaseFixture ===
+'KelmansCactus.AtomicBridge.DiagonalPhaseFixture.ear_geometry' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.DiagonalPhaseFixture.phase_geometry' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.DiagonalPhaseFixture.pair_factors' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== DiagonalPhaseBare ===
+'KelmansCactus.AtomicBridge.DiagonalPhaseBare.bare_fails' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.DiagonalPhaseBare.subgraph_of_genuine' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.DiagonalPhaseBare.either_side_repairs' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

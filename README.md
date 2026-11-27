@@ -156,6 +156,7 @@
 | AutoGraphForge line 2222 | Disproved | [Lean](autographforge-balanced-forcing/BalancedForcing.lean) |
 | AutoGraphForge line 2240 | Disproved | [Lean](autographforge-balanced-forcing/BalancedForcing.lean) |
 | AutoGraphForge line 2255 | Disproved | [Lean](autographforge-balanced-forcing/BalancedForcing.lean) |
+| AutoGraphForge line 2276 | Proved in Lean; sharp on the 17-vertex cycle (known burning bound corollary) | [Proof](autographforge-2276/README.md) |
 | AutoGraphForge line 2290 | Disproved | [Lean](autographforge-friendship/Friendship.lean) |
 | AutoGraphForge line 2304 | Disproved | [Lean](autographforge-friendship/Friendship.lean) |
 | AutoGraphForge line 2319 | Disproved | [Lean](autographforge-balanced-forcing/BalancedForcing.lean) |

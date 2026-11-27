@@ -1,0 +1,20 @@
+Building P5CliqueIndependentFanFinite133
+'Graffiti133P5CliqueArms.IndependentFanFinite.no_passing_masks' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS P5CliqueIndependentFanFinite133
+Building P5CliqueIndependentFanWitness133
+'Graffiti133P5CliqueArms.IndependentFanFinite.pair_ok_is_mask' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti133P5CliqueArms.IndependentFanFinite.symbolic_cert' depends on axioms: [propext]
+'Graffiti133P5CliqueArms.IndependentFanFinite.actual_graph_passes' depends on axioms: [propext, Quot.sound]
+PASS P5CliqueIndependentFanWitness133
+Building P5CliqueFourPortCommonRelayFans133
+'Graffiti133P5CliqueArms.six_same_port_fans_or_induced_P9' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS P5CliqueFourPortCommonRelayFans133
+Building P5CliqueIndependentFanLift133
+'Graffiti133P5CliqueArms.independent_palette_at_most_two_fans' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS P5CliqueIndependentFanLift133

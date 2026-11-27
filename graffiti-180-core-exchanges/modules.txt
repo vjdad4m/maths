@@ -1,0 +1,13 @@
+CoreSplit180
+SecondScores180
+LeafPatterns180
+ExampleBase180
+ExampleRank180
+ExampleScore180
+Example180
+SingleSplit180
+AllTipsBase180
+AllTipsRank180
+AllTipsScore180
+AllTips180
+RootData180

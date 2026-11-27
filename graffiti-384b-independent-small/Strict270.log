@@ -1,0 +1,49 @@
+Independent anchor build /workspace/scratch/7efa613b1c05/graff384b-clean-independent/.cleanscores.oQTRP6Hh
+graff384b-independent12/CHECKED-OBJECTS.sha256: OK
+graff384b-independent12/CubicExtra.lean: OK
+graff384b-independent12/CubicMass.lean: OK
+graff384b-independent12/CubicRanks.lean: OK
+graff384b-independent12/DenseTwelve.lean: OK
+graff384b-independent12/FinishIndependent.lean: OK
+graff384b-independent12/NEW-SOURCES.sha256: OK
+graff384b-independent12/PoolTwelve.lean: OK
+graff384b-independent12/README.md: OK
+graff384b-independent12/SOURCES.sha256: OK
+graff384b-independent12/Strict268.log: OK
+graff384b-independent12/UnreservedTwelve.lean: OK
+graff384b-independent12/audit.py: OK
+graff384b-independent12/conditioned_sample.py: OK
+graff384b-independent12/replay.sh: OK
+graff384b-simplicial16/graff384b-simplicial16-sources.zip: OK
+Complete independent-ear replay verified: 268 graph modules and 639 axiom reports.
+Fresh extension verified: 7 modules and 10 standard-axiom reports.
+AnchorScores.olean: OK
+CubicExtra.olean: OK
+CubicMass.olean: OK
+CubicRanks.olean: OK
+DenseTwelve.olean: OK
+FinishIndependent.olean: OK
+IndependentFrontier.olean: OK
+IndependentThirteen.olean: OK
+JointEarRank.olean: OK
+JointEarSample.olean: OK
+JointEarWitness.olean: OK
+PoolTwelve.olean: OK
+PortClique29.olean: OK
+PortFrame29.olean: OK
+PortRepair29.olean: OK
+RankRepair29.olean: OK
+ReservedRanks.olean: OK
+SimplicialRanks.olean: OK
+SimplicialTrial.olean: OK
+TwelveWitness.olean: OK
+UnreservedTwelve.olean: OK
+Weighted29.olean: OK
+CleanRanks.lean: OK
+CleanFinish.lean: OK
+'Graffiti384b.Clean.coverage' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Clean.ranked' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Clean.exact_clean' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Clean.leaf_or_shared' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fresh extension verified: 2 modules and 4 standard-axiom reports.
+Complete independent attachment replay verified: 270 graph modules and 643 axiom reports.

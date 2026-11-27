@@ -1,0 +1,51 @@
+Independent branch build /workspace/scratch/7efa613b1c05/graff384b-independent12/.independent.nY2Ol58z
+graff384b-simplicial16/AnchorScores.lean: OK
+graff384b-simplicial16/IndependentFrontier.lean: OK
+graff384b-simplicial16/IndependentThirteen.lean: OK
+graff384b-simplicial16/NEW-SOURCES.sha256: OK
+graff384b-simplicial16/README.md: OK
+graff384b-simplicial16/ReservedRanks.lean: OK
+graff384b-simplicial16/SOURCES.sha256: OK
+graff384b-simplicial16/SimplicialRanks.lean: OK
+graff384b-simplicial16/SimplicialTrial.lean: OK
+graff384b-simplicial16/Strict261.log: OK
+graff384b-simplicial16/TwelveWitness.lean: OK
+graff384b-simplicial16/audit.py: OK
+graff384b-simplicial16/replay.sh: OK
+graff384b-joint17/graff384b-joint17-sources.zip: OK
+Complete simplicial replay verified: 261 graph modules and 629 axiom reports.
+Fresh extension verified: 7 modules and 14 standard-axiom reports.
+AnchorScores.olean: OK
+IndependentFrontier.olean: OK
+IndependentThirteen.olean: OK
+JointEarRank.olean: OK
+JointEarSample.olean: OK
+JointEarWitness.olean: OK
+PortClique29.olean: OK
+PortFrame29.olean: OK
+PortRepair29.olean: OK
+RankRepair29.olean: OK
+ReservedRanks.olean: OK
+SimplicialRanks.olean: OK
+SimplicialTrial.olean: OK
+TwelveWitness.olean: OK
+Weighted29.olean: OK
+UnreservedTwelve.lean: OK
+PoolTwelve.lean: OK
+DenseTwelve.lean: OK
+CubicExtra.lean: OK
+CubicMass.lean: OK
+CubicRanks.lean: OK
+FinishIndependent.lean: OK
+'Graffiti384b.Twelve.unreserved' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Twelve.ten_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Twelve.full_pools' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Twelve.high_anchors' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Twelve.sharp_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Eleven.extra_trial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Eleven.extra_fiber' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Eleven.extra_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Eleven.cubic_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.IndependentEleven.exact_of_eleven' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fresh extension verified: 7 modules and 10 standard-axiom reports.
+Complete independent-ear replay verified: 268 graph modules and 639 axiom reports.

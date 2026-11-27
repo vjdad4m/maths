@@ -1,0 +1,24 @@
+Ear-28 replay <workspace>/graff384b-quartic28/.ear28.6p1gfa_e
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+Mathlib c44e0c8ee63ca166450922a373c7409c5d26b00b
+Matched the frozen four-28 archive, 280 source hashes and 280 predecessor objects.
+'Graffiti384b.Four28.quartic_refund' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Four28.quartic_sample' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Four28.distinguishing_contact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Four28.quartic_layout_saving' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Four28.exact_quartic_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Thin28.exterior_rows' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Thin28.endpoint_rows' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Thin28.total_price' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Thin28.budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Thin28.kept' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Thin28.covered' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Thin28.plain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Thin28.credited' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Thin28.exterior_charge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Thin28.thin_endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Thin28.no_square_saving' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Thin28.exact_no_ear_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Four28.surviving_ear' depends on axioms: [propext, Classical.choice, Quot.sound]
+Matched all 8 fresh object hashes.
+Verified 8 fresh modules and 18 standard-axiom reports.

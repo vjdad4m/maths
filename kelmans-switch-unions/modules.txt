@@ -1,0 +1,12 @@
+SquareCapGeometry
+SquareCapFactor
+RemoteVacancyRails
+RemoteGapRunPacking
+RemoteSquareConvergence
+RemoteSquareEvenScaffold
+RemoteRankUnion
+RemoteSixSwitch
+RemoteSquareRankFactor
+RemoteSquareSingleSlot
+RemoteSquareThenSix
+RemoteSixMixed

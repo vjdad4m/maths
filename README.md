@@ -130,6 +130,7 @@
 | AutoGraphForge line 747 | Disproved | [Lean](autographforge-shared-hub/SharedHub.lean) · [Replay](autographforge-shared-hub/README.md) |
 | AutoGraphForge line 764 | Disproved | [Lean](autographforge-eulerian-chain/Chain.lean) · [Replay](autographforge-eulerian-chain/README.md) |
 | AutoGraphForge line 808 | Proved (where total forcing is defined) | [Lean](autographforge-371/AutoGraphForge371.lean) |
+| AutoGraphForge line 821 | Proved on GraphCalc's connected domain (known corollary); false if disconnected diameter is +∞ | [Lean](autographforge-821/ForestSlater.lean) · [Conventions and replay](autographforge-821/README.md) |
 | AutoGraphForge line 877 | Disproved | [Lean](autographforge-book-tail/BookTail.lean) · [Replay](autographforge-book-tail/README.md) |
 | AutoGraphForge line 942 | Disproved | [Lean](autographforge-balanced-forcing/BalancedForcing.lean) |
 | AutoGraphForge line 1080 | Disproved (singleton rainbow convention) | [Lean](autographforge-1080/AutoGraphForge1080.lean) |

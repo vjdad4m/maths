@@ -1,0 +1,12 @@
+Diversity-30 replay /workspace/scratch/7efa613b1c05/graff384b-diversity30/.diversity30.8t4p4i97
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+Mathlib c44e0c8ee63ca166450922a373c7409c5d26b00b
+Verified one-ear source archive and delivery manifest; matched 152 compiled-object hashes
+'Graffiti384b.EvenQuota.lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.EvenQuota.exact_of_fewer_nonleaves' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Diversity30.rows' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Diversity30.many_nonleaves' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Diversity30.exact_thirty_types' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Diversity30.exists_set' depends on axioms: [propext, Classical.choice, Quot.sound]
+Verified 3 fresh modules and 6 standard-axiom reports.
+Verified the catalogue bound for every finite simple graph with 30 triangle-count types.

@@ -1,0 +1,31 @@
+# AutoGraphForge row 895
+
+**The inequality fails on 14 vertices.** Identify one vertex of a four-cycle with one vertex of a ten-cycle, then take the line graph. This graph is connected, Eulerian and claw-free. Its burning number is 4 and its Slater number is 3, so the proposed inequality reads $4\le3$.
+
+Ján Pastorek’s normalized physical line 895 has 79 touches and generated ID `32e0aa97`. Its exact hypotheses are a nontrivial finite simple graph that is claw-free and Eulerian. The conclusion is $2b(G)-4\le s(G)$. In the public upstream checkout at `4d1a8afc99447cacd2328cca20e47b6493e8dbc5`, the record is marked `proposed` and its Lean proof is null. On 27 November 2026 the exact row was absent from the three published refutation JSON files, the two release proof files and the shared maths index at `943fdb15b71364df1340aefb9c54b4ce7b79842c`. The public issue concerns row 2596. [Normalized row](https://github.com/JanPastorek/AutoGraphForge/blob/4d1a8afc99447cacd2328cca20e47b6493e8dbc5/results/survivors_by_touch_normalised.txt#L895) · [Generated records and released results](https://github.com/JanPastorek/AutoGraphForge/tree/4d1a8afc99447cacd2328cca20e47b6493e8dbc5/results) · [Public issue](https://github.com/JanPastorek/AutoGraphForge/issues/1) · [Checked index](https://github.com/vjdad4m/maths/blob/943fdb15b71364df1340aefb9c54b4ce7b79842c/README.md)
+
+## The witness
+
+In the original graph the common vertex has degree four and every other vertex has degree two. In the line graph, the four edges through the common vertex have degree four. Each of the other ten edges has degree two. All degrees are even, and connectivity gives an Eulerian circuit. For each line-graph vertex, its neighbors meeting one endpoint of the corresponding original edge form a clique and those meeting the other endpoint form a second clique. Three distinct neighbors contain two in the same clique, ruling out an induced claw. The two largest degrees contribute $2+4+4=10<14$ to the Slater test. Three contribute $3+4+4+4=15\ge14$.
+
+Label the four small-cycle edges $(0,2),(1,2),(0,3),(1,3)$ by 0 through 3. Label the successive edges of the cycle $0,4,5,\ldots,12,0$ by 4 through 13. The ten large-cycle edges induce an isometric ten-cycle. A ball of radius $r$ centered on it covers at most $2r+1$ cycle vertices. For a center outside the cycle, every route into it passes through edge 4 or 13, which are adjacent on the cycle. Entry costs at least one step, leaving at most $r-1$ steps from either of these consecutive vertices. The same capacity bound follows. In three rounds the radii 2, 1 and 0 cover at most $5+3+1=9$ of the ten cycle vertices. The ordered centers $(0,5,8,10)$ with radii $(3,2,1,0)$ cover all fourteen vertices in four rounds.
+
+The Lean proof defines vertices by their original edge endpoints and checks the distance formula against Mathlib’s shortest-walk distance. It bounds every ball, including balls centered outside the ten-cycle, and uses a union-cardinality bound for every schedule of length at most three. The exact four-round schedule gives the matching upper bound. `row895_false` negates the full universal statement with signed rational arithmetic.
+
+## Source conventions and prior work
+
+GraphCalc 2.0.0 defines nontriviality as order at least two, tests claw-freeness by checking triples of distinct neighbors, and calls NetworkX’s undirected Eulerian predicate. Its Slater routine uses the least number of leading degrees in decreasing order whose sum plus their count reaches the order. The burning optimizer assigns one center to each round with coverage radius equal to the number of remaining rounds. The independent Python check uses NetworkX’s own line-graph construction and exercises the public GraphCalc functions with the CBC solver. [Graph classes](https://github.com/RandyRDavila/GraphCalc/blob/ce66ac7390d945885e33f372e29c896fa32e9bc4/src/graphcalc/graphs/core/basics.py) · [Slater number](https://github.com/RandyRDavila/GraphCalc/blob/ce66ac7390d945885e33f372e29c896fa32e9bc4/src/graphcalc/graphs/invariants/degree.py#L227-L365) · [Burning model](https://github.com/RandyRDavila/GraphCalc/blob/ce66ac7390d945885e33f372e29c896fa32e9bc4/src/graphcalc/graphs/invariants/zero_forcing.py#L1437-L1526)
+
+Bonato, Janssen and Roshanbin’s cycle and ball-cover results give the underlying burning argument. Corollary 3 justifies the upper bound from covering balls. Theorem 7 gives the lower bound through an isometric subgraph satisfying an external-ball condition, and Corollary 11 gives the cycle burning number. Work on edge burning also identifies burning in a line graph with edge burning in its original graph. A targeted check of burning, Slater number and claw-free Eulerian graphs found no earlier result giving this exact inequality or counterexample. [How to Burn a Graph](https://doi.org/10.1080/15427951.2015.1103339) · [On Graph Burning and Edge Burning](https://doi.org/10.4230/OASIcs.Grossi.4)
+
+The proof reuses the burning and Slater definitions from row 33, the distance certificate and cycle-ball counting from the shared-hub proof, and the induced-claw predicate from row 371. The row 33 witness has a leaf, and the shared-hub witness has three independent neighbors at a hub. Those graphs therefore miss an explicit hypothesis of row 895. [Row 33](https://github.com/vjdad4m/maths/blob/943fdb15b71364df1340aefb9c54b4ce7b79842c/autographforge-33/Lollipop.lean) · [Shared-hub proof](https://github.com/vjdad4m/maths/blob/943fdb15b71364df1340aefb9c54b4ce7b79842c/autographforge-shared-hub/SharedHub.lean) · [Row 371](https://github.com/vjdad4m/maths/blob/943fdb15b71364df1340aefb9c54b4ce7b79842c/autographforge-371/AutoGraphForge371.lean)
+
+## Replay
+
+`LineBouquet.lean` is the complete local Lean source. With Lean 4.19.0 on PATH and a prepared Mathlib v4.19.0 checkout at commit `c44e0c8ee63ca166450922a373c7409c5d26b00b`, run from this directory:
+
+```bash
+MATHLIB_DIR=/absolute/path/to/mathlib4 bash replay.sh
+```
+
+The script promotes warnings to errors and checks the axiom output for the class, Slater, ball-capacity, burning and final disproof theorems. The only axioms reported are `propext`, `Classical.choice` and `Quot.sound`. For the source implementation check, run `python check_source.py` with GraphCalc 2.0.0, NetworkX 3.5 and PuLP with CBC.

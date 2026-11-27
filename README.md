@@ -132,6 +132,7 @@
 | AutoGraphForge line 808 | Proved (where total forcing is defined) | [Lean](autographforge-371/AutoGraphForge371.lean) |
 | AutoGraphForge line 821 | Proved on GraphCalc's connected domain (known corollary); false if disconnected diameter is +∞ | [Lean](autographforge-821/ForestSlater.lean) · [Conventions and replay](autographforge-821/README.md) |
 | AutoGraphForge line 877 | Disproved | [Lean](autographforge-book-tail/BookTail.lean) · [Replay](autographforge-book-tail/README.md) |
+| AutoGraphForge line 895 | Disproved | [Lean](autographforge-895/LineBouquet.lean) · [Replay](autographforge-895/README.md) |
 | AutoGraphForge line 942 | Disproved | [Lean](autographforge-balanced-forcing/BalancedForcing.lean) |
 | AutoGraphForge line 1080 | Disproved (singleton rainbow convention) | [Lean](autographforge-1080/AutoGraphForge1080.lean) |
 | AutoGraphForge line 1221 | Proved (formalization of a known consequence) | [Lean](autographforge-373/AutoGraphForge373.lean) · [Prior formulas](https://doi.org/10.1090/surv/270) |

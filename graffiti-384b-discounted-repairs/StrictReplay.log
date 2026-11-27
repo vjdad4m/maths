@@ -1,0 +1,3 @@
+'Graffiti384b.pair_repair_saves' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.batch_repair_saves' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.maxcut_repair_saves' depends on axioms: [propext, Classical.choice, Quot.sound]

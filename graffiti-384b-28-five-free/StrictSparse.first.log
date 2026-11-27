@@ -1,0 +1,17 @@
+Sparse-28 replay /workspace/scratch/7efa613b1c05/graff384b-sparsecontact28/.sparse28.4dceydyp
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+Mathlib c44e0c8ee63ca166450922a373c7409c5d26b00b
+Matched the frozen high-square-28 archive, 303 source hashes and 303 predecessor objects.
+'Graffiti384b.Sparse28.degree_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Sparse28.square_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Sparse28.sparse_link' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Sparse28.rows' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Sparse28.totals' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Sparse28.total_needed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Sparse28.total_allowed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Sparse28.five_free_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Sparse28.five_clique_required' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Sparse28.core_five_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Sparse28.original_five_free' depends on axioms: [propext, Classical.choice, Quot.sound]
+Matched all 6 fresh object hashes.
+Verified 6 fresh modules and 11 standard-axiom reports.

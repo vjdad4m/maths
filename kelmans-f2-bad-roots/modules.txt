@@ -1,0 +1,3 @@
+ClosedPullback
+CyclicF2Independent
+CyclicF2Alternative

@@ -1,0 +1,188 @@
+Checking CrossSaturation189
+'Graffiti189LongestPath.CrossSaturation.Split.order_le_three_times_budget_plus_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.Split.order_le_fourteen_of_four_shared_ports' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking ForeignSaturation189
+'Graffiti189LongestPath.CrossSaturation.Split.order_le_of_foreign_ports_at_budget' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.Split.order_le_of_four_foreign_ports' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.Split.traceable_of_four_foreign_ports' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking NearForeignSaturation189
+'Graffiti189LongestPath.CrossSaturation.Split.order_le_of_three_foreign_ports_common' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.Split.traceable_of_three_or_more_foreign_ports' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.Split.order_le_seventeen_of_adjacent_cut' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.Split.traceable_of_adjacent_cut' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.cross_metric' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.Split.order_le_sixteen_of_odd_ports' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.Split.traceable_of_cut_distance_at_most_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.side_hits_first_after_deleting_second' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.Split.traceable_of_distance_two_cut_with_common' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== Strict standalone replay against exact certified earlier modules ===
+=== FourCut189 ===
+'Graffiti189LongestPath.FourCut.no_four_sides' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.FourCut.component_card_le_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+=== ThreeSide189 ===
+'Graffiti189LongestPath.FourCut.Three.Sides.saturates' depends on axioms: [propext, Classical.choice, Quot.sound]
+=== PortPath189 ===
+'Graffiti189LongestPath.TwoCut.path_from_universal_ports' depends on axioms: [propext, Classical.choice, Quot.sound]
+=== SaturatedTwo189 ===
+'Graffiti189LongestPath.TwoCut.TwoSides.traceable' depends on axioms: [propext, Classical.choice, Quot.sound]
+=== CutDistance189 ===
+'Graffiti189LongestPath.TwoCut.CutPair.cut_distance' depends on axioms: [propext, Classical.choice, Quot.sound]
+=== ActualTwoCut189 ===
+'Graffiti189LongestPath.TwoCut.distance_le_three_at_two_component_cut' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== CrossMetric189 ===
+'Graffiti189LongestPath.TwoCut.CutPair.cross_distance_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+=== DistThreeShape189 ===
+'Graffiti189LongestPath.TwoCut.CutPair.at_most_three_a_ports' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.TwoCut.CutPair.sides_ge_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.TwoCut.CutPair.side_four_clique' depends on axioms: [propext, Classical.choice, Quot.sound]
+=== Order189 ===
+'Graffiti189LongestPath.Order.order_at_most_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.Order.diameter_five_of_even_five' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.Order.shells_two_and_four_of_ecc_five' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== FourSideOrder189 ===
+'Graffiti189LongestPath.TwoCut.FourSideCtx.inner_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.TwoCut.FourSideCtx.local_a_witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.TwoCut.FourSideCtx.large_no_single' depends on axioms: [propext, Classical.choice, Quot.sound]
+=== InnerFour189 ===
+=== FourSideCase22 ===
+'Graffiti189LongestPath.TwoCut.FourSideCtx.contra_22' depends on axioms: [propext, Classical.choice, Quot.sound]
+=== FourSideCase32 ===
+'Graffiti189LongestPath.TwoCut.FourSideCtx.contra_32' depends on axioms: [propext, Classical.choice, Quot.sound]
+=== FourSideCase33 ===
+'Graffiti189LongestPath.TwoCut.FourSideCtx.contra_33' depends on axioms: [propext, Classical.choice, Quot.sound]
+=== PortRotation189 ===
+'Graffiti189LongestPath.TwoCut.PortRotation.rotated_set' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.TwoCut.PortRotation.close_path_from_degrees' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.TwoCut.PortRotation.reroot_closed_path' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== SmallPort189 ===
+'Graffiti189LongestPath.TwoCut.spanning_path_from_port_of_six' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== SmallDistThree189 ===
+'Graffiti189LongestPath.TwoCut.CutPair.traceable_four_six' depends on axioms: [propext, Classical.choice, Quot.sound]
+=== FourSideClose189 ===
+'Graffiti189LongestPath.TwoCut.FourSideCtx.other_order_le_six' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.TwoCut.FourSideCtx.traceable_of_four_side' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== BothLargeBase189 ===
+'Graffiti189LongestPath.TwoCut.DistThreeCtx.cut_high' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.TwoCut.DistThreeCtx.bridge_propagates' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.TwoCut.DistThreeCtx.no_single_large' depends on axioms: [propext, Classical.choice, Quot.sound]
+=== BothLargeCases189 ===
+'Graffiti189LongestPath.TwoCut.DistThreeCtx.impossible_22_33' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.TwoCut.DistThreeCtx.impossible_33_33' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.TwoCut.DistThreeCtx.impossible_23_23_same' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.TwoCut.DistThreeCtx.impossible_23_23_opposite' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.TwoCut.DistThreeCtx.impossible_23_33' depends on axioms: [propext, Classical.choice, Quot.sound]
+=== BothLargeTwos189 ===
+'Graffiti189LongestPath.TwoCut.DistThreeCtx.impossible_22_22' depends on axioms: [propext, Classical.choice, Quot.sound]
+=== BothLargeMixed189 ===
+'Graffiti189LongestPath.TwoCut.DistThreeCtx.impossible_23_22' depends on axioms: [propext, Classical.choice, Quot.sound]
+=== BothLargeClose189 ===
+'Graffiti189LongestPath.TwoCut.DistThreeCtx.no_both_large' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.TwoCut.CutPair.traceable_at_dist_three' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== ActualDistThree189 ===
+'Graffiti189LongestPath.TwoCut.traceable_at_actual_dist_three_cut' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== NontrivialSides189 ===
+'_private.src.NontrivialSides189.0.Graffiti189LongestPath.FourCut.Three.Sides.high_common_of_122' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.FourCut.Three.Sides.no_three_nonsingleton' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== ThreeCutLift189 ===
+'Graffiti189LongestPath.FourCut.Three.exists_sides' depends on axioms: [propext, Classical.choice, Quot.sound]
+=== SingletonSide189 ===
+'Graffiti189LongestPath.FourCut.Three.Sides.no_singleton_at_zero_189' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== TwoCutFinal189 ===
+'Graffiti189LongestPath.FourCut.Three.component_card_le_two_of_no_singleton_side' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.FourCut.Three.component_card_le_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+=== PinDistanceTwoGeneral189 ===
+'Graffiti189LongestPath.Rigidity.pin_has_two_on_path_general' depends on axioms: [propext, Classical.choice, Quot.sound]
+=== FatPorter189 ===
+'Graffiti189LongestPath.close_from_fat_porter' depends on axioms: [propext, Classical.choice, Quot.sound]
+=== AdjacentPins189 ===
+'_private.src.AdjacentPins189.0.Graffiti189LongestPath.AdjacentPins.flank_disj_of_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.AdjacentPins.reach_different_pin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.AdjacentPins.pin_representation_exhausts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.AdjacentPins.path_pin_card_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.AdjacentPins.adjacent_different_pins' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.AdjacentPins.no_inactive_neighbor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.AdjacentPins.all_omitted_active' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.AdjacentPins.porter_class_clique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.AdjacentPins.porter_adjacent_all_of_class' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.AdjacentPins.fat_class_universal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.AdjacentPins.all_pin_two_on_path' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.AdjacentPins.traceable_near_connectivity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== CutExtraction189 ===
+'Graffiti189LongestPath.CrossSaturation.induced_reachable_of_walk_in' depends on axioms: [propext, Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.induced_connected_of_joined' depends on axioms: [propext, Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.component_card_gt_one_of_disconnected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== DegreeFourTwoConnected189 ===
+'Graffiti189LongestPath.CrossSaturation.traceable_at_actual_two_cut' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.traceable_degree_four_two_connected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

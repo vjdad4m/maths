@@ -185,6 +185,7 @@
 | AutoGraphForge line 2396 | Disproved in Lean by C43; upstream implicit witness also exists | [Proof](autographforge-2396/) |
 | AutoGraphForge line 2400 | Disproved | [Lean](autographforge-complete/CompleteRows.lean) |
 | AutoGraphForge line 2405 | Disproved | [Lean](autographforge-friendship/Friendship.lean) |
+| AutoGraphForge line 2406 | Disproved in Lean by C43; upstream implicit witness also exists | [Proof](autographforge-2406/) |
 | AutoGraphForge line 2417 | Disproved | [Lean](autographforge-star/StarCone.lean) |
 | AutoGraphForge line 2425 | Disproved | [Lean](autographforge-complete/CompleteRows.lean) |
 | AutoGraphForge line 2427 | Disproved (singleton rainbow convention) | [Lean](autographforge-1883/AutoGraphForge1883.lean) |

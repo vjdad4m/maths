@@ -1,0 +1,4 @@
+# Git blob SHA and path relative to the maths repository, in build order.
+7d43699f707c4393384422cb72f4839e0a10558a	kelmans-switch-unions/src/RemoteSquareConvergence.lean
+0f61c3e11371b50f1481236fec6a35e1249a8c99	kelmans-switch-unions/src/RemoteRankUnion.lean
+0e89126e28eafdc787df685f16a2c5446b8864db	kelmans-budget-component/src/RemoteBudgetComponent.lean

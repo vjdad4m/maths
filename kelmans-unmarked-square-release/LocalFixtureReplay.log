@@ -1,0 +1,39 @@
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+src/RemoteBudgetExpectation.lean: OK
+src/RemoteDegreeTwoEnds.lean: OK
+src/RemoteLadderNoDiagonal.lean: OK
+src/RemotePairStrip.lean: OK
+src/RemoteSquareBudgetColoring.lean: OK
+src/RemoteSquareBudgetConditional.lean: OK
+src/RemoteSquareBudgetFractional.lean: OK
+src/RemoteSquareBudgetTheorem.lean: OK
+src/RemoteSquareStripAuto.lean: OK
+fixtures/DiagonalReleaseFixture.lean: OK
+dependencies.tsv: OK
+fixture-dependencies.tsv: OK
+modules.txt: OK
+
+=== DiagonalReleaseFixture ===
+'KelmansCactus.AtomicBridge.DiagonalReleaseFixture.witness_counts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.DiagonalReleaseFixture.two_release_cost' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.DiagonalReleaseFixture.no_cheap_two_release' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.DiagonalReleaseFixture.exact_boundary' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.DiagonalReleaseFixture.exact_twelve_exchange' depends on axioms: [propext]
+'KelmansCactus.AtomicBridge.DiagonalReleaseFixture.unrestricted_factor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.DiagonalReleaseFixture.host_three_connected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.DiagonalReleaseFixture.exact_board' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.DiagonalReleaseFixture.wide' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,97 @@
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+src/RemoteBudgetExpectation.lean: OK
+src/RemoteDegreeTwoEnds.lean: OK
+src/RemoteLadderNoDiagonal.lean: OK
+src/RemotePairStrip.lean: OK
+src/RemoteSquareBudgetColoring.lean: OK
+src/RemoteSquareBudgetConditional.lean: OK
+src/RemoteSquareBudgetFractional.lean: OK
+src/RemoteSquareBudgetTheorem.lean: OK
+src/RemoteSquareStripAuto.lean: OK
+fixtures/DiagonalReleaseFixture.lean: OK
+dependencies.tsv: OK
+fixture-dependencies.tsv: OK
+modules.txt: OK
+
+=== RemoteSquareConvergence ===
+'KelmansCactus.AtomicBridge.RemoteSquareConvergence.bypass_of_cycles' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteSquareConvergence.square_convergence' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RemoteRankUnion ===
+'KelmansCactus.AtomicBridge.RemoteRankUnion.rebuilt_preconnected_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteRankUnion.rebuilt_disconnected_iff_forced_cut' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteRankUnion.force_cut_has_distinct_same_color' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RemoteBudgetComponent ===
+'KelmansCactus.AtomicBridge.RemoteBudgetComponent.budget_one_exchange' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteBudgetComponent.exposed_iff_neighbor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RemoteBudgetExpectation ===
+'KelmansCactus.AtomicBridge.RemoteBudgetExpectation.find_affordable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteBudgetExpectation.four_edge_affordable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RemotePairStrip ===
+'KelmansCactus.AtomicBridge.RemotePairStrip.Strip.release_changes_a' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemotePairStrip.one_cost_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.RemotePairStrip.two_cost_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+=== RemoteSquareBudgetConditional ===
+'KelmansCactus.AtomicBridge.RemoteSquareBudgetConditional.Square.nondiagonal_pairs' does not depend on any axioms
+'KelmansCactus.AtomicBridge.RemoteSquareBudgetConditional.row' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteSquareBudgetConditional.affordable_unmarked_square' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RemoteDegreeTwoEnds ===
+'KelmansCactus.AtomicBridge.RemoteDegreeTwoEnds.count_endpoints' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RemoteSquareStripAuto ===
+'KelmansCactus.AtomicBridge.RemoteSquareStripAuto.linked_strip' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteSquareStripAuto.automatic' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+=== RemoteSquareBudgetFractional ===
+'KelmansCactus.AtomicBridge.RemoteSquareBudgetFractional.from_fractional' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RemoteSquareBudgetColoring ===
+'KelmansCactus.AtomicBridge.RemoteSquareBudgetColoring.uniform_of_three' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RemoteSquareBudgetTheorem ===
+'KelmansCactus.AtomicBridge.RemoteSquareBudgetTheorem.unmarked_square_release' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.RemoteSquareBudgetTheorem.unmarked_square_release_three' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RemoteLadderNoDiagonal ===
+'KelmansCactus.AtomicBridge.RemoteLadderNoDiagonal.no_disjoint_diagonal' depends on axioms: [propext, Quot.sound]

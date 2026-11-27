@@ -156,6 +156,7 @@
 | AutoGraphForge line 1221 | Proved (formalization of a known consequence) | [Lean](autographforge-373/AutoGraphForge373.lean) · [Prior formulas](https://doi.org/10.1090/surv/270) |
 | AutoGraphForge line 1531 | Proved in Lean (connected equality exactly three paths) | [Proof](autographforge-1531/README.md) |
 | AutoGraphForge line 1539 | Disproved | [Lean](autographforge-balanced-forcing/BalancedForcing.lean) |
+| AutoGraphForge line 1553 | Proved in Lean (sharp general degree-excess bound) | [Proof](autographforge-1553/README.md) |
 | AutoGraphForge line 1606 | Disproved in Lean by C43; upstream implicit witness also exists | [Proof](autographforge-1606/) |
 | AutoGraphForge line 1656 | Disproved in Lean by C43; upstream implicit witness also exists | [Proof](autographforge-1656/) |
 | AutoGraphForge line 1707 | Disproved in Lean; unbounded gap on connected claw-free graphs | [Proof](autographforge-1707/) |

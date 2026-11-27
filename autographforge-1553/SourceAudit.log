@@ -1,0 +1,4 @@
+Row 1553; ID 8a00807b; 37 normalized touches; proposed, null proof.
+4776 distinct codes; counts: {'antecedent': 1174, 'undefined': 375, 'numeric': 799, 'numeric_from_refutations': 103}
+Two isolates, GraphCalc: NetworkXException Graph has a node with no edge incident on it, so no edge cover exists.
+Pinned battery (cover, singleton three-rainbow): K(3,3) (3,3), K(3,4) (4,3), K(3,7) (7,3); two isolates NaN.

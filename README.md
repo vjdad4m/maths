@@ -127,6 +127,7 @@
 | AutoGraphForge line 378 | Proved | [Lean](autographforge-378/AutoGraphForge378.lean) |
 | AutoGraphForge line 379 | Proved | [Lean](autographforge-379/AutoGraphForge379.lean) |
 | AutoGraphForge line 501 | Disproved | [Lean](autographforge-eulerian-chain/Chain.lean) · [Replay](autographforge-eulerian-chain/README.md) |
+| AutoGraphForge line 747 | Disproved | [Lean](autographforge-shared-hub/SharedHub.lean) · [Replay](autographforge-shared-hub/README.md) |
 | AutoGraphForge line 764 | Disproved | [Lean](autographforge-eulerian-chain/Chain.lean) · [Replay](autographforge-eulerian-chain/README.md) |
 | AutoGraphForge line 808 | Proved (where total forcing is defined) | [Lean](autographforge-371/AutoGraphForge371.lean) |
 | AutoGraphForge line 877 | Disproved | [Lean](autographforge-book-tail/BookTail.lean) · [Replay](autographforge-book-tail/README.md) |

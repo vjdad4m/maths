@@ -1,0 +1,12 @@
+OreSpliceIndex189
+OreClosure189
+ArticulationOrder189
+ArticulationThree189
+ArticulationPair189
+ArticulationBridge189
+ArticulationEight189
+ArticulationEightLift189
+ArticulationSmall189
+ArticulationClique189
+ArticulationClosure189
+DegreeFour189

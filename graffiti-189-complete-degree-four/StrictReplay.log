@@ -1,0 +1,102 @@
+=== OreSpliceIndex189 ===
+'Graffiti189Ore.ore_splice_index' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189Ore.ore_spliced_path' depends on axioms: [propext, Quot.sound]
+'Graffiti189Ore.ore_ring' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189Ore.cut_spanning_ring' depends on axioms: [propext, Classical.choice, Quot.sound]
+=== OreClosure189 ===
+'Graffiti189Ore.degree_cap_universal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189Ore.cap_ring' depends on axioms: [propext, Quot.sound]
+'Graffiti189Ore.ring_to_cap_path' depends on axioms: [propext, Quot.sound]
+'Graffiti189Ore.traceable_closure_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189Ore.rooted_closure_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189Ore.rooted_closure' depends on axioms: [propext, Classical.choice, Quot.sound]
+=== ArticulationOrder189 ===
+'Graffiti189LongestPath.CrossSaturation.side_and_opposite_even_le_twice_budget' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.order_le_three_times_budget_plus_one_at_articulation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== ArticulationThree189 ===
+'Graffiti189LongestPath.CrossSaturation.ThreeShores.impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.component_card_le_two_at_articulation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== ArticulationPair189 ===
+'Graffiti189LongestPath.CrossSaturation.ArticulationPair.splice_rooted' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.articulation_pair_of_disconnected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ArticulationPair.order_le_thirteen' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ArticulationPair.sides_le_eight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== ArticulationBridge189 ===
+'Graffiti189LongestPath.CrossSaturation.order_le_twice_budget_plus_two_of_single_bridge' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ArticulationPair.order_le_ten_of_unique_right_port' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== ArticulationEight189 ===
+'Graffiti189LongestPath.CrossSaturation.ArticulationPair.eight_singleton_internal_min_degree' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ArticulationPair.eight_nonsingleton_port_universal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== ArticulationEightLift189 ===
+'Graffiti189LongestPath.CrossSaturation.ArticulationPair.eight_nonsingleton_high_internal_degree' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ArticulationPair.eight_nonsingleton_every_other_has_residual_neighbor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ArticulationPair.prefix_induced_side_path' depends on axioms: [propext,
+ Quot.sound]
+=== ArticulationSmall189 ===
+'Graffiti189LongestPath.CrossSaturation.ArticulationPair.left_size_ge_four_of_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ArticulationPair.lift_rooted_with_articulation' depends on axioms: [propext,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ArticulationPair.left_degree_preserved' depends on axioms: [propext, Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ArticulationPair.distinct_root_and_outlier_ports' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== ArticulationClique189 ===
+'Graffiti189LongestPath.CrossSaturation.rooted_path_from_root_into_clique' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.rooted_path_through_outlier_into_clique' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.rooted_path_from_clique_to_outlier' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.rooted_path_in_clique' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.path_between_in_clique' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.rooted_path_of_clique_and_outlier' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== ArticulationClosure189 ===
+'Graffiti189LongestPath.CrossSaturation.ArticulationPair.left_rooted_at_articulation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.traceable_at_articulation_of_rooted_closure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== DegreeFour189 ===
+'Graffiti189LongestPath.CrossSaturation.traceable_degree_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

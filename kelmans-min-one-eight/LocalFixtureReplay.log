@@ -1,0 +1,24 @@
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+src/MinOneEight.lean: OK
+src/MinOneEightShorter.lean: OK
+dependencies.tsv: OK
+modules.txt: OK
+
+=== MinOneEight ===
+'KelmansCactus.AtomicBridge.MinOneEight.min_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.MinOneEight.square_boundary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.MinOneEight.exact_eight_exchange' depends on axioms: [propext]
+'KelmansCactus.AtomicBridge.MinOneEight.initial_geometry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.MinOneEight.final_connected' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.MinOneEight.final_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.MinOneEight.host_three_connected' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.MinOneEight.exact_board' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KelmansCactus.AtomicBridge.MinOneEight.wide' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+=== MinOneEightShorter ===
+'KelmansCactus.AtomicBridge.MinOneEightShorter.no_neutral_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KelmansCactus.AtomicBridge.MinOneEightShorter.no_neutral_six' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

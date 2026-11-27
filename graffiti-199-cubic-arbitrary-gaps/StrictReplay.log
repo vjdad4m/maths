@@ -1,0 +1,63 @@
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+Mathlib revision c44e0c8ee63ca166450922a373c7409c5d26b00b
+Using 85 source-hash-checked project dependencies.
+Checking SegmentSplice.lean
+'Graffiti199Depleted.WiderOmission.traceable_of_segment_route' depends on axioms: [propext, Quot.sound]
+Checking SparsePlacement.lean
+Checking SparseTransfer.lean
+Checking FastTreeCheck.lean
+Checking ModelSeparated.lean
+Checking CheckSeparated0.lean
+'Graffiti199Depleted.WiderOmission.clausesSeparated_valid0' depends on axioms: [propext, Quot.sound]
+'Graffiti199Depleted.WiderOmission.coveredSeparated_valid0' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti199Depleted.WiderOmission.routesSeparated_0' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking CheckSeparated1.lean
+'Graffiti199Depleted.WiderOmission.clausesSeparated_valid1' depends on axioms: [propext, Quot.sound]
+'Graffiti199Depleted.WiderOmission.coveredSeparated_valid1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti199Depleted.WiderOmission.routesSeparated_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking CheckSeparated2.lean
+'Graffiti199Depleted.WiderOmission.clausesSeparated_valid2' depends on axioms: [propext, Quot.sound]
+'Graffiti199Depleted.WiderOmission.coveredSeparated_valid2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti199Depleted.WiderOmission.routesSeparated_2' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking RowsSeparated.lean
+'Graffiti199Depleted.WiderOmission.classificationSeparated' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti199Depleted.WiderOmission.familySeparated_consistent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti199Depleted.WiderOmission.certifiedRouteSeparated' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking RowsShort.lean
+'Graffiti199Depleted.WiderOmission.classificationShort' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti199Depleted.WiderOmission.familyShort_consistent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti199Depleted.WiderOmission.certifiedRouteShort' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking LabeledClosure.lean
+'Graffiti199Depleted.WiderOmission.traceable_separated_labeled' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti199Depleted.WiderOmission.traceable_short_labeled' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking PathForms.lean
+'Graffiti199Depleted.WiderOmission.traceable_of_separated_fragments' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti199Depleted.WiderOmission.traceable_of_short_fragments' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking ArbitraryGaps.lean
+'Graffiti199Depleted.WiderOmission.traceable_of_separated_gaps' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti199Depleted.WiderOmission.traceable_of_ordered_independent_neighbors' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking NeighborOrder.lean
+'Graffiti199Depleted.WiderOmission.ordered_omitted_neighbors' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking IndependentOmission.lean
+'Graffiti199Depleted.WiderOmission.traceable_of_independent_omission' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti199Depleted.ContractedEdge.minimum_cubic_edge_omission_has_triangle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti199Depleted.ContractedEdge.minimum_cubic_edge_other_neighbors_adjacent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Strict arbitrary-gap replay passed.

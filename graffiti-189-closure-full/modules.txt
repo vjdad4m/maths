@@ -1,0 +1,5 @@
+DegreeFiveUniquePortLowCommon189
+TerminalOreClosure189
+TerminalOutlier189
+DegreeFiveUniquePortClosureFull189
+DegreeFiveFourForeign189

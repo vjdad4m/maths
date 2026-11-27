@@ -194,6 +194,7 @@
 | AutoGraphForge line 2437 | Disproved in Lean by C43; upstream implicit witness also exists | [Proof](autographforge-2437/) |
 | AutoGraphForge line 2452 | Disproved | [Lean](autographforge-multipartite/Multipartite.lean) |
 | AutoGraphForge line 2453 | Disproved | [Lean](autographforge-multipartite/Multipartite.lean) |
+| AutoGraphForge line 2471 | Disproved in Lean by C43; upstream implicit witness also exists | [Proof](autographforge-2471/) |
 | AutoGraphForge line 2473 | Disproved in Lean by the same connected graph as line 2039 | [Counterexample](autographforge-2473/README.md) |
 | AutoGraphForge line 2474 | Disproved | [Lean](autographforge-multipartite/Multipartite.lean) |
 | AutoGraphForge line 2482 | Disproved | [Lean](autographforge-multipartite/Multipartite.lean) |

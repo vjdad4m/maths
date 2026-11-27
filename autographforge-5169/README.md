@@ -1,0 +1,42 @@
+# AutoGraphForge 5169. A smallest claw-free counterexample
+
+**The minimum counterexample order is 10, or 13 if connectedness is required.** Both optimality statements, both witnesses, and an infinite connected subcubic family are verified in Lean. Normalized physical row 3060 is an algebraic duplicate of 5169. They give one mathematical result.
+
+Write ρ for minimum edge cover size and γₑ for edge domination number. Ján Pastorek’s pinned row 5169 (`e2781817`) says that γₑ < (3/5)ρ − 1 implies the graph contains an induced claw. Row 3060 (`e8bcdcee`) has the identical consequent and antecedent (5/3)γₑ + 5/3 < ρ. Geometric or connectivity restrictions do not appear. Both rows require numerical values for the antecedent. GraphCalc 2.0.0 calls NetworkX’s minimum edge cover, tests neighborhoods for three independent vertices, and computes `min_maximal_matching_number` by minimizing vertex domination on the line graph. Isolated vertices prevent an edge cover, so the pinned battery leaves that numerical cell missing. Lean uses the same optional edge-cover convention and the line-graph optimizer. [Physical row 5169](https://github.com/JanPastorek/AutoGraphForge/blob/4d1a8afc99447cacd2328cca20e47b6493e8dbc5/results/survivors_by_touch_normalised.txt#L5169) · [Physical row 3060](https://github.com/JanPastorek/AutoGraphForge/blob/4d1a8afc99447cacd2328cca20e47b6493e8dbc5/results/survivors_by_touch_normalised.txt#L3060) · [Claw recognizer](https://github.com/RandyRDavila/GraphCalc/blob/ce66ac7390d945885e33f372e29c896fa32e9bc4/src/graphcalc/graphs/core/basics.py#L836-L865) · [Edge cover](https://github.com/RandyRDavila/GraphCalc/blob/ce66ac7390d945885e33f372e29c896fa32e9bc4/src/graphcalc/graphs/invariants/classics.py#L628-L650) · [Line domination](https://github.com/RandyRDavila/GraphCalc/blob/ce66ac7390d945885e33f372e29c896fa32e9bc4/src/graphcalc/graphs/invariants/domination.py#L1464-L1490)
+
+| Witness | Order | ρ | γₑ | Strict comparison |
+|---|---:|---:|---:|---|
+| Two disjoint bulls | 10 | 6 | 2 | 2 < 13/5 |
+| Connected triangle chain | 13 | 7 | 3 | 3 < 16/5 |
+
+## Witnesses and minimality
+
+Start with the path on 0,…,4k. Add the edges (4i+1,4i+3) for 0 ≤ i < k. Each vertex has at most three neighbors, and neighbors on either side of its label form a clique, so the graph is claw-free. The added edges form an induced matching and dominate every edge. Every edge can therefore dominate at most one of the k added edges. This proves γₑ = k, and Lean verifies the same value for the independently defined minimum maximal matching. Consecutive pairs on the spanning path give an edge cover of size 2k+1, which the vertex count forces. The violation is exactly (k−2)/5 for every k ≥ 3. The graph with k = 3 is the smallest connected counterexample.
+
+For connected minimality, let n be the order. The published row 2560 partition assigns outside vertices to the edges of a minimum edge-dominating set. Claw-freeness allows at most three assigned vertices per edge, so n ≤ 5γₑ. The classical matching theorem of Sumner and, independently, Las Vergnas gives a matching leaving at most one vertex unmatched in a connected claw-free graph. For a numerical edge cover this yields ρ = ⌈n/2⌉. If n ≤ 12 a violation would require γₑ ≤ 2, and n ≤ 5γₑ then forces ρ ≤ ⌈5γₑ/2⌉. Neither γₑ = 1 nor γₑ = 2 satisfies the strict inequality, and γₑ = 0 cannot satisfy it either. [Sumner, *Graphs with 1-factors*](https://doi.org/10.1090/S0002-9939-1974-0323648-6) · [Oum on independent attribution to Las Vergnas](https://arxiv.org/abs/0906.2261)
+
+`ClawMatching.lean` proves the matching theorem used here. Across all maximum matchings with two exposed vertices, choose a pair x,y of minimum distance. They cannot be adjacent. Along a shortest path x,v,z,…,y, let w be the mate of v. If w equals z or is adjacent to z, exchange vw for xv, exposing w closer to y. Otherwise the neighbors x,z,w of v would form a claw unless x is adjacent to w. Exchanging vw for xw exposes v closer to y. Both possibilities contradict the choice of pair. A maximum matching therefore leaves at most one vertex unmatched.
+
+For unrestricted minimality, a graph of order ≤ 9 can contain at most one vertex-disjoint induced bull. The checked row 2560 packing bound then gives ρ ≤ 2γₑ + 1 and always gives ρ ≤ 3γₑ. For γₑ ≤ 2 these bounds preclude the strict inequality. For γₑ ≥ 3, extending a maximum matching to an edge cover gives ρ ≤ n−ν ≤ n−γₑ, so ρ ≤ 6. This also precludes a violation. For the two disjoint bulls, the two central edges form a maximal matching. The two leaves and the vertex opposite the central edge in each triangle give an independent set of six vertices, so any edge cover has at least six edges. An explicit cover attains six. [Row 2560 packing bound](https://github.com/vjdad4m/maths/blob/5ffbe8fe5e94511afb20e07b7e164e78aa02b942/autographforge-2560/Packing.lean) · [Yannakakis and Gavril on edge domination and matchings](https://doi.org/10.1137/0138030)
+
+## Prior work and release audit
+
+The CEGIS records at `4d1a8afc99447cacd2328cca20e47b6493e8dbc5` were both proposed, with zero recorded touches and null Lean statements and proofs. Neither ID or statement appeared in the release’s three refutation files or verified Lean sources. The public maths README at `5ffbe8fe5e94511afb20e07b7e164e78aa02b942` listed neither number. The sole upstream issue concerned a different ID. The adjacent 5170/5174 results concern regular graphs. The connected family used here has leaves and degree-three vertices. Earlier row 1125 adds a cograph restriction, and 1531 adds triangle-freeness. The 13-vertex witness contains both an induced four-vertex path and triangles. The literature and repository checks establish the inspected scope. Priority for this family or its application to this inequality remains unverified. [Pinned CEGIS records](https://github.com/JanPastorek/AutoGraphForge/tree/4d1a8afc99447cacd2328cca20e47b6493e8dbc5/results) · [Inspected public index](https://github.com/vjdad4m/maths/blob/5ffbe8fe5e94511afb20e07b7e164e78aa02b942/README.md) · [Upstream issue](https://github.com/JanPastorek/AutoGraphForge/issues/1)
+
+The released graph6 corpus contained 4,776 distinct encodings. Of the 1,414 claw-free inputs, 398 had isolates and 1,016 had numerical edge covers. None of the 1,016 violates the inequality. For each component the audit takes the strongest of three lower bounds on γₑ. They use the largest number of edges one edge can dominate, the maximum number of unmatched vertices allowed by a clique partition, and the checked inequality n ≤ 5γₑ. Their sum suffices on every released numerical input. The pinned public `compute_battery` also returned the displayed values on both sharp witnesses and the family members with k = 1,2,3,4. [Public battery](https://github.com/JanPastorek/AutoGraphForge/blob/4d1a8afc99447cacd2328cca20e47b6493e8dbc5/pipeline/invariants_graphcalc.py)
+
+## Source reuse and strict replay
+
+`Reused.lean` contains the spanning-path and endpoint-counting bounds from row 1531 together with the induced-matching packing lower bound from row 659. Their proof bodies were matched with the public commit above. `Packing.lean`, `Patch.lean` and `Row1078.lean` match their public files byte for byte. All project imports are bundled. `Chain.lean` and `Row5169.lean` give the family and catalogue disproof, `ClawMatching.lean` and `Sharp.lean` give the connected minimum, and `Unrestricted.lean` gives the unrestricted minimum. [Row 1531 bounds](https://github.com/vjdad4m/maths/blob/5ffbe8fe5e94511afb20e07b7e164e78aa02b942/autographforge-1531/Bounds.lean) · [Row 659 packing lemma](https://github.com/vjdad4m/maths/blob/5ffbe8fe5e94511afb20e07b7e164e78aa02b942/autographforge-659/Theta.lean) · [Row 1078 matching definitions](https://github.com/vjdad4m/maths/blob/5ffbe8fe5e94511afb20e07b7e164e78aa02b942/autographforge-1078/Row1078.lean)
+
+With Lean 4.19.0 on PATH and a built Mathlib v4.19.0 checkout at `c44e0c8ee63ca166450922a373c7409c5d26b00b`, run
+
+```bash
+MATHLIB_DIR=/absolute/path/to/mathlib4 bash replay.sh
+```
+
+The script rebuilds all sixteen modules in a fresh directory with warnings as errors and checks the named theorem axioms for exactly `propext`, `Classical.choice` and `Quot.sound`. `Replay.log` contains the expected output. To regenerate `SourceAudit.log`, use GraphCalc 2.0.0, NetworkX 3.5, a supported MILP solver and a pinned checkout of AutoGraphForge retaining its backup graph6 blob.
+
+```bash
+python audit.py /absolute/path/to/AutoGraphForge
+```

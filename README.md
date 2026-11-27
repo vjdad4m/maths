@@ -235,5 +235,6 @@
 | AutoGraphForge line 2600 | Disproved | [Lean](autographforge-friendship/Friendship.lean) |
 | AutoGraphForge line 2602 | Disproved (singleton rainbow convention) | [Lean](autographforge-friendship/Friendship.lean) |
 | AutoGraphForge line 2603 | Disproved | [Lean](autographforge-complete/CompleteRows.lean) |
+| AutoGraphForge line 5169 | Disproved in Lean; smallest witnesses at order 10, or 13 connected; equivalent line 3060 | [autographforge-5169/](autographforge-5169/) |
 | AutoGraphForge line 5170 | Disproved in Lean | [autographforge-5170/](autographforge-5170/) |
 | AutoGraphForge line 5174 | Proved in Lean; prior regular bound, with a degree-excess refinement | [autographforge-5174/](autographforge-5174/) |

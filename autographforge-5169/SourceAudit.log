@@ -1,0 +1,10 @@
+5169 e2781817: proposed, zero recorded touches, no Lean statement/proof.
+3060 e8bcdcee: proposed, zero recorded touches, no Lean statement/proof.
+4776 distinct graph6 encodings: {'claw_free': 1414, 'missing_cover': 398, 'numeric': 1016, 'numeric_from_refutations': 86}
+No counterexample in the 1016 numerical claw-free encodings.
+k=1, order=5, cover=3, line domination=1
+k=2, order=9, cover=5, line domination=2
+k=3, order=13, cover=7, line domination=3
+k=4, order=17, cover=9, line domination=4
+Two isolates: claw-free, missing cover cell. Two disjoint bulls: cover 6, line domination 2.
+13-vertex witness graph6: LjCGGK@?G?_B?@

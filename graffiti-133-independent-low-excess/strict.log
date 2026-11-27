@@ -1,0 +1,64 @@
+Normal-import strict replay; flags: -j1 -DElab.async=false -DwarningAsError=true
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+Checking P5CliqueMixedHighGeometry133
+'Graffiti133P5CliqueArms.mixed_high_has_joint_pure_foreign_representatives' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti133P5CliqueArms.mixed_high_has_pure_foreign_representatives' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti133P5CliqueArms.unique_mixed_center_at_pure_foreign_leaf' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti133P5CliqueArms.pure_foreign_neighbor_signed_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS P5CliqueMixedHighGeometry133
+Checking P5CliqueMixedHighReserves133
+'Graffiti133P5CliqueArms.exterior_high_triples_supply_distinct_signed_deficits' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS P5CliqueMixedHighReserves133
+Checking P5CliqueWedgeSlack133
+'Graffiti133P5CliqueArms.order_ten_exact_three_nonedge_common_neighbor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti133P5CliqueArms.local_sum_wedge_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti133P5CliqueArms.small_core_twelve_signed_slack' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS P5CliqueWedgeSlack133
+Checking P5CliqueSecondWedgeSlack133
+'Graffiti133P5CliqueArms.SecondWedge.local_sum_second_wedge_upper' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti133P5CliqueArms.SecondWedge.order_eleven_below_three_twelve_signed_slack' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti133P5CliqueArms.SecondWedge.order_ten_with_unrepresented_nonedge_twelve_signed_slack' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS P5CliqueSecondWedgeSlack133
+Checking P5CliqueIndependentSignedCharge133
+'Graffiti133P5CliqueArms.independent_four_port_ambient_of_signed_high_counts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS P5CliqueIndependentSignedCharge133
+Checking P5CliqueIndependentShortCoreSlack133
+'Graffiti133P5CliqueArms.local_sum_le_nonports_add_twice_crossings' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti133P5CliqueArms.independent_four_ports_small_core_twelve_slack' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti133P5CliqueArms.independent_four_ports_mid_core_twelve_slack' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS P5CliqueIndependentShortCoreSlack133
+Checking P5CliqueIndependentSignedCore133
+'Graffiti133P5CliqueArms.independent_four_port_ambient_of_signed_exterior_cost' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS P5CliqueIndependentSignedCore133
+Checking P5CliqueIndependentLowExcess133
+'Graffiti133P5CliqueArms.independent_four_ports_low_excess_ambient_mean_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS P5CliqueIndependentLowExcess133
+Sequential replay exit status: 0

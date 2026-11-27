@@ -1,0 +1,8 @@
+catalogues: 81, 2070, 80154
+shape 3+4+2: profiles=167670 star-free-pairs=14760 high-cut=118080 no-path=0 induced-six-tree=0 fails-three-connectivity=0 counterexamples=0 sampled-reference-checks=1
+routing-limit witness 4+4+1 twin=0 other-route=1: 0-3 0-5 0-6 0-7 0-8 0-9 0-10 0-11 1-3 1-4 1-6 1-7 1-8 1-9 1-10 1-11 2-3 2-4 2-5 2-7 2-8 2-9 2-10 2-11 3-4 3-5 3-6 7-8 7-9 7-10 8-9 8-10 9-10
+shape 4+4+1: profiles=4284900 star-free-pairs=1712850 high-cut=13410620 no-path=0 induced-six-tree=0 fails-three-connectivity=0 counterexamples=0 sampled-reference-checks=150
+routing-limit witness 3+5+1 twin=0 other-route=0: 0-3 0-4 0-5 0-6 0-9 0-10 0-11 1-3 1-4 1-5 1-6 1-7 1-8 1-10 1-11 2-3 2-4 2-5 2-6 2-7 2-8 2-9 2-11 3-4 3-5 4-5 6-7 6-8 6-9 6-10 7-8
+shape 3+5+1: profiles=6492474 star-free-pairs=3117564 high-cut=24476967 no-path=0 induced-six-tree=0 fails-three-connectivity=0 counterexamples=0 sampled-reference-checks=275
+routing-limit witness 4+5+0 twin=0 other-route=1: 0-3 0-5 0-6 0-7 0-8 0-9 0-10 0-11 1-3 1-4 1-6 1-7 1-8 1-9 1-10 1-11 2-3 2-4 2-5 2-7 2-8 2-9 2-10 2-11 3-4 3-5 3-6 7-8 7-11 8-9 8-10 9-10
+shape 4+5+0: profiles=165918780 star-free-pairs=139296666 high-cut=1014456844 no-path=0 induced-six-tree=0 fails-three-connectivity=0 counterexamples=0 sampled-reference-checks=11397

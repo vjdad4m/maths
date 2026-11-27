@@ -1,0 +1,51 @@
+Checking OffFour17Row3_3_6189
+'OffFour17.row_3_3_6' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking OffFour17Row3_3_7189
+'OffFour17.row_3_3_7' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking OffFour17Row3_3_8189
+'OffFour17.row_3_3_8' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking OffFour17Row3_3_9189
+'OffFour17.row_3_3_9' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking OffFour17Row3_4_7189
+'OffFour17.row_3_4_7' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking OffFour17Row3_4_8189
+'OffFour17.row_3_4_8' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OffFour17.disc_row' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking OffFour17Structure189
+'Graffiti189LongestPath.TwoCut.another_carrier_of_nontrivial_omitted_component' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.TwoCut.nontrivial_dual_carrier_has_interior_pair' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.TwoCut.four_holes_of_interior_dual_pair' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking OffFour17GraphLift189
+'Graffiti189LongestPath.TwoCut.four_omissions_row_contradiction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking OffFour17Forward189
+'Graffiti189LongestPath.TwoCut.no_longest_with_forward_omitted_splice' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking OffFour17Partition189
+'Graffiti189LongestPath.TwoCut.no_length_twelve_four_clique_single' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.TwoCut.no_length_twelve_four_component_with_dual' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.TwoCut.no_length_twelve_three_plus_one_of_rows' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.TwoCut.no_length_twelve_with_four_omissions_of_rows' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking OffFour17Close189
+'Graffiti189LongestPath.TwoCut.no_length_twelve_with_four_omissions_at_degree_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.TwoCut.traceable_of_order_le_seventeen' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

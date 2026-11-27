@@ -161,6 +161,7 @@
 | AutoGraphForge line 2055 | Proved in Lean; sharp on the 10-vertex path (known burning bound corollary) | [Proof](autographforge-2055/README.md) |
 | AutoGraphForge line 2088 | Disproved (singleton rainbow convention) | [Lean](autographforge-1883/AutoGraphForge1883.lean) |
 | AutoGraphForge line 2175 | Disproved | [Lean](autographforge-star/StarCone.lean) |
+| AutoGraphForge line 2194 | Disproved in Lean by C43; upstream implicit witness also exists | [Proof](autographforge-2194/) |
 | AutoGraphForge line 2206 | Disproved | [Lean](autographforge-star/StarCone.lean) |
 | AutoGraphForge line 2222 | Disproved | [Lean](autographforge-balanced-forcing/BalancedForcing.lean) |
 | AutoGraphForge line 2223 | Disproved in Lean by an 11-vertex bipartite graph | [Counterexample](autographforge-2223/README.md) |

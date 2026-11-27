@@ -1,0 +1,7 @@
+1900 044250a9 proposed; normalized touches 20; record touches 311
+4776 distinct encodings; explicit star certificate on all eligible graphs {'row_domain': 327, 'also_in_refutations': 69, 'both_optimizers_order_le_10': 52}
+compute_battery C4 (4, True, True, True, 2, 2, 2)
+compute_battery C5 (5, True, True, True, 2, 3, 3)
+compute_battery C6 (6, True, True, True, 2, 3, 4)
+compute_battery K2,4 (6, True, True, True, 4, 4, 2)
+compute_battery K2,6 (8, True, True, True, 6, 6, 2)

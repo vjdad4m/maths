@@ -1,0 +1,10 @@
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+'ForcingDrop711.triangle_sharp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcingDrop711.singleton_boundary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcingDrop711.complete_forcing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcingDrop711.complete_sharp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcingDrop711.search_start' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcingDrop711.packed_seed_savings' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcingDrop711.seed_savings' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcingDrop711.forcing_drop' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ForcingDrop711.row711' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,8 @@
+Pinned row 711 2419b925 proposed record touches 1000
+Pinned row 6318 379aa857 proposed record touches 0
+4776 distinct released encodings {'eligible': 899, 'in_refutations': 97, 'optimized_order_at_most_8': 156}
+Single-vertex encodings (code, in refutations, in backups) []
+compute_battery K1 (1, False, True, 1, 1)
+compute_battery K3 (3, True, True, 1, 2)
+compute_battery K5 (5, True, True, 3, 4)
+compute_battery K2 (2, True, False, 1, 1)

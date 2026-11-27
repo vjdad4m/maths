@@ -137,6 +137,7 @@
 | AutoGraphForge line 595 | Disproved in Lean (22 vertices; known matching construction) | [Proof](autographforge-595/README.md) |
 | AutoGraphForge line 621 | Proved in Lean; extends to quasi-line graphs | [Proof](autographforge-621/README.md) |
 | AutoGraphForge line 659 | Disproved in Lean; unbounded gap on bipartite planar graphs | [Proof](autographforge-659/) |
+| AutoGraphForge line 711 | Proved in Lean; sharp on the triangle; literal line 6318 has a singleton counterexample | [autographforge-711/](autographforge-711/) |
 | AutoGraphForge line 720 | Proved in Lean; sharp on K₂ | [Proof](autographforge-720/README.md) |
 | AutoGraphForge line 747 | Disproved | [Lean](autographforge-shared-hub/SharedHub.lean) · [Replay](autographforge-shared-hub/README.md) |
 | AutoGraphForge line 764 | Disproved | [Lean](autographforge-eulerian-chain/Chain.lean) · [Replay](autographforge-eulerian-chain/README.md) |

@@ -1,0 +1,10 @@
+claw backup line 73 refutation corpus False
+bull backup line 78 refutation corpus False
+bull backup line 1264 refutation corpus False
+Row 2560; ID 6d159443; 3 normalized touches; proposed, null proof.
+4776 distinct codes; counts: {'antecedent': 953, 'undefined': 354, 'numeric': 599, 'numeric_from_refutations': 37}
+triangle 2 1
+claw 3 1
+bull 3 1
+Two isolates, GraphCalc: NetworkXException Graph has a node with no edge incident on it, so no edge cover exists.
+Pinned compute_battery: triangle edge cover 2; two isolates NaN; bull eligible with values 3, 1.

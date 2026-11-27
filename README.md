@@ -218,6 +218,7 @@
 | AutoGraphForge line 2527 | Disproved in Lean (archived witnesses and unbounded planar family) | [Proof](autographforge-2527/README.md) |
 | AutoGraphForge line 2537 | Disproved | [Lean](autographforge-friendship/Friendship.lean) |
 | AutoGraphForge line 2553 | Disproved in Lean by C43; upstream implicit witness also exists | [Proof](autographforge-2553/) |
+| AutoGraphForge line 2560 | Proved in Lean (sharp factor three and induced-bull packing refinement) | [Proof](autographforge-2560/README.md) |
 | AutoGraphForge line 2562 | Disproved in Lean by C43; upstream implicit witness also exists | [Proof](autographforge-2562/) |
 | AutoGraphForge line 2572 | Disproved | [Lean](autographforge-complete/CompleteRows.lean) |
 | AutoGraphForge line 2577 | Disproved | [Lean](autographforge-star/StarCone.lean) |

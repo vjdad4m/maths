@@ -1,0 +1,80 @@
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+ThirdEar.lean: OK
+SharedRanks.lean: OK
+EarTriangle.lean: OK
+ThreePins.lean: OK
+NoLeafAttachment.lean: OK
+adjacent-full-source.zip: OK
+graff384b-clean-independent-sources.zip: OK
+Shared anchor build /workspace/scratch/7efa613b1c05/graff384b-shared-astra/.shared.ZI8VvfL6
+ThreeReservedRanks.lean: OK
+CompleteAdjacent.lean: OK
+README.md: OK
+replay.sh: OK
+audit.py: OK
+CHECKED-OBJECTS.sha256: OK
+NEW-SOURCES.sha256: OK
+StrictFull.log: OK
+adjacent12-source.zip: OK
+graff384b-clean-independent/CHECKED-OBJECTS.sha256: OK
+graff384b-clean-independent/CleanFinish.lean: OK
+graff384b-clean-independent/CleanRanks.lean: OK
+graff384b-clean-independent/NEW-SOURCES.sha256: OK
+graff384b-clean-independent/README.md: OK
+graff384b-clean-independent/SOURCES.sha256: OK
+graff384b-clean-independent/Strict270.log: OK
+graff384b-clean-independent/audit.py: OK
+graff384b-clean-independent/replay.sh: OK
+graff384b-independent12/graff384b-independent12-sources.zip: OK
+Full adjacent-pair branch verified: 2 modules, 2 standard-axiom reports.
+Complete independent attachment replay verified: 270 graph modules and 643 axiom reports.
+Full adjacent-pair branch verified: 2 modules, 2 standard-axiom reports.
+Fresh extension verified: 2 modules and 4 standard-axiom reports.
+AdjacentBound.olean: OK
+AdjacentFrame.olean: OK
+AdjacentFront.olean: OK
+AllContacts.olean: OK
+AttachmentReserve.olean: OK
+CliquePool.olean: OK
+CompleteAdjacent.olean: OK
+LowOmissions.olean: OK
+PendantBound.olean: OK
+PendantSample.olean: OK
+PortClique29.olean: OK
+PortFrame29.olean: OK
+PortRepair29.olean: OK
+RankRepair29.olean: OK
+ThreeEars.olean: OK
+ThreeReservedRanks.olean: OK
+Weighted29.olean: OK
+AnchorScores.olean: OK
+CleanFinish.olean: OK
+CleanRanks.olean: OK
+CubicExtra.olean: OK
+CubicMass.olean: OK
+CubicRanks.olean: OK
+DenseTwelve.olean: OK
+FinishIndependent.olean: OK
+IndependentFrontier.olean: OK
+IndependentThirteen.olean: OK
+JointEarRank.olean: OK
+JointEarSample.olean: OK
+JointEarWitness.olean: OK
+PoolTwelve.olean: OK
+PortClique29.olean: OK
+PortFrame29.olean: OK
+PortRepair29.olean: OK
+RankRepair29.olean: OK
+ReservedRanks.olean: OK
+SimplicialRanks.olean: OK
+SimplicialTrial.olean: OK
+TwelveWitness.olean: OK
+UnreservedTwelve.olean: OK
+Weighted29.olean: OK
+'Graffiti384b.Shared.mass_at' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Shared.shared_pool' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Shared.score_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Shared.three_pins' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Shared.exact_without_leaf_attachment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Shared.leaf_necessary' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fresh extension verified: 5 modules and 6 standard-axiom reports.

@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+set -euo pipefail
+here="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+obj="$(mktemp -d)"
+trap 'rm -rf "$obj"' EXIT
+export LEAN_PATH="$obj${LEAN_PATH:+:$LEAN_PATH}"
+lean --version
+for pkg in "$here/../graffiti-199-small-cut-configurations" "$here/../graffiti-199-overlap-adapters" "$here/../graffiti-199-four-block-integration" "$here"; do
+  while IFS= read -r n; do
+    lean -j1 -s 65536 -DwarningAsError=true --root="$pkg/src" -o "$obj/$n.olean" "$pkg/src/$n.lean"
+  done < "$pkg/modules.txt"
+done
+python3 "$here/generate_repair.py" "$here/../graffiti-199-small-cut-configurations/src/DepletedPaths.lean" > "$obj/generated.lean"
+cmp "$obj/generated.lean" "$here/src/TreeRepairData.lean"

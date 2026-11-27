@@ -1,0 +1,79 @@
+OffFive17CentralStructure189.lean: OK
+OffFive17CentralTransfers189.lean: OK
+OffFive17SingletonBase189.lean: OK
+OffFive17SingletonRow5189.lean: OK
+OffFive17SingletonRow6189.lean: OK
+OffFive17SingletonRow8189.lean: OK
+OffFive17SingletonRow9189.lean: OK
+OffFive17SingletonRow10189.lean: OK
+OffFive17SingletonTable189.lean: OK
+OffFive17MarkedCoreBase189.lean: OK
+OffFive17MarkedRow00012189.lean: OK
+OffFive17MarkedRow00112189.lean: OK
+OffFive17MarkedRow00122189.lean: OK
+OffFive17MarkedRow01112189.lean: OK
+OffFive17MarkedRow01122189.lean: OK
+OffFive17MarkedRow01222189.lean: OK
+OffFive17MarkedRow11112189.lean: OK
+OffFive17MarkedRow11122189.lean: OK
+OffFive17MarkedRow11222189.lean: OK
+OffFive17MarkedRow12222189.lean: OK
+OffFive17MarkedTable189.lean: OK
+OffFive17SingletonGraph189.lean: OK
+OffFive17MarkedGraph189.lean: OK
+OffFive17Close189.lean: OK
+'Graffiti189SmallMarkedCore.small_core_marked_path' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.TwoCut.no_boundary_pin_in_nontrivial_length_eleven_component' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.TwoCut.no_foreign_pin_at_omitted_leaf_neighbor_length_eleven' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.TwoCut.distinct_pins_in_nontrivial_length_eleven_component' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.TwoCut.length_eleven_five_off_has_central_component' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.TwoCut.length_eleven_five_off_four_component_singleton' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.TwoCut.no_length_eleven_with_central_five_component_of_marked_core' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OffFive17Singleton.row_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OffFive17Singleton.row_5' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OffFive17Singleton.row_6' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OffFive17Singleton.row_8' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OffFive17Singleton.row_9' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OffFive17Singleton.row_10' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OffFive17Singleton.all_rows' depends on axioms: [propext, Classical.choice, Quot.sound]
+'_private.OffFive17SingletonGraph189.0.Graffiti189LongestPath.TwoCut.off_five_17_singleton_oriented' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.TwoCut.no_length_eleven_with_central_four_component_of_endpoint_table' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OffFive17MarkedCore.row_sound' depends on axioms: [propext, Quot.sound]
+'OffFive17MarkedCore.mem_tuples' depends on axioms: [propext, Quot.sound]
+'OffFive17MarkedCore.row_00012' depends on axioms: [propext]
+'OffFive17MarkedCore.row_00112' depends on axioms: [propext]
+'OffFive17MarkedCore.row_00122' depends on axioms: [propext]
+'OffFive17MarkedCore.row_01112' depends on axioms: [propext]
+'OffFive17MarkedCore.row_01122' depends on axioms: [propext]
+'OffFive17MarkedCore.row_01222' depends on axioms: [propext]
+'OffFive17MarkedCore.row_11112' depends on axioms: [propext]
+'OffFive17MarkedCore.row_11122' depends on axioms: [propext]
+'OffFive17MarkedCore.row_11222' depends on axioms: [propext]
+'OffFive17MarkedCore.row_12222' depends on axioms: [propext]
+'OffFive17MarkedCore.all_rows' depends on axioms: [propext, Quot.sound]
+'OffFive17MarkedCore.marked_core_of_table' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.TwoCut.no_length_eleven_with_five_omissions_at_degree_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.TwoCut.order_seventeen_one_remaining_branch' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.TwoCut.degree_four_order17_counterexample_one_branch' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

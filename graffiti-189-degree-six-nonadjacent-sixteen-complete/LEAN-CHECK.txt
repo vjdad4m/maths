@@ -1,0 +1,12 @@
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.dark_three_balanced_route_to_mark' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.Singleton16.traceable_of_normalized_singleton_three_balanced' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.traceable_of_nonadjacent_singleton_thirteen' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.traceable_at_six_nonadjacent_order_sixteen' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

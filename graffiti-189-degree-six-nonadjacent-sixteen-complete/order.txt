@@ -1,0 +1,4 @@
+SixSingletonThreeCore189
+SixSingletonThreeBoard189
+SixSingletonThreeActual189
+SixNonadjacentSixteen189

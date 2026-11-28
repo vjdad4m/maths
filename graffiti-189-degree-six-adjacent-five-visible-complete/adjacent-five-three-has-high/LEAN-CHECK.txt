@@ -1,0 +1,42 @@
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.seven_lopsided_ore' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.seven_lopsided_side' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.SingletonFive16.three_balances_two_low_one_degree_three' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.traceable_of_adjacent_singleton_thirteen_five_three_balanced_two_low_mix' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'_private.SixSingletonFiveThreeAdjacentTwoTiny189.0.Graffiti189LongestPath.CrossSaturation.ThresholdSix.SingletonFive16.paired_tiny_core_ore' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'_private.SixSingletonFiveThreeAdjacentTwoTiny189.0.Graffiti189LongestPath.CrossSaturation.ThresholdSix.SingletonFive16.tiny_pair_splice' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.SingletonFive16.three_balances_adjacent_two_tiny' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.route_avoid_two_free' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.PortCertificates.tiny_common_exit_certificate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'_private.SixSingletonFiveThreeNonadjacentTinyCore189.0.Graffiti189LongestPath.CrossSaturation.ThresholdSix.SingletonFive16.erased_pair_retains_six_ore' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.SingletonFive16.tiny_common_route' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.SingletonFive16.three_balances_nonadjacent_two_tiny' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.traceable_of_adjacent_singleton_thirteen_five_three_balanced_two_tiny' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.traceable_of_adjacent_singleton_thirteen_five_three_balanced_has_high' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

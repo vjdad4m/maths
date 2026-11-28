@@ -1,0 +1,60 @@
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release) 
+Mathlib c44e0c8ee63ca166450922a373c7409c5d26b00b 
+Replay directory <build-directory>
+Matched 360 predecessor objects to the source closure.
+Matched earlier strict extracted check, identical source and object PortFrames
+'Graffiti384b.Exterior.one_port' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Exterior.shared_second_neighbor' depends on axioms: [propext, Classical.choice, Quot.sound]
+Matched earlier strict extracted check, identical source and object PortCount
+'Graffiti384b.Exterior.local_limits' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Exterior.incidence_solution' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Exterior.port_matching' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Exterior.boundary_size' depends on axioms: [propext, Classical.choice, Quot.sound]
+Matched earlier strict extracted check, identical source and object PortRank
+'Graffiti384b.Exterior.rank_obstruction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Exterior.trim_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+Matched earlier strict extracted check, identical source and object PrivatePorts
+'Graffiti384b.Exterior.noncontact_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Exterior.private_cut' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Exterior.private_branch' depends on axioms: [propext, Classical.choice, Quot.sound]
+Matched earlier strict extracted check, identical source and object PrivatePatch
+'Graffiti384b.Exterior.patch_solution' depends on axioms: [propext, Classical.choice, Quot.sound]
+Matched earlier strict extracted check, identical source and object UnconditionalPorts
+'Graffiti384b.Exterior.three_pin_cut' depends on axioms: [propext, Classical.choice, Quot.sound]
+Matched earlier strict extracted check, identical source and object SharpPortRank
+'Graffiti384b.Exterior.boundary_triangle_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Exterior.score_free_cut' depends on axioms: [propext, Classical.choice, Quot.sound]
+Matched earlier strict extracted check, identical source and object ScoreFreePatch
+'Graffiti384b.Exterior.three_pin_private_cut' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Exterior.score_free_solution' depends on axioms: [propext, Classical.choice, Quot.sound]
+Matched earlier strict extracted check, identical source and object ForkPatch
+'Graffiti384b.Exterior.fork_patch' depends on axioms: [propext, Classical.choice, Quot.sound]
+Matched earlier strict extracted check, identical source and object MixedResidual
+'Graffiti384b.Exterior.residual' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking ThreeData
+'Graffiti384b.Exterior.Three.connected' depends on axioms: [propext]
+'Graffiti384b.Exterior.Three.score_table' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Exterior.Three.contacts_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Exterior.Three.fixed_partners' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Exterior.Three.feasible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Exterior.Three.private_solution' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Exterior.Three.three_pins_exist' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking ThinOutside
+'Graffiti384b.Exterior.thin_outside' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking PrivateLower
+'Graffiti384b.Exterior.at_least_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking ThreeSharp
+'Graffiti384b.Exterior.Three.minimum_outside' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Exterior.Three.sharp_profile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Exterior.Three.local_shape_solution' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking SamePatch
+'Graffiti384b.Exterior.Three.same_patch' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Exterior.Three.fork_example' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Exterior.Three.earlier_fork' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Exterior.Three.carrier_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking PositiveExample
+'Graffiti384b.Exterior.Positive.exact_profile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Exterior.Positive.minimum_outside' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Exterior.Positive.fork_solution' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Exterior.Positive.six_required' depends on axioms: [propext, Classical.choice, Quot.sound]
+Verified 16 new modules and 39 standard-axiom reports.

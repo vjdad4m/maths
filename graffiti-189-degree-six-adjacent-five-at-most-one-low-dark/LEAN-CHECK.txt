@@ -1,0 +1,33 @@
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.eight_high_core_weighted_low_route' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.seven_high_core_route' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.eight_remove_one_low_route' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'_private.SixSingletonFiveThreeLowBase189.0.Graffiti189LongestPath.CrossSaturation.ThresholdSix.SingletonFive16.common_order' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'_private.SixSingletonFiveThreeLowBase189.0.Graffiti189LongestPath.CrossSaturation.ThresholdSix.SingletonFive16.low_visible_three' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'_private.SixSingletonFiveThreeLowBase189.0.Graffiti189LongestPath.CrossSaturation.ThresholdSix.SingletonFive16.deep_hits_a_different_balance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'_private.SixSingletonFiveThreeLowBase189.0.Graffiti189LongestPath.CrossSaturation.ThresholdSix.SingletonFive16.low_visible_port_cover' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.SingletonFive16.three_balance_low_can_exit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.SingletonFive16.three_balances_route_with_exactly_one_low' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.traceable_of_adjacent_singleton_thirteen_five_three_balanced_exactly_one_low' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.traceable_of_adjacent_singleton_thirteen_five_unless_two_low' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

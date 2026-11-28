@@ -1,0 +1,12 @@
+src/HighDichotomy189.lean: OK
+src/Interior189.lean: OK
+src/GapStrong189.lean: OK
+src/MarkedOrder189.lean: OK
+'Graffiti189LongestPath.HighDichotomy.not_one_omitted' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.HighDichotomy.has_high_active' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.HighDichotomy.normalized_attachment_dichotomy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.Interior.not_both_end_chords' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.GapStrong.sum_degree_gap_exchange' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.MarkedOrder.order_lower' depends on axioms: [propext, Classical.choice, Quot.sound]

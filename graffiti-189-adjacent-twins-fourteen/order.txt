@@ -1,0 +1,5 @@
+RootedOreTwoRoots189
+AdjacentCutFiveTwinBothFour189
+RootedOreTwoRootsNonedge189
+AdjacentCutFiveTwinThreeGeom189
+AdjacentCutFiveTwinFourteen189

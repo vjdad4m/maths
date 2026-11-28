@@ -1,0 +1,18 @@
+Checking RootedOreTwoRoots189 at 04:26:20
+'Graffiti189LongestPath.CrossSaturation.rooted_Ore_with_two_roots' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking AdjacentCutFiveTwinBothFour189 at 04:29:24
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.traceable_of_adjacent_twins_two_odd_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking RootedOreTwoRootsNonedge189 at 04:29:34
+'Graffiti189LongestPath.CrossSaturation.rooted_Ore_with_two_roots_of_nonedge' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking AdjacentCutFiveTwinThreeGeom189 at 04:29:59
+Checking AdjacentCutFiveTwinFourteen189 at 04:30:50
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.traceable_of_adjacent_twins_two_shores_order_ge_fourteen' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Every above module yielded an .olean; no failed draft checks are included.

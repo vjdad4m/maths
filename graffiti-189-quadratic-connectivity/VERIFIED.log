@@ -1,0 +1,25 @@
+== QuadraticDeficitAll189 ==
+'Graffiti189LongestPath.GeneralGapMidpoint.gap_midpoint_degree_le_twice_pins' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.GeneralGapMidpoint.no_gap_two_at_connectivity_above_pin_twice' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.GreedyTerminal.long_path_from_avoiding' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.GreedyTerminal.one_low_universal_uniform_routes' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.RadialOrder.order_le_radius_four_layers' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.QuadraticShore.quadratic_root_deleted_degrees' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.QuadraticDeficit.traceable_of_quadratic_gap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.QuadraticDeficit.traceable_of_quadratic_connectivity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

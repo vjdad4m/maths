@@ -1,0 +1,40 @@
+Check DegreeFiveAlternatingRoute189 at 02:49:16
+'Graffiti189LongestPath.CrossSaturation.route_clique_join_end_hub' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.route_clique_join_end_leaf' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveAlternatingRoute189 at 02:49:20
+Check DegreeFiveEightBridgeRoutes189 at 02:49:20
+'Graffiti189LongestPath.CrossSaturation.Split.Five.singleton_local_distance_two_at_opposite_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.Split.Five.bridge_route_at_four_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveEightBridgeRoutes189 at 02:49:23
+Check DegreeFiveEightNoBridge189 at 02:49:23
+'Graffiti189LongestPath.CrossSaturation.Split.Five.b_gateway_from_a_port_without_bridge' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.Split.Five.no_bridge_port_nonports_complete' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveEightNoBridge189 at 02:49:26
+Check DegreeFiveEightNoBridgeRoute189 at 02:50:24
+'Graffiti189LongestPath.CrossSaturation.Split.Five.no_bridge_route_at_four_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveEightNoBridgeRoute189 at 02:50:30
+Check DegreeFiveEightSplit189 at 02:50:30
+'Graffiti189LongestPath.CrossSaturation.Split.Five.traceable_four_a_ports_each_shore_distance_three' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveEightSplit189 at 02:50:35
+Check DegreeFiveEightActual189 at 02:50:35
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.traceable_at_actual_five_distance_three_cut_degree_eight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveEightActual189 at 02:50:39
+Verified all six modules and final theorem.

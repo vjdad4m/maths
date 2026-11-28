@@ -21,4 +21,10 @@ If all cores have size at most two and an element has a different singleton-core
 
 `weighted_fourth` works with arbitrary nonnegative weights on windows of size at most four. `phan_fourth` transports this result back to the exact nested sums. Neither theorem claims the fifth degree or the full general conjecture.
 
+## Fifth degree: symmetric cores
+
+For a five-element window containing all its singleton patterns, every missing pair forces at least two missing triples containing it. Otherwise two available triples would intersect in the missing pair. Each missing triple contains at most three missing pairs, so double-counting incidences gives (2p ≤ 3t), where (p,t) count missing pairs and triples. Since (p ≤ 10), (p-t ≤ 3). If (p>0), at least one four-element pattern is missing: otherwise every pair is the intersection of three available four-element patterns. The corresponding contribution of (+3) pays for the remaining deficit in the balance.
+
+This proves the fifth degree when all least cores are symmetric: for any (j) in the core of (k), their cores coincide. Projecting onto one representative per block preserves intersection closure, so the same five-element counting argument applies after projection. See `phan_fifth_of_symmetric_complements` for the exact weighted inequality under this condition. The asymmetric case of the fifth degree is not addressed by this theorem.
+
 **Replay:** Lean 4.19.0, built Mathlib at `c44e0c8ee63ca166450922a373c7409c5d26b00b`, `MATHLIB_DIR=/path/to/mathlib bash replay.sh`.

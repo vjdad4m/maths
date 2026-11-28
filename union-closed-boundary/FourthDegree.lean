@@ -147,7 +147,7 @@ private theorem complement_injection
 def balance (C : Finset (Finset V)) (k : V) (T : Finset V) : ℝ :=
   (contains C k T).card - (omits C k T).card
 
-private theorem averaged {C : Finset (Finset V)} (P : Finset V) (hn : P.Nonempty)
+theorem averaged {C : Finset (Finset V)} (P : Finset V) (hn : P.Nonempty)
     (W : Finset (Finset V)) (w : Finset V → ℝ) (nn : ∀ T ∈ W, 0 ≤ w T)
     (mass : ∀ T ∈ W, 0 ≤ ∑ k ∈ P ∩ T, balance C k T) :
     ∃ k : V, 0 ≤ ∑ T ∈ W, w T * (if k ∈ T then balance C k T else 0) := by
@@ -162,12 +162,15 @@ private theorem averaged {C : Finset (Finset V)} (P : Finset V) (hn : P.Nonempty
   rw [← sum_filter, filter_mem_eq_inter]
   exact mass T ht
 
-private theorem symmetric_mass [Fintype V] [Nonempty V]
-    (C : Finset (Finset V)) (bot : ∅ ∈ C) (K : V → Finset V)
+theorem symmetric_mass [Fintype V] [Nonempty V] {d : ℕ}
+    (localMass : ∀ (Q : Finset (Finset V)), ∅ ∈ Q → InterClosed Q →
+      ∀ U : Finset V, (∀ k ∈ U, {k} ∈ Q) → U.card ≤ d →
+        0 ≤ ∑ k ∈ U, balance Q k U)
+    (C : Finset (Finset V)) (bot : ∅ ∈ C) (cl : InterClosed C) (K : V → Finset V)
     (core : ∀ k, IsCore C k (K k))
     (symm : ∀ k j, j ∈ K k → K j = K k) :
     ∃ P : Finset V, P.Nonempty ∧
-      ∀ T : Finset V, T.card ≤ 4 → 0 ≤ ∑ k ∈ P ∩ T, balance C k T := by
+      ∀ T : Finset V, T.card ≤ d → 0 ≤ ∑ k ∈ P ∩ T, balance C k T := by
   classical
   let pick (S : Finset V) (h : S.Nonempty) := h.choose
   let rep (k : V) := pick (K k) ⟨k,(core k).2.1⟩
@@ -193,7 +196,7 @@ private theorem symmetric_mass [Fintype V] [Nonempty V]
   let U := (P ∩ T).filter (fun k => K k ⊆ T)
   let Q := C.image (fun S => S ∩ P)
   have usub : U ⊆ P ∩ T := filter_subset _ _
-  have ucard : U.card ≤ 4 := (card_le_card (usub.trans inter_subset_right)).trans small
+  have ucard : U.card ≤ d := (card_le_card (usub.trans inter_subset_right)).trans small
   have empty : ∅ ∈ Q := mem_image.mpr ⟨∅,bot,empty_inter _⟩
   have sing (k : V) (hk : k ∈ U) : {k} ∈ Q := by
     have kp : k ∈ P := (mem_inter.mp (usub hk)).1
@@ -239,7 +242,13 @@ private theorem symmetric_mass [Fintype V] [Nonempty V]
         exact ⟨⟨A,hA,rfl⟩,(eq_sub A hA).mpr sub,by simpa [kp] using hkA⟩
     rw [eq,card_image_of_injOn]
     exact inj.mono fun _ h => (mem_filter.mp h).1
-  have mass := fourth_mass_of_singletons Q empty U sing ucard
+  have Qcl : InterClosed Q := by
+    intro A hA B hB
+    obtain ⟨X,hX,rfl⟩ := mem_image.mp hA
+    obtain ⟨Y,hY,rfl⟩ := mem_image.mp hB
+    refine mem_image.mpr ⟨X ∩ Y,cl X hX Y hY,?_⟩
+    ext k; simp only [mem_inter]; tauto
+  have mass := localMass Q empty Qcl U sing ucard
   have mass' : 0 ≤ ∑ k ∈ U, balance C k T := by
     convert mass using 1
     apply sum_congr rfl
@@ -308,7 +317,7 @@ theorem weighted_fourth [Fintype V] [Nonempty V] (C : Finset (Finset V))
           exact asymm ⟨i,j,hj,e,ha ▸ (core j).1⟩
         omega
       exact eq_of_subset_of_card_le inc ((smallK i).trans two)
-    obtain ⟨P,hn,hm⟩ := symmetric_mass C bot K core symm
+    obtain ⟨P,hn,hm⟩ := symmetric_mass (fun Q bot _ U sing ub => fourth_mass_of_singletons Q bot U sing ub) C bot cl K core symm
     obtain ⟨i,good⟩ := averaged P hn W w nn (fun T ht => hm T (small T ht))
     refine ⟨i,sub_nonneg.mp ?_⟩
     rw [← sum_sub_distrib]

@@ -153,7 +153,7 @@ theorem third_pointwise_of_missing (C : Finset (Finset V)) (empty : ∅ ∈ C)
   · exact ji ij.symm
 
 
-private theorem column_balance (T : Finset V) (k : V) (hk : k ∈ T) :
+theorem column_balance (T : Finset V) (k : V) (hk : k ∈ T) :
     (omits T.powerset k T).card = (contains T.powerset k T).card := by
   apply le_antisymm
   · apply card_le_card_of_injOn (fun S => S.erase k)
@@ -172,7 +172,7 @@ private theorem column_balance (T : Finset V) (k : V) (hk : k ∈ T) :
       simpa only [erase_insert (mem_filter.mp ha).2.2,erase_insert (mem_filter.mp hb).2.2]
         using congrArg (fun S : Finset V => S.erase k) e
 
-private theorem mass_formula (C : Finset (Finset V)) (T : Finset V) :
+theorem mass_formula (C : Finset (Finset V)) (T : Finset V) :
     (∑ k ∈ T, (((contains C k T).card : ℝ) - (omits C k T).card)) =
       ∑ S ∈ T.powerset, if S ∈ C then ((T.card : ℝ) - 2 * S.card) else 0 := by
   classical

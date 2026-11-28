@@ -1,0 +1,35 @@
+== GraphSat189 ==
+'Graffiti189LongestPath.GraphSat.proof_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+== GraphRup189 ==
+== CertPrefix2250189 ==
+'Graffiti189LongestPath.GraphSat.Prefix2250.impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+== ShellLayout189 ==
+'Graffiti189LongestPath.GraphSat.exists_shell_layout' depends on axioms: [propext, Classical.choice, Quot.sound]
+== ModelFromGraph189 ==
+'Graffiti189LongestPath.GraphSat.model_of_graph' depends on axioms: [propext, Classical.choice, Quot.sound]
+== ShellModel189 ==
+'Graffiti189LongestPath.GraphSat.exists_shell_model' depends on axioms: [propext, Classical.choice, Quot.sound]
+== CertPrefix2350189 ==
+'Graffiti189LongestPath.GraphSat.Prefix2350.impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+== CertPrefix3250189 ==
+'Graffiti189LongestPath.GraphSat.Prefix3250.impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+== CertPrefix3350189 ==
+'Graffiti189LongestPath.GraphSat.Prefix3350.impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+== CertRoute2340189 ==
+'Graffiti189LongestPath.GraphSat.Route2340.impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+== CertRoute2241189 ==
+'Graffiti189LongestPath.GraphSat.Route2241.impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+== CertRoute3330189 ==
+'Graffiti189LongestPath.GraphSat.Route3330.impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+== CertRoute3240189 ==
+'Graffiti189LongestPath.GraphSat.Route3240.impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+== CertRoute3231189 ==
+'Graffiti189LongestPath.GraphSat.Route3231.impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+== CertRoute3340189 ==
+'Graffiti189LongestPath.GraphSat.Route3340.impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+== CertRoute3241189 ==
+'Graffiti189LongestPath.GraphSat.Route3241.impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+== DegreeThreeComplete189 ==
+'Graffiti189LongestPath.GraphSat.traceable_at_actual_degree_three' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

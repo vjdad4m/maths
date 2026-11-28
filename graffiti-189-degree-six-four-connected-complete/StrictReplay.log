@@ -1,0 +1,35 @@
+== Equality25Profile189 ==
+== Equality25CNF189 ==
+'Graffiti189LongestPath.Equality25CNF.contradiction_of_proof' depends on axioms: [propext, Classical.choice, Quot.sound]
+== Equality25Count189 ==
+'Graffiti189LongestPath.Equality25Count.contradiction_of_proof' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+== Equality25Frame44Cert189 ==
+'Graffiti189LongestPath.Equality25Count.Frame44.impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+== Equality25Frame45Cert189 ==
+'Graffiti189LongestPath.Equality25Count.Frame45.impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+== Equality25Frame46Cert189 ==
+'Graffiti189LongestPath.Equality25Count.Frame46.impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+== Equality25Frame34Cert189 ==
+'Graffiti189LongestPath.Equality25Count.Frame34.impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+== Equality25Frame35Cert189 ==
+'Graffiti189LongestPath.Equality25Count.Frame35.impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+== Equality25Frame36Cert189 ==
+'Graffiti189LongestPath.Equality25Count.Frame36.impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+== Equality25Impossible189 ==
+'Graffiti189LongestPath.Equality25Count.model_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.layer_cover_at_order_twenty_five_with_radius_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.layer_cover_at_order_twenty_five' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.exists_layer_twenty_five_label' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.Equality25Profile.model_at_order_twenty_five_with_radius_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.Equality25Profile.model_at_order_twenty_five_of_label' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.traceable_at_degree_six_four_connected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

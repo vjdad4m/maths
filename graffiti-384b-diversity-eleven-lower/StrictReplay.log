@@ -1,0 +1,15 @@
+Checking DiversityElevenEarFootprint384b
+'Graffiti384b.DiversityEleven.exact_of_ear_footprint' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS DiversityElevenEarFootprint384b
+Checking DiversityElevenEarDeficit384b
+'Graffiti384b.DiversityEleven.deficit_one_of_independent_low' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.DiversityEleven.at_most_five_independent_low' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS DiversityElevenEarDeficit384b
+Checking HighEarScoreDecomp384b
+'Graffiti384b.DiversityEleven.triangle_count_high_with_independent_ears' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS HighEarScoreDecomp384b
+Checking HighEarRetained384b
+'Graffiti384b.DiversityEleven.retainedFromHigh_normalizes' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS HighEarRetained384b

@@ -1,0 +1,71 @@
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.SingletonRUP.ec2_exclusion' depends on axioms: [propext]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.SingletonRUP.ec1_bridge' depends on axioms: [propext]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.SingletonRUP.ec2.normalized_geometry_impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.SingletonRUP.ec1.normalized_route_geometry' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.label_dist' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.label_degree' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.label_even' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.traceable_label' depends on axioms: [propext, Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.SingletonRUP.ec2.no_label_data' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.SingletonRUP.ec1.labelled_visible_route_data' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.SingletonRUP.ec1.traceable_of_label_data' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.SingletonRUP.ec2_distance_label_impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.SingletonRUP.ec1_distance_label_traceable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.SingletonRUP.no_order_fourteen_EC2_two_common' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.SingletonRUP.traceable_of_adjacent_singleton_eleven_EC1_multi' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking AdjacentCutFiveFourteenRUPEC3189 at 06:39:55
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.SingletonRUP.ec3_all_paths' depends on axioms: [propext]
+Checking AdjacentCutFiveFourteenRUPSemEC3189 at 06:39:58
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.SingletonRUP.ec3.normalized_all_routes' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking AdjacentCutFiveFourteenLabeledEC3189 at 06:47:05
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.SingletonRUP.ec3.traceable_of_label_data' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking AdjacentCutFiveFourteenLabelTransferC3189 at 06:47:28
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.SingletonRUP.ec3_distance_label_traceable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking AdjacentCutFiveFourteenExactTagC3189 at 06:52:36
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.SingletonRUP.traceable_order_fourteen_EC2_three_common' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.traceable_of_adjacent_singleton_eleven_shores' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.traceable_of_actual_adjacent_two_shores_order_fourteen' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.order_le_thirteen_of_degree_five_counterexample' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.traceable_at_degree_five_of_order_ge_fourteen' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.traceable_at_degree_five' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS DegreeFiveComplete189

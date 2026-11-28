@@ -1,0 +1,52 @@
+== HalfBandCombined189 ==
+'Graffiti189LongestPath.UniversalExtension.enlarge_hook_shore' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.UniversalExtension.routes_of_cycle_in_universal_extension' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.LargeRobustShore.robust_large_shore_impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.FilterRootHooks.retain_regular_roots' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.ColoredFan.colored_flexible_hooked_lower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.SmallShoreOre.side_ore_paths' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.SmallShoreOre.ore_cross_shore_route' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.GeneralCutMisses.missed_boundary_of_side_with_high_vertex' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.ThreePortCount.two_misses_per_nonflexible_hook' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.SplitShoreThree.split_third_shore_after_one_more_deletion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.SplitShoreThree.side_degree_loss' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.GroupedShellMass.grouped_shell_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.NormalizedShellMass.fine_two_shore_shell_cap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.NormalizedShellMass.fine_three_shore_shell_mass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.SmallShoreNumeric.two_small_contradiction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.ThreeShoreMass.three_shore_shell_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.ThreeShoreNumeric.three_side_contradiction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.TwoSmallNormalized.small_split_impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.ThreeNormalized.three_split_impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.HalfBandDeficit.traceable_of_half_gap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.HalfBandDeficit.traceable_of_half_connectivity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,34 @@
+Checking SixJointNearEquality189
+'Graffiti189LongestPath.radius_five_near_equality' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS SixJointNearEquality189
+Checking SixJointNearCover189
+'Graffiti189LongestPath.near_cover_deficient_members' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.near_cover_not_common_to_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS SixJointNearCover189
+Checking SixJointNearGeometry189
+'Graffiti189LongestPath.RadiusFiveNearEquality.far_of_full_inactive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixJointNearGeometry189
+Checking SixJointNearDegrees189
+'Graffiti189LongestPath.RadiusFiveNearEquality.no_edges_between_active_and_full_inactive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.RadiusFiveNearEquality.rep_degree_le_one_plus_group_plus_allowed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixJointNearDegrees189
+Checking SixJointNearDispatcher189
+'Graffiti189LongestPath.RadiusFiveNearEquality.no_fifth_support_when_full' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.RadiusFiveNearEquality.fourth_dist_to_deficient_if_fifth_support' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixJointNearDispatcher189
+Checking SixJointNearOrder24Radius189
+'Graffiti189LongestPath.fourth_forward_sites_separate_fifth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.eccentricity_le_four_of_order_ge_twenty_four_at_degree_six' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixJointNearOrder24Radius189

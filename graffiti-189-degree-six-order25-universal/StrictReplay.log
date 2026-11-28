@@ -1,0 +1,4 @@
+Checking SixUniversalOrder25Middle189
+'Graffiti189LongestPath.far_odd_card_le_twelve_at_degree_six' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.order_le_twenty_five_at_degree_six' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS SixUniversalOrder25Middle189

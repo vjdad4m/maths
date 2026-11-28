@@ -1,0 +1,56 @@
+== OneDefectHall189 ==
+'Graffiti189LongestPath.OneDefectHall.defective_hall' depends on axioms: [propext, Classical.choice, Quot.sound]
+== DefectiveCharge189 ==
+'Graffiti189LongestPath.DefectiveCharge.defective_universal_shore_charge' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+== DefectiveWideCut189 ==
+'Graffiti189LongestPath.DefectiveWideCut.defective_small_side_of_shore_cut' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.DefectiveWideCut.defective_shore_cut_no_split' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+== DefectiveConnectivity189 ==
+'Graffiti189LongestPath.DefectiveConnectivity.defective_universal_shore_stays_connected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+== DefectiveTerminal189 ==
+'Graffiti189LongestPath.DefectiveTerminal.defective_shore_routes_one_exception' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+== DefectiveFanPorts189 ==
+'Graffiti189LongestPath.DefectiveFanPorts.defective_off_path_ports_le_total_hook_length' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+== JointLitBudget189 ==
+'Graffiti189LongestPath.JointLitBudget.oversized_single_lit_or_off_path' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+== OversizedRoutable189 ==
+'Graffiti189LongestPath.OversizedRoutable.oversized_terminal_budget_impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.OversizedRoutable.oversized_terminal_budget_impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+== OversizedShore189 ==
+'Graffiti189LongestPath.ShoreDegrees.universal_root_degree_drop' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.StarCycleClosure.erase_root_and_set_iso' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.OversizedShore.oversized_root_deleted_long_cycle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.OversizedShore.oversized_no_long_shore_cycle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+== OversizedClosure189 ==
+'Graffiti189LongestPath.OversizedClosure.oversized_critical_ports' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.OversizedClosure.traceable_of_high_connectivity_d36' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

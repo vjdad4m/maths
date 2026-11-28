@@ -1,0 +1,45 @@
+Checking SixTripleCutForeignHigh189
+'Graffiti189LongestPath.ThresholdSix.ThreeCut.no_three_shores_with_high_foreign_of_universal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixTripleCutForeignHigh189
+Checking SixTripleCutHighActual189
+'Graffiti189LongestPath.ThresholdSix.ThreeCut.three_cut_at_most_two_of_high_outside' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixTripleCutHighActual189
+Checking SixTripleCutDarkPressure189
+'Graffiti189LongestPath.ThresholdSix.ThreeCut.Shore.degree_eq_inner_add_rank' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.ThresholdSix.ThreeCut.Shore.dark_neighbor_of_high_visible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.ThresholdSix.ThreeCut.Shore.dark_neighbor_degree_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.ThresholdSix.ThreeCut.rank_full_of_two_intersect' depends on axioms: [propext, Quot.sound]
+PASS SixTripleCutDarkPressure189
+Checking SixTripleCutSingletonComplete189
+'Graffiti189LongestPath.ThresholdSix.ThreeCut.no_three_shores_one_singleton' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixTripleCutSingletonComplete189
+Checking SixTripleCutSingletonActual189
+'Graffiti189LongestPath.ThresholdSix.ThreeCut.three_cut_at_most_two_with_singleton' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixTripleCutSingletonActual189
+Checking SixTripleCutHall189
+'Graffiti189LongestPath.ThresholdSix.ThreeCut.Shore.hall_two_terminals' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixTripleCutHall189
+Checking SixTripleCutTwoUniversal189
+'Graffiti189LongestPath.ThresholdSix.ThreeCut.Shore.dark_foreign_dist_ge_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.ThresholdSix.ThreeCut.no_two_universal_nonsingleton_shores' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixTripleCutTwoUniversal189

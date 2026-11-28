@@ -1,0 +1,28 @@
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release) 
+Mathlib c44e0c8ee63ca166450922a373c7409c5d26b00b 
+Replay directory /workspace/scratch/7efa613b1c05/graff384b-ear-rooted-spectrum-astra/unpacked/graffiti-384b-minimum-quota-ear-root/.ear-root-replay.2he7glaw
+Matched 374 predecessor objects to the source closure.
+Checking EscapingPins
+'Graffiti384b.EarRooted.escaping_pins' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking EdgeSpectrum
+'Graffiti384b.EarRooted.fiber_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.EarRooted.avoids_smaller' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.EarRooted.other_escape' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking SingleTriangleLoss
+'Graffiti384b.EarRooted.isolated_links' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.EarRooted.isolated_score' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.EarRooted.isolated_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking PrescribedEdge
+'Graffiti384b.EarRooted.prescribed_edge' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking PivotWithLeaf
+'Graffiti384b.EarRooted.shared_omission' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking RootedMinimumQuota
+'Graffiti384b.EarRooted.leaf_at_single_triangle' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking SharpEarRoot
+'Graffiti384b.EarRooted.Example.profile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.EarRooted.Example.connected' depends on axioms: [propext, Quot.sound]
+'Graffiti384b.EarRooted.Example.sharp' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking EqualEndpointExample
+'Graffiti384b.EarRooted.EqualEndpoints.profile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.EarRooted.EqualEndpoints.cannot_separate' depends on axioms: [propext, Classical.choice, Quot.sound]
+Verified 8 new modules and 15 standard-axiom reports.

@@ -1,0 +1,13 @@
+'Graffiti189LongestPath.SplitCliqueRoute.path_from_clique_start' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.SplitUniversalRoute.alternating_from_clique_start' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.SplitUniversalRoute.universal_from_clique_start' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.SplitTraceability.traceable_of_split_min_degree_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.SplitTraceability.traceable_of_split' depends on axioms: [propext, Classical.choice, Quot.sound]

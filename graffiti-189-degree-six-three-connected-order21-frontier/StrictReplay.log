@@ -1,0 +1,61 @@
+== SixThree21Shape189 ==
+'Graffiti189LongestPath.SixThreeTwentyOne.high_pin_shape_long' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixThree21Shape189
+== SixThree21Saturation189 ==
+'Graffiti189LongestPath.SixThreeTwentyOne.high_pin_no_end_chord' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.SixThreeTwentyOne.high_saturation_long' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.SixThreeTwentyOne.high_pin_no_start_chord' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixThree21Saturation189
+== SixThree21NoHigh189 ==
+'Graffiti189LongestPath.SixThreeTwentyOne.first_pin_forced_high_long' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.SixThreeTwentyOne.all_omitted_low_long' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixThree21NoHigh189
+== SixThree21LowFlanks189 ==
+'Graffiti189LongestPath.SixThreeTwentyOne.saturated_flanks' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS SixThree21LowFlanks189
+== SixThree21LowRotation189 ==
+'Graffiti189LongestPath.SixThreeTwentyOne.no_chord_to_pin_start' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.SixThreeTwentyOne.no_chord_to_pin_end' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixThree21LowRotation189
+== SixThree21ExtremeSwap189 ==
+'Graffiti189LongestPath.SixThreeTwentyOne.no_extreme_pin_long' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.SixThreeTwentyOne.right_mark_not_flank_long' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixThree21ExtremeSwap189
+== SixThree21ExtraHoles189 ==
+'Graffiti189LongestPath.SixThreeTwentyOne.extra_holes_card_le_one_nineteen' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixThree21ExtraHoles189
+== SixThree21Interval189 ==
+'Graffiti189LongestPath.SixThreeTwentyOne.consecutive_interval_extra_hole' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixThree21Interval189
+== SixThree21Frontier189 ==
+'Graffiti189LongestPath.SixThreeTwentyOne.no_nonspanning_length_nineteen_at_twenty_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.SixThreeTwentyOne.longest_shape_at_twenty_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixThree21Frontier189

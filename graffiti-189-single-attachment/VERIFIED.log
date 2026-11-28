@@ -1,0 +1,39 @@
+== SingleFourthBudget189 ==
+'Graffiti189LongestPath.SingleFourthBudget.single_star_order_upper_radius_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+== SingleRadiusRoutable189 ==
+'Graffiti189LongestPath.SingleRadiusRoutable.single_terminal_order_impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.SingleRadiusRoutable.single_marked_order_impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+== SingleRadiusCriticalOffPath189 ==
+'Graffiti189LongestPath.SingleRadiusCriticalOffPath.single_critical_ports' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+== SingleRadiusShore189 ==
+'Graffiti189LongestPath.ShoreDegrees.universal_root_degree_drop' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.StarCycleClosure.erase_root_and_set_iso' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.SingleRadiusShore.single_root_deleted_long_cycle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.SingleRadiusShore.single_no_long_shore_cycle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.SingleRadiusShore.single_no_marked_shore_cycle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+== SingleRadiusClosure189 ==
+'Graffiti189LongestPath.SingleRadiusClosure.single_radius_four_exact_cut_impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+== HighBoundaryClosure189 ==
+'Graffiti189LongestPath.HighBoundaryClosure.forced_oversized_single_at_d12' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

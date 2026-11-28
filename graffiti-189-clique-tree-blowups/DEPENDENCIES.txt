@@ -1,0 +1,4 @@
+Lean 4.19.0 (6caaee842e94)
+Mathlib c44e0c8ee63ca166450922a373c7409c5d26b00b
+91de1192aac5d63858b6937c5271e33b82aec99bebe8628e968b0e102502d4c4  ArticulationGeneralClosure189.olean
+383dcc4a6bf7385f41d7efd58299db0cf8267034346afa51c306e9bfab245bea  SmallSeparator189.olean

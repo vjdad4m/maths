@@ -1,0 +1,80 @@
+== BagWalkLift189 ==
+'Graffiti189LongestPath.BagWalkLift.lift_bag_sequence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.BagWalkLift.traceable_of_base_walk' depends on axioms: [propext, Classical.choice, Quot.sound]
+== SpineWalk189 ==
+'Graffiti189LongestPath.SpineWalk.detour_counts' depends on axioms: [propext, Quot.sound]
+'Graffiti189LongestPath.SpineWalk.exists_spanning_walk_with_reserved_savings' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.SpineWalk.exists_spanning_walk_along_spine' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+== BagSpineCriterion189 ==
+'Graffiti189LongestPath.BagSpineCriterion.traceable_of_bag_capacity_spine' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+== TreeTightSpine189 ==
+'Graffiti189LongestPath.TreeTightSpine.exists_spine_through_two_nonleaves' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+== BagQuotient189 ==
+'Graffiti189LongestPath.BagQuotient.Model.project_walk' depends on axioms: [propext]
+'Graffiti189LongestPath.BagQuotient.Model.dist_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.BagQuotient.Model.degree_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+== TreeParity189 ==
+'Graffiti189LongestPath.TreeParity.color_ne_of_adj' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.TreeParity.even_dist_of_same_color' depends on axioms: [propext, Classical.choice, Quot.sound]
+== BagCut189 ==
+'Graffiti189LongestPath.BagQuotient.common_neighbor_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.BagQuotient.disconnected_at_singleton_internal_bag' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+== WeightedTreeSums189 ==
+'Graffiti189LongestPath.WeightedTreeSums.sum_high_neighbors' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.WeightedTreeSums.neighbor_mass_floor' depends on axioms: [propext, Classical.choice, Quot.sound]
+== TreeBagCharges189 ==
+'Graffiti189LongestPath.TreeBagCharges.parity_mass_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.TreeBagCharges.opposite_neighbor_charge' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+== TreeBagArithmetic189 ==
+'Graffiti189LongestPath.TreeBagArithmetic.capacity_of_all_high' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.TreeBagArithmetic.capacity_one_low_equal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.TreeBagArithmetic.charged_from_summation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.TreeBagArithmetic.ordinary_tight_size' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.TreeBagArithmetic.ordinary_tight_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.TreeBagArithmetic.capacity_from_parity_sums' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.TreeBagArithmetic.capacity_one_low_from_parity_sums' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+== TreeBagCapacity189 ==
+'Graffiti189LongestPath.TreeBagCapacity.degree_le_capacity_add_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+== TreeBagTight189 ==
+'Graffiti189LongestPath.TreeBagTight.tight_color_inj' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.TreeBagTight.card_tight' depends on axioms: [propext, Classical.choice, Quot.sound]
+== TreeBagTraceability189 ==
+'Graffiti189LongestPath.TreeBagTraceability.traceable_of_clique_tree_blowup_of_degree_ge_seven' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+== SmallTightTreeBag189 ==
+'Graffiti189LongestPath.TreeBagTight.small_ordinary_tight' depends on axioms: [propext, Classical.choice, Quot.sound]
+== AllTightTreeBag189 ==
+'Graffiti189LongestPath.TreeBagTight.card_tight_degree_ge_five' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+== TreeBagTraceabilityAll189 ==
+'Graffiti189LongestPath.TreeBagTraceability.traceable_of_clique_tree_blowup_of_degree_ge_five' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

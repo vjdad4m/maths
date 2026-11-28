@@ -1,0 +1,15 @@
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.SingletonFive16.traceable_of_shallow_five_at_most_one_balance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.singleton_five_board_label' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'_private.SixSingletonFiveGeometry189.0.Graffiti189LongestPath.CrossSaturation.ThresholdSix.near_counts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'_private.SixSingletonFiveGeometry189.0.Graffiti189LongestPath.CrossSaturation.ThresholdSix.deep_internal_degree' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.traceable_of_adjacent_singleton_thirteen_five_at_most_one_balance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

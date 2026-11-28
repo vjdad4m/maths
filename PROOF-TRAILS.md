@@ -218,6 +218,7 @@ Open in general; full degree-four case, connectivity ≥ d − 1 (d ≥ 3), and 
 - [all d≥36 with connectivity at least d−2](graffiti-189-high-connectivity-degree-36/)
 - [degree-five adjacent-cut order and component bounds](graffiti-189-adjacent-cut-structure/)
 - [all d≥13 with connectivity at least d−2](graffiti-189-high-connectivity-degree-13/)
+- [Issue #1 regression: the unique minimum cut can leave three components](graffiti-189-issue1-three-cut/) (Lean-checked 34-vertex traceable example)
 - [degree-six unbalanced distance-three cuts](graffiti-189-distance-three-degree-six-splits/)
 - [all d≥403 with connectivity at least d−3](graffiti-189-connectivity-d-minus-three/)
 - [proportional connectivity criterion 29κ ≥ 28d + 20](graffiti-189-proportional-connectivity/)

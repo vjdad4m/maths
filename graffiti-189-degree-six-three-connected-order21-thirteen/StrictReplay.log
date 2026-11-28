@@ -1,0 +1,39 @@
+== SixThree21ShortGeometry189 ==
+'Graffiti189LongestPath.SixThreeTwentyOne.high_omitted_short_join_seven' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.SixThreeTwentyOne.high_sites_separated_seven' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixThree21ShortGeometry189
+== SixThree21ThirteenDouble189 ==
+'Graffiti189LongestPath.SixThreeTwentyOne.no_double_pins_at_length_thirteen_twenty_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixThree21ThirteenDouble189
+== SixThree21HighOre189 ==
+'Graffiti189LongestPath.SixThreeTwentyOne.high_omitted_long_route_of_single_pins' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixThree21HighOre189
+== SixThree21OmittedRoute189 ==
+'Graffiti189LongestPath.SixThreeTwentyOne.omitted_long_route_of_single_pins' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.SixThreeTwentyOne.three_port_sites_of_nonempty_omitted' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixThree21OmittedRoute189
+== SixThree21LinkedGap189 ==
+'Graffiti189LongestPath.SixThreeTwentyOne.linked_pins_gap_at_least_route' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixThree21LinkedGap189
+== SixThree21ThirteenClose189 ==
+'Graffiti189LongestPath.SixThreeTwentyOne.no_nonspanning_length_thirteen_at_twenty_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.SixThreeTwentyOne.longest_shape_at_twenty_one_reduced' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixThree21ThirteenClose189

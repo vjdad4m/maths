@@ -256,3 +256,10 @@
 | Problem | Status | Result |
 | --- | --- | --- |
 | Erdős Problem #324 | Open in general | [Lean-checked even-quartic collision families](erdos-324-even-quartic-collisions/) · [extension to 256 base coefficients and square multiples](erdos-324-even-quartic-collisions-256/) |
+
+
+## Steinerberger’s Some Open Problems
+
+| Problem | Status | Result |
+| --- | --- | --- |
+| Bad Science Matrices, dimension 6 | Matching upper bound in writing; finite arithmetic Lean-checked | [Proof note and Lean certificate](steinerberger-bad-science-six/) |

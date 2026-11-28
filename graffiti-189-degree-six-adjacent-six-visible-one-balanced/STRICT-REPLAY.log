@@ -1,0 +1,253 @@
+== SixSingletonPositiveProfiles189 ==
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.adjacent_five_positive_profile_counts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.adjacent_six_positive_profile_counts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixSingletonPositiveProfiles189
+== SixSingletonPositiveGeometry189 ==
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.isolate_six_visible_geometry' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixSingletonPositiveGeometry189
+== SixSingletonQ1Slots189 ==
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.six_q1_left_slots' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.six_q1_right_slots' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.six_q1_common_slots' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.six_q1_balance_port_slots' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.six_q1_core_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixSingletonQ1Slots189
+== SixSingletonQ1TagScore189 ==
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.q1_port_scores' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.q1_z_score' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixSingletonQ1TagScore189
+== SixSingletonQ1Labels189 ==
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.q1_exterior_coverage' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.q1_exterior_add_balance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixSingletonQ1Labels189
+== SixSingletonQ1PortBoard189 ==
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.q1_port_board_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.q1_port_board_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixSingletonQ1PortBoard189
+== SixSingletonQ1Inactive189 ==
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.q1_inactive_left' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.q1_inactive_right' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixSingletonQ1Inactive189
+== SixSingletonQ1ActiveBits189 ==
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.q1_ports_active' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.q1_isolated_balance_universal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixSingletonQ1ActiveBits189
+== SixSingletonQ1Splice189 ==
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.splice_route_to_complement' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.six_q1_splice_core' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.six_q1_splice_dense' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixSingletonQ1Splice189
+== SixSingletonQ1Exception189 ==
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.q1_right_pair_route' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.q1_exception_right_links' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.q1_exception_common_link' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixSingletonQ1Exception189
+== SixSingletonQ1TemplateWalk189 ==
+PASS SixSingletonQ1TemplateWalk189
+== SixSingletonQ1Sparse0Cert189 ==
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.PortCertificates.Q1Sparse0.exclusion' depends on axioms: [propext]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.PortCertificates.Q1Sparse0.has_template' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixSingletonQ1Sparse0Cert189
+== SixSingletonQ1Sparse0Walk189 ==
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.PortCertificates.Q1Sparse0.from_template' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixSingletonQ1Sparse0Walk189
+== SixSingletonQ1Sparse0Actual189 ==
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.Q1Sparse0Actual.run' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixSingletonQ1Sparse0Actual189
+== SixSingletonQ1Sparse1Cert189 ==
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.PortCertificates.Q1Sparse1.exclusion' depends on axioms: [propext]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.PortCertificates.Q1Sparse1.has_template' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixSingletonQ1Sparse1Cert189
+== SixSingletonQ1Sparse1Walk189 ==
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.PortCertificates.Q1Sparse1.from_template' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixSingletonQ1Sparse1Walk189
+== SixSingletonQ1Sparse1Actual189 ==
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.Q1Sparse1Actual.run' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixSingletonQ1Sparse1Actual189
+== SixSingletonQ1Sparse2Cert189 ==
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.PortCertificates.Q1Sparse2.exclusion' depends on axioms: [propext]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.PortCertificates.Q1Sparse2.has_template' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixSingletonQ1Sparse2Cert189
+== SixSingletonQ1Sparse2Walk189 ==
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.PortCertificates.Q1Sparse2.from_template' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixSingletonQ1Sparse2Walk189
+== SixSingletonQ1Sparse2Actual189 ==
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.Q1Sparse2Actual.run' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixSingletonQ1Sparse2Actual189
+== SixSingletonQ1Dense0Cert189 ==
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.PortCertificates.Q1Dense0.exclusion' depends on axioms: [propext]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.PortCertificates.Q1Dense0.has_template' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixSingletonQ1Dense0Cert189
+== SixSingletonQ1Dense0Walk189 ==
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.PortCertificates.Q1Dense0.from_template' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixSingletonQ1Dense0Walk189
+== SixSingletonQ1Dense0Actual189 ==
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.Q1Dense0Actual.run' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixSingletonQ1Dense0Actual189
+== SixSingletonQ1Dense1Cert189 ==
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.PortCertificates.Q1Dense1.exclusion' depends on axioms: [propext]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.PortCertificates.Q1Dense1.has_template' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixSingletonQ1Dense1Cert189
+== SixSingletonQ1Dense1Walk189 ==
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.PortCertificates.Q1Dense1.from_template' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixSingletonQ1Dense1Walk189
+== SixSingletonQ1Dense1Actual189 ==
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.Q1Dense1Actual.run' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixSingletonQ1Dense1Actual189
+== SixSingletonQ1Dense2Cert189 ==
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.PortCertificates.Q1Dense2.exclusion' depends on axioms: [propext]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.PortCertificates.Q1Dense2.has_template' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixSingletonQ1Dense2Cert189
+== SixSingletonQ1Dense2Walk189 ==
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.PortCertificates.Q1Dense2.from_template' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixSingletonQ1Dense2Walk189
+== SixSingletonQ1Dense2Actual189 ==
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.Q1Dense2Actual.run' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixSingletonQ1Dense2Actual189
+== SixSingletonQ1Isolated0Cert189 ==
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.PortCertificates.Q1Isolated0.exclusion' depends on axioms: [propext]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.PortCertificates.Q1Isolated0.has_template' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixSingletonQ1Isolated0Cert189
+== SixSingletonQ1Isolated0Walk189 ==
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.PortCertificates.Q1Isolated0.from_template' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixSingletonQ1Isolated0Walk189
+== SixSingletonQ1Isolated0Actual189 ==
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.Q1Isolated0Actual.run' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixSingletonQ1Isolated0Actual189
+== SixSingletonQ1Isolated1Cert189 ==
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.PortCertificates.Q1Isolated1.exclusion' depends on axioms: [propext]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.PortCertificates.Q1Isolated1.has_template' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixSingletonQ1Isolated1Cert189
+== SixSingletonQ1Isolated1Walk189 ==
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.PortCertificates.Q1Isolated1.from_template' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixSingletonQ1Isolated1Walk189
+== SixSingletonQ1Isolated1Actual189 ==
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.Q1Isolated1Actual.run' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixSingletonQ1Isolated1Actual189
+== SixSingletonQ1Isolated2Cert189 ==
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.PortCertificates.Q1Isolated2.exclusion' depends on axioms: [propext]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.PortCertificates.Q1Isolated2.has_template' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixSingletonQ1Isolated2Cert189
+== SixSingletonQ1Isolated2Walk189 ==
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.PortCertificates.Q1Isolated2.from_template' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixSingletonQ1Isolated2Walk189
+== SixSingletonQ1Isolated2Actual189 ==
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.Q1Isolated2Actual.run' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixSingletonQ1Isolated2Actual189
+== SixSingletonQ1ExceptionActual189 ==
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.q1_exception_traceable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixSingletonQ1ExceptionActual189
+== SixSingletonQ1Complete189 ==
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.traceable_at_adjacent_singleton_thirteen_six_visible_one_balance_right_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixSingletonQ1Complete189
+== SixSingletonQ1Symmetric189 ==
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.traceable_of_adjacent_singleton_thirteen_six_one_balance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixSingletonQ1Symmetric189

@@ -1,0 +1,38 @@
+'Graffiti189LongestPath.CycleArc.replace_directed_arc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.CycleArc.prefix_arc_length' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.CycleIndex.rotate_getVert_mod' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.CycleIndex.cycle_succ_no_small_period' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CycleIndex.exterior_index_arc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.ExtremalAdjacency.no_consecutive_attachment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.ExtremalAdjacency.no_short_cross' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.ExtremalAdjacency.extremal_omitted_nonadjacent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.TwoArcSplice.two_arc_splice' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.CycleTwoCuts.extract_two_arcs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.CycleTwoCuts.extend_two_cuts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.ExtremalBipartition.extremal_bipartition' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.ExtremalSplitShape.exact_cycle_forces_split' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.ShoreDegrees.universal_root_degree_drop' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.ShoreDegrees.separated_root_deleted_degrees' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.OddMinimum.odd_minimum_no_dirac_cycle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.SeparatedDirac.separated_double_no_dirac_length_cycle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.SeparatedDirac.separated_double_of_one_low_circumference' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,6 @@
+'Graffiti189LongestPath.outer_shell_profile_at_degree_six_three_connected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.order_le_forty_at_degree_six_three_connected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

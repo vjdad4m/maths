@@ -1,0 +1,58 @@
+== PosaGreedy189 ==
+'PosaGreedy189.exists_spanning_chain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PosaGreedy189.Trace.later_separated' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PosaGreedy189.Trace.covers' depends on axioms: [propext, Quot.sound]
+== PosaCrossing189 ==
+'PosaCrossing189.exists_min_gap_card_kept' depends on axioms: [propext, Classical.choice, Quot.sound]
+== PosaBridges189 ==
+'PosaBridges189.exists_family' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PosaBridges189.interior_disjoint' does not depend on any axioms
+== PosaCycleExtend189 ==
+'PosaCycleExtend189.spanning_of_longest_path_cycle' depends on axioms: [propext, Classical.choice, Quot.sound]
+== PosaSpine189 ==
+'Graffiti189LongestPath.PosaSpine.ordered_append' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.PosaSpine.spine_segment' depends on axioms: [propext, Classical.choice, Quot.sound]
+== PosaTracks189 ==
+'Graffiti189LongestPath.PosaTracks.make_track' depends on axioms: [propext, Classical.choice, Quot.sound]
+== PosaOrderedPair189 ==
+'Graffiti189LongestPath.PosaOrderedPair.exists_ordered_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+== PosaBridgeAdapter189 ==
+'Graffiti189LongestPath.PosaBridgeAdapter.ordered_pair_of_singleton_connected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+== PosaRouteCut189 ==
+'Graffiti189LongestPath.PosaRouteCut.cut_ordered_route' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.PosaRouteCut.separated_cuts_disjoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+== PosaSpliceCommon189 ==
+'Graffiti189LongestPath.PosaSpliceCommon.ordered_append_mid' depends on axioms: [propext, Classical.choice, Quot.sound]
+== PosaSameSplice189 ==
+'Graffiti189LongestPath.PosaSameSplice.augment_same_route' depends on axioms: [propext, Classical.choice, Quot.sound]
+== PosaCrossSplice189 ==
+'Graffiti189LongestPath.PosaCrossSplice.augment_cross_routes' depends on axioms: [propext, Classical.choice, Quot.sound]
+== PosaMaxCover189 ==
+'Graffiti189LongestPath.PosaMaxCover.exists_max_covered' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.PosaMaxCover.augment_missing_left_neighbor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.PosaMaxCover.optimal_left' depends on axioms: [propext, Classical.choice, Quot.sound]
+== PosaCycleCover189 ==
+'Graffiti189LongestPath.PosaCycleCover.optimal_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.PosaCycleCover.cycle_of_ordered_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+== PosaCrossCycle189 ==
+'Graffiti189LongestPath.PosaCrossCycle.cycle_from_crossing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.PosaCrossCycle.cycle_ge_index_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.PosaCrossCycle.close_spine_path' depends on axioms: [propext, Classical.choice, Quot.sound]
+== PosaEndpointCycle189 ==
+'Graffiti189LongestPath.PosaEndpointCycle.innerNeighbors_count' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.PosaEndpointCycle.long_cycle_from_high_longest_path' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+== PosaOneLow189 ==
+'Graffiti189LongestPath.PosaOneLow.proved_one_low_circumference' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.PosaOneLow.separated_double_d12_impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

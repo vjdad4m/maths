@@ -8,7 +8,7 @@ Start with the structure of the new problem. The **check before reuse** column i
 
 | If your problem involves… | Start with this result | Check before reuse |
 |---|---|---|
-| **Hall matching, clique covers, rainbow domination** | [AutoGraphForge 1121](autographforge-1121/README.md): `match_outside` converts crossing-degree bounds into a matching that saturates the outside of a chosen set. The match produces a partition into edges and singletons. | Need a positive threshold: at least that many crossing neighbors outside-to-inside and at most that many inside-to-outside. The rainbow application uses singleton labels. |
+| **Hall matching, clique covers, rainbow domination** | [AutoGraphForge 1121](autographforge-1121/README.md): `match_outside` converts crossing-degree bounds into a matching that saturates the outside of a chosen set. The match produces a partition into edges and singletons. For [vertex covers](autographforge-rainbow-vertex-cover/), it suffices to exclude adjacent uncolored vertices. | Need a positive threshold: at least that many crossing neighbors outside-to-inside and at most that many inside-to-outside. The rainbow application uses singleton labels. |
 | **Independent sets, spanning-tree leaves** | [Graffiti.pc #177](graffiti-177/Short177.lean): marked-leaf construction; [tree equality](graffiti-177/TreeEquality.lean) gives test cases for sharpness. | Transfer the construction, not the numerical bound, if the new hypothesis is missing the relevant degree or bipartite-subgraph parameter. |
 | **Hamiltonian paths across small separators** | [#189 linkage and endpoint splicing](graffiti-189-hall-linkage/) · [#199 labelled splice adapters](graffiti-199-overlap-adapters/). First build paths in the sides with specified endpoints, then join them. | Need compatible endpoints and disjoint vertex sets. Under distance constraints, adding an edge can change shortest-path parity. Neither package settles its full conjecture. |
 | **Longest induced paths, forbidden cycles, radius** | [#133 mean-four theorem](graffiti-133-full-four/README.md) · [Induced eight-vertex path](graffiti-133-induced-eight/README.md). Reuse the path extension and chord exclusions. | Check which cycle lengths are forbidden, whether cycles are ordinary or induced, and the exact mean and radius thresholds. |
@@ -189,7 +189,9 @@ Start with the structure of the new problem. The **check before reuse** column i
 | AutoGraphForge line 583 | Proved in Lean; sharp Slater bound for edge domination | [Proof](autographforge-583/) |
 | AutoGraphForge line 595 | Disproved in Lean (22 vertices; known matching construction) | [Proof](autographforge-595/README.md) |
 | AutoGraphForge line 621 | Proved in Lean; extends to quasi-line graphs | [Proof](autographforge-621/README.md) |
+| AutoGraphForge line 645 | Proved in Lean; the same bound holds for all subcubic graphs | [Lean](autographforge-rainbow-vertex-cover/RainbowVertexCover.lean) · [Replay](autographforge-rainbow-vertex-cover/README.md) |
 | AutoGraphForge line 659 | Disproved in Lean; unbounded gap on bipartite planar graphs | [Proof](autographforge-659/) |
+| AutoGraphForge line 671 | Proved in Lean; the same bound holds for all subcubic graphs | [Lean](autographforge-rainbow-vertex-cover/RainbowVertexCover.lean) · [Replay](autographforge-rainbow-vertex-cover/README.md) |
 | AutoGraphForge line 711 | Proved in Lean; sharp on the triangle; literal line 6318 has a singleton counterexample | [autographforge-711/](autographforge-711/) |
 | AutoGraphForge line 720 | Proved in Lean; sharp on K₂ | [Proof](autographforge-720/README.md) |
 | AutoGraphForge line 747 | Disproved | [Lean](autographforge-shared-hub/SharedHub.lean) · [Replay](autographforge-shared-hub/README.md) |

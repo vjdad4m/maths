@@ -17,7 +17,8 @@ build() {
 build "$base/graffiti-324" Proof324
 {
   build "$src" ResiduePhases
+  build "$src" PageCounts
 } | tee "$obj/axioms.log"
-for thm in residue_perm residue_even_ones peel_hub hub_phase_residue hubs_go_first; do
+for thm in residue_perm residue_even_ones peel_hub hub_phase_residue hubs_go_first bucket_step bucket_run all_twos_residue hub_phase_budgets hub_page_residue fan_chain_degree_list book_chain_degree_list; do
   grep -Eq "^'ResiduePhases.$thm' depends on axioms: \[propext, (Classical.choice, )?Quot.sound\]$" "$obj/axioms.log"
 done

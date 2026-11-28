@@ -1,0 +1,6 @@
+Lean 4.19.0: serial, -DElab.async=false, -DwarningAsError=true.
+traceable_of_mixed_adjacent_small_high_shores: [propext, Classical.choice, Quot.sound]
+traceable_of_mixed_adjacent_two_shores_le_seven: [propext, Classical.choice, Quot.sound]
+traceable_of_mixed_adjacent_two_shores_small_eight: [propext, Classical.choice, Quot.sound]
+traceable_of_mixed_adjacent_two_shores_seven_eight: [propext, Classical.choice, Quot.sound]
+traceable_of_mixed_adjacent_balanced_order_le_seventeen: [propext, Classical.choice, Quot.sound]

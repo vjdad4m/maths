@@ -1,0 +1,33 @@
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release) 
+Mathlib c44e0c8ee63ca166450922a373c7409c5d26b00b 
+Replay directory /workspace/scratch/7efa613b1c05/graff384b-rich-root-exchange-astra/unpacked/graffiti-384b-rich-root-exchange/.rich-root-replay.y2u2k2jk
+Matched 80 predecessor objects to the source closure.
+Checking ContactShore
+'Graffiti384b.RichRoot.supported_shore' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.RichRoot.single_shore' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking ResidualCut
+'Graffiti384b.RichRoot.palette_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.RichRoot.trapped_shore' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.RichRoot.donor_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking ComponentExchange
+'Graffiti384b.RichRoot.region_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.RichRoot.exchange_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking DegreeExchange
+'Graffiti384b.RichRoot.degree_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.RichRoot.reserve_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking RichLeafRoot
+'Graffiti384b.RichRoot.root_exchange' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.RichRoot.path_exchange' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking ArticulationRoot
+'Graffiti384b.RichRoot.articulation_root' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking LocalFrontier
+'Graffiti384b.RichRoot.root_failure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.RichRoot.low_degree_obstruction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.RichRoot.dense_mate' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking RichRootExamples
+'Graffiti384b.RichRoot.Examples.adjacent_profile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.RichRoot.Examples.adjacent_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.RichRoot.Examples.remote_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.RichRoot.Examples.tight_shore_example' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.RichRoot.Examples.connected_examples' depends on axioms: [propext, Classical.choice, Quot.sound]
+Verified 8 new modules and 20 standard-axiom reports.

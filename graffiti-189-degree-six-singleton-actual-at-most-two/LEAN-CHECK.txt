@@ -1,0 +1,21 @@
+'_private.SixSingletonGeometry189.0.Graffiti189LongestPath.CrossSaturation.ThresholdSix.vis_six_of_nonadjacent_singleton' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'_private.SixSingletonGeometry189.0.Graffiti189LongestPath.CrossSaturation.ThresholdSix.all_dark_depth_two_of_visible_six' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'_private.SixSingletonShape189.0.Graffiti189LongestPath.CrossSaturation.ThresholdSix.no_port_domination' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'_private.SixSingletonShape189.0.Graffiti189LongestPath.CrossSaturation.ThresholdSix.strict_port_data' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'_private.SixSingletonShape189.0.Graffiti189LongestPath.CrossSaturation.ThresholdSix.at_least_two_strict' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.singleton_board_label' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.traceable_of_nonadjacent_singleton_thirteen_at_most_two_balanced' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

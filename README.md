@@ -154,6 +154,21 @@
 | AutoGraphForge line 808 | Proved (where total forcing is defined) | [Lean](autographforge-371/AutoGraphForge371.lean) |
 | AutoGraphForge line 818 | Proved on GraphCalc's connected domain; false with +∞ disconnected diameter | [Lean](autographforge-cograph/CographRadius.lean) · [Conventions and replay](autographforge-cograph/README.md) |
 | AutoGraphForge line 821 | Proved on GraphCalc's connected domain (known corollary); false if disconnected diameter is +∞ | [Lean](autographforge-821/ForestSlater.lean) · [Conventions and replay](autographforge-821/README.md) |
+| AutoGraphForge line 832 | Disproved in Lean by the 22-vertex cubic witness | [Lean](autographforge-cubic-odd-blocks/Transfer.lean) |
+| AutoGraphForge line 837 | Disproved in Lean by the 22-vertex cubic witness | [Lean](autographforge-cubic-odd-blocks/Transfer.lean) |
+| AutoGraphForge line 838 | Disproved in Lean by the 22-vertex cubic witness | [Lean](autographforge-cubic-odd-blocks/Transfer.lean) |
+| AutoGraphForge line 839 | Disproved in Lean by the 22-vertex cubic witness; equivalent to line 840 in this class | [Lean](autographforge-cubic-odd-blocks/Transfer.lean) |
+| AutoGraphForge line 840 | Disproved in Lean by the 22-vertex cubic witness | [Lean](autographforge-cubic-odd-blocks/Transfer.lean) |
+| AutoGraphForge line 841 | Disproved in Lean by the 22-vertex cubic witness; equivalent to line 837 in this class | [Lean](autographforge-cubic-odd-blocks/Transfer.lean) |
+| AutoGraphForge line 843 | Disproved in Lean by the 22-vertex cubic witness | [Lean](autographforge-cubic-odd-blocks/Transfer.lean) |
+| AutoGraphForge line 844 | Disproved in Lean by the 22-vertex cubic witness; equivalent to line 837 | [Lean](autographforge-cubic-odd-blocks/Transfer.lean) |
+| AutoGraphForge line 845 | Disproved in Lean by the 22-vertex cubic witness; equivalent to line 840 | [Lean](autographforge-cubic-odd-blocks/Transfer.lean) |
+| AutoGraphForge line 846 | Disproved in Lean by the 22-vertex cubic witness; equivalent to line 840 | [Lean](autographforge-cubic-odd-blocks/Transfer.lean) |
+| AutoGraphForge line 847 | Disproved in Lean by the 22-vertex cubic witness; equivalent to line 837 | [Lean](autographforge-cubic-odd-blocks/Transfer.lean) |
+| AutoGraphForge line 848 | Disproved in Lean by the 22-vertex cubic witness; equivalent to line 837 | [Lean](autographforge-cubic-odd-blocks/Transfer.lean) |
+| AutoGraphForge line 849 | Disproved in Lean by the 22-vertex cubic witness; equivalent to line 840 | [Lean](autographforge-cubic-odd-blocks/Transfer.lean) |
+| AutoGraphForge line 850 | Disproved in Lean by the 22-vertex cubic witness; equivalent to line 840 | [Lean](autographforge-cubic-odd-blocks/Transfer.lean) |
+| AutoGraphForge line 851 | Disproved in Lean by the 22-vertex cubic witness; equivalent to line 837 | [Lean](autographforge-cubic-odd-blocks/Transfer.lean) |
 | AutoGraphForge line 877 | Disproved | [Lean](autographforge-book-tail/BookTail.lean) · [Replay](autographforge-book-tail/README.md) |
 | AutoGraphForge line 895 | Disproved | [Lean](autographforge-895/LineBouquet.lean) · [Replay](autographforge-895/README.md) |
 | AutoGraphForge line 942 | Disproved | [Lean](autographforge-balanced-forcing/BalancedForcing.lean) |
@@ -165,6 +180,8 @@
 | AutoGraphForge line 1130 | Disproved in Lean by C160; upstream implicit witness also exists | [Proof](autographforge-1130/) |
 | AutoGraphForge line 1132 | Proved in Lean; all nontrivial trees and sharp cycle-rank extension | [autographforge-1132/](autographforge-1132/) |
 | AutoGraphForge line 1160 | Disproved in Lean by a 22-vertex cubic graph; exact perfect-matching criterion | [Proof](autographforge-1160/) |
+| AutoGraphForge line 1161 | Disproved in Lean by the 22-vertex cubic witness; equivalent to line 1160 | [Lean](autographforge-cubic-odd-blocks/Transfer.lean) |
+| AutoGraphForge line 1162 | Disproved in Lean by the 22-vertex cubic witness; equivalent to line 1160 | [Lean](autographforge-cubic-odd-blocks/Transfer.lean) |
 | AutoGraphForge line 1221 | Proved (formalization of a known consequence) | [Lean](autographforge-373/AutoGraphForge373.lean) · [Prior formulas](https://doi.org/10.1090/surv/270) |
 | AutoGraphForge line 1531 | Proved in Lean (connected equality exactly three paths) | [Proof](autographforge-1531/README.md) |
 | AutoGraphForge line 1539 | Disproved | [Lean](autographforge-balanced-forcing/BalancedForcing.lean) |

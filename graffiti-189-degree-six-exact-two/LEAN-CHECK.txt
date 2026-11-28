@@ -1,0 +1,9 @@
+'_private.SixCutLowSingleton189.0.Graffiti189LongestPath.CrossSaturation.ThresholdSix.singleton_low_of_three' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'_private.SixCutLowSingleton189.0.Graffiti189LongestPath.CrossSaturation.ThresholdSix.no_two_common_shores' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.component_card_eq_two_at_six' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

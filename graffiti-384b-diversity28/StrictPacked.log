@@ -1,0 +1,13 @@
+Diversity-28 replay /workspace/scratch/7efa613b1c05/graff384b-types28/unpacked/.types28.3tqnm0qs
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+Mathlib c44e0c8ee63ca166450922a373c7409c5d26b00b
+Matched 305 source hashes and 305 predecessor objects.
+'Graffiti384b.Types28.rows' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Types28.high_cost' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Types28.ear_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Types28.budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Types28.original_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Types28.numerical_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Types28.exists_set' depends on axioms: [propext, Classical.choice, Quot.sound]
+Matched all 4 fresh object hashes.
+Verified 4 fresh modules and 7 standard-axiom reports.

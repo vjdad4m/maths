@@ -1,0 +1,12 @@
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.weighted_terminal_ore_closure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.cross_marked_ten_ore' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'_private.SixTenRegular189.0.Graffiti189LongestPath.CrossSaturation.ThresholdSix.ten_shore_has_above_five' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.traceable_at_six_distance_three_order_eighteen' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

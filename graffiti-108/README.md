@@ -1,7 +1,7 @@
 # A counterexample to Graffiti.pc Conjecture 108
 
 **Statement.** Conjecture 108 in Ermelinda DeLaVina's
-[Written on the Wall II](https://www.uhd.edu/academics/sciences/mathematics-statistics/wowii/files/wowiiaii.pdf)
+[Written on the Wall II](https://www.uhd.edu/academics/sciences/mathematics-statistics/wowii/)
 asserts that every nonempty connected simple graph satisfies
 `alpha <= maxEven + 2 floor(alphacore/3)`, where maxEven counts the
 vertices at even shortest-path distance from the most favorable source and

@@ -1,0 +1,21 @@
+src/DenseStar189.lean: OK
+src/ForeignPorts189.lean: OK
+src/PortHall189.lean: OK
+src/SmallOpposite189.lean: OK
+src/TruncatedHall189.lean: OK
+'Graffiti189LongestPath.PortHall.ports_match_into_shore' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.PortHall.separated_double_port_matching' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.DenseStar.universal_terminal_paths' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.DenseStar.large_star_boundary_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.ForeignPorts.opposite_port_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.ForeignPorts.switch_tight_ports' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.ForeignPorts.majority_port_radius' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.TruncatedHall.truncated_hall' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.TruncatedHall.across_two_shores_budget' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.SmallOpposite.traceable_of_small_opposite' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

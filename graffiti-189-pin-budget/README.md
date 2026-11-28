@@ -1,0 +1,13 @@
+# Graffiti.pc #189: a stronger pin budget and eliminating gap-two pairs
+
+**Partial results, checked in Lean.** Let \(G\) satisfy the even-distance budget \(d+1\) of Graffiti.pc #189, with \(k\)-vertex connectivity in the sense that deleting fewer than \(k\) vertices leaves a connected graph. Let \(P\) be a longest path, and let \(x\) be an omitted vertex of degree at least \(d\) with a neighbor. A pin of \(x\) is the position of a path neighbor.
+
+1. [Exact pin budget](src/PinRunSeparator189.lean): \(k+\#\operatorname{pins}(x)+|N_4(x)|\le d\), for all \(k,d\). This uses the run/flank count and separator surgery from the earlier OneSlack189 module, which already gave at most two pins at \(k=d-2\) when an omitted neighbor exists. The new bound retains the entire distance-four layer and applies without fixing \(k=d-2\).
+2. [Gap-two midpoint lemma](src/GapTwin189.lean): if \(P\) minimizes the number of graph edges induced by its vertices among longest paths, and a high-degree omitted \(x\) has exactly two pins at positions \(i,i+2\), their midpoint has degree at most four. Swapping the midpoint with \(x\) produces an equally optimal longest path. The two vertices' outside neighbor sets are disjoint and avoid the common flank's neighborhood, since any violation gives a longer splice. Thus they jointly spend \(\deg(x)+\deg(\text{midpoint})-4\) distance-two slots at the common flank.
+3. [Normalized structure](src/Normalize189.lean): if at most one vertex is below degree \(d\), choose an edge-minimal longest path preferring to omit this vertex whenever possible. For \(d\ge5\) and \(d\le k+2\), the path has no high-degree omitted vertex with a pair of pins two positions apart, and its pin count plus fourth-layer order is at most two. At \(k=d-2\), this is an order-independent restriction in the first connectivity range not covered by the earlier near-connectivity theorem.
+
+The normalization does not apply below connectivity \(d-2\), and it does not settle traceability at connectivity \(d-2\): in particular one-pin and separated two-pin configurations remain. The edge score here minimizes the edges **inside** the longest path, not the different omitted-edge tie breaker in OneSlack189.
+
+## Replay
+
+Use Lean 4.19.0 and Mathlib 4.19.0. Build the public module OneSlack189 and its earlier dependencies from the #189 packages and include the resulting object directories in LEAN_PATH. Then run replay.sh with Mathlib's Lean environment. The script verifies the three source hashes, compiles in a fresh temporary directory and prints the axiom reports. See [strict replay](StrictReplay.log).

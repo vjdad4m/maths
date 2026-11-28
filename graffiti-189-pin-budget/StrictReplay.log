@@ -1,0 +1,7 @@
+src/PinRunSeparator189.lean: OK
+src/GapTwin189.lean: OK
+src/Normalize189.lean: OK
+'Graffiti189LongestPath.PinRun.high_omitted_pin_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.GapTwin.gap_two_midpoint_small' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.Normalize.exists_edgeMinAvoid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.Normalize.normalized_high_omission' depends on axioms: [propext, Classical.choice, Quot.sound]

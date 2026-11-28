@@ -1,0 +1,3 @@
+'Graffiti189LongestPath.BipartiteTraceability.traceable_of_bipartite' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

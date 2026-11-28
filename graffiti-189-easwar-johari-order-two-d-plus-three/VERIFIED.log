@@ -1,0 +1,62 @@
+Check EJTerminalOrderThree189 at 06:01:23
+'Graffiti189LongestPath.SmallOrder.traceable_terminal_order_three_add' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS EJTerminalOrderThree189 at 06:01:25
+
+Check EJOrderThreeConditional189 at 06:02:37
+'Graffiti189LongestPath.SmallOrder.traceable_at_order_le_two_d_add_three_of_edge_closure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS EJOrderThreeConditional189 at 06:02:40
+
+Check EJIndexedSegments189 at 06:02:40
+'Graffiti189Ore.indexed_walk_segment' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS EJIndexedSegments189 at 06:02:42
+
+Check EJMarkRuns189 at 06:04:32
+'Graffiti189Ore.marks_after_apex_first' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS EJMarkRuns189 at 06:05:39
+
+Check EJRouteShortcuts189 at 06:08:11
+'Graffiti189Ore.reverse_jump_route' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS EJRouteShortcuts189 at 06:08:13
+
+Check EJFourRunsNoMiddle189 at 06:08:13
+'Graffiti189Ore.traceable_four_runs_no_middle' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS EJFourRunsNoMiddle189 at 06:08:15
+
+Check EJFourRunsMiddle189 at 06:11:55
+'Graffiti189Ore.traceable_four_runs_with_middle' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS EJFourRunsMiddle189 at 06:11:57
+
+Check EJCapIntervals189 at 06:16:19
+'Graffiti189Ore.cap_interval_path' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS EJCapIntervals189 at 06:16:22
+
+Check EJIndexedFourRuns189 at 06:20:08
+'Graffiti189Ore.traceable_of_indexed_four_runs' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS EJIndexedFourRuns189 at 06:20:14
+
+Check EJAlmostHub189 at 06:21:28
+'Graffiti189Ore.last_hub_almost_universal_routes' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS EJAlmostHub189 at 06:21:43
+
+Check EJOneHoleRuns189 at 06:25:24
+'Graffiti189Ore.traceable_of_indexed_one_hole_two_runs' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS EJOneHoleRuns189 at 06:25:38
+
+Check EJGateRight189 at 06:25:38
+PASS EJGateRight189 at 06:25:40
+
+Check EJGateBoth189 at 06:25:40
+PASS EJGateBoth189 at 06:25:43
+
+Check EJSlackClosure189 at 06:28:06
+'Graffiti189LongestPath.SmallOrder.safe_three_edge_closure_proven' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.SmallOrder.traceable_at_order_le_two_d_add_three' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS EJSlackClosure189 at 06:28:08

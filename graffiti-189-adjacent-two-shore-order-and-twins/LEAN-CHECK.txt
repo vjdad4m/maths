@@ -1,0 +1,23 @@
+Checking AdjacentCutFiveTwoTwinGeometry189 at 04:07:41
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.adj_twin_port_universal_of_odd_five' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking AdjacentCutFiveTwoOrderTwenty189 at 04:12:15
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.order_le_twenty_of_actual_adjacent_two_shores' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking AdjacentCutFiveTwoTwinRoute189 at 04:12:23
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.adj_twin_route_of_balanced_saturated' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking AdjacentCutFiveTwoTwinSeventeen189 at 04:17:13
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.traceable_of_order_seventeen_adjacent_twin_two_cut' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking AdjacentCutFiveTwoDoubleCover189 at 04:17:18
+'_private.AdjacentCutFiveTwoDoubleCover189.0.Graffiti189LongestPath.CrossSaturation.FiveAdjacent.order_nineteen_of_extra_overlap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.order_le_nineteen_of_actual_adjacent_two_shores' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

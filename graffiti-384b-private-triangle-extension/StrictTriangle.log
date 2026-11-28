@@ -1,0 +1,36 @@
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release) 
+Mathlib c44e0c8ee63ca166450922a373c7409c5d26b00b 
+Replay directory /workspace/scratch/7efa613b1c05/graff384b-private-ports-general-astra/unpacked/graffiti-384b-private-triangle-extension/.triangle-replay.8i33hv2x
+Matched 370 predecessor objects to the source closure.
+Checking TriangleFrame
+'Graffiti384b.TriangleFrame.Frame.consume' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.TriangleFrame.Frame.shift' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking TriangleReturns
+'Graffiti384b.TriangleFrame.Frame.exterior' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.TriangleFrame.Frame.no_return' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking PrivateTriangleExtension
+'Graffiti384b.TriangleFrame.Frame.thin_at_terminal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.TriangleFrame.simultaneous_extension' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.TriangleFrame.catalogue_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking EarNeighborhood
+'Graffiti384b.TriangleFrame.escaping_anchors' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking TrappedAnchor
+'Graffiti384b.TriangleFrame.trapped_score' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.TriangleFrame.necessary_trap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.TriangleFrame.no_thin_of_rich' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.TriangleFrame.triangle_free_anchors' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking DisjointEarFork
+'Graffiti384b.TriangleFrame.single_extension' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.TriangleFrame.fork_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking PaletteException
+'Graffiti384b.TriangleFrame.palette_of_two_singletons' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.TriangleFrame.no_thin_of_failure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.TriangleFrame.failed_graph_has_trapped_anchor' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking TwoEarCompletion
+'Graffiti384b.TriangleFrame.two_disjoint_ears' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.TriangleFrame.two_ears_equal_quota' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking ThinPairExample
+'Graffiti384b.TriangleFrame.Example.frame' depends on axioms: [propext, Quot.sound]
+'Graffiti384b.TriangleFrame.Example.two_thin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.TriangleFrame.Example.no_extension' depends on axioms: [propext, Classical.choice, Quot.sound]
+Verified 9 new modules and 22 standard-axiom reports.

@@ -1,0 +1,47 @@
+Lean 4.19.0; each source built with synchronous elaboration and warnings as errors.
+Checking Q8MaskKernel384b
+'Graffiti384b.Q8.checked_tree' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q8MaskKernel384b
+Checking Q8Shape0384b
+'Graffiti384b.Q8.q8Shape0_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q8Shape0384b
+Checking Q8Shape1384b
+'Graffiti384b.Q8.q8Shape1_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q8Shape1384b
+Checking Q8Shape2384b
+'Graffiti384b.Q8.q8Shape2_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q8Shape2384b
+Checking Q8Shape3384b
+'Graffiti384b.Q8.q8Shape3_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q8Shape3384b
+Checking Q8Shape4384b
+'Graffiti384b.Q8.q8Shape4_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q8Shape4384b
+Checking Q8Shape5384b
+'Graffiti384b.Q8.q8Shape5_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q8Shape5384b
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+Checking Q8AnchorNormalize384b
+'Graffiti384bQ8.normalize_two_anchors' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q8AnchorNormalize384b
+Checking Q8ScoreTransfer384b
+'Graffiti384b.Q8.score_eq_triangles' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Q8.gamma_le_of_dominates3' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q8ScoreTransfer384b
+Checking Q8GraphTransfer384b
+'Graffiti384b.Q8.entries_of_shape' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Q8.core8_of_covers' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q8GraphTransfer384b
+Checking Q8Shape6384b
+'Graffiti384b.Q8.q8Shape6_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q8Shape6384b
+Checking Q8Shape7384b
+'Graffiti384b.Q8.q8Shape7_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q8Shape7384b
+Checking Q8Original384b
+'Graffiti384b.Q8Original.nonleaf_eight_of_fin8_quota' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q8Original384b
+Checking Q8Exact384b
+'Graffiti384b.Q8.fin8_positive_distinct_quota' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Q8.exact_of_eight_nonleaves' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q8Exact384b

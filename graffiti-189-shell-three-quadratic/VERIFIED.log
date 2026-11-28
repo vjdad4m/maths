@@ -1,0 +1,4 @@
+== StandaloneShellQuadratic189 ==
+'Graffiti189LongestPath.StandaloneShellQuadratic.universal_shell_three_quadratic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

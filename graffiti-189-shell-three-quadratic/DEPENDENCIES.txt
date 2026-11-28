@@ -1,0 +1,7 @@
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+Mathlib c44e0c8ee63ca166450922a373c7409c5d26b00b
+SHA-256 of exact direct Lean interfaces resolved by strict replay:
+383dcc4a6bf7385f41d7efd58299db0cf8267034346afa51c306e9bfab245bea  SmallSeparator189.olean
+f426f07e1212b1319aefba121eb06a7b3b4a112917407d1bf8d722b4fb6ce378  Mathlib.Data.Finset.Powerset.olean
+a0722d5b6793385c6ce3b4f73ff03f0d34a07e2d1bec9ee8d3fbc8656fd5cdf9  Mathlib.Data.Finset.Max.olean
+b9438f24d9d07ebcf4314313cb6b49a64377c977b5f6bbc13afb95c9937cf6e4  Mathlib.Tactic.Linarith.olean

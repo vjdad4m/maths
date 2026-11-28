@@ -1,0 +1,6 @@
+src/BorderWing189.lean: OK
+src/SixBorder189.lean: OK
+src/UltraOrder189.lean: OK
+'Graffiti189LongestPath.BorderWing.near_border_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.SixBorder.order_lower_six_border' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.UltraOrder.order_lower_wings_sharp' depends on axioms: [propext, Classical.choice, Quot.sound]

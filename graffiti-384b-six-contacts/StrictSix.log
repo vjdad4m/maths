@@ -1,0 +1,48 @@
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release) 
+Mathlib c44e0c8ee63ca166450922a373c7409c5d26b00b 
+Replay directory /workspace/scratch/7efa613b1c05/graff384b-sixfront29-astra/extracted/graffiti-384b-six-contacts/.six-replay.5w4y_hlh
+Matched 388 predecessor objects to the source closure.
+Checking ThreadCut
+'Graffiti384b.SixFront.two_steps' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.SixFront.three_steps' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.SixFront.four_steps' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking TriangleReturn
+'Graffiti384b.SixFront.triangle_return' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.SixFront.extension_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.SixFront.pool_triangle' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking CubicMove
+'Graffiti384b.SixFront.safe_repair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.SixFront.score_two_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking SixModel
+'Graffiti384b.SixFront.Model.check_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking SixPack0
+'Graffiti384b.SixFront.Model.case0_root_ok' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking SixPack1
+'Graffiti384b.SixFront.Model.case1_root_ok' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking SixPack2
+'Graffiti384b.SixFront.Model.case2_root_ok' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking SixPack3
+'Graffiti384b.SixFront.Model.case3_root_ok' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking SixPack4
+'Graffiti384b.SixFront.Model.case4_root_ok' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking SixPack5
+'Graffiti384b.SixFront.Model.case5_root_ok' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking SixPack6
+'Graffiti384b.SixFront.Model.case6_root_ok' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking ForkClosure
+'Graffiti384b.SixFront.fork' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking SixEmbed
+'Graffiti384b.SixFront.Model.represents' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.SixFront.Model.counts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.SixFront.Model.Layout.shape' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.SixFront.Model.lift_neighbors' depends on axioms: [propext, Quot.sound]
+Checking SixTransfer
+'Graffiti384b.SixFront.Model.mate_edge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.SixFront.Model.from_layout' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking SixLayout
+'Graffiti384b.SixFront.Model.failure_layout' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking SixComplete
+'Graffiti384b.SixFront.Model.finite_six' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.SixFront.six_contacts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.SixFront.remaining_contacts' depends on axioms: [propext, Classical.choice, Quot.sound]
+Verified 16 new modules and 27 standard-axiom reports.

@@ -1,0 +1,50 @@
+== FlexibleSpacing189 ==
+'Graffiti189LongestPath.FlexibleSpacing.one_sided_weighted_span' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+== HookRetarget189 ==
+'Graffiti189LongestPath.HookRetarget.first_port_mem_boundary' depends on axioms: [propext, Quot.sound]
+'Graffiti189LongestPath.HookRetarget.retarget_first_port' depends on axioms: [propext, Quot.sound]
+'Graffiti189LongestPath.HookRetarget.family_first_ports_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+== GapOne189 ==
+'Graffiti189LongestPath.GapOne.first_pins_at_least_pins_sub_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+== SplitGreedy189 ==
+'Graffiti189LongestPath.SplitGreedy.side_path_from_any_terminal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.SplitGreedy.greedy_cross_shore_route' depends on axioms: [propext, Classical.choice, Quot.sound]
+== FlexibleFan189 ==
+The '∑ x in s, f x' notation is deprecated: please use '∑ x ∈ s, f x' instead:
+∑ i ∈ (univ : Finset (Fin k)), if ok i then M else 0
+The '∑ x in s, f x' notation is deprecated: please use '∑ x ∈ s, f x' instead:
+∑ i ∈ (univ : Finset (Fin k)), if bad i then M else 0
+'Graffiti189LongestPath.FlexibleFan.flexible_hooked_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+== PortReachCount189 ==
+'Graffiti189LongestPath.PortReachCount.many_flexible_hooks' depends on axioms: [propext, Classical.choice, Quot.sound]
+== ShellDonorFull189 ==
+'Graffiti189LongestPath.ShellDonorFull.exists_shell_donors_with_private_charges' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+== FlexibleShellArithmetic189 ==
+'Graffiti189LongestPath.FlexibleShellArithmetic.mixed_shell_numeric' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.FlexibleShellArithmetic.one_shell_numeric' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+== FlexSplitShell189 ==
+'Graffiti189LongestPath.FlexSplitShell.flex_split_shell_three_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+== FlexibleFinishNumeric189 ==
+== ThreeFifthsDeficit189 ==
+'Graffiti189LongestPath.ThreeFifthsDeficit.traceable_of_three_fifths_gap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.ThreeFifthsDeficit.traceable_of_three_fifths_connectivity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

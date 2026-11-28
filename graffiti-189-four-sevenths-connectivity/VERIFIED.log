@@ -1,0 +1,41 @@
+== PortFlankCharge189 ==
+'Graffiti189LongestPath.PortFlankCharge.exists_even_pin_flank_charges' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+== StrongDonorCharge189 ==
+'Graffiti189LongestPath.StrongDonorCharge.omitted_donor_strong_charge' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+== StrongDonorDegree189 ==
+'Graffiti189LongestPath.StrongDonorDegree.missing_ports_bound_by_side_order' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.StrongDonorDegree.donor_degree_all_private_and_missing_pins' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.StrongDonorDegree.side_bound_with_missing_reach_and_private_ports' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+== FourSeventhsCombined189 ==
+'Graffiti189LongestPath.FlexMissTwice.ports_missing_or_flexible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.FourSeventhsOneNumeric.one_side_contradiction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.MixedMass.flank_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.MixedMass.exclusive_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.MixedMass.ordinary_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.MixedReserve.combined_mixed_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.FourSeventhsMixedNumeric.mixed_contradiction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.FourSeventhsShell.stronger_split_shell_three' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.FourSeventhsDeficit.traceable_of_four_sevenths_gap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.FourSeventhsDeficit.traceable_of_four_sevenths_connectivity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

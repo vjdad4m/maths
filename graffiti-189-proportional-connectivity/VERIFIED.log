@@ -1,0 +1,38 @@
+== ScaledDeficitAll189 ==
+'Graffiti189LongestPath.ScaledHall.hall_with_cut_deficit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.ScaledCharge.shore_charge_with_cut_deficit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.ScaledWideCut.scaled_small_shore_side' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.ScaledWideCut.scaled_shore_cut_no_split' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.ScaledConnectivity.scaled_shore_stays_connected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.ScaledActive.scaled_deficit_has_high_active' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.ScaledDonors.scaled_donor_shell_upper' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.ShoreDegrees.universal_root_degree_drop' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.StarCycleClosure.erase_root_and_set_iso' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.ScaledShore.scaled_root_deleted_long_cycle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.ScaledShore.scaled_no_long_shore_cycle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.ScaledDeficit.traceable_of_scaled_connectivity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.ScaledDeficit.traceable_of_proportional_connectivity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

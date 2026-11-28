@@ -1,0 +1,8 @@
+Checking DiversityElevenOrdinaryEars384b
+'Graffiti384b.DiversityEleven.eleven_two_lows' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.DiversityEleven.exact_eleven_ordinary_ears' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS DiversityElevenOrdinaryEars384b
+Checking DiversityElevenPendantResidual384b
+'Graffiti384b.DiversityEleven.eleven_pendant_profile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.DiversityEleven.residual_eleven_ten_or_pendant' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS DiversityElevenPendantResidual384b

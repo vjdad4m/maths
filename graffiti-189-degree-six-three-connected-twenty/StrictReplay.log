@@ -1,0 +1,74 @@
+== SixThree20CandidateCharge189 ==
+'Graffiti189LongestPath.SixThreeTwenty.candidate_charge_contradiction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixThree20CandidateCharge189
+== SixThree20ShortGeometry189 ==
+'Graffiti189LongestPath.SixThreeTwenty.high_omitted_short_join' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.SixThreeTwenty.high_sites_separated' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS SixThree20ShortGeometry189
+== SixThree20ThirteenDouble189 ==
+'Graffiti189LongestPath.SixThreeTwenty.double_high_contradiction_thirteen' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixThree20ThirteenDouble189
+== SixThree20Candidates189 ==
+'Graffiti189LongestPath.SixThreeTwenty.cand_rotated_path' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.SixThreeTwenty.high_candidate_cannot_miss_two_at_thirteen' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixThree20Candidates189
+== SixThree20SingleProfile189 ==
+'Graffiti189LongestPath.SixThreeTwenty.low_omitted_no_pins_at_six' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.SixThreeTwenty.high_sites_at_least_three_of_universal_and_no_low_ports' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixThree20SingleProfile189
+== SixThree20SingleCharge189 ==
+'Graffiti189LongestPath.SixThreeTwenty.single_port_candidate_hit_cap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.SixThreeTwenty.three_candidate_miss_contradiction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixThree20SingleCharge189
+== SixThree20ThirteenClose189 ==
+'Graffiti189LongestPath.SixThreeTwenty.no_nonspanning_length_thirteen_at_twenty' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixThree20ThirteenClose189
+== SixThree20PortMiss189 ==
+'Graffiti189LongestPath.SixThreeTwenty.miss_budget_vertices' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS SixThree20PortMiss189
+== SixThree20FourteenTriple189 ==
+'Graffiti189LongestPath.SixThreeTwenty.triple_high_contradiction_fourteen' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixThree20FourteenTriple189
+== SixThree20FourteenPairGeometry189 ==
+'Graffiti189LongestPath.SixThreeTwenty.omitted_adj_of_high_pairs' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.SixThreeTwenty.pair_port_candidate_hit_cap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixThree20FourteenPairGeometry189
+== SixThree20FourteenPairMiss189 ==
+'Graffiti189LongestPath.SixThreeTwenty.pair_contradiction_if_right_misses_fourteen' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixThree20FourteenPairMiss189
+== SixThree20FourteenClose189 ==
+'Graffiti189LongestPath.SixThreeTwenty.no_nonspanning_length_fourteen_at_twenty' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixThree20FourteenClose189
+== SixThree20Final189 ==
+'Graffiti189LongestPath.SixThreeTwenty.traceable_six_at_three_connectivity_order_twenty' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixThree20Final189

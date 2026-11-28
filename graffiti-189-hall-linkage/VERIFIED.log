@@ -1,0 +1,38 @@
+'Graffiti189LongestPath.EndpointSplice.endpoint_room' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.GeneralRootAlternatives.star_alternatives_one_exception' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.DoubleThirdBudget.double_star_order_upper' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.HallLinkage.exists_linkage_permutation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.FanRoutable.fan_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.FanRoutable.hooked_routable_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.HookTrim.split_final_edge' depends on axioms: [propext, Quot.sound]
+'Graffiti189LongestPath.HookTrim.hooks_of_trimmed_packing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.FanRoutable.routable_double_no_fan' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.RoutableBoundary.routable_path_ports_lower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.RoutableBoundary.routable_double_forces_off_path_port' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.FanWeighted.weighted_span' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.FanWeighted.weighted_hooked_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.FanPorts.off_path_ports_le_total_hook_length' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.AlmostRoutable.almost_routable_double_no_fan' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MengerHallOrbit189.linkage_of_matching' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.hooks_of_small_deletion_connectivity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.MengerRoutable.support_large' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.MengerRoutable.routable_double_branch_impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.MengerRoutable.almost_routable_double_branch_impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

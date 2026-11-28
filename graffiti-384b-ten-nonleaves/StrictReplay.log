@@ -1,0 +1,5 @@
+Checking Q10Exact384b
+'Graffiti384b.Q10.all_shapes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Q10.fin10_effective_of_eight_positive_types' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Q10.exact_of_ten_nonleaves' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q10Exact384b

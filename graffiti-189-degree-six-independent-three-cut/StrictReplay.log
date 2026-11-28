@@ -1,0 +1,37 @@
+Checking SixTripleCutTerminalRank189
+'Graffiti189LongestPath.ThresholdSix.ThreeCut.Shore.port_cost_rank' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.ThresholdSix.ThreeCut.saturated_shore_card' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.ThresholdSix.ThreeCut.good_terminal_exact_five' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixTripleCutTerminalRank189
+Checking SixTripleCutUniversalPort189
+'Graffiti189LongestPath.ThresholdSix.ThreeCut.universal_port_of_three_shores' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.ThresholdSix.ThreeCut.universal_port_of_three_components' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixTripleCutUniversalPort189
+Checking SixTripleCutSingleton189
+'Graffiti189LongestPath.ThresholdSix.ThreeCut.singleton_pin_dark_geometry' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixTripleCutSingleton189
+Checking SixTripleCutSingletonIsolate189
+'Graffiti189LongestPath.ThresholdSix.ThreeCut.singleton_three_shore_isolated_terminal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.ThresholdSix.ThreeCut.no_independent_three_cut_singleton' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixTripleCutSingletonIsolate189
+Checking SixIndependentTripleCut189
+'Graffiti189LongestPath.ThresholdSix.ThreeCut.independent_three_cut_at_most_two_components' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixIndependentTripleCut189

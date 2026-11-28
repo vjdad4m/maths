@@ -1,0 +1,45 @@
+Checking SixOrder24ThirdNearGeometry189
+'Graffiti189LongestPath.RadiusFiveNearEquality.fourth_meets_full_group' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixOrder24ThirdNearGeometry189
+Checking SixOrder24ThirdRepCharge189
+'Graffiti189LongestPath.RadiusFiveNearEquality.rep_four_part_charge' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.RadiusFiveNearEquality.near_partners_full_of_spare_rep_neighbor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixOrder24ThirdRepCharge189
+Checking SixOrder24ThirdPortBounds189
+'Graffiti189LongestPath.RadiusFiveNearEquality.third_degree_bound_of_group' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.RadiusFiveNearEquality.selected_degree_le_two_add_spares_add_partners' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixOrder24ThirdPortBounds189
+Checking SixOrder24ThirdFullFamily189
+'Graffiti189LongestPath.RadiusFiveNearEquality.no_order24_full_near_family' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixOrder24ThirdFullFamily189
+Checking SixOrder24ThirdOverlap189
+'Graffiti189LongestPath.near_cover_shared_member' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.RadiusFiveNearEquality.no_order24_one_shared_third' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixOrder24ThirdOverlap189
+Checking SixOrder24ThirdDeficient189
+'Graffiti189LongestPath.RadiusFiveNearEquality.no_order24_one_deficient_third' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixOrder24ThirdDeficient189
+Checking SixOrder24BThreeExcluded189
+'Graffiti189LongestPath.no_order24_second_shell_three_at_degree_six' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.four_le_second_shell_of_order_ge_twenty_four_at_degree_six' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixOrder24BThreeExcluded189

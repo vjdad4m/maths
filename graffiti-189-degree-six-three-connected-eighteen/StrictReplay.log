@@ -1,0 +1,37 @@
+== SixThree18Marks189 ==
+'Graffiti189LongestPath.SixThreeEighteen.both_ends_see_pin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.SixThreeEighteen.marked_right_candidates_see_pin' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+== SixThree18Twelve189 ==
+'Graffiti189LongestPath.SixThreeEighteen.not_length_twelve_of_three_active' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+== SixThree18Shape189 ==
+'Graffiti189LongestPath.SixThreeEighteen.high_pin_shape_long' depends on axioms: [propext, Classical.choice, Quot.sound]
+== SixThree18Saturation189 ==
+'Graffiti189LongestPath.SixThreeEighteen.high_saturation_long' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.SixThreeEighteen.high_pin_no_start_chord' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+== SixThree18NoHigh189 ==
+'Graffiti189LongestPath.SixThreeEighteen.all_omitted_low_long' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+== SixThree18LowFlanks189 ==
+'Graffiti189LongestPath.SixThreeEighteen.saturated_flanks' depends on axioms: [propext, Classical.choice, Quot.sound]
+== SixThree18LowRotation189 ==
+'Graffiti189LongestPath.SixThreeEighteen.no_chord_to_pin_start' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.SixThreeEighteen.no_chord_to_pin_end' depends on axioms: [propext, Classical.choice, Quot.sound]
+== SixThree18FirstPin189 ==
+'Graffiti189LongestPath.SixThreeEighteen.first_pin_of_longest_long' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+== SixThree18Final189 ==
+'Graffiti189LongestPath.SixThreeEighteen.traceable_six_at_three_connectivity_order_eighteen' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

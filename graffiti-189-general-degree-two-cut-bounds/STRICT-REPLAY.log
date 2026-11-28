@@ -1,0 +1,68 @@
+== SixCentreParity189 ==
+'Graffiti189SixCentre.coverage_positive' depends on axioms: [propext, Quot.sound]
+'Graffiti189SixCentre.coverage_table' depends on axioms: [propext, Quot.sound]
+'Graffiti189SixCentre.coverage_at_most_three' depends on axioms: [propext, Quot.sound]
+'Graffiti189SixCentre.coverage_far_at_least_two' depends on axioms: [propext, Quot.sound]
+PASS SixCentreParity189
+== SixCentreCount189 ==
+'Graffiti189SixCentre.sum_coverage_accounting' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189SixCentre.order_from_six_charges' depends on axioms: [propext, Quot.sound]
+'Graffiti189SixCentre.order_le_three_mul_of_nonpositive_defect' depends on axioms: [propext, Quot.sound]
+PASS SixCentreCount189
+== SixCentreGraph189 ==
+'Graffiti189Adam.cross_distance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189Adam.coverage_distances' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189Adam.coverage_table_graph' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189Adam.six_centre_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189Adam.evAmount_eq_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189Adam.six_centre_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189Adam.six_centre_nonpositive_defect' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189Adam.six_centre_far' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS SixCentreGraph189
+== OtherCentres189 ==
+'Graffiti189Adam.effective_a_coverage' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189Adam.effective_b_coverage' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189Adam.effective_a_extra' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189Adam.effective_b_extra' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189Adam.six_effective_centres_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189Adam.six_effective_centres_nonpositive_defect' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189Adam.six_effective_centres_far' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189Adam.effective_coverage_rare_failure' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS OtherCentres189
+== AdamEdgeIdentity189 ==
+'Graffiti189.AdamEdge.edge_identity_of_cut' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189.AdamEdge.same_terminal_far_order_of_cut' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189.AdamEdge.same_terminal_far_order' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189.AdamEdge.edge_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189.AdamEdge.adjacent_even_balance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189.AdamEdge.oo_partition' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS AdamEdgeIdentity189
+== AdamNearEdge189 ==
+'Graffiti189.AdamEdge.near_edge_bound_with_gain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189.AdamEdge.near_edge_identity_of_cut' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189.AdamEdge.bad_witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS AdamNearEdge189
+== AdamEdgeTight189 ==
+'Graffiti189.AdamEdge.degree_port_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189.AdamEdge.two_in_mid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189.AdamEdge.tight_remote_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189.AdamEdge.tight_shore_even_profile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189.AdamEdge.near_tight_slacks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189.AdamEdge.near_tight_universal' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS AdamEdgeTight189
+== AdamEdgeTPartition189 ==
+'Graffiti189.AdamEdge.tight_shore_partition' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS AdamEdgeTPartition189
+== AdamEdgeTEconomy189 ==
+'Graffiti189.AdamEdge.near_ports_at_most_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189.AdamEdge.near_nonport_low' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189.AdamEdge.tight_far_even_low' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189.AdamEdge.high_count_complement' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS AdamEdgeTEconomy189
+== AdamEdgeLemmaT189 ==
+'Graffiti189.AdamEdge.conditional_lemma_T' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS AdamEdgeLemmaT189
+'Graffiti189LongestPath.diameter_le_even_budget_of_two_connected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS EvenDiameterTwoConnected189

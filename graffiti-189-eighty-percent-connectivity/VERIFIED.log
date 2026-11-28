@@ -1,0 +1,25 @@
+== WideRatioDeficitAll189 ==
+'Graffiti189LongestPath.DonorQuadratic.exists_private_donor_cover' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.DonorQuadratic.shell_bound_of_donor_pair_charging' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.ShoreDegrees.universal_root_degree_drop' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.StarCycleClosure.erase_root_and_set_iso' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.WideRatioShore.wide_ratio_root_deleted_long_cycle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.WideRatioShore.wide_ratio_no_long_shore_cycle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.WideRatioDeficit.traceable_of_wide_ratio_connectivity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.WideRatioDeficit.traceable_of_eighty_percent_connectivity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

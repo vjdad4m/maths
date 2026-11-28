@@ -1,0 +1,19 @@
+Linkage replay (temporary build directory)
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+Authenticated all 38 baseline objects.
+'Finset.all_card_le_biUnion_card_iff_existsInjective'' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.OddStars.HallArms.hall_matching' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.OddStars.HallArms.extract_arms' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.OddStars.HallArms.failure_disjoint_arms' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.OddStars.HallArms.equal_parity_cut' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.OddStars.HallArms.failure_opposite_parity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.OddStars.HallArms.failure_terminal_hit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.OddStars.HallArms.failure_crossed_terminal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.OddStars.HallArms.minimum_diamond' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.OddStars.HallArms.diamond_cut' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.OddStars.PendantAudit.upper_branch' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.OddStars.PendantAudit.pendant_pair_exhausts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.OddStars.degree_two_zero_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.OddStars.failure_zero_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.OddStars.exact_of_zero_nonleaf' depends on axioms: [propext, Classical.choice, Quot.sound]
+Verified 10 supplementary objects and 15 standard-axiom reports.

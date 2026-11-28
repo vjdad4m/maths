@@ -1,0 +1,23 @@
+Checking DiversityElevenPendantSplit384b
+'Graffiti384b.DiversityEleven.exact_of_pendant_board_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS DiversityElevenPendantSplit384b
+Checking DiversityElevenPendantTags384b
+'Graffiti384b.DiversityEleven.pendant_anchor_triangle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.DiversityEleven.pendant_zero_tags_le_six' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS DiversityElevenPendantTags384b
+Checking DiversityElevenPendantOneTag384b
+'Graffiti384b.DiversityEleven.dominating_triple_of_eight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.DiversityEleven.exact_pendant_at_most_one_tag' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS DiversityElevenPendantOneTag384b
+Checking DiversityElevenOneCenter384b
+'Graffiti384b.DiversityEleven.small_symmetric_bad_family' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.DiversityEleven.one_center_of_six' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS DiversityElevenOneCenter384b
+Checking DiversityElevenPendantTwoTags384b
+'Graffiti384b.DiversityEleven.exact_pendant_at_most_two_tags' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS DiversityElevenPendantTwoTags384b
+Checking DiversityElevenPendantTagResidual384b
+'Graffiti384b.DiversityEleven.residual_eleven_ten_or_three_to_six_tags' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DiversityElevenPendantTagResidual384b

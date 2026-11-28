@@ -1,0 +1,34 @@
+Check ArticulationGeneralThree189
+'Graffiti189LongestPath.CrossSaturation.ThreeShores.impossible_general' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.component_card_le_two_at_articulation_general' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS ArticulationGeneralThree189
+Check ArticulationGeneralPair189
+'Graffiti189LongestPath.CrossSaturation.articulation_pair_of_disconnected_general' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ArticulationPair.sides_le_two_mul' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS ArticulationGeneralPair189
+Check ArticulationGeneralSmall189
+'Graffiti189LongestPath.CrossSaturation.ArticulationPair.small_left_rooted_general' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS ArticulationGeneralSmall189
+Check ArticulationGeneralExtreme189
+'Graffiti189LongestPath.CrossSaturation.ArticulationPair.extremal_singleton_internal_min_degree' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ArticulationPair.extremal_nonsingleton_port_universal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS ArticulationGeneralExtreme189
+Check ArticulationGeneralClosure189
+'Graffiti189LongestPath.CrossSaturation.traceable_at_articulation_general' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS ArticulationGeneralClosure189

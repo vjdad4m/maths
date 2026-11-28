@@ -1,0 +1,64 @@
+'Graffiti189LongestPath.SeparatedRootReduction.separated_double_root_reduction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.UniversalCharge.universal_shore_charge' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.UniversalWideCut.small_side_of_shore_cut' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.UniversalWideCut.shore_cut_no_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.ShoreConnectivity.connected_of_no_partition' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.ShoreConnectivity.universal_shore_stays_connected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.StarConnectivity.separated_double_star_stays_connected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CycleRootBridge.trim_end' depends on axioms: [propext, Quot.sound]
+'Graffiti189LongestPath.CycleRootBridge.route_through_root' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.CycleRootBridge.route_from_root' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.CycleHallSplice.splice_arms' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.CycleHallSplice.cycle_to_prescribed_route' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CycleHallSplice.cycle_to_prescribed_route_bonus' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CycleHallSplice.cycle_to_prescribed_root_route' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CycleHallSplice.cycle_to_prescribed_root_route_bonus' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.StarCycleClosure.erase_root_and_set_iso' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.StarCycleClosure.separated_double_no_long_shore_cycle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.FanDefect.weighted_span_bonus' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.FanDefect.one_defect_hooked_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.DefectRoutable.defects_at_most_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.DefectRoutable.one_defect_double_branch_impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.SplitRoutes.even_route' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.SplitRoutes.odd_route' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.SplitRoutes.split_routes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.SplitRoutes.split_outer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.OffPathBoundaryBudget.degree_le_shore_and_ports' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.StarSplitClosure.separated_double_no_balanced_split' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.HookMark.boundary_port_used' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.HookMark.exchange_hook' depends on axioms: [propext, Quot.sound]
+'Graffiti189LongestPath.HookMark.marked_hook_family' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.FanGain.endpoint_gain_hooked_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.MarkedRoutable.marked_route_branch_impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

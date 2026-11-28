@@ -1,0 +1,36 @@
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release) 
+Mathlib c44e0c8ee63ca166450922a373c7409c5d26b00b 
+Replay directory /workspace/scratch/7efa613b1c05/graff384b-quartic-switch-astra/unpacked/graffiti-384b-quartic-switch/.quartic-switch-replay.8jj8kme4
+Matched 87 predecessor objects to the source closure.
+Checking QuarticTriangle
+'Graffiti384b.QuarticSwitch.no_low_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking SparseQuartics
+'Graffiti384b.QuarticSwitch.quota_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.QuarticSwitch.remote_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking EarSwitch
+'Graffiti384b.QuarticSwitch.switch_obstruction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.QuarticSwitch.remote_for_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking QuarticFront
+'Graffiti384b.QuarticSwitch.one_blocker' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.QuarticSwitch.five_common_quartic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.QuarticSwitch.dense_mate_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking CubicScores
+'Graffiti384b.QuarticSwitch.cubic_score' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.QuarticSwitch.exterior_rich' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking CubicFront
+'Graffiti384b.QuarticSwitch.cubic_remote_for_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.QuarticSwitch.remote_cubic_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.QuarticSwitch.cubic_blocker' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.QuarticSwitch.five_common_cubic' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking HighScore
+'Graffiti384b.QuarticSwitch.simplicial_cubic_needs_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.QuarticSwitch.high_score_quartic' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking SwitchExamples
+'Graffiti384b.QuarticSwitch.Examples.fifteen_profile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.QuarticSwitch.Examples.fifteen_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.QuarticSwitch.Examples.quartic_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.QuarticSwitch.Examples.cubic_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.QuarticSwitch.Examples.connectivity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.QuarticSwitch.Examples.limit_hypotheses' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.QuarticSwitch.Examples.fifteen_prior_tests' depends on axioms: [propext, Classical.choice, Quot.sound]
+Verified 8 new modules and 23 standard-axiom reports.

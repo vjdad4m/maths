@@ -1,0 +1,11 @@
+Git blob SHA	Path
+aecd4b47d906f3bbd1eb0384e46b3e73ee2f23fa	graffiti-189-degree-five-cuts/src/DegreeFiveBridgeSize189.lean
+471982f2d66bf6db82ed916a4da0ddb957063b0c	graffiti-189-degree-five-more-cuts/src/DegreeFiveSurplus189.lean
+9d0bf6f7585d04ade6654fb1294103d091b8b7b0	graffiti-189-distance-three-degree-eight/src/DegreeFiveAlternatingRoute189.lean
+4b3f7cf8e60fb12f36f7defd9ce991ed0cfdb0b2	graffiti-189-distance-three-degree-eight/src/DegreeFiveEightActual189.lean
+296ca3f1adf30a5d04468d106ee0b1bc2b530cf3	graffiti-189-distance-three-degree-eight/src/DegreeFiveEightBridgeRoutes189.lean
+5302ff041b3c791772cb5da3c66538b487cfa60f	graffiti-189-distance-three-degree-eight/src/DegreeFiveEightNoBridge189.lean
+8a760e370c6c6e1c1db2a08820b1d9c769d1f5cb	graffiti-189-full-distance-two/src/DegreeFiveTwoThreeBase189.lean
+ca51ee0d0a81f5f6fe8f1da7c302e643c08291ba	graffiti-189-full-distance-two/src/RootedOreTwoCandidates189.lean
+8fd6fd7fd4661c5f0ee6e69419b251ed6c60f9ce	graffiti-189-full-distance-two/src/SmallDenseRoute189.lean
+e742803f995cc53e37cff27ebc34d1000ad74ccf	graffiti-189-full-distance-two/src/WingSignature189.lean

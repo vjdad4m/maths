@@ -10,10 +10,10 @@ search="$obj:$PWD/.lake/build/lib/lean"
 for dep in "$PWD"/.lake/packages/*/.lake/build/lib/lean; do search="$search:$dep"; done
 export LEAN_PATH="$search"
 {
-  for f in Boundary ThirdDegree CycleObstruction; do
+  for f in Boundary ThirdDegree FourthDegree CycleObstruction; do
     lean -j1 -DElab.async=false --root="$src" -DwarningAsError=true -o "$obj/$f.olean" "$src/$f.lean"
   done
 } | tee "$obj/axioms.log"
-for thm in weighted_coefficients weighted_coefficients_third phan_third c6_intersection_closed c6_no_common_coordinate; do
+for thm in weighted_coefficients weighted_coefficients_third phan_third weighted_fourth phan_fourth c6_intersection_closed c6_no_common_coordinate; do
   grep -Fxq "'UnionClosedBoundary.$thm' depends on axioms: [propext, Classical.choice, Quot.sound]" "$obj/axioms.log"
 done

@@ -1,6 +1,6 @@
-# The three highest degrees of Phan’s weighted union-closed conjecture
+# The four highest degrees of Phan’s weighted union-closed conjecture
 
-[Veronica Phan’s question](https://mathoverflow.net/questions/514705/further-algebraic-strengthening-of-frankls-union-closed-sets-conjecture) asks for a coordinate whose weighted comparison of set counts is nonnegative at a specified degree m. This package proves all three top degrees, m = n−3, n−2, and n−1, in the usual convention that the ground set is the union of a nonempty family. The theorem `phan_third` gives the original nested-sum inequality. It does not settle the full conjecture.
+[Veronica Phan’s question](https://mathoverflow.net/questions/514705/further-algebraic-strengthening-of-frankls-union-closed-sets-conjecture) asks for a coordinate whose weighted comparison of set counts is nonnegative at a specified degree m. This package proves all four top degrees, m = n−4, n−3, n−2, and n−1, in the usual convention that the ground set is the union of the family, with a nonempty ground set. The theorem `phan_fourth` gives the original nested-sum inequality. It does not settle the full conjecture.
 
 For a monomial supported on B, the coefficient on the presence side counts family members containing B and k, provided k is not in B; the coefficient on the omission side counts family members containing B but not k. Grouping the sums by B gives exactly the original inequality. In complements, B becomes the window T, and k belongs to a complement precisely when it is omitted by the original set.
 
@@ -12,5 +12,13 @@ The three-element case uses two arguments:
 * If all singletons are present, sum over the coordinates of each window. The full powerset has balance zero by pairing subsets across each coordinate. Deleting a pattern of size at least two does not decrease the total balance in a window of size at most three. Summing with the given nonnegative weights gives at least one good coordinate. This proves the inequality even for arbitrary nonnegative weights indexed by monomial supports.
 
 A separate theorem checks that no coefficientwise result with a universal coordinate is possible for windows of size three. Take the complement family consisting of the empty set, six singleton vertices, six edges and six consecutive three-vertex arcs of a six-cycle. The family is intersection-closed. At each vertex k, the window formed by k and its two neighbors has counts 3 on the presence side and 4 on the omission side. This refutes the stronger requirement of a single coordinate that works for every coefficient. **It is not a counterexample to Phan’s conjecture**, which may choose a coordinate after the weights are fixed.
+
+## Four-element windows
+
+In the intersection-closed complement family, the *core* of a coordinate is the least member containing it, obtained by intersection. A coordinate that never occurs in a complement is already good. Otherwise, a coordinate of maximum core size works pointwise when its core has size at least three: a pattern containing it is its core alone or its core plus one extra element. Match the former to the empty pattern and the latter to the extra element’s core. That extra core cannot contain the chosen coordinate, since then it would contain the maximal core as well as the extra element.
+
+If all cores have size at most two and an element has a different singleton-core companion, use the same injection and map the unique possible pattern with two extra elements to the companion singleton. If there is no such asymmetric pair, all coordinates fall into disjoint blocks with identical cores. Project each pattern onto one representative per block and apply the averaging argument to the complete blocks in each window. Singleton representatives are present in the projected family. In windows of size four, deleting any missing non-singleton pattern changes the aggregate by a nonnegative amount. Incomplete blocks cannot occur in any pattern in the window and contribute only nonnegative balance.
+
+`weighted_fourth` works with arbitrary nonnegative weights on windows of size at most four. `phan_fourth` transports this result back to the exact nested sums. Neither theorem claims the fifth degree or the full general conjecture.
 
 **Replay:** Lean 4.19.0, built Mathlib at `c44e0c8ee63ca166450922a373c7409c5d26b00b`, `MATHLIB_DIR=/path/to/mathlib bash replay.sh`.

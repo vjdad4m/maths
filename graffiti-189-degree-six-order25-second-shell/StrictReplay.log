@@ -1,0 +1,18 @@
+Checking SixOrder25ThirdUniversal189
+'Graffiti189LongestPath.RadiusFiveEquality.fourth_meets_every_group' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixOrder25ThirdUniversal189
+Checking SixOrder25ThirdAnticomplete189
+'Graffiti189LongestPath.RadiusFiveEquality.joint_groups_anticomplete' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixOrder25ThirdAnticomplete189
+Checking SixOrder25BThreeExcluded189
+'Graffiti189LongestPath.no_order25_second_shell_three_at_degree_six' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.four_le_second_shell_at_order25_degree_six' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixOrder25BThreeExcluded189

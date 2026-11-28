@@ -1,0 +1,45 @@
+Lean 4.19.0 commit 6caaee842e94; Mathlib v4.19.0 commit c44e0c8ee63ca166450922a373c7409c5d26b00b.
+Strict flags: -j1 -s 65536 -DElab.async=false -DwarningAsError=true.
+All 351 predecessor source and object hashes matched in the extracted replay.
+Module ChoiceCompetition (direct strict build; matched source bytes in final archive)
+'Graffiti384b.FiveChoice.competition_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.FiveChoice.no_five_of_competition' depends on axioms: [propext, Classical.choice, Quot.sound]
+Module ChoiceFrame (direct strict build and matching extracted strict rebuild)
+'Graffiti384b.FiveChoice.attach_ear' depends on axioms: [propext, Quot.sound]
+'Graffiti384b.FiveChoice.frame_solution' depends on axioms: [propext, Classical.choice, Quot.sound]
+Module ChoiceIncidence (direct strict build and matching extracted strict rebuild)
+'Graffiti384b.FiveChoice.incidence_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.FiveChoice.critical_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.FiveChoice.choose_erase' depends on axioms: [propext, Classical.choice, Quot.sound]
+Module ChoiceMass (direct strict build and matching extracted strict rebuild)
+'Graffiti384b.FiveChoice.total_score' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.FiveChoice.select_score' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.FiveChoice.reserved_selection' depends on axioms: [propext, Classical.choice, Quot.sound]
+Module ChoicePatch (direct strict build and matching extracted strict rebuild)
+'Graffiti384b.FiveChoice.five_chosen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.FiveChoice.all_contacts' depends on axioms: [propext, Classical.choice, Quot.sound]
+Module ChoiceShrink (direct strict build and matching extracted strict rebuild)
+'Graffiti384b.FiveChoice.shrink' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.FiveChoice.dense_carrier' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.FiveChoice.dense_contact_scores' depends on axioms: [propext, Classical.choice, Quot.sound]
+Module ChoiceSimultaneous (direct strict build and matching extracted strict rebuild)
+'Graffiti384b.FiveChoice.risk_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.FiveChoice.joint_choice' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.FiveChoice.joint_selection' depends on axioms: [propext, Classical.choice, Quot.sound]
+Module ChoiceTight (direct strict build and matching extracted strict rebuild)
+'Graffiti384b.FiveChoice.full_score_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.FiveChoice.compulsory' depends on axioms: [propext, Classical.choice, Quot.sound]
+Module SixObstruction (direct strict build; matched source bytes in final archive)
+'Graffiti384b.FiveChoice.Obstruction.carrier_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.FiveChoice.Obstruction.minimum_carrier' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.FiveChoice.Obstruction.outside_pin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.FiveChoice.Obstruction.exact_profile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.FiveChoice.Obstruction.nonlocal_solution' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.FiveChoice.Obstruction.low_charges' depends on axioms: [propext, Classical.choice, Quot.sound]
+Module SixObstructionData (direct strict build and matching extracted strict rebuild)
+'Graffiti384b.FiveChoice.Obstruction.connected' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.FiveChoice.Obstruction.score_table' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.FiveChoice.Obstruction.contacts_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.FiveChoice.Obstruction.fixed_partners' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.FiveChoice.Obstruction.feasible' depends on axioms: [propext, Classical.choice, Quot.sound]
+Verified 10 strict modules and 31 standard-axiom reports. 8 extracted strict builds matched direct objects.

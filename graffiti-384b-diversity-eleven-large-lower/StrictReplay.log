@@ -1,0 +1,39 @@
+Checking HighEarSwap384b
+'Graffiti384b.DiversityEleven.exact_of_ear_swap' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS HighEarSwap384b
+Checking HighPrivateEar384b
+'Graffiti384b.DiversityEleven.exact_of_five_with_private_ear' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS HighPrivateEar384b
+Checking FiveOrdinaryEars384b
+'Graffiti384b.DiversityEleven.exact_of_five_ordinary_ears' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS FiveOrdinaryEars384b
+Checking LargeIndependentEars384b
+'Graffiti384b.DiversityEleven.exact_at_least_fourteen_of_independent_ears' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS LargeIndependentEars384b
+Checking HighTwoUntouched384b
+'Graffiti384b.DiversityEleven.exact_of_four_two_untouched' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.DiversityEleven.exact_of_four_low_footprint_seven' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS HighTwoUntouched384b
+Checking FiveLowEars384b
+'Graffiti384b.DiversityEleven.exact_of_five_with_three_ordinary' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS FiveLowEars384b
+Checking LargeSingleLowEdge384b
+'Graffiti384b.DiversityEleven.exact_large_single_low_edge' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS LargeSingleLowEdge384b
+Checking PositiveSplit384b
+'Graffiti384b.DiversityEleven.local_positive_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.DiversityEleven.exact_of_positive_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS PositiveSplit384b
+Checking LargeLowerProfile384b
+'Graffiti384b.DiversityEleven.low_edge_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.DiversityEleven.exact_large_lower_profile' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS LargeLowerProfile384b
+Checking DiversityElevenResidual384b
+'Graffiti384b.DiversityEleven.residual_eleven' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS DiversityElevenResidual384b

@@ -1,0 +1,10 @@
+HighEarSwap384b
+HighPrivateEar384b
+FiveOrdinaryEars384b
+LargeIndependentEars384b
+HighTwoUntouched384b
+FiveLowEars384b
+LargeSingleLowEdge384b
+PositiveSplit384b
+LargeLowerProfile384b
+DiversityElevenResidual384b

@@ -1,0 +1,21 @@
+src/FlankIllumination189.lean: OK
+src/FlankShore189.lean: OK
+src/SplitFlankImpossible189.lean: OK
+src/TriangleFar189.lean: OK
+'Graffiti189LongestPath.FlankIllumination.order_upper_unlit_ports' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.FlankIllumination.traceable_of_few_unlit_ports' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.FlankShore.pins_meet_complement_in_flanks' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.FlankShore.no_three_complementary_shores' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.SplitFlankImpossible.no_split_flanks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.SplitFlankImpossible.traceable_of_split_complement' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.TriangleFar.traceable_of_far_flanks' depends on axioms: [propext, Classical.choice, Quot.sound]

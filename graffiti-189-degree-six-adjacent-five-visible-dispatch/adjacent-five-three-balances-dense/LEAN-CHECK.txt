@@ -1,0 +1,18 @@
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.adjacent_five_three_balance_exact_depths' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.eight_high_core_route' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'_private.SixSingletonFiveThreeBase189.0.Graffiti189LongestPath.CrossSaturation.ThresholdSix.SingletonFive16.deep_hits_balance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.SingletonFive16.common_three_balances_nonisolated' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.SingletonFive16.traceable_of_three_balances_dark_dense' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.traceable_of_adjacent_singleton_thirteen_five_three_balanced_dark_dense' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

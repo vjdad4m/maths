@@ -1,0 +1,8 @@
+Checking AdjacentCutFiveEqualOdd189 at 04:35:04
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.traceable_of_equal_odd_common_ports_two_adjacent_shores' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking AdjacentCutFiveAllCommonFour189 at 04:35:50
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.order_le_sixteen_of_adjacent_four_common_shore' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,2 @@
+AdjacentCutFiveEqualOdd189
+AdjacentCutFiveAllCommonFour189

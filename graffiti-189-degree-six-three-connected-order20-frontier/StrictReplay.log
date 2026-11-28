@@ -1,0 +1,51 @@
+== SixThree20Shape189 ==
+'Graffiti189LongestPath.SixThreeTwenty.high_pin_shape_long' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS SixThree20Shape189
+== SixThree20Saturation189 ==
+'Graffiti189LongestPath.SixThreeTwenty.high_pin_no_end_chord' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.SixThreeTwenty.high_saturation_long' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.SixThreeTwenty.high_pin_no_start_chord' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixThree20Saturation189
+== SixThree20Slots189 ==
+'Graffiti189LongestPath.SixThreeTwenty.saturated_mark_slots' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS SixThree20Slots189
+== SixThree20NoHigh189 ==
+'Graffiti189LongestPath.SixThreeTwenty.all_omitted_low_long' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS SixThree20NoHigh189
+== SixThree20Frontier189 ==
+'Graffiti189LongestPath.SixThreeTwenty.three_active_of_three_omitted' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.SixThreeTwenty.longest_shape_at_twenty' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixThree20Frontier189
+== SixThree20LowFlanks189 ==
+'Graffiti189LongestPath.SixThreeTwenty.saturated_flanks' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS SixThree20LowFlanks189
+== SixThree20LowRotation189 ==
+'Graffiti189LongestPath.SixThreeTwenty.no_chord_to_pin_start' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.SixThreeTwenty.no_chord_to_pin_end' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS SixThree20LowRotation189
+== SixThree20MissBudget189 ==
+'Graffiti189LongestPath.SixThreeTwenty.two_end_miss_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS SixThree20MissBudget189
+== SixThree20IndexedRotation189 ==
+'Graffiti189LongestPath.SixThreeTwenty.rotate_start_indexed_prefix' depends on axioms: [propext, Quot.sound]
+PASS SixThree20IndexedRotation189
+== SixThree20ExtremeSwap189 ==
+'Graffiti189LongestPath.SixThreeTwenty.no_extreme_pin_long' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.SixThreeTwenty.right_mark_not_flank_long' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixThree20ExtremeSwap189
+== SixThree20SingletonClose189 ==
+'Graffiti189LongestPath.SixThreeTwenty.no_nonspanning_length_eighteen_at_twenty' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixThree20SingletonClose189
+== SixThree20ShortFrontier189 ==
+'Graffiti189LongestPath.SixThreeTwenty.longest_nonspanning_length_thirteen_or_fourteen' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS SixThree20ShortFrontier189

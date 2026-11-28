@@ -1,0 +1,303 @@
+== SixTwelveSat189 ==
+'Graffiti189LongestPath.SixTwelveSat.transfer' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS SixTwelveSat189
+== SixTwelveBudget189 ==
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.k6_profile_budget' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixTwelveBudget189
+== SixTwelveFromGraph189 ==
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.model_of_label' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixTwelveFromGraph189
+== SixTwelveLabel189 ==
+'Graffiti189LongestPath.SixTwelveSat.role_preserving_equiv_with_exception' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixTwelveLabel189
+== SixTwelveClassify189 ==
+'Graffiti189LongestPath.SixTwelveSat.classify_shape' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS SixTwelveClassify189
+== TwelveProfile00 ==
+'Graffiti189LongestPath.SixTwelveSat.TwelveProfile00.impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS TwelveProfile00
+== TwelveProfile01 ==
+'Graffiti189LongestPath.SixTwelveSat.TwelveProfile01.impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS TwelveProfile01
+== TwelveProfile02 ==
+'Graffiti189LongestPath.SixTwelveSat.TwelveProfile02.impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS TwelveProfile02
+== TwelveProfile03 ==
+'Graffiti189LongestPath.SixTwelveSat.TwelveProfile03.impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS TwelveProfile03
+== TwelveProfile04 ==
+'Graffiti189LongestPath.SixTwelveSat.TwelveProfile04.impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS TwelveProfile04
+== TwelveProfile05 ==
+'Graffiti189LongestPath.SixTwelveSat.TwelveProfile05.impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS TwelveProfile05
+== TwelveProfile06 ==
+'Graffiti189LongestPath.SixTwelveSat.TwelveProfile06.impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS TwelveProfile06
+== TwelveProfile07 ==
+'Graffiti189LongestPath.SixTwelveSat.TwelveProfile07.impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS TwelveProfile07
+== TwelveProfile08 ==
+'Graffiti189LongestPath.SixTwelveSat.TwelveProfile08.impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS TwelveProfile08
+== TwelveProfile09 ==
+'Graffiti189LongestPath.SixTwelveSat.TwelveProfile09.impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS TwelveProfile09
+== TwelveProfile10 ==
+'Graffiti189LongestPath.SixTwelveSat.TwelveProfile10.impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS TwelveProfile10
+== TwelveProfile11 ==
+'Graffiti189LongestPath.SixTwelveSat.TwelveProfile11.impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS TwelveProfile11
+== TwelveProfile12 ==
+'Graffiti189LongestPath.SixTwelveSat.TwelveProfile12.impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS TwelveProfile12
+== TwelveProfile13 ==
+'Graffiti189LongestPath.SixTwelveSat.TwelveProfile13.impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS TwelveProfile13
+== TwelveProfile14 ==
+'Graffiti189LongestPath.SixTwelveSat.TwelveProfile14.impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS TwelveProfile14
+== TwelveProfile15 ==
+'Graffiti189LongestPath.SixTwelveSat.TwelveProfile15.impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS TwelveProfile15
+== TwelveProfile16 ==
+'Graffiti189LongestPath.SixTwelveSat.TwelveProfile16.impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS TwelveProfile16
+== TwelveProfile17 ==
+'Graffiti189LongestPath.SixTwelveSat.TwelveProfile17.impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS TwelveProfile17
+== TwelveProfile18 ==
+'Graffiti189LongestPath.SixTwelveSat.TwelveProfile18.impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS TwelveProfile18
+== TwelveProfile19 ==
+'Graffiti189LongestPath.SixTwelveSat.TwelveProfile19.impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS TwelveProfile19
+== TwelveProfile20 ==
+'Graffiti189LongestPath.SixTwelveSat.TwelveProfile20.impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS TwelveProfile20
+== TwelveProfile21 ==
+'Graffiti189LongestPath.SixTwelveSat.TwelveProfile21.impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS TwelveProfile21
+== TwelveProfile22 ==
+'Graffiti189LongestPath.SixTwelveSat.TwelveProfile22.impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS TwelveProfile22
+== TwelveProfile23 ==
+'Graffiti189LongestPath.SixTwelveSat.TwelveProfile23.impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS TwelveProfile23
+== TwelveProfile24 ==
+'Graffiti189LongestPath.SixTwelveSat.TwelveProfile24.impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS TwelveProfile24
+== TwelveProfile25 ==
+'Graffiti189LongestPath.SixTwelveSat.TwelveProfile25.impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS TwelveProfile25
+== TwelveProfile26 ==
+'Graffiti189LongestPath.SixTwelveSat.TwelveProfile26.impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS TwelveProfile26
+== TwelveProfile27 ==
+'Graffiti189LongestPath.SixTwelveSat.TwelveProfile27.impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS TwelveProfile27
+== TwelveProfile28 ==
+'Graffiti189LongestPath.SixTwelveSat.TwelveProfile28.impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS TwelveProfile28
+== TwelveProfile29 ==
+'Graffiti189LongestPath.SixTwelveSat.TwelveProfile29.impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS TwelveProfile29
+== TwelveProfile30 ==
+'Graffiti189LongestPath.SixTwelveSat.TwelveProfile30.impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS TwelveProfile30
+== TwelveProfile31 ==
+'Graffiti189LongestPath.SixTwelveSat.TwelveProfile31.impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS TwelveProfile31
+== TwelveProfile32 ==
+'Graffiti189LongestPath.SixTwelveSat.TwelveProfile32.impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS TwelveProfile32
+== TwelveProfile33 ==
+'Graffiti189LongestPath.SixTwelveSat.TwelveProfile33.impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS TwelveProfile33
+== TwelveProfile34 ==
+'Graffiti189LongestPath.SixTwelveSat.TwelveProfile34.impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS TwelveProfile34
+== TwelveProfile35 ==
+'Graffiti189LongestPath.SixTwelveSat.TwelveProfile35.impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS TwelveProfile35
+== TwelveProfile36 ==
+'Graffiti189LongestPath.SixTwelveSat.TwelveProfile36.impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS TwelveProfile36
+== TwelveProfile37 ==
+'Graffiti189LongestPath.SixTwelveSat.TwelveProfile37.impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS TwelveProfile37
+== TwelveProfile38 ==
+'Graffiti189LongestPath.SixTwelveSat.TwelveProfile38.impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS TwelveProfile38
+== TwelveProfile39 ==
+'Graffiti189LongestPath.SixTwelveSat.TwelveProfile39.impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS TwelveProfile39
+== TwelveProfile40 ==
+'Graffiti189LongestPath.SixTwelveSat.TwelveProfile40.impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS TwelveProfile40
+== TwelveProfile41 ==
+'Graffiti189LongestPath.SixTwelveSat.TwelveProfile41.impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS TwelveProfile41
+== TwelveProfile42 ==
+'Graffiti189LongestPath.SixTwelveSat.TwelveProfile42.impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS TwelveProfile42
+== TwelveProfile43 ==
+'Graffiti189LongestPath.SixTwelveSat.TwelveProfile43.impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS TwelveProfile43
+== TwelveProfile44 ==
+'Graffiti189LongestPath.SixTwelveSat.TwelveProfile44.impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS TwelveProfile44
+== TwelveProfile45 ==
+'Graffiti189LongestPath.SixTwelveSat.TwelveProfile45.impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS TwelveProfile45
+== TwelveProfile46 ==
+'Graffiti189LongestPath.SixTwelveSat.TwelveProfile46.impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS TwelveProfile46
+== TwelveProfile47 ==
+'Graffiti189LongestPath.SixTwelveSat.TwelveProfile47.impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS TwelveProfile47
+== TwelveProfile48 ==
+'Graffiti189LongestPath.SixTwelveSat.TwelveProfile48.impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS TwelveProfile48
+== TwelveProfile49 ==
+'Graffiti189LongestPath.SixTwelveSat.TwelveProfile49.impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS TwelveProfile49
+== TwelveProfile50 ==
+'Graffiti189LongestPath.SixTwelveSat.TwelveProfile50.impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS TwelveProfile50
+== TwelveProfile51 ==
+'Graffiti189LongestPath.SixTwelveSat.TwelveProfile51.impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS TwelveProfile51
+== TwelveProfile52 ==
+'Graffiti189LongestPath.SixTwelveSat.TwelveProfile52.impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS TwelveProfile52
+== SixTwelveCoarse189 ==
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.classified_six_twelve_shape' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixTwelveCoarse189
+== SixTwelveTable189 ==
+'Graffiti189LongestPath.SixTwelveSat.profile_matches' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.SixTwelveSat.each_profile_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS SixTwelveTable189
+== SixTwelveComplete189 ==
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.no_six_twelve_shores' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.traceable_at_six_distance_three_order_twenty' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixTwelveComplete189

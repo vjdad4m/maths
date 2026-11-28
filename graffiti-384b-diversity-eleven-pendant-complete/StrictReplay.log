@@ -1,0 +1,54 @@
+Checking DiversityElevenModularRup384b
+PASS DiversityElevenModularRup384b
+Checking DiversityElevenPendantRupFive384b
+'Graffiti384b.DiversityEleven.pendant_five_rup' depends on axioms: [propext]
+PASS DiversityElevenPendantRupFive384b
+Checking DiversityElevenFiveTagResidual384b
+'Graffiti384b.DiversityEleven.exact_pendant_four_tags' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.DiversityEleven.residual_eleven_ten_or_five_six_tags' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DiversityElevenFiveTagResidual384b
+Checking DiversityElevenPendantWires5384b
+PASS DiversityElevenPendantWires5384b
+Checking DiversityElevenPendantWireClauses5384b
+'Graffiti384b.DiversityEleven.PendantCircuit.K5.contradiction_of_semantic_roots' depends on axioms: [propext]
+PASS DiversityElevenPendantWireClauses5384b
+Checking DiversityElevenPendantThresholds5384b
+PASS DiversityElevenPendantThresholds5384b
+Checking DiversityElevenPendantSemanticRoots5384b
+'Graffiti384b.DiversityEleven.PendantCircuit.K5.have_triple_of_exact_counts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DiversityElevenPendantSemanticRoots5384b
+Checking DiversityElevenPendantCounterFive384b
+PASS DiversityElevenPendantCounterFive384b
+Checking DiversityElevenExactFiveSelector384b
+'Graffiti384b.DiversityEleven.exact_five_on_ordered_graph' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.DiversityEleven.exact_five_selector' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS DiversityElevenExactFiveSelector384b
+Checking DiversityElevenPendantRupSix384b
+'Graffiti384b.DiversityEleven.pendant_six_rup' depends on axioms: [propext]
+PASS DiversityElevenPendantRupSix384b
+Checking DiversityElevenPendantWires6384b
+PASS DiversityElevenPendantWires6384b
+Checking DiversityElevenPendantWireClauses6384b
+'Graffiti384b.DiversityEleven.PendantCircuit.K6.contradiction_of_semantic_roots' depends on axioms: [propext]
+PASS DiversityElevenPendantWireClauses6384b
+Checking DiversityElevenPendantThresholds6384b
+PASS DiversityElevenPendantThresholds6384b
+Checking DiversityElevenPendantSemanticRoots6384b
+'Graffiti384b.DiversityEleven.PendantCircuit.K6.have_triple_of_exact_counts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DiversityElevenPendantSemanticRoots6384b
+Checking DiversityElevenPendantCounterSix384b
+PASS DiversityElevenPendantCounterSix384b
+Checking DiversityElevenExactSixSelector384b
+'Graffiti384b.DiversityEleven.exact_six_on_ordered_graph' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.DiversityEleven.exact_six_selector' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS DiversityElevenExactSixSelector384b
+Checking DiversityElevenNoPendantResidual384b
+'Graffiti384b.DiversityEleven.exact_pendant_four_to_six_tags' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.DiversityEleven.residual_eleven_exactly_ten' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS DiversityElevenNoPendantResidual384b

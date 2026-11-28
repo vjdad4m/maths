@@ -15,6 +15,7 @@ build() {
   lean -j1 -DElab.async=false --root="$pkg" -DwarningAsError=true -o "$obj/$module.olean" "$pkg/$module.lean"
 }
 build "$base/graffiti-324" Proof324
+build "$base/autographforge-book-forts" ChordalBasis
 build "$base/autographforge-star" StarCone
 build "$base/autographforge-forcing-twin-bound" TwinForcing
 build "$base/autographforge-forcing-twin-bound" PageBlocks
@@ -23,7 +24,10 @@ build "$base/autographforge-residue-phases" PageCounts
 {
   build "$src" ChainDegrees
   build "$src" GraphResidue
+  build "$src" ChainHubs
+  build "$src" ChainClasses
+  build "$src" BookClasses
 } | tee "$obj/axioms.log"
-for thm in page_degree hub_degree page_degree_bag page_graph_residue fan_residue_of_hub_degrees book_residue_of_hub_degrees fan_forcing_excess book_forcing_excess; do
-  grep -Fxq "'TwinForcing.$thm' depends on axioms: [propext, Classical.choice, Quot.sound]" "$obj/axioms.log"
+for thm in page_degree hub_degree page_degree_bag page_graph_residue fan_residue_of_hub_degrees book_residue_of_hub_degrees fan_forcing_excess book_forcing_excess chain_hub_bag fan_chain_forcing_excess book_chain_forcing_excess graphResidue_eq_residue fan_chain_two_colorable chain_connected book_chain_chordal book_chain_k4_free book_gap_unbounded; do
+  grep -Eq "^'TwinForcing.$thm' depends on axioms: \[propext, (Classical.choice, )?Quot.sound\]$" "$obj/axioms.log"
 done

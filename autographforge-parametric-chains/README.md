@@ -1,16 +1,18 @@
-# Havel–Hakimi residue of hub–page graphs
+# Exact forcing and Havel–Hakimi residue for hub–page chains
 
-This is a Lean-checked bridge from [Havel–Hakimi degree-list calculations](../autographforge-residue-phases/) to the [hub–page graph construction and its exact two-forcing number](../autographforge-forcing-twin-bound/). It does not yet certify unbounded gaps inside a particular graph class.
+This package connects the [Havel–Hakimi degree-list calculations](../autographforge-residue-phases/) to the [hub–page construction and its exact two-forcing number](../autographforge-forcing-twin-bound/).
 
-Every block has a pair of hubs and m independent pages adjacent to both hubs. H is the arbitrary graph on the hubs. Lean proves that the graph's degree multiset consists of every hub degree in H shifted by m, together with one degree 2 for every page. Because the Havel–Hakimi residue is invariant under permutations, the graph residue can be computed directly from these data.
+Each block consists of two hubs and m independent pages, each adjacent to both hubs. Join the right hub of each block to the left hub of the next. In a book chain the two hubs in each block are adjacent; in a fan chain they are not.
 
-With j+3 blocks and 4j+9 pages per block, Lean proves the following precise conditional statements:
+Lean verifies the exact degree multiset for these explicit chains and the following formulas with j+3 blocks and 4j+9 pages per block:
 
-| Degrees of H | Two-forcing number minus residue |
+| Chain | Two-forcing number minus Havel–Hakimi residue |
 |---|---:|
-| Two zeros, all others ones | 2j² + 8j + 7 |
-| Two ones, all others twos | 2j² + 7j + 4 |
+| Fan | 2j² + 8j + 7 |
+| Book | 2j² + 7j + 4 |
 
-There is no graph-class condition in these statements. The separate verification that the intended chains realize the hub degree multisets and lie in the required graph classes is not part of this package.
+Both chains are connected. The fan chain has a proper two-coloring: color the hubs by block parity, and give the pages the opposite color. A uniform planar drawing of the fan is **not** certified in this package.
 
-**Replay:** use Lean 4.19.0 and a built Mathlib checkout at `c44e0c8ee63ca166450922a373c7409c5d26b00b`. Run `MATHLIB_DIR=/path/to/mathlib bash replay.sh`. The script builds the siblings and these modules into a fresh temporary directory and audits the named lemmas' axioms.
+The book chain is chordal and K₄-free. In the elimination order, each page has at most two remaining neighbors and they are adjacent. After removing the pages, the hubs form a path, so each hub has at most one remaining neighbor. This yields the fully checked theorem **`TwinForcing.book_gap_unbounded`** in [BookClasses.lean](BookClasses.lean): for every natural number M there is a connected chordal K₄-free graph whose two-forcing number exceeds its residue by more than M. This strengthens the finite [AutoGraphForge #676 counterexample](../autographforge-676/).
+
+**Replay:** use Lean 4.19.0 and a built Mathlib checkout at `c44e0c8ee63ca166450922a373c7409c5d26b00b`. Run `MATHLIB_DIR=/path/to/mathlib bash replay.sh`. The script builds all dependencies into a fresh temporary directory and audits the named theorems' axioms.

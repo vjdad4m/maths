@@ -1,0 +1,26 @@
+== FiveNinthsCombined189 ==
+'Graffiti189LongestPath.FiveNinthsReserve.individual_missed_port_shell_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.FiveNinthsOneNumeric.one_side_contradiction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.FiveNinthsMixedNumeric.mixed_contradiction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.SmallShoreNumeric.two_small_contradiction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.ThreeShoreMass.three_shore_shell_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.ThreeShoreNumeric.three_side_contradiction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.FiveNinthsShell.stronger_split_shell_three' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.FiveNinthsDeficit.traceable_of_five_ninths_gap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.FiveNinthsDeficit.traceable_of_five_ninths_connectivity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

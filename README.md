@@ -136,6 +136,7 @@
 | AutoGraphForge line 379 | Proved | [Lean](autographforge-379/AutoGraphForge379.lean) |
 | AutoGraphForge line 383 | Disproved upstream; unbounded gap proved in Lean | [Planar chordal family](autographforge-book-forts/README.md) |
 | AutoGraphForge line 464 | Disproved in Lean; unbounded gap even for bipartite planar graphs | [Proof](autographforge-464/) |
+| AutoGraphForge line 500 | Proved in Lean by cograph join decomposition | [Lean](autographforge-500/JoinOuter.lean) |
 | AutoGraphForge line 501 | Disproved | [Lean](autographforge-eulerian-chain/Chain.lean) · [Replay](autographforge-eulerian-chain/README.md) |
 | AutoGraphForge line 534 | Proved in Lean; exact inequality and equality conditions for joins | [autographforge-534/](autographforge-534/) |
 | AutoGraphForge line 567 | Disproved upstream; unbounded gap proved in Lean | [Planar chordal family](autographforge-book-forts/README.md) |

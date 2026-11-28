@@ -1,0 +1,8 @@
+Matched 20 independently rebuilt object digests in the worktree and extracted source package.
+'Graffiti384b.PairMix.core' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.PairMix.low_anchors' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.PairMix.Local.five_large' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.PairMix.Local.protected_patch' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Four29.five_contacts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Four29.five_contact_residual' depends on axioms: [propext, Classical.choice, Quot.sound]
+Both terminal objects match the strict replay byte for byte.

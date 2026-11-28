@@ -1,0 +1,56 @@
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release) 
+Mathlib c44e0c8ee63ca166450922a373c7409c5d26b00b 
+Replay directory /workspace/scratch/7efa613b1c05/graff384b-twoearmix29-astra/packed-run/graffiti-384b-five-contacts/.fivemix.4b7nro6m
+Matched 329 predecessor source and object hashes.
+Checking PairRows
+'Graffiti384b.PairMix.rows' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking PairLayout
+'Graffiti384b.PairMix.Layout.exterior_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.PairMix.Layout.side_score' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking PairCost
+'Graffiti384b.PairMix.Layout.pool_cost' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.PairMix.Layout.side_cost' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.PairMix.Layout.activation' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking PairTotal
+'Graffiti384b.PairMix.Layout.lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.PairMix.Layout.ear_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking PairSaving
+'Graffiti384b.PairMix.Layout.saving' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking LowPairAnchors
+'Graffiti384b.PairMix.core' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.PairMix.low_anchors' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking LocalTree
+'Graffiti384b.PairMix.Local.from_tree' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking FiveEmbed
+'Graffiti384b.PairMix.Local.counts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.PairMix.Local.labels_induced' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.PairMix.Local.five_labels' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking FiveFrontData
+'Graffiti384b.Four29.five_from_local' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking FiveSym
+'Graffiti384b.PairMix.Local.up_to_symmetry' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking Case0Pack0
+'Graffiti384b.PairMix.Local.tested0_0' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking Case0Pack1
+'Graffiti384b.PairMix.Local.tested0_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking Case0Pack2
+'Graffiti384b.PairMix.Local.tested0_2' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking Case0Pack3
+'Graffiti384b.PairMix.Local.tested0_3' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking Case0Pack4
+'Graffiti384b.PairMix.Local.tested0_4' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking Case0Pack5
+'Graffiti384b.PairMix.Local.tested0_5' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking Case0Pack6
+'Graffiti384b.PairMix.Local.tested0_6' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking Case0Pack7
+'Graffiti384b.PairMix.Local.tested0_7' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking Case0Cover
+'Graffiti384b.PairMix.Local.tested0' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking FiveFront
+'Graffiti384b.PairMix.Local.five_large' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.PairMix.Local.protected_patch' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Four29.five_contacts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Four29.five_contact_residual' depends on axioms: [propext, Classical.choice, Quot.sound]
+Verified 20 new modules and 30 standard-axiom reports.
+Verified the unrestricted low-anchor theorem, five-contact theorem and residual bounds.

@@ -1,0 +1,21 @@
+Checking AdjacentCutFiveOrderSeventeenArithmetic189 at 05:38:39
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.AdjProfile.compact_at_seventeen' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking AdjacentCutFiveTopSeventeen189 at 05:40:12
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.twins_of_actual_adjacent_two_shores_order_seventeen' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.traceable_of_actual_adjacent_two_shores_order_seventeen' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.order_le_sixteen_of_actual_adjacent_two_unequal_shores' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking ThresholdFiveOrderSeventeen189 at 05:40:19
+'Graffiti189LongestPath.order_le_sixteen_of_degree_five_counterexample' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.traceable_at_degree_five_of_order_seventeen' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,55 @@
+== SixSevenArithmetic189 ==
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.impossible_seven_eleven_counts' depends on axioms: [propext,
+ Quot.sound]
+PASS SixSevenArithmetic189
+== SixSevenCross189 ==
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.opposite_unseen_cross_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.unseen_dark_cross_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.both_seen_dark_cross_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixSevenCross189
+== SixSevenRoleBounds189 ==
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.role_card_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixSevenRoleBounds189
+== SixSevenBridge189 ==
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.little_disallowed_local_even' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.cut_port_range' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.role_ports_seen' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixSevenBridge189
+== SixSevenCosts189 ==
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.seven_eleven_port_cost_0' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.seven_eleven_port_cost_1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.seven_eleven_port_cost_2' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.seven_eleven_port_cost_3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixSevenCosts189
+== SixSevenClosed189 ==
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.no_seven_eleven_shores' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixSevenClosed189
+== SixDistanceThreeTwentyReduction189 ==
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.traceable_or_six_twelve_at_six_distance_three_order_twenty' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixDistanceThreeTwentyReduction189

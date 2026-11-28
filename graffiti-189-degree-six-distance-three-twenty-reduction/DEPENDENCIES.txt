@@ -1,0 +1,9 @@
+Lean 4.19.0 (6caaee842e94)
+Mathlib c44e0c8ee63ca166450922a373c7409c5d26b00b
+Use the compiled transitive dependencies of the following published packages:
+graffiti-189-degree-six-distance-three-nineteen
+graffiti-189-degree-six-distance-three-frontier
+9e4585d3bf83302fe6f5e8f7865bf94fb2d1133a883946baecf3ad54388e0f2c  SixElevenArithmetic189.olean
+b2b0a5ff86974d20780d8c16636223769649785c6dd058f0186d0701e8de7a3c  SixSevenGeometry189.olean
+c988ec131b19ac1c053e701c1fbb4f91f526d4cff2766b70422913bea6e2a28d  SixTwelveClosed189.olean
+01eddae133085c52b9108b296bbd407da15fd5b7d1e544f20f74b0b53954b75b  SixDistanceThreeNineteen189.olean

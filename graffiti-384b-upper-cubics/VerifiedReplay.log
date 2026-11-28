@@ -1,0 +1,18 @@
+Shore replay (temporary build directory)
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+Authenticated all 53 predecessor objects.
+'Graffiti384b.ShorePairs.pair_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.ShorePairs.pairs_insert' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.ShorePairs.degree_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.OddStars.ShoreCounts.sparse_pairs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.OddStars.ShoreCounts.at_least_two_active' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.OddStars.ShoreRanks.two_centers' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.OddStars.ShoreRanks.forbidden_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.OddStars.ShoreRanks.exactly_two_critical' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.OddStars.FixedCubics.fixed_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.CliquePivot33.shared' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.CliquePivot33.paired' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.CliquePivot33.cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.CliquePivot33.three_cubics' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.OddStars.UpperClique.no_five' depends on axioms: [propext, Classical.choice, Quot.sound]
+Verified 6 shore-stage objects and 14 standard-axiom reports.

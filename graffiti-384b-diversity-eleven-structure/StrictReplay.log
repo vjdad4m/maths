@@ -1,0 +1,14 @@
+Checking BookCut384b
+'Graffiti384b.DiversityEleven.pinned_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.DiversityEleven.book_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.DiversityEleven.exact_of_book' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS BookCut384b
+Checking DiversityElevenCore384b
+'Graffiti384b.DiversityEleven.triangle_supported_reduction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.DiversityEleven.ten_to_fifteen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.DiversityEleven.ear_profile' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS DiversityElevenCore384b
+Checking DiversityElevenProfile384b
+'Graffiti384b.DiversityEleven.split_profile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.DiversityEleven.exact_of_low_pin_block' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS DiversityElevenProfile384b

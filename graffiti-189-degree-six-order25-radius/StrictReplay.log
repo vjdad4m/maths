@@ -1,0 +1,20 @@
+Checking SixJointEqualityBase189
+'Graffiti189LongestPath.exact_cover_members' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS SixJointEqualityBase189
+Checking SixJointEquality189
+'Graffiti189LongestPath.radius_five_equality' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS SixJointEquality189
+Checking SixJointEqualityGeometry189
+'Graffiti189LongestPath.RadiusFiveEquality.dist_fifth_support_of_different_selection' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixJointEqualityGeometry189
+Checking SixJointRadiusFiveExcluded189
+'Graffiti189LongestPath.RadiusFiveEquality.two_low_of_fifth_nonempty' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.no_order25_radius_five_at_degree_six' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.eccentricity_le_four_at_order25_degree_six' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixJointRadiusFiveExcluded189

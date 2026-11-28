@@ -1,0 +1,23 @@
+== TwoThirdsDeficitAll189 ==
+'Graffiti189LongestPath.ShellDonorCharge.exists_shell_donors_with_extra_charges' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.SplitShellArithmetic.split_shell_numeric' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.SplitShellCharge.split_shell_three_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.ShoreSplit.partition_of_not_connected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.ShoreSplit.side_order_at_least_half' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.ExplicitShoreCycle.routes_of_explicit_root_deleted_cycle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.TwoThirdsDeficit.traceable_of_two_thirds_gap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.TwoThirdsDeficit.traceable_of_two_thirds_connectivity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

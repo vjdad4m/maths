@@ -1,0 +1,4 @@
+'Graffiti189LongestPath.traceable_at_actual_degree_at_most_five' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeAtMostFive189

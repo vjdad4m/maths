@@ -1,0 +1,24 @@
+== MarkedWingSat189 ==
+'Graffiti189LongestPath.MarkedWingSat.transfer' depends on axioms: [propext, Classical.choice, Quot.sound]
+== MarkedWing60Cert189 ==
+'Graffiti189LongestPath.MarkedWingSat.Core60.fixed' depends on axioms: [propext, Classical.choice, Quot.sound]
+== MarkedWing62Cert189 ==
+'Graffiti189LongestPath.MarkedWingSat.Core62.fixed' depends on axioms: [propext, Classical.choice, Quot.sound]
+== MarkedWing70Cert189 ==
+'Graffiti189LongestPath.MarkedWingSat.Core70.fixed' depends on axioms: [propext, Classical.choice, Quot.sound]
+== MarkedWing72Cert189 ==
+'Graffiti189LongestPath.MarkedWingSat.Core72.fixed' depends on axioms: [propext, Classical.choice, Quot.sound]
+== MarkedWing80Cert189 ==
+'Graffiti189LongestPath.MarkedWingSat.Core80.fixed' depends on axioms: [propext, Classical.choice, Quot.sound]
+== MarkedWing82Cert189 ==
+'Graffiti189LongestPath.MarkedWingSat.Core82.fixed' depends on axioms: [propext, Classical.choice, Quot.sound]
+== MarkedWingPath189 ==
+'Graffiti189LongestPath.MarkedWingPath.long_marked_path' depends on axioms: [propext, Classical.choice, Quot.sound]
+== DenseOwnerRoute189 ==
+'Graffiti189LongestPath.DenseOwnerRoute.route_seven' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.DenseOwnerRoute.route_eight' depends on axioms: [propext, Classical.choice, Quot.sound]
+== SixFourFrontier189 ==
+'Graffiti189LongestPath.SixFourFrontier.frontier_normal_form' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.SixFourFrontier.traceable_order_twenty_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

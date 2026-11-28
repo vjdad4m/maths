@@ -1,0 +1,22 @@
+Leaf replay (temporary build directory)
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+Authenticated 48 predecessor objects.
+'Graffiti384b.IsolateBasic.palette' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.IsolateBasic.domination' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.OddStars.LeafCritical.strict_side' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.OddStars.LeafCritical.active_contact_side' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.OddStars.LeafCritical.skeleton_degree_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.OddStars.LeafCritical.critical_cubic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.OddStars.LeafCritical.at_most_two_critical' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.OddStars.LeafCritical.at_most_four_active' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.OddStars.LeafCritical.at_most_four_exposed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.OddStars.PairAlternative.pair_alternative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.OddStars.PairExample.attachment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.OddStars.PairExample.scores' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.OddStars.PairExample.connected' depends on axioms: [propext, Quot.sound]
+'Graffiti384b.OddStars.PairExample.optimum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.OddStars.PairExample.original_sets' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.OddStars.PairExample.extended_sets' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.OddStars.PairExample.no_joint_optimum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.OddStars.PairExample.failed_restriction' depends on axioms: [propext, Quot.sound]
+Verified 5 leaf-stage modules and 18 standard-axiom reports.

@@ -1,0 +1,24 @@
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.AdjProfile.compact_fourteen_singleton' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'_private.AdjacentCutFiveFourteenSingletonPartial189.0.Graffiti189LongestPath.CrossSaturation.FiveAdjacent.compact_graph_fourteen_singleton_profile' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.traceable_of_adjacent_singleton_eleven_unique_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.unique_exclusive_ports_nonadjacent_of_three_both' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.nonadjacent_separator_of_common_other_unique_three_both' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.adjacent_singleton_terminal_count' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.adjacent_singleton_terminal_profile_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.frontier_of_adjacent_singleton_eleven_counterexample' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

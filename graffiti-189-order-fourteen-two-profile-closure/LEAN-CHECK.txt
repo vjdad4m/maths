@@ -1,0 +1,21 @@
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.terminal_route_through_one_dark_exception' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.choose_opposite_endpoints_away_from_pair' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.terminal_route_on_of_local_ore' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.terminal_route_on_via_one_exception' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.SingletonEC1Frame.traceable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.traceable_of_adjacent_singleton_eleven_equal_one_unique' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.narrowed_frontier_of_adjacent_singleton_eleven_counterexample' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

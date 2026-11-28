@@ -1,0 +1,5 @@
+AdjacentCutFiveFourteenDarkBridge189
+AdjacentCutFiveFourteenDarkLift189
+AdjacentCutFiveFourteenEC1Frame189
+AdjacentCutFiveFourteenEC1Exact189
+AdjacentCutFiveFourteenSingletonReduced189

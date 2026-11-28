@@ -1,0 +1,25 @@
+Checking DiversityElevenPendantBoard384b
+'Graffiti384b.DiversityEleven.exact_of_pendant_triple' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS DiversityElevenPendantBoard384b
+Checking DiversityElevenPendantGeometry384b
+'Graffiti384b.DiversityEleven.pendant_board_local' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS DiversityElevenPendantGeometry384b
+Checking DiversityElevenSixTriangleRange384b
+'Graffiti384b.DiversityEleven.six_pair_of_triangle_closed' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS DiversityElevenSixTriangleRange384b
+Checking DiversityElevenPendantSix384b
+'Graffiti384b.DiversityEleven.exact_of_pendant_six' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS DiversityElevenPendantSix384b
+Checking DiversityElevenPendantCubic384b
+'Graffiti384b.DiversityEleven.exact_of_pendant_board_degree_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DiversityElevenPendantCubic384b
+Checking DiversityElevenPendantDenseResidual384b
+'Graffiti384b.DiversityEleven.eleven_pendant_board_min_degree' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti384b.DiversityEleven.residual_eleven_ten_or_dense_pendant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DiversityElevenPendantDenseResidual384b

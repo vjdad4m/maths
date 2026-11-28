@@ -1,0 +1,15 @@
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.dark_block_seven_hamilton_connected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.dark_block_remove_low_hamilton_connected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.Singleton16.traceable_of_frame_common_min_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.Singleton16.common_min_two_of_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.Singleton16.traceable_of_normalized_singleton_at_most_two_balanced' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

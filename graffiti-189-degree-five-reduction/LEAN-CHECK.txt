@@ -1,0 +1,5 @@
+Check DegreeFiveReduction189 at 04:32:06
+'Graffiti189LongestPath.degree_five_counterexample_has_adjacent_cut' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveReduction189 at 04:34:39

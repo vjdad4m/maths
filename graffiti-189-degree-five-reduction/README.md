@@ -1,0 +1,7 @@
+# Graffiti.pc #189: reduction at degree threshold five
+
+Every counterexample at threshold five is 2-connected and has an adjacent separating pair. Here the threshold-five conditions are connectivity, at most six vertices at even distance from each vertex (including the vertex itself), and at most one vertex of degree below five. The final theorem `Graffiti189LongestPath.degree_five_counterexample_has_adjacent_cut` is in [DegreeFiveReduction189.lean](DegreeFiveReduction189.lean). This is not a proof for adjacent separators or for the full conjecture.
+
+The proof combines the [general articulation theorem](../graffiti-189-articulation-general/), the [nonadjacent two-vertex separator theorem](../graffiti-189-full-nonadjacent-cuts/), and the [3-connected threshold-five theorem](../graffiti-189-degree-five-three-connected/). The articulation theorem formalizes a result of Easwar and Johari.
+
+Replay with Lean 4.19.0 and Mathlib 4.19.0 after the three predecessor packages. Compile the included compatibility copy of `ArticulationClique189.lean` first and put its replacement object first on the import path. The only source change to that module is renaming `path_concat_new` and its local uses to `articulation_path_concat_new`, avoiding a duplicate declaration with CapEndpoint189. Then compile `DegreeFiveReduction189.lean` with warnings treated as errors. [Lean check](LEAN-CHECK.txt) reports only standard axioms.

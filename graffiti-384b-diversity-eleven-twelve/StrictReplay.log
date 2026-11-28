@@ -1,0 +1,89 @@
+Checking SixUntouchedKernel384b
+'Graffiti384b.SixUntouched.test_chunk' depends on axioms: [propext]
+PASS SixUntouchedKernel384b
+Checking SixUntouchedTransfer384b
+'Graffiti384b.SixUntouched.edge_encodeGraph' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.SixUntouched.deg_encodeGraph' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.SixUntouched.tri_encodeGraph' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS SixUntouchedTransfer384b
+Checking SixUntouchedTruth384b
+'Graffiti384b.SixUntouched.valid_encodeGraph_encodeZero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.SixUntouched.keep_of_solution' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS SixUntouchedTruth384b
+Checking SixUntouchedSort384b
+'Graffiti384b.SixUntouched.unsort_keep' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS SixUntouchedSort384b
+Checking SixUntouchedHost384b
+'Graffiti384b.DiversityEleven.exact_of_two_low_footprint_three' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixUntouchedHost384b
+Checking SixUntouchedPacked384b
+'Graffiti384b.SixUntouched.packed_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS SixUntouchedPacked384b
+Checking TwelveSingleLow384b
+'Graffiti384b.DiversityEleven.exact_twelve_single_low_edge' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS TwelveSingleLow384b
+Checking TwelveSelectorConditional384b
+'Graffiti384b.DiversityEleven.selector_of_packed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.DiversityEleven.exact_twelve_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.DiversityEleven.residual_eleven_at_most_eleven' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS TwelveSelectorConditional384b
+Checking SixUntouchedData00384b
+'Graffiti384b.SixUntouched.band_007' depends on axioms: [propext]
+PASS SixUntouchedData00384b
+Checking SixUntouchedData01384b
+'Graffiti384b.SixUntouched.band_015' depends on axioms: [propext]
+PASS SixUntouchedData01384b
+Checking SixUntouchedData02384b
+'Graffiti384b.SixUntouched.band_023' depends on axioms: [propext]
+PASS SixUntouchedData02384b
+Checking SixUntouchedData03384b
+'Graffiti384b.SixUntouched.band_031' depends on axioms: [propext]
+PASS SixUntouchedData03384b
+Checking SixUntouchedData04384b
+'Graffiti384b.SixUntouched.band_039' depends on axioms: [propext]
+PASS SixUntouchedData04384b
+Checking SixUntouchedData05384b
+'Graffiti384b.SixUntouched.band_047' depends on axioms: [propext]
+PASS SixUntouchedData05384b
+Checking SixUntouchedData06384b
+'Graffiti384b.SixUntouched.band_055' depends on axioms: [propext]
+PASS SixUntouchedData06384b
+Checking SixUntouchedData07384b
+'Graffiti384b.SixUntouched.band_063' depends on axioms: [propext]
+PASS SixUntouchedData07384b
+Checking SixUntouchedData08384b
+'Graffiti384b.SixUntouched.band_071' depends on axioms: [propext]
+PASS SixUntouchedData08384b
+Checking SixUntouchedData09384b
+'Graffiti384b.SixUntouched.band_079' depends on axioms: [propext]
+PASS SixUntouchedData09384b
+Checking SixUntouchedData10384b
+'Graffiti384b.SixUntouched.band_087' depends on axioms: [propext]
+PASS SixUntouchedData10384b
+Checking SixUntouchedData11384b
+'Graffiti384b.SixUntouched.band_095' depends on axioms: [propext]
+PASS SixUntouchedData11384b
+Checking SixUntouchedData12384b
+'Graffiti384b.SixUntouched.band_103' depends on axioms: [propext]
+PASS SixUntouchedData12384b
+Checking SixUntouchedData13384b
+'Graffiti384b.SixUntouched.band_111' depends on axioms: [propext]
+PASS SixUntouchedData13384b
+Checking SixUntouchedData14384b
+'Graffiti384b.SixUntouched.band_119' depends on axioms: [propext]
+PASS SixUntouchedData14384b
+Checking SixUntouchedData15384b
+'Graffiti384b.SixUntouched.band_127' depends on axioms: [propext]
+PASS SixUntouchedData15384b
+Checking SixUntouchedCover384b
+'Graffiti384b.SixUntouched.all_packed' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS SixUntouchedCover384b
+Checking DiversityElevenElevenResidual384b
+'Graffiti384b.DiversityEleven.finite_six_selector' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.DiversityEleven.exact_twelve_supported' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.DiversityEleven.residual_eleven_orders_ten_eleven' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DiversityElevenElevenResidual384b

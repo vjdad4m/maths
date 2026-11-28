@@ -15,6 +15,7 @@ Start with the structure of the new problem. The **check before reuse** column i
 | **Two-domination, cuts, repairing a sample** | [#384b discounted repairs](graffiti-384b-discounted-repairs/README.md): use a cut among deficient vertices to add fewer repairs than one per vertex. | Bound the size of the initial sample and its residual deficit separately. The repair lemma is general; the catalogue bound is not settled. |
 | **Degree sequences and Havel–Hakimi residue** | [#324](graffiti-324/Proof324.lean): formal residue computation and the elimination argument. | A degree-sequence inequality does not by itself supply the graph structure used by the main theorem. |
 | **Cubic graphs, perfect matchings, edge and clique covers** | [AutoGraphForge 1160](autographforge-1160/README.md): perfect-matching criterion on triangle-free positive-degree regular graphs. [Cubic odd-block witness](autographforge-cubic-odd-blocks/README.md): one hub attached to three odd lobes, with exact invariant values. [Two implication transfers](autographforge-cubic-odd-implications/). | The equivalence needs triangle-freeness. The witness is connected but has bridges; it cannot attack a bridgeless claim. Several catalogue rows are equivalent. |
+| **Cographs, trees, degree-sequence invariants** | [Cograph-tree star profile](autographforge-cograph-trees/): a proper join with no triangles or four-cycles is forced to be a star; seven invariants then count its leaves. | A cograph tree must be connected, acyclic, and have at least two vertices. A disconnected cograph forest need not obey the same formulas. |
 | **Burning, radius, and domination on paths or cycles** | [AutoGraphForge 1130](autographforge-1130/README.md): exact cycle calculations; [cycle transfers](autographforge-cycle-implications/README.md) show how to substitute shared values into different comparisons. | Check connectedness and optional-invariant conventions; distinguish an explicit new certificate from a witness already implicit upstream. |
 | **Zero or two-forcing on trees** | [Star witness](autographforge-star/StarCone.lean) · [star transfers](autographforge-star-implications/README.md): forcing values and a simple non-claw-free bipartite example. | A high-degree star cannot test a subcubic or claw-free claim. Check the precise forcing process. |
 | **Spectral radius and adjacency rank** | [Cazenave §7, 6(iv), rank half](cazenave-6iv-rank/): Lean proof and equality case. | Check which rank and index the new statement uses; do not conflate the rank half and the edge-count half. |
@@ -228,11 +229,28 @@ Start with the structure of the new problem. The **check before reuse** column i
 | AutoGraphForge line 1160 | Disproved in Lean by a 22-vertex cubic graph; exact perfect-matching criterion | [Proof](autographforge-1160/) |
 | AutoGraphForge line 1161 | Disproved in Lean by the 22-vertex cubic witness; equivalent to line 1160 | [Lean](autographforge-cubic-odd-blocks/Transfer.lean) |
 | AutoGraphForge line 1162 | Disproved in Lean by the 22-vertex cubic witness; equivalent to line 1160 | [Lean](autographforge-cubic-odd-blocks/Transfer.lean) |
+| AutoGraphForge line 1173 | Proved in Lean by the cograph-tree star profile | [Lean](autographforge-cograph-trees/Rows.lean) · [Replay](autographforge-cograph-trees/README.md) |
+| AutoGraphForge line 1178 | Proved in Lean by the cograph-tree star profile | [Lean](autographforge-cograph-trees/Rows.lean) · [Replay](autographforge-cograph-trees/README.md) |
+| AutoGraphForge line 1181 | Proved in Lean by the cograph-tree star profile | [Lean](autographforge-cograph-trees/Rows.lean) · [Replay](autographforge-cograph-trees/README.md) |
+| AutoGraphForge line 1212 | Proved in Lean by the cograph-tree star profile | [Lean](autographforge-cograph-trees/Rows.lean) · [Replay](autographforge-cograph-trees/README.md) |
+| AutoGraphForge line 1215 | Proved in Lean by the cograph-tree star profile | [Lean](autographforge-cograph-trees/Rows.lean) · [Replay](autographforge-cograph-trees/README.md) |
 | AutoGraphForge line 1221 | Proved (formalization of a known consequence) | [Lean](autographforge-373/AutoGraphForge373.lean) · [Prior formulas](https://doi.org/10.1090/surv/270) |
+| AutoGraphForge line 1227 | Proved in Lean by the cograph-tree star profile | [Lean](autographforge-cograph-trees/Rows.lean) · [Replay](autographforge-cograph-trees/README.md) |
+| AutoGraphForge line 1229 | Proved in Lean by the cograph-tree star profile | [Lean](autographforge-cograph-trees/Rows.lean) · [Replay](autographforge-cograph-trees/README.md) |
+| AutoGraphForge line 1257 | Proved in Lean by the cograph-tree star profile | [Lean](autographforge-cograph-trees/Rows.lean) · [Replay](autographforge-cograph-trees/README.md) |
+| AutoGraphForge line 1272 | Proved in Lean by the cograph-tree star profile | [Lean](autographforge-cograph-trees/Rows.lean) · [Replay](autographforge-cograph-trees/README.md) |
+| AutoGraphForge line 1314 | Proved in Lean by the cograph-tree star profile | [Lean](autographforge-cograph-trees/Rows.lean) · [Replay](autographforge-cograph-trees/README.md) |
+| AutoGraphForge line 1316 | Proved in Lean by the cograph-tree star profile | [Lean](autographforge-cograph-trees/Rows.lean) · [Replay](autographforge-cograph-trees/README.md) |
+| AutoGraphForge line 1415 | Proved in Lean by the cograph-tree star profile | [Lean](autographforge-cograph-trees/Rows.lean) · [Replay](autographforge-cograph-trees/README.md) |
+| AutoGraphForge line 1416 | Proved in Lean by the cograph-tree star profile | [Lean](autographforge-cograph-trees/Rows.lean) · [Replay](autographforge-cograph-trees/README.md) |
 | AutoGraphForge line 1531 | Proved in Lean (connected equality exactly three paths) | [Proof](autographforge-1531/README.md) |
 | AutoGraphForge line 1539 | Disproved | [Lean](autographforge-balanced-forcing/BalancedForcing.lean) |
 | AutoGraphForge line 1553 | Proved in Lean (sharp general degree-excess bound) | [Proof](autographforge-1553/README.md) |
 | AutoGraphForge line 1606 | Disproved in Lean by C43; upstream implicit witness also exists | [Proof](autographforge-1606/) |
+| AutoGraphForge line 1638 | Proved in Lean by the cograph-tree star profile | [Lean](autographforge-cograph-trees/Rows.lean) · [Replay](autographforge-cograph-trees/README.md) |
+| AutoGraphForge line 1640 | Proved in Lean by the cograph-tree star profile | [Lean](autographforge-cograph-trees/Rows.lean) · [Replay](autographforge-cograph-trees/README.md) |
+| AutoGraphForge line 1643 | Proved in Lean by the cograph-tree star profile | [Lean](autographforge-cograph-trees/Rows.lean) · [Replay](autographforge-cograph-trees/README.md) |
+| AutoGraphForge line 1644 | Proved in Lean by the cograph-tree star profile | [Lean](autographforge-cograph-trees/Rows.lean) · [Replay](autographforge-cograph-trees/README.md) |
 | AutoGraphForge line 1656 | Disproved in Lean by C43; upstream implicit witness also exists | [Proof](autographforge-1656/) |
 | AutoGraphForge line 1707 | Disproved in Lean; unbounded gap on connected claw-free graphs | [Proof](autographforge-1707/) |
 | AutoGraphForge line 1813 | Disproved in Lean by all cliques of order at least 37 | [Lean](autographforge-1813/CliqueHarmonic.lean) |

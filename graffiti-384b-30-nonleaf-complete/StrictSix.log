@@ -1,0 +1,22 @@
+Six-anchor replay /workspace/scratch/7efa613b1c05/graff384b-sixanchors30/.sixanchor30.yx71akw2
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+Mathlib c44e0c8ee63ca166450922a373c7409c5d26b00b
+Matched both frozen source archives, 350 source hashes and 350 predecessor objects.
+'Graffiti384b.EarMix.rows' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.EarMix.clean' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.EarMix.mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.EarMix.active_fiber' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.EarMix.Layout.exterior_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.EarMix.Layout.side_score' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.EarMix.Layout.outside_cost' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.EarMix.Layout.activation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.EarMix.Layout.anchor_cost' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.EarMix.Layout.lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.EarMix.Layout.ear_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.EarMix.Layout.saving' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.EarMix.core' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.EarMix.original_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.EarMix.numerical_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.EarMix.remaining_nonleaves' depends on axioms: [propext, Classical.choice, Quot.sound]
+Matched all 7 fresh object hashes.
+Verified 7 fresh modules and 16 standard-axiom reports.

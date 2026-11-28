@@ -1,0 +1,22 @@
+== SixThree17Shape189 ==
+'Graffiti189LongestPath.SixThreeSeventeen.high_pin_shape' depends on axioms: [propext, Classical.choice, Quot.sound]
+== SixThree17Saturation189 ==
+'Graffiti189LongestPath.SixThreeSeventeen.high_saturation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.SixThreeSeventeen.high_pin_no_start_chord' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+== SixThree17NoHigh189 ==
+'Graffiti189LongestPath.SixThreeSeventeen.all_omitted_low17' depends on axioms: [propext, Classical.choice, Quot.sound]
+== SixThree17LowFlanks189 ==
+'Graffiti189LongestPath.SixThreeSeventeen.saturated_flanks' depends on axioms: [propext, Classical.choice, Quot.sound]
+== SixThree17LowRotation189 ==
+'Graffiti189LongestPath.SixThreeSeventeen.no_chord_to_pin_start' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.SixThreeSeventeen.no_chord_to_pin_end' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+== SixThree17Final189 ==
+'Graffiti189LongestPath.SixThreeSeventeen.traceable_six_at_three_connectivity_order_seventeen' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,4 @@
+'Graffiti189LongestPath.order_eq_fourteen_of_degree_five_counterexample' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveOnlyFourteen189

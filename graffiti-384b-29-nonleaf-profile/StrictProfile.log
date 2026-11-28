@@ -1,0 +1,50 @@
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release) 
+Mathlib c44e0c8ee63ca166450922a373c7409c5d26b00b 
+Replay directory /workspace/scratch/7efa613b1c05/graff384b-freegap29-astra/extracted-run/graffiti-384b-29-nonleaf-profile/.profile-replay.xg5ag9t3
+Matched 367 predecessor objects to the source closure.
+Checking RootPairs
+'Graffiti384b.PrivatePatch.root_shape' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking EarSupport
+'Graffiti384b.PrivatePatch.shape_sets' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.PrivatePatch.link_region' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.PrivatePatch.ear_link' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking CliquePlug
+'Graffiti384b.FreeGap.clique_plug' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking FreeTriangle
+'Graffiti384b.FreeGap.free_triangle' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking WeakRootPatch
+'Graffiti384b.PrivatePatch.assemble' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking PrivateLinks
+'Graffiti384b.PrivatePatch.private_pairs' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking MajorContacts
+'Graffiti384b.PrivatePatch.major_contacts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.PrivatePatch.weak_region' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking TwoWeak
+'Graffiti384b.PrivatePatch.two_weak' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking PrivateFront
+'Graffiti384b.PrivatePatch.private_front' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.PrivatePatch.up_to_nine' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking TwoGaps
+'Graffiti384b.PrivatePatch.extend_one' depends on axioms: [propext, Quot.sound]
+'Graffiti384b.PrivatePatch.extend_both' depends on axioms: [propext, Quot.sound]
+'Graffiti384b.PrivatePatch.piece_two' depends on axioms: [propext, Quot.sound]
+'Graffiti384b.PrivatePatch.piece_three' depends on axioms: [propext, Quot.sound]
+'Graffiti384b.PrivatePatch.piece_four' depends on axioms: [propext, Quot.sound]
+Checking Carriers
+'Graffiti384b.PrivatePatch.carriers' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking PinBoard
+'Graffiti384b.PrivatePatch.Board.pin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.PrivatePatch.Board.no_cross' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.PrivatePatch.Board.no_common' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking SatelliteCount
+'Graffiti384b.PrivatePatch.satellite_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.PrivatePatch.satellite_collision' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking SatelliteBound
+'Graffiti384b.PrivatePatch.Board.unique_mate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.PrivatePatch.Board.score_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.PrivatePatch.Board.impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking CompleteFourRoots
+'Graffiti384b.PrivatePatch.exact_profile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.PrivatePatch.fifteen_omissions' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.PrivatePatch.twenty_nine_nonleaves' depends on axioms: [propext, Classical.choice, Quot.sound]
+Verified 15 new modules and 30 standard-axiom reports.

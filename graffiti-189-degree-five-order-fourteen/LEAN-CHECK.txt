@@ -1,0 +1,153 @@
+Checking AdjacentCutFiveFifteenSingletonArithmetic189 at 06:07:44
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.AdjProfile.compact_fifteen_singleton' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking AdjacentCutFiveFifteenSingletonProfiles189 at 06:07:58
+'_private.AdjacentCutFiveFifteenSingletonProfiles189.0.Graffiti189LongestPath.CrossSaturation.FiveAdjacent.compact_graph_singleton_fifteen_profile' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.alternate_cut_or_three_profiles_of_adjacent_singleton_twelve_shores' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.high_of_other_shore_singleton' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking AdjacentCutFiveFifteenSingletonDepth189 at 06:08:29
+'_private.AdjacentCutFiveFifteenSingletonDepth189.0.Graffiti189LongestPath.CrossSaturation.FiveAdjacent.balanced_odd_depth_le_three_of_empty_equal_even_one_left' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.right_even_depth_two_of_adjacent_singleton_twelve_profile' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking AdjacentCutFiveFifteenSingletonSeparator189 at 06:08:52
+'_private.AdjacentCutFiveFifteenSingletonSeparator189.0.Graffiti189LongestPath.CrossSaturation.FiveAdjacent.disconnected_remove_two_of_dark_exclusive_no_edges' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'_private.AdjacentCutFiveFifteenSingletonSeparator189.0.Graffiti189LongestPath.CrossSaturation.FiveAdjacent.nonedge_of_right_port_four_dark_neighbors' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking AdjacentCutFiveFifteenSingletonMixed189 at 06:10:13
+'_private.AdjacentCutFiveFifteenSingletonMixed189.0.Graffiti189LongestPath.CrossSaturation.FiveAdjacent.right_even_has_actual_b_port' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'_private.AdjacentCutFiveFifteenSingletonMixed189.0.Graffiti189LongestPath.CrossSaturation.FiveAdjacent.all_common_of_adjacent_singleton_profile_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'_private.AdjacentCutFiveFifteenSingletonMixed189.0.Graffiti189LongestPath.CrossSaturation.FiveAdjacent.separator_of_only_one_actual_b_at_mixed_profile' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking AdjacentCutFiveFifteenSingletonMixedCore189 at 06:11:36
+'_private.AdjacentCutFiveFifteenSingletonMixedCore189.0.Graffiti189LongestPath.CrossSaturation.FiveAdjacent.not_both_b_ports_adjacent_common' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'_private.AdjacentCutFiveFifteenSingletonMixedCore189.0.Graffiti189LongestPath.CrossSaturation.FiveAdjacent.b_port_selected_by_common_misses_b_even' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'_private.AdjacentCutFiveFifteenSingletonMixedCore189.0.Graffiti189LongestPath.CrossSaturation.FiveAdjacent.b_ports_no_edge_of_four_even_exhausted' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking AdjacentCutFiveFifteenSingletonMixedMap189 at 06:12:16
+'_private.AdjacentCutFiveFifteenSingletonMixedMap189.0.Graffiti189LongestPath.CrossSaturation.FiveAdjacent.impossibility_of_two_actual_b_at_mixed_profile' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.nonadjacent_separator_of_mixed_singleton_twelve_profile' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking AdjacentCutFiveFifteenSingletonResidual189 at 06:13:08
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.alternate_cut_or_balanced_of_adjacent_singleton_twelve_shores' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking AdjacentCutFiveFifteenSingletonBalancedBase189 at 06:14:07
+'_private.AdjacentCutFiveFifteenSingletonBalancedBase189.0.Graffiti189LongestPath.CrossSaturation.FiveAdjacent.commonFive_card_at_least_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'_private.AdjacentCutFiveFifteenSingletonBalancedBase189.0.Graffiti189LongestPath.CrossSaturation.FiveAdjacent.balanced_dark_odd_dist_three' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking AdjacentCutFiveFifteenSingletonBalancedRoute189 at 06:15:11
+'_private.AdjacentCutFiveFifteenSingletonBalancedRoute189.0.Graffiti189LongestPath.CrossSaturation.FiveAdjacent.local_degree_add_outside' depends on axioms: [propext,
+ Quot.sound]
+'_private.AdjacentCutFiveFifteenSingletonBalancedRoute189.0.Graffiti189LongestPath.CrossSaturation.FiveAdjacent.terminal_route_on_seven' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'_private.AdjacentCutFiveFifteenSingletonBalancedRoute189.0.Graffiti189LongestPath.CrossSaturation.FiveAdjacent.terminal_route_on_small_one_exception' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking AdjacentCutFiveFifteenSingletonBalancedData189 at 06:17:20
+'_private.AdjacentCutFiveFifteenSingletonBalancedData189.0.Graffiti189LongestPath.CrossSaturation.FiveAdjacent.bal_frame_exists' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.BalFrame.odd_dark_dist' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.BalFrame.exhaust' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking AdjacentCutFiveFifteenSingletonBalancedCommon189 at 06:17:28
+'_private.AdjacentCutFiveFifteenSingletonBalancedCommon189.0.Graffiti189LongestPath.CrossSaturation.FiveAdjacent.common_cannot_hit_both_exclusive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'_private.AdjacentCutFiveFifteenSingletonBalancedCommon189.0.Graffiti189LongestPath.CrossSaturation.FiveAdjacent.balanced_common_two_geometry' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking AdjacentCutFiveFifteenSingletonBalancedClique189 at 06:18:27
+'_private.AdjacentCutFiveFifteenSingletonBalancedClique189.0.Graffiti189LongestPath.CrossSaturation.FiveAdjacent.balanced_three_common_clique' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking AdjacentCutFiveFifteenSingletonBalancedSwap189 at 06:20:48
+'_private.AdjacentCutFiveFifteenSingletonBalancedSwap189.0.Graffiti189LongestPath.CrossSaturation.FiveAdjacent.BalFrame.swap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking AdjacentCutFiveFifteenSingletonBalancedOff189 at 06:22:35
+'_private.AdjacentCutFiveFifteenSingletonBalancedOff189.0.Graffiti189LongestPath.CrossSaturation.FiveAdjacent.v_no_eb_if_common_chooses_x' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'_private.AdjacentCutFiveFifteenSingletonBalancedOff189.0.Graffiti189LongestPath.CrossSaturation.FiveAdjacent.v_no_ea_if_both_common_choose_x' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking AdjacentCutFiveFifteenSingletonBalancedDark189 at 06:22:47
+'_private.AdjacentCutFiveFifteenSingletonBalancedDark189.0.Graffiti189LongestPath.CrossSaturation.FiveAdjacent.dark_core_one_outside_degree' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking AdjacentCutFiveFifteenSingletonBalancedGlue189 at 06:23:07
+'_private.AdjacentCutFiveFifteenSingletonBalancedGlue189.0.Graffiti189LongestPath.CrossSaturation.FiveAdjacent.glue_balanced_mid_and_tail' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking AdjacentCutFiveFifteenSingletonBalancedTwoRoute189 at 06:23:53
+'_private.AdjacentCutFiveFifteenSingletonBalancedTwoRoute189.0.Graffiti189LongestPath.CrossSaturation.FiveAdjacent.traceable_of_balanced_two_common_and_v_no_polar' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking AdjacentCutFiveFifteenSingletonBalancedTwo189 at 06:24:20
+'_private.AdjacentCutFiveFifteenSingletonBalancedTwo189.0.Graffiti189LongestPath.CrossSaturation.FiveAdjacent.traceable_balanced_exactly_two_common' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking AdjacentCutFiveFifteenSingletonBalancedThree189 at 06:24:41
+'_private.AdjacentCutFiveFifteenSingletonBalancedThree189.0.Graffiti189LongestPath.CrossSaturation.FiveAdjacent.terminal_route_on_six' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'_private.AdjacentCutFiveFifteenSingletonBalancedThree189.0.Graffiti189LongestPath.CrossSaturation.FiveAdjacent.balanced_three_common_alt_cut' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'_private.AdjacentCutFiveFifteenSingletonBalancedThree189.0.Graffiti189LongestPath.CrossSaturation.FiveAdjacent.balanced_exactly_three_common' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking AdjacentCutFiveFifteenSingletonComplete189 at 06:24:48
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.traceable_of_adjacent_singleton_twelve_shores' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking ThresholdFiveOrderFifteen189 at 06:25:19
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.traceable_of_actual_adjacent_two_shores_order_fifteen' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.order_le_fourteen_of_degree_five_counterexample' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.traceable_at_degree_five_of_order_ge_fifteen' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.terminal_route_through_one_dark_exception' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.choose_opposite_endpoints_away_from_pair' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

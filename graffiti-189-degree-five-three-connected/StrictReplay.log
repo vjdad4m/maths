@@ -1,0 +1,63 @@
+Check FiveThreeHookSmall189
+'Graffiti189LongestPath.FiveThreeHook.four_inside' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS FiveThreeHookSmall189
+Check FiveThreeHookRooms189
+'Graffiti189LongestPath.FiveThreeHook.ordered_three_hook_room' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS FiveThreeHookRooms189
+Check FiveStarRouting189
+'Graffiti189LongestPath.FiveThreeHook.StarRouteData.nonroot_start_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.FiveThreeHook.StarRouteData.isolate_to_wing_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS FiveStarRouting189
+Check FiveStarFork189
+'Graffiti189LongestPath.FiveThreeHook.StarRouteData.isolate_start_five' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS FiveStarFork189
+Check FiveStarScores189
+'Graffiti189LongestPath.FiveThreeHook.StarRouteData.edge_scores' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.FiveThreeHook.StarRouteData.fork_scores' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.FiveThreeHook.StarRouteData.edgeless_baseline_scores' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS FiveStarScores189
+Check FiveStarCut189
+'Graffiti189LongestPath.FiveThreeHook.StarCutData.high_isolate_universal' depends on axioms: [propext, Quot.sound]
+'Graffiti189LongestPath.FiveThreeHook.min_three_degree_of_small_deletion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS FiveStarCut189
+Check FiveHookReanchor189
+'Graffiti189LongestPath.FiveThreeHook.exact_three_nil_hook_reanchor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS FiveHookReanchor189
+Check FiveSingleStarHook189
+'Graffiti189LongestPath.FiveThreeHook.five_single_star_three_hook_impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS FiveSingleStarHook189
+Check FiveDoubleStarHook189
+'Graffiti189LongestPath.FiveThreeHook.five_double_star_three_hook_impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS FiveDoubleStarHook189
+Check FiveThreeHookDispatch189
+'Graffiti189LongestPath.FiveThreeHook.traceable_degree_five_three_connected_of_shell_three' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS FiveThreeHookDispatch189
+Check FiveThreeHookFinal189
+'Graffiti189LongestPath.FiveThreeHook.traceable_degree_five_three_connected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS FiveThreeHookFinal189

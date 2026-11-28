@@ -1,0 +1,11 @@
+== LowDegreeOrders189 ==
+'Graffiti189LongestPath.LowDegreeOrders.order_le_four_of_even_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.LowDegreeOrders.order_le_seven_of_even_three' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+== LowDegreeTraceability189 ==
+'Graffiti189LongestPath.LowDegreeOrders.traceable_of_actual_low_degree' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

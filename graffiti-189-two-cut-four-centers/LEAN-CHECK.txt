@@ -1,0 +1,6 @@
+'Graffiti189LongestPath.CrossSaturation.TwoCutOrder.order_le_four_mul_add_two_of_actual_two_cut' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.TwoCutOrder.order_le_twenty_six_at_six' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

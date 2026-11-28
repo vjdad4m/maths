@@ -1,0 +1,8 @@
+src/LockedPins189.lean: OK
+src/SingleStar189.lean: OK
+'Graffiti189LongestPath.LockedPins.no_start_pin_chord' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.LockedPins.no_end_pin_chord' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.SingleStar.singleton_star_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.SingleStar.tight_singleton_start_locked' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

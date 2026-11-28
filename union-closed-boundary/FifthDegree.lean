@@ -233,4 +233,32 @@ theorem phan_fifth_of_symmetric_complements [Fintype V] [Nonempty V]
   · simp [b,balance,count_present F k B b,count_absent]
 
 #print axioms phan_fifth_of_symmetric_complements
+
+/-- Any maximum core of size at least four supplies a single coordinate
+that works coefficient-by-coefficient in every window of size at most five. -/
+theorem fifth_of_large_core (C : Finset (Finset V)) (bot : ∅ ∈ C)
+    (K : V → Finset V) (core : ∀ k, IsCore C k (K k))
+    (k : V) (maxK : ∀ j, (K j).card ≤ (K k).card)
+    (large : 4 ≤ (K k).card) (T : Finset V) (small : T.card ≤ 5) :
+    (omits C k T).card ≤ (contains C k T).card :=
+  complement_injection bot K core k T maxK (Or.inl (by omega))
+
+#print axioms fifth_of_large_core
+
+/-- A maximum core of size at least three with a strict subcore also
+works in all five-element windows, including with arbitrary weights. -/
+theorem fifth_of_asymmetric_max_core (C : Finset (Finset V)) (bot : ∅ ∈ C)
+    (K : V → Finset V) (core : ∀ k, IsCore C k (K k))
+    (k : V) (maxK : ∀ j, (K j).card ≤ (K k).card)
+    (large : 3 ≤ (K k).card) (j : V) (jk : j ∈ K k) (strict : K j ≠ K k)
+    (T : Finset V) (small : T.card ≤ 5) :
+    (omits C k T).card ≤ (contains C k T).card := by
+  have sub := (core j).2.2 _ (core k).1 jk
+  have no : k ∉ K j := by
+    intro yes
+    exact strict (Subset.antisymm sub ((core k).2.2 _ (core j).1 yes))
+  exact complement_injection bot K core k T maxK
+    (Or.inr ⟨by omega,K j,(core j).1,⟨j,(core j).2.1⟩,sub,no⟩)
+
+#print axioms fifth_of_asymmetric_max_core
 end UnionClosedBoundary

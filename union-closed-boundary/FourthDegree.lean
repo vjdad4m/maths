@@ -21,23 +21,22 @@ theorem core_exists {C : Finset (Finset V)} (cl : InterClosed C)
   rw [← eq_of_subset_of_card_le inter_subset_left (sm _ hI)]
   exact inter_subset_right
 
-private theorem complement_injection
+theorem complement_injection
     {C : Finset (Finset V)} (bot : ∅ ∈ C) (K : V → Finset V)
     (core : ∀ k, IsCore C k (K k)) (k : V) (T : Finset V)
-    (ub : T.card ≤ 4) (maxK : ∀ j, (K j).card ≤ (K k).card)
-    (two : 2 ≤ (K k).card)
-    (aux : 3 ≤ (K k).card ∨ ∃ l ∈ K k, l ≠ k ∧ {l} ∈ C) :
+    (maxK : ∀ j, (K j).card ≤ (K k).card)
+    (aux : T.card ≤ (K k).card + 1 ∨
+      (T.card ≤ (K k).card + 2 ∧ ∃ L ∈ C, L.Nonempty ∧ L ⊆ K k ∧ k ∉ L)) :
     (omits C k T).card ≤ (contains C k T).card := by
   classical
   let A := K k
-  have htwo : 2 ≤ A.card := two
   let extra := fun S : Finset V => S \ A
   have extS (S : Finset V) (hS : S ∈ omits C k T) : A ⊆ S :=
     (core k).2.2 S (mem_filter.mp hS).1 (mem_filter.mp hS).2.2
   have bound (S : Finset V) (hS : S ∈ omits C k T) :
-      (extra S).card + A.card ≤ 4 := by
+      (extra S).card + A.card ≤ T.card := by
     rw [card_sdiff_add_card_eq_card (extS S hS)]
-    exact (card_le_card (mem_filter.mp hS).2.1).trans ub
+    exact card_le_card (mem_filter.mp hS).2.1
   have recover (S : Finset V) (hS : S ∈ omits C k T) : A ∪ extra S = S :=
     union_sdiff_of_subset (extS S hS)
   have good (S : Finset V) (hS : S ∈ omits C k T) (j : V) (hj : j ∈ extra S) :
@@ -53,8 +52,8 @@ private theorem complement_injection
   have elmem (S : Finset V) (h : (extra S).Nonempty) : el S ∈ extra S := by
     simp only [el,dif_pos h]
     exact h.choose_spec
-  rcases aux with large|⟨l,lA,lk,lC⟩
-  · have hlarge : 3 ≤ A.card := large
+  rcases aux with large|⟨ub,L,lC,ln,lA,lk⟩
+  · have hlarge : T.card ≤ A.card + 1 := large
     apply card_le_card_of_injOn (fun S => if (extra S).Nonempty then K (el S) else ∅)
     · intro S hS
       split
@@ -82,24 +81,25 @@ private theorem complement_injection
       · simp only [if_neg h,if_pos h'] at he
         exact (not_mem_empty _ (he.symm ▸ (core (el U)).2.1)).elim
       · rw [← recover S hS,← recover U hU,not_nonempty_iff_eq_empty.mp h,not_nonempty_iff_eq_empty.mp h']
-  · have aux2 (S : Finset V) (hS : S ∈ omits C k T) : (extra S).card ≤ 2 := by
+  · have ubA : T.card ≤ A.card + 2 := ub
+    have aux2 (S : Finset V) (hS : S ∈ omits C k T) : (extra S).card ≤ 2 := by
       have b := bound S hS
       omega
     let f := fun S : Finset V =>
-      if (extra S).card = 2 then ({l} : Finset V)
+      if (extra S).card = 2 then L
       else if (extra S).Nonempty then K (el S) else ∅
     apply card_le_card_of_injOn f
     · intro S hS
       dsimp only [f]
       split
-      · exact mem_filter.mpr ⟨lC,singleton_subset_iff.mpr ((mem_filter.mp hS).2.1 (extS S hS lA)),by simpa using lk.symm⟩
+      · exact mem_filter.mpr ⟨lC,lA.trans ((extS S hS).trans (mem_filter.mp hS).2.1),lk⟩
       · split
         · rename_i h
           exact mem_filter.mpr ⟨(core _).1,(good S hS _ (elmem S h)).1,(good S hS _ (elmem S h)).2⟩
         · exact mem_filter.mpr ⟨bot,empty_subset _,not_mem_empty _⟩
     · intro S hS U hU eq
       have tag (P : Finset V) (hP : P ∈ omits C k T) :
-          (extra P).card = 2 ↔ f P = {l} := by
+          (extra P).card = 2 ↔ f P = L := by
         dsimp only [f]
         split
         · simp_all
@@ -110,8 +110,8 @@ private theorem complement_injection
             intro e
             have hp := (core (el P)).2.1
             rw [e] at hp
-            exact (mem_sdiff.mp (elmem P ne)).2 (mem_singleton.mp hp ▸ lA)
-          · exact fun e => not_mem_empty l (e.symm ▸ mem_singleton_self l)
+            exact (mem_sdiff.mp (elmem P ne)).2 (lA hp)
+          · exact fun e => not_mem_empty ln.choose (e.symm ▸ ln.choose_spec)
       by_cases h : (extra S).card = 2
       · have h' := (tag U hU).mpr (eq ▸ (tag S hS).mp h)
         have full (P : Finset V) (hP : P ∈ omits C k T) (h2 : (extra P).card = 2) : P = T := by
@@ -290,8 +290,8 @@ theorem weighted_fourth [Fintype V] [Nonempty V] (C : Finset (Finset V))
     obtain ⟨k,_,maxK⟩ := (univ : Finset V).exists_max_image (fun k => (K k).card) univ_nonempty
     by_cases large : 3 ≤ (K k).card
     · exact ⟨k,point k fun T ht =>
-        complement_injection bot K core k T (small T ht) (fun j => maxK j (mem_univ _))
-          (by omega) (Or.inl large)⟩
+        complement_injection bot K core k T (fun j => maxK j (mem_univ _))
+          (Or.inl (by have := small T ht; omega))⟩
     have smallK (j : V) : (K j).card ≤ 2 := by
       have := maxK j (mem_univ _)
       omega
@@ -301,8 +301,9 @@ theorem weighted_fourth [Fintype V] [Nonempty V] (C : Finset (Finset V))
         have sub : ({j,i} : Finset V) ⊆ K i := by simp [insert_subset_iff,hj,(core i).2.1]
         simpa [ne] using card_le_card sub
       exact ⟨i,point i fun T ht =>
-        complement_injection bot K core i T (small T ht) (fun a => (smallK a).trans two)
-          two (Or.inr ⟨j,hj,ne,hjC⟩)⟩
+        complement_injection bot K core i T (fun a => (smallK a).trans two)
+          (Or.inr ⟨by have := small T ht; omega,{j},hjC,singleton_nonempty _,
+            singleton_subset_iff.mpr hj,by simpa using ne.symm⟩)⟩
     have symm (i j : V) (hj : j ∈ K i) : K j = K i := by
       by_cases e : j = i
       · subst j; rfl

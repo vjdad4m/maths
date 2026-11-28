@@ -1,0 +1,13 @@
+== SixThreeOrder189 ==
+'Graffiti189LongestPath.SixThreeSixteen.all_omitted_low' depends on axioms: [propext, Classical.choice, Quot.sound]
+== SixThreeFlanks189 ==
+'Graffiti189LongestPath.SixThreeSixteen.saturated_flanks' depends on axioms: [propext, Classical.choice, Quot.sound]
+== SixThreeRotation189 ==
+'Graffiti189LongestPath.SixThreeSixteen.no_chord_to_pin_start' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.SixThreeSixteen.no_chord_to_pin_end' depends on axioms: [propext, Classical.choice, Quot.sound]
+== SixThreeFinal189 ==
+'Graffiti189LongestPath.SixThreeSixteen.traceable_six_at_three_connectivity_order_sixteen' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

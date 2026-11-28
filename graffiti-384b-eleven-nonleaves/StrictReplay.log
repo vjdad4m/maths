@@ -1,0 +1,283 @@
+All 232 numerical shape/capsule objects located and nonempty.
+Final strict top-level checker imports and uses all 46 shape theorems.
+'Graffiti384b.EffectiveSearch.Q11.q11Shape13_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q11Shape13
+'Graffiti384b.EffectiveSearch.Q11.q11Shape12_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q11Shape12
+'Graffiti384b.EffectiveSearch.Q11.q11Shape14_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q11Shape14
+'Graffiti384b.EffectiveSearch.Q11.q11Shape18_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q11Shape18
+'Graffiti384b.EffectiveSearch.Q11.q11Shape39_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q11Shape39
+'Graffiti384b.EffectiveSearch.Q11.q11Shape40_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q11Shape40
+'Graffiti384b.EffectiveSearch.Q11.q11Shape41_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q11Shape41
+'Graffiti384b.EffectiveSearch.Q11.q11Shape42_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q11Shape42
+'Graffiti384b.EffectiveSearch.Q11.q11Shape43_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q11Shape43
+'Graffiti384b.EffectiveSearch.Q11.q11Shape44_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q11Shape44
+'Graffiti384b.EffectiveSearch.Q11.q11Shape45_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q11Shape45
+PASS Q11Shape16Part0
+PASS Q11Shape16Part1
+PASS Q11Shape16Part2
+PASS Q11Shape16Part3
+PASS Q11Shape16Part4
+PASS Q11Shape16Part5
+PASS Q11Shape16Part6
+PASS Q11Shape16Part7
+PASS Q11Shape16Part8
+PASS Q11Shape16Part9
+PASS Q11Shape16Part10
+PASS Q11Shape16Part11
+PASS Q11Shape16Part12
+PASS Q11Shape16Part13
+PASS Q11Shape16Part14
+PASS Q11Shape16Part15
+PASS Q11Shape16Part16
+PASS Q11Shape16Part17
+'Graffiti384b.EffectiveSearch.Q11.q11Shape16_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q11Shape16
+PASS Q11Shape22Part0
+PASS Q11Shape22Part1
+PASS Q11Shape22Part2
+PASS Q11Shape22Part3
+PASS Q11Shape22Part4
+PASS Q11Shape22Part5
+PASS Q11Shape22Part6
+PASS Q11Shape22Part7
+PASS Q11Shape22Part8
+PASS Q11Shape22Part9
+PASS Q11Shape22Part10
+PASS Q11Shape22Part11
+'Graffiti384b.EffectiveSearch.Q11.q11Shape22_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q11Shape22
+PASS Q11Shape23Part0
+PASS Q11Shape23Part1
+PASS Q11Shape23Part2
+PASS Q11Shape23Part3
+PASS Q11Shape23Part4
+PASS Q11Shape23Part5
+PASS Q11Shape23Part6
+PASS Q11Shape23Part7
+PASS Q11Shape23Part8
+PASS Q11Shape23Part9
+'Graffiti384b.EffectiveSearch.Q11.q11Shape23_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q11Shape23
+PASS Q11Shape29Part0
+PASS Q11Shape29Part1
+PASS Q11Shape29Part2
+PASS Q11Shape29Part3
+PASS Q11Shape29Part4
+PASS Q11Shape29Part5
+PASS Q11Shape29Part6
+PASS Q11Shape29Part7
+'Graffiti384b.EffectiveSearch.Q11.q11Shape29_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q11Shape29
+PASS Q11Shape0Part0
+PASS Q11Shape0Part1
+PASS Q11Shape0Part2
+PASS Q11Shape0Part3
+PASS Q11Shape0Part4
+PASS Q11Shape0Part5
+PASS Q11Shape0Part6
+'Graffiti384b.EffectiveSearch.Q11.q11Shape0_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q11Shape0
+PASS Q11Shape9Part0
+PASS Q11Shape9Part1
+PASS Q11Shape9Part2
+PASS Q11Shape9Part3
+PASS Q11Shape9Part4
+PASS Q11Shape9Part5
+'Graffiti384b.EffectiveSearch.Q11.q11Shape9_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q11Shape9
+PASS Q11Shape2Part0
+PASS Q11Shape2Part1
+PASS Q11Shape2Part2
+PASS Q11Shape2Part3
+PASS Q11Shape2Part4
+'Graffiti384b.EffectiveSearch.Q11.q11Shape2_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q11Shape2
+PASS Q11Shape10Part0
+PASS Q11Shape10Part1
+PASS Q11Shape10Part2
+PASS Q11Shape10Part3
+PASS Q11Shape10Part4
+'Graffiti384b.EffectiveSearch.Q11.q11Shape10_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q11Shape10
+PASS Q11Shape20Part0
+PASS Q11Shape20Part1
+PASS Q11Shape20Part2
+PASS Q11Shape20Part3
+'Graffiti384b.EffectiveSearch.Q11.q11Shape20_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q11Shape20
+PASS Q11Shape36Part0
+PASS Q11Shape36Part1
+PASS Q11Shape36Part2
+'Graffiti384b.EffectiveSearch.Q11.q11Shape36_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q11Shape36
+PASS Q11Shape30Part0
+PASS Q11Shape30Part1
+PASS Q11Shape30Part2
+'Graffiti384b.EffectiveSearch.Q11.q11Shape30_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q11Shape30
+PASS Q11Shape34Part0
+PASS Q11Shape34Part1
+'Graffiti384b.EffectiveSearch.Q11.q11Shape34_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q11Shape34
+PASS Q11Shape7Part0
+PASS Q11Shape7Part1
+'Graffiti384b.EffectiveSearch.Q11.q11Shape7_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q11Shape7
+PASS Q11Shape27Part0
+'Graffiti384b.EffectiveSearch.Q11.q11Shape27_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q11Shape27
+PASS Q11Shape8Part0
+'Graffiti384b.EffectiveSearch.Q11.q11Shape8_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q11Shape8
+PASS Q11Shape35Part0
+'Graffiti384b.EffectiveSearch.Q11.q11Shape35_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q11Shape35
+PASS Q11Shape26Part0
+PASS Q11Shape26Part1
+PASS Q11Shape26Part2
+PASS Q11Shape26Part3
+PASS Q11Shape26Part4
+PASS Q11Shape26Part5
+PASS Q11Shape26Part6
+PASS Q11Shape26Part7
+'Graffiti384b.EffectiveSearch.Q11.q11Shape26_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q11Shape26
+PASS Q11Shape24Part0
+PASS Q11Shape24Part1
+PASS Q11Shape24Part2
+PASS Q11Shape24Part3
+PASS Q11Shape24Part4
+PASS Q11Shape24Part5
+PASS Q11Shape24Part6
+PASS Q11Shape24Part7
+PASS Q11Shape24Part8
+PASS Q11Shape24Part9
+PASS Q11Shape24Part10
+PASS Q11Shape24Part11
+PASS Q11Shape24Part12
+PASS Q11Shape24Part13
+PASS Q11Shape24Part14
+'Graffiti384b.EffectiveSearch.Q11.q11Shape24_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q11Shape24
+PASS Q11Shape25Part0
+PASS Q11Shape25Part1
+PASS Q11Shape25Part2
+PASS Q11Shape25Part3
+PASS Q11Shape25Part4
+PASS Q11Shape25Part5
+PASS Q11Shape25Part6
+PASS Q11Shape25Part7
+PASS Q11Shape25Part8
+PASS Q11Shape25Part9
+PASS Q11Shape25Part10
+PASS Q11Shape25Part11
+PASS Q11Shape25Part12
+'Graffiti384b.EffectiveSearch.Q11.q11Shape25_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q11Shape25
+PASS Q11Shape31Part0
+PASS Q11Shape31Part1
+PASS Q11Shape31Part2
+PASS Q11Shape31Part3
+PASS Q11Shape31Part4
+PASS Q11Shape31Part5
+PASS Q11Shape31Part6
+PASS Q11Shape31Part7
+'Graffiti384b.EffectiveSearch.Q11.q11Shape31_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q11Shape31
+PASS Q11Shape4Part0
+PASS Q11Shape4Part1
+PASS Q11Shape4Part2
+PASS Q11Shape4Part3
+PASS Q11Shape4Part4
+PASS Q11Shape4Part5
+PASS Q11Shape4Part6
+PASS Q11Shape4Part7
+'Graffiti384b.EffectiveSearch.Q11.q11Shape4_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q11Shape4
+PASS Q11Shape5Part0
+PASS Q11Shape5Part1
+PASS Q11Shape5Part2
+PASS Q11Shape5Part3
+PASS Q11Shape5Part4
+PASS Q11Shape5Part5
+PASS Q11Shape5Part6
+'Graffiti384b.EffectiveSearch.Q11.q11Shape5_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q11Shape5
+PASS Q11Shape1Part0
+PASS Q11Shape1Part1
+PASS Q11Shape1Part2
+PASS Q11Shape1Part3
+PASS Q11Shape1Part4
+PASS Q11Shape1Part5
+'Graffiti384b.EffectiveSearch.Q11.q11Shape1_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q11Shape1
+PASS Q11Shape3Part0
+PASS Q11Shape3Part1
+PASS Q11Shape3Part2
+PASS Q11Shape3Part3
+'Graffiti384b.EffectiveSearch.Q11.q11Shape3_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q11Shape3
+PASS Q11Shape6Part0
+PASS Q11Shape6Part1
+PASS Q11Shape6Part2
+PASS Q11Shape6Part3
+PASS Q11Shape6Part4
+'Graffiti384b.EffectiveSearch.Q11.q11Shape6_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q11Shape6
+PASS Q11Shape28Part0
+PASS Q11Shape28Part1
+PASS Q11Shape28Part2
+'Graffiti384b.EffectiveSearch.Q11.q11Shape28_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q11Shape28
+PASS Q11Shape33Part0
+PASS Q11Shape33Part1
+PASS Q11Shape33Part2
+'Graffiti384b.EffectiveSearch.Q11.q11Shape33_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q11Shape33
+PASS Q11Shape19Part0
+PASS Q11Shape19Part1
+'Graffiti384b.EffectiveSearch.Q11.q11Shape19_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q11Shape19
+PASS Q11Shape32Part0
+PASS Q11Shape32Part1
+'Graffiti384b.EffectiveSearch.Q11.q11Shape32_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q11Shape32
+PASS Q11Shape37Part0
+'Graffiti384b.EffectiveSearch.Q11.q11Shape37_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q11Shape37
+PASS Q11Shape15Part0
+'Graffiti384b.EffectiveSearch.Q11.q11Shape15_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q11Shape15
+PASS Q11Shape17Part0
+'Graffiti384b.EffectiveSearch.Q11.q11Shape17_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q11Shape17
+PASS Q11Shape11Part0
+'Graffiti384b.EffectiveSearch.Q11.q11Shape11_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q11Shape11
+PASS Q11Shape38Part0
+'Graffiti384b.EffectiveSearch.Q11.q11Shape38_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q11Shape38
+PASS Q11Shape21Part0
+PASS Q11Shape21Part1
+PASS Q11Shape21Part2
+PASS Q11Shape21Part3
+PASS Q11Shape21Part4
+PASS Q11Shape21Part5
+PASS Q11Shape21Part6
+PASS Q11Shape21Part7
+PASS Q11Shape21Part8
+'Graffiti384b.EffectiveSearch.Q11.q11Shape21_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q11Shape21
+'Graffiti384b.EffectiveSearch.Q11.all_shapes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.EffectiveSearch.Q11.exact_of_nine_types' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q11Exact384b

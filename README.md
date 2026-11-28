@@ -255,4 +255,4 @@
 
 | Problem | Status | Result |
 | --- | --- | --- |
-| Erdős Problem #324 | Open in general | [Lean-checked even-quartic collision families](erdos-324-even-quartic-collisions/) |
+| Erdős Problem #324 | Open in general | [Lean-checked even-quartic collision families](erdos-324-even-quartic-collisions/) · [extension to 256 base coefficients and square multiples](erdos-324-even-quartic-collisions-256/) |

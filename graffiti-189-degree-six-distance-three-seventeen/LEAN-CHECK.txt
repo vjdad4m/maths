@@ -1,0 +1,6 @@
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.traceable_at_two_small_shores_distance_three' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.traceable_at_six_distance_three_order_seventeen' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -91,7 +91,7 @@ def present (F : Finset (Finset V)) (k : V) (B : Finset V) :=
 def absent (F : Finset (Finset V)) (k : V) (B : Finset V) :=
   F.filter (fun A => B ⊆ A ∧ k ∉ A)
 
-private theorem count_present (F : Finset (Finset V)) (k : V) (B : Finset V)
+theorem count_present (F : Finset (Finset V)) (k : V) (B : Finset V)
     (h : k ∉ B) :
     (contains (F.image compl) k Bᶜ).card = (present F k B).card := by
   have e : contains (F.image compl) k Bᶜ = (present F k B).image compl := by
@@ -104,7 +104,7 @@ private theorem count_present (F : Finset (Finset V)) (k : V) (B : Finset V)
       exact ⟨⟨A,ha,rfl⟩,compl_subset_compl.mpr sub,by simpa using hk⟩
   rw [e,Finset.card_image_of_injective _ compl_injective]
 
-private theorem count_absent (F : Finset (Finset V)) (k : V) (B : Finset V) :
+theorem count_absent (F : Finset (Finset V)) (k : V) (B : Finset V) :
     (omits (F.image compl) k Bᶜ).card = (absent F k B).card := by
   have e : omits (F.image compl) k Bᶜ = (absent F k B).image compl := by
     ext S

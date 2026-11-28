@@ -1,0 +1,48 @@
+== SixThree19OneHole189 ==
+'Graffiti189LongestPath.SixThreeNineteen.two_pins_endpoint_routes' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.SixThreeNineteen.right_candidate_sees_port' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+== SixThree19Thirteen189 ==
+'Graffiti189LongestPath.SixThreeNineteen.not_length_le_thirteen_of_three_double_active' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+== SixThree19Shape189 ==
+'Graffiti189LongestPath.SixThreeNineteen.high_pin_shape_long' depends on axioms: [propext, Classical.choice, Quot.sound]
+== SixThree19Saturation189 ==
+'Graffiti189LongestPath.SixThreeNineteen.high_pin_no_end_chord' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.SixThreeNineteen.high_saturation_long' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.SixThreeNineteen.high_pin_no_start_chord' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+== SixThree19Slots189 ==
+'Graffiti189LongestPath.SixThreeNineteen.saturated_mark_slots' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+== SixThree19NoHigh189 ==
+'Graffiti189LongestPath.SixThreeNineteen.all_omitted_low_long' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+== SixThree19LowFlanks189 ==
+'Graffiti189LongestPath.SixThreeNineteen.saturated_flanks' depends on axioms: [propext, Classical.choice, Quot.sound]
+== SixThree19LowRotation189 ==
+'Graffiti189LongestPath.SixThreeNineteen.no_chord_to_pin_start' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.SixThreeNineteen.no_chord_to_pin_end' depends on axioms: [propext, Classical.choice, Quot.sound]
+== SixThree19ExtremeRotation189 ==
+'Graffiti189LongestPath.SixThreeNineteen.rotate_start_both_extreme_indices' depends on axioms: [propext, Quot.sound]
+== SixThree19Extreme189 ==
+'Graffiti189LongestPath.SixThreeNineteen.nonspanning_long_impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+== SixThree19Final189 ==
+'Graffiti189LongestPath.SixThreeNineteen.traceable_six_at_three_connectivity_order_nineteen' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

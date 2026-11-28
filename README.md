@@ -262,4 +262,4 @@
 
 | Problem | Status | Result |
 | --- | --- | --- |
-| Bad Science Matrices, dimension 6 | Matching upper bound in writing; finite arithmetic Lean-checked | [Proof note and Lean certificate](steinerberger-bad-science-six/) |
+| Bad Science Matrices, dimension 6 | Exact optimum proved in Lean | [End-to-end Lean proof](steinerberger-bad-science-six-complete/) · [Written proof](steinerberger-bad-science-six/) |

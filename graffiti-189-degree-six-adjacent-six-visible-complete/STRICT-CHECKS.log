@@ -1,0 +1,141 @@
+Each of the following is the successful strict compiler invocation for the canonical source.
+Modules replayed in the listed dependency order across successive local stages.
+
+== SixSingletonQ2Reduction189 ==
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.adjacent_six_counterexample_exact_two_balance_shape' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixSingletonQ2Reduction189
+
+== SixSingletonQ2Data189 ==
+PASS SixSingletonQ2Data189
+
+== SixSingletonQ2Roots189 ==
+PASS SixSingletonQ2Roots189
+
+== SixSingletonQ2Cert189 ==
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.Q2.exclusion' depends on axioms: [propext]
+PASS SixSingletonQ2Cert189
+
+== SixSingletonQ2OriginalLabel189 ==
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.Q2.choose_original_label' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixSingletonQ2OriginalLabel189
+
+== SixSingletonQ2OriginalGeometry189 ==
+PASS SixSingletonQ2OriginalGeometry189
+
+== SixSingletonQ2OriginalData189 ==
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.Q2.data_of_original' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixSingletonQ2OriginalData189
+
+== SixSingletonQ2RootChunk00189 ==
+PASS SixSingletonQ2RootChunk00189
+
+== SixSingletonQ2RootChunk01189 ==
+PASS SixSingletonQ2RootChunk01189
+
+== SixSingletonQ2RootChunk02189 ==
+PASS SixSingletonQ2RootChunk02189
+
+== SixSingletonQ2RootChunk03189 ==
+PASS SixSingletonQ2RootChunk03189
+
+== SixSingletonQ2RootChunk04189 ==
+PASS SixSingletonQ2RootChunk04189
+
+== SixSingletonQ2RootChunk05189 ==
+PASS SixSingletonQ2RootChunk05189
+
+== SixSingletonQ2RootChunk06189 ==
+PASS SixSingletonQ2RootChunk06189
+
+== SixSingletonQ2RootChunk07189 ==
+PASS SixSingletonQ2RootChunk07189
+
+== SixSingletonQ2RootChunk08189 ==
+PASS SixSingletonQ2RootChunk08189
+
+== SixSingletonQ2RootChunk09189 ==
+PASS SixSingletonQ2RootChunk09189
+
+== SixSingletonQ2RootChunk10189 ==
+PASS SixSingletonQ2RootChunk10189
+
+== SixSingletonQ2RootChunk11189 ==
+PASS SixSingletonQ2RootChunk11189
+
+== SixSingletonQ2RootChunk12189 ==
+PASS SixSingletonQ2RootChunk12189
+
+== SixSingletonQ2RootChunk13189 ==
+PASS SixSingletonQ2RootChunk13189
+
+== SixSingletonQ2RootChunk14189 ==
+PASS SixSingletonQ2RootChunk14189
+
+== SixSingletonQ2RootChunk15189 ==
+PASS SixSingletonQ2RootChunk15189
+
+== SixSingletonQ2RootChunk16189 ==
+PASS SixSingletonQ2RootChunk16189
+
+== SixSingletonQ2RootChunk17189 ==
+PASS SixSingletonQ2RootChunk17189
+
+== SixSingletonQ2RootChunk18189 ==
+PASS SixSingletonQ2RootChunk18189
+
+== SixSingletonQ2RootChunk19189 ==
+PASS SixSingletonQ2RootChunk19189
+
+== SixSingletonQ2RootChunk20189 ==
+PASS SixSingletonQ2RootChunk20189
+
+== SixSingletonQ2RootChunk21189 ==
+PASS SixSingletonQ2RootChunk21189
+
+== SixSingletonQ2RootChunk22189 ==
+PASS SixSingletonQ2RootChunk22189
+
+== SixSingletonQ2RootChunk23189 ==
+PASS SixSingletonQ2RootChunk23189
+
+== SixSingletonQ2RootChunk24189 ==
+PASS SixSingletonQ2RootChunk24189
+
+== SixSingletonQ2RootChunk25189 ==
+PASS SixSingletonQ2RootChunk25189
+
+== SixSingletonQ2RootChunk26189 ==
+PASS SixSingletonQ2RootChunk26189
+
+== SixSingletonQ2RootChunk27189 ==
+PASS SixSingletonQ2RootChunk27189
+
+== SixSingletonQ2RootChunk28189 ==
+PASS SixSingletonQ2RootChunk28189
+
+== SixSingletonQ2RootChunk29189 ==
+PASS SixSingletonQ2RootChunk29189
+
+== SixSingletonQ2RootChunk30189 ==
+PASS SixSingletonQ2RootChunk30189
+
+== SixSingletonQ2RootChunk31189 ==
+PASS SixSingletonQ2RootChunk31189
+
+== SixSingletonQ2Semantic189 ==
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.Q2.traceable_of_data' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixSingletonQ2Semantic189
+
+== SixSingletonQ2Actual189 ==
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.traceable_of_adjacent_singleton_thirteen_six_visible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixSingletonQ2Actual189

@@ -1,0 +1,8 @@
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+'TraceableBurn.card_le_thrice_slater' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TraceableBurn.cover_of_enumeration' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TraceableBurn.path_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TraceableBurn.cycle_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CycleBatch.row3378_false' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CycleBatch.row4293_false' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CycleBatch.row4298_false' depends on axioms: [propext, Classical.choice, Quot.sound]

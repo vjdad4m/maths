@@ -172,6 +172,7 @@
 | AutoGraphForge line 1606 | Disproved in Lean by C43; upstream implicit witness also exists | [Proof](autographforge-1606/) |
 | AutoGraphForge line 1656 | Disproved in Lean by C43; upstream implicit witness also exists | [Proof](autographforge-1656/) |
 | AutoGraphForge line 1707 | Disproved in Lean; unbounded gap on connected claw-free graphs | [Proof](autographforge-1707/) |
+| AutoGraphForge line 1813 | Disproved in Lean by all cliques of order at least 37 | [Lean](autographforge-1813/CliqueHarmonic.lean) |
 | AutoGraphForge line 1839 | Disproved | [Lean](autographforge-365/AutoGraphForgeDiamonds.lean) |
 | AutoGraphForge line 1883 | Disproved (singleton rainbow convention) | [Lean](autographforge-1883/AutoGraphForge1883.lean) |
 | AutoGraphForge line 1889 | Disproved | [Lean](autographforge-shared-hub/SharedHub.lean) · [Replay](autographforge-shared-hub/README.md) |

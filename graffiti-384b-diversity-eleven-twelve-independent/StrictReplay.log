@@ -1,0 +1,8 @@
+Checking ThreeMatchedSwap384b
+'Graffiti384b.DiversityEleven.exact_of_three_matched_cubic_fallback' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS ThreeMatchedSwap384b
+Checking TwelveIndependentLower384b
+'Graffiti384b.DiversityEleven.exact_twelve_independent' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS TwelveIndependentLower384b

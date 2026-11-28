@@ -1,0 +1,7 @@
+Verified the archive manifest. Checking terminal sources from the extracted package.
+'Graffiti384b.Four29.FiveWitness.profile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Four29.FiveWitness.minimum_outside' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Four29.FiveWitness.dominated' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Four29.four_contacts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Four29.four_contact_residual' depends on axioms: [propext, Classical.choice, Quot.sound]
+Both extracted terminal proofs and all five terminal axiom reports match the full strict replay.

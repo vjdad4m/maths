@@ -1,0 +1,196 @@
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release) 
+Mathlib c44e0c8ee63ca166450922a373c7409c5d26b00b
+Replay directory /workspace/scratch/7efa613b1c05/graff384b-tenpins29-astra/.ten-replay.dv8b265v
+Verified all 205 prior source hashes, the frozen FourFront replay, and 205 prior object hashes.
+Checking GrowingCuts
+'Graffiti384b.Four29.grow_frame' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Four29.grow_complete' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Four29.growing_anchors' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking FiveData
+'Graffiti384b.Four29.FiveWitness.ordered_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking FiveScores
+'Graffiti384b.Four29.FiveWitness.score_table' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Four29.FiveWitness.diversity' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking FiveLocal
+'Graffiti384b.Four29.FiveWitness.contacts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Four29.FiveWitness.rounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Four29.FiveWitness.no_local_cut' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Four29.FiveWitness.one_outside' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking FiveWitness
+'Graffiti384b.Four29.FiveWitness.profile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Four29.FiveWitness.minimum_outside' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Four29.FiveWitness.dominated' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking TenSignals
+'Graffiti384b.Four29.Ten.pattern_data' depends on axioms: [propext]
+Checking TenCanon
+'Graffiti384b.Four29.Ten.orbit' depends on axioms: [propext, Quot.sound]
+Checking TenOrbit
+'Graffiti384b.Four29.Ten.canonicalize' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking TenSemantic
+'Graffiti384b.Four29.Ten.represents' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Four29.Ten.counts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Four29.Ten.support_lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking TenBits0Part0
+'Graffiti384b.Four29.Ten.code0' depends on axioms: [propext]
+'Graffiti384b.Four29.Ten.code1' depends on axioms: [propext]
+Checking TenBits0Part1
+'Graffiti384b.Four29.Ten.code2' depends on axioms: [propext]
+'Graffiti384b.Four29.Ten.code3' depends on axioms: [propext]
+Checking TenBits0Part2
+'Graffiti384b.Four29.Ten.code4' depends on axioms: [propext]
+'Graffiti384b.Four29.Ten.code5' depends on axioms: [propext]
+Checking TenBits0Part3
+'Graffiti384b.Four29.Ten.code6' depends on axioms: [propext]
+'Graffiti384b.Four29.Ten.code7' depends on axioms: [propext]
+Checking TenShape0
+'Graffiti384b.Four29.Ten.shape0' depends on axioms: [propext, Quot.sound]
+Checking TenBits1Part0
+'Graffiti384b.Four29.Ten.code8' depends on axioms: [propext]
+'Graffiti384b.Four29.Ten.code9' depends on axioms: [propext]
+Checking TenBits1Part1
+'Graffiti384b.Four29.Ten.code10' depends on axioms: [propext]
+'Graffiti384b.Four29.Ten.code11' depends on axioms: [propext]
+Checking TenBits1Part2
+'Graffiti384b.Four29.Ten.code12' depends on axioms: [propext]
+'Graffiti384b.Four29.Ten.code13' depends on axioms: [propext]
+Checking TenBits1Part3
+'Graffiti384b.Four29.Ten.code14' depends on axioms: [propext]
+'Graffiti384b.Four29.Ten.code15' depends on axioms: [propext]
+Checking TenShape1
+'Graffiti384b.Four29.Ten.shape1' depends on axioms: [propext, Quot.sound]
+Checking TenBits3Part0
+'Graffiti384b.Four29.Ten.code24' depends on axioms: [propext]
+'Graffiti384b.Four29.Ten.code25' depends on axioms: [propext]
+Checking TenBits3Part1
+'Graffiti384b.Four29.Ten.code26' depends on axioms: [propext]
+'Graffiti384b.Four29.Ten.code27' depends on axioms: [propext]
+Checking TenBits3Part2
+'Graffiti384b.Four29.Ten.code28' depends on axioms: [propext]
+'Graffiti384b.Four29.Ten.code29' depends on axioms: [propext]
+Checking TenBits3Part3
+'Graffiti384b.Four29.Ten.code30' depends on axioms: [propext]
+'Graffiti384b.Four29.Ten.code31' depends on axioms: [propext]
+Checking TenShape3
+'Graffiti384b.Four29.Ten.shape3' depends on axioms: [propext, Quot.sound]
+Checking TenBits7Part0
+'Graffiti384b.Four29.Ten.code56' depends on axioms: [propext]
+'Graffiti384b.Four29.Ten.code57' depends on axioms: [propext]
+Checking TenBits7Part1
+'Graffiti384b.Four29.Ten.code58' depends on axioms: [propext]
+'Graffiti384b.Four29.Ten.code59' depends on axioms: [propext]
+Checking TenBits7Part2
+'Graffiti384b.Four29.Ten.code60' depends on axioms: [propext]
+'Graffiti384b.Four29.Ten.code61' depends on axioms: [propext]
+Checking TenBits7Part3
+'Graffiti384b.Four29.Ten.code62' depends on axioms: [propext]
+'Graffiti384b.Four29.Ten.code63' depends on axioms: [propext]
+Checking TenShape7
+'Graffiti384b.Four29.Ten.shape7' depends on axioms: [propext, Quot.sound]
+Checking TenBits11Part0
+'Graffiti384b.Four29.Ten.code88' depends on axioms: [propext]
+'Graffiti384b.Four29.Ten.code89' depends on axioms: [propext]
+Checking TenBits11Part1
+'Graffiti384b.Four29.Ten.code90' depends on axioms: [propext]
+'Graffiti384b.Four29.Ten.code91' depends on axioms: [propext]
+Checking TenBits11Part2
+'Graffiti384b.Four29.Ten.code92' depends on axioms: [propext]
+'Graffiti384b.Four29.Ten.code93' depends on axioms: [propext]
+Checking TenBits11Part3
+'Graffiti384b.Four29.Ten.code94' depends on axioms: [propext]
+'Graffiti384b.Four29.Ten.code95' depends on axioms: [propext]
+Checking TenShape11
+'Graffiti384b.Four29.Ten.shape11' depends on axioms: [propext, Quot.sound]
+Checking TenBits12Part0
+'Graffiti384b.Four29.Ten.code96' depends on axioms: [propext]
+'Graffiti384b.Four29.Ten.code97' depends on axioms: [propext]
+Checking TenBits12Part1
+'Graffiti384b.Four29.Ten.code98' depends on axioms: [propext]
+'Graffiti384b.Four29.Ten.code99' depends on axioms: [propext]
+Checking TenBits12Part2
+'Graffiti384b.Four29.Ten.code100' depends on axioms: [propext]
+'Graffiti384b.Four29.Ten.code101' depends on axioms: [propext]
+Checking TenBits12Part3
+'Graffiti384b.Four29.Ten.code102' depends on axioms: [propext]
+'Graffiti384b.Four29.Ten.code103' depends on axioms: [propext]
+Checking TenShape12
+'Graffiti384b.Four29.Ten.shape12' depends on axioms: [propext, Quot.sound]
+Checking TenBits13Part0
+'Graffiti384b.Four29.Ten.code104' depends on axioms: [propext]
+'Graffiti384b.Four29.Ten.code105' depends on axioms: [propext]
+Checking TenBits13Part1
+'Graffiti384b.Four29.Ten.code106' depends on axioms: [propext]
+'Graffiti384b.Four29.Ten.code107' depends on axioms: [propext]
+Checking TenBits13Part2
+'Graffiti384b.Four29.Ten.code108' depends on axioms: [propext]
+'Graffiti384b.Four29.Ten.code109' depends on axioms: [propext]
+Checking TenBits13Part3
+'Graffiti384b.Four29.Ten.code110' depends on axioms: [propext]
+'Graffiti384b.Four29.Ten.code111' depends on axioms: [propext]
+Checking TenShape13
+'Graffiti384b.Four29.Ten.shape13' depends on axioms: [propext, Quot.sound]
+Checking TenBits15Part0
+'Graffiti384b.Four29.Ten.code120' depends on axioms: [propext]
+'Graffiti384b.Four29.Ten.code121' depends on axioms: [propext]
+Checking TenBits15Part1
+'Graffiti384b.Four29.Ten.code122' depends on axioms: [propext]
+'Graffiti384b.Four29.Ten.code123' depends on axioms: [propext]
+Checking TenBits15Part2
+'Graffiti384b.Four29.Ten.code124' depends on axioms: [propext]
+'Graffiti384b.Four29.Ten.code125' depends on axioms: [propext]
+Checking TenBits15Part3
+'Graffiti384b.Four29.Ten.code126' depends on axioms: [propext]
+'Graffiti384b.Four29.Ten.code127' depends on axioms: [propext]
+Checking TenShape15
+'Graffiti384b.Four29.Ten.shape15' depends on axioms: [propext, Quot.sound]
+Checking TenBits30Part0
+'Graffiti384b.Four29.Ten.code240' depends on axioms: [propext]
+'Graffiti384b.Four29.Ten.code241' depends on axioms: [propext]
+Checking TenBits30Part1
+'Graffiti384b.Four29.Ten.code242' depends on axioms: [propext]
+'Graffiti384b.Four29.Ten.code243' depends on axioms: [propext]
+Checking TenBits30Part2
+'Graffiti384b.Four29.Ten.code244' depends on axioms: [propext]
+'Graffiti384b.Four29.Ten.code245' depends on axioms: [propext]
+Checking TenBits30Part3
+'Graffiti384b.Four29.Ten.code246' depends on axioms: [propext]
+'Graffiti384b.Four29.Ten.code247' depends on axioms: [propext]
+Checking TenShape30
+'Graffiti384b.Four29.Ten.shape30' depends on axioms: [propext, Quot.sound]
+Checking TenBits31Part0
+'Graffiti384b.Four29.Ten.code248' depends on axioms: [propext]
+'Graffiti384b.Four29.Ten.code249' depends on axioms: [propext]
+Checking TenBits31Part1
+'Graffiti384b.Four29.Ten.code250' depends on axioms: [propext]
+'Graffiti384b.Four29.Ten.code251' depends on axioms: [propext]
+Checking TenBits31Part2
+'Graffiti384b.Four29.Ten.code252' depends on axioms: [propext]
+'Graffiti384b.Four29.Ten.code253' depends on axioms: [propext]
+Checking TenBits31Part3
+'Graffiti384b.Four29.Ten.code254' depends on axioms: [propext]
+'Graffiti384b.Four29.Ten.code255' depends on axioms: [propext]
+Checking TenShape31
+'Graffiti384b.Four29.Ten.shape31' depends on axioms: [propext, Quot.sound]
+Checking TenBits63Part0
+'Graffiti384b.Four29.Ten.code504' depends on axioms: [propext]
+'Graffiti384b.Four29.Ten.code505' depends on axioms: [propext]
+Checking TenBits63Part1
+'Graffiti384b.Four29.Ten.code506' depends on axioms: [propext]
+'Graffiti384b.Four29.Ten.code507' depends on axioms: [propext]
+Checking TenBits63Part2
+'Graffiti384b.Four29.Ten.code508' depends on axioms: [propext]
+'Graffiti384b.Four29.Ten.code509' depends on axioms: [propext]
+Checking TenBits63Part3
+'Graffiti384b.Four29.Ten.code510' depends on axioms: [propext]
+'Graffiti384b.Four29.Ten.code511' depends on axioms: [propext]
+Checking TenShape63
+'Graffiti384b.Four29.Ten.shape63' depends on axioms: [propext, Quot.sound]
+Checking TenTable
+'Graffiti384b.Four29.Ten.table' depends on axioms: [propext, Quot.sound]
+Checking TenProtected
+'Graffiti384b.Four29.Ten.ten_canonical_induced' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Four29.Ten.ten_labels' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking TenFront
+'Graffiti384b.Four29.four_contacts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Four29.four_contact_residual' depends on axioms: [propext, Classical.choice, Quot.sound]
+Verified 67 new modules and 123 standard-axiom reports.
+Verified the four-contact theorem, the remaining range, cut growth and the exact five-contact boundary example.

@@ -27,4 +27,10 @@ For a five-element window containing all its singleton patterns, every missing p
 
 This proves the fifth degree when all least cores are symmetric: for any (j) in the core of (k), their cores coincide. Projecting onto one representative per block preserves intersection closure, so the same five-element counting argument applies after projection. See `phan_fifth_of_symmetric_complements` for the exact weighted inequality under this condition. Two further lemmas handle any maximum core of size at least four, and any maximum core of size three that contains a proper nonempty subcore. Both give one coordinate that works in every window. The remaining asymmetric cores of size two are not covered in general.
 
+## Every degree for families closed under both operations
+
+`phan_lattice` proves the exact inequality at every degree when the family is also closed under intersections. In the complement family choose a coordinate k of maximum core size. Every coordinate whose core contains k has the same core as k, so these coordinates form a block that is present in every pattern containing k. Delete precisely this block. The remaining pattern is the union of the cores of its remaining elements, none of which contains k. That union stays in the complement family and reconstructing the input just requires adding back the fixed block. The same injection works in every window, with no size or weight restriction.
+
+The underlying lemma `lattice_core_injection` needs union closure only among complement patterns avoiding the chosen k, not global union closure. This offers a separate route for non-lattice families that have one such maximum-core coordinate. The general fifth-degree case remains open.
+
 **Replay:** Lean 4.19.0, built Mathlib at `c44e0c8ee63ca166450922a373c7409c5d26b00b`, `MATHLIB_DIR=/path/to/mathlib bash replay.sh`.

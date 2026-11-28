@@ -1,0 +1,15 @@
+src/ActiveStarHeight189.lean: OK
+src/FarTriangleTransfer189.lean: OK
+transfer_arithmetic.py: OK
+'Graffiti189LongestPath.ActiveStarHeight.traceable_of_tall_star' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.ActiveStarHeight.star_card_degree_and_pins' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.ActiveStarHeight.normalized_high_star_degree_ceiling' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.TriangleTransfer.triangle_star_transfers' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

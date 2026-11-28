@@ -1,0 +1,22 @@
+== OversizedLitBudget189 ==
+'Graffiti189LongestPath.OversizedLitBudget.oversized_single_lit_order_upper' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+== OversizedCriticalVertex189 ==
+'Graffiti189LongestPath.OversizedCriticalVertex.oversized_critical_vertex' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+== GroupedLitBudget189 ==
+'Graffiti189LongestPath.GroupedLitBudget.oversized_single_grouped_budget' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+== Original strict serial replay of audited entry theorem and prerequisites ==
+'Graffiti189LongestPath.OversizedCriticalVertex.oversized_critical_vertex' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.GroupedLitBudget.oversized_single_grouped_budget' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.GroupedOversizedClosure.traceable_of_high_connectivity_d13' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

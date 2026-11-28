@@ -1,0 +1,21 @@
+AdjacentCutFiveActual189.lean: OK
+AdjacentCutFiveAsymmetry189.lean: OK
+AdjacentCutFiveBound189.lean: OK
+AdjacentCutFiveComponents189.lean: OK
+README.md: OK
+replay.sh: OK
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.Split.order_le_twenty_one_of_adjacent_cut' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.order_le_twenty_one_of_actual_adjacent_cut' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.order_le_seventeen_of_actual_adjacent_twin_cut' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.component_card_le_three_at_adjacent_cut' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.order_add_exclusive_le_twenty_two_of_actual_adjacent_cut' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

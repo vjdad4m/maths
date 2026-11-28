@@ -1,0 +1,8 @@
+SixSingletonAdjacentSlots189
+SixSingletonPortCertificates189
+SixSingletonMultiZeroBoard189
+SixSingletonMultiZeroGeom189
+SixSingletonPortLabel189
+SixSingletonPortScore189
+SixSingletonMultiTransport189
+SixSingletonAdjacentZeroComplete189

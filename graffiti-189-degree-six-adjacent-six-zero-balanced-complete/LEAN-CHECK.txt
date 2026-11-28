@@ -1,0 +1,37 @@
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.PortCertificates.pair_two_certificate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.PortCertificates.one_two_certificate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.PortCertificates.traceable_of_double_exclusive_zero_balanced' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.PortCertificates.traceable_of_one_two_exclusive_zero_balanced' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.isolate_zero_balance_geometry' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.label_nine_and_seven' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.adjacent_even_slot_rows' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.adjacent_singleton_thirteen_even_profile' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.visible_four_forces_either' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.inside_insert_score' depends on axioms: [propext, Quot.sound]
+'_private.SixSingletonMultiTransport189.0.Graffiti189LongestPath.CrossSaturation.ThresholdSix.board22_of_data' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'_private.SixSingletonMultiTransport189.0.Graffiti189LongestPath.CrossSaturation.ThresholdSix.board12_of_data' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.traceable_of_adjacent_singleton_thirteen_six_zero_balance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

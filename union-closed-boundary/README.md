@@ -1,0 +1,11 @@
+# The two-missing-elements boundary of Phan’s weighted union-closed conjecture
+
+[Veronica Phan’s question](https://mathoverflow.net/questions/514705/further-algebraic-strengthening-of-frankls-union-closed-sets-conjecture) asks for a coordinate whose weighted comparison of set counts is nonnegative at a specified degree m. This package proves the two top degrees, m = n−2 and m = n−1, in the usual convention that the ground set is the union of the family. It does not settle the full conjecture.
+
+For a monomial supported on B, the coefficient on the presence side counts family members containing B and k, provided k is not in B; the coefficient on the omission side counts family members containing B but not k. Grouping the sums by B gives exactly the original inequality. In complements, B becomes the window T, and k belongs to a complement precisely when it is omitted by the original set.
+
+The proof adapts the pairing method used in the repository’s graph-counting arguments. If every singleton is in the complement family, match every complement containing k to the result of deleting k. In a window of size at most two, the image is always a singleton or the empty set. If some singleton {k} is missing, then in any such window there is at most one complement containing k, so match it to the empty complement. These injections work for the same coordinate in every window. In particular the result allows arbitrary nonnegative monomial weights and needs only that the original family contains the full ground set, not that it is union-closed.
+
+A second theorem checks that the proof cannot extend coefficient by coefficient to windows of size three. Take the complement family consisting of the empty set, six singleton vertices, six edges and six consecutive three-vertex arcs of a six-cycle. The family is intersection-closed. At each vertex k, the window formed by k and its two neighbors has counts 3 on the presence side and 4 on the omission side. This refutes the stronger requirement of a single coordinate that works for every coefficient. **It is not a counterexample to Phan’s conjecture**, which may choose a coordinate after the weights are fixed.
+
+**Replay:** Lean 4.19.0, built Mathlib at `c44e0c8ee63ca166450922a373c7409c5d26b00b`, `MATHLIB_DIR=/path/to/mathlib bash replay.sh`.

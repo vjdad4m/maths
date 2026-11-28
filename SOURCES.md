@@ -42,3 +42,7 @@ A release's “proposed,” “survivor,” or “open” label is not evidence 
 
 - Stefan Steinerberger’s *Some Open Problems*, §30 in the March 2026 edition. The [original university PDF](https://faculty.washington.edu/steinerb/openproblems.pdf) currently returns 404. An [older copy](https://www.scribd.com/document/789631367/Open-Problems) has the matrix problem as §31; use [the author’s arXiv paper, §2.6](https://arxiv.org/html/2402.03205v2#S2.SS6) for the primary dimension-six statement. The dimension-six target asks for the exact maximum of the average maximum absolute coordinate of \(Ax\) over sign inputs, with each row of \(A\) of Euclidean norm one.
 - [Steinerberger’s original paper](https://arxiv.org/abs/2402.03205) gives candidate extremizers. [Albors et al.](https://arxiv.org/abs/2408.00933) prove exact optima through dimension four; a [separate formalization by trureturing](https://www.trureturing.org/research/albors-et-al-2024-bad-science-matrix-five/) reports dimension five. Check subsequent literature before making priority claims.
+
+## Algebraic combinatorics and finite set families
+
+- [Veronica Phan’s weighted union-closed conjecture](https://mathoverflow.net/questions/514705/further-algebraic-strengthening-of-frankls-union-closed-sets-conjecture). The [Lean boundary proof](union-closed-boundary/) covers degrees n−2 and n−1 and tests the limits of coefficientwise arguments with a cycle construction. The general conjecture is not settled here.

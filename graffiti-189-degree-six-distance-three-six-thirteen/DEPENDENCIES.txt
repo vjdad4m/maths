@@ -1,0 +1,11 @@
+Lean 4.19.0 (6caaee842e94)
+Mathlib c44e0c8ee63ca166450922a373c7409c5d26b00b
+Prerequisite compiled modules and transitive dependencies:
+- degree-six distance-three sequence through order 20
+- graffiti-189-degree-three/proof-sources.zip, GraphSat189 and GraphRup189
+505a57891ae35f6f4340416990be62d8192513ae35e7f5113ad85eb80eed8711  SixTwelveComplete189.olean
+29a29eee74fb8bbf1e30d714e3d15ab81320755543831beac57a6f95b704f646  SixTwelveFromGraph189.olean
+aee6e228318ab9d691fe42913b9ad2125ea5b58d657887cad70296b12af60b26  SixTwelveLabel189.olean
+d8aac68c4a387d965531ab4cbdf084f30f394249006e054f037255885d7cd9af  SixSevenCosts189.olean
+8447aea56a1d2e7406ab4407d7d4bcd9dc524fca94e97d56fdb64f75c0e4dbc4  GraphSat189.olean
+5aa8861a65df4a67b36817759d153d5759c7153b2d19be068df78513bdd3371c  GraphRup189.olean

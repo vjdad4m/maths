@@ -1,0 +1,6 @@
+== Equality24Complete189 ==
+'Graffiti189LongestPath.Equality24Profile.model_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.Equality24Profile.impossible_order_twenty_four_at_degree_six_three_connected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS Equality24Complete189

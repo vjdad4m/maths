@@ -1,0 +1,8 @@
+== Equality24SecondSmallest189 ==
+'Graffiti189LongestPath.Equality24Profile.impossible_order_twenty_four_at_exact_second_smallest_six' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.Equality24Profile.order_le_twenty_three_of_exact_second_smallest_six_of_order_le_twenty_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS Equality24SecondSmallest189

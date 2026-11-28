@@ -1,0 +1,16 @@
+{"frame": "T3B4M0", "result": "UNSAT", "raw": 13061, "slice_initial": 2790, "slice_additions": 2081, "rat_hints": 0, "bytes": 391272, "variant": "small"}
+{"frame": "T3B4M1", "result": "UNSAT", "raw": 13099, "slice_initial": 2745, "slice_additions": 2258, "rat_hints": 0, "bytes": 448621, "variant": "small"}
+{"frame": "T3B4M2", "result": "UNSAT", "raw": 12433, "slice_initial": 2409, "slice_additions": 1985, "rat_hints": 0, "bytes": 436663, "variant": "small"}
+{"frame": "T4B4M0", "result": "UNSAT", "raw": 13981, "slice_initial": 1363, "slice_additions": 893, "rat_hints": 0, "bytes": 187666, "variant": "small"}
+{"frame": "T4B4M1", "result": "UNSAT", "raw": 14044, "slice_initial": 1433, "slice_additions": 990, "rat_hints": 0, "bytes": 216124, "variant": "small"}
+{"frame": "T4B4M2", "result": "UNSAT", "raw": 13383, "slice_initial": 1273, "slice_additions": 897, "rat_hints": 0, "bytes": 180607, "variant": "small"}
+{"frame": "T3B5M0", "result": "UNSAT", "raw": 13291, "slice_initial": 3486, "slice_additions": 3237, "rat_hints": 0, "bytes": 720484, "variant": "small"}
+{"frame": "T3B5M1", "result": "UNSAT", "raw": 13300, "slice_initial": 3305, "slice_additions": 3527, "rat_hints": 0, "bytes": 906964, "variant": "small"}
+{"frame": "T3B5M2", "result": "UNSAT", "raw": 12631, "slice_initial": 3036, "slice_additions": 2720, "rat_hints": 0, "bytes": 640665, "variant": "small"}
+{"frame": "T4B5M0", "result": "UNSAT", "raw": 14186, "slice_initial": 1749, "slice_additions": 1139, "rat_hints": 0, "bytes": 252879, "variant": "small"}
+{"frame": "T4B5M1", "result": "UNSAT", "raw": 14220, "slice_initial": 2253, "slice_additions": 1489, "rat_hints": 0, "bytes": 253578, "variant": "small"}
+{"frame": "T4B5M2", "result": "UNSAT", "raw": 13557, "slice_initial": 2307, "slice_additions": 1630, "rat_hints": 0, "bytes": 272801, "variant": "small"}
+{"frame": "T3B6M1", "result": "UNSAT", "raw": 13573, "slice_initial": 4248, "slice_additions": 7907, "rat_hints": 0, "bytes": 2840373, "variant": "small"}
+{"frame": "T3B6M2", "result": "UNSAT", "raw": 12901, "slice_initial": 3650, "slice_additions": 4636, "rat_hints": 0, "bytes": 1663561, "variant": "small"}
+{"frame": "T4B6M1", "result": "UNSAT", "raw": 14468, "slice_initial": 2690, "slice_additions": 1910, "rat_hints": 0, "bytes": 342838, "variant": "small"}
+{"frame": "T4B6M2", "result": "UNSAT", "raw": 13803, "slice_initial": 3016, "slice_additions": 2247, "rat_hints": 0, "bytes": 465134, "variant": "small"}

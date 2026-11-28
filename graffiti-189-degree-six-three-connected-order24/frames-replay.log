@@ -1,0 +1,59 @@
+== SixLayer25Cover189 ==
+'Graffiti189LongestPath.layer_cover_at_order_twenty_five_with_radius_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.layer_cover_at_order_twenty_five' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS SixLayer25Cover189
+== GraphSat189 ==
+'Graffiti189LongestPath.GraphSat.proof_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS GraphSat189
+== GraphRup189 ==
+PASS GraphRup189
+== Equality24T3B4M0Cert189 ==
+'Graffiti189LongestPath.Equality24Count.T3B4M0.impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Equality24T3B4M0Cert189
+== Equality24T3B4M1Cert189 ==
+'Graffiti189LongestPath.Equality24Count.T3B4M1.impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Equality24T3B4M1Cert189
+== Equality24T3B4M2Cert189 ==
+'Graffiti189LongestPath.Equality24Count.T3B4M2.impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Equality24T3B4M2Cert189
+== Equality24T3B5M0Cert189 ==
+'Graffiti189LongestPath.Equality24Count.T3B5M0.impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Equality24T3B5M0Cert189
+== Equality24T3B5M1Cert189 ==
+'Graffiti189LongestPath.Equality24Count.T3B5M1.impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Equality24T3B5M1Cert189
+== Equality24T3B5M2Cert189 ==
+'Graffiti189LongestPath.Equality24Count.T3B5M2.impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Equality24T3B5M2Cert189
+== Equality24T3B6M1Cert189 ==
+'Graffiti189LongestPath.Equality24Count.T3B6M1.impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Equality24T3B6M1Cert189
+== Equality24T3B6M2Cert189 ==
+'Graffiti189LongestPath.Equality24Count.T3B6M2.impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Equality24T3B6M2Cert189
+== Equality24T4B4M0Cert189 ==
+'Graffiti189LongestPath.Equality24Count.T4B4M0.impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Equality24T4B4M0Cert189
+== Equality24T4B4M1Cert189 ==
+'Graffiti189LongestPath.Equality24Count.T4B4M1.impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Equality24T4B4M1Cert189
+== Equality24T4B4M2Cert189 ==
+'Graffiti189LongestPath.Equality24Count.T4B4M2.impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Equality24T4B4M2Cert189
+== Equality24T4B5M0Cert189 ==
+'Graffiti189LongestPath.Equality24Count.T4B5M0.impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Equality24T4B5M0Cert189
+== Equality24T4B5M1Cert189 ==
+'Graffiti189LongestPath.Equality24Count.T4B5M1.impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Equality24T4B5M1Cert189
+== Equality24T4B5M2Cert189 ==
+'Graffiti189LongestPath.Equality24Count.T4B5M2.impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Equality24T4B5M2Cert189
+== Equality24T4B6M1Cert189 ==
+'Graffiti189LongestPath.Equality24Count.T4B6M1.impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Equality24T4B6M1Cert189
+== Equality24T4B6M2Cert189 ==
+'Graffiti189LongestPath.Equality24Count.T4B6M2.impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Equality24T4B6M2Cert189

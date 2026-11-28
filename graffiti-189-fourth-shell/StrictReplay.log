@@ -1,0 +1,19 @@
+src/ExactStarOpposite189.lean: OK
+src/FarReciprocity189.lean: OK
+src/LitBoundary189.lean: OK
+src/StarSize189.lean: OK
+far_fixture.py: OK
+'Graffiti189LongestPath.FarReciprocity.fourth_shell_reciprocity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.FarReciprocity.reciprocal_active_is_single' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.StarSize.star_order_of_pin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.ExactStarOpposite.traceable_of_small_opposite' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.LitBoundary.order_upper_dark_ports' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.LitBoundary.traceable_of_few_dark_ports' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

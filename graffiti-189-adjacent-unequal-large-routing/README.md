@@ -1,0 +1,10 @@
+# Graffiti.pc #189: unequal shores at an adjacent cut
+
+Work under the degree-five threshold: a connected finite simple graph stays connected after deletion of any one vertex, all but at most one vertex have degree at least five, and every vertex has at most six even-distance vertices (including itself). The adjacent cut leaves exactly two shores. The following results are in namespace `Graffiti189LongestPath.CrossSaturation.FiveAdjacent`.
+
+* `traceable_of_adjacent_five_shore_with_four_common`: if the small shore has five vertices that all see one terminal, and at least four see the other, and the large shore has at least nine vertices, then the graph is traceable. All visible vertices in the large shore are universal there. At least four universal separators absorb up to five dark vertices; in the equality case a dark edge supplies one two-vertex block.
+* `traceable_of_adjacent_four_common_ten_non_twin`: if the small shore consists of four common ports and the other shore has ten vertices including an exclusive port, the graph is traceable. The exclusive port is universal; all visible vertices miss at most one local neighbor and there are at least five. Ore closure makes these visible vertices universal among high vertices. A possible low dark vertex goes last, either through a reserved visible neighbor or between two high dark neighbors.
+
+The route joins the large shore's rooted path to the small shore augmented with both cut vertices. This is a partial result toward Graffiti.pc #189, not an unconditional proof of the conjecture.
+
+Use Lean 4.19.0 with Mathlib 4.19.0 and the checked dependency objects on `LEAN_PATH`. Direct predecessors are the mixed-route stage (`AdjacentCutFiveMixedSevenEight189` and imports), `AdjacentCutFiveTwoTwinGeometry189` (the order-and-twins stage), `UniversalRouteSingletons189` (the full-distance-two stage), and, for the four-plus-nine bound, `AdjacentCutFiveProfilePorts189` (the exact-two-shore stage). Run `./replay.sh` to check these sources in order. See `LEAN-CHECK.txt`.

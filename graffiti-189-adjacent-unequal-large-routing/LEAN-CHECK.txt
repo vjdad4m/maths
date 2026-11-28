@@ -1,0 +1,4 @@
+Lean 4.19.0: serial, -DElab.async=false, -DwarningAsError=true.
+traceable_of_adjacent_five_shore_with_four_common: [propext, Classical.choice, Quot.sound] (from mixed-unequal3.log)
+universal_route_with_one_dark_exception: [propext, Classical.choice, Quot.sound] (from mixed-unequal4.log)
+traceable_of_adjacent_four_common_ten_non_twin: [propext, Classical.choice, Quot.sound] (from mixed-unequal6.log)

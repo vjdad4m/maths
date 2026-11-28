@@ -1,0 +1,45 @@
+== MarkedWingSat189 ==
+'Graffiti189LongestPath.MarkedWingSat.transfer' depends on axioms: [propext, Classical.choice, Quot.sound]
+== MarkedWing60Cert189 ==
+'Graffiti189LongestPath.MarkedWingSat.Core60.fixed' depends on axioms: [propext, Classical.choice, Quot.sound]
+== MarkedWing62Cert189 ==
+'Graffiti189LongestPath.MarkedWingSat.Core62.fixed' depends on axioms: [propext, Classical.choice, Quot.sound]
+== MarkedWing70Cert189 ==
+'Graffiti189LongestPath.MarkedWingSat.Core70.fixed' depends on axioms: [propext, Classical.choice, Quot.sound]
+== MarkedWing72Cert189 ==
+'Graffiti189LongestPath.MarkedWingSat.Core72.fixed' depends on axioms: [propext, Classical.choice, Quot.sound]
+== MarkedWing80Cert189 ==
+'Graffiti189LongestPath.MarkedWingSat.Core80.fixed' depends on axioms: [propext, Classical.choice, Quot.sound]
+== MarkedWing82Cert189 ==
+'Graffiti189LongestPath.MarkedWingSat.Core82.fixed' depends on axioms: [propext, Classical.choice, Quot.sound]
+== MarkedWingPath189 ==
+'Graffiti189LongestPath.MarkedWingPath.long_marked_path' depends on axioms: [propext, Classical.choice, Quot.sound]
+== DenseOwnerRoute189 ==
+'Graffiti189LongestPath.DenseOwnerRoute.route_seven' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.DenseOwnerRoute.route_eight' depends on axioms: [propext, Classical.choice, Quot.sound]
+== FiveCheapBudget189 ==
+'Graffiti189LongestPath.FiveCheapBudget.targets_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.FiveCheapBudget.cheap_neighbors' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.FiveCheapBudget.residual_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+== FiveSharedCharges189 ==
+'Graffiti189LongestPath.FiveSharedCharges.shared_charges' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.FiveSharedCharges.exhaust_shared' depends on axioms: [propext, Classical.choice, Quot.sound]
+== FiveEdgeBudget189 ==
+'Graffiti189LongestPath.FiveEdgeBudget.at_endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+== FiveEdgeLayout189 ==
+'Graffiti189LongestPath.FiveEdgeLayout.left' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.FiveEdgeLayout.right' depends on axioms: [propext, Classical.choice, Quot.sound]
+== FiveLongerWord189 ==
+'Graffiti189LongestPath.FiveLongerWord.impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+== FiveMidSplice189 ==
+'Graffiti189LongestPath.FiveMidSplice.left' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.FiveMidSplice.right' depends on axioms: [propext, Classical.choice, Quot.sound]
+== FivePinLayout189 ==
+'Graffiti189LongestPath.FivePinLayout.exists_layout' depends on axioms: [propext, Classical.choice, Quot.sound]
+== SixFourOrderTwentyThree189 ==
+'Graffiti189LongestPath.SixFourOrderTwentyThree.traceable_order_twenty_three' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+== FiveMidBudget189 ==
+'Graffiti189LongestPath.FiveMidBudget.cheap_high_all' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.FiveMidBudget.high_residual' depends on axioms: [propext, Classical.choice, Quot.sound]

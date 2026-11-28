@@ -1,0 +1,72 @@
+Checking T11TenMotif384b
+PASS T11TenMotif384b
+Checking T11TenGraph384b
+'Graffiti384b.T11TenNormalize.label_clique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.T11TenNormalize.cubic_two_shape' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS T11TenGraph384b
+Checking T11TenRelabel384b
+'Graffiti384b.T11TenNormalize.normalize_motif' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS T11TenRelabel384b
+Checking T11TenBits384b
+PASS T11TenBits384b
+Checking T11TenCut384b
+'Graffiti384b.T11TenNormalize.normalize_cut' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS T11TenCut384b
+Checking T11TenNormalize384b
+'Graffiti384b.T11TenNormalize.normalize' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS T11TenNormalize384b
+Checking DiversityElevenUpper384b
+'Graffiti384b.DiversityEleven.upper_ten' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS DiversityElevenUpper384b
+Checking UpperTenCut384b
+'Graffiti384b.DiversityEleven.upper_cut_conditions' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS UpperTenCut384b
+Checking UpperTenAmbient384b
+'Graffiti384b.DiversityEleven.exact_of_upper_ten_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS UpperTenAmbient384b
+Checking UpperTenKernel384b
+'Graffiti384b.DiversityEleven.CutTen.checked_tree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.DiversityEleven.CutTen.join' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS UpperTenKernel384b
+Checking UpperTenModel384b
+'Graffiti384b.DiversityEleven.CutTen.bits_of_model' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS UpperTenModel384b
+Checking UpperTenData0384b
+'Graffiti384b.DiversityEleven.CutTen.t0m307_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.DiversityEleven.CutTen.t0m355_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.DiversityEleven.CutTen.t0m403_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.DiversityEleven.CutTen.t0m419_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS UpperTenData0384b
+Checking UpperTenData1384b
+'Graffiti384b.DiversityEleven.CutTen.t1m181_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.DiversityEleven.CutTen.t1m213_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.DiversityEleven.CutTen.t1m229_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.DiversityEleven.CutTen.t1m403_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.DiversityEleven.CutTen.t1m419_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.DiversityEleven.CutTen.t1m451_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS UpperTenData1384b
+Checking UpperTenData2384b
+'Graffiti384b.DiversityEleven.CutTen.t2m181_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.DiversityEleven.CutTen.t2m229_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.DiversityEleven.CutTen.t2m403_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.DiversityEleven.CutTen.t2m419_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS UpperTenData2384b
+Checking UpperTenData3384b
+'Graffiti384b.DiversityEleven.CutTen.t3m121_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.DiversityEleven.CutTen.t3m211_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.DiversityEleven.CutTen.t3m213_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.DiversityEleven.CutTen.t3m227_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.DiversityEleven.CutTen.t3m229_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS UpperTenData3384b
+Checking UpperTenAllModels384b
+'Graffiti384b.DiversityEleven.CutTen.all_models' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS UpperTenAllModels384b
+Checking UpperTenBoard384b
+'Graffiti384b.DiversityEleven.CutTen.cover_from_normal_form' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS UpperTenBoard384b
+Checking UpperTenExact384b
+'Graffiti384b.DiversityEleven.finite_upper_ten' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.DiversityEleven.exact_upper_ten' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.DiversityEleven.exact_of_supported_no_ears' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.DiversityEleven.exact_of_no_score_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS UpperTenExact384b

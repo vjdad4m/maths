@@ -1,0 +1,42 @@
+== DeficitThreeAll189 ==
+'Graffiti189LongestPath.SixDefectHall.six_defect_hall' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.SixDefectCharge.six_defect_shore_charge' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.SixDefectWideCut.six_defect_small_shore_side' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.SixDefectWideCut.six_defect_shore_cut_no_split' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.SixDefectConnectivity.six_defect_shore_stays_connected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.DeficitThirdShell.shell_three_donor_cover' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.DeficitThirdShell.order_le_star_cut_two_three_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.DeficitActive.deficit_three_has_high_active' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.DeficitLongest.longest_length_ge_twice_of_not_traceable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.DeficitDonors.donor_shell_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.ShoreDegrees.universal_root_degree_drop' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.StarCycleClosure.erase_root_and_set_iso' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.DeficitShore.six_defect_root_deleted_long_cycle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.DeficitShore.six_defect_no_long_shore_cycle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.DeficitThree.traceable_of_connectivity_d_minus_three' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

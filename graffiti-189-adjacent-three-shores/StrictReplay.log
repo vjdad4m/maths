@@ -1,0 +1,68 @@
+AdjacentCutFiveActual189.lean: OK
+AdjacentCutFiveAsymmetry189.lean: OK
+AdjacentCutFiveBound189.lean: OK
+AdjacentCutFiveComponents189.lean: OK
+AdjacentCutFiveMetric189.lean: OK
+AdjacentCutFiveMinimal189.lean: OK
+AdjacentCutFiveProfiles189.lean: OK
+AdjacentCutFiveSingletonDepth189.lean: OK
+AdjacentCutFiveSingletonGeometry189.lean: OK
+AdjacentCutFiveThreeFourCommon189.lean: OK
+AdjacentCutFiveThreeNonSingleton189.lean: OK
+AdjacentCutFiveThreeShape189.lean: OK
+AdjacentCutFiveThreeSingleton189.lean: OK
+AdjacentCutFiveThreeSingletonClose189.lean: OK
+AdjacentCutFiveThreeTwins189.lean: OK
+README.md: OK
+replay.sh: OK
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.Split.order_le_twenty_one_of_adjacent_cut' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.order_le_twenty_one_of_actual_adjacent_cut' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.order_le_seventeen_of_actual_adjacent_twin_cut' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.component_card_le_three_at_adjacent_cut' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.order_add_exclusive_le_twenty_two_of_actual_adjacent_cut' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.two_visible_shore_of_three_and_singleton' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.actual_cut_of_two_visible_shore' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.nonadjacent_cut_of_two_visible_minimal_adjacent_shore' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.two_vertices_in_intermediate_depth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.at_most_one_depth_three_of_three_and_singleton' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.depth_le_three_of_three_and_singleton' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.three_components_no_singleton_at_adjacent_cut' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.exists_small_high_shore_of_three_no_singleton' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.four_common_shore_impossible_with_two_other_large_shores' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.exists_high_shore_five_to_seven_of_three_at_adjacent_cut' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.three_components_impossible_at_adjacent_twin_cut' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.foreign_distance_by_nearer_endpoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

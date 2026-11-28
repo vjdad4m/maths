@@ -1,0 +1,39 @@
+Check EJOrdinaryCompletion189 at 04:42:37
+'Graffiti189Ore.traceable_ore_completion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.SmallOrder.traceable_all_but_one_by_order' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS EJOrdinaryCompletion189 at 04:42:51
+
+Check EJTerminalOrderTwo189 at 04:59:14
+'Graffiti189LongestPath.SmallOrder.traceable_terminal_order_two_add' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS EJTerminalOrderTwo189 at 05:15:31
+
+Check EJEdgeOpening189 at 05:15:31
+'Graffiti189Ore.traceable_or_open_one_edge' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS EJEdgeOpening189 at 05:28:53
+
+Check EJEndpointMarks189 at 05:41:34
+'Graffiti189Ore.endpoint_marks_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189Ore.unique_switch_endpoint_marks' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS EJEndpointMarks189 at 05:41:38
+
+Check EJHubRoutes189 at 05:41:38
+'Graffiti189Ore.traceable_of_two_hub_paths' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS EJHubRoutes189 at 05:41:40
+
+Check EJApexSections189 at 05:54:15
+'Graffiti189Ore.traceable_of_single_apex_switch' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS EJApexSections189 at 05:54:20
+
+Check EJDisjointClosure189 at 05:57:52
+'Graffiti189Ore.traceable_disjoint_neighbor_one_edge' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS EJDisjointClosure189 at 05:57:54
+
+Check EJOrderTwoClose189 at 05:58:52
+'Graffiti189LongestPath.SmallOrder.traceable_at_order_le_two_d_add_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS EJOrderTwoClose189 at 05:58:56

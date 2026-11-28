@@ -1,0 +1,11 @@
+Checking Q9GraphTransfer384b
+'Graffiti384b.Q9.quota_from_distinct_certificates' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q9GraphTransfer384b
+Checking Q9Bridge384b
+'Graffiti384b.Q9.nonleaf_nine_from_distinct_certificates' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q9Bridge384b
+Checking Q9Exact384b
+'Graffiti384b.Q9.all_shapes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Q9.fin9_effective_of_eight_positive_types' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti384b.Q9.exact_of_nine_nonleaves' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Q9Exact384b

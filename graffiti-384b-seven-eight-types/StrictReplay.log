@@ -1,0 +1,69 @@
+Checking SmallPalette384b
+'Graffiti384b.SmallPalette.checked_tree' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS SmallPalette384b
+Checking Palette6Normalize384b
+'GraffitiSmallNorm6.normalize_two_anchors' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Palette6Normalize384b
+Checking Palette7Normalize384b
+'GraffitiSmallNorm7.normalize_two_anchors' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Palette7Normalize384b
+Checking Palette8Normalize384b
+'GraffitiSmallNorm8.normalize_two_anchors' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Palette8Normalize384b
+Checking Palette9Normalize384b
+'GraffitiSmallNorm9.normalize_two_anchors' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Palette9Normalize384b
+Checking Palette6Tree384b
+'Graffiti384b.SmallPalette.check6' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Palette6Tree384b
+Checking Palette7Tree384b
+'Graffiti384b.SmallPalette.check7' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Palette7Tree384b
+Checking Palette8Tree384b
+'Graffiti384b.SmallPalette.check8' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Palette8Tree384b
+Checking Palette9Tree384b
+'Graffiti384b.SmallPalette.check9' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Palette9Tree384b
+Checking PaletteLift384b
+'Graffiti384b.SmallPalette.nonleaf_model' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS PaletteLift384b
+Checking Palette8Entries384b
+'Graffiti384b.SmallPalette.N8.entries_of_shape' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Palette8Entries384b
+Checking Palette6Core384b
+'Graffiti384b.SmallPalette.N6.quad_core' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Palette6Core384b
+Checking Palette7Core384b
+'Graffiti384b.SmallPalette.N7.quad_core' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Palette7Core384b
+Checking Palette8Core384b
+'Graffiti384b.SmallPalette.N8.quad_core' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Palette8Core384b
+Checking Palette9Entries384b
+'Graffiti384b.SmallPalette.N9.entries_of_shape' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Palette9Entries384b
+Checking Palette9Core384b
+'Graffiti384b.SmallPalette.N9.quad_core' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Palette9Core384b
+Checking PaletteSevenEight384b
+'Graffiti384b.SmallPalette.exact_of_seven_or_eight_types' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS PaletteSevenEight384b
+Checking Palette6Score384b
+'Graffiti384b.SmallPalette.N6.score_eq_triangles' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Palette6Score384b
+Checking Palette7Score384b
+'Graffiti384b.SmallPalette.N7.score_eq_triangles' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Palette7Score384b
+Checking Palette8Score384b
+'Graffiti384b.SmallPalette.N8.score_eq_triangles' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Palette8Score384b
+Checking Palette9Score384b
+'Graffiti384b.SmallPalette.N9.score_eq_triangles' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Palette9Score384b
+Checking Palette6Entries384b
+'Graffiti384b.SmallPalette.N6.entries_of_shape' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Palette6Entries384b
+Checking Palette7Entries384b
+'Graffiti384b.SmallPalette.N7.entries_of_shape' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Palette7Entries384b

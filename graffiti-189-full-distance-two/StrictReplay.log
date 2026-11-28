@@ -1,0 +1,890 @@
+Lean 4.19.0 (6caaee842e94), warnings as errors. Successful completed-module reports from serial modular replay.
+Check DegreeFiveThreeForeignImpossible189 at 02:00:06
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.few_exclusive_ports_force_three_and_low' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.ranks_at_three_exclusive_foreign_ports' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.more_than_three_foreign_exclusive_ports' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveThreeForeignImpossible189 at 02:00:17
+Check DegreeFiveThreeFiveDom189 at 02:00:17
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.saturated_common_foreign_port_domination' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveThreeFiveDom189 at 02:00:22
+Check DegreeFiveCommonUniversalFive189 at 02:00:22
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.common_universal_in_shore_at_five' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveCommonUniversalFive189 at 02:00:27
+Check DegreeFiveUniquePortClosureTest189 at 02:00:27
+'Graffiti189LongestPath.CrossSaturation.degree_sum_threshold_iff_at_unique_common' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.Split.Five.order_le_fifteen_of_unique_common_closure_test' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.order_le_fifteen_of_actual_unique_common_closure_test' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveUniquePortClosureTest189 at 02:00:36
+Check DegreeFiveFiveForeign189 at 02:00:36
+'Graffiti189LongestPath.CrossSaturation.Split.Five.order_add_left_nonports_le_sixteen_of_five_foreign' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveFiveForeign189 at 02:00:40
+Check DegreeFiveFourForeign189 at 02:00:40
+'Graffiti189LongestPath.CrossSaturation.Split.Five.near_universal_at_four_foreign' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.Split.Five.order_le_sixteen_of_four_foreign' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveFourForeign189 at 02:00:44
+Check DegreeFiveNoUniqueCommon189 at 02:00:44
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.no_unique_common_across_two_components' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.no_unique_common_at_actual_five_distance_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveNoUniqueCommon189 at 02:00:56
+Check DegreeFiveExclusiveGateway189 at 02:00:56
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.order_le_sixteen_at_three_or_fewer_exclusive_ports' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveExclusiveGateway189 at 02:01:04
+Check DegreeFiveBalancedCommonRoot189 at 02:01:04
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.rooted_common_side_when_exclusive_contacts_balanced' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveBalancedCommonRoot189 at 02:01:13
+Check DegreeFiveBothFiveCounts189 at 02:01:13
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.both_five_shore_order_weighted' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveBothFiveCounts189 at 02:01:19
+Check DegreeFiveBothFiveResidual189 at 02:01:19
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.residual_edge_at_five_with_big_shared' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.residual_two_edges_at_five_with_three_shared' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveBothFiveResidual189 at 02:01:25
+Check TerminalOreClosure189 at 02:01:25
+'Graffiti189LongestPath.CrossSaturation.terminal_ore_closure' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS TerminalOreClosure189 at 02:01:29
+Check WingSignature189 at 02:01:29
+'Graffiti189LongestPath.CrossSaturation.traceable_of_complementary_wings' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS WingSignature189 at 02:01:31
+Check CliqueMinusEdgeRoute189 at 02:01:31
+'Graffiti189LongestPath.CrossSaturation.route_between_in_clique_except_pair' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS CliqueMinusEdgeRoute189 at 02:01:33
+Check RootedOreExceptPair189 at 02:01:33
+'Graffiti189LongestPath.CrossSaturation.rooted_Ore_except_pair' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS RootedOreExceptPair189 at 02:01:35
+Check DegreeFiveNearPortEight189 at 02:01:35
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.port_rooted_of_near_shore_at_most_eight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveNearPortEight189 at 02:01:42
+Check DegreeFiveFourFourTerminal189 at 02:01:42
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.terminal_mask_of_high_four_port_shore' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.terminal_mask_of_very_small_four_port_shore' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveFourFourTerminal189 at 02:01:50
+Check DegreeFiveBothAtLeastFour189 at 02:01:50
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.both_common_order_le_sixteen_at_four_or_more_ports' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.graph_order_le_sixteen_of_both_common_four_ports' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveBothAtLeastFour189 at 02:01:56
+Check DegreeFiveNonmixedThreeFour189 at 02:01:56
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.no_nonmixed_at_three_four_opposite_two_three' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveNonmixedThreeFour189 at 02:02:02
+Check DegreeFivePureShoreVisible189 at 02:02:02
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.pure_shore_visible_from_first_cut' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFivePureShoreVisible189 at 02:02:10
+Check DegreeFiveOneColorVisible189 at 02:02:10
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.shore_with_all_ports_touching_first_visible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveOneColorVisible189 at 02:02:19
+Check DegreeFiveBothNonsaturated189 at 02:02:19
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.both_common_nonsaturated_order_le_fifteen' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveBothNonsaturated189 at 02:02:27
+Check DegreeFiveBothFourteen189 at 02:02:27
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.both_common_four_four_order_le_fourteen' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveBothFourteen189 at 02:02:36
+Check UniversalRouteBlocks189 at 02:02:36
+'Graffiti189LongestPath.CrossSaturation.universal_route_from_blocks' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS UniversalRouteBlocks189 at 02:02:42
+Check UniversalRouteSingletons189 at 02:02:42
+'Graffiti189LongestPath.CrossSaturation.universal_route_from_singletons' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.universal_route_with_one_block' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS UniversalRouteSingletons189 at 02:02:45
+Check DegreeFiveFourUniversalTerminal189 at 02:02:45
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.terminal_mask_at_four_universal_common_ports' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveFourUniversalTerminal189 at 02:02:49
+Check DegreeFiveNearSmallRoot189 at 02:02:49
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.common_rooted_of_small_near_universal_shore' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveNearSmallRoot189 at 02:02:55
+Check DegreeFiveActualCutSwap189 at 02:02:55
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.shore_swapCut' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveActualCutSwap189 at 02:02:57
+Check DegreeFiveEitherColorVisible189 at 02:02:57
+PASS DegreeFiveEitherColorVisible189 at 02:03:03
+Check DegreeFiveBothFourFiveFifteen189 at 02:03:03
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.order_fifteen_four_five_contact_constraints' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveBothFourFiveFifteen189 at 02:03:12
+Check DegreeFiveBothFourFiveFifteenClose189 at 02:03:12
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.four_five_order_fifteen_masks' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.traceable_of_four_five_order_fifteen' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveBothFourFiveFifteenClose189 at 02:03:18
+Check DegreeFiveBothFourFourAll189 at 02:03:18
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.four_four_both_common_masks' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveBothFourFourAll189 at 02:03:26
+Check DegreeFiveFourThreeTerminal189 at 02:04:09
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.terminal_mask_at_four_ports_three_shared_short' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveFourThreeTerminal189 at 02:04:13
+Check DegreeFiveFourFiveThreeShared189 at 02:04:13
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.four_five_at_least_three_shared_masks' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveFourFiveThreeShared189 at 02:04:17
+Check DegreeFiveUniversalNonisolated189 at 02:04:17
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.one_common_residue_nonisolated_at_order_ge_five' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveUniversalNonisolated189 at 02:04:22
+Check ResidualConnectivity189 at 02:04:22
+'Graffiti189LongestPath.CrossSaturation.connected_of_pair_degree_and_no_isolates' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS ResidualConnectivity189 at 02:04:24
+Check DegreeFiveFourOneTerminal189 at 02:04:24
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.terminal_four_port_one_common_at_most_six' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveFourOneTerminal189 at 02:04:29
+Check ResidualOreParam189 at 02:04:29
+'Graffiti189LongestPath.CrossSaturation.rooted_high_residual_Ore_at_d' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.residual_route_if_low_not_isolated_at_d' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS ResidualOreParam189 at 02:04:32
+Check DegreeFiveFourTwoTerminal189 at 02:04:32
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.terminal_four_port_two_common_at_most_six' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveFourTwoTerminal189 at 02:04:38
+Check DegreeFiveNearAllPortTerminal189 at 02:04:38
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.terminal_mask_of_five_vertex_all_port_shore' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveNearAllPortTerminal189 at 02:04:45
+Check ResidualFourPath189 at 02:04:45
+'Graffiti189LongestPath.CrossSaturation.four_path_in_five_with_pair_degree_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS ResidualFourPath189 at 02:04:50
+Check RootedTwoUniversal189 at 02:04:50
+'Graffiti189LongestPath.CrossSaturation.rooted_route_with_two_universal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS RootedTwoUniversal189 at 02:04:52
+Check DegreeFiveBothFourFiveAll189 at 02:04:52
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.four_five_both_common_masks' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveBothFourFiveAll189 at 02:05:00
+Check DegreeFiveBothFourOrFiveUnsat189 at 02:05:00
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.traceable_of_both_common_four_or_five_ports_one_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveBothFourOrFiveUnsat189 at 02:05:06
+Check DegreeFiveFourForeignGeom189 at 02:05:06
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.four_layer_add_distance_two_le_five' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.four_foreign_near_with_exception' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveFourForeignGeom189 at 02:05:13
+Check DegreeFiveThreeFiveBound189 at 02:05:13
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.three_five_order_bound_by_double_charges' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveThreeFiveBound189 at 02:05:20
+Check DegreeFiveOppNonportFour189 at 02:05:54
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.opposite_nonporters_dist_at_least_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveOppNonportFour189 at 02:05:59
+Check DegreeFiveThreeFiveShapes189 at 02:05:59
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.three_five_shore_cardinality_cases' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveThreeFiveShapes189 at 02:06:07
+Check DegreeFiveTwoFourShapes189 at 02:06:07
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.two_four_shore_cardinality_cases' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveTwoFourShapes189 at 02:06:13
+Check DegreeFiveOneFourShapes189 at 02:06:13
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.one_four_shore_shape' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveOneFourShapes189 at 02:06:18
+Check Graffiti189TraceableOre189 at 02:17:15
+'Graffiti189Ore.traceable_closure' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS Graffiti189TraceableOre189 at 02:17:18
+Check CapOreFill189 at 02:17:18
+'Graffiti189LongestPath.CrossSaturation.traceable_cap_fillAcross' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS CapOreFill189 at 02:17:21
+Check DegreeFiveOneFourClose189 at 02:24:10
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.traceable_of_actual_five_one_four_ports' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveOneFourClose189 at 02:24:12
+Check DegreeFiveCommonDispatchCounts189 at 01:58:44
+'Graffiti189.two_common_shore_count_dispatch' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS DegreeFiveCommonDispatchCounts189 at 01:58:51
+Check DegreeFiveThreeThreeNeitherLTwo189 at 01:58:51
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.three_three_two_visible_local_impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveThreeThreeNeitherLTwo189 at 02:00:03
+Check DegreeFiveThreeThreeNeitherLThree189 at 02:00:03
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.three_three_three_visible_local_impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveThreeThreeNeitherLThree189 at 02:00:06
+Check DegreeFiveOneFiveGeometry189 at 02:06:18
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.one_five_shore_shape' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.one_five_opposite_order_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveOneFiveGeometry189 at 02:06:25
+Check DegreeFiveOneFiveFarProfile189 at 02:06:25
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.one_five_far_profile' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveOneFiveFarProfile189 at 02:06:33
+Check CliqueLowInsert189 at 02:06:33
+'Graffiti189LongestPath.CrossSaturation.clique_path_via_low' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS CliqueLowInsert189 at 02:06:36
+Check DegreeFiveFourForeignTight189 at 02:06:36
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.tight_four_foreign_charges_exclude_port_neighbors' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveFourForeignTight189 at 02:06:43
+Check DegreeFiveThreeFourShapes189 at 02:06:43
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.three_four_shore_cardinality_cases' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveThreeFourShapes189 at 02:06:54
+Check RootedOreTwoCandidates189 at 02:06:54
+'Graffiti189LongestPath.CrossSaturation.rooted_Ore_from_two_candidates' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS RootedOreTwoCandidates189 at 02:07:00
+Check DegreeFiveFreeOreSmallNear189 at 02:07:00
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.free_port_route_at_most_six' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.free_port_route_at_near_seven' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveFreeOreSmallNear189 at 02:07:07
+Check DegreeFiveNearSevenTerminal189 at 02:07:07
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.terminal_route_on_three_port_near_seven' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveNearSevenTerminal189 at 02:07:14
+Check RootedOreMissingPair189 at 02:07:14
+'Graffiti189LongestPath.CrossSaturation.rooted_Ore_missing_except_pair' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS RootedOreMissingPair189 at 02:07:17
+Check DegreeFiveThreeFiveFree189 at 02:07:17
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.free_route_on_five_port_side_opposite_three' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveThreeFiveFree189 at 02:07:24
+Check DegreeFiveFreeOreThreeForeign189 at 02:07:24
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.free_port_route_small_shore_three_foreign' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveFreeOreThreeForeign189 at 02:07:31
+Check DegreeFiveNearSixTerm189 at 02:07:31
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.terminal_route_on_two_or_three_port_near_six' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveNearSixTerm189 at 02:07:39
+Check DegreeFiveFourSmallTermGeneric189 at 02:07:39
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.terminal_route_on_four_vertices_with_two_ports' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveFourSmallTermGeneric189 at 02:07:42
+Check DegreeFiveTwoFourClose189 at 02:07:42
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.traceable_of_actual_five_two_four_ports' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveTwoFourClose189 at 02:07:47
+Check DegreeFiveThreeFiveTerminal189 at 02:07:47
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.terminal_route_on_three_port_small_shore' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveThreeFiveTerminal189 at 02:07:51
+Check DegreeFiveThreeFiveSeven189 at 02:07:51
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.free_route_on_three_port_seven_shore' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveThreeFiveSeven189 at 02:07:55
+Check DegreeFiveThreeFiveAll189 at 02:07:55
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.traceable_of_actual_five_three_five_ports' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveThreeFiveAll189 at 02:08:00
+Check DegreeFiveThreeFourClose189 at 02:08:00
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.traceable_of_actual_five_three_four_ports' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveThreeFourClose189 at 02:08:08
+Check DegreeFiveTwoThreeBase189 at 02:08:08
+'_private.DegreeFiveTwoThreeBase189.0.Graffiti189LongestPath.CrossSaturation.FiveActualCut.boundary_has_at_least_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveTwoThreeBase189 at 02:08:17
+Check DegreeFiveTwoThreeVisTwo189 at 02:08:17
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.no_two_visible_on_two_port_shore' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveTwoThreeVisTwo189 at 02:08:26
+Check DegreeFiveTwoThreeVisThree189 at 02:08:26
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.no_three_visible_on_two_port_shore' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveTwoThreeVisThree189 at 02:08:38
+Check DegreeFiveTwoThreeClose189 at 02:08:38
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.impossible_actual_five_two_three_ports' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveTwoThreeClose189 at 02:08:49
+Check DegreeFiveThreeThreeVisTwo189 at 02:08:49
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.no_both_visible_neighbors_at_two_visible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.no_two_visible_on_all_high_three_port_shore' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveThreeThreeVisTwo189 at 02:08:56
+Check DegreeFiveThreeThreeUniversalShape189 at 02:08:56
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.three_three_universal_cut_shape' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveThreeThreeUniversalShape189 at 02:09:07
+Check DegreeFiveThreeThreeNeitherGeometry189 at 02:09:07
+PASS DegreeFiveThreeThreeNeitherGeometry189 at 02:09:19
+Check DegreeFiveThreeThreeNeitherClose189 at 02:09:19
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.FiveMissShore33.no_local_shape' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveThreeThreeNeitherClose189 at 02:09:23
+Check DegreeFiveThreeThreeDarkOrders189 at 02:09:23
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.three_visible_dark_orders_and_port_limit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveThreeThreeDarkOrders189 at 02:09:32
+Check SmallDenseRoute189 at 02:09:32
+'Graffiti189LongestPath.CrossSaturation.terminal_route_of_dense_finset' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.three_finset_spanning_path' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SmallDenseRoute189 at 02:09:35
+Check DegreeFiveThreeThreeDegreeHelpers189 at 02:09:35
+'_private.DegreeFiveThreeThreeDegreeHelpers189.0.Graffiti189LongestPath.CrossSaturation.FiveActualCut.all_high_port_neighborhood' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'_private.DegreeFiveThreeThreeDegreeHelpers189.0.Graffiti189LongestPath.CrossSaturation.FiveActualCut.high_visible_neighborhood' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveThreeThreeDegreeHelpers189 at 02:09:44
+Check DegreeFiveThreeThreeDarkRoute189 at 02:09:44
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.terminal_of_three_visible_and_dark_nonempty' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveThreeThreeDarkRoute189 at 02:09:59
+Check DegreeFiveThreeThreeUniversalClose189 at 02:09:59
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.traceable_of_actual_five_three_three_universal_cut' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveThreeThreeUniversalClose189 at 02:14:50
+Check DegreeFiveThreeThreeFullClose189 at 02:14:50
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.three_three_high_cut_covers_all' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.traceable_of_actual_five_three_three_ports' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveThreeThreeFullClose189 at 02:14:56
+Check DegreeFiveOneFiveFarCounts189 at 02:14:56
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.OneFiveFarProfile.simultaneous_saturation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.OneFiveFarProfile.six_seven' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveOneFiveFarCounts189 at 02:15:10
+Check DegreeFiveOneFiveFarRoutesBase189 at 02:15:10
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.OneFiveFarProfile.inside_exclusive_both_full' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.OneFiveFarProfile.two_missed_impossible_of_six_nonports' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveOneFiveFarRoutesBase189 at 02:15:22
+Check SixSpecialRoute189 at 02:15:22
+'Graffiti189LongestPath.CrossSaturation.six_route_with_two_special_terminals' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SixSpecialRoute189 at 02:15:24
+Check CapSplitRoute189 at 02:15:24
+'Graffiti189LongestPath.CrossSaturation.split_of_traceable_cap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS CapSplitRoute189 at 02:15:26
+Check DegreeFiveOneFiveCapGlue189 at 02:15:26
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.traceable_from_one_five_cap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveOneFiveCapGlue189 at 02:15:33
+Check DegreeFiveOneFiveFarGlue189 at 02:16:28
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.OneFiveFarProfile.finish_with_two_exclusives' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveOneFiveFarGlue189 at 02:16:59
+Check LowProtectedRoot189 at 02:16:59
+'Graffiti189LongestPath.CrossSaturation.low_root_route_of_one_protected_pair' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS LowProtectedRoot189 at 02:17:01
+Check DegreeFiveOneFiveFarUnmixed189 at 02:17:01
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.OneFiveFarProfile.traceable_at_six_nonports_unmixed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveOneFiveFarUnmixed189 at 02:17:08
+Check DegreeFiveOneFiveFarMixed189 at 02:17:08
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.OneFiveFarProfile.traceable_at_six_nonports_mixed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveOneFiveFarMixed189 at 02:17:15
+Check FiveCapUniversal189 at 02:17:21
+'Graffiti189LongestPath.CrossSaturation.traceable_cap_five_with_universal_nonports' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS FiveCapUniversal189 at 02:17:26
+Check SmallFiveCap189 at 02:17:26
+'Graffiti189LongestPath.CrossSaturation.traceable_cap_small_five_contacts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS SmallFiveCap189 at 02:17:28
+Check DegreeFiveOneFiveNear189 at 02:17:28
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.traceable_of_actual_five_one_five_ports_small' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveOneFiveNear189 at 02:17:38
+Check DegreeFiveOneFiveFarSeven189 at 02:17:38
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.OneFiveFarProfile.traceable_at_seven_nonports' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.traceable_of_actual_five_one_five_ports' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveOneFiveFarSeven189 at 02:17:52
+Check DegreeFiveBothFiveRooted189 at 02:17:52
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.rooted_route_at_five_port_shore_with_big_shared' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveBothFiveRooted189 at 02:17:58
+Check ResidualOre189 at 02:17:58
+'Graffiti189LongestPath.CrossSaturation.rooted_high_residual_Ore' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.residual_route_if_low_not_isolated' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS ResidualOre189 at 02:18:02
+Check DegreeFiveBothFiveSmallRoot189 at 02:18:02
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.rooted_port_route_at_small_five_shore' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveBothFiveSmallRoot189 at 02:18:09
+Check DegreeFiveBothFiveClique189 at 02:18:09
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.terminal_route_at_five_vertex_all_port_shore' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveBothFiveClique189 at 02:19:37
+Check DegreeFiveBothFiveClose189 at 02:19:37
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.traceable_at_both_five_port_shores_with_three_shared' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveBothFiveClose189 at 02:19:44
+Check DegreeFiveBothFiveAll189 at 02:19:44
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.traceable_at_both_five_port_shores' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveBothFiveAll189 at 02:19:50
+Check DegreeFiveOppositeFiveDoubleCharge189 at 02:19:50
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.opposite_five_order_bound_by_double_charges' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveOppositeFiveDoubleCharge189 at 02:20:45
+Check DegreeFiveTwoOrThreeTerminal189 at 02:20:45
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.terminal_route_on_two_or_three_port_small_shore' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveTwoOrThreeTerminal189 at 02:20:53
+Check DegreeFiveTwoFiveAll189 at 02:20:53
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.traceable_of_actual_five_two_five_ports' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveTwoFiveAll189 at 02:20:58
+Check DegreeFiveCommonTwoCut189 at 02:24:12
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.traceable_of_actual_five_distance_two_both_common_shores' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveCommonTwoCut189 at 02:24:15
+Check DegreeFiveOppositeAtMostFive189 at 02:24:15
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.opposite_ports_card_le_five_of_common' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveOppositeAtMostFive189 at 02:24:17
+Check DegreeFiveTwoTwoThreeShared189 at 02:24:17
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.three_shared_of_small_common_shore_with_one_place_each' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveTwoTwoThreeShared189 at 02:24:22
+Check DegreeFiveTwoTwoCommonGeometry189 at 02:24:22
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.two_two_common_shore_geometry' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveTwoTwoCommonGeometry189 at 02:24:29
+Check DegreeFiveTwoTwoLow33 at 02:24:29
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.low_nonporter_of_three_three_opposite_two_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveTwoTwoLow33 at 02:24:35
+Check DegreeFiveReverseCover189 at 02:24:35
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.exclusive_nonports_in_cut_shells_at_five' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveReverseCover189 at 02:24:38
+Check DegreeFiveReverseSupport189 at 02:24:38
+'_private.DegreeFiveReverseSupport189.0.Graffiti189LongestPath.CrossSaturation.FiveActualCut.tight_shell_high_contact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'_private.DegreeFiveReverseSupport189.0.Graffiti189LongestPath.CrossSaturation.FiveActualCut.local_d2_plus_foreign_le_five' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'_private.DegreeFiveReverseSupport189.0.Graffiti189LongestPath.CrossSaturation.FiveActualCut.nonmixed_shell_nonports' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveReverseSupport189 at 02:24:42
+Check DegreeFiveOppositeNearParity189 at 02:24:42
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.opposite_near_nonports_le_three' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveOppositeNearParity189 at 02:24:45
+Check DegreeFiveTwoTwoNonmixed189 at 02:24:45
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.two_two_nonmixed_small_of_low_both' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveTwoTwoNonmixed189 at 02:24:52
+Check DegreeFiveBalancedMixedBudget189 at 02:24:52
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.exclusive_shore_order_add_mixed_add_charges_le_thirteen' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveBalancedMixedBudget189 at 02:24:55
+Check DegreeFiveTwoTwoMixed189 at 02:24:55
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.two_two_mixed_small_of_tight_shells' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveTwoTwoMixed189 at 02:25:02
+Check DegreeFiveUniquePortHighShore189 at 02:25:02
+'Graffiti189LongestPath.CrossSaturation.Split.Five.root_any_vertex_of_high_shore_with_one_common' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.Split.Five.traceable_unique_common_test_of_high_shores' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.traceable_of_actual_unique_common_test_without_exception' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveUniquePortHighShore189 at 02:25:11
+Check DegreeFiveUniquePortLowCommon189 at 02:25:11
+'Graffiti189LongestPath.CrossSaturation.Split.Five.root_at_a_port_of_shore_with_one_low_and_one_common' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.Split.Five.traceable_unique_common_test_with_low_on_common_shore' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.traceable_of_actual_unique_common_test_low_in_common_component' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveUniquePortLowCommon189 at 02:27:14
+Check TerminalOutlier189 at 02:27:14
+'Graffiti189LongestPath.CrossSaturation.terminal_path_in_clique_with_outlier' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS TerminalOutlier189 at 02:27:17
+Check DegreeFiveBalancedTerminal189 at 02:27:17
+'Graffiti189LongestPath.CrossSaturation.Split.Five.terminal_route_of_small_balanced_exclusive_shore' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveBalancedTerminal189 at 02:27:26
+Check DegreeFiveMixedFourForeign189 at 02:27:26
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.exclusive_shore_le_seven_of_mixed_with_four_foreign' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveMixedFourForeign189 at 02:27:41
+Check DegreeFiveBalancedSmallRoute189 at 02:27:41
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.traceable_of_balanced_exclusive_shore_at_most_seven' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.traceable_of_balanced_mixed_shore_at_four_foreign' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveBalancedSmallRoute189 at 02:27:51
+Check DegreeFiveTwoTwo33Close189 at 02:27:51
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.traceable_of_balanced_three_three_opposite_two_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveTwoTwo33Close189 at 02:29:19
+Check DegreeFiveTwoTwoLow43 at 02:29:19
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.low_a_porter_of_four_three_opposite_two_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveTwoTwoLow43 at 02:29:25
+Check DegreeFiveTwoTwoNonmixed34 at 02:29:25
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.no_nonmixed_at_three_four_opposite_two_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveTwoTwoNonmixed34 at 02:29:32
+Check DegreeFiveTwoTwo43Close189 at 02:36:52
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.traceable_of_balanced_four_three_opposite_two_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveTwoTwo43Close189 at 02:37:51
+Check DegreeFiveFourGateway189 at 02:37:51
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.exclusive_four_local_gateway' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveFourGateway189 at 02:38:02
+Check DegreeFiveBalanceBridgeCore189 at 02:38:02
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.bridge_core_of_balanced_four_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveBalanceBridgeCore189 at 02:38:15
+Check DegreeFiveBalancedFourFour189 at 02:38:15
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.exclusive_shore_le_seven_of_balanced_four_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.traceable_of_balanced_four_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveBalancedFourFour189 at 02:38:31
+Check DegreeFiveExclusiveTwoTwo189 at 02:39:42
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.traceable_of_exclusive_two_two_opposite_common' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveExclusiveTwoTwo189 at 02:40:01
+Check DegreeFiveOppositeEight189 at 02:40:01
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.opposite_shore_le_eight_at_five_ports' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveOppositeEight189 at 02:40:04
+Check DegreeFiveEightLabels189 at 02:40:04
+'Graffiti189EightTerminal.exists_terminal_labels' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS DegreeFiveEightLabels189 at 02:40:08
+Check DegreeFiveEightTerminalTable189 at 02:40:08
+'Graffiti189EightTerminal.completed_route' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS DegreeFiveEightTerminalTable189 at 02:40:11
+Check DegreeFiveEightTerminalLift189 at 02:40:11
+'Graffiti189EightTerminal.walk_of_completed_route' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS DegreeFiveEightTerminalLift189 at 02:40:14
+Check DegreeFiveEightTerminalOre189 at 02:40:14
+'Graffiti189EightTerminal.terminal_walk_at_eight' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS DegreeFiveEightTerminalOre189 at 02:40:17
+Check DegreeFiveEightTerminalShore189 at 02:40:17
+'Graffiti189LongestPath.CrossSaturation.Split.Five.terminal_route_of_eight_balanced_exclusive_shore' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveEightTerminalShore189 at 02:40:22
+Check DegreeFiveBalancedTwoThreeClose189 at 02:40:22
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.traceable_of_balanced_two_three_with_low_nonporter' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveBalancedTwoThreeClose189 at 02:40:29
+Check DegreeFiveLowThreeThree189 at 02:40:29
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.low_nonporter_of_three_three_opposite_two_three' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveLowThreeThree189 at 02:42:02
+Check DegreeFiveBalancedThreeThreeClose189 at 02:42:02
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.traceable_of_balanced_three_three_opposite_two_three' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveBalancedThreeThreeClose189 at 02:42:06
+Check DegreeFiveShapeThreeFour189 at 02:42:06
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.low_b_porter_of_three_four_opposite_two_three' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveShapeThreeFour189 at 02:42:24
+Check DegreeFiveBalancedThreeFourClose189 at 02:42:24
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.traceable_of_balanced_three_four_opposite_two_three' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveBalancedThreeFourClose189 at 02:42:32
+Check DegreeFiveReverseGeometry189 at 02:42:32
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.reverse_common_shore_geometry' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveReverseGeometry189 at 02:44:16
+Check DegreeFiveReverseTight189 at 02:44:16
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.no_tight_shells_in_reverse_alignment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveReverseTight189 at 02:44:22
+Check DegreeFiveReverseTwoShell189 at 02:44:22
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.no_two_b_shell_in_all_high_reverse' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveReverseTwoShell189 at 02:44:27
+Check DegreeFiveReverseMissTwo189 at 02:44:27
+'_private.DegreeFiveReverseMissTwo189.0.Graffiti189LongestPath.CrossSaturation.FiveActualCut.high_b_cannot_miss_two_shell' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveReverseMissTwo189 at 02:44:30
+Check DegreeFiveReverseOverlap189 at 02:44:30
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.overlapping_shells_at_three_b_in_reverse' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveReverseOverlap189 at 02:44:34
+Check DegreeFiveReverseThreeShell189 at 02:44:34
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.no_three_b_shell_in_all_high_reverse' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveReverseThreeShell189 at 02:44:40
+Check DegreeFiveReverseClose189 at 02:44:40
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.traceable_of_balanced_four_three_opposite_two_three' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveReverseClose189 at 02:44:45
+Check DegreeFiveTwoThreeRange189 at 02:44:45
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.common_contact_range_opposite_two_three' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveTwoThreeRange189 at 02:44:53
+Check DegreeFiveExclusiveTwoThree189 at 02:44:53
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.traceable_of_exclusive_two_three_opposite_common' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveExclusiveTwoThree189 at 02:44:55
+Check DegreeFiveLonelyPortGeometry189 at 02:44:55
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.lonely_high_port_geometry' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveLonelyPortGeometry189 at 02:45:03
+Check DegreeFiveTwoExclusivePath189 at 02:45:03
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.traceable_of_two_exclusive_foreign_ports' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveTwoExclusivePath189 at 02:45:11
+Check DegreeFiveSmallExclusiveFull189 at 02:45:11
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.no_three_exclusive_foreign_ports' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.traceable_of_at_most_three_exclusive_foreign_ports' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.traceable_of_actual_five_distance_two_with_small_exclusive_side' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveSmallExclusiveFull189 at 02:45:22
+Check DegreeFiveLonelyColorClose189 at 02:45:22
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.traceable_of_lonely_color_in_exclusive_shore' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveLonelyColorClose189 at 02:45:32
+Check DegreeFiveOneExclusiveShore189 at 02:45:32
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.traceable_of_one_exclusive_shore_at_five_distance_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.traceable_of_actual_five_distance_two_with_exclusive_shore' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveOneExclusiveShore189 at 02:45:39
+Check DegreeFiveDistanceTwoAll189 at 02:45:39
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.traceable_of_actual_five_distance_two_two_components' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveActualCut.traceable_of_actual_five_distance_two_cut' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS DegreeFiveDistanceTwoAll189 at 02:45:43
+Verified all 161 modules and both final theorem declarations.

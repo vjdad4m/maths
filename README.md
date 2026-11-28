@@ -264,3 +264,4 @@
 | --- | --- | --- |
 | Bad Science Matrices, dimension 6 | Exact optimum proved in Lean | [End-to-end Lean proof](steinerberger-bad-science-six-complete/) · [Written proof](steinerberger-bad-science-six/) |
 | Bad Science Matrices, dimension 7 | Exact optimum proved in Lean | [End-to-end Lean proof](steinerberger-bad-science-seven-complete/) · [Written proof](steinerberger-bad-science-seven/) |
+| Bad Science Matrices, dimension 8 | Computational upper bound; attaining construction checked in Lean | [Proof sketch and checks](steinerberger-bad-science-eight/) |

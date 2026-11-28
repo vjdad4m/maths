@@ -1,0 +1,7 @@
+Checking ThresholdFiveCounterexampleOrder189 at 05:34:12
+'Graffiti189LongestPath.order_le_seventeen_of_degree_five_counterexample' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.traceable_at_degree_five_of_order_eighteen' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

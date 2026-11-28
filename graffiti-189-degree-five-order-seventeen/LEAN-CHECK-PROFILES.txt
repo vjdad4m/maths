@@ -1,0 +1,14 @@
+Checking AdjacentCutFiveTopArithmetic189 at 04:37:40
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.AdjProfile.compact_top_pair' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking AdjacentCutFiveTopProfiles189 at 04:47:33
+Checking AdjacentCutFiveTopBudget189 at 04:52:40
+Checking AdjacentCutFiveTopFlatten189 at 05:17:20
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.order_le_seventeen_of_actual_adjacent_two_nonsingleton_shores' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.order_le_seventeen_of_actual_adjacent_two_shores' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+All three modules passed and produced .olean files. Both terminal axioms reports listed only standard axioms.

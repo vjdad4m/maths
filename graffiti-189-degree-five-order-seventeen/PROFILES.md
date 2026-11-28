@@ -1,0 +1,11 @@
+# Graffiti.pc #189: top-order exclusion for an adjacent two-shore cut
+
+Assume a connected finite simple graph remains connected after deleting any one vertex, no vertex has more than six vertices at even distance (including itself), and at most one vertex has degree below five. If an adjacent vertex pair separates the graph into exactly two connected components, then the graph has order at most 17. This is an order bound, not general traceability for the adjacent case.
+
+Classify each shore vertex into six classes: parity of its distance to the nearer terminal, and whether it is nearer a, nearer b, or equidistant. For opposite shores, distance is the sum of the two nearer distances, plus one precisely when each vertex is strictly nearer to a different terminal. These formulas give two terminal charge inequalities and six conditional cross-charge inequalities in each direction. A nonempty even nearer-a (respectively nearer-b) class forces an exclusive port on that same shore, so the corresponding odd nearer class is nonempty.
+
+Under order 18 or 19, the compact integer inequality proof shows that for two nonsingleton shores, the smaller is a four-vertex shore all of whose vertices are at equal odd distance from the terminals. Order four and the degree threshold force at least three common ports. Any remaining noncommon vertex has an edge on its connected shore to a common port, giving distance two instead of odd. Thus the four vertices are all common, and the preceding four-common bound caps the graph order at 16, a contradiction. For a singleton shore, its lone vertex is a common port. The same parity charge bounds give an order cap of 16 directly.
+
+Main declaration: Graffiti189LongestPath.CrossSaturation.FiveAdjacent.order_le_seventeen_of_actual_adjacent_two_shores.
+
+Replay the modules in order.txt with Lean 4.19.0, warnings treated as errors, one compiler thread and asynchronous elaboration disabled. External inputs: AdjacentCutFiveMetric189, AdjacentCutFiveProfilePorts189, AdjacentCutFiveComponents189, AdjacentCutFiveTwoOrderTwenty189, AdjacentCutFiveTwoDoubleCover189 and AdjacentCutFiveAllCommonFour189 (and their transitive prerequisites). The exact host replay additionally uses Mathlib.Algebra.BigOperators.Fin from its compiled Mathlib directory.

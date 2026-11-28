@@ -1,0 +1,21 @@
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.traceable_of_adjacent_singleton_thirteen_unique_at_most_two_balanced' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.small_dark_core_terminal_ore' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.dark_three_low_balance_end' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'_private.SixSingletonAdjThreeBoard189.0.Graffiti189LongestPath.CrossSaturation.ThresholdSix.Singleton16.common_min_two_of_three' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.Singleton16.traceable_of_unique_board_three_balanced' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.traceable_of_adjacent_singleton_thirteen_unique' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.ThresholdSix.adjacent_singleton_thirteen_visible_profile' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

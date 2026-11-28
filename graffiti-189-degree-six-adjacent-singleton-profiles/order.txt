@@ -1,0 +1,5 @@
+SixSingletonAdjacentUnique189
+SixSingletonFourCoreOre189
+SixSingletonAdjThreeBoard189
+SixSingletonAdjacentUniqueComplete189
+SixSingletonAdjacentProfiles189

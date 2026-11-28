@@ -1,0 +1,36 @@
+Checking AdjacentCutFiveOrderSixteenArithmetic189 at 05:52:57
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.AdjProfile.compact_sixteen_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.AdjProfile.compact_sixteen_five' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking AdjacentCutFiveOrderSixteenProfiles189 at 05:54:03
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.all_common_of_adjacent_four_ten_shores' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.one_exclusive_of_adjacent_five_nine_unequal_shores' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking AdjacentCutFiveSixteenSingletonArithmetic189 at 05:47:48
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.AdjProfile.compact_sixteen_singleton' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking AdjacentCutFiveSixteenSingletonDepth189 at 05:48:02
+Checking AdjacentCutFiveSixteenSingletonGeometry189 at 05:55:35
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.nonadjacent_separator_of_common_other_unique_and_four_even' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CrossSaturation.FiveAdjacent.nonadjacent_separator_of_adjacent_singleton_thirteen_shores' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+The five frozen modules all produced .olean output. The terminal axiom reports use only the standard axioms.
+Lean 4.19.0, serial, -DElab.async=false, -DwarningAsError=true.
+universal_route_from_singletons_or_one_edge: [propext, Classical.choice, Quot.sound]
+near_universal_route_of_nine_shore: [propext, Classical.choice, Quot.sound]
+traceable_of_adjacent_four_nine_non_twin: [propext, Classical.choice, Quot.sound]
+traceable_of_actual_adjacent_nonsingleton_two_shores_fourteen_sixteen: [propext, Classical.choice, Quot.sound]
+Lean 4.19.0, serial, -DElab.async=false, -DwarningAsError=true.
+traceable_of_actual_adjacent_two_shores_order_sixteen: [propext, Classical.choice, Quot.sound]
+order_le_fifteen_of_degree_five_counterexample: [propext, Classical.choice, Quot.sound]
+traceable_at_degree_five_of_order_ge_sixteen: [propext, Classical.choice, Quot.sound]

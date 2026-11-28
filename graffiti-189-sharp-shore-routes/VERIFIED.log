@@ -1,0 +1,34 @@
+'Graffiti189LongestPath.MarkedRoutable.marked_route_branch_impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.MarkedShoreCycle.separated_double_no_marked_shore_cycle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CycleInsert.insert_after_start' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.NearFullCycle.minimum_height_no_near_full_cycle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CriticalOffPath.separated_double_critical_ports' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.DiracThreshold.separated_double_no_dirac_cycle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.HighEndpoint189.rotate_to_two_high_endpoints_of_min_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.MinimalCycleBound.minimum_height_cycles_le_order_sub_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.CyclicSparse.sparse_cross_card_le_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.ExceptionalSplit.one_exception_even' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.ExceptionalSplit.one_exception_odd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.ExceptionalSplit.one_exception_routes' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Graffiti189LongestPath.ExceptionalSplit.one_exception_outer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graffiti189LongestPath.StarExceptionalSplit.separated_double_no_one_exception_split' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
